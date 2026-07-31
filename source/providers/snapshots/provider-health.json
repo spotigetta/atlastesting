@@ -1,0 +1,30 @@
+{
+  "updatedAt": "2026-07-31T00:00:00.000Z",
+  "providers": [
+    {
+      "provider": "youtube",
+      "ok": true,
+      "note": "Snapshot local inicial"
+    },
+    {
+      "provider": "music",
+      "ok": true,
+      "note": "Snapshot local inicial"
+    },
+    {
+      "provider": "editorial",
+      "ok": true,
+      "note": "Snapshot local inicial"
+    },
+    {
+      "provider": "josemaria",
+      "ok": true,
+      "note": "Snapshot local inicial"
+    },
+    {
+      "provider": "instagram",
+      "ok": false,
+      "note": "Sin publicaciones disponibles en el snapshot inicial"
+    }
+  ]
+}

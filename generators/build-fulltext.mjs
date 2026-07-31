@@ -1,13 +1,11 @@
 import fs from "node:fs";
 import path from "node:path";
 import readline from "node:readline";
-import { fileURLToPath } from "node:url";
+import zlib from "node:zlib";
+import { sourceRoot, dataRoot } from "./lib/paths.mjs";
 
-const here = path.dirname(fileURLToPath(import.meta.url));
-const atlasRoot = path.dirname(here);
-const sourceRoot = path.dirname(atlasRoot);
-const catalog = JSON.parse(fs.readFileSync(path.join(atlasRoot, "data", "catalog.json"), "utf8"));
-const output = path.join(atlasRoot, "data", "fulltext-index.js");
+const catalog = JSON.parse(fs.readFileSync(path.join(dataRoot, "catalog.json"), "utf8"));
+const outputDir = path.join(dataRoot, "search");
 const maxTerms = Number(process.env.ATLAS_FULLTEXT_TERMS || 80000);
 
 const stopwords = new Set(`
@@ -39,11 +37,15 @@ async function scanDocument(filePath, onToken) {
   }
 }
 
-console.log(`Atlas full text: pass 1/2 over ${documents.length} documents...`);
+console.log(`Atlas full text: single pass over ${documents.length} documents...`);
 const frequencies = new Map();
+const documentCounts = [];
 let processed = 0;
 for (const document of documents) {
-  await scanDocument(document.path, token => frequencies.set(token, (frequencies.get(token) || 0) + 1));
+  const counts = new Map();
+  await scanDocument(document.path, token => counts.set(token, (counts.get(token) || 0) + 1));
+  documentCounts.push(counts);
+  for (const [term, count] of counts) frequencies.set(term, (frequencies.get(term) || 0) + count);
   processed += 1;
   if (processed % 25 === 0) console.log(`  ${processed}/${documents.length}`);
 }
@@ -53,32 +55,51 @@ const selected = new Set([...frequencies.entries()]
   .sort((a, b) => b[1] - a[1])
   .slice(0, maxTerms)
   .map(([term]) => term));
-frequencies.clear();
-
-console.log(`Atlas full text: pass 2/2, ${selected.size} indexed terms...`);
+console.log(`Atlas full text: assembling ${selected.size} indexed terms...`);
 const postings = new Map([...selected].map(term => [term, []]));
-processed = 0;
-for (let docIndex = 0; docIndex < documents.length; docIndex += 1) {
-  const counts = new Map();
-  await scanDocument(documents[docIndex].path, token => {
-    if (selected.has(token)) counts.set(token, (counts.get(token) || 0) + 1);
-  });
-  for (const [term, count] of counts) postings.get(term).push(docIndex, count);
-  processed += 1;
-  if (processed % 25 === 0) console.log(`  ${processed}/${documents.length}`);
+for (let docIndex = 0; docIndex < documentCounts.length; docIndex += 1) {
+  for (const [term, count] of documentCounts[docIndex]) {
+    if (selected.has(term)) postings.get(term).push(docIndex, count);
+  }
 }
+frequencies.clear();
+documentCounts.length = 0;
 
 const terms = Object.fromEntries([...postings.entries()].filter(([, values]) => values.length));
-const payload = {
+const shardKey = term => /^[a-z0-9]$/.test(term[0] || "") ? term[0] : "_";
+const shards = new Map();
+for (const [term, values] of Object.entries(terms)) {
+  const key = shardKey(term);
+  if (!shards.has(key)) shards.set(key, {});
+  shards.get(key)[term] = values;
+}
+
+if (fs.existsSync(outputDir)) fs.rmSync(outputDir, { recursive: true, force: true });
+fs.mkdirSync(outputDir, { recursive: true });
+const shardManifest = {};
+for (const [key, values] of [...shards.entries()].sort(([a], [b]) => a.localeCompare(b))) {
+  const filename = `${key === "_" ? "other" : key}.json.gz`;
+  const target = path.join(outputDir, filename);
+  const payload = Buffer.from(JSON.stringify({ terms: values }), "utf8");
+  fs.writeFileSync(target, zlib.gzipSync(payload, { level: 9 }));
+  shardManifest[key] = {
+    file: `data/search/${filename}`,
+    terms: Object.keys(values).length,
+    bytes: fs.statSync(target).size
+  };
+}
+
+const manifest = {
   meta: {
     version: catalog.meta.dataVersion,
     generatedAt: new Date().toISOString(),
     documents: documents.length,
     terms: Object.keys(terms).length,
-    method: "Inverted index; exact normalized terms; stopwords excluded"
+    method: "Segmented inverted index; exact normalized terms; stopwords excluded"
   },
   documents: documents.map(({ id, title, libraryId }) => ({ id, title, libraryId })),
-  terms
+  shards: shardManifest
 };
-fs.writeFileSync(output, `window.ATLAS_FULLTEXT=${JSON.stringify(payload)};\n`);
-console.log(`Full-text index written: ${output} (${(fs.statSync(output).size / 1048576).toFixed(1)} MB).`);
+fs.writeFileSync(path.join(outputDir, "manifest.json"), `${JSON.stringify(manifest, null, 2)}\n`);
+const totalBytes = Object.values(shardManifest).reduce((sum, shard) => sum + shard.bytes, 0);
+console.log(`Segmented full-text index: ${Object.keys(shardManifest).length} shards, ${(totalBytes / 1048576).toFixed(1)} MB.`);

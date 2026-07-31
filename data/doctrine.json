@@ -133,7 +133,7 @@
   "documents": [
     {
       "id": "doctrine-0001_0005_Biblia_Evangelios_y_Hechos",
-      "contentFile": "data/documents/c9cf7523c472f521c4.js",
+      "contentFile": "data/documents/c9cf7523c472f521c4.json.gz",
       "catalogId": "0001",
       "file": "0001_0005_Biblia_Evangelios_y_Hechos.md",
       "title": "Biblia Evangelios y Hechos",
@@ -157,7 +157,7 @@
     },
     {
       "id": "doctrine-0006_0018_Biblia_Cartas_de_san_Pablo",
-      "contentFile": "data/documents/67ffe2a5ceaacfa329.js",
+      "contentFile": "data/documents/67ffe2a5ceaacfa329.json.gz",
       "catalogId": "0006",
       "file": "0006_0018_Biblia_Cartas_de_san_Pablo.md",
       "title": "Biblia Cartas de san Pablo",
@@ -189,7 +189,7 @@
     },
     {
       "id": "doctrine-0019_0027_Biblia_Cartas_catolicas_y_Apocalipsis",
-      "contentFile": "data/documents/bad85323c5f773b43c.js",
+      "contentFile": "data/documents/bad85323c5f773b43c.json.gz",
       "catalogId": "0019",
       "file": "0019_0027_Biblia_Cartas_catolicas_y_Apocalipsis.md",
       "title": "Biblia Cartas catolicas y Apocalipsis",
@@ -217,7 +217,7 @@
     },
     {
       "id": "doctrine-0028_0032_Biblia_Pentateuco",
-      "contentFile": "data/documents/92f9e67067fa66aaf9.js",
+      "contentFile": "data/documents/92f9e67067fa66aaf9.json.gz",
       "catalogId": "0028",
       "file": "0028_0032_Biblia_Pentateuco.md",
       "title": "Biblia Pentateuco",
@@ -241,7 +241,7 @@
     },
     {
       "id": "doctrine-0033_0048_Biblia_Libros_historicos",
-      "contentFile": "data/documents/fe1f7f6790d2f50b93.js",
+      "contentFile": "data/documents/fe1f7f6790d2f50b93.json.gz",
       "catalogId": "0033",
       "file": "0033_0048_Biblia_Libros_historicos.md",
       "title": "Biblia Libros historicos",
@@ -276,7 +276,7 @@
     },
     {
       "id": "doctrine-0049_0055_Biblia_Libros_sapienciales",
-      "contentFile": "data/documents/3b3b4155881b6dafb6.js",
+      "contentFile": "data/documents/3b3b4155881b6dafb6.json.gz",
       "catalogId": "0049",
       "file": "0049_0055_Biblia_Libros_sapienciales.md",
       "title": "Biblia Libros sapienciales",
@@ -302,7 +302,7 @@
     },
     {
       "id": "doctrine-0056_0073_Biblia_Libros_profeticos",
-      "contentFile": "data/documents/f7b01b19ffc7322e3b.js",
+      "contentFile": "data/documents/f7b01b19ffc7322e3b.json.gz",
       "catalogId": "0056",
       "file": "0056_0073_Biblia_Libros_profeticos.md",
       "title": "Biblia Libros profeticos",
@@ -339,7 +339,7 @@
     },
     {
       "id": "doctrine-0074_Lumen_gentium_ES",
-      "contentFile": "data/documents/06540cc044638e8027.js",
+      "contentFile": "data/documents/06540cc044638e8027.json.gz",
       "catalogId": "0074",
       "file": "0074_Lumen_gentium_ES.md",
       "title": "Lumen gentium",
@@ -359,7 +359,7 @@
     },
     {
       "id": "doctrine-0075_Dei_verbum_ES",
-      "contentFile": "data/documents/0ba7c44e9d61b8fbf2.js",
+      "contentFile": "data/documents/0ba7c44e9d61b8fbf2.json.gz",
       "catalogId": "0075",
       "file": "0075_Dei_verbum_ES.md",
       "title": "Dei verbum",
@@ -379,7 +379,7 @@
     },
     {
       "id": "doctrine-0076_Sacrosanctum_Concilium_ES",
-      "contentFile": "data/documents/ce6ebf44d4c5e95e78.js",
+      "contentFile": "data/documents/ce6ebf44d4c5e95e78.json.gz",
       "catalogId": "0076",
       "file": "0076_Sacrosanctum_Concilium_ES.md",
       "title": "Sacrosanctum Concilium",
@@ -399,7 +399,7 @@
     },
     {
       "id": "doctrine-0077_Gaudium_et_spes_ES",
-      "contentFile": "data/documents/c3c2593801daa95538.js",
+      "contentFile": "data/documents/c3c2593801daa95538.json.gz",
       "catalogId": "0077",
       "file": "0077_Gaudium_et_spes_ES.md",
       "title": "Gaudium et spes",
@@ -419,7 +419,7 @@
     },
     {
       "id": "doctrine-0078_Christus_Dominus_ES",
-      "contentFile": "data/documents/8908cabcadf83e304a.js",
+      "contentFile": "data/documents/8908cabcadf83e304a.json.gz",
       "catalogId": "0078",
       "file": "0078_Christus_Dominus_ES.md",
       "title": "Christus Dominus",
@@ -439,7 +439,7 @@
     },
     {
       "id": "doctrine-0079_Presbyterorum_Ordinis_ES",
-      "contentFile": "data/documents/655ba1cda861bcc910.js",
+      "contentFile": "data/documents/655ba1cda861bcc910.json.gz",
       "catalogId": "0079",
       "file": "0079_Presbyterorum_Ordinis_ES.md",
       "title": "Presbyterorum Ordinis",
@@ -459,7 +459,7 @@
     },
     {
       "id": "doctrine-0080_Optatam_totius_ES",
-      "contentFile": "data/documents/c8766421c9df73c4ee.js",
+      "contentFile": "data/documents/c8766421c9df73c4ee.json.gz",
       "catalogId": "0080",
       "file": "0080_Optatam_totius_ES.md",
       "title": "Optatam totius",
@@ -479,7 +479,7 @@
     },
     {
       "id": "doctrine-0081_Perfectae_caritatis_ES",
-      "contentFile": "data/documents/fefb960aae5e9d89d4.js",
+      "contentFile": "data/documents/fefb960aae5e9d89d4.json.gz",
       "catalogId": "0081",
       "file": "0081_Perfectae_caritatis_ES.md",
       "title": "Perfectae caritatis",
@@ -499,7 +499,7 @@
     },
     {
       "id": "doctrine-0082_Apostolicam_actuositatem_ES",
-      "contentFile": "data/documents/5eecc706f7697e0138.js",
+      "contentFile": "data/documents/5eecc706f7697e0138.json.gz",
       "catalogId": "0082",
       "file": "0082_Apostolicam_actuositatem_ES.md",
       "title": "Apostolicam actuositatem",
@@ -519,7 +519,7 @@
     },
     {
       "id": "doctrine-0083_Ad_gentes_ES",
-      "contentFile": "data/documents/d644385116def72c6f.js",
+      "contentFile": "data/documents/d644385116def72c6f.json.gz",
       "catalogId": "0083",
       "file": "0083_Ad_gentes_ES.md",
       "title": "Ad gentes",
@@ -539,7 +539,7 @@
     },
     {
       "id": "doctrine-0084_Unitatis_redintegratio_ES",
-      "contentFile": "data/documents/a9d19998b9679e0056.js",
+      "contentFile": "data/documents/a9d19998b9679e0056.json.gz",
       "catalogId": "0084",
       "file": "0084_Unitatis_redintegratio_ES.md",
       "title": "Unitatis redintegratio",
@@ -559,7 +559,7 @@
     },
     {
       "id": "doctrine-0085_Orientalium_Ecclesiarum_ES",
-      "contentFile": "data/documents/51f7ee658d233f8e8a.js",
+      "contentFile": "data/documents/51f7ee658d233f8e8a.json.gz",
       "catalogId": "0085",
       "file": "0085_Orientalium_Ecclesiarum_ES.md",
       "title": "Orientalium Ecclesiarum",
@@ -579,7 +579,7 @@
     },
     {
       "id": "doctrine-0086_Inter_mirifica_ES",
-      "contentFile": "data/documents/2c627bf8a5a6a22aea.js",
+      "contentFile": "data/documents/2c627bf8a5a6a22aea.json.gz",
       "catalogId": "0086",
       "file": "0086_Inter_mirifica_ES.md",
       "title": "Inter mirifica",
@@ -599,7 +599,7 @@
     },
     {
       "id": "doctrine-0087_Dignitatis_humanae_ES",
-      "contentFile": "data/documents/24f053782a5e54466b.js",
+      "contentFile": "data/documents/24f053782a5e54466b.json.gz",
       "catalogId": "0087",
       "file": "0087_Dignitatis_humanae_ES.md",
       "title": "Dignitatis humanae",
@@ -619,7 +619,7 @@
     },
     {
       "id": "doctrine-0088_Nostra_aetate_ES",
-      "contentFile": "data/documents/f23a960a343d370432.js",
+      "contentFile": "data/documents/f23a960a343d370432.json.gz",
       "catalogId": "0088",
       "file": "0088_Nostra_aetate_ES.md",
       "title": "Nostra aetate",
@@ -639,7 +639,7 @@
     },
     {
       "id": "doctrine-0089_Gravissimum_educationis_ES",
-      "contentFile": "data/documents/08aecb4630a0d93c0b.js",
+      "contentFile": "data/documents/08aecb4630a0d93c0b.json.gz",
       "catalogId": "0089",
       "file": "0089_Gravissimum_educationis_ES.md",
       "title": "Gravissimum educationis",
@@ -659,7 +659,7 @@
     },
     {
       "id": "doctrine-0091_Catecismo_Iglesia_Catol",
-      "contentFile": "data/documents/d84c87c6b96f9696ab.js",
+      "contentFile": "data/documents/d84c87c6b96f9696ab.json.gz",
       "catalogId": "0091",
       "file": "0091_Catecismo_Iglesia_Catol.md",
       "title": "Catecismo Iglesia Catol",
@@ -679,7 +679,7 @@
     },
     {
       "id": "doctrine-0104_Ep_Bernabe",
-      "contentFile": "data/documents/ae2ac7d3d3812a46d1.js",
+      "contentFile": "data/documents/ae2ac7d3d3812a46d1.json.gz",
       "catalogId": "0104",
       "file": "0104_Ep_Bernabe.md",
       "title": "Ep Bernabe",
@@ -699,7 +699,7 @@
     },
     {
       "id": "doctrine-0105_Clemente_ES",
-      "contentFile": "data/documents/83d4d4e86600cdd6ef.js",
+      "contentFile": "data/documents/83d4d4e86600cdd6ef.json.gz",
       "catalogId": "0105",
       "file": "0105_Clemente_ES.md",
       "title": "Clemente",
@@ -719,7 +719,7 @@
     },
     {
       "id": "doctrine-0106_SECUNDA_CLEMENTIS",
-      "contentFile": "data/documents/c13c75e95ecd2fbd97.js",
+      "contentFile": "data/documents/c13c75e95ecd2fbd97.json.gz",
       "catalogId": "0106",
       "file": "0106_SECUNDA_CLEMENTIS.md",
       "title": "SECUNDA CLEMENTIS",
@@ -739,7 +739,7 @@
     },
     {
       "id": "doctrine-0107_Didache_ES",
-      "contentFile": "data/documents/ec6eed2692a2db657c.js",
+      "contentFile": "data/documents/ec6eed2692a2db657c.json.gz",
       "catalogId": "0107",
       "file": "0107_Didache_ES.md",
       "title": "Didache",
@@ -759,7 +759,7 @@
     },
     {
       "id": "doctrine-0108_Diogneto_ES",
-      "contentFile": "data/documents/ed9f2df263f2f432e0.js",
+      "contentFile": "data/documents/ed9f2df263f2f432e0.json.gz",
       "catalogId": "0108",
       "file": "0108_Diogneto_ES.md",
       "title": "Diogneto",
@@ -779,7 +779,7 @@
     },
     {
       "id": "doctrine-0109_0115_San_Ignacio_de_Antioquia_Cartas",
-      "contentFile": "data/documents/d4202a7369a8b62032.js",
+      "contentFile": "data/documents/d4202a7369a8b62032.json.gz",
       "catalogId": "0109",
       "file": "0109_0115_San_Ignacio_de_Antioquia_Cartas.md",
       "title": "San Ignacio de Antioquia Cartas",
@@ -805,7 +805,7 @@
     },
     {
       "id": "doctrine-0117_Hermas_ES",
-      "contentFile": "data/documents/94ba9caa2ea1a5b55d.js",
+      "contentFile": "data/documents/94ba9caa2ea1a5b55d.json.gz",
       "catalogId": "0117",
       "file": "0117_Hermas_ES.md",
       "title": "Hermas",
@@ -825,7 +825,7 @@
     },
     {
       "id": "doctrine-0118_Policarpo_Fil_ES",
-      "contentFile": "data/documents/47b37e8f499c23b2cb.js",
+      "contentFile": "data/documents/47b37e8f499c23b2cb.json.gz",
       "catalogId": "0118",
       "file": "0118_Policarpo_Fil_ES.md",
       "title": "Policarpo Fil",
@@ -845,7 +845,7 @@
     },
     {
       "id": "doctrine-0119_Poicarpo_martirio",
-      "contentFile": "data/documents/0156a191909a100cf3.js",
+      "contentFile": "data/documents/0156a191909a100cf3.json.gz",
       "catalogId": "0119",
       "file": "0119_Poicarpo_martirio.md",
       "title": "Poicarpo martirio",
@@ -865,7 +865,7 @@
     },
     {
       "id": "doctrine-0120_San_Atanasio_ES",
-      "contentFile": "data/documents/97ef662ca95a0f804f.js",
+      "contentFile": "data/documents/97ef662ca95a0f804f.json.gz",
       "catalogId": "0120",
       "file": "0120_San_Atanasio_ES.md",
       "title": "San Atanasio",
@@ -885,7 +885,7 @@
     },
     {
       "id": "doctrine-0121_Basilio_ES",
-      "contentFile": "data/documents/3502cf46d64eed22ea.js",
+      "contentFile": "data/documents/3502cf46d64eed22ea.json.gz",
       "catalogId": "0121",
       "file": "0121_Basilio_ES.md",
       "title": "Basilio",
@@ -905,7 +905,7 @@
     },
     {
       "id": "doctrine-0122_Cirilo_ES",
-      "contentFile": "data/documents/6c6380e49a06afda8a.js",
+      "contentFile": "data/documents/6c6380e49a06afda8a.json.gz",
       "catalogId": "0122",
       "file": "0122_Cirilo_ES.md",
       "title": "Cirilo",
@@ -925,7 +925,7 @@
     },
     {
       "id": "doctrine-0146_Agustin_Confesiones",
-      "contentFile": "data/documents/c56da1b8f44726ba36.js",
+      "contentFile": "data/documents/c56da1b8f44726ba36.json.gz",
       "catalogId": "0146",
       "file": "0146_Agustin_Confesiones.md",
       "title": "Agustin Confesiones",
@@ -945,7 +945,7 @@
     },
     {
       "id": "doctrine-0147_Augustin_de_la_Foi_Esperance_et_Charite",
-      "contentFile": "data/documents/a4b0fea406f2ea5025.js",
+      "contentFile": "data/documents/a4b0fea406f2ea5025.json.gz",
       "catalogId": "0147",
       "file": "0147_Augustin_de_la_Foi_Esperance_et_Charite.md",
       "title": "Augustin de la Foi Esperance et Charite",
@@ -965,7 +965,7 @@
     },
     {
       "id": "doctrine-0157_Augustin_du_Bapteme",
-      "contentFile": "data/documents/bad91eb97ff9813f84.js",
+      "contentFile": "data/documents/bad91eb97ff9813f84.json.gz",
       "catalogId": "0157",
       "file": "0157_Augustin_du_Bapteme.md",
       "title": "Augustin du Bapteme",
@@ -985,7 +985,7 @@
     },
     {
       "id": "doctrine-0158_Augustin_Catechisme",
-      "contentFile": "data/documents/aa56e5036d6e60871b.js",
+      "contentFile": "data/documents/aa56e5036d6e60871b.json.gz",
       "catalogId": "0158",
       "file": "0158_Augustin_Catechisme.md",
       "title": "Augustin Catechisme",
@@ -1005,7 +1005,7 @@
     },
     {
       "id": "doctrine-0159_Augustin_Cite_de_Dieu_parte_01",
-      "contentFile": "data/documents/cdcf038d79467aaa96.js",
+      "contentFile": "data/documents/cdcf038d79467aaa96.json.gz",
       "catalogId": "0159",
       "file": "0159_Augustin_Cite_de_Dieu_parte_01.md",
       "title": "Augustin Cite de Dieu",
@@ -1025,7 +1025,7 @@
     },
     {
       "id": "doctrine-0159_Augustin_Cite_de_Dieu_parte_02",
-      "contentFile": "data/documents/3fa2d15aef37a4f1ba.js",
+      "contentFile": "data/documents/3fa2d15aef37a4f1ba.json.gz",
       "catalogId": "0159",
       "file": "0159_Augustin_Cite_de_Dieu_parte_02.md",
       "title": "Augustin Cite de Dieu",
@@ -1045,7 +1045,7 @@
     },
     {
       "id": "doctrine-0160_Augustin_de_la_foi",
-      "contentFile": "data/documents/b7f5d984895fa2795f.js",
+      "contentFile": "data/documents/b7f5d984895fa2795f.json.gz",
       "catalogId": "0160",
       "file": "0160_Augustin_de_la_foi.md",
       "title": "Augustin de la foi",
@@ -1065,7 +1065,7 @@
     },
     {
       "id": "doctrine-0161_Augustin_de_la_grace_I_et_II",
-      "contentFile": "data/documents/c6b6cfd628d125e97e.js",
+      "contentFile": "data/documents/c6b6cfd628d125e97e.json.gz",
       "catalogId": "0161",
       "file": "0161_Augustin_de_la_grace_I_et_II.md",
       "title": "Augustin de la grace I et II",
@@ -1085,7 +1085,7 @@
     },
     {
       "id": "doctrine-0163_Augustin_du_libre_arbitre",
-      "contentFile": "data/documents/c6758598d32f0530a0.js",
+      "contentFile": "data/documents/c6758598d32f0530a0.json.gz",
       "catalogId": "0163",
       "file": "0163_Augustin_du_libre_arbitre.md",
       "title": "Augustin du libre arbitre",
@@ -1105,7 +1105,7 @@
     },
     {
       "id": "doctrine-0164_Augustin_du_merite_I_II_III",
-      "contentFile": "data/documents/39b6439a18e0316019.js",
+      "contentFile": "data/documents/39b6439a18e0316019.json.gz",
       "catalogId": "0164",
       "file": "0164_Augustin_du_merite_I_II_III.md",
       "title": "Augustin du merite I II III",
@@ -1125,7 +1125,7 @@
     },
     {
       "id": "doctrine-0168_Augustin_Trinite",
-      "contentFile": "data/documents/35f4b2dc57e14cc3ef.js",
+      "contentFile": "data/documents/35f4b2dc57e14cc3ef.json.gz",
       "catalogId": "0168",
       "file": "0168_Augustin_Trinite.md",
       "title": "Augustin Trinite",
@@ -1145,7 +1145,7 @@
     },
     {
       "id": "doctrine-0175_Augustin_du_symbole",
-      "contentFile": "data/documents/d27d0212a4a90a2099.js",
+      "contentFile": "data/documents/d27d0212a4a90a2099.json.gz",
       "catalogId": "0175",
       "file": "0175_Augustin_du_symbole.md",
       "title": "Augustin du symbole",
@@ -1165,7 +1165,7 @@
     },
     {
       "id": "doctrine-0182_Augustin_des_moeurs",
-      "contentFile": "data/documents/e8c438758ddb7177c0.js",
+      "contentFile": "data/documents/e8c438758ddb7177c0.json.gz",
       "catalogId": "0182",
       "file": "0182_Augustin_des_moeurs.md",
       "title": "Augustin des moeurs",
@@ -1185,7 +1185,7 @@
     },
     {
       "id": "doctrine-0183_Augustin_vraie_religion",
-      "contentFile": "data/documents/94f52f542245706849.js",
+      "contentFile": "data/documents/94f52f542245706849.json.gz",
       "catalogId": "0183",
       "file": "0183_Augustin_vraie_religion.md",
       "title": "Augustin vraie religion",
@@ -1205,7 +1205,7 @@
     },
     {
       "id": "doctrine-0194_Augustin_nature_du_bien",
-      "contentFile": "data/documents/0206c0b129993b7f95.js",
+      "contentFile": "data/documents/0206c0b129993b7f95.json.gz",
       "catalogId": "0194",
       "file": "0194_Augustin_nature_du_bien.md",
       "title": "Augustin nature du bien",
@@ -1225,7 +1225,7 @@
     },
     {
       "id": "doctrine-0206_Augustin_de_la_nature_et_de_la_grace",
-      "contentFile": "data/documents/f675e5924c39162a8e.js",
+      "contentFile": "data/documents/f675e5924c39162a8e.json.gz",
       "catalogId": "0206",
       "file": "0206_Augustin_de_la_nature_et_de_la_grace.md",
       "title": "Augustin de la nature et de la grace",
@@ -1245,7 +1245,7 @@
     },
     {
       "id": "doctrine-0207_Augustin_de_la_correction_et_de_la_grace",
-      "contentFile": "data/documents/dd1f254eb801efea6f.js",
+      "contentFile": "data/documents/dd1f254eb801efea6f.json.gz",
       "catalogId": "0207",
       "file": "0207_Augustin_de_la_correction_et_de_la_grace.md",
       "title": "Augustin de la correction et de la grace",
@@ -1265,7 +1265,7 @@
     },
     {
       "id": "doctrine-0208_Augustin_de_la_predestination_des_Saints",
-      "contentFile": "data/documents/b59803a6bf8fd1c234.js",
+      "contentFile": "data/documents/b59803a6bf8fd1c234.json.gz",
       "catalogId": "0208",
       "file": "0208_Augustin_de_la_predestination_des_Saints.md",
       "title": "Augustin de la predestination des Saints",
@@ -1285,7 +1285,7 @@
     },
     {
       "id": "doctrine-0209_Augustin_du_don_de_la_perseverance",
-      "contentFile": "data/documents/f6be063a73cc8de0a4.js",
+      "contentFile": "data/documents/f6be063a73cc8de0a4.json.gz",
       "catalogId": "0209",
       "file": "0209_Augustin_du_don_de_la_perseverance.md",
       "title": "Augustin du don de la perseverance",
@@ -1305,7 +1305,7 @@
     },
     {
       "id": "doctrine-0210_Augustin_de_l_esprit_et_de_la_lettre",
-      "contentFile": "data/documents/8a2e54b8c3697de887.js",
+      "contentFile": "data/documents/8a2e54b8c3697de887.json.gz",
       "catalogId": "0210",
       "file": "0210_Augustin_de_l_esprit_et_de_la_lettre.md",
       "title": "Augustin de l esprit et de la lettre",
@@ -1325,7 +1325,7 @@
     },
     {
       "id": "doctrine-0221_CRISOSTOMO_SACERDOCIO",
-      "contentFile": "data/documents/1adb75b04bd2c912ab.js",
+      "contentFile": "data/documents/1adb75b04bd2c912ab.json.gz",
       "catalogId": "0221",
       "file": "0221_CRISOSTOMO_SACERDOCIO.md",
       "title": "CRISOSTOMO SACERDOCIO",
@@ -1345,7 +1345,7 @@
     },
     {
       "id": "doctrine-0229_Origenes_contra_Celso",
-      "contentFile": "data/documents/8884c999540088a0bd.js",
+      "contentFile": "data/documents/8884c999540088a0bd.json.gz",
       "catalogId": "0229",
       "file": "0229_Origenes_contra_Celso.md",
       "title": "Origenes contra Celso",
@@ -1365,7 +1365,7 @@
     },
     {
       "id": "doctrine-0233_Ireneo_Contra_herejes",
-      "contentFile": "data/documents/66fcfd18e8ea765d7f.js",
+      "contentFile": "data/documents/66fcfd18e8ea765d7f.json.gz",
       "catalogId": "0233",
       "file": "0233_Ireneo_Contra_herejes.md",
       "title": "Ireneo Contra herejes",
@@ -1385,7 +1385,7 @@
     },
     {
       "id": "doctrine-0234_Cipriano_ES",
-      "contentFile": "data/documents/9d28bf02174a81ed38.js",
+      "contentFile": "data/documents/9d28bf02174a81ed38.json.gz",
       "catalogId": "0234",
       "file": "0234_Cipriano_ES.md",
       "title": "Cipriano",
@@ -1405,7 +1405,7 @@
     },
     {
       "id": "doctrine-0235_Ireneo_Epideixis",
-      "contentFile": "data/documents/714f8b7ebea4e624cc.js",
+      "contentFile": "data/documents/714f8b7ebea4e624cc.json.gz",
       "catalogId": "0235",
       "file": "0235_Ireneo_Epideixis.md",
       "title": "Ireneo Epideixis",
@@ -1425,7 +1425,7 @@
     },
     {
       "id": "doctrine-0250_Introduccion_vida_devota",
-      "contentFile": "data/documents/d7c0422c9aa90ab3f5.js",
+      "contentFile": "data/documents/d7c0422c9aa90ab3f5.json.gz",
       "catalogId": "0250",
       "file": "0250_Introduccion_vida_devota.md",
       "title": "Introduccion vida devota",
@@ -1445,7 +1445,7 @@
     },
     {
       "id": "doctrine-0255_Audi_filia_et_vide_Juan_de_Avila",
-      "contentFile": "data/documents/6cf67e7f2fe7eed68a.js",
+      "contentFile": "data/documents/6cf67e7f2fe7eed68a.json.gz",
       "catalogId": "0255",
       "file": "0255_Audi_filia_et_vide_Juan_de_Avila.md",
       "title": "Audi filia et vide Juan de Avila",
@@ -1465,7 +1465,7 @@
     },
     {
       "id": "doctrine-0256_0258_San_Juan_de_la_Cruz_Subida_del_Monte_Carmelo",
-      "contentFile": "data/documents/fdbfd68f409ebf3c2b.js",
+      "contentFile": "data/documents/fdbfd68f409ebf3c2b.json.gz",
       "catalogId": "0256",
       "file": "0256_0258_San_Juan_de_la_Cruz_Subida_del_Monte_Carmelo.md",
       "title": "San Juan de la Cruz Subida del Monte Carmelo",
@@ -1487,7 +1487,7 @@
     },
     {
       "id": "doctrine-0259_0260_San_Juan_de_la_Cruz_Noche_oscura",
-      "contentFile": "data/documents/b6f945f4a7117ed359.js",
+      "contentFile": "data/documents/b6f945f4a7117ed359.json.gz",
       "catalogId": "0259",
       "file": "0259_0260_San_Juan_de_la_Cruz_Noche_oscura.md",
       "title": "San Juan de la Cruz Noche oscura",
@@ -1508,7 +1508,7 @@
     },
     {
       "id": "doctrine-0261_0262_San_Juan_de_la_Cruz_Llama_de_amor_viva",
-      "contentFile": "data/documents/2f0e8f0ccff8501c03.js",
+      "contentFile": "data/documents/2f0e8f0ccff8501c03.json.gz",
       "catalogId": "0261",
       "file": "0261_0262_San_Juan_de_la_Cruz_Llama_de_amor_viva.md",
       "title": "San Juan de la Cruz Llama de amor viva",
@@ -1529,7 +1529,7 @@
     },
     {
       "id": "doctrine-0263_0264_San_Juan_de_la_Cruz_Cantico_espiritual",
-      "contentFile": "data/documents/b7c5caf7383a87f02e.js",
+      "contentFile": "data/documents/b7c5caf7383a87f02e.json.gz",
       "catalogId": "0263",
       "file": "0263_0264_San_Juan_de_la_Cruz_Cantico_espiritual.md",
       "title": "San Juan de la Cruz Cantico espiritual",
@@ -1550,7 +1550,7 @@
     },
     {
       "id": "doctrine-0265_0271_Santa_Teresa_Las_Moradas",
-      "contentFile": "data/documents/269e8820731ddb6176.js",
+      "contentFile": "data/documents/269e8820731ddb6176.json.gz",
       "catalogId": "0265",
       "file": "0265_0271_Santa_Teresa_Las_Moradas.md",
       "title": "Santa Teresa Las Moradas",
@@ -1576,7 +1576,7 @@
     },
     {
       "id": "doctrine-0272_Camino_de_Perfeccion",
-      "contentFile": "data/documents/c3772df30150ef80c2.js",
+      "contentFile": "data/documents/c3772df30150ef80c2.json.gz",
       "catalogId": "0272",
       "file": "0272_Camino_de_Perfeccion.md",
       "title": "Camino de Perfeccion",
@@ -1596,7 +1596,7 @@
     },
     {
       "id": "doctrine-0274_Libro_de_la_Vida",
-      "contentFile": "data/documents/23a54c24da4bc9aeb1.js",
+      "contentFile": "data/documents/23a54c24da4bc9aeb1.json.gz",
       "catalogId": "0274",
       "file": "0274_Libro_de_la_Vida.md",
       "title": "Libro de la Vida",
@@ -1616,7 +1616,7 @@
     },
     {
       "id": "doctrine-0277_Belarmino_las_7_Palabras",
-      "contentFile": "data/documents/025538951c275dce26.js",
+      "contentFile": "data/documents/025538951c275dce26.json.gz",
       "catalogId": "0277",
       "file": "0277_Belarmino_las_7_Palabras.md",
       "title": "Belarmino las 7 Palabras",
@@ -1636,7 +1636,7 @@
     },
     {
       "id": "doctrine-0278_Catherine_Dialogue",
-      "contentFile": "data/documents/3b4183f2c1c4b66520.js",
+      "contentFile": "data/documents/3b4183f2c1c4b66520.json.gz",
       "catalogId": "0278",
       "file": "0278_Catherine_Dialogue.md",
       "title": "Catherine Dialogue",
@@ -1656,7 +1656,7 @@
     },
     {
       "id": "doctrine-0290_Bernard_degres_humilite",
-      "contentFile": "data/documents/0e2c9eb4df67c6a561.js",
+      "contentFile": "data/documents/0e2c9eb4df67c6a561.json.gz",
       "catalogId": "0290",
       "file": "0290_Bernard_degres_humilite.md",
       "title": "Bernard degres humilite",
@@ -1676,7 +1676,7 @@
     },
     {
       "id": "doctrine-0291_Bernard_Amour_de_Dieu",
-      "contentFile": "data/documents/70c026899c993745ad.js",
+      "contentFile": "data/documents/70c026899c993745ad.json.gz",
       "catalogId": "0291",
       "file": "0291_Bernard_Amour_de_Dieu.md",
       "title": "Bernard Amour de Dieu",
@@ -1696,7 +1696,7 @@
     },
     {
       "id": "doctrine-0297_Kempis_Imitacion_de_Cristo",
-      "contentFile": "data/documents/7ece6d4b3e26bfa557.js",
+      "contentFile": "data/documents/7ece6d4b3e26bfa557.json.gz",
       "catalogId": "0297",
       "file": "0297_Kempis_Imitacion_de_Cristo.md",
       "title": "Kempis Imitacion de Cristo",
@@ -1716,7 +1716,7 @@
     },
     {
       "id": "doctrine-0306_Suma_Teologica_I",
-      "contentFile": "data/documents/cbea12e60966b9ff9d.js",
+      "contentFile": "data/documents/cbea12e60966b9ff9d.json.gz",
       "catalogId": "0306",
       "file": "0306_Suma_Teologica_I.md",
       "title": "Suma Teologica I",
@@ -1736,7 +1736,7 @@
     },
     {
       "id": "doctrine-0307_Suma_Teologica_I_II_parte_01",
-      "contentFile": "data/documents/e3c237a72f8f5edcaa.js",
+      "contentFile": "data/documents/e3c237a72f8f5edcaa.json.gz",
       "catalogId": "0307",
       "file": "0307_Suma_Teologica_I_II_parte_01.md",
       "title": "Suma Teologica I II",
@@ -1756,7 +1756,7 @@
     },
     {
       "id": "doctrine-0307_Suma_Teologica_I_II_parte_02",
-      "contentFile": "data/documents/b460aaf2b82ba64e04.js",
+      "contentFile": "data/documents/b460aaf2b82ba64e04.json.gz",
       "catalogId": "0307",
       "file": "0307_Suma_Teologica_I_II_parte_02.md",
       "title": "Suma Teologica I II",
@@ -1776,7 +1776,7 @@
     },
     {
       "id": "doctrine-0308_Suma_Teologica_II_II_parte_01",
-      "contentFile": "data/documents/6bf9b3da4589fc3d5c.js",
+      "contentFile": "data/documents/6bf9b3da4589fc3d5c.json.gz",
       "catalogId": "0308",
       "file": "0308_Suma_Teologica_II_II_parte_01.md",
       "title": "Suma Teologica II II",
@@ -1796,7 +1796,7 @@
     },
     {
       "id": "doctrine-0308_Suma_Teologica_II_II_parte_02",
-      "contentFile": "data/documents/b68980a3ae9b34dc9c.js",
+      "contentFile": "data/documents/b68980a3ae9b34dc9c.json.gz",
       "catalogId": "0308",
       "file": "0308_Suma_Teologica_II_II_parte_02.md",
       "title": "Suma Teologica II II",
@@ -1816,7 +1816,7 @@
     },
     {
       "id": "doctrine-0309_Suma_Teologica_III",
-      "contentFile": "data/documents/b37127b7dc87251c11.js",
+      "contentFile": "data/documents/b37127b7dc87251c11.json.gz",
       "catalogId": "0309",
       "file": "0309_Suma_Teologica_III.md",
       "title": "Suma Teologica III",
@@ -1836,7 +1836,7 @@
     },
     {
       "id": "doctrine-0310_Summa_Contra_Gentiles",
-      "contentFile": "data/documents/91ec1832ff34aa3079.js",
+      "contentFile": "data/documents/91ec1832ff34aa3079.json.gz",
       "catalogId": "0310",
       "file": "0310_Summa_Contra_Gentiles.md",
       "title": "Summa Contra Gentiles",
@@ -1856,7 +1856,7 @@
     },
     {
       "id": "doctrine-0311_COMPENDIO_DE_TEOLOGIA",
-      "contentFile": "data/documents/ec1403f1439663bb53.js",
+      "contentFile": "data/documents/ec1403f1439663bb53.json.gz",
       "catalogId": "0311",
       "file": "0311_COMPENDIO_DE_TEOLOGIA.md",
       "title": "COMPENDIO DE TEOLOGIA",
@@ -1876,7 +1876,7 @@
     },
     {
       "id": "doctrine-0312_El_Decalogo",
-      "contentFile": "data/documents/b2714a4568de9e23e1.js",
+      "contentFile": "data/documents/b2714a4568de9e23e1.json.gz",
       "catalogId": "0312",
       "file": "0312_El_Decalogo.md",
       "title": "El Decalogo",
@@ -1896,7 +1896,7 @@
     },
     {
       "id": "doctrine-0313_Questions_quodlibetales",
-      "contentFile": "data/documents/a9b6893618eebbc8dc.js",
+      "contentFile": "data/documents/a9b6893618eebbc8dc.json.gz",
       "catalogId": "0313",
       "file": "0313_Questions_quodlibetales.md",
       "title": "Questions quodlibetales",
@@ -1916,7 +1916,7 @@
     },
     {
       "id": "doctrine-0329_Vaticano_I",
-      "contentFile": "data/documents/494b1405ea49dc7e5f.js",
+      "contentFile": "data/documents/494b1405ea49dc7e5f.json.gz",
       "catalogId": "0329",
       "file": "0329_Vaticano_I.md",
       "title": "Vaticano I",
@@ -1936,7 +1936,7 @@
     },
     {
       "id": "doctrine-0330_TRENTO",
-      "contentFile": "data/documents/6cb7490e6414d1a297.js",
+      "contentFile": "data/documents/6cb7490e6414d1a297.json.gz",
       "catalogId": "0330",
       "file": "0330_TRENTO.md",
       "title": "TRENTO",
@@ -1956,7 +1956,7 @@
     },
     {
       "id": "doctrine-0332_Denzinger_parte_01",
-      "contentFile": "data/documents/cb9bcf3051b14badae.js",
+      "contentFile": "data/documents/cb9bcf3051b14badae.json.gz",
       "catalogId": "0332",
       "file": "0332_Denzinger_parte_01.md",
       "title": "Denzinger",
@@ -1976,7 +1976,7 @@
     },
     {
       "id": "doctrine-0332_Denzinger_parte_02",
-      "contentFile": "data/documents/62b5bd038b2c5da641.js",
+      "contentFile": "data/documents/62b5bd038b2c5da641.json.gz",
       "catalogId": "0332",
       "file": "0332_Denzinger_parte_02.md",
       "title": "Denzinger",
@@ -1996,7 +1996,7 @@
     },
     {
       "id": "doctrine-0332_Denzinger_parte_03",
-      "contentFile": "data/documents/4c883a3d2205456a84.js",
+      "contentFile": "data/documents/4c883a3d2205456a84.json.gz",
       "catalogId": "0332",
       "file": "0332_Denzinger_parte_03.md",
       "title": "Denzinger",
@@ -2016,7 +2016,7 @@
     },
     {
       "id": "doctrine-0334_Laudato_Si_ES",
-      "contentFile": "data/documents/bb185644914b5de830.js",
+      "contentFile": "data/documents/bb185644914b5de830.json.gz",
       "catalogId": "0334",
       "file": "0334_Laudato_Si_ES.md",
       "title": "Laudato Si",
@@ -2036,7 +2036,7 @@
     },
     {
       "id": "doctrine-0335_Lumen_fidei_ES",
-      "contentFile": "data/documents/bccc61aa5f0f0388f6.js",
+      "contentFile": "data/documents/bccc61aa5f0f0388f6.json.gz",
       "catalogId": "0335",
       "file": "0335_Lumen_fidei_ES.md",
       "title": "Lumen fidei",
@@ -2056,7 +2056,7 @@
     },
     {
       "id": "doctrine-0336_Caritas_in_veritate_ES",
-      "contentFile": "data/documents/f7898d0e0771c2d953.js",
+      "contentFile": "data/documents/f7898d0e0771c2d953.json.gz",
       "catalogId": "0336",
       "file": "0336_Caritas_in_veritate_ES.md",
       "title": "Caritas in veritate",
@@ -2076,7 +2076,7 @@
     },
     {
       "id": "doctrine-0337_Deus_caritas_est_ES",
-      "contentFile": "data/documents/7502c9671ec7d94bb6.js",
+      "contentFile": "data/documents/7502c9671ec7d94bb6.json.gz",
       "catalogId": "0337",
       "file": "0337_Deus_caritas_est_ES.md",
       "title": "Deus caritas est",
@@ -2096,7 +2096,7 @@
     },
     {
       "id": "doctrine-0338_Spe_salvi_ES",
-      "contentFile": "data/documents/ef33c009c77ecfe282.js",
+      "contentFile": "data/documents/ef33c009c77ecfe282.json.gz",
       "catalogId": "0338",
       "file": "0338_Spe_salvi_ES.md",
       "title": "Spe salvi",
@@ -2116,7 +2116,7 @@
     },
     {
       "id": "doctrine-0339_Centesimus_annus_ES",
-      "contentFile": "data/documents/dfeb4ce84d879bbffd.js",
+      "contentFile": "data/documents/dfeb4ce84d879bbffd.json.gz",
       "catalogId": "0339",
       "file": "0339_Centesimus_annus_ES.md",
       "title": "Centesimus annus",
@@ -2136,7 +2136,7 @@
     },
     {
       "id": "doctrine-0340_Dominum_et_vivificantem_ES",
-      "contentFile": "data/documents/1e69ba93d6851d4583.js",
+      "contentFile": "data/documents/1e69ba93d6851d4583.json.gz",
       "catalogId": "0340",
       "file": "0340_Dominum_et_vivificantem_ES.md",
       "title": "Dominum et vivificantem",
@@ -2156,7 +2156,7 @@
     },
     {
       "id": "doctrine-0341_1980_Dives_in_misericordia_ES",
-      "contentFile": "data/documents/02229953c5496800a3.js",
+      "contentFile": "data/documents/02229953c5496800a3.json.gz",
       "catalogId": "0341",
       "file": "0341_1980_Dives_in_misericordia_ES.md",
       "title": "Dives in misericordia",
@@ -2176,7 +2176,7 @@
     },
     {
       "id": "doctrine-0342_Laborem_exercens_ES",
-      "contentFile": "data/documents/15ae4b9ebd405956f7.js",
+      "contentFile": "data/documents/15ae4b9ebd405956f7.json.gz",
       "catalogId": "0342",
       "file": "0342_Laborem_exercens_ES.md",
       "title": "Laborem exercens",
@@ -2196,7 +2196,7 @@
     },
     {
       "id": "doctrine-0343_Redemptor_hominis_ES",
-      "contentFile": "data/documents/149a512bd2ae524093.js",
+      "contentFile": "data/documents/149a512bd2ae524093.json.gz",
       "catalogId": "0343",
       "file": "0343_Redemptor_hominis_ES.md",
       "title": "Redemptor hominis",
@@ -2216,7 +2216,7 @@
     },
     {
       "id": "doctrine-0344_Redemptoris_Mater_ES",
-      "contentFile": "data/documents/9cd1638afbd347c01b.js",
+      "contentFile": "data/documents/9cd1638afbd347c01b.json.gz",
       "catalogId": "0344",
       "file": "0344_Redemptoris_Mater_ES.md",
       "title": "Redemptoris Mater",
@@ -2236,7 +2236,7 @@
     },
     {
       "id": "doctrine-0345_1987_Sollicitudo_rei_socialis_ES",
-      "contentFile": "data/documents/85897087369bb186a3.js",
+      "contentFile": "data/documents/85897087369bb186a3.json.gz",
       "catalogId": "0345",
       "file": "0345_1987_Sollicitudo_rei_socialis_ES.md",
       "title": "Sollicitudo rei socialis",
@@ -2256,7 +2256,7 @@
     },
     {
       "id": "doctrine-0346_Evangelium_vitae_ES",
-      "contentFile": "data/documents/8436324494496118cc.js",
+      "contentFile": "data/documents/8436324494496118cc.json.gz",
       "catalogId": "0346",
       "file": "0346_Evangelium_vitae_ES.md",
       "title": "Evangelium vitae",
@@ -2276,7 +2276,7 @@
     },
     {
       "id": "doctrine-0348_Veritatis_splendor_ES",
-      "contentFile": "data/documents/562b6ca3f1cdabd889.js",
+      "contentFile": "data/documents/562b6ca3f1cdabd889.json.gz",
       "catalogId": "0348",
       "file": "0348_Veritatis_splendor_ES.md",
       "title": "Veritatis splendor",
@@ -2296,7 +2296,7 @@
     },
     {
       "id": "doctrine-0349_Fides_et_ratio_ES",
-      "contentFile": "data/documents/bbd07135bda0482335.js",
+      "contentFile": "data/documents/bbd07135bda0482335.json.gz",
       "catalogId": "0349",
       "file": "0349_Fides_et_ratio_ES.md",
       "title": "Fides et ratio",
@@ -2316,7 +2316,7 @@
     },
     {
       "id": "doctrine-0350_Redemptoris_missio_ES",
-      "contentFile": "data/documents/86a21dc317003f41cd.js",
+      "contentFile": "data/documents/86a21dc317003f41cd.json.gz",
       "catalogId": "0350",
       "file": "0350_Redemptoris_missio_ES.md",
       "title": "Redemptoris missio",
@@ -2336,7 +2336,7 @@
     },
     {
       "id": "doctrine-0351_Ecclesia_de_Eucharistia_ES",
-      "contentFile": "data/documents/a5790827ac0e36965f.js",
+      "contentFile": "data/documents/a5790827ac0e36965f.json.gz",
       "catalogId": "0351",
       "file": "0351_Ecclesia_de_Eucharistia_ES.md",
       "title": "Ecclesia de Eucharistia",
@@ -2356,7 +2356,7 @@
     },
     {
       "id": "doctrine-0353_Humanae_Vitae_ES",
-      "contentFile": "data/documents/18a39bcdee26dbdf94.js",
+      "contentFile": "data/documents/18a39bcdee26dbdf94.json.gz",
       "catalogId": "0353",
       "file": "0353_Humanae_Vitae_ES.md",
       "title": "Humanae Vitae",
@@ -2376,7 +2376,7 @@
     },
     {
       "id": "doctrine-0354_Mysterium_Fidei_ES",
-      "contentFile": "data/documents/a5fffde2d73f1938e1.js",
+      "contentFile": "data/documents/a5fffde2d73f1938e1.json.gz",
       "catalogId": "0354",
       "file": "0354_Mysterium_Fidei_ES.md",
       "title": "Mysterium Fidei",
@@ -2396,7 +2396,7 @@
     },
     {
       "id": "doctrine-0355_Populorum_progressio_ES",
-      "contentFile": "data/documents/ebd88ea4d6f2d1e52f.js",
+      "contentFile": "data/documents/ebd88ea4d6f2d1e52f.json.gz",
       "catalogId": "0355",
       "file": "0355_Populorum_progressio_ES.md",
       "title": "Populorum progressio",
@@ -2416,7 +2416,7 @@
     },
     {
       "id": "doctrine-0357_Ecclesiam_suam_ES",
-      "contentFile": "data/documents/f38df6082466c93d71.js",
+      "contentFile": "data/documents/f38df6082466c93d71.json.gz",
       "catalogId": "0357",
       "file": "0357_Ecclesiam_suam_ES.md",
       "title": "Ecclesiam suam",
@@ -2436,7 +2436,7 @@
     },
     {
       "id": "doctrine-0360_Mater_et_magistra_ES",
-      "contentFile": "data/documents/4b641cb95e3254486f.js",
+      "contentFile": "data/documents/4b641cb95e3254486f.json.gz",
       "catalogId": "0360",
       "file": "0360_Mater_et_magistra_ES.md",
       "title": "Mater et magistra",
@@ -2456,7 +2456,7 @@
     },
     {
       "id": "doctrine-0361_Pacem_in_terris_ES",
-      "contentFile": "data/documents/038942ce08ae2ea46e.js",
+      "contentFile": "data/documents/038942ce08ae2ea46e.json.gz",
       "catalogId": "0361",
       "file": "0361_Pacem_in_terris_ES.md",
       "title": "Pacem in terris",
@@ -2476,7 +2476,7 @@
     },
     {
       "id": "doctrine-0368_Mystici_corporis_ES",
-      "contentFile": "data/documents/d0cba56c975a52000d.js",
+      "contentFile": "data/documents/d0cba56c975a52000d.json.gz",
       "catalogId": "0368",
       "file": "0368_Mystici_corporis_ES.md",
       "title": "Mystici corporis",
@@ -2496,7 +2496,7 @@
     },
     {
       "id": "doctrine-0371_Casti_connubii_ES",
-      "contentFile": "data/documents/71856d6cced24efb40.js",
+      "contentFile": "data/documents/71856d6cced24efb40.json.gz",
       "catalogId": "0371",
       "file": "0371_Casti_connubii_ES.md",
       "title": "Casti connubii",
@@ -2516,7 +2516,7 @@
     },
     {
       "id": "doctrine-0375_San_Pio_X_Pascendi",
-      "contentFile": "data/documents/e1c3672ce7a3dce82e.js",
+      "contentFile": "data/documents/e1c3672ce7a3dce82e.json.gz",
       "catalogId": "0375",
       "file": "0375_San_Pio_X_Pascendi.md",
       "title": "San Pio X Pascendi",
@@ -2536,7 +2536,7 @@
     },
     {
       "id": "doctrine-0377_San_Pio_X_Ad_diem_illud_laetissimum",
-      "contentFile": "data/documents/907a172418f6cd99b3.js",
+      "contentFile": "data/documents/907a172418f6cd99b3.json.gz",
       "catalogId": "0377",
       "file": "0377_San_Pio_X_Ad_diem_illud_laetissimum.md",
       "title": "San Pio X Ad diem illud laetissimum",
@@ -2556,7 +2556,7 @@
     },
     {
       "id": "doctrine-0386_Evangelii_gaudium_ES",
-      "contentFile": "data/documents/87d3299c770dd5f526.js",
+      "contentFile": "data/documents/87d3299c770dd5f526.json.gz",
       "catalogId": "0386",
       "file": "0386_Evangelii_gaudium_ES.md",
       "title": "Evangelii gaudium",
@@ -2576,7 +2576,7 @@
     },
     {
       "id": "doctrine-0389_Sacramentum_caritatis_ES",
-      "contentFile": "data/documents/943bdbd15a6da58800.js",
+      "contentFile": "data/documents/943bdbd15a6da58800.json.gz",
       "catalogId": "0389",
       "file": "0389_Sacramentum_caritatis_ES.md",
       "title": "Sacramentum caritatis",
@@ -2596,7 +2596,7 @@
     },
     {
       "id": "doctrine-0390_Verbum_Domini_ES",
-      "contentFile": "data/documents/476aead09e6c58f94f.js",
+      "contentFile": "data/documents/476aead09e6c58f94f.json.gz",
       "catalogId": "0390",
       "file": "0390_Verbum_Domini_ES.md",
       "title": "Verbum Domini",
@@ -2616,7 +2616,7 @@
     },
     {
       "id": "doctrine-0391_Catechesi_tradendae_ES",
-      "contentFile": "data/documents/deb568d0976890903a.js",
+      "contentFile": "data/documents/deb568d0976890903a.json.gz",
       "catalogId": "0391",
       "file": "0391_Catechesi_tradendae_ES.md",
       "title": "Catechesi tradendae",
@@ -2636,7 +2636,7 @@
     },
     {
       "id": "doctrine-0392_Christifideles_laici_ES",
-      "contentFile": "data/documents/ecf4f0206707da2e81.js",
+      "contentFile": "data/documents/ecf4f0206707da2e81.json.gz",
       "catalogId": "0392",
       "file": "0392_Christifideles_laici_ES.md",
       "title": "Christifideles laici",
@@ -2656,7 +2656,7 @@
     },
     {
       "id": "doctrine-0393_Familiaris_consortio_ES",
-      "contentFile": "data/documents/e8b2ad3016e8a6bef3.js",
+      "contentFile": "data/documents/e8b2ad3016e8a6bef3.json.gz",
       "catalogId": "0393",
       "file": "0393_Familiaris_consortio_ES.md",
       "title": "Familiaris consortio",
@@ -2676,7 +2676,7 @@
     },
     {
       "id": "doctrine-0394_Reconciliatio_et_paenitentia_ES",
-      "contentFile": "data/documents/d783f15921416ebe6b.js",
+      "contentFile": "data/documents/d783f15921416ebe6b.json.gz",
       "catalogId": "0394",
       "file": "0394_Reconciliatio_et_paenitentia_ES.md",
       "title": "Reconciliatio et paenitentia",
@@ -2696,7 +2696,7 @@
     },
     {
       "id": "doctrine-0403_Evangelii_nuntiandi_ES",
-      "contentFile": "data/documents/4c21fb3d7470593b56.js",
+      "contentFile": "data/documents/4c21fb3d7470593b56.json.gz",
       "catalogId": "0403",
       "file": "0403_Evangelii_nuntiandi_ES.md",
       "title": "Evangelii nuntiandi",
@@ -2716,7 +2716,7 @@
     },
     {
       "id": "doctrine-0405_Marialis_cultus_ES",
-      "contentFile": "data/documents/c9ab5470f9639a46cd.js",
+      "contentFile": "data/documents/c9ab5470f9639a46cd.json.gz",
       "catalogId": "0405",
       "file": "0405_Marialis_cultus_ES.md",
       "title": "Marialis cultus",
@@ -2736,7 +2736,7 @@
     },
     {
       "id": "doctrine-0406_Signum_magnum_ES",
-      "contentFile": "data/documents/05a7653caed2307fa6.js",
+      "contentFile": "data/documents/05a7653caed2307fa6.json.gz",
       "catalogId": "0406",
       "file": "0406_Signum_magnum_ES.md",
       "title": "Signum magnum",
@@ -2756,7 +2756,7 @@
     },
     {
       "id": "doctrine-0410_Mulieris_dignitatem",
-      "contentFile": "data/documents/209cfec10719789258.js",
+      "contentFile": "data/documents/209cfec10719789258.json.gz",
       "catalogId": "0410",
       "file": "0410_Mulieris_dignitatem.md",
       "title": "Mulieris dignitatem",
@@ -2776,7 +2776,7 @@
     },
     {
       "id": "doctrine-0411_Carta_a_las_Familias",
-      "contentFile": "data/documents/7dc781a931be3e4e0d.js",
+      "contentFile": "data/documents/7dc781a931be3e4e0d.json.gz",
       "catalogId": "0411",
       "file": "0411_Carta_a_las_Familias.md",
       "title": "Carta a las Familias",
@@ -2796,7 +2796,7 @@
     },
     {
       "id": "doctrine-0412_ES_SALVIFICI_DOLORIS",
-      "contentFile": "data/documents/54ac5115434c36f812.js",
+      "contentFile": "data/documents/54ac5115434c36f812.json.gz",
       "catalogId": "0412",
       "file": "0412_ES_SALVIFICI_DOLORIS.md",
       "title": "ES SALVIFICI DOLORIS",
@@ -2816,7 +2816,7 @@
     },
     {
       "id": "doctrine-0414_Novo_millenio_ineunte_ES",
-      "contentFile": "data/documents/4f02647a48eef7cb5b.js",
+      "contentFile": "data/documents/4f02647a48eef7cb5b.json.gz",
       "catalogId": "0414",
       "file": "0414_Novo_millenio_ineunte_ES.md",
       "title": "Novo millenio ineunte",
@@ -2836,7 +2836,7 @@
     },
     {
       "id": "doctrine-0415_Rosarium_Virginis_Mariae_ES",
-      "contentFile": "data/documents/d7f1599547570fbe34.js",
+      "contentFile": "data/documents/d7f1599547570fbe34.json.gz",
       "catalogId": "0415",
       "file": "0415_Rosarium_Virginis_Mariae_ES.md",
       "title": "Rosarium Virginis Mariae",
@@ -2856,7 +2856,7 @@
     },
     {
       "id": "doctrine-0416_Jornada_Paz_1979_2003",
-      "contentFile": "data/documents/310e06a890d77f84b4.js",
+      "contentFile": "data/documents/310e06a890d77f84b4.json.gz",
       "catalogId": "0416",
       "file": "0416_Jornada_Paz_1979_2003.md",
       "title": "Jornada Paz 1979 2003",
@@ -2876,7 +2876,7 @@
     },
     {
       "id": "doctrine-0429_Catecismo_Romano_ES",
-      "contentFile": "data/documents/66ff7884d9e9ab2764.js",
+      "contentFile": "data/documents/66ff7884d9e9ab2764.json.gz",
       "catalogId": "0429",
       "file": "0429_Catecismo_Romano_ES.md",
       "title": "Catecismo Romano",
@@ -2896,7 +2896,7 @@
     },
     {
       "id": "doctrine-0430_Compendio_catecismo",
-      "contentFile": "data/documents/052e3c522f0eec2441.js",
+      "contentFile": "data/documents/052e3c522f0eec2441.json.gz",
       "catalogId": "0430",
       "file": "0430_Compendio_catecismo.md",
       "title": "Compendio catecismo",
@@ -2916,7 +2916,7 @@
     },
     {
       "id": "doctrine-0431_Catecismo_S_Pio_X",
-      "contentFile": "data/documents/2e9edd69911f3f2652.js",
+      "contentFile": "data/documents/2e9edd69911f3f2652.json.gz",
       "catalogId": "0431",
       "file": "0431_Catecismo_S_Pio_X.md",
       "title": "Catecismo S Pio X",
@@ -2936,7 +2936,7 @@
     },
     {
       "id": "doctrine-0498_PAULO_VI_MENSAJES_DE_LA_PAZ",
-      "contentFile": "data/documents/1ee69ecceff9bb97bc.js",
+      "contentFile": "data/documents/1ee69ecceff9bb97bc.json.gz",
       "catalogId": "0498",
       "file": "0498_PAULO_VI_MENSAJES_DE_LA_PAZ.md",
       "title": "PAULO VI MENSAJES DE LA PAZ",
@@ -2956,7 +2956,7 @@
     },
     {
       "id": "doctrine-0547_Ad_tuendam_Fidem",
-      "contentFile": "data/documents/c6d1a2cc9f757f90de.js",
+      "contentFile": "data/documents/c6d1a2cc9f757f90de.json.gz",
       "catalogId": "0547",
       "file": "0547_Ad_tuendam_Fidem.md",
       "title": "Ad tuendam Fidem",
@@ -2976,7 +2976,7 @@
     },
     {
       "id": "doctrine-0548_Fidei_Depositum",
-      "contentFile": "data/documents/65cab904655808701c.js",
+      "contentFile": "data/documents/65cab904655808701c.json.gz",
       "catalogId": "0548",
       "file": "0548_Fidei_Depositum.md",
       "title": "Fidei Depositum",
@@ -2996,7 +2996,7 @@
     },
     {
       "id": "doctrine-0552_Congregacion_para_la_Doctrina_de_la_Fe",
-      "contentFile": "data/documents/b9fb141726d78fc8c6.js",
+      "contentFile": "data/documents/b9fb141726d78fc8c6.json.gz",
       "catalogId": "0552",
       "file": "0552_Congregacion_para_la_Doctrina_de_la_Fe.md",
       "title": "Congregacion para la Doctrina de la Fe",
@@ -3016,7 +3016,7 @@
     },
     {
       "id": "doctrine-0554_La_Eucaristia_y_los_divorciados",
-      "contentFile": "data/documents/07a61cbb9d999762a3.js",
+      "contentFile": "data/documents/07a61cbb9d999762a3.json.gz",
       "catalogId": "0554",
       "file": "0554_La_Eucaristia_y_los_divorciados.md",
       "title": "La Eucaristia y los divorciados",
@@ -3036,7 +3036,7 @@
     },
     {
       "id": "doctrine-0557_2000_Dominus_Iesus",
-      "contentFile": "data/documents/5f2878da07f5fb0176.js",
+      "contentFile": "data/documents/5f2878da07f5fb0176.json.gz",
       "catalogId": "0557",
       "file": "0557_2000_Dominus_Iesus.md",
       "title": "Dominus Iesus",
@@ -3056,7 +3056,7 @@
     },
     {
       "id": "doctrine-0558_1987_Donum_Vitae",
-      "contentFile": "data/documents/029498f5fd445d58f6.js",
+      "contentFile": "data/documents/029498f5fd445d58f6.json.gz",
       "catalogId": "0558",
       "file": "0558_1987_Donum_Vitae.md",
       "title": "Donum Vitae",
@@ -3076,7 +3076,7 @@
     },
     {
       "id": "doctrine-0566_DIRECTORIO_GENERAL_PARA_LA_CATEQUESIS",
-      "contentFile": "data/documents/eab67b1ab8af5bad03.js",
+      "contentFile": "data/documents/eab67b1ab8af5bad03.json.gz",
       "catalogId": "0566",
       "file": "0566_DIRECTORIO_GENERAL_PARA_LA_CATEQUESIS.md",
       "title": "DIRECTORIO GENERAL PARA LA CATEQUESIS",
@@ -3096,7 +3096,7 @@
     },
     {
       "id": "doctrine-0576_Compendio_Doctrina_social_ES",
-      "contentFile": "data/documents/de34b7476a14592389.js",
+      "contentFile": "data/documents/de34b7476a14592389.json.gz",
       "catalogId": "0576",
       "file": "0576_Compendio_Doctrina_social_ES.md",
       "title": "Compendio Doctrina social",
@@ -3116,7 +3116,7 @@
     },
     {
       "id": "doctrine-0580_1996_Preparation_au_sacrement_de_mariage",
-      "contentFile": "data/documents/a6894b8d8058acf680.js",
+      "contentFile": "data/documents/a6894b8d8058acf680.json.gz",
       "catalogId": "0580",
       "file": "0580_1996_Preparation_au_sacrement_de_mariage.md",
       "title": "Preparation au sacrement de mariage",
@@ -3136,7 +3136,7 @@
     },
     {
       "id": "doctrine-0581_2000_Reduction_embryonnaire",
-      "contentFile": "data/documents/542c214c2c626ad961.js",
+      "contentFile": "data/documents/542c214c2c626ad961.json.gz",
       "catalogId": "0581",
       "file": "0581_2000_Reduction_embryonnaire.md",
       "title": "Reduction embryonnaire",
@@ -3156,7 +3156,7 @@
     },
     {
       "id": "doctrine-0582_1997_Vade_mecum_pour_les_confesseurs",
-      "contentFile": "data/documents/e29a8ab72d4b7aa1d8.js",
+      "contentFile": "data/documents/e29a8ab72d4b7aa1d8.json.gz",
       "catalogId": "0582",
       "file": "0582_1997_Vade_mecum_pour_les_confesseurs.md",
       "title": "Vade mecum pour les confesseurs",
@@ -3176,7 +3176,7 @@
     },
     {
       "id": "doctrine-0583_dignitas_infinita_es",
-      "contentFile": "data/documents/6b86b4127385c5211b.js",
+      "contentFile": "data/documents/6b86b4127385c5211b.json.gz",
       "catalogId": "0583",
       "file": "0583_dignitas_infinita_es.md",
       "title": "Dignitas infinita",
@@ -3196,7 +3196,7 @@
     },
     {
       "id": "doctrine-0584_dignitas_infinita_es",
-      "contentFile": "data/documents/0437592dc039d0397f.js",
+      "contentFile": "data/documents/0437592dc039d0397f.json.gz",
       "catalogId": "0584",
       "file": "0584_dignitas_infinita_es.md",
       "title": "Dignitas infinita",
@@ -3216,7 +3216,7 @@
     },
     {
       "id": "doctrine-0585_dignitas_infinita_es",
-      "contentFile": "data/documents/3ee0b8109c34c5c6c1.js",
+      "contentFile": "data/documents/3ee0b8109c34c5c6c1.json.gz",
       "catalogId": "0585",
       "file": "0585_dignitas_infinita_es.md",
       "title": "Dignitas infinita",
@@ -3236,7 +3236,7 @@
     },
     {
       "id": "doctrine-0586_antiqua_et_nova_es",
-      "contentFile": "data/documents/112ede6dee8ba31ca6.js",
+      "contentFile": "data/documents/112ede6dee8ba31ca6.json.gz",
       "catalogId": "0586",
       "file": "0586_antiqua_et_nova_es.md",
       "title": "Antiqua et nova",

@@ -226,7 +226,7 @@
   "documents": [
     {
       "id": "history-0074_Lumen_gentium_ES",
-      "contentFile": "data/documents/11e145da149b3d29f7.js",
+      "contentFile": "data/documents/11e145da149b3d29f7.json.gz",
       "catalogId": "0074",
       "file": "0074_Lumen_gentium_ES.md",
       "title": "Lumen gentium",
@@ -246,7 +246,7 @@
     },
     {
       "id": "history-0075_Dei_verbum_ES",
-      "contentFile": "data/documents/877be23386823afb8f.js",
+      "contentFile": "data/documents/877be23386823afb8f.json.gz",
       "catalogId": "0075",
       "file": "0075_Dei_verbum_ES.md",
       "title": "Dei verbum",
@@ -266,7 +266,7 @@
     },
     {
       "id": "history-0076_Sacrosanctum_Concilium_ES",
-      "contentFile": "data/documents/40217bd4266ec6a884.js",
+      "contentFile": "data/documents/40217bd4266ec6a884.json.gz",
       "catalogId": "0076",
       "file": "0076_Sacrosanctum_Concilium_ES.md",
       "title": "Sacrosanctum Concilium",
@@ -286,7 +286,7 @@
     },
     {
       "id": "history-0077_Gaudium_et_spes_ES",
-      "contentFile": "data/documents/3a2fd77faa3ee23c0d.js",
+      "contentFile": "data/documents/3a2fd77faa3ee23c0d.json.gz",
       "catalogId": "0077",
       "file": "0077_Gaudium_et_spes_ES.md",
       "title": "Gaudium et spes",
@@ -306,7 +306,7 @@
     },
     {
       "id": "history-0078_Christus_Dominus_ES",
-      "contentFile": "data/documents/d13e58891c1a37dbd9.js",
+      "contentFile": "data/documents/d13e58891c1a37dbd9.json.gz",
       "catalogId": "0078",
       "file": "0078_Christus_Dominus_ES.md",
       "title": "Christus Dominus",
@@ -326,7 +326,7 @@
     },
     {
       "id": "history-0079_Presbyterorum_Ordinis_ES",
-      "contentFile": "data/documents/9d6a6a43f1c4217da0.js",
+      "contentFile": "data/documents/9d6a6a43f1c4217da0.json.gz",
       "catalogId": "0079",
       "file": "0079_Presbyterorum_Ordinis_ES.md",
       "title": "Presbyterorum Ordinis",
@@ -346,7 +346,7 @@
     },
     {
       "id": "history-0080_Optatam_totius_ES",
-      "contentFile": "data/documents/f1c5919403ac7637bd.js",
+      "contentFile": "data/documents/f1c5919403ac7637bd.json.gz",
       "catalogId": "0080",
       "file": "0080_Optatam_totius_ES.md",
       "title": "Optatam totius",
@@ -366,7 +366,7 @@
     },
     {
       "id": "history-0081_Perfectae_caritatis_ES",
-      "contentFile": "data/documents/fdd2072d847ded4147.js",
+      "contentFile": "data/documents/fdd2072d847ded4147.json.gz",
       "catalogId": "0081",
       "file": "0081_Perfectae_caritatis_ES.md",
       "title": "Perfectae caritatis",
@@ -386,7 +386,7 @@
     },
     {
       "id": "history-0082_Apostolicam_actuositatem_ES",
-      "contentFile": "data/documents/ba79e4e3d02eddef33.js",
+      "contentFile": "data/documents/ba79e4e3d02eddef33.json.gz",
       "catalogId": "0082",
       "file": "0082_Apostolicam_actuositatem_ES.md",
       "title": "Apostolicam actuositatem",
@@ -406,7 +406,7 @@
     },
     {
       "id": "history-0083_Ad_gentes_ES",
-      "contentFile": "data/documents/ecdcd6083d8084ddaa.js",
+      "contentFile": "data/documents/ecdcd6083d8084ddaa.json.gz",
       "catalogId": "0083",
       "file": "0083_Ad_gentes_ES.md",
       "title": "Ad gentes",
@@ -426,7 +426,7 @@
     },
     {
       "id": "history-0084_Unitatis_redintegratio_ES",
-      "contentFile": "data/documents/611c1d8c24e4ff9004.js",
+      "contentFile": "data/documents/611c1d8c24e4ff9004.json.gz",
       "catalogId": "0084",
       "file": "0084_Unitatis_redintegratio_ES.md",
       "title": "Unitatis redintegratio",
@@ -446,7 +446,7 @@
     },
     {
       "id": "history-0085_Orientalium_Ecclesiarum_ES",
-      "contentFile": "data/documents/341cf6fc8f34bf651b.js",
+      "contentFile": "data/documents/341cf6fc8f34bf651b.json.gz",
       "catalogId": "0085",
       "file": "0085_Orientalium_Ecclesiarum_ES.md",
       "title": "Orientalium Ecclesiarum",
@@ -466,7 +466,7 @@
     },
     {
       "id": "history-0086_Inter_mirifica_ES",
-      "contentFile": "data/documents/060e09eb0298a2b69c.js",
+      "contentFile": "data/documents/060e09eb0298a2b69c.json.gz",
       "catalogId": "0086",
       "file": "0086_Inter_mirifica_ES.md",
       "title": "Inter mirifica",
@@ -486,7 +486,7 @@
     },
     {
       "id": "history-0087_Dignitatis_humanae_ES",
-      "contentFile": "data/documents/4dd50913178595a565.js",
+      "contentFile": "data/documents/4dd50913178595a565.json.gz",
       "catalogId": "0087",
       "file": "0087_Dignitatis_humanae_ES.md",
       "title": "Dignitatis humanae",
@@ -506,7 +506,7 @@
     },
     {
       "id": "history-0088_Nostra_aetate_ES",
-      "contentFile": "data/documents/4da9c99cadb14c318e.js",
+      "contentFile": "data/documents/4da9c99cadb14c318e.json.gz",
       "catalogId": "0088",
       "file": "0088_Nostra_aetate_ES.md",
       "title": "Nostra aetate",
@@ -526,7 +526,7 @@
     },
     {
       "id": "history-0089_Gravissimum_educationis_ES",
-      "contentFile": "data/documents/0e54c70fdad18a0f93.js",
+      "contentFile": "data/documents/0e54c70fdad18a0f93.json.gz",
       "catalogId": "0089",
       "file": "0089_Gravissimum_educationis_ES.md",
       "title": "Gravissimum educationis",
@@ -546,7 +546,7 @@
     },
     {
       "id": "history-0092_Homilias_Crisostomo_2",
-      "contentFile": "data/documents/e1144cc6242b2a6b9e.js",
+      "contentFile": "data/documents/e1144cc6242b2a6b9e.json.gz",
       "catalogId": "0092",
       "file": "0092_Homilias_Crisostomo_2.md",
       "title": "Homilias Crisostomo 2",
@@ -566,7 +566,7 @@
     },
     {
       "id": "history-0093_CRISOSTOMO_HOMILIAS_I",
-      "contentFile": "data/documents/e8ec944860147a952d.js",
+      "contentFile": "data/documents/e8ec944860147a952d.json.gz",
       "catalogId": "0093",
       "file": "0093_CRISOSTOMO_HOMILIAS_I.md",
       "title": "CRISOSTOMO HOMILIAS I",
@@ -586,7 +586,7 @@
     },
     {
       "id": "history-0094_Augustin_Sermons_parte_01",
-      "contentFile": "data/documents/8c31682ed56132aaaa.js",
+      "contentFile": "data/documents/8c31682ed56132aaaa.json.gz",
       "catalogId": "0094",
       "file": "0094_Augustin_Sermons_parte_01.md",
       "title": "Augustin Sermons",
@@ -606,7 +606,7 @@
     },
     {
       "id": "history-0094_Augustin_Sermons_parte_02",
-      "contentFile": "data/documents/e22efd3649a22d292f.js",
+      "contentFile": "data/documents/e22efd3649a22d292f.json.gz",
       "catalogId": "0094",
       "file": "0094_Augustin_Sermons_parte_02.md",
       "title": "Augustin Sermons",
@@ -626,7 +626,7 @@
     },
     {
       "id": "history-0094_Augustin_Sermons_parte_03",
-      "contentFile": "data/documents/b1a2434d7acca9c7b0.js",
+      "contentFile": "data/documents/b1a2434d7acca9c7b0.json.gz",
       "catalogId": "0094",
       "file": "0094_Augustin_Sermons_parte_03.md",
       "title": "Augustin Sermons",
@@ -646,7 +646,7 @@
     },
     {
       "id": "history-0094_Augustin_Sermons_parte_04",
-      "contentFile": "data/documents/7b5eedc3da075ee8d7.js",
+      "contentFile": "data/documents/7b5eedc3da075ee8d7.json.gz",
       "catalogId": "0094",
       "file": "0094_Augustin_Sermons_parte_04.md",
       "title": "Augustin Sermons",
@@ -666,7 +666,7 @@
     },
     {
       "id": "history-0096_Bernard_sur_Cant",
-      "contentFile": "data/documents/23b52a8a8ecd18e300.js",
+      "contentFile": "data/documents/23b52a8a8ecd18e300.json.gz",
       "catalogId": "0096",
       "file": "0096_Bernard_sur_Cant.md",
       "title": "Bernard sur Cant",
@@ -686,7 +686,7 @@
     },
     {
       "id": "history-0097_Bernard_sermons_parte_01",
-      "contentFile": "data/documents/84beed680b1bf8ddfe.js",
+      "contentFile": "data/documents/84beed680b1bf8ddfe.json.gz",
       "catalogId": "0097",
       "file": "0097_Bernard_sermons_parte_01.md",
       "title": "Bernard sermons",
@@ -706,7 +706,7 @@
     },
     {
       "id": "history-0097_Bernard_sermons_parte_02",
-      "contentFile": "data/documents/8a63c60065891f09f3.js",
+      "contentFile": "data/documents/8a63c60065891f09f3.json.gz",
       "catalogId": "0097",
       "file": "0097_Bernard_sermons_parte_02.md",
       "title": "Bernard sermons",
@@ -726,7 +726,7 @@
     },
     {
       "id": "history-0104_Ep_Bernabe",
-      "contentFile": "data/documents/fb34f9819637c53298.js",
+      "contentFile": "data/documents/fb34f9819637c53298.json.gz",
       "catalogId": "0104",
       "file": "0104_Ep_Bernabe.md",
       "title": "Ep Bernabe",
@@ -746,7 +746,7 @@
     },
     {
       "id": "history-0105_Clemente_ES",
-      "contentFile": "data/documents/e69379765542c05092.js",
+      "contentFile": "data/documents/e69379765542c05092.json.gz",
       "catalogId": "0105",
       "file": "0105_Clemente_ES.md",
       "title": "Clemente",
@@ -766,7 +766,7 @@
     },
     {
       "id": "history-0106_SECUNDA_CLEMENTIS",
-      "contentFile": "data/documents/fe7b0310f3b08a4b63.js",
+      "contentFile": "data/documents/fe7b0310f3b08a4b63.json.gz",
       "catalogId": "0106",
       "file": "0106_SECUNDA_CLEMENTIS.md",
       "title": "SECUNDA CLEMENTIS",
@@ -786,7 +786,7 @@
     },
     {
       "id": "history-0107_Didache_ES",
-      "contentFile": "data/documents/512fd4ab2d894ee94f.js",
+      "contentFile": "data/documents/512fd4ab2d894ee94f.json.gz",
       "catalogId": "0107",
       "file": "0107_Didache_ES.md",
       "title": "Didache",
@@ -806,7 +806,7 @@
     },
     {
       "id": "history-0108_Diogneto_ES",
-      "contentFile": "data/documents/7ab13af69b4f7ccb0f.js",
+      "contentFile": "data/documents/7ab13af69b4f7ccb0f.json.gz",
       "catalogId": "0108",
       "file": "0108_Diogneto_ES.md",
       "title": "Diogneto",
@@ -826,7 +826,7 @@
     },
     {
       "id": "history-0109_0115_San_Ignacio_de_Antioquia_Cartas",
-      "contentFile": "data/documents/adbec76f7fa1ac459b.js",
+      "contentFile": "data/documents/adbec76f7fa1ac459b.json.gz",
       "catalogId": "0109",
       "file": "0109_0115_San_Ignacio_de_Antioquia_Cartas.md",
       "title": "San Ignacio de Antioquia Cartas",
@@ -852,7 +852,7 @@
     },
     {
       "id": "history-0117_Hermas_ES",
-      "contentFile": "data/documents/03388bd49456b63db9.js",
+      "contentFile": "data/documents/03388bd49456b63db9.json.gz",
       "catalogId": "0117",
       "file": "0117_Hermas_ES.md",
       "title": "Hermas",
@@ -872,7 +872,7 @@
     },
     {
       "id": "history-0118_Policarpo_Fil_ES",
-      "contentFile": "data/documents/4087e1a0f3788e681e.js",
+      "contentFile": "data/documents/4087e1a0f3788e681e.json.gz",
       "catalogId": "0118",
       "file": "0118_Policarpo_Fil_ES.md",
       "title": "Policarpo Fil",
@@ -892,7 +892,7 @@
     },
     {
       "id": "history-0119_Poicarpo_martirio",
-      "contentFile": "data/documents/208685a144fe2794e1.js",
+      "contentFile": "data/documents/208685a144fe2794e1.json.gz",
       "catalogId": "0119",
       "file": "0119_Poicarpo_martirio.md",
       "title": "Poicarpo martirio",
@@ -912,7 +912,7 @@
     },
     {
       "id": "history-0120_San_Atanasio_ES",
-      "contentFile": "data/documents/ccb9d65a0de4ad6b38.js",
+      "contentFile": "data/documents/ccb9d65a0de4ad6b38.json.gz",
       "catalogId": "0120",
       "file": "0120_San_Atanasio_ES.md",
       "title": "San Atanasio",
@@ -932,7 +932,7 @@
     },
     {
       "id": "history-0121_Basilio_ES",
-      "contentFile": "data/documents/1863d8a8bc5164273e.js",
+      "contentFile": "data/documents/1863d8a8bc5164273e.json.gz",
       "catalogId": "0121",
       "file": "0121_Basilio_ES.md",
       "title": "Basilio",
@@ -952,7 +952,7 @@
     },
     {
       "id": "history-0122_Cirilo_ES",
-      "contentFile": "data/documents/23b9b5acca73e23dd8.js",
+      "contentFile": "data/documents/23b9b5acca73e23dd8.json.gz",
       "catalogId": "0122",
       "file": "0122_Cirilo_ES.md",
       "title": "Cirilo",
@@ -972,7 +972,7 @@
     },
     {
       "id": "history-0123_Jerome_Lettres",
-      "contentFile": "data/documents/bd28921bc48a12af71.js",
+      "contentFile": "data/documents/bd28921bc48a12af71.json.gz",
       "catalogId": "0123",
       "file": "0123_Jerome_Lettres.md",
       "title": "Jerome Lettres",
@@ -992,7 +992,7 @@
     },
     {
       "id": "history-0124_Jerome_Critique_sacree",
-      "contentFile": "data/documents/a32cf92d4fb9b07e43.js",
+      "contentFile": "data/documents/a32cf92d4fb9b07e43.json.gz",
       "catalogId": "0124",
       "file": "0124_Jerome_Critique_sacree.md",
       "title": "Jerome Critique sacree",
@@ -1012,7 +1012,7 @@
     },
     {
       "id": "history-0125_Jerome_Fragments_divers",
-      "contentFile": "data/documents/89a84228e9065ba2ca.js",
+      "contentFile": "data/documents/89a84228e9065ba2ca.json.gz",
       "catalogId": "0125",
       "file": "0125_Jerome_Fragments_divers.md",
       "title": "Jerome Fragments divers",
@@ -1032,7 +1032,7 @@
     },
     {
       "id": "history-0126_Jerome_oeuvres_mystiques",
-      "contentFile": "data/documents/36e7186b89615ce84e.js",
+      "contentFile": "data/documents/36e7186b89615ce84e.json.gz",
       "catalogId": "0126",
       "file": "0126_Jerome_oeuvres_mystiques.md",
       "title": "Jerome oeuvres mystiques",
@@ -1052,7 +1052,7 @@
     },
     {
       "id": "history-0127_Jerome_Polemique",
-      "contentFile": "data/documents/178f4c8cfff1bce52a.js",
+      "contentFile": "data/documents/178f4c8cfff1bce52a.json.gz",
       "catalogId": "0127",
       "file": "0127_Jerome_Polemique.md",
       "title": "Jerome Polemique",
@@ -1072,7 +1072,7 @@
     },
     {
       "id": "history-0128_Jerome_Hommes_illustres",
-      "contentFile": "data/documents/0991d7a36e34bce551.js",
+      "contentFile": "data/documents/0991d7a36e34bce551.json.gz",
       "catalogId": "0128",
       "file": "0128_Jerome_Hommes_illustres.md",
       "title": "Jerome Hommes illustres",
@@ -1092,7 +1092,7 @@
     },
     {
       "id": "history-0129_Jerome_oeuvres_morales",
-      "contentFile": "data/documents/55894aeaf2c664772b.js",
+      "contentFile": "data/documents/55894aeaf2c664772b.json.gz",
       "catalogId": "0129",
       "file": "0129_Jerome_oeuvres_morales.md",
       "title": "Jerome oeuvres morales",
@@ -1112,7 +1112,7 @@
     },
     {
       "id": "history-0137_Augustin_doctrine_chretienne",
-      "contentFile": "data/documents/e3f287b6c5d2150f02.js",
+      "contentFile": "data/documents/e3f287b6c5d2150f02.json.gz",
       "catalogId": "0137",
       "file": "0137_Augustin_doctrine_chretienne.md",
       "title": "Augustin doctrine chretienne",
@@ -1132,7 +1132,7 @@
     },
     {
       "id": "history-0138_Augustin_acc_evangelistes",
-      "contentFile": "data/documents/c6c76c327ac11ee23f.js",
+      "contentFile": "data/documents/c6c76c327ac11ee23f.json.gz",
       "catalogId": "0138",
       "file": "0138_Augustin_acc_evangelistes.md",
       "title": "Augustin acc evangelistes",
@@ -1152,7 +1152,7 @@
     },
     {
       "id": "history-0140_Augustin_sur_Jean_parte_01",
-      "contentFile": "data/documents/e3e53ac55401eeea0e.js",
+      "contentFile": "data/documents/e3e53ac55401eeea0e.json.gz",
       "catalogId": "0140",
       "file": "0140_Augustin_sur_Jean_parte_01.md",
       "title": "Augustin sur Jean",
@@ -1172,7 +1172,7 @@
     },
     {
       "id": "history-0140_Augustin_sur_Jean_parte_02",
-      "contentFile": "data/documents/752f395cc905631e8d.js",
+      "contentFile": "data/documents/752f395cc905631e8d.json.gz",
       "catalogId": "0140",
       "file": "0140_Augustin_sur_Jean_parte_02.md",
       "title": "Augustin sur Jean",
@@ -1192,7 +1192,7 @@
     },
     {
       "id": "history-0142_Augustin_les_Psaumes_parte_01",
-      "contentFile": "data/documents/a14122bafeeeac777f.js",
+      "contentFile": "data/documents/a14122bafeeeac777f.json.gz",
       "catalogId": "0142",
       "file": "0142_Augustin_les_Psaumes_parte_01.md",
       "title": "Augustin les Psaumes",
@@ -1212,7 +1212,7 @@
     },
     {
       "id": "history-0142_Augustin_les_Psaumes_parte_02",
-      "contentFile": "data/documents/3395faa000e6b4e6f6.js",
+      "contentFile": "data/documents/3395faa000e6b4e6f6.json.gz",
       "catalogId": "0142",
       "file": "0142_Augustin_les_Psaumes_parte_02.md",
       "title": "Augustin les Psaumes",
@@ -1232,7 +1232,7 @@
     },
     {
       "id": "history-0142_Augustin_les_Psaumes_parte_03",
-      "contentFile": "data/documents/d9c1505a234ce69f00.js",
+      "contentFile": "data/documents/d9c1505a234ce69f00.json.gz",
       "catalogId": "0142",
       "file": "0142_Augustin_les_Psaumes_parte_03.md",
       "title": "Augustin les Psaumes",
@@ -1252,7 +1252,7 @@
     },
     {
       "id": "history-0142_Augustin_les_Psaumes_parte_04",
-      "contentFile": "data/documents/4234c762f54408b95d.js",
+      "contentFile": "data/documents/4234c762f54408b95d.json.gz",
       "catalogId": "0142",
       "file": "0142_Augustin_les_Psaumes_parte_04.md",
       "title": "Augustin les Psaumes",
@@ -1272,7 +1272,7 @@
     },
     {
       "id": "history-0143_Augustin_Epitre_Jean",
-      "contentFile": "data/documents/a4ddec8a462bdc95dc.js",
+      "contentFile": "data/documents/a4ddec8a462bdc95dc.json.gz",
       "catalogId": "0143",
       "file": "0143_Augustin_Epitre_Jean.md",
       "title": "Augustin Epitre Jean",
@@ -1292,7 +1292,7 @@
     },
     {
       "id": "history-0146_Agustin_Confesiones",
-      "contentFile": "data/documents/234ac8396897ed3d0b.js",
+      "contentFile": "data/documents/234ac8396897ed3d0b.json.gz",
       "catalogId": "0146",
       "file": "0146_Agustin_Confesiones.md",
       "title": "Agustin Confesiones",
@@ -1312,7 +1312,7 @@
     },
     {
       "id": "history-0147_Augustin_de_la_Foi_Esperance_et_Charite",
-      "contentFile": "data/documents/3ea0dc42fb69f37a03.js",
+      "contentFile": "data/documents/3ea0dc42fb69f37a03.json.gz",
       "catalogId": "0147",
       "file": "0147_Augustin_de_la_Foi_Esperance_et_Charite.md",
       "title": "Augustin de la Foi Esperance et Charite",
@@ -1332,7 +1332,7 @@
     },
     {
       "id": "history-0149_Augustin_de_la_continence",
-      "contentFile": "data/documents/adaae7ec7daa8948fd.js",
+      "contentFile": "data/documents/adaae7ec7daa8948fd.json.gz",
       "catalogId": "0149",
       "file": "0149_Augustin_de_la_continence.md",
       "title": "Augustin de la continence",
@@ -1352,7 +1352,7 @@
     },
     {
       "id": "history-0150_Augustin_de_ce_qui_est_bien_dans_le_mariage",
-      "contentFile": "data/documents/7f5b9ead9a10de6111.js",
+      "contentFile": "data/documents/7f5b9ead9a10de6111.json.gz",
       "catalogId": "0150",
       "file": "0150_Augustin_de_ce_qui_est_bien_dans_le_mariage.md",
       "title": "Augustin de ce qui est bien dans le mariage",
@@ -1372,7 +1372,7 @@
     },
     {
       "id": "history-0151_Augustin_unions_adulteres",
-      "contentFile": "data/documents/ee4f3334cfabf7f02d.js",
+      "contentFile": "data/documents/ee4f3334cfabf7f02d.json.gz",
       "catalogId": "0151",
       "file": "0151_Augustin_unions_adulteres.md",
       "title": "Augustin unions adulteres",
@@ -1392,7 +1392,7 @@
     },
     {
       "id": "history-0152_Augustin_du_mensonge",
-      "contentFile": "data/documents/2280f0c0c1709f7111.js",
+      "contentFile": "data/documents/2280f0c0c1709f7111.json.gz",
       "catalogId": "0152",
       "file": "0152_Augustin_du_mensonge.md",
       "title": "Augustin du mensonge",
@@ -1412,7 +1412,7 @@
     },
     {
       "id": "history-0154_Augustin_de_la_patience",
-      "contentFile": "data/documents/b95a3640f031f102c7.js",
+      "contentFile": "data/documents/b95a3640f031f102c7.json.gz",
       "catalogId": "0154",
       "file": "0154_Augustin_de_la_patience.md",
       "title": "Augustin de la patience",
@@ -1432,7 +1432,7 @@
     },
     {
       "id": "history-0157_Augustin_du_Bapteme",
-      "contentFile": "data/documents/99981756b4d9e7ba19.js",
+      "contentFile": "data/documents/99981756b4d9e7ba19.json.gz",
       "catalogId": "0157",
       "file": "0157_Augustin_du_Bapteme.md",
       "title": "Augustin du Bapteme",
@@ -1452,7 +1452,7 @@
     },
     {
       "id": "history-0158_Augustin_Catechisme",
-      "contentFile": "data/documents/a30950ed0c28da5dc9.js",
+      "contentFile": "data/documents/a30950ed0c28da5dc9.json.gz",
       "catalogId": "0158",
       "file": "0158_Augustin_Catechisme.md",
       "title": "Augustin Catechisme",
@@ -1472,7 +1472,7 @@
     },
     {
       "id": "history-0159_Augustin_Cite_de_Dieu_parte_01",
-      "contentFile": "data/documents/1620e3e6bc94c817ca.js",
+      "contentFile": "data/documents/1620e3e6bc94c817ca.json.gz",
       "catalogId": "0159",
       "file": "0159_Augustin_Cite_de_Dieu_parte_01.md",
       "title": "Augustin Cite de Dieu",
@@ -1492,7 +1492,7 @@
     },
     {
       "id": "history-0159_Augustin_Cite_de_Dieu_parte_02",
-      "contentFile": "data/documents/944a7c9e0d715f1240.js",
+      "contentFile": "data/documents/944a7c9e0d715f1240.json.gz",
       "catalogId": "0159",
       "file": "0159_Augustin_Cite_de_Dieu_parte_02.md",
       "title": "Augustin Cite de Dieu",
@@ -1512,7 +1512,7 @@
     },
     {
       "id": "history-0161_Augustin_de_la_grace_I_et_II",
-      "contentFile": "data/documents/3d5672565f7271eeff.js",
+      "contentFile": "data/documents/3d5672565f7271eeff.json.gz",
       "catalogId": "0161",
       "file": "0161_Augustin_de_la_grace_I_et_II.md",
       "title": "Augustin de la grace I et II",
@@ -1532,7 +1532,7 @@
     },
     {
       "id": "history-0162_Augustin_lettres_parte_01",
-      "contentFile": "data/documents/1e5eb042baf8616f65.js",
+      "contentFile": "data/documents/1e5eb042baf8616f65.json.gz",
       "catalogId": "0162",
       "file": "0162_Augustin_lettres_parte_01.md",
       "title": "Augustin lettres",
@@ -1552,7 +1552,7 @@
     },
     {
       "id": "history-0162_Augustin_lettres_parte_02",
-      "contentFile": "data/documents/b9912cf65f99404fc2.js",
+      "contentFile": "data/documents/b9912cf65f99404fc2.json.gz",
       "catalogId": "0162",
       "file": "0162_Augustin_lettres_parte_02.md",
       "title": "Augustin lettres",
@@ -1572,7 +1572,7 @@
     },
     {
       "id": "history-0163_Augustin_du_libre_arbitre",
-      "contentFile": "data/documents/7aff34d1e8243669c9.js",
+      "contentFile": "data/documents/7aff34d1e8243669c9.json.gz",
       "catalogId": "0163",
       "file": "0163_Augustin_du_libre_arbitre.md",
       "title": "Augustin du libre arbitre",
@@ -1592,7 +1592,7 @@
     },
     {
       "id": "history-0166_Regle_de_Saint_Augustin_pour_les_serviteurs_de_Dieu",
-      "contentFile": "data/documents/a7368cb45189b55256.js",
+      "contentFile": "data/documents/a7368cb45189b55256.json.gz",
       "catalogId": "0166",
       "file": "0166_Regle_de_Saint_Augustin_pour_les_serviteurs_de_Dieu.md",
       "title": "Regle de Saint Augustin pour les serviteurs de Dieu",
@@ -1612,7 +1612,7 @@
     },
     {
       "id": "history-0167_Les_Retractations",
-      "contentFile": "data/documents/68ed11b274df742ba4.js",
+      "contentFile": "data/documents/68ed11b274df742ba4.json.gz",
       "catalogId": "0167",
       "file": "0167_Les_Retractations.md",
       "title": "Les Retractations",
@@ -1632,7 +1632,7 @@
     },
     {
       "id": "history-0168_Augustin_Trinite",
-      "contentFile": "data/documents/3fa42cc0721f8ad60b.js",
+      "contentFile": "data/documents/3fa42cc0721f8ad60b.json.gz",
       "catalogId": "0168",
       "file": "0168_Augustin_Trinite.md",
       "title": "Augustin Trinite",
@@ -1652,7 +1652,7 @@
     },
     {
       "id": "history-0171_Augustin_la_sainte_virginite",
-      "contentFile": "data/documents/c8624c889a09b7da51.js",
+      "contentFile": "data/documents/c8624c889a09b7da51.json.gz",
       "catalogId": "0171",
       "file": "0171_Augustin_la_sainte_virginite.md",
       "title": "Augustin la sainte virginite",
@@ -1672,7 +1672,7 @@
     },
     {
       "id": "history-0172_Augustin_Viduite",
-      "contentFile": "data/documents/89eb8d8c6e15ea2698.js",
+      "contentFile": "data/documents/89eb8d8c6e15ea2698.json.gz",
       "catalogId": "0172",
       "file": "0172_Augustin_Viduite.md",
       "title": "Augustin Viduite",
@@ -1692,7 +1692,7 @@
     },
     {
       "id": "history-0173_Augustin_du_travail_des_moines",
-      "contentFile": "data/documents/b53afe710a5b7e6910.js",
+      "contentFile": "data/documents/b53afe710a5b7e6910.json.gz",
       "catalogId": "0173",
       "file": "0173_Augustin_du_travail_des_moines.md",
       "title": "Augustin du travail des moines",
@@ -1712,7 +1712,7 @@
     },
     {
       "id": "history-0175_Augustin_du_symbole",
-      "contentFile": "data/documents/5e8573d2e953876635.js",
+      "contentFile": "data/documents/5e8573d2e953876635.json.gz",
       "catalogId": "0175",
       "file": "0175_Augustin_du_symbole.md",
       "title": "Augustin du symbole",
@@ -1732,7 +1732,7 @@
     },
     {
       "id": "history-0176_Augustin_de_la_discipline_chretienne",
-      "contentFile": "data/documents/6257ad51d008134f40.js",
+      "contentFile": "data/documents/6257ad51d008134f40.json.gz",
       "catalogId": "0176",
       "file": "0176_Augustin_de_la_discipline_chretienne.md",
       "title": "Augustin de la discipline chretienne",
@@ -1752,7 +1752,7 @@
     },
     {
       "id": "history-0178_Augustin_de_l_utilite_du_jeune",
-      "contentFile": "data/documents/601ab3181a95fa6af6.js",
+      "contentFile": "data/documents/601ab3181a95fa6af6.json.gz",
       "catalogId": "0178",
       "file": "0178_Augustin_de_l_utilite_du_jeune.md",
       "title": "Augustin de l utilite du jeune",
@@ -1772,7 +1772,7 @@
     },
     {
       "id": "history-0183_Augustin_vraie_religion",
-      "contentFile": "data/documents/75fcc9e92a30d04526.js",
+      "contentFile": "data/documents/75fcc9e92a30d04526.json.gz",
       "catalogId": "0183",
       "file": "0183_Augustin_vraie_religion.md",
       "title": "Augustin vraie religion",
@@ -1792,7 +1792,7 @@
     },
     {
       "id": "history-0187_Augustin_des_heresies",
-      "contentFile": "data/documents/3fd27295bb2181dd02.js",
+      "contentFile": "data/documents/3fd27295bb2181dd02.json.gz",
       "catalogId": "0187",
       "file": "0187_Augustin_des_heresies.md",
       "title": "Augustin des heresies",
@@ -1812,7 +1812,7 @@
     },
     {
       "id": "history-0191_0195_San_Agustin_Controversia_antimaniquea",
-      "contentFile": "data/documents/3df9f37879d0ac6538.js",
+      "contentFile": "data/documents/3df9f37879d0ac6538.json.gz",
       "catalogId": "0191",
       "file": "0191_0195_San_Agustin_Controversia_antimaniquea.md",
       "title": "San Agustin Controversia antimaniquea",
@@ -1836,7 +1836,7 @@
     },
     {
       "id": "history-0196_0197_San_Agustin_Controversia_arriana",
-      "contentFile": "data/documents/a771974c78b9b837da.js",
+      "contentFile": "data/documents/a771974c78b9b837da.json.gz",
       "catalogId": "0196",
       "file": "0196_0197_San_Agustin_Controversia_arriana.md",
       "title": "San Agustin Controversia arriana",
@@ -1857,7 +1857,7 @@
     },
     {
       "id": "history-0198_0204_San_Agustin_Controversia_donatista",
-      "contentFile": "data/documents/fed2a81f7b7e90dbf0.js",
+      "contentFile": "data/documents/fed2a81f7b7e90dbf0.json.gz",
       "catalogId": "0198",
       "file": "0198_0204_San_Agustin_Controversia_donatista.md",
       "title": "San Agustin Controversia donatista",
@@ -1883,7 +1883,7 @@
     },
     {
       "id": "history-0205_0211_San_Agustin_Controversia_pelagiana",
-      "contentFile": "data/documents/f2ca038300d7e230a5.js",
+      "contentFile": "data/documents/f2ca038300d7e230a5.json.gz",
       "catalogId": "0205",
       "file": "0205_0211_San_Agustin_Controversia_pelagiana.md",
       "title": "San Agustin Controversia pelagiana",
@@ -1909,7 +1909,7 @@
     },
     {
       "id": "history-0212_Augustin_contre_Julien_II",
-      "contentFile": "data/documents/ebe34167c69b928ba1.js",
+      "contentFile": "data/documents/ebe34167c69b928ba1.json.gz",
       "catalogId": "0212",
       "file": "0212_Augustin_contre_Julien_II.md",
       "title": "Augustin contre Julien II",
@@ -1929,7 +1929,7 @@
     },
     {
       "id": "history-0213_0220_San_Agustin_Escritos_polemicos",
-      "contentFile": "data/documents/04569a663c754c42d3.js",
+      "contentFile": "data/documents/04569a663c754c42d3.json.gz",
       "catalogId": "0213",
       "file": "0213_0220_San_Agustin_Escritos_polemicos.md",
       "title": "San Agustin Escritos polemicos",
@@ -1956,7 +1956,7 @@
     },
     {
       "id": "history-0221_CRISOSTOMO_SACERDOCIO",
-      "contentFile": "data/documents/303880eb5635a95b7d.js",
+      "contentFile": "data/documents/303880eb5635a95b7d.json.gz",
       "catalogId": "0221",
       "file": "0221_CRISOSTOMO_SACERDOCIO.md",
       "title": "CRISOSTOMO SACERDOCIO",
@@ -1976,7 +1976,7 @@
     },
     {
       "id": "history-0222_Crisostomo_Ev_Juan",
-      "contentFile": "data/documents/0035416251a7b6081d.js",
+      "contentFile": "data/documents/0035416251a7b6081d.json.gz",
       "catalogId": "0222",
       "file": "0222_Crisostomo_Ev_Juan.md",
       "title": "Crisostomo Ev Juan",
@@ -1996,7 +1996,7 @@
     },
     {
       "id": "history-0223_Crisostomo_Mateo",
-      "contentFile": "data/documents/3959ee7e8628dde5e7.js",
+      "contentFile": "data/documents/3959ee7e8628dde5e7.json.gz",
       "catalogId": "0223",
       "file": "0223_Crisostomo_Mateo.md",
       "title": "Crisostomo Mateo",
@@ -2016,7 +2016,7 @@
     },
     {
       "id": "history-0224_Efren_ES",
-      "contentFile": "data/documents/aaf52ddb180327e18e.js",
+      "contentFile": "data/documents/aaf52ddb180327e18e.json.gz",
       "catalogId": "0224",
       "file": "0224_Efren_ES.md",
       "title": "Efren",
@@ -2036,7 +2036,7 @@
     },
     {
       "id": "history-0229_Origenes_contra_Celso",
-      "contentFile": "data/documents/d603417020a1b75c67.js",
+      "contentFile": "data/documents/d603417020a1b75c67.json.gz",
       "catalogId": "0229",
       "file": "0229_Origenes_contra_Celso.md",
       "title": "Origenes contra Celso",
@@ -2056,7 +2056,7 @@
     },
     {
       "id": "history-0230_Origenes_Cantar_Cant",
-      "contentFile": "data/documents/3a5e7fc1ecf9df1e5a.js",
+      "contentFile": "data/documents/3a5e7fc1ecf9df1e5a.json.gz",
       "catalogId": "0230",
       "file": "0230_Origenes_Cantar_Cant.md",
       "title": "Origenes Cantar Cant",
@@ -2076,7 +2076,7 @@
     },
     {
       "id": "history-0231_Origenes_Exodo",
-      "contentFile": "data/documents/3fb151e4bbf5b4cbbb.js",
+      "contentFile": "data/documents/3fb151e4bbf5b4cbbb.json.gz",
       "catalogId": "0231",
       "file": "0231_Origenes_Exodo.md",
       "title": "Origenes Exodo",
@@ -2096,7 +2096,7 @@
     },
     {
       "id": "history-0232_Origenes_de_principis",
-      "contentFile": "data/documents/669b1e5200e3d18a3b.js",
+      "contentFile": "data/documents/669b1e5200e3d18a3b.json.gz",
       "catalogId": "0232",
       "file": "0232_Origenes_de_principis.md",
       "title": "Origenes de principis",
@@ -2116,7 +2116,7 @@
     },
     {
       "id": "history-0233_Ireneo_Contra_herejes",
-      "contentFile": "data/documents/d778141c93c611c238.js",
+      "contentFile": "data/documents/d778141c93c611c238.json.gz",
       "catalogId": "0233",
       "file": "0233_Ireneo_Contra_herejes.md",
       "title": "Ireneo Contra herejes",
@@ -2136,7 +2136,7 @@
     },
     {
       "id": "history-0234_Cipriano_ES",
-      "contentFile": "data/documents/0f3dc7bf004ea5500e.js",
+      "contentFile": "data/documents/0f3dc7bf004ea5500e.json.gz",
       "catalogId": "0234",
       "file": "0234_Cipriano_ES.md",
       "title": "Cipriano",
@@ -2156,7 +2156,7 @@
     },
     {
       "id": "history-0235_Ireneo_Epideixis",
-      "contentFile": "data/documents/9879e6f99074d94bf6.js",
+      "contentFile": "data/documents/9879e6f99074d94bf6.json.gz",
       "catalogId": "0235",
       "file": "0235_Ireneo_Epideixis.md",
       "title": "Ireneo Epideixis",
@@ -2176,7 +2176,7 @@
     },
     {
       "id": "history-0236_Historia_Eclesiastica_Eusebio_de_Cesarea",
-      "contentFile": "data/documents/e7665bb2b7f0463d69.js",
+      "contentFile": "data/documents/e7665bb2b7f0463d69.json.gz",
       "catalogId": "0236",
       "file": "0236_Historia_Eclesiastica_Eusebio_de_Cesarea.md",
       "title": "Historia Eclesiastica Eusebio de Cesarea",
@@ -2196,7 +2196,7 @@
     },
     {
       "id": "history-0248_F_de_Sales_Amor_de_Dios",
-      "contentFile": "data/documents/b45fdecb6b58fa2ed4.js",
+      "contentFile": "data/documents/b45fdecb6b58fa2ed4.json.gz",
       "catalogId": "0248",
       "file": "0248_F_de_Sales_Amor_de_Dios.md",
       "title": "F de Sales Amor de Dios",
@@ -2216,7 +2216,7 @@
     },
     {
       "id": "history-0249_F_de_Sales_Carta_abierta",
-      "contentFile": "data/documents/bae380952b92b0717f.js",
+      "contentFile": "data/documents/bae380952b92b0717f.json.gz",
       "catalogId": "0249",
       "file": "0249_F_de_Sales_Carta_abierta.md",
       "title": "F de Sales Carta abierta",
@@ -2236,7 +2236,7 @@
     },
     {
       "id": "history-0250_Introduccion_vida_devota",
-      "contentFile": "data/documents/ae9cf1db675baa7c97.js",
+      "contentFile": "data/documents/ae9cf1db675baa7c97.json.gz",
       "catalogId": "0250",
       "file": "0250_Introduccion_vida_devota.md",
       "title": "Introduccion vida devota",
@@ -2256,7 +2256,7 @@
     },
     {
       "id": "history-0251_F_de_Sales_Entretiens",
-      "contentFile": "data/documents/1200e9e5b2622f24d6.js",
+      "contentFile": "data/documents/1200e9e5b2622f24d6.json.gz",
       "catalogId": "0251",
       "file": "0251_F_de_Sales_Entretiens.md",
       "title": "F de Sales Entretiens",
@@ -2276,7 +2276,7 @@
     },
     {
       "id": "history-0252_Francois_S_avis_sermons",
-      "contentFile": "data/documents/583f6f037954c88c4e.js",
+      "contentFile": "data/documents/583f6f037954c88c4e.json.gz",
       "catalogId": "0252",
       "file": "0252_Francois_S_avis_sermons.md",
       "title": "Francois S avis sermons",
@@ -2296,7 +2296,7 @@
     },
     {
       "id": "history-0253_F_de_Sales_Lettres_parte_01",
-      "contentFile": "data/documents/03cdcefb1f17407119.js",
+      "contentFile": "data/documents/03cdcefb1f17407119.json.gz",
       "catalogId": "0253",
       "file": "0253_F_de_Sales_Lettres_parte_01.md",
       "title": "F de Sales Lettres",
@@ -2316,7 +2316,7 @@
     },
     {
       "id": "history-0253_F_de_Sales_Lettres_parte_02",
-      "contentFile": "data/documents/c618762c492044d1da.js",
+      "contentFile": "data/documents/c618762c492044d1da.json.gz",
       "catalogId": "0253",
       "file": "0253_F_de_Sales_Lettres_parte_02.md",
       "title": "F de Sales Lettres",
@@ -2336,7 +2336,7 @@
     },
     {
       "id": "history-0254_Fr_de_Sales_Notre_Pere",
-      "contentFile": "data/documents/e2ed4b42be5c7ad65a.js",
+      "contentFile": "data/documents/e2ed4b42be5c7ad65a.json.gz",
       "catalogId": "0254",
       "file": "0254_Fr_de_Sales_Notre_Pere.md",
       "title": "Fr de Sales Notre Pere",
@@ -2356,7 +2356,7 @@
     },
     {
       "id": "history-0255_Audi_filia_et_vide_Juan_de_Avila",
-      "contentFile": "data/documents/3075dd23bb404599fe.js",
+      "contentFile": "data/documents/3075dd23bb404599fe.json.gz",
       "catalogId": "0255",
       "file": "0255_Audi_filia_et_vide_Juan_de_Avila.md",
       "title": "Audi filia et vide Juan de Avila",
@@ -2376,7 +2376,7 @@
     },
     {
       "id": "history-0256_0258_San_Juan_de_la_Cruz_Subida_del_Monte_Carmelo",
-      "contentFile": "data/documents/a4a84756739d1f8215.js",
+      "contentFile": "data/documents/a4a84756739d1f8215.json.gz",
       "catalogId": "0256",
       "file": "0256_0258_San_Juan_de_la_Cruz_Subida_del_Monte_Carmelo.md",
       "title": "San Juan de la Cruz Subida del Monte Carmelo",
@@ -2398,7 +2398,7 @@
     },
     {
       "id": "history-0259_0260_San_Juan_de_la_Cruz_Noche_oscura",
-      "contentFile": "data/documents/5286325cd17e9f19d1.js",
+      "contentFile": "data/documents/5286325cd17e9f19d1.json.gz",
       "catalogId": "0259",
       "file": "0259_0260_San_Juan_de_la_Cruz_Noche_oscura.md",
       "title": "San Juan de la Cruz Noche oscura",
@@ -2419,7 +2419,7 @@
     },
     {
       "id": "history-0261_0262_San_Juan_de_la_Cruz_Llama_de_amor_viva",
-      "contentFile": "data/documents/dae4c2154631afdcaf.js",
+      "contentFile": "data/documents/dae4c2154631afdcaf.json.gz",
       "catalogId": "0261",
       "file": "0261_0262_San_Juan_de_la_Cruz_Llama_de_amor_viva.md",
       "title": "San Juan de la Cruz Llama de amor viva",
@@ -2440,7 +2440,7 @@
     },
     {
       "id": "history-0263_0264_San_Juan_de_la_Cruz_Cantico_espiritual",
-      "contentFile": "data/documents/f164b65b916c67900d.js",
+      "contentFile": "data/documents/f164b65b916c67900d.json.gz",
       "catalogId": "0263",
       "file": "0263_0264_San_Juan_de_la_Cruz_Cantico_espiritual.md",
       "title": "San Juan de la Cruz Cantico espiritual",
@@ -2461,7 +2461,7 @@
     },
     {
       "id": "history-0265_0271_Santa_Teresa_Las_Moradas",
-      "contentFile": "data/documents/0d391f670d34b360ed.js",
+      "contentFile": "data/documents/0d391f670d34b360ed.json.gz",
       "catalogId": "0265",
       "file": "0265_0271_Santa_Teresa_Las_Moradas.md",
       "title": "Santa Teresa Las Moradas",
@@ -2487,7 +2487,7 @@
     },
     {
       "id": "history-0272_Camino_de_Perfeccion",
-      "contentFile": "data/documents/03427387e513b93454.js",
+      "contentFile": "data/documents/03427387e513b93454.json.gz",
       "catalogId": "0272",
       "file": "0272_Camino_de_Perfeccion.md",
       "title": "Camino de Perfeccion",
@@ -2507,7 +2507,7 @@
     },
     {
       "id": "history-0273_CAMINO_DE_PERFECCION",
-      "contentFile": "data/documents/15fa56c452440fec47.js",
+      "contentFile": "data/documents/15fa56c452440fec47.json.gz",
       "catalogId": "0273",
       "file": "0273_CAMINO_DE_PERFECCION.md",
       "title": "CAMINO DE PERFECCION",
@@ -2527,7 +2527,7 @@
     },
     {
       "id": "history-0274_Libro_de_la_Vida",
-      "contentFile": "data/documents/fcc71f49a0b330ce7e.js",
+      "contentFile": "data/documents/fcc71f49a0b330ce7e.json.gz",
       "catalogId": "0274",
       "file": "0274_Libro_de_la_Vida.md",
       "title": "Libro de la Vida",
@@ -2547,7 +2547,7 @@
     },
     {
       "id": "history-0275_Las_Fundaciones",
-      "contentFile": "data/documents/8c8edee3dbdcf98f26.js",
+      "contentFile": "data/documents/8c8edee3dbdcf98f26.json.gz",
       "catalogId": "0275",
       "file": "0275_Las_Fundaciones.md",
       "title": "Las Fundaciones",
@@ -2567,7 +2567,7 @@
     },
     {
       "id": "history-0276_Teresa_III_Cartas",
-      "contentFile": "data/documents/4088154494ba4ec9e4.js",
+      "contentFile": "data/documents/4088154494ba4ec9e4.json.gz",
       "catalogId": "0276",
       "file": "0276_Teresa_III_Cartas.md",
       "title": "Teresa III Cartas",
@@ -2587,7 +2587,7 @@
     },
     {
       "id": "history-0278_Catherine_Dialogue",
-      "contentFile": "data/documents/53f2590cf8282c0af0.js",
+      "contentFile": "data/documents/53f2590cf8282c0af0.json.gz",
       "catalogId": "0278",
       "file": "0278_Catherine_Dialogue.md",
       "title": "Catherine Dialogue",
@@ -2607,7 +2607,7 @@
     },
     {
       "id": "history-0279_Catherine_Lettres_parte_01",
-      "contentFile": "data/documents/b78f4a42aee5cef0ee.js",
+      "contentFile": "data/documents/b78f4a42aee5cef0ee.json.gz",
       "catalogId": "0279",
       "file": "0279_Catherine_Lettres_parte_01.md",
       "title": "Catherine Lettres",
@@ -2627,7 +2627,7 @@
     },
     {
       "id": "history-0279_Catherine_Lettres_parte_02",
-      "contentFile": "data/documents/078b9f701608be84c1.js",
+      "contentFile": "data/documents/078b9f701608be84c1.json.gz",
       "catalogId": "0279",
       "file": "0279_Catherine_Lettres_parte_02.md",
       "title": "Catherine Lettres",
@@ -2647,7 +2647,7 @@
     },
     {
       "id": "history-0280_B_Raymond_V_Catherine",
-      "contentFile": "data/documents/a7aaf2a80826e87b2e.js",
+      "contentFile": "data/documents/a7aaf2a80826e87b2e.json.gz",
       "catalogId": "0280",
       "file": "0280_B_Raymond_V_Catherine.md",
       "title": "B Raymond V Catherine",
@@ -2667,7 +2667,7 @@
     },
     {
       "id": "history-0281_COLLATIONES_DE_DONIS_S_SANCTI_BONAVENTURAE",
-      "contentFile": "data/documents/598cccc2f4d1003ab4.js",
+      "contentFile": "data/documents/598cccc2f4d1003ab4.json.gz",
       "catalogId": "0281",
       "file": "0281_COLLATIONES_DE_DONIS_S_SANCTI_BONAVENTURAE.md",
       "title": "COLLATIONES DE DONIS S SANCTI BONAVENTURAE",
@@ -2687,7 +2687,7 @@
     },
     {
       "id": "history-0282_Bernard_Lettres",
-      "contentFile": "data/documents/ceeeb166a5ead95c65.js",
+      "contentFile": "data/documents/ceeeb166a5ead95c65.json.gz",
       "catalogId": "0282",
       "file": "0282_Bernard_Lettres.md",
       "title": "Bernard Lettres",
@@ -2707,7 +2707,7 @@
     },
     {
       "id": "history-0283_Bernard_Opuscules",
-      "contentFile": "data/documents/8547334cfc7187fd50.js",
+      "contentFile": "data/documents/8547334cfc7187fd50.json.gz",
       "catalogId": "0283",
       "file": "0283_Bernard_Opuscules.md",
       "title": "Bernard Opuscules",
@@ -2727,7 +2727,7 @@
     },
     {
       "id": "history-0284_Bernard_de_Consideratione",
-      "contentFile": "data/documents/843f7da19ed38bd932.js",
+      "contentFile": "data/documents/843f7da19ed38bd932.json.gz",
       "catalogId": "0284",
       "file": "0284_Bernard_de_Consideratione.md",
       "title": "Bernard de Consideratione",
@@ -2747,7 +2747,7 @@
     },
     {
       "id": "history-0285_Bernard_aux_eveques",
-      "contentFile": "data/documents/c52846a7dae7568e76.js",
+      "contentFile": "data/documents/c52846a7dae7568e76.json.gz",
       "catalogId": "0285",
       "file": "0285_Bernard_aux_eveques.md",
       "title": "Bernard aux eveques",
@@ -2767,7 +2767,7 @@
     },
     {
       "id": "history-0286_Bernard_aux_pretres",
-      "contentFile": "data/documents/d194b0a5bc6cf31e12.js",
+      "contentFile": "data/documents/d194b0a5bc6cf31e12.json.gz",
       "catalogId": "0286",
       "file": "0286_Bernard_aux_pretres.md",
       "title": "Bernard aux pretres",
@@ -2787,7 +2787,7 @@
     },
     {
       "id": "history-0287_Bernard_du_precepte",
-      "contentFile": "data/documents/8d7c6f43f2be7af91c.js",
+      "contentFile": "data/documents/8d7c6f43f2be7af91c.json.gz",
       "catalogId": "0287",
       "file": "0287_Bernard_du_precepte.md",
       "title": "Bernard du precepte",
@@ -2807,7 +2807,7 @@
     },
     {
       "id": "history-0288_Bernard_tr_5_sur_Cluny",
-      "contentFile": "data/documents/b8b183cb58f32fae60.js",
+      "contentFile": "data/documents/b8b183cb58f32fae60.json.gz",
       "catalogId": "0288",
       "file": "0288_Bernard_tr_5_sur_Cluny.md",
       "title": "Bernard tr 5 sur Cluny",
@@ -2827,7 +2827,7 @@
     },
     {
       "id": "history-0289_Bernard_aux_Templiers",
-      "contentFile": "data/documents/2d395edf5b2f0b13df.js",
+      "contentFile": "data/documents/2d395edf5b2f0b13df.json.gz",
       "catalogId": "0289",
       "file": "0289_Bernard_aux_Templiers.md",
       "title": "Bernard aux Templiers",
@@ -2847,7 +2847,7 @@
     },
     {
       "id": "history-0290_Bernard_degres_humilite",
-      "contentFile": "data/documents/b0c7a348f30c4902af.js",
+      "contentFile": "data/documents/b0c7a348f30c4902af.json.gz",
       "catalogId": "0290",
       "file": "0290_Bernard_degres_humilite.md",
       "title": "Bernard degres humilite",
@@ -2867,7 +2867,7 @@
     },
     {
       "id": "history-0291_Bernard_Amour_de_Dieu",
-      "contentFile": "data/documents/93d10a28c49ce7adf9.js",
+      "contentFile": "data/documents/93d10a28c49ce7adf9.json.gz",
       "catalogId": "0291",
       "file": "0291_Bernard_Amour_de_Dieu.md",
       "title": "Bernard Amour de Dieu",
@@ -2887,7 +2887,7 @@
     },
     {
       "id": "history-0292_Bernard_Libre_arbitre",
-      "contentFile": "data/documents/97aa38baac26ed3076.js",
+      "contentFile": "data/documents/97aa38baac26ed3076.json.gz",
       "catalogId": "0292",
       "file": "0292_Bernard_Libre_arbitre.md",
       "title": "Bernard Libre arbitre",
@@ -2907,7 +2907,7 @@
     },
     {
       "id": "history-0293_Bernard_du_Bapteme",
-      "contentFile": "data/documents/09dd3cc4ab7fcc76d0.js",
+      "contentFile": "data/documents/09dd3cc4ab7fcc76d0.json.gz",
       "catalogId": "0293",
       "file": "0293_Bernard_du_Bapteme.md",
       "title": "Bernard du Bapteme",
@@ -2927,7 +2927,7 @@
     },
     {
       "id": "history-0294_Bernard_sur_Abelard",
-      "contentFile": "data/documents/3c992b0c2126cb384d.js",
+      "contentFile": "data/documents/3c992b0c2126cb384d.json.gz",
       "catalogId": "0294",
       "file": "0294_Bernard_sur_Abelard.md",
       "title": "Bernard sur Abelard",
@@ -2947,7 +2947,7 @@
     },
     {
       "id": "history-0295_Bernard_St_Malachie",
-      "contentFile": "data/documents/bc3cb5ee4dfa647aeb.js",
+      "contentFile": "data/documents/bc3cb5ee4dfa647aeb.json.gz",
       "catalogId": "0295",
       "file": "0295_Bernard_St_Malachie.md",
       "title": "Bernard St Malachie",
@@ -2967,7 +2967,7 @@
     },
     {
       "id": "history-0296_Bernard_le_chant",
-      "contentFile": "data/documents/343bbe9a5ea673cdb3.js",
+      "contentFile": "data/documents/343bbe9a5ea673cdb3.json.gz",
       "catalogId": "0296",
       "file": "0296_Bernard_le_chant.md",
       "title": "Bernard le chant",
@@ -2987,7 +2987,7 @@
     },
     {
       "id": "history-0297_Kempis_Imitacion_de_Cristo",
-      "contentFile": "data/documents/189f440fc84c81bb9a.js",
+      "contentFile": "data/documents/189f440fc84c81bb9a.json.gz",
       "catalogId": "0297",
       "file": "0297_Kempis_Imitacion_de_Cristo.md",
       "title": "Kempis Imitacion de Cristo",
@@ -3007,7 +3007,7 @@
     },
     {
       "id": "history-0329_Vaticano_I",
-      "contentFile": "data/documents/b658ebb45205c1c2ec.js",
+      "contentFile": "data/documents/b658ebb45205c1c2ec.json.gz",
       "catalogId": "0329",
       "file": "0329_Vaticano_I.md",
       "title": "Vaticano I",
@@ -3027,7 +3027,7 @@
     },
     {
       "id": "history-0330_TRENTO",
-      "contentFile": "data/documents/0a63a20d5289bb3ef8.js",
+      "contentFile": "data/documents/0a63a20d5289bb3ef8.json.gz",
       "catalogId": "0330",
       "file": "0330_TRENTO.md",
       "title": "TRENTO",
@@ -3047,7 +3047,7 @@
     },
     {
       "id": "history-0331_Lateranense_II_1139",
-      "contentFile": "data/documents/51af1548b55c7c856a.js",
+      "contentFile": "data/documents/51af1548b55c7c856a.json.gz",
       "catalogId": "0331",
       "file": "0331_Lateranense_II_1139.md",
       "title": "Lateranense II 1139",
@@ -3067,7 +3067,7 @@
     },
     {
       "id": "history-0332_Denzinger_parte_01",
-      "contentFile": "data/documents/de157a086a1a9b7dc4.js",
+      "contentFile": "data/documents/de157a086a1a9b7dc4.json.gz",
       "catalogId": "0332",
       "file": "0332_Denzinger_parte_01.md",
       "title": "Denzinger",
@@ -3087,7 +3087,7 @@
     },
     {
       "id": "history-0332_Denzinger_parte_02",
-      "contentFile": "data/documents/e5c0220a905f5842df.js",
+      "contentFile": "data/documents/e5c0220a905f5842df.json.gz",
       "catalogId": "0332",
       "file": "0332_Denzinger_parte_02.md",
       "title": "Denzinger",
@@ -3107,7 +3107,7 @@
     },
     {
       "id": "history-0332_Denzinger_parte_03",
-      "contentFile": "data/documents/8376fa9871fa3764cf.js",
+      "contentFile": "data/documents/8376fa9871fa3764cf.json.gz",
       "catalogId": "0332",
       "file": "0332_Denzinger_parte_03.md",
       "title": "Denzinger",
@@ -3127,7 +3127,7 @@
     },
     {
       "id": "history-0333_I_Toledo",
-      "contentFile": "data/documents/c3789b71c20f581f50.js",
+      "contentFile": "data/documents/c3789b71c20f581f50.json.gz",
       "catalogId": "0333",
       "file": "0333_I_Toledo.md",
       "title": "I Toledo",
@@ -3147,7 +3147,7 @@
     },
     {
       "id": "history-0368_Mystici_corporis_ES",
-      "contentFile": "data/documents/e3c26c27130ffc5f60.js",
+      "contentFile": "data/documents/e3c26c27130ffc5f60.json.gz",
       "catalogId": "0368",
       "file": "0368_Mystici_corporis_ES.md",
       "title": "Mystici corporis",
@@ -3167,7 +3167,7 @@
     },
     {
       "id": "history-0369_PIOXII_MAGISTERIO_PONTIFICIO",
-      "contentFile": "data/documents/1ef7c8e12fde58ad97.js",
+      "contentFile": "data/documents/1ef7c8e12fde58ad97.json.gz",
       "catalogId": "0369",
       "file": "0369_PIOXII_MAGISTERIO_PONTIFICIO.md",
       "title": "PIOXII MAGISTERIO PONTIFICIO",
@@ -3187,7 +3187,7 @@
     },
     {
       "id": "history-0370_Pio_XII_Summi_Pontificatus",
-      "contentFile": "data/documents/2141e99905504f3d11.js",
+      "contentFile": "data/documents/2141e99905504f3d11.json.gz",
       "catalogId": "0370",
       "file": "0370_Pio_XII_Summi_Pontificatus.md",
       "title": "Pio XII Summi Pontificatus",
@@ -3207,7 +3207,7 @@
     },
     {
       "id": "history-0371_Casti_connubii_ES",
-      "contentFile": "data/documents/31f4af022bea60da5b.js",
+      "contentFile": "data/documents/31f4af022bea60da5b.json.gz",
       "catalogId": "0371",
       "file": "0371_Casti_connubii_ES.md",
       "title": "Casti connubii",
@@ -3227,7 +3227,7 @@
     },
     {
       "id": "history-0372_PIO_XI_MAGISTERIO_PONTIFICIO",
-      "contentFile": "data/documents/e4c04beaf4e056003e.js",
+      "contentFile": "data/documents/e4c04beaf4e056003e.json.gz",
       "catalogId": "0372",
       "file": "0372_PIO_XI_MAGISTERIO_PONTIFICIO.md",
       "title": "PIO XI MAGISTERIO PONTIFICIO",
@@ -3247,7 +3247,7 @@
     },
     {
       "id": "history-0373_Quas_primas_ES",
-      "contentFile": "data/documents/1228f65c67aee01a20.js",
+      "contentFile": "data/documents/1228f65c67aee01a20.json.gz",
       "catalogId": "0373",
       "file": "0373_Quas_primas_ES.md",
       "title": "Quas primas",
@@ -3267,7 +3267,7 @@
     },
     {
       "id": "history-0374_BENEDICTO_XV_MAGISTERIO",
-      "contentFile": "data/documents/b37128df312e5c78b0.js",
+      "contentFile": "data/documents/b37128df312e5c78b0.json.gz",
       "catalogId": "0374",
       "file": "0374_BENEDICTO_XV_MAGISTERIO.md",
       "title": "BENEDICTO XV MAGISTERIO",
@@ -3287,7 +3287,7 @@
     },
     {
       "id": "history-0375_San_Pio_X_Pascendi",
-      "contentFile": "data/documents/87f7e5bafa6da8c86c.js",
+      "contentFile": "data/documents/87f7e5bafa6da8c86c.json.gz",
       "catalogId": "0375",
       "file": "0375_San_Pio_X_Pascendi.md",
       "title": "San Pio X Pascendi",
@@ -3307,7 +3307,7 @@
     },
     {
       "id": "history-0376_PIO_X_MAGISTERIO",
-      "contentFile": "data/documents/db0b71130a08b1e01a.js",
+      "contentFile": "data/documents/db0b71130a08b1e01a.json.gz",
       "catalogId": "0376",
       "file": "0376_PIO_X_MAGISTERIO.md",
       "title": "PIO X MAGISTERIO",
@@ -3327,7 +3327,7 @@
     },
     {
       "id": "history-0377_San_Pio_X_Ad_diem_illud_laetissimum",
-      "contentFile": "data/documents/ac6e0923dbecdf09ca.js",
+      "contentFile": "data/documents/ac6e0923dbecdf09ca.json.gz",
       "catalogId": "0377",
       "file": "0377_San_Pio_X_Ad_diem_illud_laetissimum.md",
       "title": "San Pio X Ad diem illud laetissimum",
@@ -3347,7 +3347,7 @@
     },
     {
       "id": "history-0378_Acerbo_nimis_ES",
-      "contentFile": "data/documents/2e11151234c7818e0a.js",
+      "contentFile": "data/documents/2e11151234c7818e0a.json.gz",
       "catalogId": "0378",
       "file": "0378_Acerbo_nimis_ES.md",
       "title": "Acerbo nimis",
@@ -3367,7 +3367,7 @@
     },
     {
       "id": "history-0379_San_Pio_X_Communium_rerum",
-      "contentFile": "data/documents/2c8adf7514fd5fbf9b.js",
+      "contentFile": "data/documents/2c8adf7514fd5fbf9b.json.gz",
       "catalogId": "0379",
       "file": "0379_San_Pio_X_Communium_rerum.md",
       "title": "San Pio X Communium rerum",
@@ -3387,7 +3387,7 @@
     },
     {
       "id": "history-0380_San_PIO_X_E_supremi_Apostolatus",
-      "contentFile": "data/documents/4f9082ccfb89dfa4e9.js",
+      "contentFile": "data/documents/4f9082ccfb89dfa4e9.json.gz",
       "catalogId": "0380",
       "file": "0380_San_PIO_X_E_supremi_Apostolatus.md",
       "title": "San PIO X E supremi Apostolatus",
@@ -3407,7 +3407,7 @@
     },
     {
       "id": "history-0381_San_Pio_X_Iucunda_sane",
-      "contentFile": "data/documents/b2bad2440a541ba16d.js",
+      "contentFile": "data/documents/b2bad2440a541ba16d.json.gz",
       "catalogId": "0381",
       "file": "0381_San_Pio_X_Iucunda_sane.md",
       "title": "San Pio X Iucunda sane",
@@ -3427,7 +3427,7 @@
     },
     {
       "id": "history-0382_PIO_X_Notre_charge_apostolique",
-      "contentFile": "data/documents/a7412ad6a340ce6df1.js",
+      "contentFile": "data/documents/a7412ad6a340ce6df1.json.gz",
       "catalogId": "0382",
       "file": "0382_PIO_X_Notre_charge_apostolique.md",
       "title": "PIO X Notre charge apostolique",
@@ -3447,7 +3447,7 @@
     },
     {
       "id": "history-0383_LEON_XIII_MAGISTERIO",
-      "contentFile": "data/documents/f55d123d3cf34a42b6.js",
+      "contentFile": "data/documents/f55d123d3cf34a42b6.json.gz",
       "catalogId": "0383",
       "file": "0383_LEON_XIII_MAGISTERIO.md",
       "title": "LEON XIII MAGISTERIO",
@@ -3467,7 +3467,7 @@
     },
     {
       "id": "history-0384_Depuis_le_Jour",
-      "contentFile": "data/documents/612338ddb8c9cb9341.js",
+      "contentFile": "data/documents/612338ddb8c9cb9341.json.gz",
       "catalogId": "0384",
       "file": "0384_Depuis_le_Jour.md",
       "title": "Depuis le Jour",
@@ -3487,7 +3487,7 @@
     },
     {
       "id": "history-0385_PIO_IX_MAGISTERIO",
-      "contentFile": "data/documents/292a0759707f331f5a.js",
+      "contentFile": "data/documents/292a0759707f331f5a.json.gz",
       "catalogId": "0385",
       "file": "0385_PIO_IX_MAGISTERIO.md",
       "title": "PIO IX MAGISTERIO",

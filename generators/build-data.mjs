@@ -2,13 +2,24 @@ import fs from "node:fs";
 import path from "node:path";
 import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
+import { atlasRoot, sourceRoot, dataRoot as outputDir } from "./lib/paths.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-const atlasRoot = path.dirname(here);
-const sourceRoot = path.dirname(atlasRoot);
-const outputDir = path.join(atlasRoot, "data");
 
 const registryPath = path.join(atlasRoot, "content", "libraries.json");
+const idRegistryPath = path.join(atlasRoot, "source", "id-registry.json");
+const idRegistry = fs.existsSync(idRegistryPath)
+  ? JSON.parse(fs.readFileSync(idRegistryPath, "utf8"))
+  : { schemaVersion: 1, documents: {} };
+let idRegistryChanged = false;
+function stableDocumentId(folder, file, fallback) {
+  const key = `${folder}/${String(file).replaceAll("\\", "/")}`;
+  if (!idRegistry.documents[key]) {
+    idRegistry.documents[key] = fallback;
+    idRegistryChanged = true;
+  }
+  return idRegistry.documents[key];
+}
 const registryLibraries = fs.existsSync(registryPath) ? JSON.parse(fs.readFileSync(registryPath, "utf8")) : [];
 const registeredLibraries = registryLibraries.filter(item => fs.existsSync(path.join(sourceRoot, item.folder)));
 const tones = ["amber", "blue", "clay", "violet", "emerald", "rose", "indigo", "gold", "cyan", "olive", "burgundy", "slate"];
@@ -86,7 +97,7 @@ function cleanTitle(fileName) {
 }
 
 function contentFileFor(id) {
-  return `data/documents/${crypto.createHash("sha1").update(id).digest("hex").slice(0, 18)}.js`;
+  return `data/documents/${crypto.createHash("sha1").update(id).digest("hex").slice(0, 18)}.json.gz`;
 }
 
 function extractSection(markdown, heading, nextHeading) {
@@ -178,7 +189,7 @@ function parseLibrary(config) {
     const isHistorical = originalNumbers.some(number => historicalNumbers.has(number));
     const isIncomplete = originalNumbers.some(number => incompleteNumbers.has(number));
     const isForeign = originalNumbers.some(number => foreignNumbers.has(number));
-    const id = `${config.id}-${path.basename(file, ".md")}`;
+    const id = stableDocumentId(config.folder, file, `${config.id}-${path.basename(file, ".md")}`);
     documents.push({
       id,
       contentFile: contentFileFor(id),
@@ -215,7 +226,7 @@ function parseLibrary(config) {
     const originalNumbers = [...String(originals).matchAll(/\d{1,4}/g)].map(item => item[0].padStart(4, "0"));
     const category = frontmatter.category || "Nuevos documentos";
     const yearMatch = String(frontmatter.year || titleValue).match(/(?<!\d)(1\d{3}|20\d{2})(?!\d)/);
-    const id = `${config.id}-${path.basename(file, ".md")}`;
+    const id = stableDocumentId(config.folder, file, `${config.id}-${path.basename(file, ".md")}`);
     indexedByFile.set(file, {
       id,
       contentFile: contentFileFor(id),
@@ -434,10 +445,11 @@ if (validation.errors.length) {
 }
 
 const generatedAt = new Date().toISOString();
+const packageMetadata = JSON.parse(fs.readFileSync(path.join(atlasRoot, "package.json"), "utf8"));
 const catalog = {
   meta: {
     app: "ATLAS",
-    dataVersion: overrides.dataVersion ?? "2.0.0",
+    dataVersion: packageMetadata.version,
     generatedAt,
     source: "Four 0000_Indice_y_mapa_de_fuentes.md files",
     documents: libraries.reduce((sum, library) => sum + library.documents.length, 0),
@@ -454,7 +466,6 @@ for (const library of libraries) {
   fs.writeFileSync(path.join(outputDir, `${library.id}.json`), JSON.stringify(library, null, 2));
 }
 fs.writeFileSync(path.join(outputDir, "catalog.json"), JSON.stringify(catalog, null, 2));
-fs.writeFileSync(path.join(outputDir, "catalog.js"), `window.ATLAS_CATALOG=${JSON.stringify(catalog)};\n`);
 fs.writeFileSync(path.join(outputDir, "collections.json"), JSON.stringify(collections, null, 2));
 fs.writeFileSync(path.join(outputDir, "routes.json"), JSON.stringify(routes, null, 2));
 fs.writeFileSync(path.join(outputDir, "shorts.json"), JSON.stringify(shorts, null, 2));
@@ -469,4 +480,9 @@ fs.writeFileSync(path.join(outputDir, "version.json"), JSON.stringify({
   generatedAt,
   documents: catalog.meta.documents
 }, null, 2));
+if (idRegistryChanged) {
+  fs.mkdirSync(path.dirname(idRegistryPath), { recursive: true });
+  const ordered = Object.fromEntries(Object.entries(idRegistry.documents).sort(([a], [b]) => a.localeCompare(b, "es")));
+  fs.writeFileSync(idRegistryPath, `${JSON.stringify({ schemaVersion: 1, documents: ordered }, null, 2)}\n`, "utf8");
+}
 console.log(`Atlas data ${catalog.meta.dataVersion}: ${catalog.meta.documents} documents, ${catalog.meta.words} words.`);

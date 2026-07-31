@@ -13,7 +13,7 @@
 <body>
   <header class="topbar">
     <a class="brand" href="/"><span>A</span><strong>Gestor Atlas<small>Base documental local</small></strong></a>
-    <div class="top-actions"><span id="server-state" class="state">Conectando…</span><button id="rebuild" class="primary">Actualizar Atlas</button><a href="/" class="button">Abrir Atlas</a></div>
+    <div class="top-actions"><span id="server-state" class="state">Conectando…</span><button id="validate" class="button">Validar</button><button id="rebuild" class="primary">Construir y preparar</button><a href="/" class="button">Abrir Atlas</a></div>
   </header>
   <main>
     <section id="summary" class="summary"></section>
@@ -23,6 +23,8 @@
       <button data-tab="libraries">Bibliotecas IA</button>
       <button data-tab="shorts">Shorts y frases</button>
       <button data-tab="external">Noticias y lecturas</button>
+      <button data-tab="providers">Proveedores</button>
+      <button data-tab="publication">Publicación</button>
     </nav>
 
     <section class="panel active" data-panel="documents">
@@ -78,6 +80,23 @@
     <section class="panel" data-panel="external">
       <div class="panel-head"><div><span class="eyebrow">API editorial</span><h1>Noticias, oración y lecturas</h1><p>Añade URLs. Al actualizar, Atlas obtiene metadatos e imágenes y mezcla una selección en el feed.</p></div><div class="button-row"><button id="refresh-external" class="button">Consultar enlaces ahora</button><button class="primary" data-save-editor="external">Guardar base</button></div></div>
       <textarea id="external-editor" class="json-editor" spellcheck="false"></textarea><div id="external-result" class="result"></div>
+    </section>
+
+    <section class="panel" data-panel="providers">
+      <div class="panel-head"><div><span class="eyebrow">Conexiones externas</span><h1>Canales y proveedores</h1><p>Configura las fuentes que GitHub Actions consultará. Guardar aquí no publica nada.</p></div><button id="save-providers" class="primary">Guardar configuración</button></div>
+      <div class="provider-editors">
+        <label class="card"><strong>YouTube</strong><textarea id="provider-youtube" class="json-editor compact" spellcheck="false"></textarea></label>
+        <label class="card"><strong>Música</strong><textarea id="provider-music" class="json-editor compact" spellcheck="false"></textarea></label>
+        <label class="card"><strong>Instagram</strong><textarea id="provider-instagram" class="json-editor compact" spellcheck="false"></textarea></label>
+      </div>
+      <div id="providers-result" class="result"></div>
+    </section>
+
+    <section class="panel" data-panel="publication">
+      <div class="panel-head"><div><span class="eyebrow">Centro de control</span><h1>Preparar la publicación</h1><p>Comprueba fuentes, derivados y proveedores. El Gestor construye <code>dist</code>, pero nunca sube el proyecto.</p></div><div class="button-row"><button id="run-audit" class="button">Auditar</button><button id="prepare-release" class="primary">Preparar dist</button></div></div>
+      <div class="admin-note"><strong>Estados del cambio</strong><span>Borrador → guardado en fuentes → validado → construido en dist → pendiente de que tú lo subas.</span></div>
+      <div id="publication-audit" class="audit-grid"></div>
+      <pre id="publication-output" class="build-output"></pre>
     </section>
   </main>
   <div id="toast" class="toast" hidden></div>

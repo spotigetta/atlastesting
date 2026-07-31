@@ -241,5 +241,4 @@ for (let offset = 0; offset < uniqueSource.length; offset += 6) {
 }
 const payload = { generatedAt: new Date().toISOString(), items };
 fs.writeFileSync(path.join(atlasRoot, "data", "external-content.json"), JSON.stringify(payload, null, 2));
-fs.writeFileSync(path.join(atlasRoot, "data", "external-content.js"), `window.ATLAS_EXTERNAL=${JSON.stringify(payload)};\n`);
 console.log(`External content: ${items.length} cards, ${items.filter(item => item.image).length} images, ${items.filter(item => item.fetched).length} fetched.`);

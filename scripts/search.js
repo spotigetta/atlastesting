@@ -8,6 +8,7 @@
   const documents = catalog.libraries.flatMap(lib => lib.documents.map(doc => ({ ...doc, library: lib })));
   const documentMap = new Map(documents.map(doc => [doc.id, doc]));
   let fullTextPromise;
+  const shardPromises = new Map();
 
   function expanded(value) {
     let text = normalize(value);
@@ -69,16 +70,22 @@
   }
 
   function loadFullText() {
-    if (window.ATLAS_FULLTEXT) return Promise.resolve(window.ATLAS_FULLTEXT);
     if (fullTextPromise) return fullTextPromise;
-    fullTextPromise = new Promise((resolve, reject) => {
-      const script = document.createElement("script");
-      script.src = "data/fulltext-index.js";
-      script.onload = () => window.ATLAS_FULLTEXT ? resolve(window.ATLAS_FULLTEXT) : reject(new Error("Índice no disponible"));
-      script.onerror = () => reject(new Error("No se pudo cargar el índice de texto"));
-      document.head.append(script);
+    fullTextPromise = window.AtlasRuntime.fetchJson("data/search/manifest.json").then(manifest => {
+      window.ATLAS_FULLTEXT = manifest;
+      return manifest;
     });
     return fullTextPromise;
+  }
+
+  const shardKey = term => /^[a-z0-9]$/.test(term[0] || "") ? term[0] : "_";
+
+  async function loadShard(index, key) {
+    if (!index.shards[key]) return {};
+    if (!shardPromises.has(key)) {
+      shardPromises.set(key, window.AtlasRuntime.fetchJson(index.shards[key].file).then(payload => payload.terms || {}));
+    }
+    return shardPromises.get(key);
   }
 
   function aliasGroup(token) {
@@ -91,16 +98,19 @@
   }
 
   async function searchFullText(query, filter = "all", limit = 80) {
-    const index = await loadFullText();
     const tokens = normalize(query).match(/[\p{L}\p{N}]{3,32}/gu) || [];
     const groups = tokens.map(aliasGroup);
     if (!groups.length) return [];
+    const index = await loadFullText();
+    const keys = new Set(groups.flat().map(shardKey));
+    const loaded = await Promise.all([...keys].map(async key => [key, await loadShard(index, key)]));
+    const shardTerms = new Map(loaded);
 
     let candidates = null;
     for (const alternatives of groups) {
       const union = new Map();
       for (const term of alternatives) {
-        const values = index.terms[term] || [];
+        const values = shardTerms.get(shardKey(term))?.[term] || [];
         for (let position = 0; position < values.length; position += 2) {
           const docIndex = values[position];
           union.set(docIndex, (union.get(docIndex) || 0) + values[position + 1]);

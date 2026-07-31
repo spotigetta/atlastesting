@@ -18,5 +18,5 @@ const items = source.items.map(item => ({
   external: true,
   verified: true
 }));
-fs.writeFileSync(path.join(atlasRoot, "data", "youtube-shorts.js"), `window.ATLAS_YOUTUBE=${JSON.stringify({ generatedAt:new Date().toISOString(), channels:source.channels, items })};\n`);
+fs.writeFileSync(path.join(atlasRoot, "data", "youtube-shorts.json"), `${JSON.stringify({ generatedAt:new Date().toISOString(), channels:source.channels, items }, null, 2)}\n`);
 console.log(`Atlas YouTube: ${items.length} linked Shorts, 0 downloaded videos.`);

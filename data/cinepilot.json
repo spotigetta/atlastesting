@@ -14,7 +14,7 @@
   "documents": [
     {
       "id": "cinepilot-Lista películas",
-      "contentFile": "data/documents/fe62cc72c062785a2a.js",
+      "contentFile": "data/documents/fe62cc72c062785a2a.json.gz",
       "catalogId": null,
       "file": "Lista películas.md",
       "title": "Lista películas",
@@ -32,7 +32,7 @@
     },
     {
       "id": "cinepilot-Películas completas - Parte 01",
-      "contentFile": "data/documents/4be2efa071c7fb7fac.js",
+      "contentFile": "data/documents/4be2efa071c7fb7fac.json.gz",
       "catalogId": null,
       "file": "Películas completas - Parte 01.md",
       "title": "Películas completas",
@@ -50,7 +50,7 @@
     },
     {
       "id": "cinepilot-Películas completas - Parte 02",
-      "contentFile": "data/documents/e02720e84995a81972.js",
+      "contentFile": "data/documents/e02720e84995a81972.json.gz",
       "catalogId": null,
       "file": "Películas completas - Parte 02.md",
       "title": "Películas completas - Parte 02",
@@ -68,7 +68,7 @@
     },
     {
       "id": "cinepilot-Películas completas - Parte 03",
-      "contentFile": "data/documents/9c15a5adeaa3c37654.js",
+      "contentFile": "data/documents/9c15a5adeaa3c37654.json.gz",
       "catalogId": null,
       "file": "Películas completas - Parte 03.md",
       "title": "Películas completas - Parte 03",
@@ -86,7 +86,7 @@
     },
     {
       "id": "cinepilot-Películas completas - Parte 04",
-      "contentFile": "data/documents/4d5363af04e0bf05fd.js",
+      "contentFile": "data/documents/4d5363af04e0bf05fd.json.gz",
       "catalogId": null,
       "file": "Películas completas - Parte 04.md",
       "title": "Contenidos: Imágenes (algunas V)",
@@ -104,7 +104,7 @@
     },
     {
       "id": "cinepilot-Películas completas - Parte 05",
-      "contentFile": "data/documents/f066f75fdc18c3d7f5.js",
+      "contentFile": "data/documents/f066f75fdc18c3d7f5.json.gz",
       "catalogId": null,
       "file": "Películas completas - Parte 05.md",
       "title": "**Otra de jóvenes desnortados**",
@@ -122,7 +122,7 @@
     },
     {
       "id": "cinepilot-Películas completas - Parte 06",
-      "contentFile": "data/documents/c72539943dce877175.js",
+      "contentFile": "data/documents/c72539943dce877175.json.gz",
       "catalogId": null,
       "file": "Películas completas - Parte 06.md",
       "title": "Películas completas - Parte 06",
@@ -140,7 +140,7 @@
     },
     {
       "id": "cinepilot-Películas completas - Parte 07",
-      "contentFile": "data/documents/6ab28d6b3bdd92e9b7.js",
+      "contentFile": "data/documents/6ab28d6b3bdd92e9b7.json.gz",
       "catalogId": null,
       "file": "Películas completas - Parte 07.md",
       "title": "Tempestad sobre Francia",
@@ -158,7 +158,7 @@
     },
     {
       "id": "cinepilot-Películas completas - Parte 08",
-      "contentFile": "data/documents/6d1863af6fdbac244c.js",
+      "contentFile": "data/documents/6d1863af6fdbac244c.json.gz",
       "catalogId": null,
       "file": "Películas completas - Parte 08.md",
       "title": "Películas completas - Parte 08",
@@ -176,7 +176,7 @@
     },
     {
       "id": "cinepilot-Películas completas",
-      "contentFile": "data/documents/c61eb0ececdb997903.js",
+      "contentFile": "data/documents/c61eb0ececdb997903.json.gz",
       "catalogId": null,
       "file": "Películas completas.md",
       "title": "Películas completas",

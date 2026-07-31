@@ -25,8 +25,22 @@
       homeOrder: ["today", "libraries", "reading", "history"], exploreOrder: [], exploreColors: {}, customizeHome: false, customizeExplore: false
     },
     lastLibrary: null,
-    version: 1
+    version: 2
   };
+
+  function migrate(stored) {
+    const value = stored && typeof stored === "object" ? stored : {};
+    if (!value.version || value.version < 2) {
+      value.settings ||= {};
+      value.settings.shortTypeWeights ||= {
+        video: .55, music: .7, reading: .8, document: .6,
+        quote: 1.2, fact: 1.15, curiosity: 1.2, question: 1.1,
+        prayer: 1.05, news: .9
+      };
+      value.version = 2;
+    }
+    return value;
+  }
 
   function merge(base, stored) {
     return {
@@ -39,7 +53,7 @@
   }
 
   function load() {
-    try { return merge(defaults, JSON.parse(localStorage.getItem(KEY) || "{}")); }
+    try { return merge(defaults, migrate(JSON.parse(localStorage.getItem(KEY) || "{}"))); }
     catch { return structuredClone(defaults); }
   }
 

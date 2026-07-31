@@ -90,7 +90,7 @@
   });
 
   function esc(value) { return A.library.esc(value); }
-  const infographicUrl = file => `/assets/infografias/${encodeURIComponent(file)}`;
+  const infographicUrl = file => window.AtlasRuntime.url(`assets/infografias/${encodeURIComponent(file)}`);
   function tutorialMiniInfographic(step) {
     const lib = A.data.libraryMap.get(step.libraryId);
     const guide = libraryGuides[step.libraryId];
@@ -401,7 +401,7 @@
         return `<section class="channel-group"><div class="section-head"><div><h2>${title}</h2><p>${channels.length} fuentes configuradas · elige cuáles aparecen en Descubrir.</p></div><div class="channel-bulk"><button class="text-button" data-channel-group="${kind}" data-channel-state="on">Todas</button><button class="text-button" data-channel-group="${kind}" data-channel-state="off">Ninguna</button></div></div><div class="channel-switches">${channels.map(channel => `<label class="channel-switch"><span><b>${esc(channel.name)}</b><small>${esc(channel.handle ? `@${channel.handle}` : channel.tier === "reserve" ? "Canal de reserva" : "Canal de YouTube")}</small></span><input type="checkbox" data-channel-toggle="${kind}" value="${esc(channel.name)}" ${disabled.has(channel.name) ? "" : "checked"}><i aria-hidden="true"></i></label>`).join("")}</div></section>`;
       }).join("")}</div>`;
     }
-    return `<section class="page"><header class="explore-hero"><span class="eyebrow">Tu Atlas · versión 4.1.4</span><h1>Guardados e historial.</h1><p>Todo permanece en este dispositivo. No necesitas una cuenta.</p><span class="app-version-badge">Atlas 4.1.4</span></header>
+    return `<section class="page"><header class="explore-hero"><span class="eyebrow">Tu Atlas · versión ${esc(A.data.catalog.meta.dataVersion)}</span><h1>Guardados e historial.</h1><p>Todo permanece en este dispositivo. No necesitas una cuenta.</p><span class="app-version-badge">Atlas ${esc(A.data.catalog.meta.dataVersion)}</span></header>
       <section class="study-summary"><div><strong>${Math.round((today.milliseconds || 0) / 60000)}</strong><span>minutos hoy</span></div><div><strong>${today.documents?.length || 0}</strong><span>documentos</span></div><div><strong>${today.collections?.length || 0}</strong><span>colecciones</span></div></section>
       <div class="chip-row saved-tabs">${tabs.map(([id,label]) => `<button class="chip ${state.savedTab===id?"active":""}" data-saved-tab="${id}">${label}</button>`).join("")}</div>${content}
       <section class="section"><div class="section-head"><div><h2>Preferencias</h2><p>Adapta lectura, movimiento, iluminación y apariencia.</p></div></div><div class="button-row"><button class="primary-button" data-action="settings">Personalizar Atlas</button><button class="secondary-button" data-action="toggle-contrast">${stored.settings.contrast ? "Desactivar" : "Activar"} alto contraste</button><button class="secondary-button" data-action="toggle-random">${stored.settings.randomShorts ? "Orden diario" : "Orden aleatorio"}</button><button class="secondary-button" data-action="toggle-only-new">${stored.settings.onlyNewShorts ? "Mostrar todos" : "Solo contenido nuevo"}</button></div></section>
@@ -412,20 +412,23 @@
     const original = button.innerHTML;
     button.disabled = true;
     button.innerHTML = "↻ <span>Actualizando…</span>";
-    toast("Atlas está revisando documentos y fuentes recientes.");
+    toast("Atlas está comprobando la última versión publicada.");
     const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 45000);
+    const timer = setTimeout(() => controller.abort(), 8000);
     try {
-      const response = await fetch("/api/rebuild", {
-        method: "POST", headers: { "content-type": "application/json" },
-        body: JSON.stringify({ force: false, external: true }), signal: controller.signal
-      });
-      const result = await response.json();
-      if (!response.ok || !result.ok) throw new Error(result.message || "No se pudo actualizar");
-      toast("Atlas está al día. Recargando el catálogo…");
-      setTimeout(() => location.reload(), 500);
+      const manifest = await window.AtlasRuntime.fetchJson("build-manifest.json", { fresh: true, signal: controller.signal });
+      await navigator.serviceWorker?.getRegistration()?.then(registration => registration?.update());
+      const current = A.data.catalog.meta.dataVersion;
+      if (manifest.version !== current || !String(manifest.buildId || "").startsWith(current)) {
+        toast("Hay una versión nueva. Actualizando Atlas…");
+        setTimeout(() => location.reload(), 350);
+      } else {
+        toast("Atlas ya utiliza la última versión publicada.");
+        button.disabled = false;
+        button.innerHTML = original;
+      }
     } catch (error) {
-      toast(error.name === "AbortError" ? "La actualización continúa en segundo plano; Atlas no queda bloqueado." : "No se pudo contactar con el actualizador.");
+      toast(error.name === "AbortError" ? "La comprobación ha tardado demasiado." : "No se pudo comprobar la versión publicada.");
       button.disabled = false;
       button.innerHTML = original;
     } finally { clearTimeout(timer); }
@@ -615,7 +618,7 @@
       A.storage.addSearch(query);
     } catch (error) {
       fullTextStatus.textContent = "No se pudo cargar el índice textual.";
-      searchResults.innerHTML = A.library.empty("Búsqueda textual no disponible", "Comprueba que data/fulltext-index.js está publicado junto a Atlas.");
+      searchResults.innerHTML = A.library.empty("Búsqueda textual no disponible", "Comprueba que el índice segmentado está publicado junto a Atlas.");
     }
   }
 
@@ -923,6 +926,11 @@
         worker?.addEventListener("statechange", () => {
           if (worker.state === "installed" && navigator.serviceWorker.controller) document.querySelector("#update-banner").hidden = false;
         });
+      });
+      navigator.serviceWorker.addEventListener("message", event => {
+        if (event.data?.type === "ATLAS_UPDATED" && navigator.serviceWorker.controller) {
+          document.querySelector("#update-banner").hidden = false;
+        }
       });
     }).catch(() => {});
   }

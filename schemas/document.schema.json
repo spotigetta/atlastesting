@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mercaba.org/atlas/schemas/document.schema.json",
+  "title": "Atlas Document",
+  "type": "object",
+  "required": ["id", "libraryId", "file", "title", "category", "words", "contentFile"],
+  "properties": {
+    "id": { "type": "string", "minLength": 3 },
+    "libraryId": { "type": "string", "minLength": 1 },
+    "file": { "type": "string", "pattern": "\\.md$" },
+    "title": { "type": "string", "minLength": 1 },
+    "category": { "type": "string", "minLength": 1 },
+    "words": { "type": "integer", "minimum": 1 },
+    "contentFile": { "type": "string", "pattern": "^data/documents/.+\\.json\\.gz$" },
+    "author": { "type": ["string", "null"] },
+    "year": { "type": ["integer", "null"] },
+    "source": { "type": "string" }
+  },
+  "additionalProperties": true
+}

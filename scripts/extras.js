@@ -197,17 +197,8 @@
     const container = document.querySelector("#music-content");
     if (!container) return;
     try {
-      let payload;
-      try {
-        const response = await fetch(`/api/music?limit=30&seed=${Date.now()}-${Math.random().toString(36).slice(2, 8)}`, { cache: "no-store" });
-        if (!response.ok) throw new Error("API no disponible");
-        payload = await response.json();
-      } catch {
-        const response = await fetch("/data/youtube-music-cache.json", { cache: "no-store" });
-        if (!response.ok) throw new Error("No disponible");
-        const fallback = await response.json();
-        payload = { ...fallback, items: [...(fallback.items || [])].sort(() => Math.random() - .5), total: fallback.items?.length || 0, refreshing: false };
-      }
+      const fallback = await window.AtlasRuntime.fetchJson("data/youtube-music-cache.json", { fresh: true });
+      const payload = { ...fallback, items: [...(fallback.items || [])].sort(() => Math.random() - .5), total: fallback.items?.length || 0, refreshing: false };
       const disabled = new Set(root.storage.get().settings.disabledMusicChannels || []);
       container.innerHTML = (payload.items || []).filter(item => !disabled.has(item.source)).map(item => `<article class="music-card" data-play-youtube="${esc(item.videoId)}" data-video-title="${esc(item.title)}" data-video-url="${esc(item.url)}">
         <button class="music-cover" aria-label="Reproducir ${esc(item.title)}"><img src="${esc(item.image)}" alt="" loading="lazy"><span>▶</span></button>

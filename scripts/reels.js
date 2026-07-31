@@ -35,12 +35,7 @@
   const batchSize = 18;
 
   function shuffle(items) {
-    const copy = [...items];
-    for (let index = copy.length - 1; index > 0; index -= 1) {
-      const swap = Math.floor(Math.random() * (index + 1));
-      [copy[index], copy[swap]] = [copy[swap], copy[index]];
-    }
-    return copy;
+    return window.AtlasFeedMixer.shuffled(items);
   }
 
   const enabledItems = (items, setting) => {
@@ -49,27 +44,14 @@
   };
 
   async function instagramPayload(cursorValue = 0, limit = 24) {
-    try {
-      const response = await fetch(`/api/instagram-shorts?cursor=${cursorValue}&limit=${limit}&seed=${encodeURIComponent(feedSeed)}`, { cache: "no-store" });
-      if (response.ok) return response.json();
-    } catch {}
-    const response = await fetch("/data/instagram-cache.json", { cache: "no-store" });
-    if (!response.ok) throw new Error("Instagram no disponible");
-    const payload = await response.json();
+    const payload = await window.AtlasRuntime.fetchJson("data/instagram-cache.json", { fresh: true });
     const ordered = shuffle(payload.items || []);
     const items = ordered.slice(cursorValue, cursorValue + limit);
     return { ...payload, items, cursor: cursorValue, nextCursor: cursorValue + items.length, hasMore: cursorValue + items.length < ordered.length, total: ordered.length };
   }
 
   async function musicPayload(cursorValue = 0, limit = 24) {
-    const query = `cursor=${cursorValue}&limit=${limit}&seed=${encodeURIComponent(feedSeed)}`;
-    try {
-      const response = await fetch(`/api/music?${query}`, { cache: "no-store" });
-      if (response.ok) return response.json();
-    } catch {}
-    const fallbackResponse = await fetch("/data/youtube-music-cache.json", { cache: "no-store" });
-    if (!fallbackResponse.ok) throw new Error("Música no disponible");
-    const fallback = await fallbackResponse.json();
+    const fallback = await window.AtlasRuntime.fetchJson("data/youtube-music-cache.json", { fresh: true });
     const ordered = shuffle(fallback.items || []);
     const items = ordered.slice(cursorValue, cursorValue + limit);
     return {
@@ -109,7 +91,7 @@
     if (filter !== "all") shorts = shorts.filter(item => item.libraryId === filter || item.type === filter);
     const seen = new Set(root.storage.get().seenShorts || []);
     if (root.storage.get().settings.onlyNewShorts) shorts = shorts.filter(item => !seen.has(item.id));
-    queue = shuffle(shorts);
+    queue = constrained(shorts);
     cursor = 0;
     const initial = nextBatch();
     requestAnimationFrame(() => {
@@ -138,9 +120,15 @@
     if (status) status.textContent = reset ? "Consultando canales…" : "Cargando más vídeos…";
     try {
       const start = reset ? 0 : videoCursor;
-      const response = await fetch(`/api/youtube-shorts?cursor=${start}&limit=24&seed=${encodeURIComponent(feedSeed)}`, { cache: "no-store" });
-      if (!response.ok) throw new Error("YouTube no está disponible");
-      const payload = await response.json();
+      const snapshot = await window.AtlasRuntime.fetchJson("data/youtube-live-cache.json", { fresh: reset });
+      const ordered = shuffle(snapshot.items || []);
+      const selected = ordered.slice(start, start + 24);
+      const payload = {
+        ...snapshot, items: selected, cursor: start,
+        nextCursor: start + selected.length,
+        hasMore: start + selected.length < ordered.length,
+        total: ordered.length
+      };
       videoCursor = payload.nextCursor;
       videoHasMore = payload.hasMore;
       const known = new Set(queue.map(item => item.id));
@@ -155,14 +143,9 @@
         reference: `${item.source} · YouTube`,
         reviewedAt: item.publishedAt?.slice(0, 10) || payload.updatedAt?.slice(0, 10)
       })).filter(item => !known.has(item.id));
-      const randomizedFresh = shuffle(fresh);
-      queue.push(...randomizedFresh);
+      const randomizedFresh = constrained(fresh);
       const feed = document.querySelector(".short-feed");
-      if (feed && fresh.length) {
-        if (feed.querySelector(".empty-state")) feed.innerHTML = "";
-        feed.insertAdjacentHTML("beforeend", randomizedFresh.map((item, index) => shortCard(item, cursor + index, queue.length)).join(""));
-        observeCards();
-      }
+      incorporateFresh(randomizedFresh, feed);
       if (status) {
         const updated = payload.updatedAt ? new Date(payload.updatedAt).toLocaleTimeString("es", { hour: "2-digit", minute: "2-digit" }) : "ahora";
         status.textContent = `${payload.total} vídeos · actualizado ${updated}`;
@@ -190,14 +173,9 @@
         text: item.description, reference: `${item.source} · YouTube`,
         reviewedAt: item.publishedAt?.slice(0, 10) || payload.updatedAt?.slice(0, 10)
       })).filter(item => !known.has(item.id));
-      const randomizedFresh = shuffle(fresh);
-      queue.push(...randomizedFresh);
+      const randomizedFresh = constrained(fresh);
       const feed = document.querySelector(".short-feed");
-      if (feed && fresh.length) {
-        if (feed.querySelector(".empty-state")) feed.innerHTML = "";
-        feed.insertAdjacentHTML("beforeend", randomizedFresh.map((item, index) => shortCard(item, cursor + index, queue.length)).join(""));
-        observeCards();
-      }
+      incorporateFresh(randomizedFresh, feed);
       if (status) status.textContent = `${payload.total} propuestas musicales · selección dinámica`;
       if (payload.refreshing && musicRefreshRetries < 3) {
         musicRefreshRetries += 1;
@@ -226,13 +204,8 @@
         libraryId: item.libraryId || "doctrine", text: item.description,
         reference: `${item.source} · Instagram`
       })).filter(item => !known.has(item.id)));
-      queue.push(...fresh);
       const feed = document.querySelector(".short-feed");
-      if (feed && fresh.length) {
-        if (feed.querySelector(".empty-state")) feed.innerHTML = "";
-        feed.insertAdjacentHTML("beforeend", fresh.map((item, index) => shortCard(item, cursor + index, queue.length)).join(""));
-        observeCards();
-      }
+      incorporateFresh(fresh, feed);
       if (status && activeFilter === "instagram") status.textContent = `${payload.total || fresh.length} publicaciones · selección dinámica`;
     } catch {
       if (status && activeFilter === "instagram") status.textContent = "Instagram no está disponible; gestiona sus cuentas en Guardados";
@@ -277,22 +250,53 @@
 
   async function refreshJosemaria() {
     try {
-      const response = await fetch("/api/josemaria-quote", { cache: "no-store" });
-      if (!response.ok) return;
-      const item = await response.json();
+      const snapshot = await window.AtlasRuntime.fetchJson("data/josemaria-quotes.json", { fresh: true });
+      const item = shuffle(snapshot.items || [])[0];
+      if (!item) return;
       const lib = root.data.libraryMap.get("san-josemaria") || root.data.libraryMap.get("doctrine");
       const quote = {
-        ...item, verified: true, external: true, libraryId: lib.id,
-        text: item.description, reference: "escriva.org · selección aleatoria en directo",
+        ...item, id: item.id || `josemaria-${Date.now()}`,
+        type: "quote", verified: true, external: true, libraryId: lib.id,
+        text: item.description || item.text, reference: item.reference || "escriva.org · selección publicada",
         reviewedAt: new Date().toISOString().slice(0, 10)
       };
       window.ATLAS_LIVE_SHORTS ||= [];
       window.ATLAS_LIVE_SHORTS = [quote, ...window.ATLAS_LIVE_SHORTS.filter(current => current.id !== quote.id)].slice(0, 12);
-      queue = [quote, ...queue.filter(current => current.id !== quote.id)];
+      queue = queue.filter(current => current.id !== quote.id);
       const feed = document.querySelector(".short-feed");
-      if (feed) feed.insertAdjacentHTML("afterbegin", shortCard(quote, 0, queue.length));
-      observeCards();
+      if (feed && !feed.querySelector(`[data-short-id="${CSS.escape(quote.id)}"]`)) {
+        queue.splice(Math.min(cursor + 2, queue.length), 0, quote);
+      }
     } catch {}
+  }
+
+  function constrained(items, prefix = []) {
+    const stored = root.storage.get();
+    return window.AtlasFeedMixer.constrainedShuffle(items, {
+      recent: stored.settings.onlyNewShorts ? stored.seenShorts : [],
+      weights: stored.settings.shortTypeWeights || {},
+      prefix,
+      maxTypeRun: 2,
+      maxSourceRun: 2
+    });
+  }
+
+  function incorporateFresh(items, feed) {
+    if (!items.length) return;
+    const known = new Set(queue.map(item => item.id));
+    const fresh = items.filter(item => !known.has(item.id));
+    if (!fresh.length) return;
+    if (activeFilter === "all") {
+      const prefix = queue.slice(Math.max(0, cursor - 2), cursor);
+      queue = [...queue.slice(0, cursor), ...constrained([...queue.slice(cursor), ...fresh], prefix)];
+    } else {
+      queue.push(...constrained(fresh));
+    }
+    if (feed?.querySelector(".empty-state")) {
+      feed.innerHTML = "";
+      feed.insertAdjacentHTML("beforeend", nextBatch());
+      observeCards();
+    }
   }
 
   function nextBatch() {

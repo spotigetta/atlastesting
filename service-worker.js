@@ -1,78 +1,93 @@
-const APP_CACHE = "atlas-app-v4.1.4";
-const DATA_CACHE = "atlas-data-v4.1.4";
-const APP_FILES = [
-  "./","./index.html","./offline.html","./manifest.webmanifest",
-  "./styles/tokens.css","./styles/base.css","./styles/components.css","./styles/themes.css","./styles/responsive.css",
-  "./scripts/storage.js","./scripts/search.js","./scripts/share.js","./scripts/statistics.js","./scripts/library.js","./scripts/reader.js","./scripts/extras.js",
-  "./scripts/compare.js","./scripts/reels.js","./scripts/router.js","./scripts/app.js",
-  "./assets/icons/icon-192.png","./assets/icons/icon-512.png","./assets/icons/icon-maskable-512.png","./assets/icons/apple-touch-icon.png",
-  "./assets/images/josemaria-silhouette.png","./assets/images/fondo_sjm.png"
-  ,"./sjm_transparente.png"
-  ,"./assets/infografias/infodoctrina_textogrande.html","./assets/infografias/infografiaCanonIA_v2.html","./assets/infografias/infohistoria.html",
-  "./assets/infografias/infografiaLiturgIA_v2.html","./assets/infografias/infoCirculos.html","./assets/infografias/infografiaCinepilot.html",
-  "./assets/infografias/infobib.html","./assets/infografias/infografiaLosClasicos_v2.html","./assets/infografias/infoSJM.html"
+const BUILD_VERSION = "__ATLAS_VERSION__";
+const SHELL_CACHE = `atlas-shell-${BUILD_VERSION}`;
+const DATA_CACHE = `atlas-data-${BUILD_VERSION}`;
+const DOCUMENT_CACHE = "atlas-documents-v1";
+
+const SHELL = [
+  "./", "./index.html", "./offline.html", "./manifest.webmanifest",
+  "./styles/tokens.css", "./styles/base.css", "./styles/components.css",
+  "./styles/themes.css", "./styles/responsive.css",
+  "./scripts/database.js", "./scripts/runtime.js", "./scripts/bootstrap.js", "./scripts/storage.js",
+  "./scripts/search.js", "./scripts/repository.js", "./scripts/share.js", "./scripts/statistics.js",
+  "./scripts/library.js", "./scripts/reader.js", "./scripts/extras.js",
+  "./scripts/compare.js", "./scripts/feed-mixer.js", "./scripts/reels.js",
+  "./scripts/router.js", "./scripts/app.js",
+  "./assets/icons/icon-192.png", "./assets/icons/icon-512.png",
+  "./assets/icons/icon-maskable-512.png", "./assets/icons/apple-touch-icon.png"
 ];
 
+const timeoutFetch = (request, milliseconds = 4500) => Promise.race([
+  fetch(request, { cache: "no-store" }),
+  new Promise((_, reject) => setTimeout(() => reject(new Error("timeout")), milliseconds))
+]);
+
 self.addEventListener("install", event => {
-  event.waitUntil(Promise.all([
-    caches.open(APP_CACHE).then(cache => cache.addAll(APP_FILES)),
-    caches.open(DATA_CACHE).then(cache => cache.addAll(["./data/catalog.js", "./data/external-content.js", "./data/quotes.js", "./data/youtube-shorts.js", "./data/channel-catalog.js", "./data/youtube-music-cache.json", "./data/instagram-cache.json", "./data/version.json", "./data/changelog.json"]))
-  ]));
+  event.waitUntil(caches.open(SHELL_CACHE).then(cache => cache.addAll(SHELL)));
   self.skipWaiting();
 });
 
 self.addEventListener("activate", event => {
   event.waitUntil((async () => {
     const keys = await caches.keys();
-    await Promise.all(keys.filter(key => ![APP_CACHE, DATA_CACHE].includes(key)).map(key => caches.delete(key)));
+    await Promise.all(keys
+      .filter(key => key.startsWith("atlas-") && ![SHELL_CACHE, DATA_CACHE, DOCUMENT_CACHE].includes(key))
+      .map(key => caches.delete(key)));
     await self.clients.claim();
-    const clients = await self.clients.matchAll({ type: "window" });
-    await Promise.all(clients.map(client => client.navigate(client.url)));
   })());
 });
 
 self.addEventListener("fetch", event => {
   if (event.request.method !== "GET") return;
   const url = new URL(event.request.url);
-  if (url.origin !== location.origin) return;
-  if (url.pathname.startsWith("/api/")) {
-    event.respondWith(fetch(event.request));
+  if (url.origin !== self.location.origin) return;
+  const pathname = url.pathname;
+
+  if (event.request.mode === "navigate") {
+    event.respondWith(timeoutFetch(event.request).catch(async () =>
+      await caches.match("./index.html") || await caches.match("./offline.html")
+    ));
     return;
   }
 
-  if (url.pathname.includes("/styles/") || url.pathname.includes("/scripts/") || url.pathname.endsWith("/index.html") || url.pathname === "/") {
-    event.respondWith(caches.open(APP_CACHE).then(async cache => {
+  if (/\/data\/(?:documents|search)\//.test(pathname)) {
+    event.respondWith(caches.open(DOCUMENT_CACHE).then(async cache => {
+      const cached = await cache.match(event.request);
+      if (cached) return cached;
+      const response = await fetch(event.request);
+      if (response.ok) cache.put(event.request, response.clone());
+      return response;
+    }));
+    return;
+  }
+
+  if (/\/(?:build-manifest\.json|data\/(?:catalog|version|external-content|youtube-live-cache|youtube-music-cache|instagram-cache|josemaria-quotes)\.json)$/.test(pathname)) {
+    event.respondWith(caches.open(DATA_CACHE).then(async cache => {
       try {
-        const response = await fetch(event.request, { cache: "no-store" });
+        const response = await timeoutFetch(event.request);
         if (response.ok) cache.put(event.request, response.clone());
         return response;
       } catch {
-        return await cache.match(event.request) || await caches.match("./offline.html");
+        return await cache.match(event.request) || Response.error();
       }
     }));
     return;
   }
 
-  if (url.pathname.includes("/data/")) {
-    event.respondWith(caches.open(DATA_CACHE).then(async cache => {
+  if (/\/(?:scripts|styles|assets)\//.test(pathname) || /\.(?:png|jpg|jpeg|svg|webmanifest)$/.test(pathname)) {
+    event.respondWith(caches.open(SHELL_CACHE).then(async cache => {
       const cached = await cache.match(event.request);
-      const network = fetch(event.request).then(response => {
-        if (response.ok) cache.put(event.request, response.clone());
-        return response;
-      }).catch(() => cached);
-      const liveData = /\/data\/(catalog|external-content|version|changelog)\.(js|json)$/.test(url.pathname);
-      return liveData ? (await network || cached) : (cached || network);
+      if (cached) return cached;
+      const response = await fetch(event.request);
+      if (response.ok) cache.put(event.request, response.clone());
+      return response;
     }));
     return;
   }
 
-  event.respondWith(caches.match(event.request).then(cached => cached || fetch(event.request).then(response => {
-    const copy = response.clone();
-    caches.open(APP_CACHE).then(cache => cache.put(event.request, copy));
-    return response;
-  }).catch(() => caches.match("./offline.html"))));
+  event.respondWith(fetch(event.request).catch(() => caches.match(event.request)));
 });
 
 self.addEventListener("message", event => {
   if (event.data === "SKIP_WAITING") self.skipWaiting();
+  if (event.data === "CLEAR_DOCUMENT_CACHE") event.waitUntil(caches.delete(DOCUMENT_CACHE));
 });

@@ -14,7 +14,7 @@
   "documents": [
     {
       "id": "san-josemaria-amar-a-la-iglesia",
-      "contentFile": "data/documents/499cecf2a272b64e56.js",
+      "contentFile": "data/documents/499cecf2a272b64e56.json.gz",
       "catalogId": null,
       "file": "amar-a-la-iglesia.md",
       "title": "Amar a la Iglesia",
@@ -32,7 +32,7 @@
     },
     {
       "id": "san-josemaria-amigos-de-dios",
-      "contentFile": "data/documents/bc7366ff02e794e741.js",
+      "contentFile": "data/documents/bc7366ff02e794e741.json.gz",
       "catalogId": null,
       "file": "amigos-de-dios.md",
       "title": "Amigos de Dios",
@@ -50,7 +50,7 @@
     },
     {
       "id": "san-josemaria-camino",
-      "contentFile": "data/documents/71c674cdfc08d83cdc.js",
+      "contentFile": "data/documents/71c674cdfc08d83cdc.json.gz",
       "catalogId": null,
       "file": "camino.md",
       "title": "Camino",
@@ -68,7 +68,7 @@
     },
     {
       "id": "san-josemaria-carta-no-29",
-      "contentFile": "data/documents/349ff9c63af6ad2eab.js",
+      "contentFile": "data/documents/349ff9c63af6ad2eab.json.gz",
       "catalogId": null,
       "file": "carta-no-29.md",
       "title": "Carta nº 29",
@@ -86,7 +86,7 @@
     },
     {
       "id": "san-josemaria-cartas-i",
-      "contentFile": "data/documents/a85119b081421d0cb0.js",
+      "contentFile": "data/documents/a85119b081421d0cb0.json.gz",
       "catalogId": null,
       "file": "cartas-i.md",
       "title": "Cartas I",
@@ -104,7 +104,7 @@
     },
     {
       "id": "san-josemaria-cartas-ii",
-      "contentFile": "data/documents/f14c1dde8b86c3bb34.js",
+      "contentFile": "data/documents/f14c1dde8b86c3bb34.json.gz",
       "catalogId": null,
       "file": "cartas-ii.md",
       "title": "Cartas II",
@@ -122,7 +122,7 @@
     },
     {
       "id": "san-josemaria-conversaciones",
-      "contentFile": "data/documents/f97c6c1ad92a7dac7d.js",
+      "contentFile": "data/documents/f97c6c1ad92a7dac7d.json.gz",
       "catalogId": null,
       "file": "conversaciones.md",
       "title": "Conversaciones",
@@ -140,7 +140,7 @@
     },
     {
       "id": "san-josemaria-discursos-sobre-la-universidad",
-      "contentFile": "data/documents/7f0e8c75d61d501221.js",
+      "contentFile": "data/documents/7f0e8c75d61d501221.json.gz",
       "catalogId": null,
       "file": "discursos-sobre-la-universidad.md",
       "title": "Discursos sobre la Universidad",
@@ -158,7 +158,7 @@
     },
     {
       "id": "san-josemaria-en-dialogo-con-el-senor",
-      "contentFile": "data/documents/33dc149757d365fa1b.js",
+      "contentFile": "data/documents/33dc149757d365fa1b.json.gz",
       "catalogId": null,
       "file": "en-dialogo-con-el-senor.md",
       "title": "En diálogo con el Señor",
@@ -176,7 +176,7 @@
     },
     {
       "id": "san-josemaria-es-cristo-que-pasa",
-      "contentFile": "data/documents/957daa36ae60b9ad0b.js",
+      "contentFile": "data/documents/957daa36ae60b9ad0b.json.gz",
       "catalogId": null,
       "file": "es-cristo-que-pasa.md",
       "title": "Es Cristo que pasa",
@@ -194,7 +194,7 @@
     },
     {
       "id": "san-josemaria-forja",
-      "contentFile": "data/documents/ed4cdcc5bc9acc2797.js",
+      "contentFile": "data/documents/ed4cdcc5bc9acc2797.json.gz",
       "catalogId": null,
       "file": "forja.md",
       "title": "Forja",
@@ -212,7 +212,7 @@
     },
     {
       "id": "san-josemaria-index",
-      "contentFile": "data/documents/8f033f812261d5eb4f.js",
+      "contentFile": "data/documents/8f033f812261d5eb4f.json.gz",
       "catalogId": null,
       "file": "index.md",
       "title": "Obras completas en un archivo por obra",
@@ -230,7 +230,7 @@
     },
     {
       "id": "san-josemaria-la-abadesa-de-las-huelgas",
-      "contentFile": "data/documents/2f4425214cbd347d88.js",
+      "contentFile": "data/documents/2f4425214cbd347d88.json.gz",
       "catalogId": null,
       "file": "la-abadesa-de-las-huelgas.md",
       "title": "La Abadesa de las Huelgas",
@@ -248,7 +248,7 @@
     },
     {
       "id": "san-josemaria-santo-rosario",
-      "contentFile": "data/documents/16d59bbd471ab4c9fb.js",
+      "contentFile": "data/documents/16d59bbd471ab4c9fb.json.gz",
       "catalogId": null,
       "file": "santo-rosario.md",
       "title": "Santo Rosario",
@@ -266,7 +266,7 @@
     },
     {
       "id": "san-josemaria-surco",
-      "contentFile": "data/documents/1e2d6d7195ba356591.js",
+      "contentFile": "data/documents/1e2d6d7195ba356591.json.gz",
       "catalogId": null,
       "file": "surco.md",
       "title": "Surco",
@@ -284,7 +284,7 @@
     },
     {
       "id": "san-josemaria-tertulia-argentina",
-      "contentFile": "data/documents/3a6743db3e90e70723.js",
+      "contentFile": "data/documents/3a6743db3e90e70723.json.gz",
       "catalogId": null,
       "file": "tertulia-argentina.md",
       "title": "tertulia-argentina",
@@ -302,7 +302,7 @@
     },
     {
       "id": "san-josemaria-tertulia-barcelona",
-      "contentFile": "data/documents/b2ef3782fbde697e8c.js",
+      "contentFile": "data/documents/b2ef3782fbde697e8c.json.gz",
       "catalogId": null,
       "file": "tertulia-barcelona.md",
       "title": "tertulia-barcelona",
@@ -320,7 +320,7 @@
     },
     {
       "id": "san-josemaria-tertulia-peru",
-      "contentFile": "data/documents/4e69918290da6cc978.js",
+      "contentFile": "data/documents/4e69918290da6cc978.json.gz",
       "catalogId": null,
       "file": "tertulia-peru.md",
       "title": "tertulia-peru",
@@ -338,7 +338,7 @@
     },
     {
       "id": "san-josemaria-via-crucis",
-      "contentFile": "data/documents/dbb90daf131ce94161.js",
+      "contentFile": "data/documents/dbb90daf131ce94161.json.gz",
       "catalogId": null,
       "file": "via-crucis.md",
       "title": "Via Crucis",

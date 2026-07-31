@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mercaba.org/atlas/schemas/short.schema.json",
+  "title": "Atlas Short",
+  "type": "object",
+  "required": ["id", "type", "libraryId", "title"],
+  "properties": {
+    "id": { "type": "string", "minLength": 3 },
+    "type": { "enum": ["document", "fact", "question", "quiz", "quote", "author", "timeline", "curiosity", "comparison", "news", "reading", "prayer", "video", "music", "instagram"] },
+    "libraryId": { "type": "string" },
+    "title": { "type": "string", "minLength": 1 },
+    "source": { "type": "string" },
+    "verified": { "type": "boolean" }
+  },
+  "additionalProperties": true
+}

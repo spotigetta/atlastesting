@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mercaba.org/atlas/schemas/provider.schema.json",
+  "title": "Atlas External Provider",
+  "type": "object",
+  "required": ["id", "type", "name", "enabled"],
+  "properties": {
+    "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+    "type": { "enum": ["youtube", "music", "instagram", "news", "reading", "prayer", "quote"] },
+    "name": { "type": "string", "minLength": 1 },
+    "enabled": { "type": "boolean" },
+    "url": { "type": "string", "format": "uri" },
+    "refreshMinutes": { "type": "integer", "minimum": 5 }
+  },
+  "additionalProperties": true
+}

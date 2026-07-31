@@ -1,5 +1,13 @@
 # ATLAS — Documentación completa de la aplicación
 
+> Nota de arquitectura (versión 5.0): este documento conserva la descripción
+> funcional acumulada de Atlas. Para construir, mantener o publicar la versión
+> actual deben utilizarse [ARCHITECTURE.md](ARCHITECTURE.md),
+> [DATA_MODEL.md](DATA_MODEL.md), [MANAGER_GUIDE.md](MANAGER_GUIDE.md) y
+> [DEPLOY_GITHUB_PAGES.md](DEPLOY_GITHUB_PAGES.md). Las menciones posteriores a
+> endpoints `/api/*` describen el funcionamiento histórico: la PWA pública usa
+> snapshots estáticos y no necesita un servidor Node.
+
 ## 1. Qué es Atlas
 
 Atlas es el portal documental, visual e interactivo de las inteligencias

@@ -1,0 +1,21 @@
+{
+  "name": "atlas-mercaba",
+  "version": "5.0.0",
+  "private": true,
+  "description": "PWA documental Atlas de Mercabá, preparada para GitHub Pages.",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "manager": "node server.mjs",
+    "build": "node tools/build.mjs",
+    "validate": "node tools/validate.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "audit": "node tools/audit.mjs",
+    "qa:browser": "node tools/browser-qa.mjs",
+    "refresh:external": "node tools/refresh-providers.mjs",
+    "preview": "node tools/preview.mjs"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}

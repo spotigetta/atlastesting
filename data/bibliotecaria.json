@@ -14,7 +14,7 @@
   "documents": [
     {
       "id": "bibliotecaria-literatura-universal",
-      "contentFile": "data/documents/fe5476140af27575f4.js",
+      "contentFile": "data/documents/fe5476140af27575f4.json.gz",
       "catalogId": null,
       "file": "literatura-universal.md",
       "title": "SELECCIÓN DE LITERATURA UNIVERSAL",
@@ -32,7 +32,7 @@
     },
     {
       "id": "bibliotecaria-lote00",
-      "contentFile": "data/documents/7bb1696c4a8359900f.js",
+      "contentFile": "data/documents/7bb1696c4a8359900f.json.gz",
       "catalogId": null,
       "file": "lote00.md",
       "title": "Selección de literatura universal: descripciones ampliadas",
@@ -50,7 +50,7 @@
     },
     {
       "id": "bibliotecaria-lote01",
-      "contentFile": "data/documents/f17a16d95114b86680.js",
+      "contentFile": "data/documents/f17a16d95114b86680.json.gz",
       "catalogId": null,
       "file": "lote01.md",
       "title": "lote01",
@@ -68,7 +68,7 @@
     },
     {
       "id": "bibliotecaria-lote02",
-      "contentFile": "data/documents/132832eed502c9b2d6.js",
+      "contentFile": "data/documents/132832eed502c9b2d6.json.gz",
       "catalogId": null,
       "file": "lote02.md",
       "title": "lote02",
@@ -86,7 +86,7 @@
     },
     {
       "id": "bibliotecaria-lote03",
-      "contentFile": "data/documents/5539940519c32aa305.js",
+      "contentFile": "data/documents/5539940519c32aa305.json.gz",
       "catalogId": null,
       "file": "lote03.md",
       "title": "lote03",
@@ -104,7 +104,7 @@
     },
     {
       "id": "bibliotecaria-lote04",
-      "contentFile": "data/documents/6da9ccb02d23ef2b79.js",
+      "contentFile": "data/documents/6da9ccb02d23ef2b79.json.gz",
       "catalogId": null,
       "file": "lote04.md",
       "title": "lote04",
@@ -122,7 +122,7 @@
     },
     {
       "id": "bibliotecaria-lote05",
-      "contentFile": "data/documents/d68e9aa5eed192b757.js",
+      "contentFile": "data/documents/d68e9aa5eed192b757.json.gz",
       "catalogId": null,
       "file": "lote05.md",
       "title": "lote05",
@@ -140,7 +140,7 @@
     },
     {
       "id": "bibliotecaria-lote06",
-      "contentFile": "data/documents/b8ea3fe18716a726bc.js",
+      "contentFile": "data/documents/b8ea3fe18716a726bc.json.gz",
       "catalogId": null,
       "file": "lote06.md",
       "title": "lote06",
@@ -158,7 +158,7 @@
     },
     {
       "id": "bibliotecaria-lote07",
-      "contentFile": "data/documents/9296e5518b7cc41aeb.js",
+      "contentFile": "data/documents/9296e5518b7cc41aeb.json.gz",
       "catalogId": null,
       "file": "lote07.md",
       "title": "lote07",
@@ -176,7 +176,7 @@
     },
     {
       "id": "bibliotecaria-lote08",
-      "contentFile": "data/documents/0d1ab904148aaf48c7.js",
+      "contentFile": "data/documents/0d1ab904148aaf48c7.json.gz",
       "catalogId": null,
       "file": "lote08.md",
       "title": "lote08",
@@ -194,7 +194,7 @@
     },
     {
       "id": "bibliotecaria-lote09",
-      "contentFile": "data/documents/5418eeb146995870b5.js",
+      "contentFile": "data/documents/5418eeb146995870b5.json.gz",
       "catalogId": null,
       "file": "lote09.md",
       "title": "lote09",
@@ -212,7 +212,7 @@
     },
     {
       "id": "bibliotecaria-lote10",
-      "contentFile": "data/documents/a66fdc5b5c90b42f69.js",
+      "contentFile": "data/documents/a66fdc5b5c90b42f69.json.gz",
       "catalogId": null,
       "file": "lote10.md",
       "title": "lote10",
@@ -230,7 +230,7 @@
     },
     {
       "id": "bibliotecaria-lote11",
-      "contentFile": "data/documents/40a98d5c73ffc5af07.js",
+      "contentFile": "data/documents/40a98d5c73ffc5af07.json.gz",
       "catalogId": null,
       "file": "lote11.md",
       "title": "lote11",
@@ -248,7 +248,7 @@
     },
     {
       "id": "bibliotecaria-lote12",
-      "contentFile": "data/documents/57201618159a49d449.js",
+      "contentFile": "data/documents/57201618159a49d449.json.gz",
       "catalogId": null,
       "file": "lote12.md",
       "title": "lote12",
@@ -266,7 +266,7 @@
     },
     {
       "id": "bibliotecaria-lote13",
-      "contentFile": "data/documents/f4ce0773da6f06e1e9.js",
+      "contentFile": "data/documents/f4ce0773da6f06e1e9.json.gz",
       "catalogId": null,
       "file": "lote13.md",
       "title": "lote13",
@@ -284,7 +284,7 @@
     },
     {
       "id": "bibliotecaria-lote14",
-      "contentFile": "data/documents/8673d2d70645d3fd07.js",
+      "contentFile": "data/documents/8673d2d70645d3fd07.json.gz",
       "catalogId": null,
       "file": "lote14.md",
       "title": "lote14",
@@ -302,7 +302,7 @@
     },
     {
       "id": "bibliotecaria-lote15",
-      "contentFile": "data/documents/27ea4575e3701dca5e.js",
+      "contentFile": "data/documents/27ea4575e3701dca5e.json.gz",
       "catalogId": null,
       "file": "lote15.md",
       "title": "lote15",
@@ -320,7 +320,7 @@
     },
     {
       "id": "bibliotecaria-lote16",
-      "contentFile": "data/documents/4138fd030d7b9a255c.js",
+      "contentFile": "data/documents/4138fd030d7b9a255c.json.gz",
       "catalogId": null,
       "file": "lote16.md",
       "title": "lote16",
@@ -338,7 +338,7 @@
     },
     {
       "id": "bibliotecaria-lote17",
-      "contentFile": "data/documents/4c1e20f8ea8128fa97.js",
+      "contentFile": "data/documents/4c1e20f8ea8128fa97.json.gz",
       "catalogId": null,
       "file": "lote17.md",
       "title": "lote17",
@@ -356,7 +356,7 @@
     },
     {
       "id": "bibliotecaria-lote18",
-      "contentFile": "data/documents/08eb922231f407fd3f.js",
+      "contentFile": "data/documents/08eb922231f407fd3f.json.gz",
       "catalogId": null,
       "file": "lote18.md",
       "title": "lote18",
@@ -374,7 +374,7 @@
     },
     {
       "id": "bibliotecaria-seleccion-de-ensayos",
-      "contentFile": "data/documents/314917f61985bcbef7.js",
+      "contentFile": "data/documents/314917f61985bcbef7.json.gz",
       "catalogId": null,
       "file": "seleccion-de-ensayos.md",
       "title": "SELECCIÓN DE ENSAYOS Y LIBROS DE PENSAMIENTO",

@@ -1,0 +1,449 @@
+{
+  "youtube": [
+    {
+      "name": "Opus Dei",
+      "url": "https://www.youtube.com/@opusdei/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Ecclesia COPE",
+      "url": "https://www.youtube.com/@EcclesiaCOPE/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Se Buscan Rebeldes",
+      "url": "https://www.youtube.com/@SeBuscanRebeldes/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "ROME REPORTS en Español",
+      "url": "https://www.youtube.com/@romereportsesp/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Bishop Robert Barron",
+      "url": "https://www.youtube.com/@BishopBarron/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Hallow: Prayer & Meditation",
+      "url": "https://www.youtube.com/@HallowApp/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Catholic Stuff",
+      "url": "https://www.youtube.com/@cosascatolicas/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Fundación CARF",
+      "url": "https://www.youtube.com/@fundacioncarf/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Bosco Films",
+      "url": "https://www.youtube.com/@BoscoFilms/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "QNTLC",
+      "url": "https://www.youtube.com/@QNTLC/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "ACI Prensa",
+      "url": "https://www.youtube.com/@aciprensa/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Jordan B. Peterson",
+      "url": "https://www.youtube.com/@JordanBPeterson/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Luis Gutiérrez Rojas",
+      "url": "https://www.youtube.com/@luisgutierrezrojas243/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Marian Rojas-Estapé",
+      "url": "https://www.youtube.com/@marianrojas-estape/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Víctor Küppers",
+      "url": "https://www.youtube.com/results?search_query=victor+k%C3%BCppers",
+      "tier": "main"
+    },
+    {
+      "name": "It's Time To Think",
+      "url": "https://www.youtube.com/@ItsTimeToThink/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Dr. Arthur Brooks",
+      "url": "https://www.youtube.com/@drarthurbrooks/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "María Calvo",
+      "url": "https://www.youtube.com/results?search_query=maria+calvo",
+      "tier": "main"
+    },
+    {
+      "name": "Rafa Lafuente",
+      "url": "https://www.youtube.com/@Rafa_Lafuente/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Pep Borrell",
+      "url": "https://www.youtube.com/results?search_query=pep+borrel",
+      "tier": "main"
+    },
+    {
+      "name": "Ricardo Piñero",
+      "url": "https://www.youtube.com/results?search_query=ricardo+pi%C3%B1ero",
+      "tier": "main"
+    },
+    {
+      "name": "Ricardo Calleja",
+      "url": "https://www.youtube.com/results?search_query=ricardo+calleja",
+      "tier": "main"
+    },
+    {
+      "name": "Ana Iris Simón",
+      "url": "https://www.youtube.com/results?search_query=ana+iris+sim%C3%B3n",
+      "tier": "main"
+    },
+    {
+      "name": "Leopoldo Abadía",
+      "url": "https://www.youtube.com/results?search_query=leopoldo+abad%C3%ADa",
+      "tier": "main"
+    },
+    {
+      "name": "Gregorio Luri",
+      "url": "https://www.youtube.com/results?search_query=gregorio+luri",
+      "tier": "main"
+    },
+    {
+      "name": "Alejandro Villena",
+      "url": "https://www.youtube.com/results?search_query=alejandro+villena",
+      "tier": "main"
+    },
+    {
+      "name": "Álvaro González-Alorda",
+      "url": "https://www.youtube.com/results?search_query=alvaro+gonzalez+alorda",
+      "tier": "main"
+    },
+    {
+      "name": "Mario Alonso Puig",
+      "url": "https://www.youtube.com/@MarioAlonsoPuigOficial/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "AUTE",
+      "url": "https://www.youtube.com/@aute___/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Sin Medias Tintas",
+      "url": "https://www.youtube.com/channel/UCbuEWRZ9RBiugz_lSuHs8Nw",
+      "tier": "main"
+    },
+    {
+      "name": "EWTN España",
+      "url": "https://www.youtube.com/@EWTNESPA%C3%91A/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Álex Rovira",
+      "url": "https://www.youtube.com/@alexroviraoficial/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Nuccio Ordine",
+      "url": "https://www.youtube.com/results?search_query=nuccio+ordine",
+      "tier": "main"
+    },
+    {
+      "name": "Álvaro Bilbao",
+      "url": "https://www.youtube.com/@soyalvarobilbao/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "María Álvarez de las Asturias",
+      "url": "https://www.youtube.com/results?search_query=Mar%C3%ADa+%C3%81lvarez+de+las+Asturias",
+      "tier": "main"
+    },
+    {
+      "name": "Pablo Blanco Sarto",
+      "url": "https://www.youtube.com/results?search_query=Pablo+Blanco+Sarto",
+      "tier": "main"
+    },
+    {
+      "name": "Scott Hahn",
+      "url": "https://www.youtube.com/results?search_query=Scott+Hahn",
+      "tier": "main"
+    },
+    {
+      "name": "Peter Kreeft",
+      "url": "https://www.youtube.com/results?search_query=Peter+Kreeft",
+      "tier": "main"
+    },
+    {
+      "name": "Javier G. Recuenco",
+      "url": "https://www.youtube.com/results?search_query=javier+g+recuenco",
+      "tier": "main"
+    },
+    {
+      "name": "Marcelo Gullo Omodeo",
+      "url": "https://www.youtube.com/@MarceloGullo1/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Jesús Silva Castignani",
+      "url": "https://www.youtube.com/@elpadrejesus/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Cura de Toledo",
+      "url": "https://www.youtube.com/@curadetoledo/featured",
+      "tier": "main"
+    },
+    {
+      "name": "Stephen Covey Principles HQ",
+      "url": "https://www.youtube.com/@StephenCoveyPrinciplesHQ/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Simon Sinek",
+      "url": "https://www.youtube.com/@SimonSinek/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Juan Arana",
+      "url": "https://www.youtube.com/results?search_query=Juan+Arana",
+      "tier": "main"
+    },
+    {
+      "name": "Aquilino Polaino",
+      "url": "https://www.youtube.com/results?search_query=Aquilino+Polaino",
+      "tier": "main"
+    },
+    {
+      "name": "Catherine L'Ecuyer",
+      "url": "https://www.youtube.com/@catherinelecuyer1781/featured",
+      "tier": "main"
+    },
+    {
+      "name": "José Ramón Ayllón",
+      "url": "https://www.youtube.com/results?search_query=jos%C3%A9+ram%C3%B3n+ayll%C3%B3n",
+      "tier": "main"
+    },
+    {
+      "name": "EWTN Español",
+      "url": "https://www.youtube.com/@EWTNespanol/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Vatican News Español",
+      "url": "https://www.youtube.com/@VaticanNewsES/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Hakuna Group Music",
+      "url": "https://www.youtube.com/@HakunaGroupMusic/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "10 minutos con Jesús",
+      "url": "https://www.youtube.com/@10minutosconJesus/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Meditaciones en español",
+      "url": "https://www.youtube.com/playlist?list=PLsZttjEgez26mxg3q6YMuwlwmwQgTQ1dn",
+      "tier": "main"
+    },
+    {
+      "name": "The Rest Is History",
+      "url": "https://www.youtube.com/@restishistorypod/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "ISCR Universidad de Navarra",
+      "url": "https://www.youtube.com/@iscruniversidaddenavarra/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "The Catholic Talk Show",
+      "url": "https://www.youtube.com/@CatholicTalkShow/shorts",
+      "tier": "main"
+    },
+    {
+      "name": "Facultad de Teología UNAV",
+      "url": "https://www.youtube.com/@Teologia_UNAV/videos",
+      "tier": "main"
+    },
+    {
+      "name": "Francisco Ugarte",
+      "url": "https://www.youtube.com/@franciscougarteantropologi7054",
+      "tier": "main"
+    },
+    {
+      "name": "Francisco Insa",
+      "url": "https://www.youtube.com/@franciscoinsa",
+      "tier": "main"
+    },
+    {
+      "name": "Alfonso Aguiló",
+      "url": "https://www.youtube.com/@AlfonsoAguil%C3%B3-g2y",
+      "tier": "main"
+    },
+    {
+      "name": "Emilio Duró",
+      "url": "https://www.youtube.com/results?search_query=Emilio+Dur%C3%B3",
+      "tier": "reserve"
+    },
+    {
+      "name": "Fernando García de Cortázar",
+      "url": "https://www.youtube.com/results?search_query=Fernando+Garc%C3%ADa+de+Cort%C3%A1zar",
+      "tier": "reserve"
+    },
+    {
+      "name": "Rafa Guerrero",
+      "url": "https://www.youtube.com/results?search_query=Rafa+Guerrero",
+      "tier": "reserve"
+    },
+    {
+      "name": "Rafael Santandreu",
+      "url": "https://www.youtube.com/results?search_query=Rafael+Santandreu",
+      "tier": "reserve"
+    },
+    {
+      "name": "Higinio Marín",
+      "url": "https://www.youtube.com/results?search_query=higinio+marin",
+      "tier": "reserve"
+    },
+    {
+      "name": "Andrew Huberman",
+      "url": "https://www.youtube.com/@hubermanlab/shorts",
+      "tier": "reserve"
+    }
+  ],
+  "music": [
+    {
+      "name": "Hakuna Group Music",
+      "url": "https://www.youtube.com/@HakunaGroupMusic/videos"
+    },
+    {
+      "name": "Inazio",
+      "url": "https://www.youtube.com/@Inazio-oficial/videos"
+    },
+    {
+      "name": "Nico Montero",
+      "url": "https://www.youtube.com/@nicomontero/videos"
+    },
+    {
+      "name": "Kairoi",
+      "url": "https://www.youtube.com/@kairoimusique/videos"
+    },
+    {
+      "name": "Gen Rosso",
+      "url": "https://www.youtube.com/@GenRossoOfficial/videos"
+    },
+    {
+      "name": "Ain Karem",
+      "url": "https://www.youtube.com/channel/UCFXJxkkFVepCf2M3H_3zN_A/videos"
+    },
+    {
+      "name": "tuyo",
+      "url": "https://www.youtube.com/@tuyomusica/videos"
+    },
+    {
+      "name": "Coro de Monjes de Solesmes",
+      "url": "https://www.youtube.com/channel/UCnJo-s8JA5XkNGBUUlc9v5w/videos"
+    },
+    {
+      "name": "Gen Verde",
+      "url": "https://www.youtube.com/@GenVerdeOfficial/videos"
+    }
+  ],
+  "instagram": [
+    {
+      "name": "Hallow",
+      "handle": "hallowapp",
+      "url": "https://www.instagram.com/hallowapp/"
+    },
+    {
+      "name": "Fundación CARF",
+      "handle": "fundacioncarf",
+      "url": "https://www.instagram.com/fundacioncarf/"
+    },
+    {
+      "name": "Bosco Films",
+      "handle": "boscofilms",
+      "url": "https://www.instagram.com/boscofilms/"
+    },
+    {
+      "name": "Luis Gutiérrez Rojas",
+      "handle": "luisgutierrezrojas",
+      "url": "https://www.instagram.com/luisgutierrezrojas/"
+    },
+    {
+      "name": "Marian Rojas Estapé",
+      "handle": "marianrojasestape",
+      "url": "https://www.instagram.com/marianrojasestape/"
+    },
+    {
+      "name": "It's Time To Think",
+      "handle": "itstimetothink",
+      "url": "https://www.instagram.com/itstimetothink/"
+    },
+    {
+      "name": "Arthur Brooks",
+      "handle": "arthurcbrooks",
+      "url": "https://www.instagram.com/arthurcbrooks/"
+    },
+    {
+      "name": "María Calvo",
+      "handle": "mariacalvocharro",
+      "url": "https://www.instagram.com/mariacalvocharro/"
+    },
+    {
+      "name": "Rafa Lafuente",
+      "handle": "rafa_lafuente",
+      "url": "https://www.instagram.com/rafa_lafuente/"
+    },
+    {
+      "name": "Pep Borrell",
+      "handle": "pepborrell",
+      "url": "https://www.instagram.com/pepborrell/"
+    },
+    {
+      "name": "Mario Alonso Puig",
+      "handle": "marioalonsopuig",
+      "url": "https://www.instagram.com/marioalonsopuig/"
+    },
+    {
+      "name": "AUTE",
+      "handle": "aute___",
+      "url": "https://www.instagram.com/aute___/"
+    },
+    {
+      "name": "EWTN España",
+      "handle": "ewtnespana",
+      "url": "https://www.instagram.com/ewtnespana/"
+    },
+    {
+      "name": "Álex Rovira",
+      "handle": "alexroviraoficial",
+      "url": "https://www.instagram.com/alexroviraoficial/"
+    },
+    {
+      "name": "María Álvarez de las Asturias",
+      "handle": "mariaalvarezdelasasturias",
+      "url": "https://www.instagram.com/mariaalvarezdelasasturias/"
+    }
+  ]
+}

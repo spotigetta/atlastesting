@@ -14,7 +14,7 @@
   "documents": [
     {
       "id": "ortodoxia-0001_Instrucciones_de_uso_del_corpus",
-      "contentFile": "data/documents/0aec396561d583ab08.js",
+      "contentFile": "data/documents/0aec396561d583ab08.json.gz",
       "catalogId": "0001",
       "file": "0001_Instrucciones_de_uso_del_corpus.md",
       "title": "Instrucciones de uso del corpus IA Ágora",
@@ -34,7 +34,7 @@
     },
     {
       "id": "ortodoxia-0002_Pendientes_y_criterios_de_adquisicion",
-      "contentFile": "data/documents/f45f479d6f7f95c62c.js",
+      "contentFile": "data/documents/f45f479d6f7f95c62c.json.gz",
       "catalogId": "0002",
       "file": "0002_Pendientes_y_criterios_de_adquisicion.md",
       "title": "Pendientes y criterios de adquisición de IA Ágora",
@@ -54,7 +54,7 @@
     },
     {
       "id": "ortodoxia-0077_Gaudium_et_spes_ES",
-      "contentFile": "data/documents/c9c663051d0be7ff78.js",
+      "contentFile": "data/documents/c9c663051d0be7ff78.json.gz",
       "catalogId": "0077",
       "file": "0077_Gaudium_et_spes_ES.md",
       "title": "Gaudium et spes ES",
@@ -74,7 +74,7 @@
     },
     {
       "id": "ortodoxia-0087_Dignitatis_humanae_ES",
-      "contentFile": "data/documents/10ccb399093cca6bdb.js",
+      "contentFile": "data/documents/10ccb399093cca6bdb.json.gz",
       "catalogId": "0087",
       "file": "0087_Dignitatis_humanae_ES.md",
       "title": "Dignitatis humanae ES",
@@ -94,7 +94,7 @@
     },
     {
       "id": "ortodoxia-0091_Catecismo_Iglesia_Catol",
-      "contentFile": "data/documents/66f274a4cb0345ea6c.js",
+      "contentFile": "data/documents/66f274a4cb0345ea6c.json.gz",
       "catalogId": "0091",
       "file": "0091_Catecismo_Iglesia_Catol.md",
       "title": "Catecismo Iglesia Catól.",
@@ -114,7 +114,7 @@
     },
     {
       "id": "ortodoxia-0146_Agustin_Confesiones",
-      "contentFile": "data/documents/51bff42b85f2a408e7.js",
+      "contentFile": "data/documents/51bff42b85f2a408e7.json.gz",
       "catalogId": "0146",
       "file": "0146_Agustin_Confesiones.md",
       "title": "Agustin - Confesiones",
@@ -134,7 +134,7 @@
     },
     {
       "id": "ortodoxia-0159_Augustin_Cite_de_Dieu_parte_01",
-      "contentFile": "data/documents/241dc8961cb4ac5a76.js",
+      "contentFile": "data/documents/241dc8961cb4ac5a76.json.gz",
       "catalogId": "0159",
       "file": "0159_Augustin_Cite_de_Dieu_parte_01.md",
       "title": "Augustin, Cité de Dieu — parte 1",
@@ -154,7 +154,7 @@
     },
     {
       "id": "ortodoxia-0159_Augustin_Cite_de_Dieu_parte_02",
-      "contentFile": "data/documents/0c85a351e69a44e5ca.js",
+      "contentFile": "data/documents/0c85a351e69a44e5ca.json.gz",
       "catalogId": "0159",
       "file": "0159_Augustin_Cite_de_Dieu_parte_02.md",
       "title": "Augustin, Cité de Dieu — parte 2",
@@ -174,7 +174,7 @@
     },
     {
       "id": "ortodoxia-0163_Augustin_du_libre_arbitre",
-      "contentFile": "data/documents/05aac4d93a3f1d263e.js",
+      "contentFile": "data/documents/05aac4d93a3f1d263e.json.gz",
       "catalogId": "0163",
       "file": "0163_Augustin_du_libre_arbitre.md",
       "title": "Augustin, du libre arbitre",
@@ -194,7 +194,7 @@
     },
     {
       "id": "ortodoxia-0306_Suma_Teologica_I",
-      "contentFile": "data/documents/c8477f72b400f5ec5b.js",
+      "contentFile": "data/documents/c8477f72b400f5ec5b.json.gz",
       "catalogId": "0306",
       "file": "0306_Suma_Teologica_I.md",
       "title": "Suma Teológica I",
@@ -214,7 +214,7 @@
     },
     {
       "id": "ortodoxia-0307_Suma_Teologica_I_II_parte_01",
-      "contentFile": "data/documents/635dfe4d4836e1895e.js",
+      "contentFile": "data/documents/635dfe4d4836e1895e.json.gz",
       "catalogId": "0307",
       "file": "0307_Suma_Teologica_I_II_parte_01.md",
       "title": "Suma Teológica I-II — parte 1",
@@ -234,7 +234,7 @@
     },
     {
       "id": "ortodoxia-0307_Suma_Teologica_I_II_parte_02",
-      "contentFile": "data/documents/41f96addca82de28e0.js",
+      "contentFile": "data/documents/41f96addca82de28e0.json.gz",
       "catalogId": "0307",
       "file": "0307_Suma_Teologica_I_II_parte_02.md",
       "title": "Suma Teológica I-II — parte 2",
@@ -254,7 +254,7 @@
     },
     {
       "id": "ortodoxia-0308_Suma_Teologica_II_II_parte_01",
-      "contentFile": "data/documents/c3e02283ad4050e4ac.js",
+      "contentFile": "data/documents/c3e02283ad4050e4ac.json.gz",
       "catalogId": "0308",
       "file": "0308_Suma_Teologica_II_II_parte_01.md",
       "title": "Suma Teológica II-II — parte 1",
@@ -274,7 +274,7 @@
     },
     {
       "id": "ortodoxia-0308_Suma_Teologica_II_II_parte_02",
-      "contentFile": "data/documents/153bb57833fbb0362a.js",
+      "contentFile": "data/documents/153bb57833fbb0362a.json.gz",
       "catalogId": "0308",
       "file": "0308_Suma_Teologica_II_II_parte_02.md",
       "title": "Suma Teológica II-II — parte 2",
@@ -294,7 +294,7 @@
     },
     {
       "id": "ortodoxia-0337_Deus_caritas_est_ES",
-      "contentFile": "data/documents/a4f0c1bae89588c491.js",
+      "contentFile": "data/documents/a4f0c1bae89588c491.json.gz",
       "catalogId": "0337",
       "file": "0337_Deus_caritas_est_ES.md",
       "title": "Deus caritas est ES",
@@ -314,7 +314,7 @@
     },
     {
       "id": "ortodoxia-0346_Evangelium_vitae_ES",
-      "contentFile": "data/documents/b2842e7055560eff39.js",
+      "contentFile": "data/documents/b2842e7055560eff39.json.gz",
       "catalogId": "0346",
       "file": "0346_Evangelium_vitae_ES.md",
       "title": "Evangelium vitae ES",
@@ -334,7 +334,7 @@
     },
     {
       "id": "ortodoxia-0348_Veritatis_splendor_ES",
-      "contentFile": "data/documents/045f7d775a703cea42.js",
+      "contentFile": "data/documents/045f7d775a703cea42.json.gz",
       "catalogId": "0348",
       "file": "0348_Veritatis_splendor_ES.md",
       "title": "Veritatis splendor ES",
@@ -354,7 +354,7 @@
     },
     {
       "id": "ortodoxia-0353_Humanae_Vitae_ES",
-      "contentFile": "data/documents/a83d4ed8ccec62f627.js",
+      "contentFile": "data/documents/a83d4ed8ccec62f627.json.gz",
       "catalogId": "0353",
       "file": "0353_Humanae_Vitae_ES.md",
       "title": "Humanae Vitae ES",
@@ -374,7 +374,7 @@
     },
     {
       "id": "ortodoxia-0393_Familiaris_consortio_ES",
-      "contentFile": "data/documents/e14d2727ad1b220da4.js",
+      "contentFile": "data/documents/e14d2727ad1b220da4.json.gz",
       "catalogId": "0393",
       "file": "0393_Familiaris_consortio_ES.md",
       "title": "Familiaris consortio ES",
@@ -394,7 +394,7 @@
     },
     {
       "id": "ortodoxia-0410_Mulieris_dignitatem",
-      "contentFile": "data/documents/90497f48b431f69676.js",
+      "contentFile": "data/documents/90497f48b431f69676.json.gz",
       "catalogId": "0410",
       "file": "0410_Mulieris_dignitatem.md",
       "title": "Mulieris dignitatem",
@@ -414,7 +414,7 @@
     },
     {
       "id": "ortodoxia-0411_Carta_a_las_Familias",
-      "contentFile": "data/documents/9fd347539d5d39d6d2.js",
+      "contentFile": "data/documents/9fd347539d5d39d6d2.json.gz",
       "catalogId": "0411",
       "file": "0411_Carta_a_las_Familias.md",
       "title": "Carta a las Familias",
@@ -434,7 +434,7 @@
     },
     {
       "id": "ortodoxia-0430_Compendio_catecismo",
-      "contentFile": "data/documents/8b4b8bdf8a2532a758.js",
+      "contentFile": "data/documents/8b4b8bdf8a2532a758.json.gz",
       "catalogId": "0430",
       "file": "0430_Compendio_catecismo.md",
       "title": "Compendio catecismo",
@@ -454,7 +454,7 @@
     },
     {
       "id": "ortodoxia-0700_Dignitas_infinita_ES",
-      "contentFile": "data/documents/e24bef70463a52eac9.js",
+      "contentFile": "data/documents/e24bef70463a52eac9.json.gz",
       "catalogId": "0700",
       "file": "0700_Dignitas_infinita_ES.md",
       "title": "Dignitas infinita",
@@ -474,7 +474,7 @@
     },
     {
       "id": "ortodoxia-0704_Dignitas_personae_ES",
-      "contentFile": "data/documents/67c70fc5e6c777b57e.js",
+      "contentFile": "data/documents/67c70fc5e6c777b57e.json.gz",
       "catalogId": "0704",
       "file": "0704_Dignitas_personae_ES.md",
       "title": "Dignitas personae",
@@ -494,7 +494,7 @@
     },
     {
       "id": "ortodoxia-0709_Amoris_laetitia_ES",
-      "contentFile": "data/documents/621cbf4af0ce1a20ba.js",
+      "contentFile": "data/documents/621cbf4af0ce1a20ba.json.gz",
       "catalogId": "0709",
       "file": "0709_Amoris_laetitia_ES.md",
       "title": "Amoris laetitia",
@@ -514,7 +514,7 @@
     },
     {
       "id": "ortodoxia-0723_En_busca_de_una_etica_universal_ES",
-      "contentFile": "data/documents/1195643e217a58d527.js",
+      "contentFile": "data/documents/1195643e217a58d527.json.gz",
       "catalogId": "0723",
       "file": "0723_En_busca_de_una_etica_universal_ES.md",
       "title": "En busca de una ética universal",
@@ -534,7 +534,7 @@
     },
     {
       "id": "ortodoxia-0732_Biblia_y_moral_ES",
-      "contentFile": "data/documents/c370c73f924476c6fa.js",
+      "contentFile": "data/documents/c370c73f924476c6fa.json.gz",
       "catalogId": "0732",
       "file": "0732_Biblia_y_moral_ES.md",
       "title": "Biblia y moral",
@@ -554,7 +554,7 @@
     },
     {
       "id": "ortodoxia-1100_Persona_humana_ES",
-      "contentFile": "data/documents/76bc245fd78dc6d909.js",
+      "contentFile": "data/documents/76bc245fd78dc6d909.json.gz",
       "catalogId": "1100",
       "file": "1100_Persona_humana_ES.md",
       "title": "Persona humana: declaración acerca de ciertas cuestiones de ética sexual",
@@ -574,7 +574,7 @@
     },
     {
       "id": "ortodoxia-1101_Sexualidad_humana_verdad_y_significado_ES",
-      "contentFile": "data/documents/64fffca0a4a06e8848.js",
+      "contentFile": "data/documents/64fffca0a4a06e8848.json.gz",
       "catalogId": "1101",
       "file": "1101_Sexualidad_humana_verdad_y_significado_ES.md",
       "title": "Sexualidad humana: verdad y significado",
@@ -594,7 +594,7 @@
     },
     {
       "id": "ortodoxia-1102_Consideraciones_uniones_homosexuales_ES",
-      "contentFile": "data/documents/b8c65ad0faec3d94ee.js",
+      "contentFile": "data/documents/b8c65ad0faec3d94ee.json.gz",
       "catalogId": "1102",
       "file": "1102_Consideraciones_uniones_homosexuales_ES.md",
       "title": "Consideraciones acerca de los proyectos de reconocimiento legal de las uniones entre personas homosexuales",
@@ -614,7 +614,7 @@
     },
     {
       "id": "ortodoxia-1103_Familia_matrimonio_y_uniones_de_hecho_ES",
-      "contentFile": "data/documents/b9143d981ce04dddc5.js",
+      "contentFile": "data/documents/b9143d981ce04dddc5.json.gz",
       "catalogId": "1103",
       "file": "1103_Familia_matrimonio_y_uniones_de_hecho_ES.md",
       "title": "Familia, matrimonio y \\\"uniones de hecho\\\"",
@@ -634,7 +634,7 @@
     },
     {
       "id": "ortodoxia-1110_Chesterton_Orthodoxy_EN",
-      "contentFile": "data/documents/b44178dce6e0f34c18.js",
+      "contentFile": "data/documents/b44178dce6e0f34c18.json.gz",
       "catalogId": "1110",
       "file": "1110_Chesterton_Orthodoxy_EN.md",
       "title": "Orthodoxy",
@@ -654,7 +654,7 @@
     },
     {
       "id": "ortodoxia-1111_Chesterton_Heretics_EN",
-      "contentFile": "data/documents/d32c976d12554f3a2b.js",
+      "contentFile": "data/documents/d32c976d12554f3a2b.json.gz",
       "catalogId": "1111",
       "file": "1111_Chesterton_Heretics_EN.md",
       "title": "Heretics",
@@ -674,7 +674,7 @@
     },
     {
       "id": "ortodoxia-1112_Chesterton_Whats_Wrong_with_the_World_EN",
-      "contentFile": "data/documents/82490ce2361b8dbeb6.js",
+      "contentFile": "data/documents/82490ce2361b8dbeb6.json.gz",
       "catalogId": "1112",
       "file": "1112_Chesterton_Whats_Wrong_with_the_World_EN.md",
       "title": "What's Wrong with the World",
@@ -694,7 +694,7 @@
     },
     {
       "id": "ortodoxia-1113_Chesterton_The_Everlasting_Man_EN",
-      "contentFile": "data/documents/e922e3f97b6f904ab5.js",
+      "contentFile": "data/documents/e922e3f97b6f904ab5.json.gz",
       "catalogId": "1113",
       "file": "1113_Chesterton_The_Everlasting_Man_EN.md",
       "title": "The Everlasting Man",
@@ -714,7 +714,7 @@
     },
     {
       "id": "ortodoxia-1114_Chesterton_The_Superstition_of_Divorce_EN",
-      "contentFile": "data/documents/5279ab17704235fefd.js",
+      "contentFile": "data/documents/5279ab17704235fefd.json.gz",
       "catalogId": "1114",
       "file": "1114_Chesterton_The_Superstition_of_Divorce_EN.md",
       "title": "The Superstition of Divorce",
@@ -734,7 +734,7 @@
     },
     {
       "id": "ortodoxia-1115_Chesterton_Divorce_versus_Democracy_EN",
-      "contentFile": "data/documents/2a5d94a60d8e6be233.js",
+      "contentFile": "data/documents/2a5d94a60d8e6be233.json.gz",
       "catalogId": "1115",
       "file": "1115_Chesterton_Divorce_versus_Democracy_EN.md",
       "title": "Divorce versus Democracy",
@@ -754,7 +754,7 @@
     },
     {
       "id": "ortodoxia-1116_Chesterton_Eugenics_and_Other_Evils_EN",
-      "contentFile": "data/documents/f8b789c87df861f5d1.js",
+      "contentFile": "data/documents/f8b789c87df861f5d1.json.gz",
       "catalogId": "1116",
       "file": "1116_Chesterton_Eugenics_and_Other_Evils_EN.md",
       "title": "Eugenics and Other Evils",
@@ -774,7 +774,7 @@
     },
     {
       "id": "ortodoxia-1117_Chesterton_All_Things_Considered_EN",
-      "contentFile": "data/documents/b0546d0591e781c331.js",
+      "contentFile": "data/documents/b0546d0591e781c331.json.gz",
       "catalogId": "1117",
       "file": "1117_Chesterton_All_Things_Considered_EN.md",
       "title": "All Things Considered",
@@ -794,7 +794,7 @@
     },
     {
       "id": "ortodoxia-1118_Chesterton_Tremendous_Trifles_EN",
-      "contentFile": "data/documents/af077c4772f4aff5c1.js",
+      "contentFile": "data/documents/af077c4772f4aff5c1.json.gz",
       "catalogId": "1118",
       "file": "1118_Chesterton_Tremendous_Trifles_EN.md",
       "title": "Tremendous Trifles",
@@ -814,7 +814,7 @@
     },
     {
       "id": "ortodoxia-1119_Chesterton_The_Defendant_EN",
-      "contentFile": "data/documents/cfc4f72297e2784e22.js",
+      "contentFile": "data/documents/cfc4f72297e2784e22.json.gz",
       "catalogId": "1119",
       "file": "1119_Chesterton_The_Defendant_EN.md",
       "title": "The Defendant",
@@ -834,7 +834,7 @@
     },
     {
       "id": "ortodoxia-1120_Chesterton_The_Ball_and_the_Cross_EN",
-      "contentFile": "data/documents/a4ed9400d8551c84c6.js",
+      "contentFile": "data/documents/a4ed9400d8551c84c6.json.gz",
       "catalogId": "1120",
       "file": "1120_Chesterton_The_Ball_and_the_Cross_EN.md",
       "title": "The Ball and the Cross",
@@ -854,7 +854,7 @@
     },
     {
       "id": "ortodoxia-1121_Chesterton_The_Man_Who_Was_Thursday_EN",
-      "contentFile": "data/documents/e12cf15f715a450763.js",
+      "contentFile": "data/documents/e12cf15f715a450763.json.gz",
       "catalogId": "1121",
       "file": "1121_Chesterton_The_Man_Who_Was_Thursday_EN.md",
       "title": "The Man Who Was Thursday: A Nightmare",
@@ -874,7 +874,7 @@
     },
     {
       "id": "ortodoxia-1122_Chesterton_St_Thomas_Aquinas_EN",
-      "contentFile": "data/documents/fa82e1f3cacdeffc1d.js",
+      "contentFile": "data/documents/fa82e1f3cacdeffc1d.json.gz",
       "catalogId": "1122",
       "file": "1122_Chesterton_St_Thomas_Aquinas_EN.md",
       "title": "St. Thomas Aquinas",
@@ -894,7 +894,7 @@
     },
     {
       "id": "ortodoxia-1123_Chesterton_St_Francis_of_Assisi_EN",
-      "contentFile": "data/documents/241b49b9944572c995.js",
+      "contentFile": "data/documents/241b49b9944572c995.json.gz",
       "catalogId": "1123",
       "file": "1123_Chesterton_St_Francis_of_Assisi_EN.md",
       "title": "St. Francis of Assisi",
@@ -914,7 +914,7 @@
     },
     {
       "id": "ortodoxia-1130_Newman_Development_of_Christian_Doctrine_EN",
-      "contentFile": "data/documents/87115a6256ea96b7c4.js",
+      "contentFile": "data/documents/87115a6256ea96b7c4.json.gz",
       "catalogId": "1130",
       "file": "1130_Newman_Development_of_Christian_Doctrine_EN.md",
       "title": "An Essay on the Development of Christian Doctrine",
@@ -934,7 +934,7 @@
     },
     {
       "id": "ortodoxia-1131_Newman_Apologia_pro_vita_sua_EN",
-      "contentFile": "data/documents/d28b6c689548101b24.js",
+      "contentFile": "data/documents/d28b6c689548101b24.json.gz",
       "catalogId": "1131",
       "file": "1131_Newman_Apologia_pro_vita_sua_EN.md",
       "title": "Apologia pro vita sua",
@@ -954,7 +954,7 @@
     },
     {
       "id": "ortodoxia-1132_Newman_Grammar_of_Assent_EN",
-      "contentFile": "data/documents/2c6309f422db99b1c8.js",
+      "contentFile": "data/documents/2c6309f422db99b1c8.json.gz",
       "catalogId": "1132",
       "file": "1132_Newman_Grammar_of_Assent_EN.md",
       "title": "An Essay in Aid of a Grammar of Assent",
@@ -974,7 +974,7 @@
     },
     {
       "id": "ortodoxia-1133_Newman_Letter_to_the_Duke_of_Norfolk_EN",
-      "contentFile": "data/documents/9861ec7d718fc6a8a6.js",
+      "contentFile": "data/documents/9861ec7d718fc6a8a6.json.gz",
       "catalogId": "1133",
       "file": "1133_Newman_Letter_to_the_Duke_of_Norfolk_EN.md",
       "title": "Letter to the Duke of Norfolk",
@@ -994,7 +994,7 @@
     },
     {
       "id": "ortodoxia-1134_Newman_The_Idea_of_a_University_EN",
-      "contentFile": "data/documents/31465a58677826e2e7.js",
+      "contentFile": "data/documents/31465a58677826e2e7.json.gz",
       "catalogId": "1134",
       "file": "1134_Newman_The_Idea_of_a_University_EN.md",
       "title": "The Idea of a University Defined and Illustrated: In Nine Discourses Delivered to the Catholics of Dublin",
@@ -1014,7 +1014,7 @@
     },
     {
       "id": "ortodoxia-1135_Newman_University_Sermons_EN",
-      "contentFile": "data/documents/f2fc70d8b4214dbc53.js",
+      "contentFile": "data/documents/f2fc70d8b4214dbc53.json.gz",
       "catalogId": "1135",
       "file": "1135_Newman_University_Sermons_EN.md",
       "title": "Fifteen Sermons Preached Before the University of Oxford",
@@ -1034,7 +1034,7 @@
     },
     {
       "id": "ortodoxia-1136_Newman_Parochial_and_Plain_Sermons_EN",
-      "contentFile": "data/documents/7c68fe0110d3d47786.js",
+      "contentFile": "data/documents/7c68fe0110d3d47786.json.gz",
       "catalogId": "1136",
       "file": "1136_Newman_Parochial_and_Plain_Sermons_EN.md",
       "title": "Parochial and Plain Sermons, Vol. VII (of 8)",
@@ -1054,7 +1054,7 @@
     },
     {
       "id": "ortodoxia-1150_Plato_Apology_EN",
-      "contentFile": "data/documents/f1456531df4c6d00fb.js",
+      "contentFile": "data/documents/f1456531df4c6d00fb.json.gz",
       "catalogId": "1150",
       "file": "1150_Plato_Apology_EN.md",
       "title": "Apology",
@@ -1074,7 +1074,7 @@
     },
     {
       "id": "ortodoxia-1151_Plato_Crito_EN",
-      "contentFile": "data/documents/799a0953bab3238575.js",
+      "contentFile": "data/documents/799a0953bab3238575.json.gz",
       "catalogId": "1151",
       "file": "1151_Plato_Crito_EN.md",
       "title": "Crito",
@@ -1094,7 +1094,7 @@
     },
     {
       "id": "ortodoxia-1152_Plato_Gorgias_EN",
-      "contentFile": "data/documents/4d4f94126a45e98785.js",
+      "contentFile": "data/documents/4d4f94126a45e98785.json.gz",
       "catalogId": "1152",
       "file": "1152_Plato_Gorgias_EN.md",
       "title": "Gorgias",
@@ -1114,7 +1114,7 @@
     },
     {
       "id": "ortodoxia-1153_Plato_Republic_EN",
-      "contentFile": "data/documents/ef3da4fc2cea92b719.js",
+      "contentFile": "data/documents/ef3da4fc2cea92b719.json.gz",
       "catalogId": "1153",
       "file": "1153_Plato_Republic_EN.md",
       "title": "The Republic",
@@ -1134,7 +1134,7 @@
     },
     {
       "id": "ortodoxia-1154_Plato_Symposium_EN",
-      "contentFile": "data/documents/f6c716e45493dcd2db.js",
+      "contentFile": "data/documents/f6c716e45493dcd2db.json.gz",
       "catalogId": "1154",
       "file": "1154_Plato_Symposium_EN.md",
       "title": "Symposium",
@@ -1154,7 +1154,7 @@
     },
     {
       "id": "ortodoxia-1155_Plato_Phaedrus_EN",
-      "contentFile": "data/documents/462e7ca9c0a370a66b.js",
+      "contentFile": "data/documents/462e7ca9c0a370a66b.json.gz",
       "catalogId": "1155",
       "file": "1155_Plato_Phaedrus_EN.md",
       "title": "Phaedrus",
@@ -1174,7 +1174,7 @@
     },
     {
       "id": "ortodoxia-1160_Aristotle_Nicomachean_Ethics_EN",
-      "contentFile": "data/documents/42c970ada8fe3d1858.js",
+      "contentFile": "data/documents/42c970ada8fe3d1858.json.gz",
       "catalogId": "1160",
       "file": "1160_Aristotle_Nicomachean_Ethics_EN.md",
       "title": "The Nicomachean ethics of Aristotle",
@@ -1194,7 +1194,7 @@
     },
     {
       "id": "ortodoxia-1161_Aristotle_Politics_EN",
-      "contentFile": "data/documents/5fcb7ed9b05ef2c39c.js",
+      "contentFile": "data/documents/5fcb7ed9b05ef2c39c.json.gz",
       "catalogId": "1161",
       "file": "1161_Aristotle_Politics_EN.md",
       "title": "Politics: A Treatise on Government",
@@ -1214,7 +1214,7 @@
     },
     {
       "id": "ortodoxia-1162_Aristotle_Rhetoric_EN",
-      "contentFile": "data/documents/05d202e326329dd72b.js",
+      "contentFile": "data/documents/05d202e326329dd72b.json.gz",
       "catalogId": "1162",
       "file": "1162_Aristotle_Rhetoric_EN.md",
       "title": "A New Translation of Aristotle's Rhetoric",
@@ -1234,7 +1234,7 @@
     },
     {
       "id": "ortodoxia-1163_Aristotle_On_the_Soul_EN",
-      "contentFile": "data/documents/fc960338dbc1e415a4.js",
+      "contentFile": "data/documents/fc960338dbc1e415a4.json.gz",
       "catalogId": "1163",
       "file": "1163_Aristotle_On_the_Soul_EN.md",
       "title": "The Treatises of Aristotle on the Soul",
@@ -1254,7 +1254,7 @@
     },
     {
       "id": "ortodoxia-1170_Cicero_De_Officiis_EN",
-      "contentFile": "data/documents/f28b85742a9a727307.js",
+      "contentFile": "data/documents/f28b85742a9a727307.json.gz",
       "catalogId": "1170",
       "file": "1170_Cicero_De_Officiis_EN.md",
       "title": "De Officiis",
@@ -1274,7 +1274,7 @@
     },
     {
       "id": "ortodoxia-1171_Cicero_De_Legibus_EN",
-      "contentFile": "data/documents/6000fa7fdbbfe200b9.js",
+      "contentFile": "data/documents/6000fa7fdbbfe200b9.json.gz",
       "catalogId": "1171",
       "file": "1171_Cicero_De_Legibus_EN.md",
       "title": "The Political Works of Marcus Tullius Cicero, Volume 2: Treatise on the Laws",
@@ -1294,7 +1294,7 @@
     },
     {
       "id": "ortodoxia-1172_Cicero_De_Re_Publica_EN",
-      "contentFile": "data/documents/22bdd0f79aa9b53e9d.js",
+      "contentFile": "data/documents/22bdd0f79aa9b53e9d.json.gz",
       "catalogId": "1172",
       "file": "1172_Cicero_De_Re_Publica_EN.md",
       "title": "The republic of Cicero: Translated from the Latin; and Accompanied With a Critical and Historical Introduction.",
@@ -1314,7 +1314,7 @@
     },
     {
       "id": "ortodoxia-1173_Cicero_De_Amicitia_EN",
-      "contentFile": "data/documents/a3d6e7c24a090f4417.js",
+      "contentFile": "data/documents/a3d6e7c24a090f4417.json.gz",
       "catalogId": "1173",
       "file": "1173_Cicero_De_Amicitia_EN.md",
       "title": "De Amicitia, Scipio's Dream",
@@ -1334,7 +1334,7 @@
     },
     {
       "id": "ortodoxia-1174_Cicero_De_Finibus_EN",
-      "contentFile": "data/documents/e2400c5075a0e2091a.js",
+      "contentFile": "data/documents/e2400c5075a0e2091a.json.gz",
       "catalogId": "1174",
       "file": "1174_Cicero_De_Finibus_EN.md",
       "title": "The Academic Questions, Treatise De Finibus, and Tusculan Disputations, of M.T. Cicero, With a Sketch of the Greek Philosophers Mentioned by Cicero",
@@ -1354,7 +1354,7 @@
     },
     {
       "id": "ortodoxia-1180_Belloc_The_Servile_State_EN",
-      "contentFile": "data/documents/6cd06eea3da9f786c4.js",
+      "contentFile": "data/documents/6cd06eea3da9f786c4.json.gz",
       "catalogId": "1180",
       "file": "1180_Belloc_The_Servile_State_EN.md",
       "title": "The Servile State",
@@ -1374,7 +1374,7 @@
     },
     {
       "id": "ortodoxia-1181_Belloc_Europe_and_the_Faith_EN",
-      "contentFile": "data/documents/74793c968940975ba0.js",
+      "contentFile": "data/documents/74793c968940975ba0.json.gz",
       "catalogId": "1181",
       "file": "1181_Belloc_Europe_and_the_Faith_EN.md",
       "title": "Europe and the Faith: \\\"Sine auctoritate nulla vita\\\"",
@@ -1394,7 +1394,7 @@
     },
     {
       "id": "ortodoxia-1190_Benson_Lord_of_the_World_EN",
-      "contentFile": "data/documents/9091d7e848a9babc1e.js",
+      "contentFile": "data/documents/9091d7e848a9babc1e.json.gz",
       "catalogId": "1190",
       "file": "1190_Benson_Lord_of_the_World_EN.md",
       "title": "Lord of the World",
@@ -1414,7 +1414,7 @@
     },
     {
       "id": "ortodoxia-1191_Benson_Come_Rack_Come_Rope_EN",
-      "contentFile": "data/documents/d0d7fd172ead70cfee.js",
+      "contentFile": "data/documents/d0d7fd172ead70cfee.json.gz",
       "catalogId": "1191",
       "file": "1191_Benson_Come_Rack_Come_Rope_EN.md",
       "title": "Come Rack! Come Rope!",
@@ -1434,7 +1434,7 @@
     },
     {
       "id": "ortodoxia-1192_Benson_The_Friendship_of_Christ_EN",
-      "contentFile": "data/documents/e7bdd9bd2d0a5f7ea7.js",
+      "contentFile": "data/documents/e7bdd9bd2d0a5f7ea7.json.gz",
       "catalogId": "1192",
       "file": "1192_Benson_The_Friendship_of_Christ_EN.md",
       "title": "The Friendship of Christ",
@@ -1454,7 +1454,7 @@
     },
     {
       "id": "ortodoxia-1193_Benson_Confessions_of_a_Convert_EN",
-      "contentFile": "data/documents/8bbe527f53bb89a1f0.js",
+      "contentFile": "data/documents/8bbe527f53bb89a1f0.json.gz",
       "catalogId": "1193",
       "file": "1193_Benson_Confessions_of_a_Convert_EN.md",
       "title": "Confessions of a Convert",
@@ -1474,7 +1474,7 @@
     },
     {
       "id": "ortodoxia-1200_Claves_para_comunicar_la_fe_ES",
-      "contentFile": "data/documents/b558aeb9b4b8cbc113.js",
+      "contentFile": "data/documents/b558aeb9b4b8cbc113.json.gz",
       "catalogId": "1200",
       "file": "1200_Claves_para_comunicar_la_fe_ES.md",
       "title": "Claves para comunicar la fe",
@@ -1494,7 +1494,7 @@
     },
     {
       "id": "ortodoxia-1201_Guia_de_fuentes_contemporaneas_y_derechos_ES",
-      "contentFile": "data/documents/f0a7e74eae1ae5fd29.js",
+      "contentFile": "data/documents/f0a7e74eae1ae5fd29.json.gz",
       "catalogId": "1201",
       "file": "1201_Guia_de_fuentes_contemporaneas_y_derechos_ES.md",
       "title": "Guía de fuentes contemporáneas, funciones y derechos para IA Ágora",
@@ -1514,7 +1514,7 @@
     },
     {
       "id": "ortodoxia-1202_Catholic_Voices_reframing_y_diez_principios_ES",
-      "contentFile": "data/documents/e719cec74696caccbd.js",
+      "contentFile": "data/documents/e719cec74696caccbd.json.gz",
       "catalogId": "1202",
       "file": "1202_Catholic_Voices_reframing_y_diez_principios_ES.md",
       "title": "Catholic Voices: reframing y diez principios de comunicación",
@@ -1534,7 +1534,7 @@
     },
     {
       "id": "ortodoxia-1203_Robert_Barron_y_Word_on_Fire_ES",
-      "contentFile": "data/documents/7e2a8ec421f3d6e505.js",
+      "contentFile": "data/documents/7e2a8ec421f3d6e505.json.gz",
       "catalogId": "1203",
       "file": "1203_Robert_Barron_y_Word_on_Fire_ES.md",
       "title": "Robert Barron y Word on Fire: deseo, belleza y moral positiva",
@@ -1554,7 +1554,7 @@
     },
     {
       "id": "ortodoxia-1204_Trent_Horn_metodo_de_respuesta_ES",
-      "contentFile": "data/documents/7f57a5e0725c79b9d8.js",
+      "contentFile": "data/documents/7f57a5e0725c79b9d8.json.gz",
       "catalogId": "1204",
       "file": "1204_Trent_Horn_metodo_de_respuesta_ES.md",
       "title": "Trent Horn: método de respuesta a objeciones difíciles",
@@ -1574,7 +1574,7 @@
     },
     {
       "id": "ortodoxia-1205_Christopher_West_teologia_del_cuerpo_ES",
-      "contentFile": "data/documents/3a52dc0cbc5c9eed91.js",
+      "contentFile": "data/documents/3a52dc0cbc5c9eed91.json.gz",
       "catalogId": "1205",
       "file": "1205_Christopher_West_teologia_del_cuerpo_ES.md",
       "title": "Christopher West: divulgación de la teología del cuerpo",
@@ -1594,7 +1594,7 @@
     },
     {
       "id": "ortodoxia-1206_Jason_Evert_y_Chastity_Project_ES",
-      "contentFile": "data/documents/eaa13dbf7ffd2f77d3.js",
+      "contentFile": "data/documents/eaa13dbf7ffd2f77d3.json.gz",
       "catalogId": "1206",
       "file": "1206_Jason_Evert_y_Chastity_Project_ES.md",
       "title": "Jason Evert y Chastity Project: pedagogía juvenil de la castidad",
@@ -1614,7 +1614,7 @@
     },
     {
       "id": "ortodoxia-1207_Abigail_Favale_cuerpo_genero_y_lenguaje_ES",
-      "contentFile": "data/documents/4104eb86090aebee04.js",
+      "contentFile": "data/documents/4104eb86090aebee04.json.gz",
       "catalogId": "1207",
       "file": "1207_Abigail_Favale_cuerpo_genero_y_lenguaje_ES.md",
       "title": "Abigail Favale: cuerpo, sexo, género y lenguaje",
@@ -1634,7 +1634,7 @@
     },
     {
       "id": "ortodoxia-1208_Leah_Libresco_Sargeant_virtud_y_dependencia_ES",
-      "contentFile": "data/documents/7a72151af262b22093.js",
+      "contentFile": "data/documents/7a72151af262b22093.json.gz",
       "catalogId": "1208",
       "file": "1208_Leah_Libresco_Sargeant_virtud_y_dependencia_ES.md",
       "title": "Leah Libresco Sargeant: virtud, comunidad y dependencia",
@@ -1654,7 +1654,7 @@
     },
     {
       "id": "ortodoxia-1209_Eve_Tushnet_amistad_vocacion_y_pertenencia_ES",
-      "contentFile": "data/documents/e5cbc0a5f5e0609607.js",
+      "contentFile": "data/documents/e5cbc0a5f5e0609607.json.gz",
       "catalogId": "1209",
       "file": "1209_Eve_Tushnet_amistad_vocacion_y_pertenencia_ES.md",
       "title": "Eve Tushnet: amistad, vocación y pertenencia",
@@ -1674,7 +1674,7 @@
     },
     {
       "id": "ortodoxia-1210_O_Carter_Snead_bioetica_y_vulnerabilidad_ES",
-      "contentFile": "data/documents/9e07a92f0cf9de5468.js",
+      "contentFile": "data/documents/9e07a92f0cf9de5468.json.gz",
       "catalogId": "1210",
       "file": "1210_O_Carter_Snead_bioetica_y_vulnerabilidad_ES.md",
       "title": "O. Carter Snead: bioética, cuerpo y vulnerabilidad",
@@ -1694,7 +1694,7 @@
     },
     {
       "id": "ortodoxia-1211_Erika_Bachiochi_feminismo_y_familia_ES",
-      "contentFile": "data/documents/c1b78791bce45d93b5.js",
+      "contentFile": "data/documents/c1b78791bce45d93b5.json.gz",
       "catalogId": "1211",
       "file": "1211_Erika_Bachiochi_feminismo_y_familia_ES.md",
       "title": "Erika Bachiochi: feminismo, maternidad y responsabilidad",
@@ -1714,7 +1714,7 @@
     },
     {
       "id": "ortodoxia-1212_Mary_Eberstadt_revolucion_sexual_y_familia_ES",
-      "contentFile": "data/documents/4072af414154ebb91c.js",
+      "contentFile": "data/documents/4072af414154ebb91c.json.gz",
       "catalogId": "1212",
       "file": "1212_Mary_Eberstadt_revolucion_sexual_y_familia_ES.md",
       "title": "Mary Eberstadt: revolución sexual, familia e identidad",
@@ -1734,7 +1734,7 @@
     },
     {
       "id": "ortodoxia-1213_Nathaniel_Peters_y_Public_Discourse_ES",
-      "contentFile": "data/documents/a5795b8f194109826f.js",
+      "contentFile": "data/documents/a5795b8f194109826f.json.gz",
       "catalogId": "1213",
       "file": "1213_Nathaniel_Peters_y_Public_Discourse_ES.md",
       "title": "Nathaniel Peters y Public Discourse: significado e integridad sexual",
@@ -1754,7 +1754,7 @@
     },
     {
       "id": "ortodoxia-1214_Arguments_comunicacion_publica_de_la_fe_ES",
-      "contentFile": "data/documents/b2106f489cc67efaa0.js",
+      "contentFile": "data/documents/b2106f489cc67efaa0.json.gz",
       "catalogId": "1214",
       "file": "1214_Arguments_comunicacion_publica_de_la_fe_ES.md",
       "title": "Arguments: colección de comunicación pública de la fe",
@@ -1774,7 +1774,7 @@
     },
     {
       "id": "ortodoxia-1215_Aceprensa_familia_sexualidad_y_bioetica_ES",
-      "contentFile": "data/documents/3ebdb3d063d6af1991.js",
+      "contentFile": "data/documents/3ebdb3d063d6af1991.json.gz",
       "catalogId": "1215",
       "file": "1215_Aceprensa_familia_sexualidad_y_bioetica_ES.md",
       "title": "Aceprensa: familia, sexualidad y bioética en lenguaje periodístico",
@@ -1794,7 +1794,7 @@
     },
     {
       "id": "ortodoxia-1216_Omnes_entrevistas_de_familia_y_afectividad_ES",
-      "contentFile": "data/documents/80b317e7834c4a6fe3.js",
+      "contentFile": "data/documents/80b317e7834c4a6fe3.json.gz",
       "catalogId": "1216",
       "file": "1216_Omnes_entrevistas_de_familia_y_afectividad_ES.md",
       "title": "Omnes: entrevistas sobre matrimonio, castidad y afectividad",
@@ -1814,7 +1814,7 @@
     },
     {
       "id": "ortodoxia-1217_Pablo_Blanco_Sarto_fe_razon_y_Benedicto_XVI_ES",
-      "contentFile": "data/documents/2373c8701f7ad181dd.js",
+      "contentFile": "data/documents/2373c8701f7ad181dd.json.gz",
       "catalogId": "1217",
       "file": "1217_Pablo_Blanco_Sarto_fe_razon_y_Benedicto_XVI_ES.md",
       "title": "Pablo Blanco Sarto: Benedicto XVI, fe, razón y cultura",
@@ -1834,7 +1834,7 @@
     },
     {
       "id": "ortodoxia-1218_Jokin_de_Irala_evidencia_y_educacion_afectiva_ES",
-      "contentFile": "data/documents/fc17da29a26ba6919e.js",
+      "contentFile": "data/documents/fc17da29a26ba6919e.json.gz",
       "catalogId": "1218",
       "file": "1218_Jokin_de_Irala_evidencia_y_educacion_afectiva_ES.md",
       "title": "Jokin de Irala: evidencia y educación afectivo-sexual",
@@ -1854,7 +1854,7 @@
     },
     {
       "id": "ortodoxia-1219_Tomas_Melendo_amor_matrimonio_y_familia_ES",
-      "contentFile": "data/documents/260391d7afa679700a.js",
+      "contentFile": "data/documents/260391d7afa679700a.json.gz",
       "catalogId": "1219",
       "file": "1219_Tomas_Melendo_amor_matrimonio_y_familia_ES.md",
       "title": "Tomás Melendo: amor, matrimonio, familia y felicidad",
@@ -1874,7 +1874,7 @@
     },
     {
       "id": "ortodoxia-1220_Javier_Vidal_Quadras_familia_y_vida_cotidiana_ES",
-      "contentFile": "data/documents/34886b932a4be01316.js",
+      "contentFile": "data/documents/34886b932a4be01316.json.gz",
       "catalogId": "1220",
       "file": "1220_Javier_Vidal_Quadras_familia_y_vida_cotidiana_ES.md",
       "title": "Javier Vidal-Quadras: matrimonio, familia y vida cotidiana",
@@ -1894,7 +1894,7 @@
     },
     {
       "id": "ortodoxia-1221_Diego_Blanco_narracion_y_cultura_popular_ES",
-      "contentFile": "data/documents/02fb836e7d98663075.js",
+      "contentFile": "data/documents/02fb836e7d98663075.json.gz",
       "catalogId": "1221",
       "file": "1221_Diego_Blanco_narracion_y_cultura_popular_ES.md",
       "title": "Diego Blanco: narración, mitología y cultura popular",
@@ -1914,7 +1914,7 @@
     },
     {
       "id": "ortodoxia-1222_de_Irala_Relationships_love_and_sexuality_Filipino_teens_EN",
-      "contentFile": "data/documents/1cac475f4365ce6327.js",
+      "contentFile": "data/documents/1cac475f4365ce6327.json.gz",
       "catalogId": "1222",
       "file": "1222_de_Irala_Relationships_love_and_sexuality_Filipino_teens_EN.md",
       "title": "Relationships, love and sexuality: what the Filipino teens think and feel",
@@ -1934,7 +1934,7 @@
     },
     {
       "id": "ortodoxia-1223_Enrique_Rojas_personalidad_afectividad_ES",
-      "contentFile": "data/documents/fde3aca1b40a0465cb.js",
+      "contentFile": "data/documents/fde3aca1b40a0465cb.json.gz",
       "catalogId": "1223",
       "file": "1223_Enrique_Rojas_personalidad_afectividad_ES.md",
       "title": "Enrique Rojas Montes: psiquiatría divulgativa y antropología práctica",
@@ -1954,7 +1954,7 @@
     },
     {
       "id": "ortodoxia-1224_Luis_Gutierrez_Rojas_salud_mental_ES",
-      "contentFile": "data/documents/be51a2bea8267caede.js",
+      "contentFile": "data/documents/be51a2bea8267caede.json.gz",
       "catalogId": "1224",
       "file": "1224_Luis_Gutierrez_Rojas_salud_mental_ES.md",
       "title": "Luis Gutiérrez Rojas: psiquiatría clínica y divulgación de salud mental",
@@ -1974,7 +1974,7 @@
     },
     {
       "id": "ortodoxia-1225_Marian_Rojas_Estape_emociones_estres_ES",
-      "contentFile": "data/documents/0c212230734f3c831f.js",
+      "contentFile": "data/documents/0c212230734f3c831f.json.gz",
       "catalogId": "1225",
       "file": "1225_Marian_Rojas_Estape_emociones_estres_ES.md",
       "title": "Marian Rojas Estapé: psiquiatría divulgativa sobre emociones y hábitos",
@@ -1994,7 +1994,7 @@
     },
     {
       "id": "ortodoxia-1226_Francisco_Insa_afectividad_y_formacion_ES",
-      "contentFile": "data/documents/d9bf65835f967375fc.js",
+      "contentFile": "data/documents/d9bf65835f967375fc.json.gz",
       "catalogId": "1226",
       "file": "1226_Francisco_Insa_afectividad_y_formacion_ES.md",
       "title": "Francisco Javier Insa Gómez: integración de psiquiatría y teología moral de la persona",
@@ -2014,7 +2014,7 @@
     },
     {
       "id": "ortodoxia-1227_Francisco_Ugarte_Corcuera_madurez_perdon_ES",
-      "contentFile": "data/documents/702b196c65e361103d.js",
+      "contentFile": "data/documents/702b196c65e361103d.json.gz",
       "catalogId": "1227",
       "file": "1227_Francisco_Ugarte_Corcuera_madurez_perdon_ES.md",
       "title": "Francisco Ugarte Corcuera: filosofía práctica y formación antropológica",
@@ -2034,7 +2034,7 @@
     },
     {
       "id": "ortodoxia-1228_Ronald_Knox_predicacion_y_apologetica_EN",
-      "contentFile": "data/documents/0bc1687ef9e19f4491.js",
+      "contentFile": "data/documents/0bc1687ef9e19f4491.json.gz",
       "catalogId": "1228",
       "file": "1228_Ronald_Knox_predicacion_y_apologetica_EN.md",
       "title": "Ronald Knox: predicación, razón y estilo apologético",
@@ -2054,7 +2054,7 @@
     },
     {
       "id": "ortodoxia-1229_Robert_P_George_ley_natural_y_etica_publica_EN",
-      "contentFile": "data/documents/ae36db9514ac84c67f.js",
+      "contentFile": "data/documents/ae36db9514ac84c67f.json.gz",
       "catalogId": "1229",
       "file": "1229_Robert_P_George_ley_natural_y_etica_publica_EN.md",
       "title": "Robert P. George: ley natural, racionalidad y ética pública",
@@ -2074,7 +2074,7 @@
     },
     {
       "id": "ortodoxia-1230_Fabrice_Hadjadj_encarnacion_y_tecnica_ES",
-      "contentFile": "data/documents/fccc47221a02186a44.js",
+      "contentFile": "data/documents/fccc47221a02186a44.json.gz",
       "catalogId": "1230",
       "file": "1230_Fabrice_Hadjadj_encarnacion_y_tecnica_ES.md",
       "title": "Fabrice Hadjadj: ensayo filosófico y apologética cultural",
@@ -2094,7 +2094,7 @@
     },
     {
       "id": "ortodoxia-1231_John_C_Cavadini_sexualidad_y_futuro_ES",
-      "contentFile": "data/documents/07ab3b1d056496bf7f.js",
+      "contentFile": "data/documents/07ab3b1d056496bf7f.json.gz",
       "catalogId": "1231",
       "file": "1231_John_C_Cavadini_sexualidad_y_futuro_ES.md",
       "title": "John C. Cavadini: teología y evangelización cultural",
@@ -2114,7 +2114,7 @@
     },
     {
       "id": "ortodoxia-1232_Jennifer_A_Frey_virtud_y_felicidad_ES",
-      "contentFile": "data/documents/120a41472c3bff6601.js",
+      "contentFile": "data/documents/120a41472c3bff6601.json.gz",
       "catalogId": "1232",
       "file": "1232_Jennifer_A_Frey_virtud_y_felicidad_ES.md",
       "title": "Jennifer A. Frey: filosofía moral, acción y humanidades",
@@ -2134,7 +2134,7 @@
     },
     {
       "id": "ortodoxia-1233_Angela_Franks_cuerpo_mujer_maternidad_ES",
-      "contentFile": "data/documents/45daa59e38aab9ae2c.js",
+      "contentFile": "data/documents/45daa59e38aab9ae2c.json.gz",
       "catalogId": "1233",
       "file": "1233_Angela_Franks_cuerpo_mujer_maternidad_ES.md",
       "title": "Angela Franks: teología del cuerpo y antropología cristiana",
@@ -2154,7 +2154,7 @@
     },
     {
       "id": "ortodoxia-1234_David_Cloutier_consumo_economia_ecologia_ES",
-      "contentFile": "data/documents/5bb7ae8b301d61c863.js",
+      "contentFile": "data/documents/5bb7ae8b301d61c863.json.gz",
       "catalogId": "1234",
       "file": "1234_David_Cloutier_consumo_economia_ecologia_ES.md",
       "title": "David Cloutier: teología moral y ética social católica",
@@ -2174,7 +2174,7 @@
     },
     {
       "id": "ortodoxia-1235_Charles_Camosy_bioetica_dialogo_ES",
-      "contentFile": "data/documents/2847dac3abfc1ea272.js",
+      "contentFile": "data/documents/2847dac3abfc1ea272.json.gz",
       "catalogId": "1235",
       "file": "1235_Charles_Camosy_bioetica_dialogo_ES.md",
       "title": "Charles C. Camosy: bioética y teología moral pública",
@@ -2194,7 +2194,7 @@
     },
     {
       "id": "ortodoxia-1236_Christopher_Kaczor_etica_y_bioetica_ES",
-      "contentFile": "data/documents/d6dde00592437f0efe.js",
+      "contentFile": "data/documents/d6dde00592437f0efe.json.gz",
       "catalogId": "1236",
       "file": "1236_Christopher_Kaczor_etica_y_bioetica_ES.md",
       "title": "Christopher Kaczor: filosofía moral y bioética accesible",
@@ -2214,7 +2214,7 @@
     },
     {
       "id": "ortodoxia-1237_Helen_Alvare_derecho_y_familia_ES",
-      "contentFile": "data/documents/b866a2fa3b0374b04d.js",
+      "contentFile": "data/documents/b866a2fa3b0374b04d.json.gz",
       "catalogId": "1237",
       "file": "1237_Helen_Alvare_derecho_y_familia_ES.md",
       "title": "Helen M. Alvaré: derecho de familia, libertad religiosa y política pública",
@@ -2234,7 +2234,7 @@
     },
     {
       "id": "ortodoxia-1238_Dawn_Eden_Goldstein_trauma_y_misericordia_ES",
-      "contentFile": "data/documents/26a1110b6223624d0a.js",
+      "contentFile": "data/documents/26a1110b6223624d0a.json.gz",
       "catalogId": "1238",
       "file": "1238_Dawn_Eden_Goldstein_trauma_y_misericordia_ES.md",
       "title": "Dawn Eden Goldstein: teología espiritual, testimonio y sanación de la memoria",
@@ -2254,7 +2254,7 @@
     },
     {
       "id": "ortodoxia-1239_Wesley_Hill_celibato_amistad_comunidad_ES",
-      "contentFile": "data/documents/3125ab6bf348c2d52d.js",
+      "contentFile": "data/documents/3125ab6bf348c2d52d.json.gz",
       "catalogId": "1239",
       "file": "1239_Wesley_Hill_celibato_amistad_comunidad_ES.md",
       "title": "Wesley Hill: fuente cristiana anglicana complementaria",
@@ -2274,7 +2274,7 @@
     },
     {
       "id": "ortodoxia-1240_Daniel_Mattson_identidad_castidad_ES",
-      "contentFile": "data/documents/3504c92e1d05dd78a4.js",
+      "contentFile": "data/documents/3504c92e1d05dd78a4.json.gz",
       "catalogId": "1240",
       "file": "1240_Daniel_Mattson_identidad_castidad_ES.md",
       "title": "Daniel Mattson: testimonio católico y divulgación pastoral",
@@ -2294,7 +2294,7 @@
     },
     {
       "id": "ortodoxia-1241_Rachel_M_Coleman_cuerpo_sexo_identidad_ES",
-      "contentFile": "data/documents/55ad16a419486e758a.js",
+      "contentFile": "data/documents/55ad16a419486e758a.json.gz",
       "catalogId": "1241",
       "file": "1241_Rachel_M_Coleman_cuerpo_sexo_identidad_ES.md",
       "title": "Rachel M. Coleman: metafísica y diálogo entre ciencia, filosofía y teología",
@@ -2314,7 +2314,7 @@
     },
     {
       "id": "ortodoxia-1242_Jose_Noriega_amor_deseo_accion_ES",
-      "contentFile": "data/documents/b3d9df1063bb9682d2.js",
+      "contentFile": "data/documents/b3d9df1063bb9682d2.json.gz",
       "catalogId": "1242",
       "file": "1242_Jose_Noriega_amor_deseo_accion_ES.md",
       "title": "José Noriega: teología moral del amor, matrimonio y sexualidad",
@@ -2334,7 +2334,7 @@
     },
     {
       "id": "ortodoxia-1243_Juan_Jose_Perez_Soba_don_promesa_ES",
-      "contentFile": "data/documents/d59e735bec774d64c0.js",
+      "contentFile": "data/documents/d59e735bec774d64c0.json.gz",
       "catalogId": "1243",
       "file": "1243_Juan_Jose_Perez_Soba_don_promesa_ES.md",
       "title": "Juan José Pérez-Soba Díez del Corral: teología moral y pastoral del matrimonio",
@@ -2354,7 +2354,7 @@
     },
     {
       "id": "ortodoxia-1244_Livio_Melina_virtud_libertad_conciencia_ES",
-      "contentFile": "data/documents/a21c059e9dd0863528.js",
+      "contentFile": "data/documents/a21c059e9dd0863528.json.gz",
       "catalogId": "1244",
       "file": "1244_Livio_Melina_virtud_libertad_conciencia_ES.md",
       "title": "Livio Melina: teología moral fundamental",
@@ -2374,7 +2374,7 @@
     },
     {
       "id": "ortodoxia-1245_Vicente_Bellver_bioetica_derecho_ES",
-      "contentFile": "data/documents/e36947ccb07ef533b8.js",
+      "contentFile": "data/documents/e36947ccb07ef533b8.json.gz",
       "catalogId": "1245",
       "file": "1245_Vicente_Bellver_bioetica_derecho_ES.md",
       "title": "Vicente Bellver Capella: filosofía del derecho, bioderecho y bioética",
@@ -2394,7 +2394,7 @@
     },
     {
       "id": "ortodoxia-1246_Ana_Marta_Gonzalez_naturaleza_cultura_ES",
-      "contentFile": "data/documents/9172f5f9d3cfca43a8.js",
+      "contentFile": "data/documents/9172f5f9d3cfca43a8.json.gz",
       "catalogId": "1246",
       "file": "1246_Ana_Marta_Gonzalez_naturaleza_cultura_ES.md",
       "title": "Ana Marta González González: filosofía moral y ciencias sociales",
@@ -2414,7 +2414,7 @@
     },
     {
       "id": "ortodoxia-1247_Maria_Lacalle_mujer_familia_educacion_ES",
-      "contentFile": "data/documents/99ca2fb1a894d9ca31.js",
+      "contentFile": "data/documents/99ca2fb1a894d9ca31.json.gz",
       "catalogId": "1247",
       "file": "1247_Maria_Lacalle_mujer_familia_educacion_ES.md",
       "title": "María Lacalle Noriega: filosofía del derecho y formación cultural",
@@ -2434,7 +2434,7 @@
     },
     {
       "id": "ortodoxia-1248_Nicolas_Jouve_genetica_y_bioetica_ES",
-      "contentFile": "data/documents/7efe310ad12deda07b.js",
+      "contentFile": "data/documents/7efe310ad12deda07b.json.gz",
       "catalogId": "1248",
       "file": "1248_Nicolas_Jouve_genetica_y_bioetica_ES.md",
       "title": "Nicolás Jouve de la Barreda: genética, biotecnología y divulgación bioética",
@@ -2454,7 +2454,7 @@
     },
     {
       "id": "ortodoxia-1249_Jose_Maria_Barrio_educacion_libertad_ES",
-      "contentFile": "data/documents/105713585a1aff3ad1.js",
+      "contentFile": "data/documents/105713585a1aff3ad1.json.gz",
       "catalogId": "1249",
       "file": "1249_Jose_Maria_Barrio_educacion_libertad_ES.md",
       "title": "José María Barrio Maestre: antropología y filosofía de la educación",
@@ -2474,7 +2474,7 @@
     },
     {
       "id": "ortodoxia-1250_Enrique_Colom_bien_comun_y_conciencia_ES",
-      "contentFile": "data/documents/ee8a5651cbe1791c76.js",
+      "contentFile": "data/documents/ee8a5651cbe1791c76.json.gz",
       "catalogId": "1250",
       "file": "1250_Enrique_Colom_bien_comun_y_conciencia_ES.md",
       "title": "Enrique Colom Costa: teología moral social y doctrina social de la Iglesia",
@@ -2494,7 +2494,7 @@
     },
     {
       "id": "ortodoxia-1251_Robert_Spaemann_persona_dignidad_tecnica_ES",
-      "contentFile": "data/documents/0334dedaea68c184b7.js",
+      "contentFile": "data/documents/0334dedaea68c184b7.json.gz",
       "catalogId": "1251",
       "file": "1251_Robert_Spaemann_persona_dignidad_tecnica_ES.md",
       "title": "Robert Spaemann: filosofía de la persona y ética",
@@ -2514,7 +2514,7 @@
     },
     {
       "id": "ortodoxia-1252_Ryan_T_Anderson_libertad_justicia_bien_comun_EN",
-      "contentFile": "data/documents/6ed064e843e4658596.js",
+      "contentFile": "data/documents/6ed064e843e4658596.json.gz",
       "catalogId": "1252",
       "file": "1252_Ryan_T_Anderson_libertad_justicia_bien_comun_EN.md",
       "title": "Ryan T. Anderson: libertad, justicia y bien común",
@@ -2534,7 +2534,7 @@
     },
     {
       "id": "ortodoxia-1253_Sherif_Girgis_matrimonio_y_razonamiento_EN",
-      "contentFile": "data/documents/bf33cc78d0663a037a.js",
+      "contentFile": "data/documents/bf33cc78d0663a037a.json.gz",
       "catalogId": "1253",
       "file": "1253_Sherif_Girgis_matrimonio_y_razonamiento_EN.md",
       "title": "Sherif Girgis: matrimonio y razonamiento filosófico",
@@ -2554,7 +2554,7 @@
     },
     {
       "id": "ortodoxia-1254_John_Finnis_ley_natural_razon_practica_EN",
-      "contentFile": "data/documents/c10553f8728702bd29.js",
+      "contentFile": "data/documents/c10553f8728702bd29.json.gz",
       "catalogId": "1254",
       "file": "1254_John_Finnis_ley_natural_razon_practica_EN.md",
       "title": "John Finnis: ley natural y razón práctica",
@@ -2574,7 +2574,7 @@
     },
     {
       "id": "ortodoxia-1255_Jennifer_Roback_Morse_matrimonio_infancia_EN",
-      "contentFile": "data/documents/bfb3ae102b08f08921.js",
+      "contentFile": "data/documents/bfb3ae102b08f08921.json.gz",
       "catalogId": "1255",
       "file": "1255_Jennifer_Roback_Morse_matrimonio_infancia_EN.md",
       "title": "Jennifer Roback Morse: matrimonio, infancia y estructura social",
@@ -2594,7 +2594,7 @@
     },
     {
       "id": "ortodoxia-1256_Benedicto_XVI_fe_razon_universidad_ES",
-      "contentFile": "data/documents/5976309410edc51dd2.js",
+      "contentFile": "data/documents/5976309410edc51dd2.json.gz",
       "catalogId": "1256",
       "file": "1256_Benedicto_XVI_fe_razon_universidad_ES.md",
       "title": "Benedicto XVI: fe, razón y universidad",
@@ -2614,7 +2614,7 @@
     },
     {
       "id": "ortodoxia-1257_Juan_Pablo_II_fundamentos_matrimonio_ES",
-      "contentFile": "data/documents/dffc08240f3f5b4968.js",
+      "contentFile": "data/documents/dffc08240f3f5b4968.json.gz",
       "catalogId": "1257",
       "file": "1257_Juan_Pablo_II_fundamentos_matrimonio_ES.md",
       "title": "San Juan Pablo II: fundamentos del matrimonio y teología del cuerpo",
@@ -2634,7 +2634,7 @@
     },
     {
       "id": "ortodoxia-1258_Francisco_vicios_virtudes_combate_espiritual_ES",
-      "contentFile": "data/documents/429c70ffc3f2fa7976.js",
+      "contentFile": "data/documents/429c70ffc3f2fa7976.json.gz",
       "catalogId": "1258",
       "file": "1258_Francisco_vicios_virtudes_combate_espiritual_ES.md",
       "title": "Francisco: vicios, virtudes y combate espiritual",
@@ -2654,7 +2654,7 @@
     },
     {
       "id": "ortodoxia-1259_CTI_reciprocidad_fe_sacramentos_ES",
-      "contentFile": "data/documents/59882b9061714770fe.js",
+      "contentFile": "data/documents/59882b9061714770fe.json.gz",
       "catalogId": "1259",
       "file": "1259_CTI_reciprocidad_fe_sacramentos_ES.md",
       "title": "Comisión Teológica Internacional: reciprocidad entre fe y sacramentos",
@@ -2674,7 +2674,7 @@
     },
     {
       "id": "ortodoxia-1260_Cavadini_Humanae_Vitae_Brave_New_World_ES",
-      "contentFile": "data/documents/61497cb06822bf11dc.js",
+      "contentFile": "data/documents/61497cb06822bf11dc.json.gz",
       "catalogId": "1260",
       "file": "1260_Cavadini_Humanae_Vitae_Brave_New_World_ES.md",
       "title": "Humanae Vitae and the Brave New World",
@@ -2694,7 +2694,7 @@
     },
     {
       "id": "ortodoxia-1261_Lehner_Primacy_of_Love_ES",
-      "contentFile": "data/documents/1bf6d353fe7fda620e.js",
+      "contentFile": "data/documents/1bf6d353fe7fda620e.json.gz",
       "catalogId": "1261",
       "file": "1261_Lehner_Primacy_of_Love_ES.md",
       "title": "The Primacy of Love in Catholic Sexual Teaching",
@@ -2714,7 +2714,7 @@
     },
     {
       "id": "ortodoxia-1262_Angela_Franks_Marys_Poverty_ES",
-      "contentFile": "data/documents/7a1d707cd25a869a13.js",
+      "contentFile": "data/documents/7a1d707cd25a869a13.json.gz",
       "catalogId": "1262",
       "file": "1262_Angela_Franks_Marys_Poverty_ES.md",
       "title": "Mary’s Poverty, an Example of a Misogynistic Ecclesial Agenda?",
@@ -2734,7 +2734,7 @@
     },
     {
       "id": "ortodoxia-1263_Favale_Intersex_Body_ES",
-      "contentFile": "data/documents/bbf869b5b006cc49c0.js",
+      "contentFile": "data/documents/bbf869b5b006cc49c0.json.gz",
       "catalogId": "1263",
       "file": "1263_Favale_Intersex_Body_ES.md",
       "title": "The Intersex Body Is a Revelation",
@@ -2754,7 +2754,7 @@
     },
     {
       "id": "ortodoxia-1264_Tania_Geist_Radical_Particularity_ES",
-      "contentFile": "data/documents/d564291fe20e4e486b.js",
+      "contentFile": "data/documents/d564291fe20e4e486b.json.gz",
       "catalogId": "1264",
       "file": "1264_Tania_Geist_Radical_Particularity_ES.md",
       "title": "Matter Matters: On the Need for a Pastoral Theology of Radical Particularity",
@@ -2774,7 +2774,7 @@
     },
     {
       "id": "ortodoxia-1265_Jay_Martin_Personalist_Awakening_ES",
-      "contentFile": "data/documents/9ae77416bb309d09ba.js",
+      "contentFile": "data/documents/9ae77416bb309d09ba.json.gz",
       "catalogId": "1265",
       "file": "1265_Jay_Martin_Personalist_Awakening_ES.md",
       "title": "The Personalist Awakening in 20th Century Catholic Moral Thought",
@@ -2794,7 +2794,7 @@
     },
     {
       "id": "ortodoxia-1266_Michael_Wee_Mystical_Call_of_Chastity_ES",
-      "contentFile": "data/documents/e65e853a965c1c7f23.js",
+      "contentFile": "data/documents/e65e853a965c1c7f23.json.gz",
       "catalogId": "1266",
       "file": "1266_Michael_Wee_Mystical_Call_of_Chastity_ES.md",
       "title": "Humanae Vitae and the Mystical Call of Chastity",
@@ -2814,7 +2814,7 @@
     },
     {
       "id": "ortodoxia-1267_William_Hamant_Making_Case_Humanae_Vitae_ES",
-      "contentFile": "data/documents/75b8dec96cc040bbb8.js",
+      "contentFile": "data/documents/75b8dec96cc040bbb8.json.gz",
       "catalogId": "1267",
       "file": "1267_William_Hamant_Making_Case_Humanae_Vitae_ES.md",
       "title": "Making a Case for Humanae Vitae",
@@ -2834,7 +2834,7 @@
     },
     {
       "id": "ortodoxia-1268_Sean_Fieler_Reverence_for_the_Body_ES",
-      "contentFile": "data/documents/4c70697b46c5dbfce1.js",
+      "contentFile": "data/documents/4c70697b46c5dbfce1.json.gz",
       "catalogId": "1268",
       "file": "1268_Sean_Fieler_Reverence_for_the_Body_ES.md",
       "title": "Reverence for the Body: A Witness",
@@ -2854,7 +2854,7 @@
     },
     {
       "id": "ortodoxia-1269_Aceprensa_Revolucion_queer_2023_ES",
-      "contentFile": "data/documents/2ffaf0c791fddbc7ec.js",
+      "contentFile": "data/documents/2ffaf0c791fddbc7ec.json.gz",
       "catalogId": "1269",
       "file": "1269_Aceprensa_Revolucion_queer_2023_ES.md",
       "title": "Dossier «Revolución queer»",
@@ -2875,7 +2875,7 @@
     },
     {
       "id": "ortodoxia-1270_Aceprensa_industria_pornografica_2022_ES",
-      "contentFile": "data/documents/c7f2e58a59bfa3b0ce.js",
+      "contentFile": "data/documents/c7f2e58a59bfa3b0ce.json.gz",
       "catalogId": "1270",
       "file": "1270_Aceprensa_industria_pornografica_2022_ES.md",
       "title": "¿Se debe seguir tolerando a la industria pornográfica?",
@@ -2896,7 +2896,7 @@
     },
     {
       "id": "ortodoxia-1271_Peter_Leithart_Disenchantment_of_Sex_ES",
-      "contentFile": "data/documents/0636ca191fb8af09f8.js",
+      "contentFile": "data/documents/0636ca191fb8af09f8.json.gz",
       "catalogId": "1271",
       "file": "1271_Peter_Leithart_Disenchantment_of_Sex_ES.md",
       "title": "Disenchantment of Sex",

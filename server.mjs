@@ -4,12 +4,15 @@ import path from "node:path";
 import crypto from "node:crypto";
 import { execFile } from "node:child_process";
 import { fileURLToPath } from "node:url";
+import { sourceFingerprint } from "./generators/lib/source-state.mjs";
 
 const atlasRoot = path.dirname(fileURLToPath(import.meta.url));
-const workspace = path.dirname(atlasRoot);
+const embeddedWorkspace = path.join(atlasRoot, "source", "libraries");
+const workspace = path.resolve(process.env.ATLAS_SOURCE_ROOT || (fs.existsSync(embeddedWorkspace) ? embeddedWorkspace : path.dirname(atlasRoot)));
 const dataDir = path.join(atlasRoot, "data");
 const contentDir = path.join(atlasRoot, "content");
 const registryPath = path.join(contentDir, "libraries.json");
+const idRegistryPath = path.join(atlasRoot, "source", "id-registry.json");
 const statePath = path.join(dataDir, "source-state.json");
 const port = Number(process.env.ATLAS_PORT || 8765);
 let rebuilding = false;
@@ -120,6 +123,9 @@ const safeFile = (directory, file) => {
   if (!target.startsWith(directory + path.sep) || !/\.md$/i.test(target)) throw new Error("Archivo no válido");
   return target;
 };
+const isDocumentFile = file => /\.md$/i.test(file)
+  && !/^0000_Indice_y_mapa_de_fuentes\.md$/i.test(file)
+  && !/Instrucciones_de_personalizacion|Documentos_para_incluir_en_el_futuro/i.test(file);
 
 function listSourceFiles() {
   const entries = [];
@@ -135,21 +141,26 @@ function listSourceFiles() {
 }
 
 function fingerprint() {
-  const payload = {
-    files: listSourceFiles(),
-    libraries: fs.readFileSync(registryPath, "utf8"),
-    overrides: fs.readFileSync(path.join(dataDir, "metadata-overrides.json"), "utf8"),
-    quotes: fs.existsSync(path.join(atlasRoot, "frases.md")) ? fs.readFileSync(path.join(atlasRoot, "frases.md"), "utf8") : "",
-    youtube: fs.existsSync(path.join(contentDir, "youtube-shorts.json")) ? fs.readFileSync(path.join(contentDir, "youtube-shorts.json"), "utf8") : "",
-    instagram: fs.existsSync(instagramConfigPath) ? fs.readFileSync(instagramConfigPath, "utf8") : "",
-    prompts: fs.existsSync(path.join(contentDir, "library-prompts.json")) ? fs.readFileSync(path.join(contentDir, "library-prompts.json"), "utf8") : ""
-  };
-  return crypto.createHash("sha256").update(JSON.stringify(payload)).digest("hex");
+  return sourceFingerprint({ atlasRoot, sourceRoot: workspace });
 }
 
 function runNode(script) {
   return new Promise((resolve, reject) => {
     execFile(process.execPath, [path.join(atlasRoot, "generators", script)], { cwd: workspace, maxBuffer: 20 * 1024 * 1024 }, (error, stdout, stderr) => {
+      if (error) reject(new Error(`${stdout}\n${stderr}\n${error.message}`));
+      else resolve(`${stdout}${stderr}`.trim());
+    });
+  });
+}
+
+function runTool(script) {
+  return new Promise((resolve, reject) => {
+    execFile(process.execPath, [path.join(atlasRoot, "tools", script)], {
+      cwd: atlasRoot,
+      env: { ...process.env, ATLAS_SOURCE_ROOT: workspace },
+      maxBuffer: 50 * 1024 * 1024,
+      timeout: 15 * 60 * 1000
+    }, (error, stdout, stderr) => {
       if (error) reject(new Error(`${stdout}\n${stderr}\n${error.message}`));
       else resolve(`${stdout}${stderr}`.trim());
     });
@@ -164,16 +175,7 @@ async function rebuild({ force = false, external = true } = {}) {
   try {
     const discovered = syncDiscoveredLibraries();
     if (discovered.length) output.push(`Detectadas automáticamente: ${discovered.map(item => item.short).join(", ")}.`);
-    const current = fingerprint();
-    const previous = fs.existsSync(statePath) ? JSON.parse(fs.readFileSync(statePath, "utf8")).fingerprint : "";
-    if (force || current !== previous) {
-      for (const script of ["build-data.mjs", "build-quotes.mjs", "build-youtube-shorts.mjs", "build-youtube-music.mjs", "build-channel-catalog.mjs", "sync-infographics.mjs", "build-reader-content.mjs", "build-fulltext.mjs"]) output.push(await runNode(script));
-      fs.writeFileSync(statePath, JSON.stringify({ fingerprint: current, updatedAt: new Date().toISOString() }, null, 2));
-    } else {
-      output.push("Las carpetas documentales no han cambiado.");
-      for (const script of ["build-quotes.mjs", "build-youtube-shorts.mjs", "build-youtube-music.mjs", "build-channel-catalog.mjs"]) output.push(await runNode(script));
-    }
-    if (external) output.push(await runNode("build-external-content.mjs"));
+    output.push(await runTool("build.mjs"));
     lastBuild = new Date().toISOString();
     return { ok: true, output };
   } catch (error) {
@@ -228,7 +230,7 @@ function sourceDocuments(filterLibraryId = "") {
     if (filterLibraryId && library.id !== filterLibraryId) continue;
     const directory = path.join(workspace, library.folder);
     if (!fs.existsSync(directory)) continue;
-    for (const file of fs.readdirSync(directory).filter(name => /\.md$/i.test(name)).sort()) {
+    for (const file of fs.readdirSync(directory).filter(isDocumentFile).sort()) {
       const content = fs.readFileSync(path.join(directory, file), "utf8");
       const parsed = parseFrontmatter(content);
       const known = catalogDocs.get(`${library.id}/${file}`);
@@ -730,8 +732,11 @@ async function api(req, res, url) {
     }
     if (req.method === "GET" && url.pathname === "/api/status") {
       const current = catalog();
+      const savedFingerprint = fs.existsSync(statePath) ? JSON.parse(fs.readFileSync(statePath, "utf8")).fingerprint : "";
       return json(res, 200, {
         rebuilding, lastBuild, lastError, version: current.meta.dataVersion,
+        pendingBuild: fingerprint() !== savedFingerprint,
+        sourceRoot: workspace,
         documents: current.meta.documents, words: current.meta.words,
         libraries: current.libraries.map(item => ({ id: item.id, short: item.short, folder: item.folder, documents: item.stats.documents })),
         external: JSON.parse(fs.readFileSync(path.join(dataDir, "external-content.json"), "utf8")).items.length,
@@ -748,7 +753,44 @@ async function api(req, res, url) {
       return json(res, 200, sourceDocuments(id).map(({ canonicalHash, ...item }) => item));
     }
     if (req.method === "GET" && url.pathname === "/api/duplicates") return json(res, 200, duplicateReport());
+    if (req.method === "GET" && url.pathname === "/api/audit") {
+      const current = catalog();
+      const currentDocuments = current.libraries.flatMap(library =>
+        library.documents.map(document => ({ ...document, library: library.short }))
+      );
+      const titleGroups = new Map();
+      for (const document of currentDocuments) {
+        const key = normalize(document.title);
+        titleGroups.set(key, [...(titleGroups.get(key) || []), document]);
+      }
+      const generatedDir = path.join(dataDir, "documents");
+      const generated = fs.existsSync(generatedDir) ? fs.readdirSync(generatedDir).filter(file => file.endsWith(".json.gz")) : [];
+      const providerHealthPath = path.join(atlasRoot, "source", "providers", "snapshots", "provider-health.json");
+      return json(res, 200, {
+        version: current.meta.dataVersion,
+        libraries: current.libraries.length,
+        catalogDocuments: current.meta.documents,
+        sourceDocuments: listSourceFiles().filter(item => isDocumentFile(item.file)).length,
+        generatedDocuments: generated.length,
+        duplicates: {
+          titles: [...titleGroups.values()].filter(group => group.length > 1),
+          exact: [],
+          exactScanDeferred: true
+        },
+        pendingBuild: fingerprint() !== (fs.existsSync(statePath) ? JSON.parse(fs.readFileSync(statePath, "utf8")).fingerprint : ""),
+        sourceRoot: workspace,
+        distReady: fs.existsSync(path.join(atlasRoot, "dist", "build-manifest.json")),
+        providers: fs.existsSync(providerHealthPath) ? JSON.parse(fs.readFileSync(providerHealthPath, "utf8")) : null
+      });
+    }
     if (req.method === "GET" && url.pathname === "/api/libraries") return json(res, 200, libraries());
+    if (req.method === "GET" && url.pathname === "/api/providers") {
+      return json(res, 200, {
+        youtube: JSON.parse(fs.readFileSync(youtubeConfigPath, "utf8")),
+        music: JSON.parse(fs.readFileSync(musicConfigPath, "utf8")),
+        instagram: JSON.parse(fs.readFileSync(instagramConfigPath, "utf8"))
+      });
+    }
     if (req.method === "GET" && url.pathname === "/api/shorts") {
       const overrides = JSON.parse(fs.readFileSync(path.join(dataDir, "metadata-overrides.json"), "utf8"));
       return json(res, 200, overrides.editorial?.shorts || []);
@@ -776,8 +818,43 @@ async function api(req, res, url) {
       const { directory } = safeLibrary(input.libraryId);
       const target = safeFile(directory, input.file);
       if (/0000_Indice|Instrucciones_de_personalizacion/i.test(path.basename(target))) return json(res, 403, { error: "Archivo protegido." });
-      fs.unlinkSync(target);
-      return json(res, 200, { ok: true });
+      const trashDir = path.join(atlasRoot, ".atlas-trash", input.libraryId);
+      fs.mkdirSync(trashDir, { recursive: true });
+      let trashName = path.basename(target);
+      if (fs.existsSync(path.join(trashDir, trashName))) trashName = `${Date.now()}-${trashName}`;
+      fs.renameSync(target, path.join(trashDir, trashName));
+      return json(res, 200, { ok: true, trashed: trashName });
+    }
+    if (req.method === "POST" && url.pathname === "/api/files/rename") {
+      const input = await body(req);
+      const { library, directory } = safeLibrary(input.libraryId);
+      const source = safeFile(directory, input.file);
+      const newTitle = String(input.title || "").trim();
+      if (newTitle.length < 2) return json(res, 400, { error: "El nuevo título debe tener al menos dos caracteres." });
+      const number = path.basename(source).match(/^(\d{4})/)?.[1] || "0001";
+      const fileName = `${number}_${slug(newTitle)}.md`;
+      const target = safeFile(directory, fileName);
+      if (source !== target && fs.existsSync(target)) return json(res, 409, { error: "Ya existe un archivo con ese nombre." });
+      let markdown = fs.readFileSync(source, "utf8");
+      if (/^---\s*\r?\n[\s\S]*?\r?\n---/.test(markdown)) {
+        if (/^title:\s*.*$/mi.test(markdown)) markdown = markdown.replace(/^title:\s*.*$/mi, `title: "${newTitle.replaceAll('"', '\\"')}"`);
+        else markdown = markdown.replace(/^---\s*\r?\n/, `---\ntitle: "${newTitle.replaceAll('"', '\\"')}"\n`);
+      }
+      const temporary = `${source}.tmp`;
+      fs.writeFileSync(temporary, markdown, "utf8");
+      fs.renameSync(temporary, source);
+      if (source !== target) fs.renameSync(source, target);
+      if (fs.existsSync(idRegistryPath)) {
+        const registry = JSON.parse(fs.readFileSync(idRegistryPath, "utf8"));
+        const oldKey = `${library.folder}/${path.basename(source)}`;
+        const newKey = `${library.folder}/${fileName}`;
+        if (registry.documents?.[oldKey]) {
+          registry.documents[newKey] = registry.documents[oldKey];
+          delete registry.documents[oldKey];
+          fs.writeFileSync(idRegistryPath, `${JSON.stringify(registry, null, 2)}\n`, "utf8");
+        }
+      }
+      return json(res, 200, { ok: true, file: fileName, title: newTitle });
     }
     if (req.method === "POST" && url.pathname === "/api/libraries") {
       const input = await body(req);
@@ -843,7 +920,13 @@ async function api(req, res, url) {
       if (sourceFiles.length && input.deleteDocuments !== true) {
         return json(res, 409, { error: `La IA contiene ${sourceFiles.length} documentos. Debes autorizar expresamente su eliminación.`, documents: sourceFiles.length });
       }
-      if (fs.existsSync(directory)) fs.rmSync(directory, { recursive: true, force: false });
+      if (fs.existsSync(directory)) {
+        const libraryTrash = path.join(atlasRoot, ".atlas-trash", "libraries");
+        fs.mkdirSync(libraryTrash, { recursive: true });
+        let trashTarget = path.join(libraryTrash, entry.folder);
+        if (fs.existsSync(trashTarget)) trashTarget = path.join(libraryTrash, `${Date.now()}-${entry.folder}`);
+        fs.renameSync(directory, trashTarget);
+      }
       registry.splice(index, 1);
       writeLibraries(registry);
       return json(res, 200, { ok: true, removed: entry, documentsDeleted: sourceFiles.length });
@@ -862,11 +945,28 @@ async function api(req, res, url) {
       fs.writeFileSync(path.join(contentDir, "external-items.json"), JSON.stringify(input.items || [], null, 2));
       return json(res, 200, { ok: true, count: (input.items || []).length });
     }
+    if (req.method === "POST" && url.pathname === "/api/providers") {
+      const input = await body(req);
+      const targets = { youtube: youtubeConfigPath, music: musicConfigPath, instagram: instagramConfigPath };
+      for (const [key, target] of Object.entries(targets)) {
+        if (!input[key] || !Array.isArray(input[key].channels)) return json(res, 400, { error: `${key}: falta channels` });
+        const temporary = `${target}.tmp`;
+        fs.writeFileSync(temporary, `${JSON.stringify(input[key], null, 2)}\n`, "utf8");
+        fs.renameSync(temporary, target);
+      }
+      return json(res, 200, { ok: true });
+    }
+    if (req.method === "POST" && url.pathname === "/api/validate") {
+      return json(res, 200, { ok: true, output: await runTool("validate.mjs") });
+    }
     if (req.method === "POST" && url.pathname === "/api/rebuild") {
       const input = await body(req);
       return json(res, 200, await rebuild({ force: Boolean(input.force), external: input.external !== false }));
     }
-    if (req.method === "POST" && url.pathname === "/api/refresh-external") return json(res, 200, { ok: true, output: await runNode("build-external-content.mjs") });
+    if (req.method === "POST" && url.pathname === "/api/refresh-external") {
+      const output = await runTool("refresh-providers.mjs");
+      return json(res, 200, { ok: true, output });
+    }
     return json(res, 404, { error: "Ruta API no encontrada" });
   } catch (error) {
     return json(res, 500, { error: error.message });
@@ -898,5 +998,5 @@ const server = http.createServer(async (req, res) => {
 server.listen(port, "127.0.0.1", () => {
   console.log(`Atlas:  http://127.0.0.1:${port}`);
   console.log(`Gestor: http://127.0.0.1:${port}/gestor/`);
-  rebuild({ force: false, external: true }).then(result => console.log(result.ok ? "Actualización inicial completada." : result.message));
+  console.log("El catálogo no se reconstruye al iniciar. Usa el botón «Actualizar Atlas» del Gestor.");
 });

@@ -4,7 +4,7 @@ import crypto from "node:crypto";
 import { fileURLToPath } from "node:url";
 
 const atlasRoot = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
-const outputPath = path.join(atlasRoot, "data", "quotes.js");
+const outputPath = path.join(atlasRoot, "data", "quotes.json");
 const policyPath = path.join(atlasRoot, "content", "quote-policy.json");
 const policy = fs.existsSync(policyPath)
   ? JSON.parse(fs.readFileSync(policyPath, "utf8"))
@@ -88,5 +88,5 @@ const payload = {
   sources,
   items: unique
 };
-fs.writeFileSync(outputPath, `window.ATLAS_QUOTES=${JSON.stringify(payload)};\n`);
+fs.writeFileSync(outputPath, `${JSON.stringify(payload, null, 2)}\n`);
 console.log(`Atlas quotes: ${unique.length} cards from ${sources.join(" + ")}; ${excluded.length} excluded by policy.`);

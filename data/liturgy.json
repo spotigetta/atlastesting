@@ -129,7 +129,7 @@
   "documents": [
     {
       "id": "liturgy-0001_0005_Biblia_Evangelios_y_Hechos",
-      "contentFile": "data/documents/3d2e1dfb8447775635.js",
+      "contentFile": "data/documents/3d2e1dfb8447775635.json.gz",
       "catalogId": "0001",
       "file": "0001_0005_Biblia_Evangelios_y_Hechos.md",
       "title": "Biblia Evangelios y Hechos",
@@ -153,7 +153,7 @@
     },
     {
       "id": "liturgy-0006_0018_Biblia_Cartas_de_san_Pablo",
-      "contentFile": "data/documents/afafb029899ed75335.js",
+      "contentFile": "data/documents/afafb029899ed75335.json.gz",
       "catalogId": "0006",
       "file": "0006_0018_Biblia_Cartas_de_san_Pablo.md",
       "title": "Biblia Cartas de san Pablo",
@@ -185,7 +185,7 @@
     },
     {
       "id": "liturgy-0019_0027_Biblia_Cartas_catolicas_y_Apocalipsis",
-      "contentFile": "data/documents/562e4ea25e9c48a4f5.js",
+      "contentFile": "data/documents/562e4ea25e9c48a4f5.json.gz",
       "catalogId": "0019",
       "file": "0019_0027_Biblia_Cartas_catolicas_y_Apocalipsis.md",
       "title": "Biblia Cartas catolicas y Apocalipsis",
@@ -213,7 +213,7 @@
     },
     {
       "id": "liturgy-0028_0032_Biblia_Pentateuco",
-      "contentFile": "data/documents/2f2197b7e7cf78185a.js",
+      "contentFile": "data/documents/2f2197b7e7cf78185a.json.gz",
       "catalogId": "0028",
       "file": "0028_0032_Biblia_Pentateuco.md",
       "title": "Biblia Pentateuco",
@@ -237,7 +237,7 @@
     },
     {
       "id": "liturgy-0033_0048_Biblia_Libros_historicos",
-      "contentFile": "data/documents/1f1cd7198c9f740572.js",
+      "contentFile": "data/documents/1f1cd7198c9f740572.json.gz",
       "catalogId": "0033",
       "file": "0033_0048_Biblia_Libros_historicos.md",
       "title": "Biblia Libros historicos",
@@ -272,7 +272,7 @@
     },
     {
       "id": "liturgy-0049_0055_Biblia_Libros_sapienciales",
-      "contentFile": "data/documents/e6db0ab9db20781547.js",
+      "contentFile": "data/documents/e6db0ab9db20781547.json.gz",
       "catalogId": "0049",
       "file": "0049_0055_Biblia_Libros_sapienciales.md",
       "title": "Biblia Libros sapienciales",
@@ -298,7 +298,7 @@
     },
     {
       "id": "liturgy-0056_0073_Biblia_Libros_profeticos",
-      "contentFile": "data/documents/fedc58ba238537b91c.js",
+      "contentFile": "data/documents/fedc58ba238537b91c.json.gz",
       "catalogId": "0056",
       "file": "0056_0073_Biblia_Libros_profeticos.md",
       "title": "Biblia Libros profeticos",
@@ -335,7 +335,7 @@
     },
     {
       "id": "liturgy-0074_Lumen_gentium_ES",
-      "contentFile": "data/documents/006eed28014db79268.js",
+      "contentFile": "data/documents/006eed28014db79268.json.gz",
       "catalogId": "0074",
       "file": "0074_Lumen_gentium_ES.md",
       "title": "Lumen gentium",
@@ -355,7 +355,7 @@
     },
     {
       "id": "liturgy-0075_Dei_verbum_ES",
-      "contentFile": "data/documents/a16914afac10f8f081.js",
+      "contentFile": "data/documents/a16914afac10f8f081.json.gz",
       "catalogId": "0075",
       "file": "0075_Dei_verbum_ES.md",
       "title": "Dei verbum",
@@ -375,7 +375,7 @@
     },
     {
       "id": "liturgy-0076_Sacrosanctum_Concilium_ES",
-      "contentFile": "data/documents/9118ac1ea70d480c88.js",
+      "contentFile": "data/documents/9118ac1ea70d480c88.json.gz",
       "catalogId": "0076",
       "file": "0076_Sacrosanctum_Concilium_ES.md",
       "title": "Sacrosanctum Concilium",
@@ -395,7 +395,7 @@
     },
     {
       "id": "liturgy-0079_Presbyterorum_Ordinis_ES",
-      "contentFile": "data/documents/5c732f6e5032991d91.js",
+      "contentFile": "data/documents/5c732f6e5032991d91.json.gz",
       "catalogId": "0079",
       "file": "0079_Presbyterorum_Ordinis_ES.md",
       "title": "Presbyterorum Ordinis",
@@ -415,7 +415,7 @@
     },
     {
       "id": "liturgy-0085_Orientalium_Ecclesiarum_ES",
-      "contentFile": "data/documents/b21b9c29ada04e1b12.js",
+      "contentFile": "data/documents/b21b9c29ada04e1b12.json.gz",
       "catalogId": "0085",
       "file": "0085_Orientalium_Ecclesiarum_ES.md",
       "title": "Orientalium Ecclesiarum",
@@ -435,7 +435,7 @@
     },
     {
       "id": "liturgy-0091_Catecismo_Iglesia_Catol",
-      "contentFile": "data/documents/82f2b231f3731feeea.js",
+      "contentFile": "data/documents/82f2b231f3731feeea.json.gz",
       "catalogId": "0091",
       "file": "0091_Catecismo_Iglesia_Catol.md",
       "title": "Catecismo Iglesia Catol",
@@ -455,7 +455,7 @@
     },
     {
       "id": "liturgy-0092_Homilias_Crisostomo_2",
-      "contentFile": "data/documents/30fc7dfc347e032269.js",
+      "contentFile": "data/documents/30fc7dfc347e032269.json.gz",
       "catalogId": "0092",
       "file": "0092_Homilias_Crisostomo_2.md",
       "title": "Homilias Crisostomo 2",
@@ -475,7 +475,7 @@
     },
     {
       "id": "liturgy-0093_CRISOSTOMO_HOMILIAS_I",
-      "contentFile": "data/documents/c54f32b6e01ce3fea5.js",
+      "contentFile": "data/documents/c54f32b6e01ce3fea5.json.gz",
       "catalogId": "0093",
       "file": "0093_CRISOSTOMO_HOMILIAS_I.md",
       "title": "CRISOSTOMO HOMILIAS I",
@@ -495,7 +495,7 @@
     },
     {
       "id": "liturgy-0094_Augustin_Sermons_parte_01",
-      "contentFile": "data/documents/e2882cd7c123f0b227.js",
+      "contentFile": "data/documents/e2882cd7c123f0b227.json.gz",
       "catalogId": "0094",
       "file": "0094_Augustin_Sermons_parte_01.md",
       "title": "Augustin Sermons",
@@ -515,7 +515,7 @@
     },
     {
       "id": "liturgy-0094_Augustin_Sermons_parte_02",
-      "contentFile": "data/documents/9f960b031177d3fbeb.js",
+      "contentFile": "data/documents/9f960b031177d3fbeb.json.gz",
       "catalogId": "0094",
       "file": "0094_Augustin_Sermons_parte_02.md",
       "title": "Augustin Sermons",
@@ -535,7 +535,7 @@
     },
     {
       "id": "liturgy-0094_Augustin_Sermons_parte_03",
-      "contentFile": "data/documents/5531642bf5819d1288.js",
+      "contentFile": "data/documents/5531642bf5819d1288.json.gz",
       "catalogId": "0094",
       "file": "0094_Augustin_Sermons_parte_03.md",
       "title": "Augustin Sermons",
@@ -555,7 +555,7 @@
     },
     {
       "id": "liturgy-0094_Augustin_Sermons_parte_04",
-      "contentFile": "data/documents/4b578343096d73a911.js",
+      "contentFile": "data/documents/4b578343096d73a911.json.gz",
       "catalogId": "0094",
       "file": "0094_Augustin_Sermons_parte_04.md",
       "title": "Augustin Sermons",
@@ -575,7 +575,7 @@
     },
     {
       "id": "liturgy-0098_Benedicto_XVI_Homilias_parte_01",
-      "contentFile": "data/documents/bf1e5ad5599085450a.js",
+      "contentFile": "data/documents/bf1e5ad5599085450a.json.gz",
       "catalogId": "0098",
       "file": "0098_Benedicto_XVI_Homilias_parte_01.md",
       "title": "Benedicto XVI Homilias",
@@ -595,7 +595,7 @@
     },
     {
       "id": "liturgy-0098_Benedicto_XVI_Homilias_parte_02",
-      "contentFile": "data/documents/2e0e919071c52780a9.js",
+      "contentFile": "data/documents/2e0e919071c52780a9.json.gz",
       "catalogId": "0098",
       "file": "0098_Benedicto_XVI_Homilias_parte_02.md",
       "title": "Benedicto XVI Homilias",
@@ -615,7 +615,7 @@
     },
     {
       "id": "liturgy-0099_B_Juan_Pablo_II_Homilias_parte_01",
-      "contentFile": "data/documents/656cf0b1251a88e11d.js",
+      "contentFile": "data/documents/656cf0b1251a88e11d.json.gz",
       "catalogId": "0099",
       "file": "0099_B_Juan_Pablo_II_Homilias_parte_01.md",
       "title": "B Juan Pablo II Homilias",
@@ -635,7 +635,7 @@
     },
     {
       "id": "liturgy-0099_B_Juan_Pablo_II_Homilias_parte_02",
-      "contentFile": "data/documents/65f4417dbcc44ffd21.js",
+      "contentFile": "data/documents/65f4417dbcc44ffd21.json.gz",
       "catalogId": "0099",
       "file": "0099_B_Juan_Pablo_II_Homilias_parte_02.md",
       "title": "B Juan Pablo II Homilias",
@@ -655,7 +655,7 @@
     },
     {
       "id": "liturgy-0099_B_Juan_Pablo_II_Homilias_parte_03",
-      "contentFile": "data/documents/456ff83d3be2a02c1b.js",
+      "contentFile": "data/documents/456ff83d3be2a02c1b.json.gz",
       "catalogId": "0099",
       "file": "0099_B_Juan_Pablo_II_Homilias_parte_03.md",
       "title": "B Juan Pablo II Homilias",
@@ -675,7 +675,7 @@
     },
     {
       "id": "liturgy-0105_Clemente_ES",
-      "contentFile": "data/documents/8eff15e0705e1e6b2a.js",
+      "contentFile": "data/documents/8eff15e0705e1e6b2a.json.gz",
       "catalogId": "0105",
       "file": "0105_Clemente_ES.md",
       "title": "Clemente",
@@ -695,7 +695,7 @@
     },
     {
       "id": "liturgy-0107_Didache_ES",
-      "contentFile": "data/documents/6b7501d2717299f968.js",
+      "contentFile": "data/documents/6b7501d2717299f968.json.gz",
       "catalogId": "0107",
       "file": "0107_Didache_ES.md",
       "title": "Didache",
@@ -715,7 +715,7 @@
     },
     {
       "id": "liturgy-0109_0115_San_Ignacio_de_Antioquia_Cartas",
-      "contentFile": "data/documents/80abac7388a0b178f7.js",
+      "contentFile": "data/documents/80abac7388a0b178f7.json.gz",
       "catalogId": "0109",
       "file": "0109_0115_San_Ignacio_de_Antioquia_Cartas.md",
       "title": "San Ignacio de Antioquia Cartas",
@@ -741,7 +741,7 @@
     },
     {
       "id": "liturgy-0117_Hermas_ES",
-      "contentFile": "data/documents/28fc429d3faf02ab66.js",
+      "contentFile": "data/documents/28fc429d3faf02ab66.json.gz",
       "catalogId": "0117",
       "file": "0117_Hermas_ES.md",
       "title": "Hermas",
@@ -761,7 +761,7 @@
     },
     {
       "id": "liturgy-0118_Policarpo_Fil_ES",
-      "contentFile": "data/documents/8472640e187b490d4d.js",
+      "contentFile": "data/documents/8472640e187b490d4d.json.gz",
       "catalogId": "0118",
       "file": "0118_Policarpo_Fil_ES.md",
       "title": "Policarpo Fil",
@@ -781,7 +781,7 @@
     },
     {
       "id": "liturgy-0119_Poicarpo_martirio",
-      "contentFile": "data/documents/a89fe2a1b027ca3687.js",
+      "contentFile": "data/documents/a89fe2a1b027ca3687.json.gz",
       "catalogId": "0119",
       "file": "0119_Poicarpo_martirio.md",
       "title": "Poicarpo martirio",
@@ -801,7 +801,7 @@
     },
     {
       "id": "liturgy-0120_San_Atanasio_ES",
-      "contentFile": "data/documents/30f82c59ec0d3589ef.js",
+      "contentFile": "data/documents/30f82c59ec0d3589ef.json.gz",
       "catalogId": "0120",
       "file": "0120_San_Atanasio_ES.md",
       "title": "San Atanasio",
@@ -821,7 +821,7 @@
     },
     {
       "id": "liturgy-0121_Basilio_ES",
-      "contentFile": "data/documents/09e7949227b4e51dcb.js",
+      "contentFile": "data/documents/09e7949227b4e51dcb.json.gz",
       "catalogId": "0121",
       "file": "0121_Basilio_ES.md",
       "title": "Basilio",
@@ -841,7 +841,7 @@
     },
     {
       "id": "liturgy-0122_Cirilo_ES",
-      "contentFile": "data/documents/bd7c9fa2de8f1f5285.js",
+      "contentFile": "data/documents/bd7c9fa2de8f1f5285.json.gz",
       "catalogId": "0122",
       "file": "0122_Cirilo_ES.md",
       "title": "Cirilo",
@@ -861,7 +861,7 @@
     },
     {
       "id": "liturgy-0137_Augustin_doctrine_chretienne",
-      "contentFile": "data/documents/1cc30738186b75fdbb.js",
+      "contentFile": "data/documents/1cc30738186b75fdbb.json.gz",
       "catalogId": "0137",
       "file": "0137_Augustin_doctrine_chretienne.md",
       "title": "Augustin doctrine chretienne",
@@ -881,7 +881,7 @@
     },
     {
       "id": "liturgy-0140_Augustin_sur_Jean_parte_01",
-      "contentFile": "data/documents/1407851900f5c6c113.js",
+      "contentFile": "data/documents/1407851900f5c6c113.json.gz",
       "catalogId": "0140",
       "file": "0140_Augustin_sur_Jean_parte_01.md",
       "title": "Augustin sur Jean",
@@ -901,7 +901,7 @@
     },
     {
       "id": "liturgy-0140_Augustin_sur_Jean_parte_02",
-      "contentFile": "data/documents/e7ca8864add026b0b6.js",
+      "contentFile": "data/documents/e7ca8864add026b0b6.json.gz",
       "catalogId": "0140",
       "file": "0140_Augustin_sur_Jean_parte_02.md",
       "title": "Augustin sur Jean",
@@ -921,7 +921,7 @@
     },
     {
       "id": "liturgy-0142_Augustin_les_Psaumes_parte_01",
-      "contentFile": "data/documents/72f7ea61c5602a24b4.js",
+      "contentFile": "data/documents/72f7ea61c5602a24b4.json.gz",
       "catalogId": "0142",
       "file": "0142_Augustin_les_Psaumes_parte_01.md",
       "title": "Augustin les Psaumes",
@@ -941,7 +941,7 @@
     },
     {
       "id": "liturgy-0142_Augustin_les_Psaumes_parte_02",
-      "contentFile": "data/documents/178b3d743b953e1b10.js",
+      "contentFile": "data/documents/178b3d743b953e1b10.json.gz",
       "catalogId": "0142",
       "file": "0142_Augustin_les_Psaumes_parte_02.md",
       "title": "Augustin les Psaumes",
@@ -961,7 +961,7 @@
     },
     {
       "id": "liturgy-0142_Augustin_les_Psaumes_parte_03",
-      "contentFile": "data/documents/33385eff22e6b6761a.js",
+      "contentFile": "data/documents/33385eff22e6b6761a.json.gz",
       "catalogId": "0142",
       "file": "0142_Augustin_les_Psaumes_parte_03.md",
       "title": "Augustin les Psaumes",
@@ -981,7 +981,7 @@
     },
     {
       "id": "liturgy-0142_Augustin_les_Psaumes_parte_04",
-      "contentFile": "data/documents/1726e035dd113d8ce8.js",
+      "contentFile": "data/documents/1726e035dd113d8ce8.json.gz",
       "catalogId": "0142",
       "file": "0142_Augustin_les_Psaumes_parte_04.md",
       "title": "Augustin les Psaumes",
@@ -1001,7 +1001,7 @@
     },
     {
       "id": "liturgy-0157_Augustin_du_Bapteme",
-      "contentFile": "data/documents/b80650aa2fe1c1ca93.js",
+      "contentFile": "data/documents/b80650aa2fe1c1ca93.json.gz",
       "catalogId": "0157",
       "file": "0157_Augustin_du_Bapteme.md",
       "title": "Augustin du Bapteme",
@@ -1021,7 +1021,7 @@
     },
     {
       "id": "liturgy-0158_Augustin_Catechisme",
-      "contentFile": "data/documents/6da5acb66470c9c2fc.js",
+      "contentFile": "data/documents/6da5acb66470c9c2fc.json.gz",
       "catalogId": "0158",
       "file": "0158_Augustin_Catechisme.md",
       "title": "Augustin Catechisme",
@@ -1041,7 +1041,7 @@
     },
     {
       "id": "liturgy-0175_Augustin_du_symbole",
-      "contentFile": "data/documents/2e91abc24392f1ea2b.js",
+      "contentFile": "data/documents/2e91abc24392f1ea2b.json.gz",
       "catalogId": "0175",
       "file": "0175_Augustin_du_symbole.md",
       "title": "Augustin du symbole",
@@ -1061,7 +1061,7 @@
     },
     {
       "id": "liturgy-0221_CRISOSTOMO_SACERDOCIO",
-      "contentFile": "data/documents/a7e920a011f7e13eb3.js",
+      "contentFile": "data/documents/a7e920a011f7e13eb3.json.gz",
       "catalogId": "0221",
       "file": "0221_CRISOSTOMO_SACERDOCIO.md",
       "title": "CRISOSTOMO SACERDOCIO",
@@ -1081,7 +1081,7 @@
     },
     {
       "id": "liturgy-0222_Crisostomo_Ev_Juan",
-      "contentFile": "data/documents/4b84485b1d0cb07a60.js",
+      "contentFile": "data/documents/4b84485b1d0cb07a60.json.gz",
       "catalogId": "0222",
       "file": "0222_Crisostomo_Ev_Juan.md",
       "title": "Crisostomo Ev Juan",
@@ -1101,7 +1101,7 @@
     },
     {
       "id": "liturgy-0223_Crisostomo_Mateo",
-      "contentFile": "data/documents/8e0e989b54f3b62427.js",
+      "contentFile": "data/documents/8e0e989b54f3b62427.json.gz",
       "catalogId": "0223",
       "file": "0223_Crisostomo_Mateo.md",
       "title": "Crisostomo Mateo",
@@ -1121,7 +1121,7 @@
     },
     {
       "id": "liturgy-0233_Ireneo_Contra_herejes",
-      "contentFile": "data/documents/1ac9d831b5bec05eec.js",
+      "contentFile": "data/documents/1ac9d831b5bec05eec.json.gz",
       "catalogId": "0233",
       "file": "0233_Ireneo_Contra_herejes.md",
       "title": "Ireneo Contra herejes",
@@ -1141,7 +1141,7 @@
     },
     {
       "id": "liturgy-0234_Cipriano_ES",
-      "contentFile": "data/documents/63327b04f06d10306f.js",
+      "contentFile": "data/documents/63327b04f06d10306f.json.gz",
       "catalogId": "0234",
       "file": "0234_Cipriano_ES.md",
       "title": "Cipriano",
@@ -1161,7 +1161,7 @@
     },
     {
       "id": "liturgy-0235_Ireneo_Epideixis",
-      "contentFile": "data/documents/fa9783ae685f5791a1.js",
+      "contentFile": "data/documents/fa9783ae685f5791a1.json.gz",
       "catalogId": "0235",
       "file": "0235_Ireneo_Epideixis.md",
       "title": "Ireneo Epideixis",
@@ -1181,7 +1181,7 @@
     },
     {
       "id": "liturgy-0298_Missale_Romanum_1957",
-      "contentFile": "data/documents/a5bce07ae9c5d866d8.js",
+      "contentFile": "data/documents/a5bce07ae9c5d866d8.json.gz",
       "catalogId": "0298",
       "file": "0298_Missale_Romanum_1957.md",
       "title": "Missale Romanum 1957",
@@ -1201,7 +1201,7 @@
     },
     {
       "id": "liturgy-0299_Ordo_Lectionnaire_Missel",
-      "contentFile": "data/documents/13d12785528d7e3645.js",
+      "contentFile": "data/documents/13d12785528d7e3645.json.gz",
       "catalogId": "0299",
       "file": "0299_Ordo_Lectionnaire_Missel.md",
       "title": "Ordo Lectionnaire Missel",
@@ -1221,7 +1221,7 @@
     },
     {
       "id": "liturgy-0300_ORDO_MISSAE",
-      "contentFile": "data/documents/fef75264a4749c8e72.js",
+      "contentFile": "data/documents/fef75264a4749c8e72.json.gz",
       "catalogId": "0300",
       "file": "0300_ORDO_MISSAE.md",
       "title": "ORDO MISSAE",
@@ -1241,7 +1241,7 @@
     },
     {
       "id": "liturgy-0301_Missale_Romanum_2002",
-      "contentFile": "data/documents/f67a3b8f51ac391239.js",
+      "contentFile": "data/documents/f67a3b8f51ac391239.json.gz",
       "catalogId": "0301",
       "file": "0301_Missale_Romanum_2002.md",
       "title": "Missale Romanum 2002",
@@ -1261,7 +1261,7 @@
     },
     {
       "id": "liturgy-0302_Ordenacion_general_Liturgia_Horas_ES",
-      "contentFile": "data/documents/a564268747156eccb7.js",
+      "contentFile": "data/documents/a564268747156eccb7.json.gz",
       "catalogId": "0302",
       "file": "0302_Ordenacion_general_Liturgia_Horas_ES.md",
       "title": "Ordenacion general Liturgia Horas",
@@ -1281,7 +1281,7 @@
     },
     {
       "id": "liturgy-0303_Ordo_Initiationis_Christianae",
-      "contentFile": "data/documents/a1be757bc720913be4.js",
+      "contentFile": "data/documents/a1be757bc720913be4.json.gz",
       "catalogId": "0303",
       "file": "0303_Ordo_Initiationis_Christianae.md",
       "title": "Ordo Initiationis Christianae",
@@ -1301,7 +1301,7 @@
     },
     {
       "id": "liturgy-0304_Pontificalis",
-      "contentFile": "data/documents/350d0c810e211984f3.js",
+      "contentFile": "data/documents/350d0c810e211984f3.json.gz",
       "catalogId": "0304",
       "file": "0304_Pontificalis.md",
       "title": "Pontificalis",
@@ -1321,7 +1321,7 @@
     },
     {
       "id": "liturgy-0305_De_ordinatione_presbyterorum_1990",
-      "contentFile": "data/documents/07f1c2d033c5434eb6.js",
+      "contentFile": "data/documents/07f1c2d033c5434eb6.json.gz",
       "catalogId": "0305",
       "file": "0305_De_ordinatione_presbyterorum_1990.md",
       "title": "De ordinatione presbyterorum 1990",
@@ -1341,7 +1341,7 @@
     },
     {
       "id": "liturgy-0306_Suma_Teologica_I",
-      "contentFile": "data/documents/c0cd3829b861200a1f.js",
+      "contentFile": "data/documents/c0cd3829b861200a1f.json.gz",
       "catalogId": "0306",
       "file": "0306_Suma_Teologica_I.md",
       "title": "Suma Teologica I",
@@ -1361,7 +1361,7 @@
     },
     {
       "id": "liturgy-0307_Suma_Teologica_I_II_parte_01",
-      "contentFile": "data/documents/f6ee1d7e603ff7b11c.js",
+      "contentFile": "data/documents/f6ee1d7e603ff7b11c.json.gz",
       "catalogId": "0307",
       "file": "0307_Suma_Teologica_I_II_parte_01.md",
       "title": "Suma Teologica I II",
@@ -1381,7 +1381,7 @@
     },
     {
       "id": "liturgy-0307_Suma_Teologica_I_II_parte_02",
-      "contentFile": "data/documents/3fcab802f4e1ed1e87.js",
+      "contentFile": "data/documents/3fcab802f4e1ed1e87.json.gz",
       "catalogId": "0307",
       "file": "0307_Suma_Teologica_I_II_parte_02.md",
       "title": "Suma Teologica I II",
@@ -1401,7 +1401,7 @@
     },
     {
       "id": "liturgy-0309_Suma_Teologica_III",
-      "contentFile": "data/documents/5fe08a6aaab8198a77.js",
+      "contentFile": "data/documents/5fe08a6aaab8198a77.json.gz",
       "catalogId": "0309",
       "file": "0309_Suma_Teologica_III.md",
       "title": "Suma Teologica III",
@@ -1421,7 +1421,7 @@
     },
     {
       "id": "liturgy-0310_Summa_Contra_Gentiles",
-      "contentFile": "data/documents/11f85f9f36b825537c.js",
+      "contentFile": "data/documents/11f85f9f36b825537c.json.gz",
       "catalogId": "0310",
       "file": "0310_Summa_Contra_Gentiles.md",
       "title": "Summa Contra Gentiles",
@@ -1441,7 +1441,7 @@
     },
     {
       "id": "liturgy-0311_COMPENDIO_DE_TEOLOGIA",
-      "contentFile": "data/documents/80d698d07a752a0637.js",
+      "contentFile": "data/documents/80d698d07a752a0637.json.gz",
       "catalogId": "0311",
       "file": "0311_COMPENDIO_DE_TEOLOGIA.md",
       "title": "COMPENDIO DE TEOLOGIA",
@@ -1461,7 +1461,7 @@
     },
     {
       "id": "liturgy-0314_Catena_aurea_ES_parte_01",
-      "contentFile": "data/documents/51d07823577aedf411.js",
+      "contentFile": "data/documents/51d07823577aedf411.json.gz",
       "catalogId": "0314",
       "file": "0314_Catena_aurea_ES_parte_01.md",
       "title": "Catena aurea",
@@ -1481,7 +1481,7 @@
     },
     {
       "id": "liturgy-0314_Catena_aurea_ES_parte_02",
-      "contentFile": "data/documents/b6bf393d5d3be144c4.js",
+      "contentFile": "data/documents/b6bf393d5d3be144c4.json.gz",
       "catalogId": "0314",
       "file": "0314_Catena_aurea_ES_parte_02.md",
       "title": "Catena aurea",
@@ -1501,7 +1501,7 @@
     },
     {
       "id": "liturgy-0314_Catena_aurea_ES_parte_03",
-      "contentFile": "data/documents/e040c8583a04e0ee79.js",
+      "contentFile": "data/documents/e040c8583a04e0ee79.json.gz",
       "catalogId": "0314",
       "file": "0314_Catena_aurea_ES_parte_03.md",
       "title": "Catena aurea",
@@ -1521,7 +1521,7 @@
     },
     {
       "id": "liturgy-0330_TRENTO",
-      "contentFile": "data/documents/56f9a920edd7f8c1c8.js",
+      "contentFile": "data/documents/56f9a920edd7f8c1c8.json.gz",
       "catalogId": "0330",
       "file": "0330_TRENTO.md",
       "title": "TRENTO",
@@ -1541,7 +1541,7 @@
     },
     {
       "id": "liturgy-0332_Denzinger_parte_01",
-      "contentFile": "data/documents/6cfa039adba2ccaa99.js",
+      "contentFile": "data/documents/6cfa039adba2ccaa99.json.gz",
       "catalogId": "0332",
       "file": "0332_Denzinger_parte_01.md",
       "title": "Denzinger",
@@ -1561,7 +1561,7 @@
     },
     {
       "id": "liturgy-0332_Denzinger_parte_02",
-      "contentFile": "data/documents/4d2f78e230b8926114.js",
+      "contentFile": "data/documents/4d2f78e230b8926114.json.gz",
       "catalogId": "0332",
       "file": "0332_Denzinger_parte_02.md",
       "title": "Denzinger",
@@ -1581,7 +1581,7 @@
     },
     {
       "id": "liturgy-0332_Denzinger_parte_03",
-      "contentFile": "data/documents/7a134bc51f7818828e.js",
+      "contentFile": "data/documents/7a134bc51f7818828e.json.gz",
       "catalogId": "0332",
       "file": "0332_Denzinger_parte_03.md",
       "title": "Denzinger",
@@ -1601,7 +1601,7 @@
     },
     {
       "id": "liturgy-0337_Deus_caritas_est_ES",
-      "contentFile": "data/documents/b603e16d76486e2549.js",
+      "contentFile": "data/documents/b603e16d76486e2549.json.gz",
       "catalogId": "0337",
       "file": "0337_Deus_caritas_est_ES.md",
       "title": "Deus caritas est",
@@ -1621,7 +1621,7 @@
     },
     {
       "id": "liturgy-0351_Ecclesia_de_Eucharistia_ES",
-      "contentFile": "data/documents/23435144b36c1dc481.js",
+      "contentFile": "data/documents/23435144b36c1dc481.json.gz",
       "catalogId": "0351",
       "file": "0351_Ecclesia_de_Eucharistia_ES.md",
       "title": "Ecclesia de Eucharistia",
@@ -1641,7 +1641,7 @@
     },
     {
       "id": "liturgy-0353_Humanae_Vitae_ES",
-      "contentFile": "data/documents/9730438ccf63a85df6.js",
+      "contentFile": "data/documents/9730438ccf63a85df6.json.gz",
       "catalogId": "0353",
       "file": "0353_Humanae_Vitae_ES.md",
       "title": "Humanae Vitae",
@@ -1661,7 +1661,7 @@
     },
     {
       "id": "liturgy-0354_Mysterium_Fidei_ES",
-      "contentFile": "data/documents/496bf021dab9be7237.js",
+      "contentFile": "data/documents/496bf021dab9be7237.json.gz",
       "catalogId": "0354",
       "file": "0354_Mysterium_Fidei_ES.md",
       "title": "Mysterium Fidei",
@@ -1681,7 +1681,7 @@
     },
     {
       "id": "liturgy-0389_Sacramentum_caritatis_ES",
-      "contentFile": "data/documents/5d4b47280092a4ea0f.js",
+      "contentFile": "data/documents/5d4b47280092a4ea0f.json.gz",
       "catalogId": "0389",
       "file": "0389_Sacramentum_caritatis_ES.md",
       "title": "Sacramentum caritatis",
@@ -1701,7 +1701,7 @@
     },
     {
       "id": "liturgy-0393_Familiaris_consortio_ES",
-      "contentFile": "data/documents/7f874d88547cbefa82.js",
+      "contentFile": "data/documents/7f874d88547cbefa82.json.gz",
       "catalogId": "0393",
       "file": "0393_Familiaris_consortio_ES.md",
       "title": "Familiaris consortio",
@@ -1721,7 +1721,7 @@
     },
     {
       "id": "liturgy-0394_Reconciliatio_et_paenitentia_ES",
-      "contentFile": "data/documents/d640660f408dbf6671.js",
+      "contentFile": "data/documents/d640660f408dbf6671.json.gz",
       "catalogId": "0394",
       "file": "0394_Reconciliatio_et_paenitentia_ES.md",
       "title": "Reconciliatio et paenitentia",
@@ -1741,7 +1741,7 @@
     },
     {
       "id": "liturgy-0395_Pastores_dabo_vobis_ES",
-      "contentFile": "data/documents/e9008fc06900cb5926.js",
+      "contentFile": "data/documents/e9008fc06900cb5926.json.gz",
       "catalogId": "0395",
       "file": "0395_Pastores_dabo_vobis_ES.md",
       "title": "Pastores dabo vobis",
@@ -1761,7 +1761,7 @@
     },
     {
       "id": "liturgy-0405_Marialis_cultus_ES",
-      "contentFile": "data/documents/abef65e8abb13da365.js",
+      "contentFile": "data/documents/abef65e8abb13da365.json.gz",
       "catalogId": "0405",
       "file": "0405_Marialis_cultus_ES.md",
       "title": "Marialis cultus",
@@ -1781,7 +1781,7 @@
     },
     {
       "id": "liturgy-0415_Rosarium_Virginis_Mariae_ES",
-      "contentFile": "data/documents/088293b653ad5f6be0.js",
+      "contentFile": "data/documents/088293b653ad5f6be0.json.gz",
       "catalogId": "0415",
       "file": "0415_Rosarium_Virginis_Mariae_ES.md",
       "title": "Rosarium Virginis Mariae",
@@ -1801,7 +1801,7 @@
     },
     {
       "id": "liturgy-0421_LA_DIES_DOMINI",
-      "contentFile": "data/documents/29b01166f1518acc61.js",
+      "contentFile": "data/documents/29b01166f1518acc61.json.gz",
       "catalogId": "0421",
       "file": "0421_LA_DIES_DOMINI.md",
       "title": "LA DIES DOMINI",
@@ -1821,7 +1821,7 @@
     },
     {
       "id": "liturgy-0429_Catecismo_Romano_ES",
-      "contentFile": "data/documents/7f7f50f6b141b88788.js",
+      "contentFile": "data/documents/7f7f50f6b141b88788.json.gz",
       "catalogId": "0429",
       "file": "0429_Catecismo_Romano_ES.md",
       "title": "Catecismo Romano",
@@ -1841,7 +1841,7 @@
     },
     {
       "id": "liturgy-0430_Compendio_catecismo",
-      "contentFile": "data/documents/3b17d000639cd92e0c.js",
+      "contentFile": "data/documents/3b17d000639cd92e0c.json.gz",
       "catalogId": "0430",
       "file": "0430_Compendio_catecismo.md",
       "title": "Compendio catecismo",
@@ -1861,7 +1861,7 @@
     },
     {
       "id": "liturgy-0431_Catecismo_S_Pio_X",
-      "contentFile": "data/documents/1035af93164eb50002.js",
+      "contentFile": "data/documents/1035af93164eb50002.json.gz",
       "catalogId": "0431",
       "file": "0431_Catecismo_S_Pio_X.md",
       "title": "Catecismo S Pio X",
@@ -1881,7 +1881,7 @@
     },
     {
       "id": "liturgy-0541_1983_Codigo_de_Derecho_Canonico",
-      "contentFile": "data/documents/ff1120b433b0d61235.js",
+      "contentFile": "data/documents/ff1120b433b0d61235.json.gz",
       "catalogId": "0541",
       "file": "0541_1983_Codigo_de_Derecho_Canonico.md",
       "title": "Codigo de Derecho Canonico",
@@ -1901,7 +1901,7 @@
     },
     {
       "id": "liturgy-0549_Interpretationes_Authenticae",
-      "contentFile": "data/documents/35c004f7e68c1daed3.js",
+      "contentFile": "data/documents/35c004f7e68c1daed3.json.gz",
       "catalogId": "0549",
       "file": "0549_Interpretationes_Authenticae.md",
       "title": "Interpretationes Authenticae",
@@ -1921,7 +1921,7 @@
     },
     {
       "id": "liturgy-0554_La_Eucaristia_y_los_divorciados",
-      "contentFile": "data/documents/cc2286e51f374dbdaf.js",
+      "contentFile": "data/documents/cc2286e51f374dbdaf.json.gz",
       "catalogId": "0554",
       "file": "0554_La_Eucaristia_y_los_divorciados.md",
       "title": "La Eucaristia y los divorciados",
@@ -1941,7 +1941,7 @@
     },
     {
       "id": "liturgy-0562_Congregacion_Culto_Divino_parte_01",
-      "contentFile": "data/documents/fda7a7d7ebc5eb2bb1.js",
+      "contentFile": "data/documents/fda7a7d7ebc5eb2bb1.json.gz",
       "catalogId": "0562",
       "file": "0562_Congregacion_Culto_Divino_parte_01.md",
       "title": "Congregacion Culto Divino",
@@ -1961,7 +1961,7 @@
     },
     {
       "id": "liturgy-0562_Congregacion_Culto_Divino_parte_02",
-      "contentFile": "data/documents/64f69b68d57611d48b.js",
+      "contentFile": "data/documents/64f69b68d57611d48b.json.gz",
       "catalogId": "0562",
       "file": "0562_Congregacion_Culto_Divino_parte_02.md",
       "title": "Congregacion Culto Divino",
@@ -1981,7 +1981,7 @@
     },
     {
       "id": "liturgy-0562_Congregacion_Culto_Divino_parte_03",
-      "contentFile": "data/documents/4676bdebaf46c0c4f2.js",
+      "contentFile": "data/documents/4676bdebaf46c0c4f2.json.gz",
       "catalogId": "0562",
       "file": "0562_Congregacion_Culto_Divino_parte_03.md",
       "title": "Congregacion Culto Divino",
@@ -2001,7 +2001,7 @@
     },
     {
       "id": "liturgy-0563_Liturgiam_authenticam",
-      "contentFile": "data/documents/f245366d3041794e98.js",
+      "contentFile": "data/documents/f245366d3041794e98.json.gz",
       "catalogId": "0563",
       "file": "0563_Liturgiam_authenticam.md",
       "title": "Liturgiam authenticam",
@@ -2021,7 +2021,7 @@
     },
     {
       "id": "liturgy-0564_Summa_Decretorum_de_SSmo_Sacramento",
-      "contentFile": "data/documents/6ee917ae22c4c17cfa.js",
+      "contentFile": "data/documents/6ee917ae22c4c17cfa.json.gz",
       "catalogId": "0564",
       "file": "0564_Summa_Decretorum_de_SSmo_Sacramento.md",
       "title": "Summa Decretorum de SSmo Sacramento",
@@ -2041,7 +2041,7 @@
     },
     {
       "id": "liturgy-0567_Directorio_presbiteros",
-      "contentFile": "data/documents/715ebb8fdd5da177a2.js",
+      "contentFile": "data/documents/715ebb8fdd5da177a2.json.gz",
       "catalogId": "0567",
       "file": "0567_Directorio_presbiteros.md",
       "title": "Directorio presbiteros",
@@ -2061,7 +2061,7 @@
     },
     {
       "id": "liturgy-0568_1998_Diacres_Normes_Fondamentales",
-      "contentFile": "data/documents/9b2e334527f5210929.js",
+      "contentFile": "data/documents/9b2e334527f5210929.json.gz",
       "catalogId": "0568",
       "file": "0568_1998_Diacres_Normes_Fondamentales.md",
       "title": "Diacres Normes Fondamentales",
@@ -2081,7 +2081,7 @@
     },
     {
       "id": "liturgy-0571_1998_Directoire_Diacres",
-      "contentFile": "data/documents/265a442da5e30e473f.js",
+      "contentFile": "data/documents/265a442da5e30e473f.json.gz",
       "catalogId": "0571",
       "file": "0571_1998_Directoire_Diacres.md",
       "title": "Directoire Diacres",
@@ -2101,7 +2101,7 @@
     },
     {
       "id": "liturgy-0573_1998_Formation_des_Diacres",
-      "contentFile": "data/documents/e751661d234547986d.js",
+      "contentFile": "data/documents/e751661d234547986d.json.gz",
       "catalogId": "0573",
       "file": "0573_1998_Formation_des_Diacres.md",
       "title": "Formation des Diacres",
@@ -2121,7 +2121,7 @@
     },
     {
       "id": "liturgy-0577_1986_MANUAL_DE_INDULGENCIAS",
-      "contentFile": "data/documents/95bd08846637670bab.js",
+      "contentFile": "data/documents/95bd08846637670bab.json.gz",
       "catalogId": "0577",
       "file": "0577_1986_MANUAL_DE_INDULGENCIAS.md",
       "title": "MANUAL DE INDULGENCIAS",

@@ -9,5 +9,5 @@ const value = {
   music: read("youtube-music.json"),
   instagram: read("instagram.json")
 };
-fs.writeFileSync(path.join(atlas, "data", "channel-catalog.js"), `window.ATLAS_CHANNELS = ${JSON.stringify(value, null, 2)};\n`, "utf8");
+fs.writeFileSync(path.join(atlas, "data", "channel-catalog.json"), `${JSON.stringify(value, null, 2)}\n`, "utf8");
 console.log(`Catálogo de canales: ${value.youtube.length} vídeo, ${value.music.length} música, ${value.instagram.length} Instagram.`);

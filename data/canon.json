@@ -118,7 +118,7 @@
   "documents": [
     {
       "id": "canon-0074_Lumen_gentium_ES",
-      "contentFile": "data/documents/c5860d1c1bebc87a8a.js",
+      "contentFile": "data/documents/c5860d1c1bebc87a8a.json.gz",
       "catalogId": "0074",
       "file": "0074_Lumen_gentium_ES.md",
       "title": "Lumen gentium",
@@ -138,7 +138,7 @@
     },
     {
       "id": "canon-0075_Dei_verbum_ES",
-      "contentFile": "data/documents/06ab78a14130cb42c2.js",
+      "contentFile": "data/documents/06ab78a14130cb42c2.json.gz",
       "catalogId": "0075",
       "file": "0075_Dei_verbum_ES.md",
       "title": "Dei verbum",
@@ -158,7 +158,7 @@
     },
     {
       "id": "canon-0076_Sacrosanctum_Concilium_ES",
-      "contentFile": "data/documents/baddc4e1fd370abe67.js",
+      "contentFile": "data/documents/baddc4e1fd370abe67.json.gz",
       "catalogId": "0076",
       "file": "0076_Sacrosanctum_Concilium_ES.md",
       "title": "Sacrosanctum Concilium",
@@ -178,7 +178,7 @@
     },
     {
       "id": "canon-0077_Gaudium_et_spes_ES",
-      "contentFile": "data/documents/93ce7a149b39ddae4b.js",
+      "contentFile": "data/documents/93ce7a149b39ddae4b.json.gz",
       "catalogId": "0077",
       "file": "0077_Gaudium_et_spes_ES.md",
       "title": "Gaudium et spes",
@@ -198,7 +198,7 @@
     },
     {
       "id": "canon-0078_Christus_Dominus_ES",
-      "contentFile": "data/documents/1ebd123b2de591ff6c.js",
+      "contentFile": "data/documents/1ebd123b2de591ff6c.json.gz",
       "catalogId": "0078",
       "file": "0078_Christus_Dominus_ES.md",
       "title": "Christus Dominus",
@@ -218,7 +218,7 @@
     },
     {
       "id": "canon-0079_Presbyterorum_Ordinis_ES",
-      "contentFile": "data/documents/029830f11986ccc0cc.js",
+      "contentFile": "data/documents/029830f11986ccc0cc.json.gz",
       "catalogId": "0079",
       "file": "0079_Presbyterorum_Ordinis_ES.md",
       "title": "Presbyterorum Ordinis",
@@ -238,7 +238,7 @@
     },
     {
       "id": "canon-0080_Optatam_totius_ES",
-      "contentFile": "data/documents/17fbece66ec16a918e.js",
+      "contentFile": "data/documents/17fbece66ec16a918e.json.gz",
       "catalogId": "0080",
       "file": "0080_Optatam_totius_ES.md",
       "title": "Optatam totius",
@@ -258,7 +258,7 @@
     },
     {
       "id": "canon-0081_Perfectae_caritatis_ES",
-      "contentFile": "data/documents/e914dd287bef3cd1ad.js",
+      "contentFile": "data/documents/e914dd287bef3cd1ad.json.gz",
       "catalogId": "0081",
       "file": "0081_Perfectae_caritatis_ES.md",
       "title": "Perfectae caritatis",
@@ -278,7 +278,7 @@
     },
     {
       "id": "canon-0082_Apostolicam_actuositatem_ES",
-      "contentFile": "data/documents/e0db84e6fdac8dc8ca.js",
+      "contentFile": "data/documents/e0db84e6fdac8dc8ca.json.gz",
       "catalogId": "0082",
       "file": "0082_Apostolicam_actuositatem_ES.md",
       "title": "Apostolicam actuositatem",
@@ -298,7 +298,7 @@
     },
     {
       "id": "canon-0083_Ad_gentes_ES",
-      "contentFile": "data/documents/d1cc30bebdf6d861ac.js",
+      "contentFile": "data/documents/d1cc30bebdf6d861ac.json.gz",
       "catalogId": "0083",
       "file": "0083_Ad_gentes_ES.md",
       "title": "Ad gentes",
@@ -318,7 +318,7 @@
     },
     {
       "id": "canon-0084_Unitatis_redintegratio_ES",
-      "contentFile": "data/documents/a998522bad70e045bb.js",
+      "contentFile": "data/documents/a998522bad70e045bb.json.gz",
       "catalogId": "0084",
       "file": "0084_Unitatis_redintegratio_ES.md",
       "title": "Unitatis redintegratio",
@@ -338,7 +338,7 @@
     },
     {
       "id": "canon-0085_Orientalium_Ecclesiarum_ES",
-      "contentFile": "data/documents/872a2f74d2ba302053.js",
+      "contentFile": "data/documents/872a2f74d2ba302053.json.gz",
       "catalogId": "0085",
       "file": "0085_Orientalium_Ecclesiarum_ES.md",
       "title": "Orientalium Ecclesiarum",
@@ -358,7 +358,7 @@
     },
     {
       "id": "canon-0086_Inter_mirifica_ES",
-      "contentFile": "data/documents/a5443930758dbe198f.js",
+      "contentFile": "data/documents/a5443930758dbe198f.json.gz",
       "catalogId": "0086",
       "file": "0086_Inter_mirifica_ES.md",
       "title": "Inter mirifica",
@@ -378,7 +378,7 @@
     },
     {
       "id": "canon-0087_Dignitatis_humanae_ES",
-      "contentFile": "data/documents/dbcf86c7e009d60fc7.js",
+      "contentFile": "data/documents/dbcf86c7e009d60fc7.json.gz",
       "catalogId": "0087",
       "file": "0087_Dignitatis_humanae_ES.md",
       "title": "Dignitatis humanae",
@@ -398,7 +398,7 @@
     },
     {
       "id": "canon-0088_Nostra_aetate_ES",
-      "contentFile": "data/documents/28f2a38455efe1f4f9.js",
+      "contentFile": "data/documents/28f2a38455efe1f4f9.json.gz",
       "catalogId": "0088",
       "file": "0088_Nostra_aetate_ES.md",
       "title": "Nostra aetate",
@@ -418,7 +418,7 @@
     },
     {
       "id": "canon-0089_Gravissimum_educationis_ES",
-      "contentFile": "data/documents/9501c3449f840c4fcd.js",
+      "contentFile": "data/documents/9501c3449f840c4fcd.json.gz",
       "catalogId": "0089",
       "file": "0089_Gravissimum_educationis_ES.md",
       "title": "Gravissimum educationis",
@@ -438,7 +438,7 @@
     },
     {
       "id": "canon-0300_ORDO_MISSAE",
-      "contentFile": "data/documents/abf1472f0739bc2118.js",
+      "contentFile": "data/documents/abf1472f0739bc2118.json.gz",
       "catalogId": "0300",
       "file": "0300_ORDO_MISSAE.md",
       "title": "ORDO MISSAE",
@@ -458,7 +458,7 @@
     },
     {
       "id": "canon-0302_Ordenacion_general_Liturgia_Horas_ES",
-      "contentFile": "data/documents/44732c077fd9da9db7.js",
+      "contentFile": "data/documents/44732c077fd9da9db7.json.gz",
       "catalogId": "0302",
       "file": "0302_Ordenacion_general_Liturgia_Horas_ES.md",
       "title": "Ordenacion general Liturgia Horas",
@@ -478,7 +478,7 @@
     },
     {
       "id": "canon-0303_Ordo_Initiationis_Christianae",
-      "contentFile": "data/documents/5016fa5556a947bb0e.js",
+      "contentFile": "data/documents/5016fa5556a947bb0e.json.gz",
       "catalogId": "0303",
       "file": "0303_Ordo_Initiationis_Christianae.md",
       "title": "Ordo Initiationis Christianae",
@@ -498,7 +498,7 @@
     },
     {
       "id": "canon-0305_De_ordinatione_presbyterorum_1990",
-      "contentFile": "data/documents/15a768ac4394272c51.js",
+      "contentFile": "data/documents/15a768ac4394272c51.json.gz",
       "catalogId": "0305",
       "file": "0305_De_ordinatione_presbyterorum_1990.md",
       "title": "De ordinatione presbyterorum 1990",
@@ -518,7 +518,7 @@
     },
     {
       "id": "canon-0329_Vaticano_I",
-      "contentFile": "data/documents/23cdb96b7b37f437e3.js",
+      "contentFile": "data/documents/23cdb96b7b37f437e3.json.gz",
       "catalogId": "0329",
       "file": "0329_Vaticano_I.md",
       "title": "Vaticano I",
@@ -538,7 +538,7 @@
     },
     {
       "id": "canon-0330_TRENTO",
-      "contentFile": "data/documents/7aeae4335d1b3ca2c4.js",
+      "contentFile": "data/documents/7aeae4335d1b3ca2c4.json.gz",
       "catalogId": "0330",
       "file": "0330_TRENTO.md",
       "title": "TRENTO",
@@ -558,7 +558,7 @@
     },
     {
       "id": "canon-0331_Lateranense_II_1139",
-      "contentFile": "data/documents/5f7a489e9648e3578c.js",
+      "contentFile": "data/documents/5f7a489e9648e3578c.json.gz",
       "catalogId": "0331",
       "file": "0331_Lateranense_II_1139.md",
       "title": "Lateranense II 1139",
@@ -578,7 +578,7 @@
     },
     {
       "id": "canon-0333_I_Toledo",
-      "contentFile": "data/documents/0545034ea31c8fa2f6.js",
+      "contentFile": "data/documents/0545034ea31c8fa2f6.json.gz",
       "catalogId": "0333",
       "file": "0333_I_Toledo.md",
       "title": "I Toledo",
@@ -598,7 +598,7 @@
     },
     {
       "id": "canon-0351_Ecclesia_de_Eucharistia_ES",
-      "contentFile": "data/documents/bbc5d895557cf0b862.js",
+      "contentFile": "data/documents/bbc5d895557cf0b862.json.gz",
       "catalogId": "0351",
       "file": "0351_Ecclesia_de_Eucharistia_ES.md",
       "title": "Ecclesia de Eucharistia",
@@ -618,7 +618,7 @@
     },
     {
       "id": "canon-0353_Humanae_Vitae_ES",
-      "contentFile": "data/documents/a1f9f9bbc5a93f3dad.js",
+      "contentFile": "data/documents/a1f9f9bbc5a93f3dad.json.gz",
       "catalogId": "0353",
       "file": "0353_Humanae_Vitae_ES.md",
       "title": "Humanae Vitae",
@@ -638,7 +638,7 @@
     },
     {
       "id": "canon-0354_Mysterium_Fidei_ES",
-      "contentFile": "data/documents/bf2a340165a1a6f89c.js",
+      "contentFile": "data/documents/bf2a340165a1a6f89c.json.gz",
       "catalogId": "0354",
       "file": "0354_Mysterium_Fidei_ES.md",
       "title": "Mysterium Fidei",
@@ -658,7 +658,7 @@
     },
     {
       "id": "canon-0371_Casti_connubii_ES",
-      "contentFile": "data/documents/236904348d6e1e6174.js",
+      "contentFile": "data/documents/236904348d6e1e6174.json.gz",
       "catalogId": "0371",
       "file": "0371_Casti_connubii_ES.md",
       "title": "Casti connubii",
@@ -678,7 +678,7 @@
     },
     {
       "id": "canon-0389_Sacramentum_caritatis_ES",
-      "contentFile": "data/documents/d461e3f2fea0952a56.js",
+      "contentFile": "data/documents/d461e3f2fea0952a56.json.gz",
       "catalogId": "0389",
       "file": "0389_Sacramentum_caritatis_ES.md",
       "title": "Sacramentum caritatis",
@@ -698,7 +698,7 @@
     },
     {
       "id": "canon-0393_Familiaris_consortio_ES",
-      "contentFile": "data/documents/871eed8aeab0d32858.js",
+      "contentFile": "data/documents/871eed8aeab0d32858.json.gz",
       "catalogId": "0393",
       "file": "0393_Familiaris_consortio_ES.md",
       "title": "Familiaris consortio",
@@ -718,7 +718,7 @@
     },
     {
       "id": "canon-0395_Pastores_dabo_vobis_ES",
-      "contentFile": "data/documents/572b22124aa27dc3f6.js",
+      "contentFile": "data/documents/572b22124aa27dc3f6.json.gz",
       "catalogId": "0395",
       "file": "0395_Pastores_dabo_vobis_ES.md",
       "title": "Pastores dabo vobis",
@@ -738,7 +738,7 @@
     },
     {
       "id": "canon-0396_Vita_consecrata_ES",
-      "contentFile": "data/documents/a4164f2006a79f8489.js",
+      "contentFile": "data/documents/a4164f2006a79f8489.json.gz",
       "catalogId": "0396",
       "file": "0396_Vita_consecrata_ES.md",
       "title": "Vita consecrata",
@@ -758,7 +758,7 @@
     },
     {
       "id": "canon-0401_Pastores_gregis_ES",
-      "contentFile": "data/documents/af7d5887eb14797fa9.js",
+      "contentFile": "data/documents/af7d5887eb14797fa9.json.gz",
       "catalogId": "0401",
       "file": "0401_Pastores_gregis_ES.md",
       "title": "Pastores gregis",
@@ -778,7 +778,7 @@
     },
     {
       "id": "canon-0540_Quo_Primum",
-      "contentFile": "data/documents/33aafc72230b9b7eb4.js",
+      "contentFile": "data/documents/33aafc72230b9b7eb4.json.gz",
       "catalogId": "0540",
       "file": "0540_Quo_Primum.md",
       "title": "Quo Primum",
@@ -798,7 +798,7 @@
     },
     {
       "id": "canon-0541_1983_Codigo_de_Derecho_Canonico",
-      "contentFile": "data/documents/5ee05a350a97969203.js",
+      "contentFile": "data/documents/5ee05a350a97969203.json.gz",
       "catalogId": "0541",
       "file": "0541_1983_Codigo_de_Derecho_Canonico.md",
       "title": "Codigo de Derecho Canonico",
@@ -818,7 +818,7 @@
     },
     {
       "id": "canon-0542_1990_Codex_Orientalis",
-      "contentFile": "data/documents/c2cf36f4c1592d8e7a.js",
+      "contentFile": "data/documents/c2cf36f4c1592d8e7a.json.gz",
       "catalogId": "0542",
       "file": "0542_1990_Codex_Orientalis.md",
       "title": "Codex Orientalis",
@@ -838,7 +838,7 @@
     },
     {
       "id": "canon-0543_1917_Codex_Iuris_Canonici",
-      "contentFile": "data/documents/71440d8540935be717.js",
+      "contentFile": "data/documents/71440d8540935be717.json.gz",
       "catalogId": "0543",
       "file": "0543_1917_Codex_Iuris_Canonici.md",
       "title": "Codex Iuris Canonici",
@@ -858,7 +858,7 @@
     },
     {
       "id": "canon-0544_Pastor_bonus_ES",
-      "contentFile": "data/documents/8d222dcfc0bab674a9.js",
+      "contentFile": "data/documents/8d222dcfc0bab674a9.json.gz",
       "catalogId": "0544",
       "file": "0544_Pastor_bonus_ES.md",
       "title": "Pastor bonus",
@@ -878,7 +878,7 @@
     },
     {
       "id": "canon-0545_Porta_Fidei_ES",
-      "contentFile": "data/documents/23f886f60cb3ec4285.js",
+      "contentFile": "data/documents/23f886f60cb3ec4285.json.gz",
       "catalogId": "0545",
       "file": "0545_Porta_Fidei_ES.md",
       "title": "Porta Fidei",
@@ -898,7 +898,7 @@
     },
     {
       "id": "canon-0546_Universi_Dominici_gregis_ES",
-      "contentFile": "data/documents/60867f3b6c502cfec8.js",
+      "contentFile": "data/documents/60867f3b6c502cfec8.json.gz",
       "catalogId": "0546",
       "file": "0546_Universi_Dominici_gregis_ES.md",
       "title": "Universi Dominici gregis",
@@ -918,7 +918,7 @@
     },
     {
       "id": "canon-0547_Ad_tuendam_Fidem",
-      "contentFile": "data/documents/8c497cd2c3897abe3c.js",
+      "contentFile": "data/documents/8c497cd2c3897abe3c.json.gz",
       "catalogId": "0547",
       "file": "0547_Ad_tuendam_Fidem.md",
       "title": "Ad tuendam Fidem",
@@ -938,7 +938,7 @@
     },
     {
       "id": "canon-0548_Fidei_Depositum",
-      "contentFile": "data/documents/1986da9a938331a296.js",
+      "contentFile": "data/documents/1986da9a938331a296.json.gz",
       "catalogId": "0548",
       "file": "0548_Fidei_Depositum.md",
       "title": "Fidei Depositum",
@@ -958,7 +958,7 @@
     },
     {
       "id": "canon-0549_Interpretationes_Authenticae",
-      "contentFile": "data/documents/10c16ca32970ec56f4.js",
+      "contentFile": "data/documents/10c16ca32970ec56f4.json.gz",
       "catalogId": "0549",
       "file": "0549_Interpretationes_Authenticae.md",
       "title": "Interpretationes Authenticae",
@@ -978,7 +978,7 @@
     },
     {
       "id": "canon-0552_Congregacion_para_la_Doctrina_de_la_Fe",
-      "contentFile": "data/documents/a5b241629a024cd87f.js",
+      "contentFile": "data/documents/a5b241629a024cd87f.json.gz",
       "catalogId": "0552",
       "file": "0552_Congregacion_para_la_Doctrina_de_la_Fe.md",
       "title": "Congregacion para la Doctrina de la Fe",
@@ -998,7 +998,7 @@
     },
     {
       "id": "canon-0553_2010_Normae_de_gravioribus_ES",
-      "contentFile": "data/documents/cbb7a807bb08b2908b.js",
+      "contentFile": "data/documents/cbb7a807bb08b2908b.json.gz",
       "catalogId": "0553",
       "file": "0553_2010_Normae_de_gravioribus_ES.md",
       "title": "Normae de gravioribus",
@@ -1018,7 +1018,7 @@
     },
     {
       "id": "canon-0554_La_Eucaristia_y_los_divorciados",
-      "contentFile": "data/documents/105663e37bef38ac5b.js",
+      "contentFile": "data/documents/105663e37bef38ac5b.json.gz",
       "catalogId": "0554",
       "file": "0554_La_Eucaristia_y_los_divorciados.md",
       "title": "La Eucaristia y los divorciados",
@@ -1038,7 +1038,7 @@
     },
     {
       "id": "canon-0555_Oraciones_para_la_salud",
-      "contentFile": "data/documents/a4dea03bf94cf92383.js",
+      "contentFile": "data/documents/a4dea03bf94cf92383.json.gz",
       "catalogId": "0555",
       "file": "0555_Oraciones_para_la_salud.md",
       "title": "Oraciones para la salud",
@@ -1058,7 +1058,7 @@
     },
     {
       "id": "canon-0556_1983_Approbation_livres_Catechese",
-      "contentFile": "data/documents/fdd53409e44f87901e.js",
+      "contentFile": "data/documents/fdd53409e44f87901e.json.gz",
       "catalogId": "0556",
       "file": "0556_1983_Approbation_livres_Catechese.md",
       "title": "Approbation livres Catechese",
@@ -1078,7 +1078,7 @@
     },
     {
       "id": "canon-0557_2000_Dominus_Iesus",
-      "contentFile": "data/documents/6637da8dbd73edd581.js",
+      "contentFile": "data/documents/6637da8dbd73edd581.json.gz",
       "catalogId": "0557",
       "file": "0557_2000_Dominus_Iesus.md",
       "title": "Dominus Iesus",
@@ -1098,7 +1098,7 @@
     },
     {
       "id": "canon-0558_1987_Donum_Vitae",
-      "contentFile": "data/documents/1f20efcfa86c9bfc91.js",
+      "contentFile": "data/documents/1f20efcfa86c9bfc91.json.gz",
       "catalogId": "0558",
       "file": "0558_1987_Donum_Vitae.md",
       "title": "Donum Vitae",
@@ -1118,7 +1118,7 @@
     },
     {
       "id": "canon-0561_1997_Ratio_Agendi",
-      "contentFile": "data/documents/0dc9ad97ab513bb85c.js",
+      "contentFile": "data/documents/0dc9ad97ab513bb85c.json.gz",
       "catalogId": "0561",
       "file": "0561_1997_Ratio_Agendi.md",
       "title": "Ratio Agendi",
@@ -1138,7 +1138,7 @@
     },
     {
       "id": "canon-0562_Congregacion_Culto_Divino_parte_01",
-      "contentFile": "data/documents/0f063230c3a83bee4a.js",
+      "contentFile": "data/documents/0f063230c3a83bee4a.json.gz",
       "catalogId": "0562",
       "file": "0562_Congregacion_Culto_Divino_parte_01.md",
       "title": "Congregacion Culto Divino",
@@ -1158,7 +1158,7 @@
     },
     {
       "id": "canon-0562_Congregacion_Culto_Divino_parte_02",
-      "contentFile": "data/documents/920f6acde69d61006b.js",
+      "contentFile": "data/documents/920f6acde69d61006b.json.gz",
       "catalogId": "0562",
       "file": "0562_Congregacion_Culto_Divino_parte_02.md",
       "title": "Congregacion Culto Divino",
@@ -1178,7 +1178,7 @@
     },
     {
       "id": "canon-0562_Congregacion_Culto_Divino_parte_03",
-      "contentFile": "data/documents/5ee79fa193aa3baaaf.js",
+      "contentFile": "data/documents/5ee79fa193aa3baaaf.json.gz",
       "catalogId": "0562",
       "file": "0562_Congregacion_Culto_Divino_parte_03.md",
       "title": "Congregacion Culto Divino",
@@ -1198,7 +1198,7 @@
     },
     {
       "id": "canon-0563_Liturgiam_authenticam",
-      "contentFile": "data/documents/86cb124faab6f67477.js",
+      "contentFile": "data/documents/86cb124faab6f67477.json.gz",
       "catalogId": "0563",
       "file": "0563_Liturgiam_authenticam.md",
       "title": "Liturgiam authenticam",
@@ -1218,7 +1218,7 @@
     },
     {
       "id": "canon-0564_Summa_Decretorum_de_SSmo_Sacramento",
-      "contentFile": "data/documents/7a9ad625178b15d809.js",
+      "contentFile": "data/documents/7a9ad625178b15d809.json.gz",
       "catalogId": "0564",
       "file": "0564_Summa_Decretorum_de_SSmo_Sacramento.md",
       "title": "Summa Decretorum de SSmo Sacramento",
@@ -1238,7 +1238,7 @@
     },
     {
       "id": "canon-0565_Congregacion_para_el_Clero",
-      "contentFile": "data/documents/1ab534c357481ec8dd.js",
+      "contentFile": "data/documents/1ab534c357481ec8dd.json.gz",
       "catalogId": "0565",
       "file": "0565_Congregacion_para_el_Clero.md",
       "title": "Congregacion para el Clero",
@@ -1258,7 +1258,7 @@
     },
     {
       "id": "canon-0566_DIRECTORIO_GENERAL_PARA_LA_CATEQUESIS",
-      "contentFile": "data/documents/6e63245b1604e67dc3.js",
+      "contentFile": "data/documents/6e63245b1604e67dc3.json.gz",
       "catalogId": "0566",
       "file": "0566_DIRECTORIO_GENERAL_PARA_LA_CATEQUESIS.md",
       "title": "DIRECTORIO GENERAL PARA LA CATEQUESIS",
@@ -1278,7 +1278,7 @@
     },
     {
       "id": "canon-0567_Directorio_presbiteros",
-      "contentFile": "data/documents/7174957a44f1800acf.js",
+      "contentFile": "data/documents/7174957a44f1800acf.json.gz",
       "catalogId": "0567",
       "file": "0567_Directorio_presbiteros.md",
       "title": "Directorio presbiteros",
@@ -1298,7 +1298,7 @@
     },
     {
       "id": "canon-0568_1998_Diacres_Normes_Fondamentales",
-      "contentFile": "data/documents/ac67fd01c01bea3acc.js",
+      "contentFile": "data/documents/ac67fd01c01bea3acc.json.gz",
       "catalogId": "0568",
       "file": "0568_1998_Diacres_Normes_Fondamentales.md",
       "title": "Diacres Normes Fondamentales",
@@ -1318,7 +1318,7 @@
     },
     {
       "id": "canon-0571_1998_Directoire_Diacres",
-      "contentFile": "data/documents/6e4535043d02c1f3a0.js",
+      "contentFile": "data/documents/6e4535043d02c1f3a0.json.gz",
       "catalogId": "0571",
       "file": "0571_1998_Directoire_Diacres.md",
       "title": "Directoire Diacres",
@@ -1338,7 +1338,7 @@
     },
     {
       "id": "canon-0572_1997_Ecole_au_3eme_Millenaire",
-      "contentFile": "data/documents/63bcb0343285523d54.js",
+      "contentFile": "data/documents/63bcb0343285523d54.json.gz",
       "catalogId": "0572",
       "file": "0572_1997_Ecole_au_3eme_Millenaire.md",
       "title": "Ecole au 3eme Millenaire",
@@ -1358,7 +1358,7 @@
     },
     {
       "id": "canon-0573_1998_Formation_des_Diacres",
-      "contentFile": "data/documents/035f29c8270117642c.js",
+      "contentFile": "data/documents/035f29c8270117642c.json.gz",
       "catalogId": "0573",
       "file": "0573_1998_Formation_des_Diacres.md",
       "title": "Formation des Diacres",
@@ -1378,7 +1378,7 @@
     },
     {
       "id": "canon-0575_Apostolorum_successores_ES",
-      "contentFile": "data/documents/77a619b09a07ca8239.js",
+      "contentFile": "data/documents/77a619b09a07ca8239.json.gz",
       "catalogId": "0575",
       "file": "0575_Apostolorum_successores_ES.md",
       "title": "Apostolorum successores",
@@ -1398,7 +1398,7 @@
     },
     {
       "id": "canon-0577_1986_MANUAL_DE_INDULGENCIAS",
-      "contentFile": "data/documents/9adb1be442c0ade83c.js",
+      "contentFile": "data/documents/9adb1be442c0ade83c.json.gz",
       "catalogId": "0577",
       "file": "0577_1986_MANUAL_DE_INDULGENCIAS.md",
       "title": "MANUAL DE INDULGENCIAS",
@@ -1418,7 +1418,7 @@
     },
     {
       "id": "canon-0580_1996_Preparation_au_sacrement_de_mariage",
-      "contentFile": "data/documents/1205a5f606da36eb33.js",
+      "contentFile": "data/documents/1205a5f606da36eb33.json.gz",
       "catalogId": "0580",
       "file": "0580_1996_Preparation_au_sacrement_de_mariage.md",
       "title": "Preparation au sacrement de mariage",
@@ -1438,7 +1438,7 @@
     },
     {
       "id": "canon-0583_Dignitas_connubii_ES",
-      "contentFile": "data/documents/1d8c5ac0b7fc3d4e8c.js",
+      "contentFile": "data/documents/1d8c5ac0b7fc3d4e8c.json.gz",
       "catalogId": "0583",
       "file": "0583_Dignitas_connubii_ES.md",
       "title": "Dignitas connubii",
@@ -1458,7 +1458,7 @@
     },
     {
       "id": "canon-0584_2009_Normes_d_officialite",
-      "contentFile": "data/documents/7e55391545a70ca2bc.js",
+      "contentFile": "data/documents/7e55391545a70ca2bc.json.gz",
       "catalogId": "0584",
       "file": "0584_2009_Normes_d_officialite.md",
       "title": "Normes d officialite",
@@ -1478,7 +1478,7 @@
     },
     {
       "id": "canon-0585_1983_Documents_postconciliaires",
-      "contentFile": "data/documents/0c565a4d018867c5f7.js",
+      "contentFile": "data/documents/0c565a4d018867c5f7.json.gz",
       "catalogId": "0585",
       "file": "0585_1983_Documents_postconciliaires.md",
       "title": "Documents postconciliaires",

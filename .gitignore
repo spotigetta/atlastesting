@@ -1,0 +1,23 @@
+node_modules/
+dist/
+generated/
+.atlas-backups/
+.atlas-trash/
+*.log
+qa-*.png
+
+# Artefactos derivados: se regeneran mediante npm run build.
+data/documents/
+data/search/
+data/catalog.js
+data/external-content.js
+data/quotes.js
+data/youtube-shorts.js
+data/channel-catalog.js
+data/fulltext-index.js
+
+# Archivos del sistema y editores.
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

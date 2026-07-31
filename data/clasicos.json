@@ -14,7 +14,7 @@
   "documents": [
     {
       "id": "clasicos-Abbie Farwell Brown - Obras completas",
-      "contentFile": "data/documents/09a5c261b9418214f9.js",
+      "contentFile": "data/documents/09a5c261b9418214f9.json.gz",
       "catalogId": null,
       "file": "Abbie Farwell Brown - Obras completas.md",
       "title": "Title: The Christmas Angel",
@@ -32,7 +32,7 @@
     },
     {
       "id": "clasicos-Abraham Merritt - Obras completas",
-      "contentFile": "data/documents/77ea565d2f0edb05ef.js",
+      "contentFile": "data/documents/77ea565d2f0edb05ef.json.gz",
       "catalogId": null,
       "file": "Abraham Merritt - Obras completas.md",
       "title": "Title: The Moon Pool",
@@ -50,7 +50,7 @@
     },
     {
       "id": "clasicos-Adalbert Stifter - Obras completas",
-      "contentFile": "data/documents/344cbaeb1bb1dfa9dc.js",
+      "contentFile": "data/documents/344cbaeb1bb1dfa9dc.json.gz",
       "catalogId": null,
       "file": "Adalbert Stifter - Obras completas.md",
       "title": "Title: Rock Crystal",
@@ -68,7 +68,7 @@
     },
     {
       "id": "clasicos-Adam Smith - Obras completas",
-      "contentFile": "data/documents/88c0733bc8f5e14b62.js",
+      "contentFile": "data/documents/88c0733bc8f5e14b62.json.gz",
       "catalogId": null,
       "file": "Adam Smith - Obras completas.md",
       "title": "Title: The Wealth of Nations",
@@ -86,7 +86,7 @@
     },
     {
       "id": "clasicos-Agatha Christie - Obras completas",
-      "contentFile": "data/documents/c919171a5e2be71aff.js",
+      "contentFile": "data/documents/c919171a5e2be71aff.json.gz",
       "catalogId": null,
       "file": "Agatha Christie - Obras completas.md",
       "title": "Title: Poirot Investigates",
@@ -104,7 +104,7 @@
     },
     {
       "id": "clasicos-Aldous Huxley - Obras completas",
-      "contentFile": "data/documents/8be0fc10410088b01e.js",
+      "contentFile": "data/documents/8be0fc10410088b01e.json.gz",
       "catalogId": null,
       "file": "Aldous Huxley - Obras completas.md",
       "title": "Title: Antic Hay",
@@ -122,7 +122,7 @@
     },
     {
       "id": "clasicos-Alexander Pushkin - Obras completas",
-      "contentFile": "data/documents/9a80a5431ddfbebfe2.js",
+      "contentFile": "data/documents/9a80a5431ddfbebfe2.json.gz",
       "catalogId": null,
       "file": "Alexander Pushkin - Obras completas.md",
       "title": "Title: The Captain's Daughter",
@@ -140,7 +140,7 @@
     },
     {
       "id": "clasicos-Alexandre Dumas - Obras completas - Parte 01",
-      "contentFile": "data/documents/b680bb2e7c2301fe89.js",
+      "contentFile": "data/documents/b680bb2e7c2301fe89.json.gz",
       "catalogId": null,
       "file": "Alexandre Dumas - Obras completas - Parte 01.md",
       "title": "Title: The Count of Monte Cristo",
@@ -158,7 +158,7 @@
     },
     {
       "id": "clasicos-Alexandre Dumas - Obras completas - Parte 02",
-      "contentFile": "data/documents/d8590fd686a5a1d660.js",
+      "contentFile": "data/documents/d8590fd686a5a1d660.json.gz",
       "catalogId": null,
       "file": "Alexandre Dumas - Obras completas - Parte 02.md",
       "title": "Title: The Man in the Iron Mask",
@@ -176,7 +176,7 @@
     },
     {
       "id": "clasicos-Alexis de Tocqueville - Obras completas",
-      "contentFile": "data/documents/031723482199bd1b92.js",
+      "contentFile": "data/documents/031723482199bd1b92.json.gz",
       "catalogId": null,
       "file": "Alexis de Tocqueville - Obras completas.md",
       "title": "Title: Democracy in America",
@@ -194,7 +194,7 @@
     },
     {
       "id": "clasicos-Algernon Blackwood - Obras completas",
-      "contentFile": "data/documents/ced971afda7e960afd.js",
+      "contentFile": "data/documents/ced971afda7e960afd.json.gz",
       "catalogId": null,
       "file": "Algernon Blackwood - Obras completas.md",
       "title": "Title: John Silence: Physician Extraordinary",
@@ -212,7 +212,7 @@
     },
     {
       "id": "clasicos-Ambrose Bierce - Obras completas",
-      "contentFile": "data/documents/8eca2fb976bb76ecec.js",
+      "contentFile": "data/documents/8eca2fb976bb76ecec.json.gz",
       "catalogId": null,
       "file": "Ambrose Bierce - Obras completas.md",
       "title": "Title: An Occurrence at Owl Creek Bridge",
@@ -230,7 +230,7 @@
     },
     {
       "id": "clasicos-Anatole France - Obras completas",
-      "contentFile": "data/documents/e30939fa749a0617f4.js",
+      "contentFile": "data/documents/e30939fa749a0617f4.json.gz",
       "catalogId": null,
       "file": "Anatole France - Obras completas.md",
       "title": "Title: The Revolt of the Angels",
@@ -248,7 +248,7 @@
     },
     {
       "id": "clasicos-Ann Radcliffe - Obras completas",
-      "contentFile": "data/documents/60d3abbb4fb9cff3fa.js",
+      "contentFile": "data/documents/60d3abbb4fb9cff3fa.json.gz",
       "catalogId": null,
       "file": "Ann Radcliffe - Obras completas.md",
       "title": "Title: The Mysteries of Udolpho",
@@ -266,7 +266,7 @@
     },
     {
       "id": "clasicos-Anna Adolph - Obras completas",
-      "contentFile": "data/documents/8b4bc9e834c25f545d.js",
+      "contentFile": "data/documents/8b4bc9e834c25f545d.json.gz",
       "catalogId": null,
       "file": "Anna Adolph - Obras completas.md",
       "title": "Title: Arqtiq",
@@ -284,7 +284,7 @@
     },
     {
       "id": "clasicos-Anna Katharine Green - Obras completas",
-      "contentFile": "data/documents/25ceb682df1622cfbb.js",
+      "contentFile": "data/documents/25ceb682df1622cfbb.json.gz",
       "catalogId": null,
       "file": "Anna Katharine Green - Obras completas.md",
       "title": "Title: The Leavenworth Case",
@@ -302,7 +302,7 @@
     },
     {
       "id": "clasicos-Anne Bronte - Obras completas",
-      "contentFile": "data/documents/9921c384be1334a1f8.js",
+      "contentFile": "data/documents/9921c384be1334a1f8.json.gz",
       "catalogId": null,
       "file": "Anne Bronte - Obras completas.md",
       "title": "Title: Agnes Grey",
@@ -320,7 +320,7 @@
     },
     {
       "id": "clasicos-Anonymous - Obras completas",
-      "contentFile": "data/documents/953b6d98ed0c347668.js",
+      "contentFile": "data/documents/953b6d98ed0c347668.json.gz",
       "catalogId": null,
       "file": "Anonymous - Obras completas.md",
       "title": "Title: Aladdin and the Magic Lamp",
@@ -338,7 +338,7 @@
     },
     {
       "id": "clasicos-Anthony Hope - Obras completas",
-      "contentFile": "data/documents/ac134eebf2937114ac.js",
+      "contentFile": "data/documents/ac134eebf2937114ac.json.gz",
       "catalogId": null,
       "file": "Anthony Hope - Obras completas.md",
       "title": "Title: Rupert of Hentzau",
@@ -356,7 +356,7 @@
     },
     {
       "id": "clasicos-Anthony Trollope - Obras completas - Parte 01",
-      "contentFile": "data/documents/ecbc8c0186e14a0129.js",
+      "contentFile": "data/documents/ecbc8c0186e14a0129.json.gz",
       "catalogId": null,
       "file": "Anthony Trollope - Obras completas - Parte 01.md",
       "title": "Title: Barchester Towers",
@@ -374,7 +374,7 @@
     },
     {
       "id": "clasicos-Anthony Trollope - Obras completas - Parte 02",
-      "contentFile": "data/documents/8c188189da5604f8bf.js",
+      "contentFile": "data/documents/8c188189da5604f8bf.json.gz",
       "catalogId": null,
       "file": "Anthony Trollope - Obras completas - Parte 02.md",
       "title": "Title: Framley Parsonage",
@@ -392,7 +392,7 @@
     },
     {
       "id": "clasicos-Anthony Trollope - Obras completas - Parte 03",
-      "contentFile": "data/documents/1eea956a40d526020d.js",
+      "contentFile": "data/documents/1eea956a40d526020d.json.gz",
       "catalogId": null,
       "file": "Anthony Trollope - Obras completas - Parte 03.md",
       "title": "Title: Orley Farm",
@@ -410,7 +410,7 @@
     },
     {
       "id": "clasicos-Anton Chekhov - Obras completas",
-      "contentFile": "data/documents/fff87e17a144954216.js",
+      "contentFile": "data/documents/fff87e17a144954216.json.gz",
       "catalogId": null,
       "file": "Anton Chekhov - Obras completas.md",
       "title": "Title: The Bet",
@@ -428,7 +428,7 @@
     },
     {
       "id": "clasicos-Apsley Cherry-Garrard - Obras completas",
-      "contentFile": "data/documents/e20ccbd185ee8af4bb.js",
+      "contentFile": "data/documents/e20ccbd185ee8af4bb.json.gz",
       "catalogId": null,
       "file": "Apsley Cherry-Garrard - Obras completas.md",
       "title": "Title: The Worst Journey in the World",
@@ -446,7 +446,7 @@
     },
     {
       "id": "clasicos-Aristotle - Obras completas",
-      "contentFile": "data/documents/9e09cc8524dcc46a8d.js",
+      "contentFile": "data/documents/9e09cc8524dcc46a8d.json.gz",
       "catalogId": null,
       "file": "Aristotle - Obras completas.md",
       "title": "Title: Nicomachean Ethics",
@@ -464,7 +464,7 @@
     },
     {
       "id": "clasicos-Arthur Conan Doyle - Obras completas - Parte 01",
-      "contentFile": "data/documents/fd18503301bc45f80a.js",
+      "contentFile": "data/documents/fd18503301bc45f80a.json.gz",
       "catalogId": null,
       "file": "Arthur Conan Doyle - Obras completas - Parte 01.md",
       "title": "Title: A Case of Identity",
@@ -482,7 +482,7 @@
     },
     {
       "id": "clasicos-Arthur Conan Doyle - Obras completas - Parte 02",
-      "contentFile": "data/documents/73a1fd01adff8afa96.js",
+      "contentFile": "data/documents/73a1fd01adff8afa96.json.gz",
       "catalogId": null,
       "file": "Arthur Conan Doyle - Obras completas - Parte 02.md",
       "title": "Title: The Poison Belt",
@@ -500,7 +500,7 @@
     },
     {
       "id": "clasicos-Arthur Machen - Obras completas",
-      "contentFile": "data/documents/c26389a33550f8f741.js",
+      "contentFile": "data/documents/c26389a33550f8f741.json.gz",
       "catalogId": null,
       "file": "Arthur Machen - Obras completas.md",
       "title": "Title: The Great God Pan",
@@ -518,7 +518,7 @@
     },
     {
       "id": "clasicos-Augustine of Hippo - Obras completas",
-      "contentFile": "data/documents/a3ef55e09b537e2c51.js",
+      "contentFile": "data/documents/a3ef55e09b537e2c51.json.gz",
       "catalogId": null,
       "file": "Augustine of Hippo - Obras completas.md",
       "title": "Title: Confessions of St. Augustine",
@@ -536,7 +536,7 @@
     },
     {
       "id": "clasicos-Barbara Constant - Obras completas",
-      "contentFile": "data/documents/216e0a1ef804d0f7bb.js",
+      "contentFile": "data/documents/216e0a1ef804d0f7bb.json.gz",
       "catalogId": null,
       "file": "Barbara Constant - Obras completas.md",
       "title": "Title: The Sound of Silence",
@@ -554,7 +554,7 @@
     },
     {
       "id": "clasicos-Ben Hecht - Obras completas",
-      "contentFile": "data/documents/2dc895e63d2d7bbc84.js",
+      "contentFile": "data/documents/2dc895e63d2d7bbc84.json.gz",
       "catalogId": null,
       "file": "Ben Hecht - Obras completas.md",
       "title": "Title: 1001 Afternoons in Chicago",
@@ -572,7 +572,7 @@
     },
     {
       "id": "clasicos-Benedict de Spinoza - Obras completas",
-      "contentFile": "data/documents/f19e49ba13c76a7877.js",
+      "contentFile": "data/documents/f19e49ba13c76a7877.json.gz",
       "catalogId": null,
       "file": "Benedict de Spinoza - Obras completas.md",
       "title": "Title: The Ethics",
@@ -590,7 +590,7 @@
     },
     {
       "id": "clasicos-Booker T. Washington - Obras completas",
-      "contentFile": "data/documents/1d71aad1d3c7d7daaa.js",
+      "contentFile": "data/documents/1d71aad1d3c7d7daaa.json.gz",
       "catalogId": null,
       "file": "Booker T. Washington - Obras completas.md",
       "title": "Title: Up from Slavery",
@@ -608,7 +608,7 @@
     },
     {
       "id": "clasicos-Booth Tarkington - Obras completas",
-      "contentFile": "data/documents/d1120add13beb3a4ef.js",
+      "contentFile": "data/documents/d1120add13beb3a4ef.json.gz",
       "catalogId": null,
       "file": "Booth Tarkington - Obras completas.md",
       "title": "Title: Alice Adams",
@@ -626,7 +626,7 @@
     },
     {
       "id": "clasicos-Bram Stoker - Obras completas",
-      "contentFile": "data/documents/90a587d35b82f5f507.js",
+      "contentFile": "data/documents/90a587d35b82f5f507.json.gz",
       "catalogId": null,
       "file": "Bram Stoker - Obras completas.md",
       "title": "Title: Dracula",
@@ -644,7 +644,7 @@
     },
     {
       "id": "clasicos-C.J. Cutliffe Hyne - Obras completas",
-      "contentFile": "data/documents/29e975b65bc35ffe44.js",
+      "contentFile": "data/documents/29e975b65bc35ffe44.json.gz",
       "catalogId": null,
       "file": "C.J. Cutliffe Hyne - Obras completas.md",
       "title": "Title: The Lost Continent",
@@ -662,7 +662,7 @@
     },
     {
       "id": "clasicos-Carl von Clausewitz - Obras completas",
-      "contentFile": "data/documents/717c80b01bbd42107d.js",
+      "contentFile": "data/documents/717c80b01bbd42107d.json.gz",
       "catalogId": null,
       "file": "Carl von Clausewitz - Obras completas.md",
       "title": "Title: On War",
@@ -680,7 +680,7 @@
     },
     {
       "id": "clasicos-Carlo Collodi - Obras completas",
-      "contentFile": "data/documents/20b2ef4e2f811ec003.js",
+      "contentFile": "data/documents/20b2ef4e2f811ec003.json.gz",
       "catalogId": null,
       "file": "Carlo Collodi - Obras completas.md",
       "title": "Title: The Adventures of Pinocchio",
@@ -698,7 +698,7 @@
     },
     {
       "id": "clasicos-Catherine Carswell - Obras completas",
-      "contentFile": "data/documents/7a2516d3a7601e5646.js",
+      "contentFile": "data/documents/7a2516d3a7601e5646.json.gz",
       "catalogId": null,
       "file": "Catherine Carswell - Obras completas.md",
       "title": "Title: Open the Door!",
@@ -716,7 +716,7 @@
     },
     {
       "id": "clasicos-Charles Brockden Brown - Obras completas",
-      "contentFile": "data/documents/608398faae2d5a1271.js",
+      "contentFile": "data/documents/608398faae2d5a1271.json.gz",
       "catalogId": null,
       "file": "Charles Brockden Brown - Obras completas.md",
       "title": "Title: Wieland",
@@ -734,7 +734,7 @@
     },
     {
       "id": "clasicos-Charles Darwin - Obras completas",
-      "contentFile": "data/documents/60dfaf2f981e33fa91.js",
+      "contentFile": "data/documents/60dfaf2f981e33fa91.json.gz",
       "catalogId": null,
       "file": "Charles Darwin - Obras completas.md",
       "title": "Title: On the Origin of Species",
@@ -752,7 +752,7 @@
     },
     {
       "id": "clasicos-Charles Dickens - Obras completas - Parte 01",
-      "contentFile": "data/documents/0213f94b1d55409337.js",
+      "contentFile": "data/documents/0213f94b1d55409337.json.gz",
       "catalogId": null,
       "file": "Charles Dickens - Obras completas - Parte 01.md",
       "title": "Title: A Christmas Carol",
@@ -770,7 +770,7 @@
     },
     {
       "id": "clasicos-Charles Dickens - Obras completas - Parte 02",
-      "contentFile": "data/documents/3c268efc9f25e4ab6a.js",
+      "contentFile": "data/documents/3c268efc9f25e4ab6a.json.gz",
       "catalogId": null,
       "file": "Charles Dickens - Obras completas - Parte 02.md",
       "title": "Title: Bleak House",
@@ -788,7 +788,7 @@
     },
     {
       "id": "clasicos-Charles Dickens - Obras completas - Parte 03",
-      "contentFile": "data/documents/b497c6d57b1cee87c5.js",
+      "contentFile": "data/documents/b497c6d57b1cee87c5.json.gz",
       "catalogId": null,
       "file": "Charles Dickens - Obras completas - Parte 03.md",
       "title": "Title: David Copperfield",
@@ -806,7 +806,7 @@
     },
     {
       "id": "clasicos-Charles Dickens - Obras completas - Parte 04",
-      "contentFile": "data/documents/8cefcbf25069cbc410.js",
+      "contentFile": "data/documents/8cefcbf25069cbc410.json.gz",
       "catalogId": null,
       "file": "Charles Dickens - Obras completas - Parte 04.md",
       "title": "Title: Great Expectations",
@@ -824,7 +824,7 @@
     },
     {
       "id": "clasicos-Charles Dickens - Obras completas - Parte 05",
-      "contentFile": "data/documents/333e8e11487af82c1e.js",
+      "contentFile": "data/documents/333e8e11487af82c1e.json.gz",
       "catalogId": null,
       "file": "Charles Dickens - Obras completas - Parte 05.md",
       "title": "Title: Little Dorrit",
@@ -842,7 +842,7 @@
     },
     {
       "id": "clasicos-Charles Dickens - Obras completas - Parte 06",
-      "contentFile": "data/documents/1f32e765cdab0a0337.js",
+      "contentFile": "data/documents/1f32e765cdab0a0337.json.gz",
       "catalogId": null,
       "file": "Charles Dickens - Obras completas - Parte 06.md",
       "title": "Title: Nicholas Nickleby",
@@ -860,7 +860,7 @@
     },
     {
       "id": "clasicos-Charles Dickens - Obras completas - Parte 07",
-      "contentFile": "data/documents/86c24889bf683b164d.js",
+      "contentFile": "data/documents/86c24889bf683b164d.json.gz",
       "catalogId": null,
       "file": "Charles Dickens - Obras completas - Parte 07.md",
       "title": "Title: Our Mutual Friend",
@@ -878,7 +878,7 @@
     },
     {
       "id": "clasicos-Charles Dickens - Obras completas - Parte 08",
-      "contentFile": "data/documents/24c62843292c8afe00.js",
+      "contentFile": "data/documents/24c62843292c8afe00.json.gz",
       "catalogId": null,
       "file": "Charles Dickens - Obras completas - Parte 08.md",
       "title": "Title: The Old Curiosity Shop",
@@ -896,7 +896,7 @@
     },
     {
       "id": "clasicos-Charles Dickens - Obras completas - Parte 09",
-      "contentFile": "data/documents/8b431b32aea4382232.js",
+      "contentFile": "data/documents/8b431b32aea4382232.json.gz",
       "catalogId": null,
       "file": "Charles Dickens - Obras completas - Parte 09.md",
       "title": "Title: The Pickwick Papers",
@@ -914,7 +914,7 @@
     },
     {
       "id": "clasicos-Charles Fort - Obras completas",
-      "contentFile": "data/documents/b3a2c06c27c48e0aeb.js",
+      "contentFile": "data/documents/b3a2c06c27c48e0aeb.json.gz",
       "catalogId": null,
       "file": "Charles Fort - Obras completas.md",
       "title": "Title: The Book of the Damned",
@@ -932,7 +932,7 @@
     },
     {
       "id": "clasicos-Charles W. Chesnutt - Obras completas",
-      "contentFile": "data/documents/c010a994b10d08dcd5.js",
+      "contentFile": "data/documents/c010a994b10d08dcd5.json.gz",
       "catalogId": null,
       "file": "Charles W. Chesnutt - Obras completas.md",
       "title": "Title: The House Behind the Cedars",
@@ -950,7 +950,7 @@
     },
     {
       "id": "clasicos-Charlotte Bronte - Obras completas - Parte 01",
-      "contentFile": "data/documents/8fd15eab0f9415c843.js",
+      "contentFile": "data/documents/8fd15eab0f9415c843.json.gz",
       "catalogId": null,
       "file": "Charlotte Bronte - Obras completas - Parte 01.md",
       "title": "Title: Jane Eyre",
@@ -968,7 +968,7 @@
     },
     {
       "id": "clasicos-Charlotte Bronte - Obras completas - Parte 02",
-      "contentFile": "data/documents/c800689026b8f9f449.js",
+      "contentFile": "data/documents/c800689026b8f9f449.json.gz",
       "catalogId": null,
       "file": "Charlotte Bronte - Obras completas - Parte 02.md",
       "title": "Title: Villette",
@@ -986,7 +986,7 @@
     },
     {
       "id": "clasicos-Charlotte Dacre - Obras completas",
-      "contentFile": "data/documents/a0ebbc15e1dc061c6e.js",
+      "contentFile": "data/documents/a0ebbc15e1dc061c6e.json.gz",
       "catalogId": null,
       "file": "Charlotte Dacre - Obras completas.md",
       "title": "Title: Zofloya",
@@ -1004,7 +1004,7 @@
     },
     {
       "id": "clasicos-Charlotte Perkins Gilman - Obras completas",
-      "contentFile": "data/documents/b916d80b26adf531cd.js",
+      "contentFile": "data/documents/b916d80b26adf531cd.json.gz",
       "catalogId": null,
       "file": "Charlotte Perkins Gilman - Obras completas.md",
       "title": "Title: Herland",
@@ -1022,7 +1022,7 @@
     },
     {
       "id": "clasicos-Christopher Morley - Obras completas",
-      "contentFile": "data/documents/73299a5d8933a1f8e6.js",
+      "contentFile": "data/documents/73299a5d8933a1f8e6.json.gz",
       "catalogId": null,
       "file": "Christopher Morley - Obras completas.md",
       "title": "Title: Parnassus on Wheels",
@@ -1040,7 +1040,7 @@
     },
     {
       "id": "clasicos-Clark Ashton Smith - Obras completas",
-      "contentFile": "data/documents/cf84c3bf05799eee59.js",
+      "contentFile": "data/documents/cf84c3bf05799eee59.json.gz",
       "catalogId": null,
       "file": "Clark Ashton Smith - Obras completas.md",
       "title": "Title: The Maker of Gargoyles",
@@ -1058,7 +1058,7 @@
     },
     {
       "id": "clasicos-Cotton Mather - Obras completas",
-      "contentFile": "data/documents/c43fa1a5d24ed99d0a.js",
+      "contentFile": "data/documents/c43fa1a5d24ed99d0a.json.gz",
       "catalogId": null,
       "file": "Cotton Mather - Obras completas.md",
       "title": "Title: Wonders of the Invisible World",
@@ -1076,7 +1076,7 @@
     },
     {
       "id": "clasicos-D.H. Lawrence - Obras completas",
-      "contentFile": "data/documents/3f2ed9b55817a2eaf9.js",
+      "contentFile": "data/documents/3f2ed9b55817a2eaf9.json.gz",
       "catalogId": null,
       "file": "D.H. Lawrence - Obras completas.md",
       "title": "Title: Lady Chatterley's Lover",
@@ -1094,7 +1094,7 @@
     },
     {
       "id": "clasicos-Daniel Defoe - Obras completas",
-      "contentFile": "data/documents/3f49d7a09fa689f095.js",
+      "contentFile": "data/documents/3f49d7a09fa689f095.json.gz",
       "catalogId": null,
       "file": "Daniel Defoe - Obras completas.md",
       "title": "Title: Journal of the Plague Year",
@@ -1112,7 +1112,7 @@
     },
     {
       "id": "clasicos-Dante - Obras completas",
-      "contentFile": "data/documents/220ec0deb683b2dcac.js",
+      "contentFile": "data/documents/220ec0deb683b2dcac.json.gz",
       "catalogId": null,
       "file": "Dante - Obras completas.md",
       "title": "Title: Paradiso",
@@ -1130,7 +1130,7 @@
     },
     {
       "id": "clasicos-David Hume - Obras completas",
-      "contentFile": "data/documents/e075a848351037b4b2.js",
+      "contentFile": "data/documents/e075a848351037b4b2.json.gz",
       "catalogId": null,
       "file": "David Hume - Obras completas.md",
       "title": "Title: A Treatise of Human Nature",
@@ -1148,7 +1148,7 @@
     },
     {
       "id": "clasicos-David Kalakaua - Obras completas",
-      "contentFile": "data/documents/c0d082c06472075c91.js",
+      "contentFile": "data/documents/c0d082c06472075c91.json.gz",
       "catalogId": null,
       "file": "David Kalakaua - Obras completas.md",
       "title": "Title: The Legends and Myths of Hawai'i",
@@ -1166,7 +1166,7 @@
     },
     {
       "id": "clasicos-David Lindsay - Obras completas",
-      "contentFile": "data/documents/d76b25483f32cd3ac9.js",
+      "contentFile": "data/documents/d76b25483f32cd3ac9.json.gz",
       "catalogId": null,
       "file": "David Lindsay - Obras completas.md",
       "title": "Title: A Voyage to Arcturus",
@@ -1184,7 +1184,7 @@
     },
     {
       "id": "clasicos-E. Everett Evans - Obras completas",
-      "contentFile": "data/documents/c6765aa5fcdf96cc2d.js",
+      "contentFile": "data/documents/c6765aa5fcdf96cc2d.json.gz",
       "catalogId": null,
       "file": "E. Everett Evans - Obras completas.md",
       "title": "Title: The Planet Mappers",
@@ -1202,7 +1202,7 @@
     },
     {
       "id": "clasicos-E.E. Cummings - Obras completas",
-      "contentFile": "data/documents/edb5791e57aeb26d6b.js",
+      "contentFile": "data/documents/edb5791e57aeb26d6b.json.gz",
       "catalogId": null,
       "file": "E.E. Cummings - Obras completas.md",
       "title": "Title: The Enormous Room",
@@ -1220,7 +1220,7 @@
     },
     {
       "id": "clasicos-E.F. Benson - Obras completas",
-      "contentFile": "data/documents/2afd38b52b3893d562.js",
+      "contentFile": "data/documents/2afd38b52b3893d562.json.gz",
       "catalogId": null,
       "file": "E.F. Benson - Obras completas.md",
       "title": "Title: Queen Lucia",
@@ -1238,7 +1238,7 @@
     },
     {
       "id": "clasicos-E.M. Forster - Obras completas",
-      "contentFile": "data/documents/2bbcbf18a37abb8896.js",
+      "contentFile": "data/documents/2bbcbf18a37abb8896.json.gz",
       "catalogId": null,
       "file": "E.M. Forster - Obras completas.md",
       "title": "Title: A Passage to India",
@@ -1256,7 +1256,7 @@
     },
     {
       "id": "clasicos-E.T.A. Hoffmann - Obras completas",
-      "contentFile": "data/documents/c7a48a220f9f7ea941.js",
+      "contentFile": "data/documents/c7a48a220f9f7ea941.json.gz",
       "catalogId": null,
       "file": "E.T.A. Hoffmann - Obras completas.md",
       "title": "Title: The Sandman",
@@ -1274,7 +1274,7 @@
     },
     {
       "id": "clasicos-Edgar Allan Poe - Obras completas",
-      "contentFile": "data/documents/1c75bf892d88c1cb92.js",
+      "contentFile": "data/documents/1c75bf892d88c1cb92.json.gz",
       "catalogId": null,
       "file": "Edgar Allan Poe - Obras completas.md",
       "title": "Title: A Descent into the Maelström",
@@ -1292,7 +1292,7 @@
     },
     {
       "id": "clasicos-Edgar Rice Burroughs - Obras completas - Parte 01",
-      "contentFile": "data/documents/c7ff13322f4ec81521.js",
+      "contentFile": "data/documents/c7ff13322f4ec81521.json.gz",
       "catalogId": null,
       "file": "Edgar Rice Burroughs - Obras completas - Parte 01.md",
       "title": "Title: A Princess of Mars",
@@ -1310,7 +1310,7 @@
     },
     {
       "id": "clasicos-Edgar Rice Burroughs - Obras completas - Parte 02",
-      "contentFile": "data/documents/d829c9ae62d9d44a70.js",
+      "contentFile": "data/documents/d829c9ae62d9d44a70.json.gz",
       "catalogId": null,
       "file": "Edgar Rice Burroughs - Obras completas - Parte 02.md",
       "title": "Title: The Gods of Mars",
@@ -1328,7 +1328,7 @@
     },
     {
       "id": "clasicos-Edgar Wallace - Obras completas",
-      "contentFile": "data/documents/9635edc1e9386bb3d1.js",
+      "contentFile": "data/documents/9635edc1e9386bb3d1.json.gz",
       "catalogId": null,
       "file": "Edgar Wallace - Obras completas.md",
       "title": "Title: The Clue of the Twisted Candle",
@@ -1346,7 +1346,7 @@
     },
     {
       "id": "clasicos-Edith Maude Hull - Obras completas",
-      "contentFile": "data/documents/fc4d6eccd18f1dfbe2.js",
+      "contentFile": "data/documents/fc4d6eccd18f1dfbe2.json.gz",
       "catalogId": null,
       "file": "Edith Maude Hull - Obras completas.md",
       "title": "Title: The Sheik",
@@ -1364,7 +1364,7 @@
     },
     {
       "id": "clasicos-Edith Nesbit - Obras completas",
-      "contentFile": "data/documents/5333a8656c07b10d81.js",
+      "contentFile": "data/documents/5333a8656c07b10d81.json.gz",
       "catalogId": null,
       "file": "Edith Nesbit - Obras completas.md",
       "title": "Title: Five Children and It",
@@ -1382,7 +1382,7 @@
     },
     {
       "id": "clasicos-Edith Wharton - Obras completas - Parte 01",
-      "contentFile": "data/documents/de3848609d51e96db7.js",
+      "contentFile": "data/documents/de3848609d51e96db7.json.gz",
       "catalogId": null,
       "file": "Edith Wharton - Obras completas - Parte 01.md",
       "title": "Title: A Son at the Front",
@@ -1400,7 +1400,7 @@
     },
     {
       "id": "clasicos-Edith Wharton - Obras completas - Parte 02",
-      "contentFile": "data/documents/347051212dcd8ae1b3.js",
+      "contentFile": "data/documents/347051212dcd8ae1b3.json.gz",
       "catalogId": null,
       "file": "Edith Wharton - Obras completas - Parte 02.md",
       "title": "Title: The House of Mirth",
@@ -1418,7 +1418,7 @@
     },
     {
       "id": "clasicos-Edward Bellamy - Obras completas",
-      "contentFile": "data/documents/e474f662b7bb76b816.js",
+      "contentFile": "data/documents/e474f662b7bb76b816.json.gz",
       "catalogId": null,
       "file": "Edward Bellamy - Obras completas.md",
       "title": "Title: Looking Backward",
@@ -1436,7 +1436,7 @@
     },
     {
       "id": "clasicos-Edward Bulwer-Lytton - Obras completas",
-      "contentFile": "data/documents/23f8db5b68abe5f812.js",
+      "contentFile": "data/documents/23f8db5b68abe5f812.json.gz",
       "catalogId": null,
       "file": "Edward Bulwer-Lytton - Obras completas.md",
       "title": "Title: The Coming Race",
@@ -1454,7 +1454,7 @@
     },
     {
       "id": "clasicos-Edward E. Smith - Obras completas",
-      "contentFile": "data/documents/9d822859b4464933f7.js",
+      "contentFile": "data/documents/9d822859b4464933f7.json.gz",
       "catalogId": null,
       "file": "Edward E. Smith - Obras completas.md",
       "title": "Title: First Lensman",
@@ -1472,7 +1472,7 @@
     },
     {
       "id": "clasicos-Edward J. Ruppelt - Obras completas",
-      "contentFile": "data/documents/513ff88a7624bcb5a2.js",
+      "contentFile": "data/documents/513ff88a7624bcb5a2.json.gz",
       "catalogId": null,
       "file": "Edward J. Ruppelt - Obras completas.md",
       "title": "Title: The Report on Unidentified Flying Objects",
@@ -1490,7 +1490,7 @@
     },
     {
       "id": "clasicos-Elizabeth Barrett Browning - Obras completas",
-      "contentFile": "data/documents/fa102e6f28928c24fc.js",
+      "contentFile": "data/documents/fa102e6f28928c24fc.json.gz",
       "catalogId": null,
       "file": "Elizabeth Barrett Browning - Obras completas.md",
       "title": "Title: Aurora Leigh",
@@ -1508,7 +1508,7 @@
     },
     {
       "id": "clasicos-Elizabeth Gaskell - Obras completas - Parte 01",
-      "contentFile": "data/documents/d42f3ede230730c843.js",
+      "contentFile": "data/documents/d42f3ede230730c843.json.gz",
       "catalogId": null,
       "file": "Elizabeth Gaskell - Obras completas - Parte 01.md",
       "title": "Title: Cranford",
@@ -1526,7 +1526,7 @@
     },
     {
       "id": "clasicos-Elizabeth Gaskell - Obras completas - Parte 02",
-      "contentFile": "data/documents/20b8a8b55099dd1f20.js",
+      "contentFile": "data/documents/20b8a8b55099dd1f20.json.gz",
       "catalogId": null,
       "file": "Elizabeth Gaskell - Obras completas - Parte 02.md",
       "title": "Title: Wives and Daughters",
@@ -1544,7 +1544,7 @@
     },
     {
       "id": "clasicos-Emile Gaboriau - Obras completas",
-      "contentFile": "data/documents/554337630ade88cbcc.js",
+      "contentFile": "data/documents/554337630ade88cbcc.json.gz",
       "catalogId": null,
       "file": "Emile Gaboriau - Obras completas.md",
       "title": "Title: The Mystery of Orcival",
@@ -1562,7 +1562,7 @@
     },
     {
       "id": "clasicos-Émile Zola - Obras completas",
-      "contentFile": "data/documents/fcb0fd094ccbd9d17d.js",
+      "contentFile": "data/documents/fcb0fd094ccbd9d17d.json.gz",
       "catalogId": null,
       "file": "Émile Zola - Obras completas.md",
       "title": "Title: Thérèse Raquin",
@@ -1580,7 +1580,7 @@
     },
     {
       "id": "clasicos-Emily Bronte - Obras completas",
-      "contentFile": "data/documents/675be7988ee864eff3.js",
+      "contentFile": "data/documents/675be7988ee864eff3.json.gz",
       "catalogId": null,
       "file": "Emily Bronte - Obras completas.md",
       "title": "Title: Wuthering Heights",
@@ -1598,7 +1598,7 @@
     },
     {
       "id": "clasicos-Emily Dickinson - Obras completas",
-      "contentFile": "data/documents/987ad1938ccaeffd03.js",
+      "contentFile": "data/documents/987ad1938ccaeffd03.json.gz",
       "catalogId": null,
       "file": "Emily Dickinson - Obras completas.md",
       "title": "Title: Poems: Three Series",
@@ -1616,7 +1616,7 @@
     },
     {
       "id": "clasicos-Emma Goldman - Obras completas",
-      "contentFile": "data/documents/f29432cdeec38c51e5.js",
+      "contentFile": "data/documents/f29432cdeec38c51e5.json.gz",
       "catalogId": null,
       "file": "Emma Goldman - Obras completas.md",
       "title": "Title: Anarchism and Other Essays",
@@ -1634,7 +1634,7 @@
     },
     {
       "id": "clasicos-Emma Orczy - Obras completas",
-      "contentFile": "data/documents/fd206128a188a84c66.js",
+      "contentFile": "data/documents/fd206128a188a84c66.json.gz",
       "catalogId": null,
       "file": "Emma Orczy - Obras completas.md",
       "title": "Title: The Scarlet Pimpernel",
@@ -1652,7 +1652,7 @@
     },
     {
       "id": "clasicos-Ernest Hemingway - Obras completas",
-      "contentFile": "data/documents/33a029ccfe44a2838a.js",
+      "contentFile": "data/documents/33a029ccfe44a2838a.json.gz",
       "catalogId": null,
       "file": "Ernest Hemingway - Obras completas.md",
       "title": "Title: Three Stories and Ten Poems",
@@ -1670,7 +1670,7 @@
     },
     {
       "id": "clasicos-Ernest Renan - Obras completas",
-      "contentFile": "data/documents/e3002837f3bd78a87d.js",
+      "contentFile": "data/documents/e3002837f3bd78a87d.json.gz",
       "catalogId": null,
       "file": "Ernest Renan - Obras completas.md",
       "title": "Title: The Life of Jesus",
@@ -1688,7 +1688,7 @@
     },
     {
       "id": "clasicos-Ernest Shackleton - Obras completas",
-      "contentFile": "data/documents/5708a5aaee6ab9bd90.js",
+      "contentFile": "data/documents/5708a5aaee6ab9bd90.json.gz",
       "catalogId": null,
       "file": "Ernest Shackleton - Obras completas.md",
       "title": "Title: South!",
@@ -1706,7 +1706,7 @@
     },
     {
       "id": "clasicos-Erskine Childers - Obras completas",
-      "contentFile": "data/documents/f5e1ec3701455e5bca.js",
+      "contentFile": "data/documents/f5e1ec3701455e5bca.json.gz",
       "catalogId": null,
       "file": "Erskine Childers - Obras completas.md",
       "title": "Title: The Riddle of the Sands",
@@ -1724,7 +1724,7 @@
     },
     {
       "id": "clasicos-F. Scott Fitzgerald - Obras completas",
-      "contentFile": "data/documents/7bee3a480ec4297cb1.js",
+      "contentFile": "data/documents/7bee3a480ec4297cb1.json.gz",
       "catalogId": null,
       "file": "F. Scott Fitzgerald - Obras completas.md",
       "title": "Title: Tales of the Jazz Age",
@@ -1742,7 +1742,7 @@
     },
     {
       "id": "clasicos-Ford Madox Ford - Obras completas",
-      "contentFile": "data/documents/c10a289713ebd97075.js",
+      "contentFile": "data/documents/c10a289713ebd97075.json.gz",
       "catalogId": null,
       "file": "Ford Madox Ford - Obras completas.md",
       "title": "Title: The Good Soldier",
@@ -1760,7 +1760,7 @@
     },
     {
       "id": "clasicos-Frances Hodgson Burnett - Obras completas",
-      "contentFile": "data/documents/1cb1a74baa09ef0022.js",
+      "contentFile": "data/documents/1cb1a74baa09ef0022.json.gz",
       "catalogId": null,
       "file": "Frances Hodgson Burnett - Obras completas.md",
       "title": "Title: A Lady Of Quality",
@@ -1778,7 +1778,7 @@
     },
     {
       "id": "clasicos-Francis Parkman - Obras completas",
-      "contentFile": "data/documents/369b30f38fdce0ec56.js",
+      "contentFile": "data/documents/369b30f38fdce0ec56.json.gz",
       "catalogId": null,
       "file": "Francis Parkman - Obras completas.md",
       "title": "Title: The Oregon Trail",
@@ -1796,7 +1796,7 @@
     },
     {
       "id": "clasicos-Frank Norris - Obras completas",
-      "contentFile": "data/documents/8847b3d2a2cad0120b.js",
+      "contentFile": "data/documents/8847b3d2a2cad0120b.json.gz",
       "catalogId": null,
       "file": "Frank Norris - Obras completas.md",
       "title": "Title: The Octopus",
@@ -1814,7 +1814,7 @@
     },
     {
       "id": "clasicos-Franz Kafka - Obras completas",
-      "contentFile": "data/documents/becdda186df4fcb9b9.js",
+      "contentFile": "data/documents/becdda186df4fcb9b9.json.gz",
       "catalogId": null,
       "file": "Franz Kafka - Obras completas.md",
       "title": "Title: A Hunger Artist",
@@ -1832,7 +1832,7 @@
     },
     {
       "id": "clasicos-Frederick Jackson Turner - Obras completas",
-      "contentFile": "data/documents/880865525d1e24ab78.js",
+      "contentFile": "data/documents/880865525d1e24ab78.json.gz",
       "catalogId": null,
       "file": "Frederick Jackson Turner - Obras completas.md",
       "title": "Title: The Frontier in American History",
@@ -1850,7 +1850,7 @@
     },
     {
       "id": "clasicos-Freeman Wills Crofts - Obras completas",
-      "contentFile": "data/documents/0fab38dd189f7b82a9.js",
+      "contentFile": "data/documents/0fab38dd189f7b82a9.json.gz",
       "catalogId": null,
       "file": "Freeman Wills Crofts - Obras completas.md",
       "title": "Title: The Cask",
@@ -1868,7 +1868,7 @@
     },
     {
       "id": "clasicos-Friedrich Nietzsche - Obras completas",
-      "contentFile": "data/documents/b106ae1359f8227b86.js",
+      "contentFile": "data/documents/b106ae1359f8227b86.json.gz",
       "catalogId": null,
       "file": "Friedrich Nietzsche - Obras completas.md",
       "title": "Title: Beyond Good and Evil",
@@ -1886,7 +1886,7 @@
     },
     {
       "id": "clasicos-Fyodor Dostoyevsky - Obras completas - Parte 01",
-      "contentFile": "data/documents/303683922fa3ce5e18.js",
+      "contentFile": "data/documents/303683922fa3ce5e18.json.gz",
       "catalogId": null,
       "file": "Fyodor Dostoyevsky - Obras completas - Parte 01.md",
       "title": "Title: Crime and Punishment",
@@ -1904,7 +1904,7 @@
     },
     {
       "id": "clasicos-Fyodor Dostoyevsky - Obras completas - Parte 02",
-      "contentFile": "data/documents/c35b9f748bdbf3bb13.js",
+      "contentFile": "data/documents/c35b9f748bdbf3bb13.json.gz",
       "catalogId": null,
       "file": "Fyodor Dostoyevsky - Obras completas - Parte 02.md",
       "title": "Title: The Brothers Karamazov",
@@ -1922,7 +1922,7 @@
     },
     {
       "id": "clasicos-Fyodor Dostoyevsky - Obras completas - Parte 03",
-      "contentFile": "data/documents/38541aefaa446920a3.js",
+      "contentFile": "data/documents/38541aefaa446920a3.json.gz",
       "catalogId": null,
       "file": "Fyodor Dostoyevsky - Obras completas - Parte 03.md",
       "title": "Title: The House of the Dead",
@@ -1940,7 +1940,7 @@
     },
     {
       "id": "clasicos-Fyodor Sologub - Obras completas",
-      "contentFile": "data/documents/eea25a7a014e967b43.js",
+      "contentFile": "data/documents/eea25a7a014e967b43.json.gz",
       "catalogId": null,
       "file": "Fyodor Sologub - Obras completas.md",
       "title": "Title: The Created Legend",
@@ -1958,7 +1958,7 @@
     },
     {
       "id": "clasicos-G.K. Chesterton - Obras completas",
-      "contentFile": "data/documents/fbc996c632d53d4456.js",
+      "contentFile": "data/documents/fbc996c632d53d4456.json.gz",
       "catalogId": null,
       "file": "G.K. Chesterton - Obras completas.md",
       "title": "Title: All Things Considered",
@@ -1976,7 +1976,7 @@
     },
     {
       "id": "clasicos-Gaston Leroux - Obras completas",
-      "contentFile": "data/documents/41180b6e961f0c790b.js",
+      "contentFile": "data/documents/41180b6e961f0c790b.json.gz",
       "catalogId": null,
       "file": "Gaston Leroux - Obras completas.md",
       "title": "Title: The Phantom of the Opera",
@@ -1994,7 +1994,7 @@
     },
     {
       "id": "clasicos-Geoffrey Chaucer - Obras completas",
-      "contentFile": "data/documents/30f7ba7d4426b5d985.js",
+      "contentFile": "data/documents/30f7ba7d4426b5d985.json.gz",
       "catalogId": null,
       "file": "Geoffrey Chaucer - Obras completas.md",
       "title": "Title: The Canterbury Tales",
@@ -2012,7 +2012,7 @@
     },
     {
       "id": "clasicos-George Bernard Shaw - Obras completas",
-      "contentFile": "data/documents/83d8d04b98bcbd8670.js",
+      "contentFile": "data/documents/83d8d04b98bcbd8670.json.gz",
       "catalogId": null,
       "file": "George Bernard Shaw - Obras completas.md",
       "title": "Title: Man and Superman",
@@ -2030,7 +2030,7 @@
     },
     {
       "id": "clasicos-George Eliot - Obras completas - Parte 01",
-      "contentFile": "data/documents/fc2ec005eb4bdd7293.js",
+      "contentFile": "data/documents/fc2ec005eb4bdd7293.json.gz",
       "catalogId": null,
       "file": "George Eliot - Obras completas - Parte 01.md",
       "title": "Title: Daniel Deronda",
@@ -2048,7 +2048,7 @@
     },
     {
       "id": "clasicos-George Eliot - Obras completas - Parte 02",
-      "contentFile": "data/documents/de4051098dd44a910a.js",
+      "contentFile": "data/documents/de4051098dd44a910a.json.gz",
       "catalogId": null,
       "file": "George Eliot - Obras completas - Parte 02.md",
       "title": "Title: Middlemarch",
@@ -2066,7 +2066,7 @@
     },
     {
       "id": "clasicos-George Eliot - Obras completas - Parte 03",
-      "contentFile": "data/documents/43827b1f24beae231f.js",
+      "contentFile": "data/documents/43827b1f24beae231f.json.gz",
       "catalogId": null,
       "file": "George Eliot - Obras completas - Parte 03.md",
       "title": "Title: Romola",
@@ -2084,7 +2084,7 @@
     },
     {
       "id": "clasicos-George Eliot - Obras completas - Parte 04",
-      "contentFile": "data/documents/d783b60191180b8d9d.js",
+      "contentFile": "data/documents/d783b60191180b8d9d.json.gz",
       "catalogId": null,
       "file": "George Eliot - Obras completas - Parte 04.md",
       "title": "Title: The Mill on the Floss",
@@ -2102,7 +2102,7 @@
     },
     {
       "id": "clasicos-George MacDonald - Obras completas",
-      "contentFile": "data/documents/078b52d121e613553f.js",
+      "contentFile": "data/documents/078b52d121e613553f.json.gz",
       "catalogId": null,
       "file": "George MacDonald - Obras completas.md",
       "title": "Title: Phantastes",
@@ -2120,7 +2120,7 @@
     },
     {
       "id": "clasicos-George O. Smith - Obras completas",
-      "contentFile": "data/documents/2d79716d5933e60eca.js",
+      "contentFile": "data/documents/2d79716d5933e60eca.json.gz",
       "catalogId": null,
       "file": "George O. Smith - Obras completas.md",
       "title": "Title: Operation Interstellar",
@@ -2138,7 +2138,7 @@
     },
     {
       "id": "clasicos-Georgette Heyer - Obras completas",
-      "contentFile": "data/documents/5b66cfc2e5613a08b2.js",
+      "contentFile": "data/documents/5b66cfc2e5613a08b2.json.gz",
       "catalogId": null,
       "file": "Georgette Heyer - Obras completas.md",
       "title": "Title: The Black Moth",
@@ -2156,7 +2156,7 @@
     },
     {
       "id": "clasicos-Gertrude Stein - Obras completas",
-      "contentFile": "data/documents/fa83613ee4ba9ee766.js",
+      "contentFile": "data/documents/fa83613ee4ba9ee766.json.gz",
       "catalogId": null,
       "file": "Gertrude Stein - Obras completas.md",
       "title": "Title: Tender Buttons",
@@ -2174,7 +2174,7 @@
     },
     {
       "id": "clasicos-Giovanni Boccaccio - Obras completas",
-      "contentFile": "data/documents/1dff4c71815f606648.js",
+      "contentFile": "data/documents/1dff4c71815f606648.json.gz",
       "catalogId": null,
       "file": "Giovanni Boccaccio - Obras completas.md",
       "title": "Title: The Decameron",
@@ -2192,7 +2192,7 @@
     },
     {
       "id": "clasicos-Grace Livingston Hill - Obras completas",
-      "contentFile": "data/documents/97e3a8b0b57a8dfc84.js",
+      "contentFile": "data/documents/97e3a8b0b57a8dfc84.json.gz",
       "catalogId": null,
       "file": "Grace Livingston Hill - Obras completas.md",
       "title": "Title: The Enchanted Barn",
@@ -2210,7 +2210,7 @@
     },
     {
       "id": "clasicos-Grace Miller White - Obras completas",
-      "contentFile": "data/documents/441b3815dbbc1064fd.js",
+      "contentFile": "data/documents/441b3815dbbc1064fd.json.gz",
       "catalogId": null,
       "file": "Grace Miller White - Obras completas.md",
       "title": "Title: Tess of the Storm Country",
@@ -2228,7 +2228,7 @@
     },
     {
       "id": "clasicos-Gustave Flaubert - Obras completas",
-      "contentFile": "data/documents/f9a828bab49d016442.js",
+      "contentFile": "data/documents/f9a828bab49d016442.json.gz",
       "catalogId": null,
       "file": "Gustave Flaubert - Obras completas.md",
       "title": "Title: Madame Bovary",
@@ -2246,7 +2246,7 @@
     },
     {
       "id": "clasicos-H. Addington Bruce - Obras completas",
-      "contentFile": "data/documents/17dd9f74a10746fe81.js",
+      "contentFile": "data/documents/17dd9f74a10746fe81.json.gz",
       "catalogId": null,
       "file": "H. Addington Bruce - Obras completas.md",
       "title": "Title: Historic Ghosts and Ghost Hunters",
@@ -2264,7 +2264,7 @@
     },
     {
       "id": "clasicos-H. Beam Piper - Obras completas",
-      "contentFile": "data/documents/c9395f48541ab2f820.js",
+      "contentFile": "data/documents/c9395f48541ab2f820.json.gz",
       "catalogId": null,
       "file": "H. Beam Piper - Obras completas.md",
       "title": "Title: Little Fuzzy",
@@ -2282,7 +2282,7 @@
     },
     {
       "id": "clasicos-H. Rider Haggard - Obras completas",
-      "contentFile": "data/documents/23bb4feb0865c1e0a7.js",
+      "contentFile": "data/documents/23bb4feb0865c1e0a7.json.gz",
       "catalogId": null,
       "file": "H. Rider Haggard - Obras completas.md",
       "title": "Title: Allan Quatermain",
@@ -2300,7 +2300,7 @@
     },
     {
       "id": "clasicos-H.G. Wells - Obras completas - Parte 01",
-      "contentFile": "data/documents/211f0b987accaa0176.js",
+      "contentFile": "data/documents/211f0b987accaa0176.json.gz",
       "catalogId": null,
       "file": "H.G. Wells - Obras completas - Parte 01.md",
       "title": "Title: Men Like Gods",
@@ -2318,7 +2318,7 @@
     },
     {
       "id": "clasicos-H.G. Wells - Obras completas - Parte 02",
-      "contentFile": "data/documents/1a8252dcdd47d41647.js",
+      "contentFile": "data/documents/1a8252dcdd47d41647.json.gz",
       "catalogId": null,
       "file": "H.G. Wells - Obras completas - Parte 02.md",
       "title": "Title: The World Set Free",
@@ -2336,7 +2336,7 @@
     },
     {
       "id": "clasicos-H.P. Lovecraft - Obras completas",
-      "contentFile": "data/documents/e39d5c7d9682ea55be.js",
+      "contentFile": "data/documents/e39d5c7d9682ea55be.json.gz",
       "catalogId": null,
       "file": "H.P. Lovecraft - Obras completas.md",
       "title": "Title: At the Mountains of Madness",
@@ -2354,7 +2354,7 @@
     },
     {
       "id": "clasicos-Hans Christian Andersen - Obras completas",
-      "contentFile": "data/documents/0df491a9404fdea344.js",
+      "contentFile": "data/documents/0df491a9404fdea344.json.gz",
       "catalogId": null,
       "file": "Hans Christian Andersen - Obras completas.md",
       "title": "Title: Andersen's Fairy Tales",
@@ -2372,7 +2372,7 @@
     },
     {
       "id": "clasicos-Harriet Beecher Stowe - Obras completas",
-      "contentFile": "data/documents/e6421494ac97649a6a.js",
+      "contentFile": "data/documents/e6421494ac97649a6a.json.gz",
       "catalogId": null,
       "file": "Harriet Beecher Stowe - Obras completas.md",
       "title": "Title: Uncle Tom's Cabin",
@@ -2390,7 +2390,7 @@
     },
     {
       "id": "clasicos-Harriet Jacobs - Obras completas",
-      "contentFile": "data/documents/d6520c73b13585cc9c.js",
+      "contentFile": "data/documents/d6520c73b13585cc9c.json.gz",
       "catalogId": null,
       "file": "Harriet Jacobs - Obras completas.md",
       "title": "Title: Incidents in the Life of a Slave Girl",
@@ -2408,7 +2408,7 @@
     },
     {
       "id": "clasicos-Helen Hunt Jackson - Obras completas",
-      "contentFile": "data/documents/1ec696a7cfddce328c.js",
+      "contentFile": "data/documents/1ec696a7cfddce328c.json.gz",
       "catalogId": null,
       "file": "Helen Hunt Jackson - Obras completas.md",
       "title": "Title: Ramona",
@@ -2426,7 +2426,7 @@
     },
     {
       "id": "clasicos-Henri Barbusse - Obras completas",
-      "contentFile": "data/documents/7e67fd943654608e06.js",
+      "contentFile": "data/documents/7e67fd943654608e06.json.gz",
       "catalogId": null,
       "file": "Henri Barbusse - Obras completas.md",
       "title": "Title: Under Fire",
@@ -2444,7 +2444,7 @@
     },
     {
       "id": "clasicos-Henrik Ibsen - Obras completas",
-      "contentFile": "data/documents/886d4247f2dc16edc1.js",
+      "contentFile": "data/documents/886d4247f2dc16edc1.json.gz",
       "catalogId": null,
       "file": "Henrik Ibsen - Obras completas.md",
       "title": "Title: A Doll's House",
@@ -2462,7 +2462,7 @@
     },
     {
       "id": "clasicos-Henry Adams - Obras completas",
-      "contentFile": "data/documents/200540a9ca710ba1e3.js",
+      "contentFile": "data/documents/200540a9ca710ba1e3.json.gz",
       "catalogId": null,
       "file": "Henry Adams - Obras completas.md",
       "title": "Title: The Education of Henry Adams",
@@ -2480,7 +2480,7 @@
     },
     {
       "id": "clasicos-Henry David Thoreau - Obras completas",
-      "contentFile": "data/documents/c5368f8c6bd15a823f.js",
+      "contentFile": "data/documents/c5368f8c6bd15a823f.json.gz",
       "catalogId": null,
       "file": "Henry David Thoreau - Obras completas.md",
       "title": "Title: A Week on the Concord and Merrimack Rivers",
@@ -2498,7 +2498,7 @@
     },
     {
       "id": "clasicos-Henry De Vere Stacpoole - Obras completas",
-      "contentFile": "data/documents/c48d1ecfb1d699fd29.js",
+      "contentFile": "data/documents/c48d1ecfb1d699fd29.json.gz",
       "catalogId": null,
       "file": "Henry De Vere Stacpoole - Obras completas.md",
       "title": "Title: The Blue Lagoon",
@@ -2516,7 +2516,7 @@
     },
     {
       "id": "clasicos-Henry Fielding - Obras completas",
-      "contentFile": "data/documents/c7bf62aa8fd7f3b918.js",
+      "contentFile": "data/documents/c7bf62aa8fd7f3b918.json.gz",
       "catalogId": null,
       "file": "Henry Fielding - Obras completas.md",
       "title": "Title: Tom Jones",
@@ -2534,7 +2534,7 @@
     },
     {
       "id": "clasicos-Henry James - Obras completas",
-      "contentFile": "data/documents/4fc1274e9e68d8f19f.js",
+      "contentFile": "data/documents/4fc1274e9e68d8f19f.json.gz",
       "catalogId": null,
       "file": "Henry James - Obras completas.md",
       "title": "Title: The Ambassadors",
@@ -2552,7 +2552,7 @@
     },
     {
       "id": "clasicos-Henry Morton Stanley - Obras completas",
-      "contentFile": "data/documents/be3c0af78b492728dd.js",
+      "contentFile": "data/documents/be3c0af78b492728dd.json.gz",
       "catalogId": null,
       "file": "Henry Morton Stanley - Obras completas.md",
       "title": "Title: How I Found Livingstone",
@@ -2570,7 +2570,7 @@
     },
     {
       "id": "clasicos-Henry Wadsworth Longfellow - Obras completas",
-      "contentFile": "data/documents/49aea2000fa496ebc3.js",
+      "contentFile": "data/documents/49aea2000fa496ebc3.json.gz",
       "catalogId": null,
       "file": "Henry Wadsworth Longfellow - Obras completas.md",
       "title": "Title: Tales of a Wayside Inn",
@@ -2588,7 +2588,7 @@
     },
     {
       "id": "clasicos-Herman Hesse - Obras completas",
-      "contentFile": "data/documents/3571773e5ce77e11be.js",
+      "contentFile": "data/documents/3571773e5ce77e11be.json.gz",
       "catalogId": null,
       "file": "Herman Hesse - Obras completas.md",
       "title": "Title: Siddhartha",
@@ -2606,7 +2606,7 @@
     },
     {
       "id": "clasicos-Herman Melville - Obras completas",
-      "contentFile": "data/documents/040956565a0190c9b1.js",
+      "contentFile": "data/documents/040956565a0190c9b1.json.gz",
       "catalogId": null,
       "file": "Herman Melville - Obras completas.md",
       "title": "Title: Bartleby, the Scrivener",
@@ -2624,7 +2624,7 @@
     },
     {
       "id": "clasicos-Herodotus - Obras completas",
-      "contentFile": "data/documents/e3a9671fc5df643ea6.js",
+      "contentFile": "data/documents/e3a9671fc5df643ea6.json.gz",
       "catalogId": null,
       "file": "Herodotus - Obras completas.md",
       "title": "Title: The Histories",
@@ -2642,7 +2642,7 @@
     },
     {
       "id": "clasicos-Homer - Obras completas",
-      "contentFile": "data/documents/0004636f1684c5627a.js",
+      "contentFile": "data/documents/0004636f1684c5627a.json.gz",
       "catalogId": null,
       "file": "Homer - Obras completas.md",
       "title": "Title: The Iliad",
@@ -2660,7 +2660,7 @@
     },
     {
       "id": "clasicos-Honoré de Balzac - Obras completas",
-      "contentFile": "data/documents/96c69724cf57711598.js",
+      "contentFile": "data/documents/96c69724cf57711598.json.gz",
       "catalogId": null,
       "file": "Honoré de Balzac - Obras completas.md",
       "title": "Title: Colonel Chabert",
@@ -2678,7 +2678,7 @@
     },
     {
       "id": "clasicos-Horace Walpole - Obras completas",
-      "contentFile": "data/documents/82dabf889878a8f862.js",
+      "contentFile": "data/documents/82dabf889878a8f862.json.gz",
       "catalogId": null,
       "file": "Horace Walpole - Obras completas.md",
       "title": "Title: The Castle of Otranto",
@@ -2696,7 +2696,7 @@
     },
     {
       "id": "clasicos-Howard Pyle - Obras completas",
-      "contentFile": "data/documents/c337268ef0a0b9b0fc.js",
+      "contentFile": "data/documents/c337268ef0a0b9b0fc.json.gz",
       "catalogId": null,
       "file": "Howard Pyle - Obras completas.md",
       "title": "Title: The Merry Adventures of Robin Hood",
@@ -2714,7 +2714,7 @@
     },
     {
       "id": "clasicos-Ida B. Wells - Obras completas",
-      "contentFile": "data/documents/3ab7fcbe5214f07c50.js",
+      "contentFile": "data/documents/3ab7fcbe5214f07c50.json.gz",
       "catalogId": null,
       "file": "Ida B. Wells - Obras completas.md",
       "title": "Title: Southern Horrors: Lynch Law in All Its Phases",
@@ -2732,7 +2732,7 @@
     },
     {
       "id": "clasicos-Immanuel Kant - Obras completas",
-      "contentFile": "data/documents/b4dcc8e8a49ea825e8.js",
+      "contentFile": "data/documents/b4dcc8e8a49ea825e8.json.gz",
       "catalogId": null,
       "file": "Immanuel Kant - Obras completas.md",
       "title": "Title: Critique of Pure Reason",
@@ -2750,7 +2750,7 @@
     },
     {
       "id": "clasicos-Ivan Turgenev - Obras completas",
-      "contentFile": "data/documents/7da6f7768b56f06509.js",
+      "contentFile": "data/documents/7da6f7768b56f06509.json.gz",
       "catalogId": null,
       "file": "Ivan Turgenev - Obras completas.md",
       "title": "Title: Fathers and Sons",
@@ -2768,7 +2768,7 @@
     },
     {
       "id": "clasicos-J. M. Barrie - Obras completas",
-      "contentFile": "data/documents/311ac702f8ae89cc08.js",
+      "contentFile": "data/documents/311ac702f8ae89cc08.json.gz",
       "catalogId": null,
       "file": "J. M. Barrie - Obras completas.md",
       "title": "Title: Peter Pan",
@@ -2786,7 +2786,7 @@
     },
     {
       "id": "clasicos-J. Meade Falkner - Obras completas",
-      "contentFile": "data/documents/58bc48d8acedd2b5da.js",
+      "contentFile": "data/documents/58bc48d8acedd2b5da.json.gz",
       "catalogId": null,
       "file": "J. Meade Falkner - Obras completas.md",
       "title": "Title: Moonfleet",
@@ -2804,7 +2804,7 @@
     },
     {
       "id": "clasicos-J. Sheridan LeFanu - Obras completas",
-      "contentFile": "data/documents/850abbb9e5221859d1.js",
+      "contentFile": "data/documents/850abbb9e5221859d1.json.gz",
       "catalogId": null,
       "file": "J. Sheridan LeFanu - Obras completas.md",
       "title": "Title: Carmilla",
@@ -2822,7 +2822,7 @@
     },
     {
       "id": "clasicos-J.S. Fletcher - Obras completas",
-      "contentFile": "data/documents/7de2352fac7bdb1947.js",
+      "contentFile": "data/documents/7de2352fac7bdb1947.json.gz",
       "catalogId": null,
       "file": "J.S. Fletcher - Obras completas.md",
       "title": "Title: Scarhaven Keep",
@@ -2840,7 +2840,7 @@
     },
     {
       "id": "clasicos-Jack London - Obras completas - Parte 01",
-      "contentFile": "data/documents/cca88ed05a6d744e4e.js",
+      "contentFile": "data/documents/cca88ed05a6d744e4e.json.gz",
       "catalogId": null,
       "file": "Jack London - Obras completas - Parte 01.md",
       "title": "Title: Lost Face",
@@ -2858,7 +2858,7 @@
     },
     {
       "id": "clasicos-Jack London - Obras completas - Parte 02",
-      "contentFile": "data/documents/91282e9e91734861b9.js",
+      "contentFile": "data/documents/91282e9e91734861b9.json.gz",
       "catalogId": null,
       "file": "Jack London - Obras completas - Parte 02.md",
       "title": "Title: The Scarlet Plague",
@@ -2876,7 +2876,7 @@
     },
     {
       "id": "clasicos-James Branch Cabell - Obras completas",
-      "contentFile": "data/documents/11f478b8ed05c34906.js",
+      "contentFile": "data/documents/11f478b8ed05c34906.json.gz",
       "catalogId": null,
       "file": "James Branch Cabell - Obras completas.md",
       "title": "Title: Jurgen",
@@ -2894,7 +2894,7 @@
     },
     {
       "id": "clasicos-James De Mille - Obras completas",
-      "contentFile": "data/documents/87fe6c109a44611d2e.js",
+      "contentFile": "data/documents/87fe6c109a44611d2e.json.gz",
       "catalogId": null,
       "file": "James De Mille - Obras completas.md",
       "title": "Title: A Strange Manuscript Found in a Copper Cylinder",
@@ -2912,7 +2912,7 @@
     },
     {
       "id": "clasicos-James Fenimore Cooper - Obras completas - Parte 01",
-      "contentFile": "data/documents/56cc198bd491feab43.js",
+      "contentFile": "data/documents/56cc198bd491feab43.json.gz",
       "catalogId": null,
       "file": "James Fenimore Cooper - Obras completas - Parte 01.md",
       "title": "Title: The Crater",
@@ -2930,7 +2930,7 @@
     },
     {
       "id": "clasicos-James Fenimore Cooper - Obras completas - Parte 02",
-      "contentFile": "data/documents/f3ef88637ef69a0445.js",
+      "contentFile": "data/documents/f3ef88637ef69a0445.json.gz",
       "catalogId": null,
       "file": "James Fenimore Cooper - Obras completas - Parte 02.md",
       "title": "Title: The Last of the Mohicans",
@@ -2948,7 +2948,7 @@
     },
     {
       "id": "clasicos-James Fenimore Cooper - Obras completas - Parte 03",
-      "contentFile": "data/documents/9300b7deacaca0b2e5.js",
+      "contentFile": "data/documents/9300b7deacaca0b2e5.json.gz",
       "catalogId": null,
       "file": "James Fenimore Cooper - Obras completas - Parte 03.md",
       "title": "Title: The Prairie",
@@ -2966,7 +2966,7 @@
     },
     {
       "id": "clasicos-James Joyce - Obras completas",
-      "contentFile": "data/documents/4453659bf0bc923c69.js",
+      "contentFile": "data/documents/4453659bf0bc923c69.json.gz",
       "catalogId": null,
       "file": "James Joyce - Obras completas.md",
       "title": "Title: A Portrait of the Artist as a Young Man",
@@ -2984,7 +2984,7 @@
     },
     {
       "id": "clasicos-James Stephens - Obras completas",
-      "contentFile": "data/documents/8e564ea6e3355ef672.js",
+      "contentFile": "data/documents/8e564ea6e3355ef672.json.gz",
       "catalogId": null,
       "file": "James Stephens - Obras completas.md",
       "title": "Title: Irish Fairy Tales",
@@ -3002,7 +3002,7 @@
     },
     {
       "id": "clasicos-Jane Addams - Obras completas",
-      "contentFile": "data/documents/be15824ab6c9f78f22.js",
+      "contentFile": "data/documents/be15824ab6c9f78f22.json.gz",
       "catalogId": null,
       "file": "Jane Addams - Obras completas.md",
       "title": "Title: Twenty Years at Hull House",
@@ -3020,7 +3020,7 @@
     },
     {
       "id": "clasicos-Jane Austen - Obras completas - Parte 01",
-      "contentFile": "data/documents/95faebb0656a07d138.js",
+      "contentFile": "data/documents/95faebb0656a07d138.json.gz",
       "catalogId": null,
       "file": "Jane Austen - Obras completas - Parte 01.md",
       "title": "Title: Emma",
@@ -3038,7 +3038,7 @@
     },
     {
       "id": "clasicos-Jane Austen - Obras completas - Parte 02",
-      "contentFile": "data/documents/1a8cfba6d36834908d.js",
+      "contentFile": "data/documents/1a8cfba6d36834908d.json.gz",
       "catalogId": null,
       "file": "Jane Austen - Obras completas - Parte 02.md",
       "title": "Title: Persuasion",
@@ -3056,7 +3056,7 @@
     },
     {
       "id": "clasicos-Jane Webb - Obras completas",
-      "contentFile": "data/documents/5db819a147b2723af6.js",
+      "contentFile": "data/documents/5db819a147b2723af6.json.gz",
       "catalogId": null,
       "file": "Jane Webb - Obras completas.md",
       "title": "Title: The Mummy!",
@@ -3074,7 +3074,7 @@
     },
     {
       "id": "clasicos-Jerome K. Jerome - Obras completas",
-      "contentFile": "data/documents/b974bc1860a153650a.js",
+      "contentFile": "data/documents/b974bc1860a153650a.json.gz",
       "catalogId": null,
       "file": "Jerome K. Jerome - Obras completas.md",
       "title": "Title: Three Men in a Boat",
@@ -3092,7 +3092,7 @@
     },
     {
       "id": "clasicos-Johann David Wyss - Obras completas",
-      "contentFile": "data/documents/74dd43b482a003d41d.js",
+      "contentFile": "data/documents/74dd43b482a003d41d.json.gz",
       "catalogId": null,
       "file": "Johann David Wyss - Obras completas.md",
       "title": "Title: Swiss Family Robinson",
@@ -3110,7 +3110,7 @@
     },
     {
       "id": "clasicos-Johann Wolfgang von Goethe - Obras completas",
-      "contentFile": "data/documents/5994f79f2d4c366f89.js",
+      "contentFile": "data/documents/5994f79f2d4c366f89.json.gz",
       "catalogId": null,
       "file": "Johann Wolfgang von Goethe - Obras completas.md",
       "title": "Title: Faust",
@@ -3128,7 +3128,7 @@
     },
     {
       "id": "clasicos-John Ames Mitchell - Obras completas",
-      "contentFile": "data/documents/e8dbf124f0dda5dce6.js",
+      "contentFile": "data/documents/e8dbf124f0dda5dce6.json.gz",
       "catalogId": null,
       "file": "John Ames Mitchell - Obras completas.md",
       "title": "Title: The Last American",
@@ -3146,7 +3146,7 @@
     },
     {
       "id": "clasicos-John Buchan - Obras completas",
-      "contentFile": "data/documents/2c50d5346207fdf0b0.js",
+      "contentFile": "data/documents/2c50d5346207fdf0b0.json.gz",
       "catalogId": null,
       "file": "John Buchan - Obras completas.md",
       "title": "Title: Greenmantle",
@@ -3164,7 +3164,7 @@
     },
     {
       "id": "clasicos-John Dos Passos - Obras completas",
-      "contentFile": "data/documents/cafa1efa031f4330db.js",
+      "contentFile": "data/documents/cafa1efa031f4330db.json.gz",
       "catalogId": null,
       "file": "John Dos Passos - Obras completas.md",
       "title": "Title: Three Soldiers",
@@ -3182,7 +3182,7 @@
     },
     {
       "id": "clasicos-John Milton - Obras completas",
-      "contentFile": "data/documents/d434bc6f21f4ee9aa9.js",
+      "contentFile": "data/documents/d434bc6f21f4ee9aa9.json.gz",
       "catalogId": null,
       "file": "John Milton - Obras completas.md",
       "title": "Title: Paradise Lost",
@@ -3200,7 +3200,7 @@
     },
     {
       "id": "clasicos-John Reed - Obras completas",
-      "contentFile": "data/documents/c0b9c2292d42eb00c7.js",
+      "contentFile": "data/documents/c0b9c2292d42eb00c7.json.gz",
       "catalogId": null,
       "file": "John Reed - Obras completas.md",
       "title": "Title: Ten Days that Shook the World",
@@ -3218,7 +3218,7 @@
     },
     {
       "id": "clasicos-John Stuart Mill - Obras completas",
-      "contentFile": "data/documents/32a3260d1bfd55408d.js",
+      "contentFile": "data/documents/32a3260d1bfd55408d.json.gz",
       "catalogId": null,
       "file": "John Stuart Mill - Obras completas.md",
       "title": "Title: On Liberty",
@@ -3236,7 +3236,7 @@
     },
     {
       "id": "clasicos-John W. Campbell - Obras completas",
-      "contentFile": "data/documents/c644204c6424ef01fb.js",
+      "contentFile": "data/documents/c644204c6424ef01fb.json.gz",
       "catalogId": null,
       "file": "John W. Campbell - Obras completas.md",
       "title": "Title: Invaders from the Infinite",
@@ -3254,7 +3254,7 @@
     },
     {
       "id": "clasicos-Jonathan Swift - Obras completas",
-      "contentFile": "data/documents/8ba48c2bb5894b1a8d.js",
+      "contentFile": "data/documents/8ba48c2bb5894b1a8d.json.gz",
       "catalogId": null,
       "file": "Jonathan Swift - Obras completas.md",
       "title": "Title: A Modest Proposal",
@@ -3272,7 +3272,7 @@
     },
     {
       "id": "clasicos-José Rizal - Obras completas",
-      "contentFile": "data/documents/6456168d061191e904.js",
+      "contentFile": "data/documents/6456168d061191e904.json.gz",
       "catalogId": null,
       "file": "José Rizal - Obras completas.md",
       "title": "Title: Noli Me Tángere",
@@ -3290,7 +3290,7 @@
     },
     {
       "id": "clasicos-Joseph Conrad - Obras completas - Parte 01",
-      "contentFile": "data/documents/f3f05886252b60b13d.js",
+      "contentFile": "data/documents/f3f05886252b60b13d.json.gz",
       "catalogId": null,
       "file": "Joseph Conrad - Obras completas - Parte 01.md",
       "title": "Title: Heart of Darkness",
@@ -3308,7 +3308,7 @@
     },
     {
       "id": "clasicos-Joseph Conrad - Obras completas - Parte 02",
-      "contentFile": "data/documents/229cb22d45e4187f79.js",
+      "contentFile": "data/documents/229cb22d45e4187f79.json.gz",
       "catalogId": null,
       "file": "Joseph Conrad - Obras completas - Parte 02.md",
       "title": "Title: Victory",
@@ -3326,7 +3326,7 @@
     },
     {
       "id": "clasicos-Jules Verne - Obras completas - Parte 01",
-      "contentFile": "data/documents/04e180850099c17275.js",
+      "contentFile": "data/documents/04e180850099c17275.json.gz",
       "catalogId": null,
       "file": "Jules Verne - Obras completas - Parte 01.md",
       "title": "Title: An Antarctic Mystery",
@@ -3344,7 +3344,7 @@
     },
     {
       "id": "clasicos-Jules Verne - Obras completas - Parte 02",
-      "contentFile": "data/documents/c790e8cd69bac0725f.js",
+      "contentFile": "data/documents/c790e8cd69bac0725f.json.gz",
       "catalogId": null,
       "file": "Jules Verne - Obras completas - Parte 02.md",
       "title": "Title: The Mysterious Island",
@@ -3362,7 +3362,7 @@
     },
     {
       "id": "clasicos-Julius Caesar - Obras completas",
-      "contentFile": "data/documents/8fbcd17d403c3c939a.js",
+      "contentFile": "data/documents/8fbcd17d403c3c939a.json.gz",
       "catalogId": null,
       "file": "Julius Caesar - Obras completas.md",
       "title": "Title: Commentaries on the Gallic War",
@@ -3380,7 +3380,7 @@
     },
     {
       "id": "clasicos-L. Frank Baum - Obras completas",
-      "contentFile": "data/documents/73b9ea0961aeec18a9.js",
+      "contentFile": "data/documents/73b9ea0961aeec18a9.json.gz",
       "catalogId": null,
       "file": "L. Frank Baum - Obras completas.md",
       "title": "Title: A Kidnapped Santa Claus",
@@ -3398,7 +3398,7 @@
     },
     {
       "id": "clasicos-Leo Tolstoy - Obras completas - Parte 01",
-      "contentFile": "data/documents/eea92086f93fef9222.js",
+      "contentFile": "data/documents/eea92086f93fef9222.json.gz",
       "catalogId": null,
       "file": "Leo Tolstoy - Obras completas - Parte 01.md",
       "title": "Title: Anna Karenina",
@@ -3416,7 +3416,7 @@
     },
     {
       "id": "clasicos-Leo Tolstoy - Obras completas - Parte 02",
-      "contentFile": "data/documents/bc594b70076a689ada.js",
+      "contentFile": "data/documents/bc594b70076a689ada.json.gz",
       "catalogId": null,
       "file": "Leo Tolstoy - Obras completas - Parte 02.md",
       "title": "Title: War and Peace",
@@ -3434,7 +3434,7 @@
     },
     {
       "id": "clasicos-Leo Tolstoy - Obras completas - Parte 03",
-      "contentFile": "data/documents/f521729ad9f72c2c1d.js",
+      "contentFile": "data/documents/f521729ad9f72c2c1d.json.gz",
       "catalogId": null,
       "file": "Leo Tolstoy - Obras completas - Parte 03.md",
       "title": "Leo Tolstoy - Obras completas - Parte 03",
@@ -3452,7 +3452,7 @@
     },
     {
       "id": "clasicos-Lew Wallace - Obras completas",
-      "contentFile": "data/documents/907e1772669799baaa.js",
+      "contentFile": "data/documents/907e1772669799baaa.json.gz",
       "catalogId": null,
       "file": "Lew Wallace - Obras completas.md",
       "title": "Title: Ben-Hur",
@@ -3470,7 +3470,7 @@
     },
     {
       "id": "clasicos-Lewis Carroll - Obras completas",
-      "contentFile": "data/documents/814def11fbabd828ee.js",
+      "contentFile": "data/documents/814def11fbabd828ee.json.gz",
       "catalogId": null,
       "file": "Lewis Carroll - Obras completas.md",
       "title": "Title: Alice's Adventures in Wonderland",
@@ -3488,7 +3488,7 @@
     },
     {
       "id": "clasicos-Lord Dunsany - Obras completas",
-      "contentFile": "data/documents/3c90af8f56b59af7dc.js",
+      "contentFile": "data/documents/3c90af8f56b59af7dc.json.gz",
       "catalogId": null,
       "file": "Lord Dunsany - Obras completas.md",
       "title": "Title: The Gods of Pegana",
@@ -3506,7 +3506,7 @@
     },
     {
       "id": "clasicos-Louisa May Alcott - Obras completas - Parte 01",
-      "contentFile": "data/documents/5102955d7bcf0edcc4.js",
+      "contentFile": "data/documents/5102955d7bcf0edcc4.json.gz",
       "catalogId": null,
       "file": "Louisa May Alcott - Obras completas - Parte 01.md",
       "title": "Title: An Old-Fashioned Girl",
@@ -3524,7 +3524,7 @@
     },
     {
       "id": "clasicos-Louisa May Alcott - Obras completas - Parte 02",
-      "contentFile": "data/documents/f205e43ca159667da2.js",
+      "contentFile": "data/documents/f205e43ca159667da2.json.gz",
       "catalogId": null,
       "file": "Louisa May Alcott - Obras completas - Parte 02.md",
       "title": "Title: Little Women",
@@ -3542,7 +3542,7 @@
     },
     {
       "id": "clasicos-Lucy Maud Montgomery - Obras completas - Parte 01",
-      "contentFile": "data/documents/2ad76140d9739e2c33.js",
+      "contentFile": "data/documents/2ad76140d9739e2c33.json.gz",
       "catalogId": null,
       "file": "Lucy Maud Montgomery - Obras completas - Parte 01.md",
       "title": "Title: Anne of Avonlea",
@@ -3560,7 +3560,7 @@
     },
     {
       "id": "clasicos-Lucy Maud Montgomery - Obras completas - Parte 02",
-      "contentFile": "data/documents/52159a24575afeb472.js",
+      "contentFile": "data/documents/52159a24575afeb472.json.gz",
       "catalogId": null,
       "file": "Lucy Maud Montgomery - Obras completas - Parte 02.md",
       "title": "Title: Rainbow Valley",
@@ -3578,7 +3578,7 @@
     },
     {
       "id": "clasicos-M.R. James - Obras completas",
-      "contentFile": "data/documents/54fabf0000a265e3da.js",
+      "contentFile": "data/documents/54fabf0000a265e3da.json.gz",
       "catalogId": null,
       "file": "M.R. James - Obras completas.md",
       "title": "Title: Casting the Runes",
@@ -3596,7 +3596,7 @@
     },
     {
       "id": "clasicos-Maimonides - Obras completas",
-      "contentFile": "data/documents/0bedd5cbcfeeef9c52.js",
+      "contentFile": "data/documents/0bedd5cbcfeeef9c52.json.gz",
       "catalogId": null,
       "file": "Maimonides - Obras completas.md",
       "title": "Title: The Guide for the Perplexed",
@@ -3614,7 +3614,7 @@
     },
     {
       "id": "clasicos-Marcel Proust - Obras completas",
-      "contentFile": "data/documents/e4a51ce2a6f4cfbb0b.js",
+      "contentFile": "data/documents/e4a51ce2a6f4cfbb0b.json.gz",
       "catalogId": null,
       "file": "Marcel Proust - Obras completas.md",
       "title": "Title: Swann's Way",
@@ -3632,7 +3632,7 @@
     },
     {
       "id": "clasicos-Marie Belloc Lowndes - Obras completas",
-      "contentFile": "data/documents/3f57580309d540e4fc.js",
+      "contentFile": "data/documents/3f57580309d540e4fc.json.gz",
       "catalogId": null,
       "file": "Marie Belloc Lowndes - Obras completas.md",
       "title": "Title: The Lodger",
@@ -3650,7 +3650,7 @@
     },
     {
       "id": "clasicos-Mark Twain - Obras completas - Parte 01",
-      "contentFile": "data/documents/374c12730244b745a1.js",
+      "contentFile": "data/documents/374c12730244b745a1.json.gz",
       "catalogId": null,
       "file": "Mark Twain - Obras completas - Parte 01.md",
       "title": "Title: A Connecticut Yankee in King Arthur's Court",
@@ -3668,7 +3668,7 @@
     },
     {
       "id": "clasicos-Mark Twain - Obras completas - Parte 02",
-      "contentFile": "data/documents/5c5a2dc7fa74ca092a.js",
+      "contentFile": "data/documents/5c5a2dc7fa74ca092a.json.gz",
       "catalogId": null,
       "file": "Mark Twain - Obras completas - Parte 02.md",
       "title": "Title: Roughing It",
@@ -3686,7 +3686,7 @@
     },
     {
       "id": "clasicos-Martin Luther - Obras completas",
-      "contentFile": "data/documents/690f952f7caeb0dfe3.js",
+      "contentFile": "data/documents/690f952f7caeb0dfe3.json.gz",
       "catalogId": null,
       "file": "Martin Luther - Obras completas.md",
       "title": "Title: On the Bondage of the Will",
@@ -3704,7 +3704,7 @@
     },
     {
       "id": "clasicos-Martin V. Ingram - Obras completas",
-      "contentFile": "data/documents/fd6ff6a0c2ed3f3f16.js",
+      "contentFile": "data/documents/fd6ff6a0c2ed3f3f16.json.gz",
       "catalogId": null,
       "file": "Martin V. Ingram - Obras completas.md",
       "title": "Title: Authenticated History of the Bell Witch",
@@ -3722,7 +3722,7 @@
     },
     {
       "id": "clasicos-Mary Elizabeth Braddon - Obras completas",
-      "contentFile": "data/documents/acd8ef398aa47f3fa5.js",
+      "contentFile": "data/documents/acd8ef398aa47f3fa5.json.gz",
       "catalogId": null,
       "file": "Mary Elizabeth Braddon - Obras completas.md",
       "title": "Title: Lady Audley's Secret",
@@ -3740,7 +3740,7 @@
     },
     {
       "id": "clasicos-Mary Hunter Austin - Obras completas",
-      "contentFile": "data/documents/aa98064360b6df4e96.js",
+      "contentFile": "data/documents/aa98064360b6df4e96.json.gz",
       "catalogId": null,
       "file": "Mary Hunter Austin - Obras completas.md",
       "title": "Title: The Land of Little Rain",
@@ -3758,7 +3758,7 @@
     },
     {
       "id": "clasicos-Mary Johnston - Obras completas",
-      "contentFile": "data/documents/4aadad1e29bcd28fc2.js",
+      "contentFile": "data/documents/4aadad1e29bcd28fc2.json.gz",
       "catalogId": null,
       "file": "Mary Johnston - Obras completas.md",
       "title": "Title: To Have and to Hold",
@@ -3776,7 +3776,7 @@
     },
     {
       "id": "clasicos-Mary Kingsley - Obras completas",
-      "contentFile": "data/documents/e4b24de7f542427a5e.js",
+      "contentFile": "data/documents/e4b24de7f542427a5e.json.gz",
       "catalogId": null,
       "file": "Mary Kingsley - Obras completas.md",
       "title": "Title: Travels in West Africa",
@@ -3794,7 +3794,7 @@
     },
     {
       "id": "clasicos-Mary Wollstonecraft - Obras completas",
-      "contentFile": "data/documents/bd0baedb62b87280fa.js",
+      "contentFile": "data/documents/bd0baedb62b87280fa.json.gz",
       "catalogId": null,
       "file": "Mary Wollstonecraft - Obras completas.md",
       "title": "Title: A Vindication of the Rights of Woman",
@@ -3812,7 +3812,7 @@
     },
     {
       "id": "clasicos-Mary Wollstonecraft Shelley - Obras completas",
-      "contentFile": "data/documents/bebcfbdf2f588096c1.js",
+      "contentFile": "data/documents/bebcfbdf2f588096c1.json.gz",
       "catalogId": null,
       "file": "Mary Wollstonecraft Shelley - Obras completas.md",
       "title": "Title: Frankenstein",
@@ -3830,7 +3830,7 @@
     },
     {
       "id": "clasicos-Matthew Lewis - Obras completas",
-      "contentFile": "data/documents/a63f2edd3c9a378b1e.js",
+      "contentFile": "data/documents/a63f2edd3c9a378b1e.json.gz",
       "catalogId": null,
       "file": "Matthew Lewis - Obras completas.md",
       "title": "Title: The Monk",
@@ -3848,7 +3848,7 @@
     },
     {
       "id": "clasicos-Maurice Leblanc - Obras completas",
-      "contentFile": "data/documents/551234be6d35772de0.js",
+      "contentFile": "data/documents/551234be6d35772de0.json.gz",
       "catalogId": null,
       "file": "Maurice Leblanc - Obras completas.md",
       "title": "Title: Arsène Lupin vs. Herlock Sholmes",
@@ -3866,7 +3866,7 @@
     },
     {
       "id": "clasicos-Max Brand - Obras completas",
-      "contentFile": "data/documents/b77ad0e3fc4e56d467.js",
+      "contentFile": "data/documents/b77ad0e3fc4e56d467.json.gz",
       "catalogId": null,
       "file": "Max Brand - Obras completas.md",
       "title": "Title: Gunman's Reckoning",
@@ -3884,7 +3884,7 @@
     },
     {
       "id": "clasicos-Maxim Gorky - Obras completas",
-      "contentFile": "data/documents/378c268a0e30056dd0.js",
+      "contentFile": "data/documents/378c268a0e30056dd0.json.gz",
       "catalogId": null,
       "file": "Maxim Gorky - Obras completas.md",
       "title": "Title: The Mother",
@@ -3902,7 +3902,7 @@
     },
     {
       "id": "clasicos-May Sinclair - Obras completas",
-      "contentFile": "data/documents/5109bd6ae4925cb349.js",
+      "contentFile": "data/documents/5109bd6ae4925cb349.json.gz",
       "catalogId": null,
       "file": "May Sinclair - Obras completas.md",
       "title": "Title: Uncanny Stories",
@@ -3920,7 +3920,7 @@
     },
     {
       "id": "clasicos-Mayne Reid - Obras completas",
-      "contentFile": "data/documents/a4f22c6a63d077cb81.js",
+      "contentFile": "data/documents/a4f22c6a63d077cb81.json.gz",
       "catalogId": null,
       "file": "Mayne Reid - Obras completas.md",
       "title": "Title: The Headless Horseman",
@@ -3938,7 +3938,7 @@
     },
     {
       "id": "clasicos-Miguel de Cervantes Saavedra - Obras completas",
-      "contentFile": "data/documents/54c31486cfcc0591f2.js",
+      "contentFile": "data/documents/54c31486cfcc0591f2.json.gz",
       "catalogId": null,
       "file": "Miguel de Cervantes Saavedra - Obras completas.md",
       "title": "Title: Don Quixote",
@@ -3956,7 +3956,7 @@
     },
     {
       "id": "clasicos-Molière - Obras completas",
-      "contentFile": "data/documents/ebda7cf4068416367c.js",
+      "contentFile": "data/documents/ebda7cf4068416367c.json.gz",
       "catalogId": null,
       "file": "Molière - Obras completas.md",
       "title": "Title: Tartuffe",
@@ -3974,7 +3974,7 @@
     },
     {
       "id": "clasicos-Moncure Daniel Conway - Obras completas",
-      "contentFile": "data/documents/dd7460a9b6022a9f07.js",
+      "contentFile": "data/documents/dd7460a9b6022a9f07.json.gz",
       "catalogId": null,
       "file": "Moncure Daniel Conway - Obras completas.md",
       "title": "Title: Demonology and Devil-lore",
@@ -3992,7 +3992,7 @@
     },
     {
       "id": "clasicos-Montesquieu - Obras completas",
-      "contentFile": "data/documents/a613a7b22e789ba20c.js",
+      "contentFile": "data/documents/a613a7b22e789ba20c.json.gz",
       "catalogId": null,
       "file": "Montesquieu - Obras completas.md",
       "title": "Title: Persian Letters",
@@ -4010,7 +4010,7 @@
     },
     {
       "id": "clasicos-Nathaniel Hawthorne - Obras completas",
-      "contentFile": "data/documents/3c9e7f3d33feb6f767.js",
+      "contentFile": "data/documents/3c9e7f3d33feb6f767.json.gz",
       "catalogId": null,
       "file": "Nathaniel Hawthorne - Obras completas.md",
       "title": "Title: Edward Randolph's Portrait",
@@ -4028,7 +4028,7 @@
     },
     {
       "id": "clasicos-Nikolai Gogol - Obras completas",
-      "contentFile": "data/documents/97cc0228c7442fa7dc.js",
+      "contentFile": "data/documents/97cc0228c7442fa7dc.json.gz",
       "catalogId": null,
       "file": "Nikolai Gogol - Obras completas.md",
       "title": "Title: Dead Souls",
@@ -4046,7 +4046,7 @@
     },
     {
       "id": "clasicos-Olaudah Equiano - Obras completas",
-      "contentFile": "data/documents/e3d8622e38af525fa3.js",
+      "contentFile": "data/documents/e3d8622e38af525fa3.json.gz",
       "catalogId": null,
       "file": "Olaudah Equiano - Obras completas.md",
       "title": "Title: The Interesting Narrative of the Life of Olaudah Equiano",
@@ -4064,7 +4064,7 @@
     },
     {
       "id": "clasicos-Olive Schreiner - Obras completas",
-      "contentFile": "data/documents/b91e079db82c20c6ca.js",
+      "contentFile": "data/documents/b91e079db82c20c6ca.json.gz",
       "catalogId": null,
       "file": "Olive Schreiner - Obras completas.md",
       "title": "Title: The Story of an African Farm",
@@ -4082,7 +4082,7 @@
     },
     {
       "id": "clasicos-Oscar Wilde - Obras completas",
-      "contentFile": "data/documents/f99fe842cea9d0c59f.js",
+      "contentFile": "data/documents/f99fe842cea9d0c59f.json.gz",
       "catalogId": null,
       "file": "Oscar Wilde - Obras completas.md",
       "title": "Title: An Ideal Husband",
@@ -4100,7 +4100,7 @@
     },
     {
       "id": "clasicos-Ovid - Obras completas",
-      "contentFile": "data/documents/24008dfda8991cb61a.js",
+      "contentFile": "data/documents/24008dfda8991cb61a.json.gz",
       "catalogId": null,
       "file": "Ovid - Obras completas.md",
       "title": "Title: Metamorphoses",
@@ -4118,7 +4118,7 @@
     },
     {
       "id": "clasicos-Owen Wister - Obras completas",
-      "contentFile": "data/documents/c53018ae0187120d1a.js",
+      "contentFile": "data/documents/c53018ae0187120d1a.json.gz",
       "catalogId": null,
       "file": "Owen Wister - Obras completas.md",
       "title": "Title: The Virginian",
@@ -4136,7 +4136,7 @@
     },
     {
       "id": "clasicos-P.G. Wodehouse - Obras completas",
-      "contentFile": "data/documents/7dc247facb6a304e97.js",
+      "contentFile": "data/documents/7dc247facb6a304e97.json.gz",
       "catalogId": null,
       "file": "P.G. Wodehouse - Obras completas.md",
       "title": "Title: A Damsel in Distress",
@@ -4154,7 +4154,7 @@
     },
     {
       "id": "clasicos-Peter Kropotkin - Obras completas",
-      "contentFile": "data/documents/1faf4d2b2a3d18c308.js",
+      "contentFile": "data/documents/1faf4d2b2a3d18c308.json.gz",
       "catalogId": null,
       "file": "Peter Kropotkin - Obras completas.md",
       "title": "Title: The Conquest of Bread",
@@ -4172,7 +4172,7 @@
     },
     {
       "id": "clasicos-Philip K. Dick - Obras completas",
-      "contentFile": "data/documents/e4aef2612e25920db8.js",
+      "contentFile": "data/documents/e4aef2612e25920db8.json.gz",
       "catalogId": null,
       "file": "Philip K. Dick - Obras completas.md",
       "title": "Title: Mr. Spaceship",
@@ -4190,7 +4190,7 @@
     },
     {
       "id": "clasicos-Philip Wylie - Obras completas",
-      "contentFile": "data/documents/ee4a5b12bc094c690e.js",
+      "contentFile": "data/documents/ee4a5b12bc094c690e.json.gz",
       "catalogId": null,
       "file": "Philip Wylie - Obras completas.md",
       "title": "Title: Gladiator",
@@ -4208,7 +4208,7 @@
     },
     {
       "id": "clasicos-Pierre Choderlos de Laclos - Obras completas",
-      "contentFile": "data/documents/649c9483c8f571e5b7.js",
+      "contentFile": "data/documents/649c9483c8f571e5b7.json.gz",
       "catalogId": null,
       "file": "Pierre Choderlos de Laclos - Obras completas.md",
       "title": "Title: Dangerous Liaisons",
@@ -4226,7 +4226,7 @@
     },
     {
       "id": "clasicos-Plato - Obras completas",
-      "contentFile": "data/documents/a31594985da7cee5db.js",
+      "contentFile": "data/documents/a31594985da7cee5db.json.gz",
       "catalogId": null,
       "file": "Plato - Obras completas.md",
       "title": "Title: Apology of Socrates",
@@ -4244,7 +4244,7 @@
     },
     {
       "id": "clasicos-Publius - Obras completas",
-      "contentFile": "data/documents/3ac264a92151891104.js",
+      "contentFile": "data/documents/3ac264a92151891104.json.gz",
       "catalogId": null,
       "file": "Publius - Obras completas.md",
       "title": "Title: The Federalist Papers",
@@ -4262,7 +4262,7 @@
     },
     {
       "id": "clasicos-Queen Liliʻuokalani - Obras completas",
-      "contentFile": "data/documents/707e8cd1d503682908.js",
+      "contentFile": "data/documents/707e8cd1d503682908.json.gz",
       "catalogId": null,
       "file": "Queen Liliʻuokalani - Obras completas.md",
       "title": "Title: Hawaii's Story",
@@ -4280,7 +4280,7 @@
     },
     {
       "id": "clasicos-R.D. Blackmore - Obras completas",
-      "contentFile": "data/documents/d1b5f8a7e7f18a0c71.js",
+      "contentFile": "data/documents/d1b5f8a7e7f18a0c71.json.gz",
       "catalogId": null,
       "file": "R.D. Blackmore - Obras completas.md",
       "title": "Title: Lorna Doone",
@@ -4298,7 +4298,7 @@
     },
     {
       "id": "clasicos-R.M. Ballantyne - Obras completas",
-      "contentFile": "data/documents/a97362f369e2a16ac3.js",
+      "contentFile": "data/documents/a97362f369e2a16ac3.json.gz",
       "catalogId": null,
       "file": "R.M. Ballantyne - Obras completas.md",
       "title": "Title: The Coral Island",
@@ -4316,7 +4316,7 @@
     },
     {
       "id": "clasicos-Rabindranath Tagore - Obras completas",
-      "contentFile": "data/documents/ad1c85815abade24fe.js",
+      "contentFile": "data/documents/ad1c85815abade24fe.json.gz",
       "catalogId": null,
       "file": "Rabindranath Tagore - Obras completas.md",
       "title": "Title: Gitanjali",
@@ -4334,7 +4334,7 @@
     },
     {
       "id": "clasicos-Rafael Sabatini - Obras completas",
-      "contentFile": "data/documents/316b5484fa71f3289f.js",
+      "contentFile": "data/documents/316b5484fa71f3289f.json.gz",
       "catalogId": null,
       "file": "Rafael Sabatini - Obras completas.md",
       "title": "Title: Captain Blood",
@@ -4352,7 +4352,7 @@
     },
     {
       "id": "clasicos-Ralph Waldo Emerson - Obras completas",
-      "contentFile": "data/documents/a6af3111347446e58d.js",
+      "contentFile": "data/documents/a6af3111347446e58d.json.gz",
       "catalogId": null,
       "file": "Ralph Waldo Emerson - Obras completas.md",
       "title": "Title: Essays",
@@ -4370,7 +4370,7 @@
     },
     {
       "id": "clasicos-Richard Jefferies - Obras completas",
-      "contentFile": "data/documents/a2eb936013a5ac87b9.js",
+      "contentFile": "data/documents/a2eb936013a5ac87b9.json.gz",
       "catalogId": null,
       "file": "Richard Jefferies - Obras completas.md",
       "title": "Title: After London",
@@ -4388,7 +4388,7 @@
     },
     {
       "id": "clasicos-Richard Marsh - Obras completas",
-      "contentFile": "data/documents/6a838a105c693b3fcc.js",
+      "contentFile": "data/documents/6a838a105c693b3fcc.json.gz",
       "catalogId": null,
       "file": "Richard Marsh - Obras completas.md",
       "title": "Title: The Beetle",
@@ -4406,7 +4406,7 @@
     },
     {
       "id": "clasicos-Robert Hugh Benson - Obras completas",
-      "contentFile": "data/documents/7fde113bf390775681.js",
+      "contentFile": "data/documents/7fde113bf390775681.json.gz",
       "catalogId": null,
       "file": "Robert Hugh Benson - Obras completas.md",
       "title": "Title: Lord of the World",
@@ -4424,7 +4424,7 @@
     },
     {
       "id": "clasicos-Robert Louis Stevenson - Obras completas",
-      "contentFile": "data/documents/db701b6cc0e3014095.js",
+      "contentFile": "data/documents/db701b6cc0e3014095.json.gz",
       "catalogId": null,
       "file": "Robert Louis Stevenson - Obras completas.md",
       "title": "Title: Kidnapped",
@@ -4442,7 +4442,7 @@
     },
     {
       "id": "clasicos-Robert W. Chambers - Obras completas",
-      "contentFile": "data/documents/5a122fcd148c50ba9d.js",
+      "contentFile": "data/documents/5a122fcd148c50ba9d.json.gz",
       "catalogId": null,
       "file": "Robert W. Chambers - Obras completas.md",
       "title": "Title: The King in Yellow",
@@ -4460,7 +4460,7 @@
     },
     {
       "id": "clasicos-Roy Chapman Andrews - Obras completas",
-      "contentFile": "data/documents/e93424640b8456973f.js",
+      "contentFile": "data/documents/e93424640b8456973f.json.gz",
       "catalogId": null,
       "file": "Roy Chapman Andrews - Obras completas.md",
       "title": "Title: Across Mongolian Plains",
@@ -4478,7 +4478,7 @@
     },
     {
       "id": "clasicos-Rudyard Kipling - Obras completas",
-      "contentFile": "data/documents/4b55907c654f7dd067.js",
+      "contentFile": "data/documents/4b55907c654f7dd067.json.gz",
       "catalogId": null,
       "file": "Rudyard Kipling - Obras completas.md",
       "title": "Title: As Easy as A.B.C.",
@@ -4496,7 +4496,7 @@
     },
     {
       "id": "clasicos-Samuel Butler - Obras completas",
-      "contentFile": "data/documents/f0442a8435e4578869.js",
+      "contentFile": "data/documents/f0442a8435e4578869.json.gz",
       "catalogId": null,
       "file": "Samuel Butler - Obras completas.md",
       "title": "Title: Erewhon",
@@ -4514,7 +4514,7 @@
     },
     {
       "id": "clasicos-Samuel Richardson - Obras completas - Parte 01",
-      "contentFile": "data/documents/ffa86f2b2db20d65dc.js",
+      "contentFile": "data/documents/ffa86f2b2db20d65dc.json.gz",
       "catalogId": null,
       "file": "Samuel Richardson - Obras completas - Parte 01.md",
       "title": "Title: Clarissa",
@@ -4532,7 +4532,7 @@
     },
     {
       "id": "clasicos-Samuel Richardson - Obras completas - Parte 02",
-      "contentFile": "data/documents/ec95b004ce8d70b499.js",
+      "contentFile": "data/documents/ec95b004ce8d70b499.json.gz",
       "catalogId": null,
       "file": "Samuel Richardson - Obras completas - Parte 02.md",
       "title": "VOLUME VI",
@@ -4550,7 +4550,7 @@
     },
     {
       "id": "clasicos-Sherwood Anderson - Obras completas",
-      "contentFile": "data/documents/0818ebabd16714af66.js",
+      "contentFile": "data/documents/0818ebabd16714af66.json.gz",
       "catalogId": null,
       "file": "Sherwood Anderson - Obras completas.md",
       "title": "Title: Winesburg, Ohio",
@@ -4568,7 +4568,7 @@
     },
     {
       "id": "clasicos-Silvio Pellico - Obras completas",
-      "contentFile": "data/documents/eca2fdc1c9f0135b35.js",
+      "contentFile": "data/documents/eca2fdc1c9f0135b35.json.gz",
       "catalogId": null,
       "file": "Silvio Pellico - Obras completas.md",
       "title": "Title: My Prisons",
@@ -4586,7 +4586,7 @@
     },
     {
       "id": "clasicos-Sinclair Lewis - Obras completas",
-      "contentFile": "data/documents/3d55dec1e7212820a0.js",
+      "contentFile": "data/documents/3d55dec1e7212820a0.json.gz",
       "catalogId": null,
       "file": "Sinclair Lewis - Obras completas.md",
       "title": "Title: Babbitt",
@@ -4604,7 +4604,7 @@
     },
     {
       "id": "clasicos-Snorri Sturluson - Obras completas",
-      "contentFile": "data/documents/39f04b6b523de56721.js",
+      "contentFile": "data/documents/39f04b6b523de56721.json.gz",
       "catalogId": null,
       "file": "Snorri Sturluson - Obras completas.md",
       "title": "Title: Egil's Saga",
@@ -4622,7 +4622,7 @@
     },
     {
       "id": "clasicos-Solomon Northup - Obras completas",
-      "contentFile": "data/documents/72bba31ef5be7cab7c.js",
+      "contentFile": "data/documents/72bba31ef5be7cab7c.json.gz",
       "catalogId": null,
       "file": "Solomon Northup - Obras completas.md",
       "title": "Title: Twelve Years a Slave",
@@ -4640,7 +4640,7 @@
     },
     {
       "id": "clasicos-Sophocles - Obras completas",
-      "contentFile": "data/documents/a64d1767b0a71181e6.js",
+      "contentFile": "data/documents/a64d1767b0a71181e6.json.gz",
       "catalogId": null,
       "file": "Sophocles - Obras completas.md",
       "title": "Title: Antigone",
@@ -4658,7 +4658,7 @@
     },
     {
       "id": "clasicos-Stendhal - Obras completas",
-      "contentFile": "data/documents/c8e1ac1b9b5251b892.js",
+      "contentFile": "data/documents/c8e1ac1b9b5251b892.json.gz",
       "catalogId": null,
       "file": "Stendhal - Obras completas.md",
       "title": "Title: The Red and the Black",
@@ -4676,7 +4676,7 @@
     },
     {
       "id": "clasicos-Stephen Crane - Obras completas",
-      "contentFile": "data/documents/3223a4cb6b94008725.js",
+      "contentFile": "data/documents/3223a4cb6b94008725.json.gz",
       "catalogId": null,
       "file": "Stephen Crane - Obras completas.md",
       "title": "Title: The Blue Hotel",
@@ -4694,7 +4694,7 @@
     },
     {
       "id": "clasicos-Talbot Mundy - Obras completas",
-      "contentFile": "data/documents/e6efec20f212a86e61.js",
+      "contentFile": "data/documents/e6efec20f212a86e61.json.gz",
       "catalogId": null,
       "file": "Talbot Mundy - Obras completas.md",
       "title": "Title: King of the Khyber Rifles",
@@ -4712,7 +4712,7 @@
     },
     {
       "id": "clasicos-The Brothers Grimm - Obras completas",
-      "contentFile": "data/documents/14b62f6e1ccc5d2a1f.js",
+      "contentFile": "data/documents/14b62f6e1ccc5d2a1f.json.gz",
       "catalogId": null,
       "file": "The Brothers Grimm - Obras completas.md",
       "title": "Title: Grimms' Fairy Tales",
@@ -4730,7 +4730,7 @@
     },
     {
       "id": "clasicos-Theodore Dreiser - Obras completas",
-      "contentFile": "data/documents/5986ea623e2adab380.js",
+      "contentFile": "data/documents/5986ea623e2adab380.json.gz",
       "catalogId": null,
       "file": "Theodore Dreiser - Obras completas.md",
       "title": "Title: Sister Carrie",
@@ -4748,7 +4748,7 @@
     },
     {
       "id": "clasicos-Thomas Bulfinch - Obras completas",
-      "contentFile": "data/documents/07a7722274568de8c9.js",
+      "contentFile": "data/documents/07a7722274568de8c9.json.gz",
       "catalogId": null,
       "file": "Thomas Bulfinch - Obras completas.md",
       "title": "Title: Bulfinch's Mythology",
@@ -4766,7 +4766,7 @@
     },
     {
       "id": "clasicos-Thomas Hardy - Obras completas - Parte 01",
-      "contentFile": "data/documents/2b0351b926bd3ddbe6.js",
+      "contentFile": "data/documents/2b0351b926bd3ddbe6.json.gz",
       "catalogId": null,
       "file": "Thomas Hardy - Obras completas - Parte 01.md",
       "title": "Title: Far from the Madding Crowd",
@@ -4784,7 +4784,7 @@
     },
     {
       "id": "clasicos-Thomas Hardy - Obras completas - Parte 02",
-      "contentFile": "data/documents/2e67a5908b2af1d2fb.js",
+      "contentFile": "data/documents/2e67a5908b2af1d2fb.json.gz",
       "catalogId": null,
       "file": "Thomas Hardy - Obras completas - Parte 02.md",
       "title": "Title: The Mayor of Casterbridge",
@@ -4802,7 +4802,7 @@
     },
     {
       "id": "clasicos-Thomas Hobbes - Obras completas",
-      "contentFile": "data/documents/798e08e913f257b3c0.js",
+      "contentFile": "data/documents/798e08e913f257b3c0.json.gz",
       "catalogId": null,
       "file": "Thomas Hobbes - Obras completas.md",
       "title": "Title: Leviathan",
@@ -4820,7 +4820,7 @@
     },
     {
       "id": "clasicos-Thomas Malory - Obras completas",
-      "contentFile": "data/documents/8f6e1f07a3a0bb4b51.js",
+      "contentFile": "data/documents/8f6e1f07a3a0bb4b51.json.gz",
       "catalogId": null,
       "file": "Thomas Malory - Obras completas.md",
       "title": "Title: Le Morte d'Arthur",
@@ -4838,7 +4838,7 @@
     },
     {
       "id": "clasicos-Thomas Paine - Obras completas",
-      "contentFile": "data/documents/c6cd1d580e495187c0.js",
+      "contentFile": "data/documents/c6cd1d580e495187c0.json.gz",
       "catalogId": null,
       "file": "Thomas Paine - Obras completas.md",
       "title": "Title: Common Sense",
@@ -4856,7 +4856,7 @@
     },
     {
       "id": "clasicos-Ulysses S. Grant - Obras completas",
-      "contentFile": "data/documents/6b35ceaabcfa016758.js",
+      "contentFile": "data/documents/6b35ceaabcfa016758.json.gz",
       "catalogId": null,
       "file": "Ulysses S. Grant - Obras completas.md",
       "title": "Title: Personal Memoirs of Ulysses S. Grant",
@@ -4874,7 +4874,7 @@
     },
     {
       "id": "clasicos-Upton Sinclair - Obras completas",
-      "contentFile": "data/documents/ef42ed5d9d23f579af.js",
+      "contentFile": "data/documents/ef42ed5d9d23f579af.json.gz",
       "catalogId": null,
       "file": "Upton Sinclair - Obras completas.md",
       "title": "Title: King Coal",
@@ -4892,7 +4892,7 @@
     },
     {
       "id": "clasicos-Various - Obras completas - Parte 01",
-      "contentFile": "data/documents/7813063957c970251d.js",
+      "contentFile": "data/documents/7813063957c970251d.json.gz",
       "catalogId": null,
       "file": "Various - Obras completas - Parte 01.md",
       "title": "Title: Christmas Stories from French and Spanish Writers",
@@ -4910,7 +4910,7 @@
     },
     {
       "id": "clasicos-Various - Obras completas - Parte 02",
-      "contentFile": "data/documents/246bdcf23b751011fd.js",
+      "contentFile": "data/documents/246bdcf23b751011fd.json.gz",
       "catalogId": null,
       "file": "Various - Obras completas - Parte 02.md",
       "title": "Title: King James Bible",
@@ -4928,7 +4928,7 @@
     },
     {
       "id": "clasicos-Various - Obras completas - Parte 03",
-      "contentFile": "data/documents/653abb45510085c552.js",
+      "contentFile": "data/documents/653abb45510085c552.json.gz",
       "catalogId": null,
       "file": "Various - Obras completas - Parte 03.md",
       "title": "Various - Obras completas - Parte 03",
@@ -4946,7 +4946,7 @@
     },
     {
       "id": "clasicos-Various - Obras completas - Parte 04",
-      "contentFile": "data/documents/b1966e6757835594c8.js",
+      "contentFile": "data/documents/b1966e6757835594c8.json.gz",
       "catalogId": null,
       "file": "Various - Obras completas - Parte 04.md",
       "title": "Title: One Thousand and One Nights",
@@ -4964,7 +4964,7 @@
     },
     {
       "id": "clasicos-Venerable Bede - Obras completas",
-      "contentFile": "data/documents/6e0565ed4684268a99.js",
+      "contentFile": "data/documents/6e0565ed4684268a99.json.gz",
       "catalogId": null,
       "file": "Venerable Bede - Obras completas.md",
       "title": "Title: Ecclesiastical History of the English People",
@@ -4982,7 +4982,7 @@
     },
     {
       "id": "clasicos-Vicente Blasco Ibáñez - Obras completas",
-      "contentFile": "data/documents/2c127d9c2c99c47b34.js",
+      "contentFile": "data/documents/2c127d9c2c99c47b34.json.gz",
       "catalogId": null,
       "file": "Vicente Blasco Ibáñez - Obras completas.md",
       "title": "Title: Blood and Sand",
@@ -5000,7 +5000,7 @@
     },
     {
       "id": "clasicos-Victor Hugo - Obras completas - Parte 01",
-      "contentFile": "data/documents/449551d39dff65d5a2.js",
+      "contentFile": "data/documents/449551d39dff65d5a2.json.gz",
       "catalogId": null,
       "file": "Victor Hugo - Obras completas - Parte 01.md",
       "title": "Title: Les Misérables",
@@ -5018,7 +5018,7 @@
     },
     {
       "id": "clasicos-Victor Hugo - Obras completas - Parte 02",
-      "contentFile": "data/documents/32c82394a6faeda210.js",
+      "contentFile": "data/documents/32c82394a6faeda210.json.gz",
       "catalogId": null,
       "file": "Victor Hugo - Obras completas - Parte 02.md",
       "title": "Title: Ninety-Three",
@@ -5036,7 +5036,7 @@
     },
     {
       "id": "clasicos-Victor Hugo - Obras completas - Parte 03",
-      "contentFile": "data/documents/d48831cedb16c6fd95.js",
+      "contentFile": "data/documents/d48831cedb16c6fd95.json.gz",
       "catalogId": null,
       "file": "Victor Hugo - Obras completas - Parte 03.md",
       "title": "Title: The Man Who Laughs",
@@ -5054,7 +5054,7 @@
     },
     {
       "id": "clasicos-Victoria Cross - Obras completas",
-      "contentFile": "data/documents/bd0d7e6b3cbd0b83ce.js",
+      "contentFile": "data/documents/bd0d7e6b3cbd0b83ce.json.gz",
       "catalogId": null,
       "file": "Victoria Cross - Obras completas.md",
       "title": "Title: The Night of Temptation",
@@ -5072,7 +5072,7 @@
     },
     {
       "id": "clasicos-Virgil - Obras completas",
-      "contentFile": "data/documents/0c04d26e896f33d800.js",
+      "contentFile": "data/documents/0c04d26e896f33d800.json.gz",
       "catalogId": null,
       "file": "Virgil - Obras completas.md",
       "title": "Title: Aeneid",
@@ -5090,7 +5090,7 @@
     },
     {
       "id": "clasicos-Virginia Woolf - Obras completas",
-      "contentFile": "data/documents/c6ac80c277d45c6859.js",
+      "contentFile": "data/documents/c6ac80c277d45c6859.json.gz",
       "catalogId": null,
       "file": "Virginia Woolf - Obras completas.md",
       "title": "Title: Jacob's Room",
@@ -5108,7 +5108,7 @@
     },
     {
       "id": "clasicos-Voltaire - Obras completas",
-      "contentFile": "data/documents/e1c10ec1db41ea1bda.js",
+      "contentFile": "data/documents/e1c10ec1db41ea1bda.json.gz",
       "catalogId": null,
       "file": "Voltaire - Obras completas.md",
       "title": "Title: Candide",
@@ -5126,7 +5126,7 @@
     },
     {
       "id": "clasicos-W.B. Yeats - Obras completas",
-      "contentFile": "data/documents/5865934fd5c24e910c.js",
+      "contentFile": "data/documents/5865934fd5c24e910c.json.gz",
       "catalogId": null,
       "file": "W.B. Yeats - Obras completas.md",
       "title": "Title: The Celtic Twilight",
@@ -5144,7 +5144,7 @@
     },
     {
       "id": "clasicos-W.E.B. Du Bois - Obras completas",
-      "contentFile": "data/documents/c50dd657362cd7319b.js",
+      "contentFile": "data/documents/c50dd657362cd7319b.json.gz",
       "catalogId": null,
       "file": "W.E.B. Du Bois - Obras completas.md",
       "title": "Title: The Souls of Black Folk",
@@ -5162,7 +5162,7 @@
     },
     {
       "id": "clasicos-W.H. Hudson - Obras completas",
-      "contentFile": "data/documents/1f345783d8c9d16176.js",
+      "contentFile": "data/documents/1f345783d8c9d16176.json.gz",
       "catalogId": null,
       "file": "W.H. Hudson - Obras completas.md",
       "title": "Title: A Crystal Age",
@@ -5180,7 +5180,7 @@
     },
     {
       "id": "clasicos-Walt Whitman - Obras completas",
-      "contentFile": "data/documents/c4eae57d57e0257ccf.js",
+      "contentFile": "data/documents/c4eae57d57e0257ccf.json.gz",
       "catalogId": null,
       "file": "Walt Whitman - Obras completas.md",
       "title": "Title: Leaves of Grass",
@@ -5198,7 +5198,7 @@
     },
     {
       "id": "clasicos-Walter Scott - Obras completas",
-      "contentFile": "data/documents/bc9d35acf2b09e3ee8.js",
+      "contentFile": "data/documents/bc9d35acf2b09e3ee8.json.gz",
       "catalogId": null,
       "file": "Walter Scott - Obras completas.md",
       "title": "Title: Ivanhoe",
@@ -5216,7 +5216,7 @@
     },
     {
       "id": "clasicos-Washington Irving - Obras completas",
-      "contentFile": "data/documents/cfe65a91dec8693978.js",
+      "contentFile": "data/documents/cfe65a91dec8693978.json.gz",
       "catalogId": null,
       "file": "Washington Irving - Obras completas.md",
       "title": "Title: Old Christmas",
@@ -5234,7 +5234,7 @@
     },
     {
       "id": "clasicos-Wilkie Collins - Obras completas - Parte 01",
-      "contentFile": "data/documents/5ae97a472971c816d0.js",
+      "contentFile": "data/documents/5ae97a472971c816d0.json.gz",
       "catalogId": null,
       "file": "Wilkie Collins - Obras completas - Parte 01.md",
       "title": "Title: After Dark",
@@ -5252,7 +5252,7 @@
     },
     {
       "id": "clasicos-Wilkie Collins - Obras completas - Parte 02",
-      "contentFile": "data/documents/bf65f3c7d6ee1fdd06.js",
+      "contentFile": "data/documents/bf65f3c7d6ee1fdd06.json.gz",
       "catalogId": null,
       "file": "Wilkie Collins - Obras completas - Parte 02.md",
       "title": "Title: The Woman in White",
@@ -5270,7 +5270,7 @@
     },
     {
       "id": "clasicos-Willa Cather - Obras completas",
-      "contentFile": "data/documents/252386dfd139e0b7c9.js",
+      "contentFile": "data/documents/252386dfd139e0b7c9.json.gz",
       "catalogId": null,
       "file": "Willa Cather - Obras completas.md",
       "title": "Title: A Lost Lady",
@@ -5288,7 +5288,7 @@
     },
     {
       "id": "clasicos-William Hope Hodgson - Obras completas",
-      "contentFile": "data/documents/625732ff1d4b71dcad.js",
+      "contentFile": "data/documents/625732ff1d4b71dcad.json.gz",
       "catalogId": null,
       "file": "William Hope Hodgson - Obras completas.md",
       "title": "Title: The Boats of the \"Glen Carrig\"",
@@ -5306,7 +5306,7 @@
     },
     {
       "id": "clasicos-William Makepeace Thackeray - Obras completas",
-      "contentFile": "data/documents/803cca085058ab0d29.js",
+      "contentFile": "data/documents/803cca085058ab0d29.json.gz",
       "catalogId": null,
       "file": "William Makepeace Thackeray - Obras completas.md",
       "title": "Title: The Rose and the Ring",
@@ -5324,7 +5324,7 @@
     },
     {
       "id": "clasicos-William Morris - Obras completas",
-      "contentFile": "data/documents/2d7c241d3b0428eedd.js",
+      "contentFile": "data/documents/2d7c241d3b0428eedd.json.gz",
       "catalogId": null,
       "file": "William Morris - Obras completas.md",
       "title": "Title: The Well at the World's End",
@@ -5342,7 +5342,7 @@
     },
     {
       "id": "clasicos-William Shakespeare - Obras completas",
-      "contentFile": "data/documents/3b93c417a896b04ee3.js",
+      "contentFile": "data/documents/3b93c417a896b04ee3.json.gz",
       "catalogId": null,
       "file": "William Shakespeare - Obras completas.md",
       "title": "Title: A Midsummer Night's Dream",
@@ -5360,7 +5360,7 @@
     },
     {
       "id": "clasicos-William Wells Brown - Obras completas",
-      "contentFile": "data/documents/b3bd06c12a7e7dd617.js",
+      "contentFile": "data/documents/b3bd06c12a7e7dd617.json.gz",
       "catalogId": null,
       "file": "William Wells Brown - Obras completas.md",
       "title": "Title: Clotel; or, The President's Daughter",
@@ -5378,7 +5378,7 @@
     },
     {
       "id": "clasicos-Winston Churchill - Obras completas",
-      "contentFile": "data/documents/afcaf02db27573d361.js",
+      "contentFile": "data/documents/afcaf02db27573d361.json.gz",
       "catalogId": null,
       "file": "Winston Churchill - Obras completas.md",
       "title": "Title: The Inside of the Cup",
@@ -5396,7 +5396,7 @@
     },
     {
       "id": "clasicos-Zane Grey - Obras completas",
-      "contentFile": "data/documents/4f17b1616e597f7784.js",
+      "contentFile": "data/documents/4f17b1616e597f7784.json.gz",
       "catalogId": null,
       "file": "Zane Grey - Obras completas.md",
       "title": "Title: Riders of the Purple Sage",

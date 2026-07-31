@@ -1,12 +1,12 @@
 import fs from "node:fs";
 import path from "node:path";
+import zlib from "node:zlib";
 import { fileURLToPath } from "node:url";
+import { atlasRoot, sourceRoot, dataRoot } from "./lib/paths.mjs";
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-const atlasRoot = path.dirname(here);
-const sourceRoot = path.dirname(atlasRoot);
-const catalogPath = path.join(atlasRoot, "data", "catalog.json");
-const outputDir = path.join(atlasRoot, "data", "documents");
+const catalogPath = path.join(dataRoot, "catalog.json");
+const outputDir = path.join(dataRoot, "documents");
 const catalog = JSON.parse(fs.readFileSync(catalogPath, "utf8"));
 const targetSize = Number(process.env.ATLAS_READER_CHUNK || 90000);
 
@@ -53,6 +53,7 @@ function splitDocument(markdown) {
   return { chunks, toc };
 }
 
+if (fs.existsSync(outputDir)) fs.rmSync(outputDir, { recursive: true, force: true });
 fs.mkdirSync(outputDir, { recursive: true });
 let generated = 0;
 let bytes = 0;
@@ -71,10 +72,10 @@ for (const library of catalog.libraries) {
       chunks: parsed.chunks
     };
     const target = path.join(atlasRoot, document.contentFile);
-    const content = `window.ATLAS_READER_PAYLOAD=${JSON.stringify(payload)};\n`;
-    fs.writeFileSync(target, content);
+    const content = Buffer.from(JSON.stringify(payload), "utf8");
+    fs.writeFileSync(target, zlib.gzipSync(content, { level: 9 }));
     generated += 1;
-    bytes += Buffer.byteLength(content);
+    bytes += fs.statSync(target).size;
   }
 }
 fs.writeFileSync(path.join(outputDir, "manifest.json"), JSON.stringify({

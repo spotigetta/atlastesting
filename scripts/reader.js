@@ -10,19 +10,9 @@
 
   function loadContent(doc) {
     if (loading.has(doc.id)) return loading.get(doc.id);
-    const promise = new Promise((resolve, reject) => {
-      const existing = document.querySelector(`script[data-reader-id="${CSS.escape(doc.id)}"]`);
-      if (existing) existing.remove();
-      const script = document.createElement("script");
-      script.src = doc.contentFile;
-      script.dataset.readerId = doc.id;
-      script.onload = () => {
-        const payload = window.ATLAS_READER_PAYLOAD;
-        if (payload?.id === doc.id) resolve(payload);
-        else reject(new Error("El contenido no corresponde al documento"));
-      };
-      script.onerror = () => reject(new Error("No se pudo cargar el documento"));
-      document.head.append(script);
+    const promise = window.AtlasRuntime.fetchJson(doc.contentFile).then(payload => {
+      if (payload?.id !== doc.id) throw new Error("El contenido no corresponde al documento");
+      return payload;
     });
     loading.set(doc.id, promise);
     promise.finally(() => loading.delete(doc.id));
@@ -50,7 +40,7 @@
       render();
       startSession();
     } catch {
-      document.querySelector("#main").innerHTML = root.library.empty("No se pudo abrir el documento", "Comprueba que la carpeta data/documents está publicada junto a Atlas.");
+      document.querySelector("#main").innerHTML = root.library.empty("No se pudo abrir el documento", "Comprueba que la construcción pública incluye este documento.");
     }
   }
 
