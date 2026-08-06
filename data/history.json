@@ -3504,6 +3504,166 @@
       "authority": "Magisterio / documento eclesial",
       "libraryId": "history",
       "source": "0000_Indice_y_mapa_de_fuentes.md"
+    },
+    {
+      "id": "history-0386_Papa_Francisco_Enciclicas",
+      "contentFile": "data/documents/c1efd90248ce6aba9d.json.gz",
+      "catalogId": "0386",
+      "file": "0386_Papa_Francisco_Enciclicas.md",
+      "title": "Papa Francisco: Encíclicas",
+      "originals": "0386",
+      "originalNumbers": [
+        "0386"
+      ],
+      "category": "Encíclicas",
+      "words": 147851,
+      "author": "Papa Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "history",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "history-0387_Papa_Francisco_Exhortaciones_Apostolicas",
+      "contentFile": "data/documents/c525b6075de61af192.json.gz",
+      "catalogId": "0387",
+      "file": "0387_Papa_Francisco_Exhortaciones_Apostolicas.md",
+      "title": "Papa Francisco: Exhortaciones apostólicas",
+      "originals": "0387",
+      "originalNumbers": [
+        "0387"
+      ],
+      "category": "Exhortaciones apostólicas",
+      "words": 224797,
+      "author": "Papa Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "history",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "history-0388_Papa_Francisco_Cartas_Apostolicas",
+      "contentFile": "data/documents/693070ddfea1568b5a.json.gz",
+      "catalogId": "0388",
+      "file": "0388_Papa_Francisco_Cartas_Apostolicas.md",
+      "title": "Papa Francisco: Cartas apostólicas",
+      "originals": "0388",
+      "originalNumbers": [
+        "0388"
+      ],
+      "category": "Cartas apostólicas",
+      "words": 113037,
+      "author": "Papa Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "history",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "history-0389_Papa_Francisco_Mensajes",
+      "contentFile": "data/documents/d5180321448f5eba02.json.gz",
+      "catalogId": "0389",
+      "file": "0389_Papa_Francisco_Mensajes.md",
+      "title": "Papa Francisco: Mensajes",
+      "originals": "0389",
+      "originalNumbers": [
+        "0389"
+      ],
+      "category": "Mensajes",
+      "words": 238001,
+      "author": "Papa Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "history",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "history-0390_Papa_Leon_XIV_Enciclicas",
+      "contentFile": "data/documents/13da5122bbf807cebc.json.gz",
+      "catalogId": "0390",
+      "file": "0390_Papa_Leon_XIV_Enciclicas.md",
+      "title": "Papa León XIV: Encíclicas",
+      "originals": "0390",
+      "originalNumbers": [
+        "0390"
+      ],
+      "category": "Encíclicas",
+      "words": 50426,
+      "author": "Papa León XIV",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "history",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "history-0391_Papa_Leon_XIV_Exhortaciones_Apostolicas",
+      "contentFile": "data/documents/532416afac613c0087.json.gz",
+      "catalogId": "0391",
+      "file": "0391_Papa_Leon_XIV_Exhortaciones_Apostolicas.md",
+      "title": "Papa León XIV: Exhortaciones apostólicas",
+      "originals": "0391",
+      "originalNumbers": [
+        "0391"
+      ],
+      "category": "Exhortaciones apostólicas",
+      "words": 24033,
+      "author": "Papa León XIV",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "history",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "history-0392_Papa_Leon_XIV_Cartas_Apostolicas",
+      "contentFile": "data/documents/d2eb023943776ab02b.json.gz",
+      "catalogId": "0392",
+      "file": "0392_Papa_Leon_XIV_Cartas_Apostolicas.md",
+      "title": "Papa León XIV: Cartas apostólicas",
+      "originals": "0392",
+      "originalNumbers": [
+        "0392"
+      ],
+      "category": "Cartas apostólicas",
+      "words": 22965,
+      "author": "Papa León XIV",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "history",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "history-0393_Papa_Leon_XIV_Mensajes",
+      "contentFile": "data/documents/b343c5dd6e018f67aa.json.gz",
+      "catalogId": "0393",
+      "file": "0393_Papa_Leon_XIV_Mensajes.md",
+      "title": "Papa León XIV: Mensajes",
+      "originals": "0393",
+      "originalNumbers": [
+        "0393"
+      ],
+      "category": "Mensajes",
+      "words": 56436,
+      "author": "Papa León XIV",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "history",
+      "source": "Descubierto directamente en la carpeta"
     }
   ],
   "categories": [
@@ -3526,6 +3686,22 @@
     {
       "name": "Repertorio documental magisterial",
       "count": 3
+    },
+    {
+      "name": "Cartas apostólicas",
+      "count": 2
+    },
+    {
+      "name": "Encíclicas",
+      "count": 2
+    },
+    {
+      "name": "Exhortaciones apostólicas",
+      "count": 2
+    },
+    {
+      "name": "Mensajes",
+      "count": 2
     }
   ],
   "authors": [
@@ -3551,6 +3727,14 @@
     },
     {
       "name": "Orígenes",
+      "count": 4
+    },
+    {
+      "name": "Papa Francisco",
+      "count": 4
+    },
+    {
+      "name": "Papa León XIV",
       "count": 4
     },
     {
@@ -3599,10 +3783,10 @@
     }
   ],
   "stats": {
-    "documents": 162,
-    "words": 15185758,
-    "categories": 5,
-    "authors": 17,
+    "documents": 170,
+    "words": 16063304,
+    "categories": 9,
+    "authors": 19,
     "historical": 0,
     "incomplete": 0,
     "foreignLanguage": 52,

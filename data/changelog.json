@@ -1,7 +1,22 @@
 {
-  "currentVersion": "3.9.0",
-  "updatedAt": "2026-07-30",
+  "currentVersion": "5.3.0",
+  "updatedAt": "2026-08-06",
   "entries": [
+    {
+      "version": "5.3.0",
+      "date": "2026-08-06",
+      "title": "Examen contextual, bibliotecas personales y proveedores vivos",
+      "changes": [
+        "Citas de las normas vinculadas por capítulo, punto o expresión temática específica",
+        "Vista semanal y mensual global con domingos y festividades",
+        "Informe privado para la Charla fraterna",
+        "Preparadora de círculos desbloqueable con guía visual obligatoria",
+        "Orden, fijación, color, etiqueta y visibilidad personal de las IA",
+        "Búsqueda literal verificada dentro de cada Markdown",
+        "Música distribuida entre nueve artistas e Instagram con publicaciones concretas",
+        "Paletas, acabados y familias tipográficas ampliadas"
+      ]
+    },
     {
       "version": "3.9.0",
       "date": "2026-07-30",

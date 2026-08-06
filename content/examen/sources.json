@@ -2,7 +2,8 @@
   "schemaVersion": 1,
   "policy": "Los documentos locales se enlazan al lector. Las páginas externas se conservan como metadatos y enlaces salvo licencia expresa que permita importar el texto.",
   "sources": [
-    {"id":"local-atlas-corpus","title":"Corpus documental local de Atlas","kind":"local-corpus","status":"indexed","location":"source/libraries","notes":"Nueve bibliotecas y sus Markdown; fuente prioritaria para citas contextualizadas."},
+    {"id":"local-atlas-corpus","title":"Corpus documental local de Atlas","kind":"local-corpus","status":"indexed","location":"source/libraries","notes":"Bibliotecas y Markdown; fuente prioritaria para citas contextualizadas."},
+    {"id":"local-exam-source-inventory","title":"Inventario Markdown de fuentes para las normas de piedad","kind":"local-inventory","status":"indexed","location":"content/examen/sources-markdown/0000_Fuentes_normas_piedad.md","notes":"Ficha local ordenada con URL, resumen, fecha de consulta, relación temática y extractos breves cuando son necesarios."},
     {"id":"opusdei-normas","title":"Normas de piedad y costumbres","kind":"external-index","status":"metadata-only","url":"https://opusdei.org/es/tag/normas-de-piedad-costumbres/?page=1"},
     {"id":"opusdei-plan-vida","title":"Las normas de piedad del plan de vida","kind":"external-article","status":"metadata-only","url":"https://opusdei.org/es/article/plan-de-vida/"},
     {"id":"opusdei-visita","title":"Detente y adora: la visita al Santísimo","kind":"external-article","status":"metadata-only","url":"https://opusdei.org/es/article/visita-al-santisimo-sacramento-devocion-eucaristica/"},

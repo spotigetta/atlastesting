@@ -4533,6 +4533,166 @@
       "authority": "Según género documental",
       "libraryId": "doctrine",
       "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0651_Papa_Francisco_Enciclicas",
+      "contentFile": "data/documents/be813ea195feb0058e.json.gz",
+      "catalogId": "0651",
+      "file": "0651_Papa_Francisco_Enciclicas.md",
+      "title": "Papa Francisco: Encíclicas",
+      "originals": "0651",
+      "originalNumbers": [
+        "0651"
+      ],
+      "category": "Encíclicas",
+      "words": 147851,
+      "author": "Papa Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0652_Papa_Francisco_Exhortaciones_Apostolicas",
+      "contentFile": "data/documents/6c5e6aa5568d47181a.json.gz",
+      "catalogId": "0652",
+      "file": "0652_Papa_Francisco_Exhortaciones_Apostolicas.md",
+      "title": "Papa Francisco: Exhortaciones apostólicas",
+      "originals": "0652",
+      "originalNumbers": [
+        "0652"
+      ],
+      "category": "Exhortaciones apostólicas",
+      "words": 224797,
+      "author": "Papa Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0653_Papa_Francisco_Cartas_Apostolicas",
+      "contentFile": "data/documents/68d1ced38ed9019c3b.json.gz",
+      "catalogId": "0653",
+      "file": "0653_Papa_Francisco_Cartas_Apostolicas.md",
+      "title": "Papa Francisco: Cartas apostólicas",
+      "originals": "0653",
+      "originalNumbers": [
+        "0653"
+      ],
+      "category": "Cartas apostólicas",
+      "words": 113037,
+      "author": "Papa Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0654_Papa_Francisco_Mensajes",
+      "contentFile": "data/documents/9d2284ff8afbaa33ad.json.gz",
+      "catalogId": "0654",
+      "file": "0654_Papa_Francisco_Mensajes.md",
+      "title": "Papa Francisco: Mensajes",
+      "originals": "0654",
+      "originalNumbers": [
+        "0654"
+      ],
+      "category": "Mensajes",
+      "words": 238001,
+      "author": "Papa Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0655_Papa_Leon_XIV_Enciclicas",
+      "contentFile": "data/documents/abe3eaf14a45c30f80.json.gz",
+      "catalogId": "0655",
+      "file": "0655_Papa_Leon_XIV_Enciclicas.md",
+      "title": "Papa León XIV: Encíclicas",
+      "originals": "0655",
+      "originalNumbers": [
+        "0655"
+      ],
+      "category": "Encíclicas",
+      "words": 50426,
+      "author": "Papa León XIV",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0656_Papa_Leon_XIV_Exhortaciones_Apostolicas",
+      "contentFile": "data/documents/8e8a92a222ed9751c9.json.gz",
+      "catalogId": "0656",
+      "file": "0656_Papa_Leon_XIV_Exhortaciones_Apostolicas.md",
+      "title": "Papa León XIV: Exhortaciones apostólicas",
+      "originals": "0656",
+      "originalNumbers": [
+        "0656"
+      ],
+      "category": "Exhortaciones apostólicas",
+      "words": 24033,
+      "author": "Papa León XIV",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0657_Papa_Leon_XIV_Cartas_Apostolicas",
+      "contentFile": "data/documents/d616fbfef8255531d3.json.gz",
+      "catalogId": "0657",
+      "file": "0657_Papa_Leon_XIV_Cartas_Apostolicas.md",
+      "title": "Papa León XIV: Cartas apostólicas",
+      "originals": "0657",
+      "originalNumbers": [
+        "0657"
+      ],
+      "category": "Cartas apostólicas",
+      "words": 22965,
+      "author": "Papa León XIV",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0658_Papa_Leon_XIV_Mensajes",
+      "contentFile": "data/documents/53026673f8d51cb547.json.gz",
+      "catalogId": "0658",
+      "file": "0658_Papa_Leon_XIV_Mensajes.md",
+      "title": "Papa León XIV: Mensajes",
+      "originals": "0658",
+      "originalNumbers": [
+        "0658"
+      ],
+      "category": "Mensajes",
+      "words": 56436,
+      "author": "Papa León XIV",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
     }
   ],
   "categories": [
@@ -4569,6 +4729,10 @@
       "count": 3
     },
     {
+      "name": "Cartas apostólicas",
+      "count": 2
+    },
+    {
       "name": "Catecismo histórico",
       "count": 2
     },
@@ -4577,7 +4741,19 @@
       "count": 2
     },
     {
+      "name": "Encíclicas",
+      "count": 2
+    },
+    {
+      "name": "Exhortaciones apostólicas",
+      "count": 2
+    },
+    {
       "name": "Legislación o documentación jurídica",
+      "count": 2
+    },
+    {
+      "name": "Mensajes",
       "count": 2
     }
   ],
@@ -4609,6 +4785,14 @@
     {
       "name": "Congregación para la Doctrina de la Fe",
       "count": 7
+    },
+    {
+      "name": "Papa Francisco",
+      "count": 4
+    },
+    {
+      "name": "Papa León XIV",
+      "count": 4
     },
     {
       "name": "San Juan de la Cruz",
@@ -4668,10 +4852,10 @@
     }
   ],
   "stats": {
-    "documents": 216,
-    "words": 11140450,
-    "categories": 11,
-    "authors": 21,
+    "documents": 224,
+    "words": 12017996,
+    "categories": 15,
+    "authors": 23,
     "historical": 2,
     "incomplete": 1,
     "foreignLanguage": 16,

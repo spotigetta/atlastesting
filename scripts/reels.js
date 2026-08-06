@@ -41,6 +41,14 @@
     return window.AtlasFeedMixer.shuffled(items);
   }
 
+  function interleaveSources(items) {
+    const groups = new Map();
+    shuffle(items).forEach(item => groups.set(item.source || "", [...(groups.get(item.source || "") || []), item]));
+    const result=[]; let buckets=shuffle([...groups.values()]);
+    while (buckets.length) { buckets.forEach(bucket=>{const item=bucket.shift();if(item)result.push(item);}); buckets=shuffle(buckets.filter(bucket=>bucket.length)); }
+    return result;
+  }
+
   const enabledItems = (items, setting) => {
     const hidden = new Set(root.storage.get().settings[setting] || []);
     return (items || []).filter(item => !hidden.has(item.source || item.name));
@@ -48,14 +56,15 @@
 
   async function instagramPayload(cursorValue = 0, limit = 24) {
     const payload = await window.AtlasRuntime.fetchJson("data/instagram-cache.json", { fresh: true });
-    const ordered = shuffle(payload.items || []);
+    const concrete = (payload.items || []).filter(item => !item.profileFallback && item.image && /\/(?:p|reel)\//.test(item.url || ""));
+    const ordered = shuffle(concrete.length ? concrete : (payload.items || []).filter(item => !item.profileFallback));
     const items = ordered.slice(cursorValue, cursorValue + limit);
     return { ...payload, items, cursor: cursorValue, nextCursor: cursorValue + items.length, hasMore: cursorValue + items.length < ordered.length, total: ordered.length };
   }
 
   async function musicPayload(cursorValue = 0, limit = 24) {
     const fallback = await window.AtlasRuntime.fetchJson("data/youtube-music-cache.json", { fresh: true });
-    const ordered = shuffle(fallback.items || []);
+    const ordered = interleaveSources(fallback.items || []);
     const items = ordered.slice(cursorValue, cursorValue + limit);
     return {
       items, channels: fallback.channels || [], cursor: cursorValue,
@@ -103,7 +112,11 @@
     shorts = mixExternal(shorts, filter === "all" ? balanceExternal([...external, ...videos, ...music, ...instagram]) : [...external, ...videos, ...music, ...instagram]);
     if (filter !== "all") shorts = shorts.filter(item => item.libraryId === filter || item.type === filter);
     const seen = new Set(root.storage.get().seenShorts || []);
-    if (root.storage.get().settings.onlyNewShorts && filter !== "instagram") shorts = shorts.filter(item => !seen.has(item.id));
+    if (root.storage.get().settings.onlyNewShorts) {
+      const unseen = shorts.filter(item => !seen.has(item.id));
+      /* Nunca dejamos el feed vacío ni reducido a una sola fuente por un snapshot ya visto. */
+      if (unseen.length >= Math.min(10, shorts.length)) shorts = unseen;
+    }
     queue = filter === "all" ? mixedAll(shorts) : constrained(shorts);
     cursor = 0;
     const initial = nextBatch();
@@ -114,16 +127,19 @@
       if (filter === "all" || filter === "music") loadLiveMusic(true);
       if (filter === "all" || filter === "instagram") loadLiveInstagram(true);
     });
+    const settings=root.storage.get().settings; const hiddenLibraries=new Set(settings.hiddenLibraries||[]);
+    const filterLibraries=root.data.catalog.libraries.filter(item=>(!item.unlockFeature||root.storage.isFeatureUnlocked(item.unlockFeature))&&!hiddenLibraries.has(item.id));
     const filters = [["all","Todos"],["video","Vídeos"],["music","Música"],["instagram","Instagram"],["news","Noticias"],["reading","Lecturas"],["prayer","Oración"],["quote","Frases"],["fact","Hechos"],["curiosity","Anécdotas"],
       ["question","Preguntas"],["comparison","Distinciones"],
-      ...root.data.catalog.libraries.map(item => [item.id, item.short]), ["document","Documentos"],["quiz","Quiz"],["author","Autores"],["timeline","Cronología"]];
+      ...filterLibraries.map(item => [item.id, settings.libraryLabels?.[item.id]||item.short]), ["document","Documentos"],["quiz","Quiz"],["author","Autores"],["timeline","Cronología"]];
+    const primaryFilters = filters.filter(([id]) => ["all","video","music","instagram","quote"].includes(id));
     return `<div class="discover-page">
-      <div class="short-filters"><div class="chip-row">${filters.map(([id,label]) => `<button class="chip ${filter===id?"active":""}" data-short-filter="${id}">${esc(label)}</button>`).join("")}</div>
+      <div class="short-filters"><div class="chip-row short-filter-desktop">${filters.map(([id,label]) => `<button class="chip ${filter===id?"active":""}" data-short-filter="${id}">${esc(label)}</button>`).join("")}</div><div class="short-filter-mobile"><div>${primaryFilters.map(([id,label]) => `<button class="${filter===id?"active":""}" data-short-filter="${id}">${esc(label)}</button>`).join("")}</div><label><span>Más</span><select data-short-filter-select aria-label="Elegir tipo de Short">${filters.map(([id,label])=>`<option value="${esc(id)}" ${filter===id?"selected":""}>${esc(label)}</option>`).join("")}</select></label></div>
       ${filter === "video" ? `<div class="short-channel-row">${enabledItems(window.ATLAS_YOUTUBE?.channels, "disabledVideoChannels").filter(channel => channel.tier !== "reserve" || root.storage.get().settings.showReserveVideos).map(channel => `<a href="${esc(channel.url)}" target="_blank" rel="noopener">${esc(channel.name)} ↗</a>`).join("")}</div>` : ""}
-      ${filter === "all" || filter === "video" ? `<button class="reserve-video-toggle ${root.storage.get().settings.showReserveVideos ? "active" : ""}" data-toggle-reserve-videos>${root.storage.get().settings.showReserveVideos ? "Canales de reserva activados" : "Canales de reserva desactivados"}</button>` : ""}</div>
+      ${filter === "video" ? `<button class="reserve-video-toggle ${root.storage.get().settings.showReserveVideos ? "active" : ""}" data-toggle-reserve-videos>${root.storage.get().settings.showReserveVideos ? "Canales de reserva activados" : "Canales de reserva desactivados"}</button>` : ""}</div>
       ${["all","video","music","instagram"].includes(filter) ? '<span class="youtube-live-status" id="youtube-live-status">Actualizando canales…</span>' : ""}
       <div class="short-refresh-indicator" aria-live="polite"><span>↻</span><b>Arrastra para actualizar</b></div>
-      <div class="short-aurora" aria-hidden="true"><i></i><b></b></div><div class="short-feed">${initial || root.library.empty(filter === "instagram" ? "No hay cuentas de Instagram configuradas" : "No quedan contenidos nuevos", filter === "instagram" ? "Añade perfiles o publicaciones desde el Gestor de Atlas." : "Desactiva «Solo contenido nuevo» en Guardados.")}</div>
+      <div class="short-aurora" aria-hidden="true"><i></i><b></b></div><div class="short-feed">${initial || root.library.empty(filter === "instagram" ? "No hay publicaciones reales disponibles" : "No quedan contenidos nuevos", filter === "instagram" ? "Añade enlaces directos de publicaciones en el Gestor o configura Meta Business Discovery." : "Desactiva «Solo contenido nuevo» en Guardados.")}</div>
     </div>`;
   }
 
@@ -147,7 +163,8 @@
       videoHasMore = payload.hasMore;
       const known = new Set(queue.map(item => item.id));
       const reserveEnabled = root.storage.get().settings.showReserveVideos;
-      const eligible = enabledItems(payload.items, "disabledVideoChannels").filter(item => item.tier !== "reserve" || reserveEnabled);
+      let eligible = enabledItems(payload.items, "disabledVideoChannels").filter(item => item.tier !== "reserve" || reserveEnabled);
+      if (root.storage.get().settings.onlyNewShorts) { const unseen=eligible.filter(item=>!root.storage.get().seenShorts.includes(item.id)); if(unseen.length>=6) eligible=unseen; }
       const paced = reserveEnabled
         ? [...eligible.filter(item => item.tier !== "reserve"), ...eligible.filter(item => item.tier === "reserve").slice(0, 2)]
         : eligible;
@@ -182,7 +199,9 @@
       musicCursor = payload.nextCursor;
       musicHasMore = payload.hasMore;
       const known = new Set(queue.map(item => item.id));
-      const fresh = enabledItems(payload.items, "disabledMusicChannels").map(item => ({
+      let eligibleMusic = enabledItems(payload.items, "disabledMusicChannels");
+      if (root.storage.get().settings.onlyNewShorts) { const unseen=eligibleMusic.filter(item=>!root.storage.get().seenShorts.includes(item.id)); if(unseen.length>=6) eligibleMusic=unseen; }
+      const fresh = eligibleMusic.map(item => ({
         ...item, libraryId: item.libraryId || "liturgy",
         text: item.description, reference: `${item.source} · YouTube`,
         reviewedAt: item.publishedAt?.slice(0, 10) || payload.updatedAt?.slice(0, 10)
@@ -213,7 +232,9 @@
       instagramCursor = payload.nextCursor;
       instagramHasMore = payload.hasMore;
       const known = new Set(queue.map(item => item.id));
-      const fresh = shuffle(enabledItems(payload.items, "disabledInstagramChannels").map(item => ({
+      let eligibleInstagram=enabledItems(payload.items, "disabledInstagramChannels");
+      if (root.storage.get().settings.onlyNewShorts) { const unseen=eligibleInstagram.filter(item=>!root.storage.get().seenShorts.includes(item.id)); if(unseen.length>=4) eligibleInstagram=unseen; }
+      const fresh = shuffle(eligibleInstagram.map(item => ({
         ...item, type: "instagram", external: true, verified: true,
         libraryId: item.libraryId || "doctrine", text: item.description,
         reference: `${item.source} · Instagram`
@@ -222,7 +243,7 @@
       incorporateFresh(fresh, feed);
       if (status && activeFilter === "instagram") status.textContent = `${payload.total || fresh.length} publicaciones · selección dinámica`;
     } catch {
-      if (status && activeFilter === "instagram") status.textContent = "Instagram no está disponible; gestiona sus cuentas en Guardados";
+      if (status && activeFilter === "instagram") status.textContent = "Instagram necesita publicaciones directas o credenciales de Meta configuradas en el Gestor";
     } finally { instagramLoading = false; }
   }
 
@@ -583,7 +604,7 @@
     const sideSeed = [...String(item.id || index)].reduce((sum, character) => sum + character.charCodeAt(0), 0);
     const right = alignment === "right" || (alignment === "mixed" && sideSeed % 2 === 1);
     return `<article class="short-card short-type-${item.type} short-variant-${index % 6} ${right ? "text-right" : "text-left"} ${item.external ? "short-external" : ""} ${josemaria ? `short-josemaria sjm-figure-${right ? "left" : "right"}` : ""} tone-${lib.tone}" ${image} ${playable} data-library="${lib.id}" data-glow-x="${glowX}" data-glow-y="${glowY}" data-glow-scale="${glowScale}" data-mark="${item.external ? "A" : lib.mark}" data-short-id="${esc(item.id)}" id="${esc(item.id)}-${cursor}">
-      ${josemaria && item.type !== "video" ? '<span class="josemaria-watermark" aria-hidden="true"><i></i></span>' : ""}${["video","music"].includes(item.type) ? '<button class="video-play" aria-label="Reproducir dentro de Atlas">▶</button>' : ""}<div class="short-content"><span class="short-type">${index + 1} / ${total} · ${typeLabels[item.type] || item.type} · ${esc(item.external ? item.source : lib.short)}</span><h2>${esc(item.title)}</h2><p>${esc(item.text)}</p>${item.author || item.date ? `<p class="short-byline">${esc(item.author || "")}${item.author && item.date ? " · " : ""}${esc(item.date || "")}</p>` : ""}<p class="short-source">Fuente: ${esc(item.reference)}${item.sourceDocumentId ? " · Documento enlazado" : ""}</p>
+      ${josemaria && item.type !== "video" ? '<span class="josemaria-watermark" aria-hidden="true"><i></i></span>' : ""}${["video","music"].includes(item.type) ? '<button class="video-play" aria-label="Reproducir dentro de Atlas">▶</button>' : ""}${item.type === "instagram" && item.image ? `<figure class="instagram-post-preview"><img src="${esc(item.image)}" alt="Publicación de ${esc(item.source)}" loading="lazy"></figure>` : ""}<div class="short-content"><span class="short-type">${index + 1} / ${total} · ${typeLabels[item.type] || item.type} · ${esc(item.external ? item.source : lib.short)}</span><h2>${esc(item.title)}</h2><p>${esc(item.text)}</p>${item.author || item.date ? `<p class="short-byline">${esc(item.author || "")}${item.author && item.date ? " · " : ""}${esc(item.date || "")}</p>` : ""}<p class="short-source">Fuente: ${esc(item.reference)}${item.sourceDocumentId ? " · Documento enlazado" : ""}</p>
       <div class="short-actions"><button class="${saved ? "saved" : ""}" data-save-short="${esc(item.id)}" aria-label="Guardar">${root.library.icon("bookmark")}</button><button data-share-short="${esc(item.id)}" aria-label="Compartir">${root.library.icon("share")}</button>${item.sourceDocumentId ? `<a href="#/reader/${encodeURIComponent(item.sourceDocumentId)}" aria-label="Leer documento">${root.library.icon("books")}</a>` : ""}${item.external ? `<a class="wide" href="${esc(item.url)}" target="_blank" rel="noopener">${["video","music"].includes(item.type) ? "Ver en YouTube" : item.type === "instagram" ? "Ver en Instagram" : "Leer original"}${root.library.icon("external")}</a>` : `<a class="wide" href="${esc(lib.notebookUrl)}" target="_blank" rel="noopener">Abrir IA${root.library.icon("external")}</a>`}</div></div>
     </article>`;
   }

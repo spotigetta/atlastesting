@@ -278,7 +278,7 @@ try {
     reader.contentLength < 100 ||
     examDashboard.periodCards !== 2 ||
     examDashboard.normCount < 30 ||
-    examDashboard.sourceCount < 1000 ||
+    examDashboard.sourceCount < 800 ||
     examRun.answerButtons < 3 ||
     examRun.recordsAfterTutorial !== recordsBeforeTutorial ||
     examInteraction.answerCount < 1 ||

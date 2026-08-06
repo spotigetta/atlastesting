@@ -1,1 +1,53 @@
-[]
+[
+  {
+    "id": "manual-salmo2-herencia",
+    "kind": "quotation",
+    "text": "Pídeme y te daré en herencia las naciones, en propiedad los confines de la tierra.",
+    "author": "Sagrada Escritura",
+    "work": "Salmo 2, 8",
+    "reference": "Salmo II",
+    "normIds": ["salmo-dos"],
+    "tags": ["oracion", "apostolado", "filiacion-divina"],
+    "sourceUrl": "https://opusdei.org/es/article/abrazar-el-mundo-con-oracion-salmo-dos-filiacion-divina/",
+    "verified": true,
+    "relevanceBasis": "Versículo central de la norma Salmo II"
+  },
+  {
+    "id": "manual-adoro-te-devote",
+    "kind": "quotation",
+    "text": "Te adoro con devoción, Dios escondido, oculto verdaderamente bajo estas apariencias.",
+    "author": "Santo Tomás de Aquino",
+    "work": "Adoro te devote",
+    "reference": "Himno eucarístico",
+    "normIds": ["adoro-te-devote"],
+    "tags": ["eucaristia", "adoracion", "oracion"],
+    "verified": true,
+    "relevanceBasis": "Primer verso del himno propio de la norma"
+  },
+  {
+    "id": "manual-antifona-salve",
+    "kind": "prayer",
+    "text": "Dios te salve, Reina y Madre de misericordia, vida, dulzura y esperanza nuestra.",
+    "author": "Tradición litúrgica latina",
+    "work": "Salve Regina",
+    "reference": "Antífona mariana",
+    "normIds": ["antifona-mariana"],
+    "tags": ["virgen-maria", "oracion"],
+    "sourceUrl": "https://opusdei.org/es/article/aurora-dia-del-sol-exposicion-eucaristica-antifona-mariana-sabado/",
+    "verified": true,
+    "relevanceBasis": "Texto de la antífona que se propone rezar"
+  },
+  {
+    "id": "manual-quicumque-trinidad",
+    "kind": "quotation",
+    "text": "La fe católica es que veneremos un solo Dios en la Trinidad y la Trinidad en la unidad.",
+    "author": "Tradición de la Iglesia",
+    "work": "Símbolo Quicumque",
+    "reference": "Símbolo atanasiano",
+    "normIds": ["quicumque"],
+    "tags": ["trinidad", "fe", "oracion"],
+    "sourceUrl": "https://opusdei.org/es/article/simbolo-atanasiano-quicumque-santisima-trinidad-costumbre/",
+    "verified": true,
+    "relevanceBasis": "Formulación central del símbolo rezado en esta norma"
+  }
+]

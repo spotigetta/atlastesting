@@ -1,11 +1,11 @@
 {
   "meta": {
     "app": "ATLAS",
-    "dataVersion": "5.2.0",
-    "generatedAt": "2026-08-06T15:26:27.403Z",
+    "dataVersion": "5.3.0",
+    "generatedAt": "2026-08-06T17:25:48.414Z",
     "source": "Four 0000_Indice_y_mapa_de_fuentes.md files",
-    "documents": 1039,
-    "words": 110060634
+    "documents": 1093,
+    "words": 114451582
   },
   "libraries": [
     {
@@ -4543,6 +4543,166 @@
           "authority": "Según género documental",
           "libraryId": "doctrine",
           "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "doctrine-0651_Papa_Francisco_Enciclicas",
+          "contentFile": "data/documents/be813ea195feb0058e.json.gz",
+          "catalogId": "0651",
+          "file": "0651_Papa_Francisco_Enciclicas.md",
+          "title": "Papa Francisco: Encíclicas",
+          "originals": "0651",
+          "originalNumbers": [
+            "0651"
+          ],
+          "category": "Encíclicas",
+          "words": 147851,
+          "author": "Papa Francisco",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "doctrine",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "doctrine-0652_Papa_Francisco_Exhortaciones_Apostolicas",
+          "contentFile": "data/documents/6c5e6aa5568d47181a.json.gz",
+          "catalogId": "0652",
+          "file": "0652_Papa_Francisco_Exhortaciones_Apostolicas.md",
+          "title": "Papa Francisco: Exhortaciones apostólicas",
+          "originals": "0652",
+          "originalNumbers": [
+            "0652"
+          ],
+          "category": "Exhortaciones apostólicas",
+          "words": 224797,
+          "author": "Papa Francisco",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "doctrine",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "doctrine-0653_Papa_Francisco_Cartas_Apostolicas",
+          "contentFile": "data/documents/68d1ced38ed9019c3b.json.gz",
+          "catalogId": "0653",
+          "file": "0653_Papa_Francisco_Cartas_Apostolicas.md",
+          "title": "Papa Francisco: Cartas apostólicas",
+          "originals": "0653",
+          "originalNumbers": [
+            "0653"
+          ],
+          "category": "Cartas apostólicas",
+          "words": 113037,
+          "author": "Papa Francisco",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "doctrine",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "doctrine-0654_Papa_Francisco_Mensajes",
+          "contentFile": "data/documents/9d2284ff8afbaa33ad.json.gz",
+          "catalogId": "0654",
+          "file": "0654_Papa_Francisco_Mensajes.md",
+          "title": "Papa Francisco: Mensajes",
+          "originals": "0654",
+          "originalNumbers": [
+            "0654"
+          ],
+          "category": "Mensajes",
+          "words": 238001,
+          "author": "Papa Francisco",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "doctrine",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "doctrine-0655_Papa_Leon_XIV_Enciclicas",
+          "contentFile": "data/documents/abe3eaf14a45c30f80.json.gz",
+          "catalogId": "0655",
+          "file": "0655_Papa_Leon_XIV_Enciclicas.md",
+          "title": "Papa León XIV: Encíclicas",
+          "originals": "0655",
+          "originalNumbers": [
+            "0655"
+          ],
+          "category": "Encíclicas",
+          "words": 50426,
+          "author": "Papa León XIV",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "doctrine",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "doctrine-0656_Papa_Leon_XIV_Exhortaciones_Apostolicas",
+          "contentFile": "data/documents/8e8a92a222ed9751c9.json.gz",
+          "catalogId": "0656",
+          "file": "0656_Papa_Leon_XIV_Exhortaciones_Apostolicas.md",
+          "title": "Papa León XIV: Exhortaciones apostólicas",
+          "originals": "0656",
+          "originalNumbers": [
+            "0656"
+          ],
+          "category": "Exhortaciones apostólicas",
+          "words": 24033,
+          "author": "Papa León XIV",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "doctrine",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "doctrine-0657_Papa_Leon_XIV_Cartas_Apostolicas",
+          "contentFile": "data/documents/d616fbfef8255531d3.json.gz",
+          "catalogId": "0657",
+          "file": "0657_Papa_Leon_XIV_Cartas_Apostolicas.md",
+          "title": "Papa León XIV: Cartas apostólicas",
+          "originals": "0657",
+          "originalNumbers": [
+            "0657"
+          ],
+          "category": "Cartas apostólicas",
+          "words": 22965,
+          "author": "Papa León XIV",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "doctrine",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "doctrine-0658_Papa_Leon_XIV_Mensajes",
+          "contentFile": "data/documents/53026673f8d51cb547.json.gz",
+          "catalogId": "0658",
+          "file": "0658_Papa_Leon_XIV_Mensajes.md",
+          "title": "Papa León XIV: Mensajes",
+          "originals": "0658",
+          "originalNumbers": [
+            "0658"
+          ],
+          "category": "Mensajes",
+          "words": 56436,
+          "author": "Papa León XIV",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "doctrine",
+          "source": "Descubierto directamente en la carpeta"
         }
       ],
       "categories": [
@@ -4579,6 +4739,10 @@
           "count": 3
         },
         {
+          "name": "Cartas apostólicas",
+          "count": 2
+        },
+        {
           "name": "Catecismo histórico",
           "count": 2
         },
@@ -4587,7 +4751,19 @@
           "count": 2
         },
         {
+          "name": "Encíclicas",
+          "count": 2
+        },
+        {
+          "name": "Exhortaciones apostólicas",
+          "count": 2
+        },
+        {
           "name": "Legislación o documentación jurídica",
+          "count": 2
+        },
+        {
+          "name": "Mensajes",
           "count": 2
         }
       ],
@@ -4619,6 +4795,14 @@
         {
           "name": "Congregación para la Doctrina de la Fe",
           "count": 7
+        },
+        {
+          "name": "Papa Francisco",
+          "count": 4
+        },
+        {
+          "name": "Papa León XIV",
+          "count": 4
         },
         {
           "name": "San Juan de la Cruz",
@@ -4678,10 +4862,10 @@
         }
       ],
       "stats": {
-        "documents": 216,
-        "words": 11140450,
-        "categories": 11,
-        "authors": 21,
+        "documents": 224,
+        "words": 12017996,
+        "categories": 15,
+        "authors": 23,
         "historical": 2,
         "incomplete": 1,
         "foreignLanguage": 16,
@@ -6185,6 +6369,46 @@
           "authority": "Legislación o fuente canónica",
           "libraryId": "canon",
           "source": "0000_Indice_y_mapa_de_fuentes.md"
+        },
+        {
+          "id": "canon-0586_Papa_Francisco_Cartas_Apostolicas",
+          "contentFile": "data/documents/d31ca742c612afd2f1.json.gz",
+          "catalogId": "0586",
+          "file": "0586_Papa_Francisco_Cartas_Apostolicas.md",
+          "title": "Papa Francisco: Cartas apostólicas",
+          "originals": "0586",
+          "originalNumbers": [
+            "0586"
+          ],
+          "category": "Cartas apostólicas",
+          "words": 113037,
+          "author": "Papa Francisco",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "canon",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "canon-0587_Papa_Leon_XIV_Cartas_Apostolicas",
+          "contentFile": "data/documents/9bf3366af4e31c6a7d.json.gz",
+          "catalogId": "0587",
+          "file": "0587_Papa_Leon_XIV_Cartas_Apostolicas.md",
+          "title": "Papa León XIV: Cartas apostólicas",
+          "originals": "0587",
+          "originalNumbers": [
+            "0587"
+          ],
+          "category": "Cartas apostólicas",
+          "words": 22965,
+          "author": "Papa León XIV",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "canon",
+          "source": "Descubierto directamente en la carpeta"
         }
       ],
       "categories": [
@@ -6203,19 +6427,31 @@
         {
           "name": "Libro o normativa litúrgica",
           "count": 10
+        },
+        {
+          "name": "Cartas apostólicas",
+          "count": 2
         }
       ],
       "authors": [
+        {
+          "name": "Papa Francisco",
+          "count": 1
+        },
+        {
+          "name": "Papa León XIV",
+          "count": 1
+        },
         {
           "name": "Santo Tomás de Aquino",
           "count": 1
         }
       ],
       "stats": {
-        "documents": 69,
-        "words": 1830537,
-        "categories": 4,
-        "authors": 1,
+        "documents": 71,
+        "words": 1966539,
+        "categories": 5,
+        "authors": 3,
         "historical": 3,
         "incomplete": 0,
         "foreignLanguage": 12,
@@ -9728,6 +9964,166 @@
           "authority": "Magisterio / documento eclesial",
           "libraryId": "history",
           "source": "0000_Indice_y_mapa_de_fuentes.md"
+        },
+        {
+          "id": "history-0386_Papa_Francisco_Enciclicas",
+          "contentFile": "data/documents/c1efd90248ce6aba9d.json.gz",
+          "catalogId": "0386",
+          "file": "0386_Papa_Francisco_Enciclicas.md",
+          "title": "Papa Francisco: Encíclicas",
+          "originals": "0386",
+          "originalNumbers": [
+            "0386"
+          ],
+          "category": "Encíclicas",
+          "words": 147851,
+          "author": "Papa Francisco",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "history",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "history-0387_Papa_Francisco_Exhortaciones_Apostolicas",
+          "contentFile": "data/documents/c525b6075de61af192.json.gz",
+          "catalogId": "0387",
+          "file": "0387_Papa_Francisco_Exhortaciones_Apostolicas.md",
+          "title": "Papa Francisco: Exhortaciones apostólicas",
+          "originals": "0387",
+          "originalNumbers": [
+            "0387"
+          ],
+          "category": "Exhortaciones apostólicas",
+          "words": 224797,
+          "author": "Papa Francisco",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "history",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "history-0388_Papa_Francisco_Cartas_Apostolicas",
+          "contentFile": "data/documents/693070ddfea1568b5a.json.gz",
+          "catalogId": "0388",
+          "file": "0388_Papa_Francisco_Cartas_Apostolicas.md",
+          "title": "Papa Francisco: Cartas apostólicas",
+          "originals": "0388",
+          "originalNumbers": [
+            "0388"
+          ],
+          "category": "Cartas apostólicas",
+          "words": 113037,
+          "author": "Papa Francisco",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "history",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "history-0389_Papa_Francisco_Mensajes",
+          "contentFile": "data/documents/d5180321448f5eba02.json.gz",
+          "catalogId": "0389",
+          "file": "0389_Papa_Francisco_Mensajes.md",
+          "title": "Papa Francisco: Mensajes",
+          "originals": "0389",
+          "originalNumbers": [
+            "0389"
+          ],
+          "category": "Mensajes",
+          "words": 238001,
+          "author": "Papa Francisco",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "history",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "history-0390_Papa_Leon_XIV_Enciclicas",
+          "contentFile": "data/documents/13da5122bbf807cebc.json.gz",
+          "catalogId": "0390",
+          "file": "0390_Papa_Leon_XIV_Enciclicas.md",
+          "title": "Papa León XIV: Encíclicas",
+          "originals": "0390",
+          "originalNumbers": [
+            "0390"
+          ],
+          "category": "Encíclicas",
+          "words": 50426,
+          "author": "Papa León XIV",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "history",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "history-0391_Papa_Leon_XIV_Exhortaciones_Apostolicas",
+          "contentFile": "data/documents/532416afac613c0087.json.gz",
+          "catalogId": "0391",
+          "file": "0391_Papa_Leon_XIV_Exhortaciones_Apostolicas.md",
+          "title": "Papa León XIV: Exhortaciones apostólicas",
+          "originals": "0391",
+          "originalNumbers": [
+            "0391"
+          ],
+          "category": "Exhortaciones apostólicas",
+          "words": 24033,
+          "author": "Papa León XIV",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "history",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "history-0392_Papa_Leon_XIV_Cartas_Apostolicas",
+          "contentFile": "data/documents/d2eb023943776ab02b.json.gz",
+          "catalogId": "0392",
+          "file": "0392_Papa_Leon_XIV_Cartas_Apostolicas.md",
+          "title": "Papa León XIV: Cartas apostólicas",
+          "originals": "0392",
+          "originalNumbers": [
+            "0392"
+          ],
+          "category": "Cartas apostólicas",
+          "words": 22965,
+          "author": "Papa León XIV",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "history",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "history-0393_Papa_Leon_XIV_Mensajes",
+          "contentFile": "data/documents/b343c5dd6e018f67aa.json.gz",
+          "catalogId": "0393",
+          "file": "0393_Papa_Leon_XIV_Mensajes.md",
+          "title": "Papa León XIV: Mensajes",
+          "originals": "0393",
+          "originalNumbers": [
+            "0393"
+          ],
+          "category": "Mensajes",
+          "words": 56436,
+          "author": "Papa León XIV",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "history",
+          "source": "Descubierto directamente en la carpeta"
         }
       ],
       "categories": [
@@ -9750,6 +10146,22 @@
         {
           "name": "Repertorio documental magisterial",
           "count": 3
+        },
+        {
+          "name": "Cartas apostólicas",
+          "count": 2
+        },
+        {
+          "name": "Encíclicas",
+          "count": 2
+        },
+        {
+          "name": "Exhortaciones apostólicas",
+          "count": 2
+        },
+        {
+          "name": "Mensajes",
+          "count": 2
         }
       ],
       "authors": [
@@ -9775,6 +10187,14 @@
         },
         {
           "name": "Orígenes",
+          "count": 4
+        },
+        {
+          "name": "Papa Francisco",
+          "count": 4
+        },
+        {
+          "name": "Papa León XIV",
           "count": 4
         },
         {
@@ -9823,10 +10243,10 @@
         }
       ],
       "stats": {
-        "documents": 162,
-        "words": 15185758,
-        "categories": 5,
-        "authors": 17,
+        "documents": 170,
+        "words": 16063304,
+        "categories": 9,
+        "authors": 19,
         "historical": 0,
         "incomplete": 0,
         "foreignLanguage": 52,
@@ -11973,6 +12393,26 @@
           "authority": "Libro o fuente litúrgica",
           "libraryId": "liturgy",
           "source": "0000_Indice_y_mapa_de_fuentes.md"
+        },
+        {
+          "id": "liturgy-0578_Papa_Francisco_Cartas_Apostolicas",
+          "contentFile": "data/documents/73b798b7a29b973867.json.gz",
+          "catalogId": "0578",
+          "file": "0578_Papa_Francisco_Cartas_Apostolicas.md",
+          "title": "Papa Francisco: Cartas apostólicas",
+          "originals": "0578",
+          "originalNumbers": [
+            "0578"
+          ],
+          "category": "Cartas apostólicas",
+          "words": 113037,
+          "author": "Papa Francisco",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "liturgy",
+          "source": "Descubierto directamente en la carpeta"
         }
       ],
       "categories": [
@@ -12015,6 +12455,10 @@
         {
           "name": "Legislación o documentación jurídica",
           "count": 2
+        },
+        {
+          "name": "Cartas apostólicas",
+          "count": 1
         }
       ],
       "authors": [
@@ -12043,6 +12487,10 @@
           "count": 2
         },
         {
+          "name": "Papa Francisco",
+          "count": 1
+        },
+        {
           "name": "San Atanasio",
           "count": 1
         },
@@ -12068,10 +12516,10 @@
         }
       ],
       "stats": {
-        "documents": 97,
-        "words": 12786551,
-        "categories": 10,
-        "authors": 12,
+        "documents": 98,
+        "words": 12899588,
+        "categories": 11,
+        "authors": 13,
         "historical": 3,
         "incomplete": 1,
         "foreignLanguage": 12,
@@ -14993,18 +15441,198 @@
           "authority": "Según género documental",
           "libraryId": "ortodoxia",
           "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "ortodoxia-1272_Papa_Francisco_Enciclicas",
+          "contentFile": "data/documents/503594903a6558bcb7.json.gz",
+          "catalogId": "1272",
+          "file": "1272_Papa_Francisco_Enciclicas.md",
+          "title": "Papa Francisco: Encíclicas",
+          "originals": "1272",
+          "originalNumbers": [
+            "1272"
+          ],
+          "category": "Encíclicas",
+          "words": 147851,
+          "author": "Papa Francisco",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "ortodoxia",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "ortodoxia-1273_Papa_Francisco_Exhortaciones_Apostolicas",
+          "contentFile": "data/documents/b618daf4d13e7c3a08.json.gz",
+          "catalogId": "1273",
+          "file": "1273_Papa_Francisco_Exhortaciones_Apostolicas.md",
+          "title": "Papa Francisco: Exhortaciones apostólicas",
+          "originals": "1273",
+          "originalNumbers": [
+            "1273"
+          ],
+          "category": "Exhortaciones apostólicas",
+          "words": 224797,
+          "author": "Papa Francisco",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "ortodoxia",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "ortodoxia-1274_Papa_Francisco_Cartas_Apostolicas",
+          "contentFile": "data/documents/d0c82d869370edd2aa.json.gz",
+          "catalogId": "1274",
+          "file": "1274_Papa_Francisco_Cartas_Apostolicas.md",
+          "title": "Papa Francisco: Cartas apostólicas",
+          "originals": "1274",
+          "originalNumbers": [
+            "1274"
+          ],
+          "category": "Cartas apostólicas",
+          "words": 113037,
+          "author": "Papa Francisco",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "ortodoxia",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "ortodoxia-1275_Papa_Francisco_Mensajes",
+          "contentFile": "data/documents/f6bf63645989fe554e.json.gz",
+          "catalogId": "1275",
+          "file": "1275_Papa_Francisco_Mensajes.md",
+          "title": "Papa Francisco: Mensajes",
+          "originals": "1275",
+          "originalNumbers": [
+            "1275"
+          ],
+          "category": "Mensajes",
+          "words": 238001,
+          "author": "Papa Francisco",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "ortodoxia",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "ortodoxia-1276_Papa_Leon_XIV_Enciclicas",
+          "contentFile": "data/documents/58364c18f50a484123.json.gz",
+          "catalogId": "1276",
+          "file": "1276_Papa_Leon_XIV_Enciclicas.md",
+          "title": "Papa León XIV: Encíclicas",
+          "originals": "1276",
+          "originalNumbers": [
+            "1276"
+          ],
+          "category": "Encíclicas",
+          "words": 50426,
+          "author": "Papa León XIV",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "ortodoxia",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "ortodoxia-1277_Papa_Leon_XIV_Exhortaciones_Apostolicas",
+          "contentFile": "data/documents/22d3fcab52d6b8e117.json.gz",
+          "catalogId": "1277",
+          "file": "1277_Papa_Leon_XIV_Exhortaciones_Apostolicas.md",
+          "title": "Papa León XIV: Exhortaciones apostólicas",
+          "originals": "1277",
+          "originalNumbers": [
+            "1277"
+          ],
+          "category": "Exhortaciones apostólicas",
+          "words": 24033,
+          "author": "Papa León XIV",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "ortodoxia",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "ortodoxia-1278_Papa_Leon_XIV_Cartas_Apostolicas",
+          "contentFile": "data/documents/4a5b28ed1b3cd0c019.json.gz",
+          "catalogId": "1278",
+          "file": "1278_Papa_Leon_XIV_Cartas_Apostolicas.md",
+          "title": "Papa León XIV: Cartas apostólicas",
+          "originals": "1278",
+          "originalNumbers": [
+            "1278"
+          ],
+          "category": "Cartas apostólicas",
+          "words": 22965,
+          "author": "Papa León XIV",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "ortodoxia",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "ortodoxia-1279_Papa_Leon_XIV_Mensajes",
+          "contentFile": "data/documents/0eb346645187026594.json.gz",
+          "catalogId": "1279",
+          "file": "1279_Papa_Leon_XIV_Mensajes.md",
+          "title": "Papa León XIV: Mensajes",
+          "originals": "1279",
+          "originalNumbers": [
+            "1279"
+          ],
+          "category": "Mensajes",
+          "words": 56436,
+          "author": "Papa León XIV",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "ortodoxia",
+          "source": "Descubierto directamente en la carpeta"
         }
       ],
       "categories": [
         {
           "name": "Nuevos documentos",
           "count": 145
+        },
+        {
+          "name": "Cartas apostólicas",
+          "count": 2
+        },
+        {
+          "name": "Encíclicas",
+          "count": 2
+        },
+        {
+          "name": "Exhortaciones apostólicas",
+          "count": 2
+        },
+        {
+          "name": "Mensajes",
+          "count": 2
         }
       ],
       "authors": [
         {
           "name": "Chesterton, G. K. (Gilbert Keith)",
           "count": 13
+        },
+        {
+          "name": "Papa Francisco",
+          "count": 7
         },
         {
           "name": "Plato",
@@ -15023,12 +15651,12 @@
           "count": 4
         },
         {
-          "name": "San Agustín",
+          "name": "Papa León XIV",
           "count": 4
         },
         {
-          "name": "Papa Francisco",
-          "count": 3
+          "name": "San Agustín",
+          "count": 4
         },
         {
           "name": "Proyecto Mercabá",
@@ -15116,10 +15744,10 @@
         }
       ],
       "stats": {
-        "documents": 145,
-        "words": 6696455,
-        "categories": 1,
-        "authors": 28,
+        "documents": 153,
+        "words": 7574001,
+        "categories": 5,
+        "authors": 29,
         "historical": 0,
         "incomplete": 0,
         "foreignLanguage": 120,
@@ -21562,6 +22190,567 @@
         "foreignLanguage": 0,
         "dated": 0
       }
+    },
+    {
+      "id": "preparadora-circulos",
+      "folder": "10_IA_Preparadora_Circulos",
+      "short": "Preparadora de círculos",
+      "mark": "PC",
+      "tone": "olive",
+      "notebookUrl": "",
+      "unlockFeature": "preparadora-circulos",
+      "description": "Corpus reservado para preparar círculos con obras de san Josemaría y textos de los papas Francisco y León XIV.",
+      "name": "Preparadora de círculos",
+      "purpose": "",
+      "organization": "",
+      "topics": [],
+      "warnings": [],
+      "documents": [
+        {
+          "id": "preparadora-circulos-1013_Papa_Francisco_Enciclicas",
+          "contentFile": "data/documents/a542e65802c48010a6.json.gz",
+          "catalogId": "1013",
+          "file": "1013_Papa_Francisco_Enciclicas.md",
+          "title": "Papa Francisco: Encíclicas",
+          "originals": "1013",
+          "originalNumbers": [
+            "1013"
+          ],
+          "category": "Encíclicas",
+          "words": 147851,
+          "author": "Papa Francisco",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-1014_Papa_Francisco_Exhortaciones_Apostolicas",
+          "contentFile": "data/documents/04ce537b3bf3fa24fe.json.gz",
+          "catalogId": "1014",
+          "file": "1014_Papa_Francisco_Exhortaciones_Apostolicas.md",
+          "title": "Papa Francisco: Exhortaciones apostólicas",
+          "originals": "1014",
+          "originalNumbers": [
+            "1014"
+          ],
+          "category": "Exhortaciones apostólicas",
+          "words": 224797,
+          "author": "Papa Francisco",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-1015_Papa_Francisco_Cartas_Apostolicas",
+          "contentFile": "data/documents/22012fcef6e84a4b2f.json.gz",
+          "catalogId": "1015",
+          "file": "1015_Papa_Francisco_Cartas_Apostolicas.md",
+          "title": "Papa Francisco: Cartas apostólicas",
+          "originals": "1015",
+          "originalNumbers": [
+            "1015"
+          ],
+          "category": "Cartas apostólicas",
+          "words": 113037,
+          "author": "Papa Francisco",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-1016_Papa_Francisco_Mensajes",
+          "contentFile": "data/documents/956cbb20088a0b80bd.json.gz",
+          "catalogId": "1016",
+          "file": "1016_Papa_Francisco_Mensajes.md",
+          "title": "Papa Francisco: Mensajes",
+          "originals": "1016",
+          "originalNumbers": [
+            "1016"
+          ],
+          "category": "Mensajes",
+          "words": 238001,
+          "author": "Papa Francisco",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-1017_Papa_Leon_XIV_Enciclicas",
+          "contentFile": "data/documents/f6e68d0fb380f8f2d6.json.gz",
+          "catalogId": "1017",
+          "file": "1017_Papa_Leon_XIV_Enciclicas.md",
+          "title": "Papa León XIV: Encíclicas",
+          "originals": "1017",
+          "originalNumbers": [
+            "1017"
+          ],
+          "category": "Encíclicas",
+          "words": 50426,
+          "author": "Papa León XIV",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-1018_Papa_Leon_XIV_Exhortaciones_Apostolicas",
+          "contentFile": "data/documents/425c5b9e9723f5bfd2.json.gz",
+          "catalogId": "1018",
+          "file": "1018_Papa_Leon_XIV_Exhortaciones_Apostolicas.md",
+          "title": "Papa León XIV: Exhortaciones apostólicas",
+          "originals": "1018",
+          "originalNumbers": [
+            "1018"
+          ],
+          "category": "Exhortaciones apostólicas",
+          "words": 24033,
+          "author": "Papa León XIV",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-1019_Papa_Leon_XIV_Cartas_Apostolicas",
+          "contentFile": "data/documents/50ce8ff309adbb25e0.json.gz",
+          "catalogId": "1019",
+          "file": "1019_Papa_Leon_XIV_Cartas_Apostolicas.md",
+          "title": "Papa León XIV: Cartas apostólicas",
+          "originals": "1019",
+          "originalNumbers": [
+            "1019"
+          ],
+          "category": "Cartas apostólicas",
+          "words": 22965,
+          "author": "Papa León XIV",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-1020_Papa_Leon_XIV_Mensajes",
+          "contentFile": "data/documents/3ac4b674101d852cd9.json.gz",
+          "catalogId": "1020",
+          "file": "1020_Papa_Leon_XIV_Mensajes.md",
+          "title": "Papa León XIV: Mensajes",
+          "originals": "1020",
+          "originalNumbers": [
+            "1020"
+          ],
+          "category": "Mensajes",
+          "words": 56436,
+          "author": "Papa León XIV",
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-amar-a-la-iglesia",
+          "contentFile": "data/documents/d8a915c627fa5cf9bd.json.gz",
+          "catalogId": null,
+          "file": "amar-a-la-iglesia.md",
+          "title": "Amar a la Iglesia",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 14702,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-amigos-de-dios",
+          "contentFile": "data/documents/09243a55a550c65034.json.gz",
+          "catalogId": null,
+          "file": "amigos-de-dios.md",
+          "title": "Amigos de Dios",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 80603,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-camino",
+          "contentFile": "data/documents/063f4203060fc3fb48.json.gz",
+          "catalogId": null,
+          "file": "camino.md",
+          "title": "Camino",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 34117,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-carta-no-29",
+          "contentFile": "data/documents/84ec9a8dd386b27df3.json.gz",
+          "catalogId": null,
+          "file": "carta-no-29.md",
+          "title": "Carta nº 29",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 15842,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-cartas-i",
+          "contentFile": "data/documents/807ba9d865d9988b14.json.gz",
+          "catalogId": null,
+          "file": "cartas-i.md",
+          "title": "Cartas I",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 52062,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-cartas-ii",
+          "contentFile": "data/documents/13f2bf5626ba4ec964.json.gz",
+          "catalogId": null,
+          "file": "cartas-ii.md",
+          "title": "Cartas II",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 49476,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-conversaciones",
+          "contentFile": "data/documents/02c067b6dce792373f.json.gz",
+          "catalogId": null,
+          "file": "conversaciones.md",
+          "title": "Conversaciones",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 51548,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-discursos-sobre-la-universidad",
+          "contentFile": "data/documents/9130f59514f52fd909.json.gz",
+          "catalogId": null,
+          "file": "discursos-sobre-la-universidad.md",
+          "title": "Discursos sobre la Universidad",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 10293,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-en-dialogo-con-el-senor",
+          "contentFile": "data/documents/4808e73993233678c5.json.gz",
+          "catalogId": null,
+          "file": "en-dialogo-con-el-senor.md",
+          "title": "En diálogo con el Señor",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 56048,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-es-cristo-que-pasa",
+          "contentFile": "data/documents/c8b8c8c867111fec2a.json.gz",
+          "catalogId": null,
+          "file": "es-cristo-que-pasa.md",
+          "title": "Es Cristo que pasa",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 79496,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-forja",
+          "contentFile": "data/documents/b5128536870b2c6a1d.json.gz",
+          "catalogId": null,
+          "file": "forja.md",
+          "title": "Forja",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 46734,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-index",
+          "contentFile": "data/documents/a95c9c7ed51cd3f477.json.gz",
+          "catalogId": null,
+          "file": "index.md",
+          "title": "Obras completas en un archivo por obra",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 94,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-la-abadesa-de-las-huelgas",
+          "contentFile": "data/documents/342e9a6de24e3edc9c.json.gz",
+          "catalogId": null,
+          "file": "la-abadesa-de-las-huelgas.md",
+          "title": "La Abadesa de las Huelgas",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 74138,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-santo-rosario",
+          "contentFile": "data/documents/258ff67dcfd7c86f7f.json.gz",
+          "catalogId": null,
+          "file": "santo-rosario.md",
+          "title": "Santo Rosario",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 3783,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-surco",
+          "contentFile": "data/documents/c42cacbc0a7c0d4607.json.gz",
+          "catalogId": null,
+          "file": "surco.md",
+          "title": "Surco",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 43433,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-tertulia-argentina",
+          "contentFile": "data/documents/9e1b323e5d090cf50e.json.gz",
+          "catalogId": null,
+          "file": "tertulia-argentina.md",
+          "title": "tertulia-argentina",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 3048,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-tertulia-barcelona",
+          "contentFile": "data/documents/6dbc0108ad113e01e7.json.gz",
+          "catalogId": null,
+          "file": "tertulia-barcelona.md",
+          "title": "tertulia-barcelona",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 3171,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-tertulia-peru",
+          "contentFile": "data/documents/4142f530b95e38ba0a.json.gz",
+          "catalogId": null,
+          "file": "tertulia-peru.md",
+          "title": "tertulia-peru",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 5187,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "preparadora-circulos-via-crucis",
+          "contentFile": "data/documents/4c16adbcbebc604b9a.json.gz",
+          "catalogId": null,
+          "file": "via-crucis.md",
+          "title": "Via Crucis",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Nuevos documentos",
+          "words": 7950,
+          "author": null,
+          "year": null,
+          "language": null,
+          "status": "not-stated",
+          "authority": "Según género documental",
+          "libraryId": "preparadora-circulos",
+          "source": "Descubierto directamente en la carpeta"
+        }
+      ],
+      "categories": [
+        {
+          "name": "Nuevos documentos",
+          "count": 19
+        },
+        {
+          "name": "Cartas apostólicas",
+          "count": 2
+        },
+        {
+          "name": "Encíclicas",
+          "count": 2
+        },
+        {
+          "name": "Exhortaciones apostólicas",
+          "count": 2
+        },
+        {
+          "name": "Mensajes",
+          "count": 2
+        }
+      ],
+      "authors": [
+        {
+          "name": "Papa Francisco",
+          "count": 4
+        },
+        {
+          "name": "Papa León XIV",
+          "count": 4
+        }
+      ],
+      "stats": {
+        "documents": 27,
+        "words": 1509271,
+        "categories": 5,
+        "authors": 2,
+        "historical": 0,
+        "incomplete": 0,
+        "foreignLanguage": 0,
+        "dated": 0
+      }
     }
   ],
   "collections": [
@@ -26856,6 +28045,94 @@
       "reviewedAt": "2026-08-06"
     },
     {
+      "id": "short-doctrine-document-216",
+      "type": "author",
+      "title": "Papa Francisco: Encíclicas",
+      "text": "El índice atribuye esta fuente a Papa Francisco. Puedes abrirla y seguir desde ella otras obras del mismo autor.",
+      "libraryId": "doctrine",
+      "sourceDocumentId": "doctrine-0651_Papa_Francisco_Enciclicas",
+      "reference": "Índice documental · 0651_Papa_Francisco_Enciclicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-doctrine-document-217",
+      "type": "timeline",
+      "title": "Papa Francisco: Exhortaciones apostólicas",
+      "text": "Exhortaciones apostólicas · 224.797 palabras · Papa Francisco.",
+      "libraryId": "doctrine",
+      "sourceDocumentId": "doctrine-0652_Papa_Francisco_Exhortaciones_Apostolicas",
+      "reference": "Índice documental · 0652_Papa_Francisco_Exhortaciones_Apostolicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-doctrine-document-218",
+      "type": "curiosity",
+      "title": "Papa Francisco: Cartas apostólicas",
+      "text": "Una fuente de cartas apostólicas con 113.037 palabras: aproximadamente 514 minutos de lectura.",
+      "libraryId": "doctrine",
+      "sourceDocumentId": "doctrine-0653_Papa_Francisco_Cartas_Apostolicas",
+      "reference": "Índice documental · 0653_Papa_Francisco_Cartas_Apostolicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-doctrine-document-219",
+      "type": "document",
+      "title": "Papa Francisco: Mensajes",
+      "text": "Mensajes · 238.001 palabras · Papa Francisco.",
+      "libraryId": "doctrine",
+      "sourceDocumentId": "doctrine-0654_Papa_Francisco_Mensajes",
+      "reference": "Índice documental · 0654_Papa_Francisco_Mensajes.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-doctrine-document-220",
+      "type": "document",
+      "title": "Papa León XIV: Encíclicas",
+      "text": "Encíclicas · 50.426 palabras · Papa León XIV.",
+      "libraryId": "doctrine",
+      "sourceDocumentId": "doctrine-0655_Papa_Leon_XIV_Enciclicas",
+      "reference": "Índice documental · 0655_Papa_Leon_XIV_Enciclicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-doctrine-document-221",
+      "type": "author",
+      "title": "Papa León XIV: Exhortaciones apostólicas",
+      "text": "El índice atribuye esta fuente a Papa León XIV. Puedes abrirla y seguir desde ella otras obras del mismo autor.",
+      "libraryId": "doctrine",
+      "sourceDocumentId": "doctrine-0656_Papa_Leon_XIV_Exhortaciones_Apostolicas",
+      "reference": "Índice documental · 0656_Papa_Leon_XIV_Exhortaciones_Apostolicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-doctrine-document-222",
+      "type": "timeline",
+      "title": "Papa León XIV: Cartas apostólicas",
+      "text": "Cartas apostólicas · 22.965 palabras · Papa León XIV.",
+      "libraryId": "doctrine",
+      "sourceDocumentId": "doctrine-0657_Papa_Leon_XIV_Cartas_Apostolicas",
+      "reference": "Índice documental · 0657_Papa_Leon_XIV_Cartas_Apostolicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-doctrine-document-223",
+      "type": "curiosity",
+      "title": "Papa León XIV: Mensajes",
+      "text": "Una fuente de mensajes con 56.436 palabras: aproximadamente 257 minutos de lectura.",
+      "libraryId": "doctrine",
+      "sourceDocumentId": "doctrine-0658_Papa_Leon_XIV_Mensajes",
+      "reference": "Índice documental · 0658_Papa_Leon_XIV_Mensajes.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
       "id": "short-doctrine-warning",
       "type": "fact",
       "title": "Lee el corpus con criterio",
@@ -27699,6 +28976,28 @@
       "libraryId": "canon",
       "sourceDocumentId": "canon-0585_1983_Documents_postconciliaires",
       "reference": "Índice documental · 0585_1983_Documents_postconciliaires.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-canon-document-69",
+      "type": "document",
+      "title": "Papa Francisco: Cartas apostólicas",
+      "text": "Cartas apostólicas · 113.037 palabras · Papa Francisco.",
+      "libraryId": "canon",
+      "sourceDocumentId": "canon-0586_Papa_Francisco_Cartas_Apostolicas",
+      "reference": "Índice documental · 0586_Papa_Francisco_Cartas_Apostolicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-canon-document-70",
+      "type": "document",
+      "title": "Papa León XIV: Cartas apostólicas",
+      "text": "Cartas apostólicas · 22.965 palabras · Papa León XIV.",
+      "libraryId": "canon",
+      "sourceDocumentId": "canon-0587_Papa_Leon_XIV_Cartas_Apostolicas",
+      "reference": "Índice documental · 0587_Papa_Leon_XIV_Cartas_Apostolicas.md",
       "verified": true,
       "reviewedAt": "2026-08-06"
     },
@@ -29562,6 +30861,94 @@
       "reviewedAt": "2026-08-06"
     },
     {
+      "id": "short-history-document-162",
+      "type": "timeline",
+      "title": "Papa Francisco: Encíclicas",
+      "text": "Encíclicas · 147.851 palabras · Papa Francisco.",
+      "libraryId": "history",
+      "sourceDocumentId": "history-0386_Papa_Francisco_Enciclicas",
+      "reference": "Índice documental · 0386_Papa_Francisco_Enciclicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-history-document-163",
+      "type": "curiosity",
+      "title": "Papa Francisco: Exhortaciones apostólicas",
+      "text": "Una fuente de exhortaciones apostólicas con 224.797 palabras: aproximadamente 1022 minutos de lectura.",
+      "libraryId": "history",
+      "sourceDocumentId": "history-0387_Papa_Francisco_Exhortaciones_Apostolicas",
+      "reference": "Índice documental · 0387_Papa_Francisco_Exhortaciones_Apostolicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-history-document-164",
+      "type": "document",
+      "title": "Papa Francisco: Cartas apostólicas",
+      "text": "Cartas apostólicas · 113.037 palabras · Papa Francisco.",
+      "libraryId": "history",
+      "sourceDocumentId": "history-0388_Papa_Francisco_Cartas_Apostolicas",
+      "reference": "Índice documental · 0388_Papa_Francisco_Cartas_Apostolicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-history-document-165",
+      "type": "document",
+      "title": "Papa Francisco: Mensajes",
+      "text": "Mensajes · 238.001 palabras · Papa Francisco.",
+      "libraryId": "history",
+      "sourceDocumentId": "history-0389_Papa_Francisco_Mensajes",
+      "reference": "Índice documental · 0389_Papa_Francisco_Mensajes.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-history-document-166",
+      "type": "author",
+      "title": "Papa León XIV: Encíclicas",
+      "text": "El índice atribuye esta fuente a Papa León XIV. Puedes abrirla y seguir desde ella otras obras del mismo autor.",
+      "libraryId": "history",
+      "sourceDocumentId": "history-0390_Papa_Leon_XIV_Enciclicas",
+      "reference": "Índice documental · 0390_Papa_Leon_XIV_Enciclicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-history-document-167",
+      "type": "timeline",
+      "title": "Papa León XIV: Exhortaciones apostólicas",
+      "text": "Exhortaciones apostólicas · 24.033 palabras · Papa León XIV.",
+      "libraryId": "history",
+      "sourceDocumentId": "history-0391_Papa_Leon_XIV_Exhortaciones_Apostolicas",
+      "reference": "Índice documental · 0391_Papa_Leon_XIV_Exhortaciones_Apostolicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-history-document-168",
+      "type": "curiosity",
+      "title": "Papa León XIV: Cartas apostólicas",
+      "text": "Una fuente de cartas apostólicas con 22.965 palabras: aproximadamente 104 minutos de lectura.",
+      "libraryId": "history",
+      "sourceDocumentId": "history-0392_Papa_Leon_XIV_Cartas_Apostolicas",
+      "reference": "Índice documental · 0392_Papa_Leon_XIV_Cartas_Apostolicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-history-document-169",
+      "type": "document",
+      "title": "Papa León XIV: Mensajes",
+      "text": "Mensajes · 56.436 palabras · Papa León XIV.",
+      "libraryId": "history",
+      "sourceDocumentId": "history-0393_Papa_Leon_XIV_Mensajes",
+      "reference": "Índice documental · 0393_Papa_Leon_XIV_Mensajes.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
       "id": "short-history-warning",
       "type": "fact",
       "title": "Lee el corpus con criterio",
@@ -30713,6 +32100,17 @@
       "libraryId": "liturgy",
       "sourceDocumentId": "liturgy-0577_1986_MANUAL_DE_INDULGENCIAS",
       "reference": "Índice documental · 0577_1986_MANUAL_DE_INDULGENCIAS.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-liturgy-document-97",
+      "type": "timeline",
+      "title": "Papa Francisco: Cartas apostólicas",
+      "text": "Cartas apostólicas · 113.037 palabras · Papa Francisco.",
+      "libraryId": "liturgy",
+      "sourceDocumentId": "liturgy-0578_Papa_Francisco_Cartas_Apostolicas",
+      "reference": "Índice documental · 0578_Papa_Francisco_Cartas_Apostolicas.md",
       "verified": true,
       "reviewedAt": "2026-08-06"
     },
@@ -32396,6 +33794,94 @@
       "libraryId": "ortodoxia",
       "sourceDocumentId": "ortodoxia-1271_Peter_Leithart_Disenchantment_of_Sex_ES",
       "reference": "Índice documental · 1271_Peter_Leithart_Disenchantment_of_Sex_ES.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-ortodoxia-document-145",
+      "type": "document",
+      "title": "Papa Francisco: Encíclicas",
+      "text": "Encíclicas · 147.851 palabras · Papa Francisco.",
+      "libraryId": "ortodoxia",
+      "sourceDocumentId": "ortodoxia-1272_Papa_Francisco_Enciclicas",
+      "reference": "Índice documental · 1272_Papa_Francisco_Enciclicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-ortodoxia-document-146",
+      "type": "author",
+      "title": "Papa Francisco: Exhortaciones apostólicas",
+      "text": "El índice atribuye esta fuente a Papa Francisco. Puedes abrirla y seguir desde ella otras obras del mismo autor.",
+      "libraryId": "ortodoxia",
+      "sourceDocumentId": "ortodoxia-1273_Papa_Francisco_Exhortaciones_Apostolicas",
+      "reference": "Índice documental · 1273_Papa_Francisco_Exhortaciones_Apostolicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-ortodoxia-document-147",
+      "type": "timeline",
+      "title": "Papa Francisco: Cartas apostólicas",
+      "text": "Cartas apostólicas · 113.037 palabras · Papa Francisco.",
+      "libraryId": "ortodoxia",
+      "sourceDocumentId": "ortodoxia-1274_Papa_Francisco_Cartas_Apostolicas",
+      "reference": "Índice documental · 1274_Papa_Francisco_Cartas_Apostolicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-ortodoxia-document-148",
+      "type": "curiosity",
+      "title": "Papa Francisco: Mensajes",
+      "text": "Una fuente de mensajes con 238.001 palabras: aproximadamente 1082 minutos de lectura.",
+      "libraryId": "ortodoxia",
+      "sourceDocumentId": "ortodoxia-1275_Papa_Francisco_Mensajes",
+      "reference": "Índice documental · 1275_Papa_Francisco_Mensajes.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-ortodoxia-document-149",
+      "type": "document",
+      "title": "Papa León XIV: Encíclicas",
+      "text": "Encíclicas · 50.426 palabras · Papa León XIV.",
+      "libraryId": "ortodoxia",
+      "sourceDocumentId": "ortodoxia-1276_Papa_Leon_XIV_Enciclicas",
+      "reference": "Índice documental · 1276_Papa_Leon_XIV_Enciclicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-ortodoxia-document-150",
+      "type": "document",
+      "title": "Papa León XIV: Exhortaciones apostólicas",
+      "text": "Exhortaciones apostólicas · 24.033 palabras · Papa León XIV.",
+      "libraryId": "ortodoxia",
+      "sourceDocumentId": "ortodoxia-1277_Papa_Leon_XIV_Exhortaciones_Apostolicas",
+      "reference": "Índice documental · 1277_Papa_Leon_XIV_Exhortaciones_Apostolicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-ortodoxia-document-151",
+      "type": "author",
+      "title": "Papa León XIV: Cartas apostólicas",
+      "text": "El índice atribuye esta fuente a Papa León XIV. Puedes abrirla y seguir desde ella otras obras del mismo autor.",
+      "libraryId": "ortodoxia",
+      "sourceDocumentId": "ortodoxia-1278_Papa_Leon_XIV_Cartas_Apostolicas",
+      "reference": "Índice documental · 1278_Papa_Leon_XIV_Cartas_Apostolicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-ortodoxia-document-152",
+      "type": "timeline",
+      "title": "Papa León XIV: Mensajes",
+      "text": "Mensajes · 56.436 palabras · Papa León XIV.",
+      "libraryId": "ortodoxia",
+      "sourceDocumentId": "ortodoxia-1279_Papa_Leon_XIV_Mensajes",
+      "reference": "Índice documental · 1279_Papa_Leon_XIV_Mensajes.md",
       "verified": true,
       "reviewedAt": "2026-08-06"
     },
@@ -36245,6 +37731,303 @@
       "text": "Una fuente de nuevos documentos con 7950 palabras: aproximadamente 36 minutos de lectura.",
       "libraryId": "san-josemaria",
       "sourceDocumentId": "san-josemaria-via-crucis",
+      "reference": "Índice documental · via-crucis.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-0",
+      "type": "document",
+      "title": "Papa Francisco: Encíclicas",
+      "text": "Encíclicas · 147.851 palabras · Papa Francisco.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-1013_Papa_Francisco_Enciclicas",
+      "reference": "Índice documental · 1013_Papa_Francisco_Enciclicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-1",
+      "type": "author",
+      "title": "Papa Francisco: Exhortaciones apostólicas",
+      "text": "El índice atribuye esta fuente a Papa Francisco. Puedes abrirla y seguir desde ella otras obras del mismo autor.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-1014_Papa_Francisco_Exhortaciones_Apostolicas",
+      "reference": "Índice documental · 1014_Papa_Francisco_Exhortaciones_Apostolicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-2",
+      "type": "timeline",
+      "title": "Papa Francisco: Cartas apostólicas",
+      "text": "Cartas apostólicas · 113.037 palabras · Papa Francisco.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-1015_Papa_Francisco_Cartas_Apostolicas",
+      "reference": "Índice documental · 1015_Papa_Francisco_Cartas_Apostolicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-3",
+      "type": "curiosity",
+      "title": "Papa Francisco: Mensajes",
+      "text": "Una fuente de mensajes con 238.001 palabras: aproximadamente 1082 minutos de lectura.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-1016_Papa_Francisco_Mensajes",
+      "reference": "Índice documental · 1016_Papa_Francisco_Mensajes.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-4",
+      "type": "document",
+      "title": "Papa León XIV: Encíclicas",
+      "text": "Encíclicas · 50.426 palabras · Papa León XIV.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-1017_Papa_Leon_XIV_Enciclicas",
+      "reference": "Índice documental · 1017_Papa_Leon_XIV_Enciclicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-5",
+      "type": "document",
+      "title": "Papa León XIV: Exhortaciones apostólicas",
+      "text": "Exhortaciones apostólicas · 24.033 palabras · Papa León XIV.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-1018_Papa_Leon_XIV_Exhortaciones_Apostolicas",
+      "reference": "Índice documental · 1018_Papa_Leon_XIV_Exhortaciones_Apostolicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-6",
+      "type": "author",
+      "title": "Papa León XIV: Cartas apostólicas",
+      "text": "El índice atribuye esta fuente a Papa León XIV. Puedes abrirla y seguir desde ella otras obras del mismo autor.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-1019_Papa_Leon_XIV_Cartas_Apostolicas",
+      "reference": "Índice documental · 1019_Papa_Leon_XIV_Cartas_Apostolicas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-7",
+      "type": "timeline",
+      "title": "Papa León XIV: Mensajes",
+      "text": "Mensajes · 56.436 palabras · Papa León XIV.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-1020_Papa_Leon_XIV_Mensajes",
+      "reference": "Índice documental · 1020_Papa_Leon_XIV_Mensajes.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-8",
+      "type": "curiosity",
+      "title": "Amar a la Iglesia",
+      "text": "Una fuente de nuevos documentos con 14.702 palabras: aproximadamente 67 minutos de lectura.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-amar-a-la-iglesia",
+      "reference": "Índice documental · amar-a-la-iglesia.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-9",
+      "type": "document",
+      "title": "Amigos de Dios",
+      "text": "Nuevos documentos · 80.603 palabras.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-amigos-de-dios",
+      "reference": "Índice documental · amigos-de-dios.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-10",
+      "type": "document",
+      "title": "Camino",
+      "text": "Nuevos documentos · 34.117 palabras.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-camino",
+      "reference": "Índice documental · camino.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-11",
+      "type": "author",
+      "title": "Carta nº 29",
+      "text": "Nuevos documentos · 15.842 palabras.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-carta-no-29",
+      "reference": "Índice documental · carta-no-29.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-12",
+      "type": "timeline",
+      "title": "Cartas I",
+      "text": "Nuevos documentos · 52.062 palabras.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-cartas-i",
+      "reference": "Índice documental · cartas-i.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-13",
+      "type": "curiosity",
+      "title": "Cartas II",
+      "text": "Una fuente de nuevos documentos con 49.476 palabras: aproximadamente 225 minutos de lectura.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-cartas-ii",
+      "reference": "Índice documental · cartas-ii.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-14",
+      "type": "document",
+      "title": "Conversaciones",
+      "text": "Nuevos documentos · 51.548 palabras.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-conversaciones",
+      "reference": "Índice documental · conversaciones.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-15",
+      "type": "document",
+      "title": "Discursos sobre la Universidad",
+      "text": "Nuevos documentos · 10.293 palabras.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-discursos-sobre-la-universidad",
+      "reference": "Índice documental · discursos-sobre-la-universidad.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-16",
+      "type": "author",
+      "title": "En diálogo con el Señor",
+      "text": "Nuevos documentos · 56.048 palabras.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-en-dialogo-con-el-senor",
+      "reference": "Índice documental · en-dialogo-con-el-senor.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-17",
+      "type": "timeline",
+      "title": "Es Cristo que pasa",
+      "text": "Nuevos documentos · 79.496 palabras.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-es-cristo-que-pasa",
+      "reference": "Índice documental · es-cristo-que-pasa.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-18",
+      "type": "curiosity",
+      "title": "Forja",
+      "text": "Una fuente de nuevos documentos con 46.734 palabras: aproximadamente 212 minutos de lectura.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-forja",
+      "reference": "Índice documental · forja.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-19",
+      "type": "document",
+      "title": "Obras completas en un archivo por obra",
+      "text": "Nuevos documentos · 94 palabras.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-index",
+      "reference": "Índice documental · index.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-20",
+      "type": "document",
+      "title": "La Abadesa de las Huelgas",
+      "text": "Nuevos documentos · 74.138 palabras.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-la-abadesa-de-las-huelgas",
+      "reference": "Índice documental · la-abadesa-de-las-huelgas.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-21",
+      "type": "author",
+      "title": "Santo Rosario",
+      "text": "Nuevos documentos · 3783 palabras.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-santo-rosario",
+      "reference": "Índice documental · santo-rosario.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-22",
+      "type": "timeline",
+      "title": "Surco",
+      "text": "Nuevos documentos · 43.433 palabras.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-surco",
+      "reference": "Índice documental · surco.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-23",
+      "type": "curiosity",
+      "title": "tertulia-argentina",
+      "text": "Una fuente de nuevos documentos con 3048 palabras: aproximadamente 14 minutos de lectura.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-tertulia-argentina",
+      "reference": "Índice documental · tertulia-argentina.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-24",
+      "type": "document",
+      "title": "tertulia-barcelona",
+      "text": "Nuevos documentos · 3171 palabras.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-tertulia-barcelona",
+      "reference": "Índice documental · tertulia-barcelona.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-25",
+      "type": "document",
+      "title": "tertulia-peru",
+      "text": "Nuevos documentos · 5187 palabras.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-tertulia-peru",
+      "reference": "Índice documental · tertulia-peru.md",
+      "verified": true,
+      "reviewedAt": "2026-08-06"
+    },
+    {
+      "id": "short-preparadora-circulos-document-26",
+      "type": "author",
+      "title": "Via Crucis",
+      "text": "Nuevos documentos · 7950 palabras.",
+      "libraryId": "preparadora-circulos",
+      "sourceDocumentId": "preparadora-circulos-via-crucis",
       "reference": "Índice documental · via-crucis.md",
       "verified": true,
       "reviewedAt": "2026-08-06"

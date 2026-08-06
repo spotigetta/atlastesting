@@ -35,7 +35,7 @@
     magnetEnabled:true, magnetStrength:34, magnetDelay:120, magnetDuration:300,
     auroraIntensity:88, auroraSize:100, motionLevel:100, josemariaPortraitIntensity:18, shortTextScale:100,
     shortContentWidth:720, shortAlignment:"mixed", interfaceScale:100,
-    cornerRadius:100, fontStyle:"editorial", compactMode:false, showExternalImages:true
+    cornerRadius:100, fontStyle:"editorial", headingFont:"literata", bodyFont:"dm-sans", palette:"sage", surfaceStyle:"soft", compactMode:false, showExternalImages:true
   };
   const libraryGuides = {
     doctrine: { file: "infodoctrina_textogrande.html", purpose: "Aclara qué enseña la Iglesia y cómo se fundamenta en Escritura, Tradición, Magisterio, teología y moral.", examples: ["¿Qué enseña el Catecismo sobre la conciencia?", "Distingue doctrina definida, opinión teológica y criterio pastoral."] },
@@ -46,8 +46,23 @@
     cinepilot: { file: "infografiaCinepilot.html", purpose: "Consulta películas por ficha técnica, calidad artística, edad, contenido y orientación moral.", examples: ["¿Es adecuada para adolescentes?", "Compara dos películas por temas y tratamiento."] },
     bibliotecaria: { file: "infobib.html", purpose: "Descubre libros y diseña recorridos literarios por autores, géneros, épocas, temas o nivel lector.", examples: ["Haz una ruta por la novela rusa.", "¿Qué leer después de esta obra?"] },
     clasicos: { file: "infografiaLosClasicos_v2.html", purpose: "Explora el canon literario, consulta obras completas y relaciona grandes autores y tradiciones.", examples: ["Compara la tragedia griega y Shakespeare.", "Propón cinco clásicos sobre libertad."] },
-    "san-josemaria": { file: "infoSJM.html", purpose: "Profundiza en sus obras y enseñanzas sobre oración, trabajo, libertad y santidad cotidiana.", examples: ["Busca textos sobre santificar el trabajo.", "Relaciona Camino, Surco y Forja sobre la alegría."] }
+    "san-josemaria": { file: "infoSJM.html", purpose: "Profundiza en sus obras y enseñanzas sobre oración, trabajo, libertad y santidad cotidiana.", examples: ["Busca textos sobre santificar el trabajo.", "Relaciona Camino, Surco y Forja sobre la alegría."] },
+    "preparadora-circulos": { file: "infoCirculos.html", purpose: "Prepara círculos breves, documentados y pedagógicos a partir de las obras de san Josemaría y textos pontificios.", examples: ["Diseña un círculo de 25 minutos sobre oración mental.", "Propón preguntas, citas y aplicaciones para una sesión sobre trabajo."] }
   };
+  function libraryDisplay(library) {
+    const settings = A.storage.get().settings;
+    return { ...library, short: settings.libraryLabels?.[library.id]?.trim() || library.short, tone: settings.libraryColors?.[library.id] || library.tone };
+  }
+  function visibleLibraries(includeHidden = false) {
+    const settings = A.storage.get().settings;
+    const order = settings.libraryOrder?.length ? settings.libraryOrder : A.data.catalog.libraries.map(lib => lib.id);
+    const pinned = new Set(settings.pinnedLibraries || []); const hidden = new Set(settings.hiddenLibraries || []);
+    return A.data.catalog.libraries
+      .filter(lib => !lib.unlockFeature || A.storage.isFeatureUnlocked(lib.unlockFeature))
+      .filter(lib => includeHidden || !hidden.has(lib.id))
+      .sort((a,b) => Number(pinned.has(b.id)) - Number(pinned.has(a.id)) || (order.indexOf(a.id) < 0 ? 999 : order.indexOf(a.id)) - (order.indexOf(b.id) < 0 ? 999 : order.indexOf(b.id)))
+      .map(libraryDisplay);
+  }
   const tutorialSteps = [
     { mark: "A", route: "/", target: ".brand", eyebrow: "Primero · qué es", title: "Atlas es la puerta de entrada a tus IA", text: "Reúne fuentes, organiza bibliotecas y te ayuda a decidir dónde leer o qué IA consultar. No sustituye los documentos ni inventa una respuesta.", bullets: ["Ejemplo: busca «matrimonio» y compara doctrina, Derecho e historia.", "El logotipo siempre devuelve al Inicio."] },
     { mark: "↳", route: "/", target: ".home-hero", eyebrow: "Cómo se usa", title: "Buscar, descubrir y profundizar", text: "Puedes empezar con una pregunta, dejarte sorprender por una tarjeta o entrar directamente en una biblioteca.", bullets: ["Buscar: localiza fuentes y texto literal.", "Descubrir: frases, vídeos, hechos y preguntas.", "Profundizar: lector, notas, rutas y grafos."] },
@@ -65,11 +80,11 @@
     { mark: "◇", route: "/explore", target: ".explore-grid", eyebrow: "Explorar", title: "Doce formas de entrar en el conocimiento", text: "Colecciones, rutas, mapas, comparación, cronología y noticias ofrecen perspectivas distintas.", bullets: ["Pulsa «Personalizar botones» para reordenarlos.", "Cada botón puede tener su propio color."] },
     { mark: "◎", route: "/graph", target: ".graph-workspace", eyebrow: "Grafos", title: "Mira la estructura y las conexiones", text: "Un grafo muestra IA, categorías y fuentes por niveles; el otro cruza documentos relacionados.", bullets: ["Pulsa cualquier nodo para abrirlo.", "Usa +, − y centrar para inspeccionar nombres largos."] },
     { mark: "✦", route: "/discover", target: ".short-filters", eyebrow: "Descubrir", title: "Filtra el feed vivo", text: "Los filtros separan frases, hechos, anécdotas, oración, noticias, IA y formatos.", bullets: ["Las frases de san Josemaría llegan aleatoriamente de escriva.org.", "Guarda, comparte o abre la fuente original."] },
-    { mark: "⇄", route: "/compare", target: ".compare-select", eyebrow: "Comparar", title: "Cruza varias bibliotecas", text: "Selecciona IA para descubrir coincidencias y diferencias de catálogo.", bullets: ["Puedes comparar hasta cuatro.", "Las coincidencias proceden de títulos normalizados."] },
+    { mark: "✦", route: "/compare", target: ".capabilities-hero", eyebrow: "Capacidades", title: "Descubre todo lo que sabe hacer cada IA", text: "Una escena gráfica presenta la especialidad de cada biblioteca, sus fuentes y los mejores tipos de preguntas.", bullets: ["Recorre cada IA desde sus tarjetas animadas.", "Abre su guía visual para aprender a formular consultas concretas."] },
     { mark: "★", route: "/saved", target: ".saved-tabs", eyebrow: "Guardados", title: "Tu actividad queda reunida", text: "Aquí vuelves a documentos, Shorts, colecciones, rutas y preguntas guardadas.", bullets: ["También encontrarás progreso y estadísticas de estudio.", "Puedes exportar o importar tus datos locales."] }
   ];
 
-  tutorialSteps.splice(11, 0, ...A.data.catalog.libraries.map(lib => {
+  tutorialSteps.splice(11, 0, ...visibleLibraries().map(lib => {
     const guide = libraryGuides[lib.id];
     return {
       mark: lib.mark, route: "/", target: `[data-library="${lib.id}"]`,
@@ -199,9 +214,10 @@
   function renderHome() {
     const catalog = A.data.catalog;
     const settings = A.storage.get().settings;
-    const homeBlocks = ["today", "libraries", "reading", "history"];
+    const libraries = visibleLibraries();
+    const homeBlocks = ["exam", "today", "libraries", "reading", "history"];
     const homeOrder = [...new Set([...(settings.homeOrder || []), ...homeBlocks])].filter(id => homeBlocks.includes(id));
-    const homeLabels = { today: "Atlas Hoy", libraries: "Explora las IA", reading: "Continúa leyendo", history: "Continúa explorando" };
+    const homeLabels = { exam: "Examen diario", today: "Atlas Hoy", libraries: "Explora las IA", reading: "Continúa leyendo", history: "Continúa explorando" };
     const todayDoc = dailyPick(A.data.documents.filter(doc => doc.status !== "incomplete"), 3);
     const todayShort = dailyPick(catalog.shorts.filter(item => item.verified), 7);
     const todayQuote = dailyPick([
@@ -220,7 +236,7 @@
       .slice(0, 3);
     return `<section class="page home-page">
       <div class="home-hero">
-        <div><span class="eyebrow">Atlas · Mercabá</span><h1>${catalog.libraries.length} bibliotecas.<br>Miles de fuentes.</h1></div>
+        <div><span class="eyebrow">Atlas · Mercabá</span><h1>${libraries.length} bibliotecas.<br>Miles de fuentes.</h1></div>
         <p>Descubre qué sabe cada IA, qué documentos contiene y qué puedes preguntarle.</p>
         <div class="hero-search"><button data-action="search">${A.library.icon("search")}<span id="hero-placeholder">Busca “${placeholders[daySeed() % placeholders.length]}”</span><kbd>Ctrl K</kbd></button></div>
         <button class="customize-trigger subtle" data-action="customize-home" title="Cambiar el orden de Inicio">↕ Personalizar</button>
@@ -239,7 +255,7 @@
         </div>
       </section>
 
-      <section class="section" data-home-block="libraries" style="order:${homeOrder.indexOf("libraries") + 1}"><div class="section-head"><div><h2>Explora las IA</h2><p>Fuentes reales extraídas de sus carpetas.</p></div></div><div class="library-deck">${catalog.libraries.map(libraryCard).join("")}</div><div class="section-head ia-guide-heading"><div><h2>Guía visual de cada IA</h2><p>Resumen práctico e infografía completa siempre disponibles.</p></div><a href="#/infographics">Ver las nueve</a></div><div class="ia-guide-strip">${catalog.libraries.map(lib => guideCard(lib)).join("")}</div></section>
+      <section class="section" data-home-block="libraries" style="order:${homeOrder.indexOf("libraries") + 1}"><div class="section-head"><div><h2>Explora las IA</h2><p>Fuentes reales extraídas de sus carpetas.</p></div></div><div class="library-deck">${libraries.map(libraryCard).join("")}</div><div class="section-head ia-guide-heading"><div><h2>Guía visual de cada IA</h2><p>Resumen práctico e infografía completa siempre disponibles.</p></div><a href="#/infographics">Ver todas</a></div><div class="ia-guide-strip">${libraries.map(lib => guideCard(lib)).join("")}</div></section>
 
       ${reading.length ? `<section class="section" data-home-block="reading" style="order:${homeOrder.indexOf("reading") + 1}"><div class="section-head"><div><h2>Continúa leyendo</h2><p>Retoma cada fuente exactamente donde la dejaste.</p></div><a href="#/saved">Ver actividad</a></div><div class="continue-reading-grid">${reading.map(item => readingItem(item.doc, item.progress)).join("")}</div></section>` : ""}
 
@@ -270,8 +286,22 @@
     </article>`;
   }
 
+  function preparadoraIntro(lib) {
+    const guide=libraryGuides[lib.id];
+    return `<section class="page preparadora-intro tone-${lib.tone}" data-library="${lib.id}"><header><span class="library-mark">${esc(lib.mark)}</span><div><span class="eyebrow">Función adicional desbloqueada</span><h1>Antes de preparar el círculo</h1><p>${esc(guide.purpose)}</p></div></header><div class="preparadora-steps"><article><b>1</b><h3>Define el tema y el público</h3><p>Indica duración, edad, formación previa y objetivo concreto.</p></article><article><b>2</b><h3>Pide una estructura verificable</h3><p>Introducción, dos o tres ideas, citas literales, preguntas y aplicación práctica.</p></article><article><b>3</b><h3>Comprueba cada cita</h3><p>Abre el documento enlazado y conserva autor, obra, punto o documento pontificio.</p></article></div><div class="preparadora-guide-preview"><iframe src="${infographicUrl(guide.file)}" title="Instrucciones de la Preparadora de círculos" loading="eager"></iframe><div><h2>La infografía contiene el método completo</h2><p>Ábrela antes del primer uso; después podrás volver a ella desde la guía visual.</p><div class="button-row"><button class="primary-button" data-open-infographic="${esc(guide.file)}" data-infographic-title="Preparadora de círculos" data-infographic-tone="${esc(lib.tone)}">Ver instrucciones completas</button><a class="secondary-button" href="#/library/${lib.id}/documents?ready=1">Ya la conozco · ver fuentes</a></div></div></div></section>`;
+  }
+
+  function lockedFeature() {
+    return `<section class="page"><div class="feature-lock"><span>PC</span><h1>Preparadora de círculos</h1><p>Esta función necesita activarse en Guardados con el código correspondiente.</p><a class="primary-button" href="#/saved">Ir a Guardados</a></div></section>`;
+  }
+
   function renderInfographics() {
-    return `<section class="page infographic-library"><header class="explore-hero"><span class="eyebrow">Guía visual</span><h1>Qué puede hacer cada IA.</h1><p>Lee el resumen operativo o abre la infografía original completa. Estas copias se sincronizan automáticamente desde <code>infografiasfinal</code>.</p></header><div class="ia-guide-grid">${A.data.catalog.libraries.map(lib => guideCard(lib, true)).join("")}</div></section>`;
+    return `<section class="page infographic-library"><header class="explore-hero"><span class="eyebrow">Guía visual</span><h1>Qué puede hacer cada IA.</h1><p>Una presentación gráfica y animada de capacidades, preguntas y fuentes. Las piezas se sincronizan automáticamente desde <code>infografiasfinal</code>.</p></header><div class="ia-guide-grid capabilities-showcase">${visibleLibraries().map(lib => guideCard(lib, true)).join("")}</div></section>`;
+  }
+
+  function renderCapabilities() {
+    const libraries=visibleLibraries();
+    return `<section class="page capabilities-page"><header class="capabilities-hero"><div><span class="eyebrow">Atlas de capacidades</span><h1>Una IA para cada clase de pregunta.</h1><p>Explora visualmente para qué sirve cada cuaderno, qué fuentes domina y cómo formular una consulta eficaz.</p></div><div class="capability-orbit" aria-hidden="true"><i>A</i>${libraries.slice(0,9).map((lib,index)=>`<span style="--orbit-index:${index};--orbit-total:${Math.min(9,libraries.length)}" class="tone-${lib.tone}">${esc(lib.mark)}</span>`).join("")}</div></header><div class="capability-flow"><span>1 · Elige el tipo de duda</span><i>→</i><span>2 · Entra en la IA adecuada</span><i>→</i><span>3 · Verifica en sus fuentes</span></div><div class="ia-guide-grid capabilities-showcase">${libraries.map(lib=>guideCard(lib,true)).join("")}</div></section>`;
   }
 
   function continueItem(lib, href, label) {
@@ -298,7 +328,7 @@
       ["routes","compass", "Rutas", `${catalog.routes.length} recorridos verificables`, "#/routes"],
       ["discover","spark", "Descubrir", "Shorts documentados y contenido diario", "#/discover"],
       ["stats","theme", "Estadísticas", "Siete visualizaciones por biblioteca", `#/library/${catalog.libraries[0].id}/stats`],
-      ["compare","search", "Comparar", "Coincidencias y diferencias entre IA", "#/compare"],
+      ["compare","spark", "Capacidades de las IA", "Qué hace mejor cada cuaderno y cómo preguntarle", "#/compare"],
       ["timeline","clock", "Cronología viva", "Autores, concilios y documentos fechados", "#/timeline"],
       ["map","compass", "Mapa mundial", "Roma, Hipona, Nicea, Trento, Toledo y Jerusalén", "#/map"],
       ["graph","grid", "Mapa de relaciones", "Documentos, autores, categorías e IA conectados", "#/graph"],
@@ -318,7 +348,7 @@
     return `<section class="page"><header class="explore-hero"><span class="eyebrow">Explorar</span><h1>El conocimiento, desde varios ángulos.</h1><p>No tienes que empezar por una lista. Entra por una biblioteca, una colección, una ruta o una visualización.</p><button class="customize-trigger" data-action="customize-explore">Personalizar botones</button></header>
       ${settings.customizeExplore ? `<section class="customize-panel"><span class="eyebrow">Tu espacio</span><h2>Ordena y colorea Explorar</h2>${ordered.map(([id,,title],index) => `<div class="customize-row"><b>${title}</b><span><button data-explore-move="${id}" data-direction="-1" ${index===0?"disabled":""}>↑</button><button data-explore-move="${id}" data-direction="1" ${index===ordered.length-1?"disabled":""}>↓</button><select data-explore-color="${id}">${tones.map(tone=>`<option value="${tone}" ${(settings.exploreColors?.[id] || tones[index%tones.length])===tone?"selected":""}>${tone}</option>`).join("")}</select></span></div>`).join("")}</section>` : ""}
       <div class="explore-panels">${groups.map(([title,intro,ids]) => `<section class="explore-panel"><header><span class="eyebrow">${title}</span><p>${intro}</p></header><div class="explore-grid">${ordered.filter(([id]) => ids.includes(id)).map(([id,icon,tileTitle,text,href],index) => `<a class="explore-tile tone-${settings.exploreColors?.[id] || tones[(ordered.findIndex(item => item[0] === id) + index)%tones.length]}" data-explore-id="${id}" href="${href}">${A.library.icon(icon)}<h3>${tileTitle}</h3><p>${text}</p></a>`).join("")}</div></section>`).join("")}</div>
-      <section class="section" id="explore-libraries"><div class="section-head"><div><h2>Bibliotecas</h2><p>Elige el corpus desde el que quieres comenzar.</p></div></div><div class="library-deck">${catalog.libraries.map(libraryCard).join("")}</div></section>
+      <section class="section" id="explore-libraries"><div class="section-head"><div><h2>Bibliotecas</h2><p>Elige el corpus desde el que quieres comenzar.</p></div></div><div class="library-deck">${visibleLibraries().map(libraryCard).join("")}</div></section>
     </section>`;
   }
 
@@ -380,7 +410,11 @@
         <label class="setting-select"><span><b>Colocación del texto</b><small>San Josemaría permanece siempre a la izquierda.</small></span><select data-setting-select="shortAlignment"><option value="mixed" ${settings.shortAlignment==="mixed"?"selected":""}>Alternada</option><option value="left" ${settings.shortAlignment==="left"?"selected":""}>Siempre izquierda</option><option value="right" ${settings.shortAlignment==="right"?"selected":""}>Siempre derecha</option></select></label>
         ${toggleSetting("showExternalImages","Fotografías externas","Muestra imágenes en noticias, Instagram, música y vídeos.")}</section>
       <section><span class="eyebrow">Interfaz</span><h3>Apariencia general</h3>${rangeSetting("interfaceScale","Escala de la interfaz",85,120,1,"%")}${rangeSetting("cornerRadius","Redondez",35,140,1,"%")}
-        <label class="setting-select"><span><b>Personalidad tipográfica</b><small>Editorial prioriza Literata; moderna prioriza DM Sans.</small></span><select data-setting-select="fontStyle"><option value="editorial" ${settings.fontStyle==="editorial"?"selected":""}>Editorial</option><option value="modern" ${settings.fontStyle==="modern"?"selected":""}>Moderna</option></select></label>
+        <label class="setting-select"><span><b>Estilo general</b><small>Editorial conserva contraste entre títulos y texto; contemporáneo unifica la voz.</small></span><select data-setting-select="fontStyle"><option value="editorial" ${settings.fontStyle==="editorial"?"selected":""}>Editorial</option><option value="modern" ${settings.fontStyle==="modern"?"selected":""}>Contemporáneo</option></select></label>
+        <label class="setting-select"><span><b>Fuente de títulos</b><small>Cinco familias web con personalidades distintas.</small></span><select data-setting-select="headingFont"><option value="literata" ${settings.headingFont==="literata"?"selected":""}>Literata</option><option value="cormorant" ${settings.headingFont==="cormorant"?"selected":""}>Cormorant Garamond</option><option value="alegreya" ${settings.headingFont==="alegreya"?"selected":""}>Alegreya</option><option value="lora" ${settings.headingFont==="lora"?"selected":""}>Lora</option><option value="merriweather" ${settings.headingFont==="merriweather"?"selected":""}>Merriweather</option></select></label>
+        <label class="setting-select"><span><b>Fuente de lectura</b><small>Escoge una voz sobria, humanista o geométrica.</small></span><select data-setting-select="bodyFont"><option value="dm-sans" ${settings.bodyFont==="dm-sans"?"selected":""}>DM Sans</option><option value="manrope" ${settings.bodyFont==="manrope"?"selected":""}>Manrope</option><option value="source-sans" ${settings.bodyFont==="source-sans"?"selected":""}>Source Sans 3</option><option value="montserrat" ${settings.bodyFont==="montserrat"?"selected":""}>Montserrat</option><option value="system" ${settings.bodyFont==="system"?"selected":""}>Sistema</option></select></label>
+        <label class="setting-select"><span><b>Paleta de acento</b><small>Cambia botones, enlaces, focos y detalles.</small></span><select data-setting-select="palette"><option value="sage" ${settings.palette==="sage"?"selected":""}>Verde Atlas</option><option value="burgundy" ${settings.palette==="burgundy"?"selected":""}>Burdeos clásico</option><option value="ocean" ${settings.palette==="ocean"?"selected":""}>Azul océano</option><option value="indigo" ${settings.palette==="indigo"?"selected":""}>Índigo</option><option value="amber" ${settings.palette==="amber"?"selected":""}>Ámbar</option><option value="rose" ${settings.palette==="rose"?"selected":""}>Rosa viejo</option></select></label>
+        <label class="setting-select"><span><b>Acabado de superficies</b><small>Suave, papel editorial o nítido.</small></span><select data-setting-select="surfaceStyle"><option value="soft" ${settings.surfaceStyle==="soft"?"selected":""}>Suave</option><option value="paper" ${settings.surfaceStyle==="paper"?"selected":""}>Papel</option><option value="crisp" ${settings.surfaceStyle==="crisp"?"selected":""}>Nítido</option></select></label>
         ${toggleSetting("compactMode","Modo compacto","Reduce espacios en listados, paneles y cabeceras.")}</section>
     </div>`;
   }
@@ -388,6 +422,13 @@
   function applyPersonalization() {
     const s = A.storage.get().settings;
     const root = document.documentElement;
+    const headingFonts={literata:'"Literata",Georgia,serif',cormorant:'"Cormorant Garamond",Georgia,serif',alegreya:'"Alegreya",Georgia,serif',lora:'"Lora",Georgia,serif',merriweather:'"Merriweather",Georgia,serif'};
+    const bodyFonts={"dm-sans":'"DM Sans",system-ui,sans-serif',manrope:'"Manrope",system-ui,sans-serif',"source-sans":'"Source Sans 3",system-ui,sans-serif',montserrat:'"Montserrat",system-ui,sans-serif',system:'system-ui,-apple-system,sans-serif'};
+    const palettes={sage:["#245647","#dbe8e1"],burgundy:["#793b4b","#eddde2"],ocean:["#27617a","#d9e9ef"],indigo:["#4d57a1","#e1e3f2"],amber:["#966517","#f1e5cf"],rose:["#9a4964","#f1dce4"]};
+    const palette=palettes[s.palette]||palettes.sage;
+    root.style.setProperty("--serif",headingFonts[s.headingFont]||headingFonts.literata);
+    root.style.setProperty("--sans",bodyFonts[s.bodyFont]||bodyFonts["dm-sans"]);
+    root.style.setProperty("--atlas",palette[0]); root.style.setProperty("--atlas-soft",palette[1]);
     root.style.setProperty("--short-text-scale", Number(s.shortTextScale || 100) / 100);
     root.style.setProperty("--short-content-width", `${Number(s.shortContentWidth || 720)}px`);
     root.style.setProperty("--ui-scale", Number(s.interfaceScale || 100) / 100);
@@ -397,6 +438,7 @@
     root.style.setProperty("--aurora-max", `${1050 * auroraSize}px`);
     root.style.setProperty("--sjm-portrait-opacity", Number(s.josemariaPortraitIntensity || 18) / 100);
     document.body.dataset.fontStyle = s.fontStyle || "editorial";
+    document.body.dataset.surfaceStyle = s.surfaceStyle || "soft";
     document.body.classList.toggle("compact-ui", Boolean(s.compactMode));
     document.body.classList.toggle("hide-external-images", !s.showExternalImages);
   }
@@ -415,7 +457,7 @@
   function renderSaved() {
     const stored = A.storage.get();
     const today = stored.study?.[new Date().toISOString().slice(0, 10)] || { milliseconds: 0, documents: [], collections: [] };
-    const tabs = [["documents","Documentos"],["shorts","Shorts"],["collections","Colecciones"],["routes","Rutas"],["history","Historial"],["channels","Canales"]];
+    const tabs = [["documents","Documentos"],["shorts","Shorts"],["collections","Colecciones"],["routes","Rutas"],["history","Historial"],["libraries","Mis IA"],["channels","Canales"]];
     let content = "";
     if (state.savedTab === "documents") {
       const docs = stored.favorites.documents.map(id => A.data.documentMap.get(id)).filter(Boolean);
@@ -434,18 +476,25 @@
     } else if (state.savedTab === "history") {
       const docs = stored.history.map(id => A.data.documentMap.get(id)).filter(Boolean);
       content = docs.length ? `<div class="document-list">${docs.map(A.library.docRow).join("")}</div>` : A.library.empty("Historial vacío", "Los documentos que abras aparecerán aquí.");
+    } else if (state.savedTab === "libraries") {
+      const settings = stored.settings; const order = settings.libraryOrder?.length ? settings.libraryOrder : A.data.catalog.libraries.map(lib=>lib.id);
+      const libraries = A.data.catalog.libraries.filter(lib => !lib.unlockFeature || A.storage.isFeatureUnlocked(lib.unlockFeature)).sort((a,b)=>(order.indexOf(a.id)<0?999:order.indexOf(a.id))-(order.indexOf(b.id)<0?999:order.indexOf(b.id)));
+      const tones=["amber","blue","clay","violet","emerald","rose","indigo","gold","cyan","olive","burgundy","slate"];
+      content = `<section class="library-preference-manager"><div class="section-head"><div><h2>Personaliza tus IA</h2><p>El orden, los anclajes, etiquetas, colores y bibliotecas ocultas se guardan en este dispositivo.</p></div></div>${libraries.map((lib,index)=>`<article class="library-preference-row tone-${settings.libraryColors?.[lib.id]||lib.tone}"><span class="library-mark">${esc(lib.mark)}</span><div><b>${esc(lib.short)}</b><small>${lib.stats.documents} documentos</small></div><input data-library-label="${esc(lib.id)}" value="${esc(settings.libraryLabels?.[lib.id]||"")}" placeholder="Etiqueta personal"><select data-library-color="${esc(lib.id)}">${tones.map(tone=>`<option value="${tone}" ${(settings.libraryColors?.[lib.id]||lib.tone)===tone?"selected":""}>${tone}</option>`).join("")}</select><div class="library-pref-actions"><button data-library-move="${esc(lib.id)}" data-direction="-1" ${index===0?"disabled":""}>↑</button><button data-library-move="${esc(lib.id)}" data-direction="1" ${index===libraries.length-1?"disabled":""}>↓</button><button class="${settings.pinnedLibraries?.includes(lib.id)?"active":""}" data-library-pin="${esc(lib.id)}">${settings.pinnedLibraries?.includes(lib.id)?"★ Fijada":"☆ Fijar"}</button><button data-library-hide="${esc(lib.id)}">${settings.hiddenLibraries?.includes(lib.id)?"Mostrar":"Ocultar"}</button></div></article>`).join("")}</section>`;
     } else {
       const groups = [["youtube","Vídeos de YouTube","disabledVideoChannels"],["music","Música de YouTube","disabledMusicChannels"],["instagram","Instagram","disabledInstagramChannels"]];
-      content = `<div class="channel-manager">${groups.map(([kind,title,setting]) => {
-        const channels = window.ATLAS_CHANNELS?.[kind] || [];
+      const custom = stored.settings.customChannels || {youtube:[],music:[],instagram:[]};
+      content = `<form id="custom-channel-form" class="custom-channel-form"><div><span class="eyebrow">Canal personal</span><h2>Añade una fuente para ti</h2><p>Se guarda localmente. Un canal público nuevo se incorporará automáticamente al feed cuando exista un snapshot compatible; mientras tanto queda como acceso directo.</p></div><select name="kind"><option value="youtube">Vídeo</option><option value="music">Música</option><option value="instagram">Instagram</option></select><input name="name" required maxlength="80" placeholder="Nombre"><input name="url" type="url" required placeholder="https://…"><button class="primary-button">Añadir canal</button></form><div class="channel-manager">${groups.map(([kind,title,setting]) => {
+        const channels = [...(window.ATLAS_CHANNELS?.[kind] || []), ...(custom[kind] || [])];
         const disabled = new Set(stored.settings[setting] || []);
-        return `<section class="channel-group"><div class="section-head"><div><h2>${title}</h2><p>${channels.length} fuentes configuradas · elige cuáles aparecen en Descubrir.</p></div><div class="channel-bulk"><button class="text-button" data-channel-group="${kind}" data-channel-state="on">Todas</button><button class="text-button" data-channel-group="${kind}" data-channel-state="off">Ninguna</button></div></div><div class="channel-switches">${channels.map(channel => `<label class="channel-switch"><span><b>${esc(channel.name)}</b><small>${esc(channel.handle ? `@${channel.handle}` : channel.tier === "reserve" ? "Canal de reserva" : "Canal de YouTube")}</small></span><input type="checkbox" data-channel-toggle="${kind}" value="${esc(channel.name)}" ${disabled.has(channel.name) ? "" : "checked"}><i aria-hidden="true"></i></label>`).join("")}</div></section>`;
+        return `<section class="channel-group"><div class="section-head"><div><h2>${title}</h2><p>${channels.length} fuentes configuradas · elige cuáles aparecen en Descubrir.</p></div><div class="channel-bulk"><button class="text-button" data-channel-group="${kind}" data-channel-state="on">Todas</button><button class="text-button" data-channel-group="${kind}" data-channel-state="off">Ninguna</button></div></div><div class="channel-switches">${channels.map(channel => `<label class="channel-switch"><span><b>${esc(channel.name)}</b><small>${esc(channel.handle ? `@${channel.handle}` : channel.custom ? "Canal personal" : channel.tier === "reserve" ? "Canal de reserva" : "Canal de YouTube")}</small>${channel.url?`<a href="${esc(channel.url)}" target="_blank" rel="noopener">Abrir ↗</a>`:""}</span><input type="checkbox" data-channel-toggle="${kind}" value="${esc(channel.name)}" ${disabled.has(channel.name) ? "" : "checked"}><i aria-hidden="true"></i>${channel.custom?`<button type="button" data-remove-custom-channel="${kind}" data-channel-url="${esc(channel.url)}" aria-label="Eliminar">×</button>`:""}</label>`).join("")}</div></section>`;
       }).join("")}</div>`;
     }
     return `<section class="page"><header class="explore-hero"><span class="eyebrow">Tu Atlas · versión ${esc(A.data.catalog.meta.dataVersion)}</span><h1>Guardados e historial.</h1><p>Todo permanece en este dispositivo. No necesitas una cuenta.</p><span class="app-version-badge">Atlas ${esc(A.data.catalog.meta.dataVersion)}</span></header>
       <section class="study-summary"><div><strong>${Math.round((today.milliseconds || 0) / 60000)}</strong><span>minutos hoy</span></div><div><strong>${today.documents?.length || 0}</strong><span>documentos</span></div><div><strong>${today.collections?.length || 0}</strong><span>colecciones</span></div></section>
       <div class="chip-row saved-tabs">${tabs.map(([id,label]) => `<button class="chip ${state.savedTab===id?"active":""}" data-saved-tab="${id}">${label}</button>`).join("")}</div>${content}
-      <section class="section"><div class="section-head"><div><h2>Preferencias</h2><p>Adapta lectura, movimiento, iluminación y apariencia.</p></div></div><div class="button-row"><button class="primary-button" data-action="settings">Personalizar Atlas</button><button class="secondary-button" data-action="intro-replay">Ver presentación</button><button class="secondary-button" data-action="toggle-contrast">${stored.settings.contrast ? "Desactivar" : "Activar"} alto contraste</button><button class="secondary-button" data-action="toggle-random">${stored.settings.randomShorts ? "Orden diario" : "Orden aleatorio"}</button><button class="secondary-button" data-action="toggle-only-new">${stored.settings.onlyNewShorts ? "Mostrar todos" : "Solo contenido nuevo"}</button></div></section>
+      <section class="section feature-unlocks"><div class="section-head"><div><h2>Funciones adicionales</h2><p>Un sistema extensible de activaciones locales.</p></div></div>${A.storage.isFeatureUnlocked("preparadora-circulos")?`<article class="feature-unlock active"><span>✓</span><div><b>Preparadora de círculos activa</b><small>Quedará disponible tras cerrar y volver a abrir Atlas.</small></div><a class="secondary-button" href="#/library/preparadora-circulos/documents">Abrir guía</a></article>`:`<form id="feature-unlock-form" class="feature-unlock"><span>PC</span><div><b>Desbloquear una funcionalidad</b><small>Introduce el código que has recibido.</small></div><input name="code" autocomplete="off" required placeholder="Código"><button class="primary-button">Activar</button></form>`}</section>
+      <section class="section"><div class="section-head"><div><h2>Preferencias</h2><p>Adapta lectura, movimiento, iluminación y apariencia.</p></div></div><div class="button-row"><button class="primary-button" data-action="settings">Personalizar Atlas</button><button class="secondary-button" data-action="refresh-atlas">↻ Actualizar Atlas</button><button class="secondary-button" data-action="intro-replay">Ver presentación</button><button class="secondary-button" data-action="toggle-contrast">${stored.settings.contrast ? "Desactivar" : "Activar"} alto contraste</button><button class="secondary-button" data-action="toggle-random">${stored.settings.randomShorts ? "Orden diario" : "Orden aleatorio"}</button><button class="secondary-button" data-action="toggle-only-new">${stored.settings.onlyNewShorts ? "Mostrar todos" : "Solo contenido nuevo"}</button></div></section>
       <section class="section"><div class="section-head"><div><h2>Datos locales</h2><p>Exporta una copia, impórtala o borra todo.</p></div></div><div class="button-row"><button class="secondary-button" data-action="export-data">Exportar</button><button class="secondary-button" data-action="import-data">Importar</button><button class="secondary-button" data-action="clear-data">Borrar</button><input id="import-file" type="file" accept=".json,application/json" hidden></div></section></section>`;
   }
 
@@ -504,7 +553,7 @@
       app.innerHTML = A.reels.render(state.shortFilter);
       requestAnimationFrame(() => document.getElementById(current.segments[1])?.scrollIntoView());
     }
-    else if (current.name === "compare") app.innerHTML = A.compare.render(state.compare);
+    else if (current.name === "compare") app.innerHTML = renderCapabilities();
     else if (current.name === "collections") app.innerHTML = renderCollections();
     else if (current.name === "collection") app.innerHTML = renderCollection(current.segments[1]);
     else if (current.name === "routes") app.innerHTML = renderRoutes();
@@ -533,11 +582,13 @@
     else if (current.name === "library") {
       const lib = A.data.libraryMap.get(current.segments[1]);
       if (!lib) app.innerHTML = notFound();
+      else if (lib.unlockFeature && !A.storage.isFeatureUnlocked(lib.unlockFeature)) app.innerHTML = lockedFeature();
+      else if (lib.id === "preparadora-circulos" && current.query.get("ready") !== "1") app.innerHTML = preparadoraIntro(libraryDisplay(lib));
       else {
         A.storage.setLastLibrary(lib.id);
         const tab = current.segments[2] || "documents";
         state.library.category = current.query.get("category") || state.library.category;
-        app.innerHTML = A.library.render(lib, tab, state.library);
+        app.innerHTML = A.library.render(libraryDisplay(lib), tab, state.library);
       }
     } else if (current.name === "document") {
       app.innerHTML = renderExplore();
@@ -556,7 +607,7 @@
   function titleFor(current) {
     if (current.name === "library") return `${A.data.libraryMap.get(current.segments[1])?.short || "Biblioteca"} · Atlas`;
     if (current.name === "discover") return "Descubrir · Atlas";
-    if (current.name === "compare") return "Comparar · Atlas";
+    if (current.name === "compare") return "Capacidades de las IA · Atlas";
     if (current.name === "saved") return "Guardados · Atlas";
     if (current.name === "examen") return "Examen diario · Atlas";
     return "Atlas · Mercabá";
@@ -651,14 +702,14 @@
       toast("Escribe al menos tres caracteres antes de buscar en el texto.");
       return;
     }
-    fullTextStatus.textContent = "Cargando el índice completo y buscando…";
+    fullTextStatus.textContent = "Localizando candidatos y verificando la frase en los Markdown…";
     searchResults.innerHTML = `<div class="empty-state"><span class="empty-glyph">${A.library.icon("books")}</span><h2>Buscando dentro de los documentos</h2><p>La primera búsqueda puede tardar unos segundos.</p></div>`;
     try {
-      const results = await A.search.runFullText(query, state.searchFilter);
-      fullTextStatus.textContent = `Índice textual activo · ${window.ATLAS_FULLTEXT.meta.terms.toLocaleString("es-ES")} términos`;
+      const results = await A.search.runLiteral(query, state.searchFilter);
+      fullTextStatus.textContent = `Búsqueda literal verificada · ${window.ATLAS_FULLTEXT.meta.terms.toLocaleString("es-ES")} términos de apoyo`;
       searchResults.innerHTML = results.length
-        ? `<div class="result-group"><h3>Coincidencias dentro del texto · ${results.length}</h3>${results.map(doc => `<button class="search-result tone-${doc.library.tone}" data-open-reader="${esc(doc.id)}" data-reader-query="${esc(query)}"><span class="result-mark">${doc.library.mark}</span><span><b>${esc(doc.title)}</b><small>${esc(doc.category)} · ${esc(doc.library.short)}</small></span><span>${doc.occurrences.toLocaleString("es-ES")} apariciones</span></button>`).join("")}</div>`
-        : A.library.empty(`No aparece “${query}” en el índice textual`, "Prueba una palabra más general o una equivalencia.");
+        ? `<div class="result-group"><h3>Coincidencias literales verificadas · ${results.length}</h3>${results.map(doc => `<button class="search-result tone-${doc.library.tone}" data-open-reader="${esc(doc.id)}" data-reader-query="${esc(query)}"><span class="result-mark">${doc.library.mark}</span><span><b>${esc(doc.title)}</b><small>${esc(doc.category)} · ${esc(doc.library.short)} · “…${esc(doc.excerpt)}…”</small></span><span>${doc.occurrences.toLocaleString("es-ES")} apariciones</span></button>`).join("")}</div>`
+        : A.library.empty(`No aparece literalmente “${query}”`, "La comprobación se ha hecho dentro del Markdown, no solo contra el catálogo de palabras.");
       A.storage.addSearch(query);
     } catch (error) {
       fullTextStatus.textContent = "No se pudo cargar el índice textual.";
@@ -856,10 +907,20 @@
     if (action === "refresh-atlas") { event.preventDefault(); refreshAtlas(target); }
     if (target.dataset.channelGroup) {
       const map = { youtube: "disabledVideoChannels", music: "disabledMusicChannels", instagram: "disabledInstagramChannels" };
-      const channels = window.ATLAS_CHANNELS?.[target.dataset.channelGroup] || [];
+      const channels = [...(window.ATLAS_CHANNELS?.[target.dataset.channelGroup] || []), ...(A.storage.get().settings.customChannels?.[target.dataset.channelGroup] || [])];
       A.storage.setSetting(map[target.dataset.channelGroup], target.dataset.channelState === "on" ? [] : channels.map(channel => channel.name));
       renderRouteView();
       toast(target.dataset.channelState === "on" ? "Canales habilitados." : "Canales deshabilitados.");
+    }
+    if (target.dataset.libraryMove) moveSetting("libraryOrder", target.dataset.libraryMove, target.dataset.direction, A.data.catalog.libraries.map(lib=>lib.id));
+    if (target.dataset.libraryPin) {
+      const ids=new Set(A.storage.get().settings.pinnedLibraries||[]); ids.has(target.dataset.libraryPin)?ids.delete(target.dataset.libraryPin):ids.add(target.dataset.libraryPin); A.storage.setSetting("pinnedLibraries",[...ids]); renderRouteView();
+    }
+    if (target.dataset.libraryHide) {
+      const ids=new Set(A.storage.get().settings.hiddenLibraries||[]); ids.has(target.dataset.libraryHide)?ids.delete(target.dataset.libraryHide):ids.add(target.dataset.libraryHide); A.storage.setSetting("hiddenLibraries",[...ids]); renderRouteView();
+    }
+    if (target.dataset.removeCustomChannel) {
+      event.preventDefault(); const settings=A.storage.get().settings; const custom={...(settings.customChannels||{})}; custom[target.dataset.removeCustomChannel]=(custom[target.dataset.removeCustomChannel]||[]).filter(item=>item.url!==target.dataset.channelUrl); A.storage.setSetting("customChannels",custom); renderRouteView(); toast("Canal personal eliminado.");
     }
 
     if (target.dataset.openDocument) { event.preventDefault(); closeSearch(); openDetail(A.data.documentMap.get(target.dataset.openDocument)); }
@@ -917,7 +978,7 @@
     if (target.dataset.savedTab) { state.savedTab = target.dataset.savedTab; renderRouteView(); }
     if (target.dataset.routeStep) { A.storage.toggleRouteStep(target.dataset.routeStep, target.dataset.documentId); renderRouteView(); }
     if (target.dataset.quizAnswer) { const correct = target.dataset.quizAnswer === target.dataset.quizCorrect; A.storage.recordQuiz(correct); toast(correct ? "Correcto. Esa fuente aparece en esa biblioteca." : "No es esa biblioteca. Puedes abrir la ficha para comprobarlo."); }
-    if (target.dataset.homeMove) moveSetting("homeOrder", target.dataset.homeMove, target.dataset.direction, ["today","libraries","reading","history"]);
+    if (target.dataset.homeMove) moveSetting("homeOrder", target.dataset.homeMove, target.dataset.direction, ["exam","today","libraries","reading","history"]);
     if (target.dataset.exploreMove) moveSetting("exploreOrder", target.dataset.exploreMove, target.dataset.direction, ["libraries","collections","routes","discover","stats","compare","timeline","map","graph","guide","sources","notifications"]);
   });
 
@@ -937,6 +998,7 @@
   });
 
   document.addEventListener("change", async event => {
+    if (event.target.dataset.shortFilterSelect) { state.shortFilter=event.target.value; renderRouteView(); return; }
     if (event.target.id === "library-category") { state.library.category = event.target.value; renderRouteView(); }
     if (event.target.id === "import-file" && event.target.files[0]) {
       try { A.storage.import(await event.target.files[0].text()); renderRouteView(); toast("Datos importados."); }
@@ -955,6 +1017,12 @@
       A.storage.setSetting(key, [...disabled]);
       toast(event.target.checked ? "Canal habilitado." : "Canal oculto.");
     }
+    if (event.target.dataset.libraryColor) {
+      A.storage.setSetting("libraryColors", { ...(A.storage.get().settings.libraryColors||{}), [event.target.dataset.libraryColor]:event.target.value }); renderRouteView();
+    }
+    if (event.target.dataset.libraryLabel) {
+      A.storage.setSetting("libraryLabels", { ...(A.storage.get().settings.libraryLabels||{}), [event.target.dataset.libraryLabel]:event.target.value.trim() }); renderRouteView();
+    }
     if (event.target.dataset.settingToggle) {
       A.storage.setSetting(event.target.dataset.settingToggle, event.target.checked);
       applyPersonalization();
@@ -963,6 +1031,20 @@
       A.storage.setSetting(event.target.dataset.settingSelect, event.target.value);
       applyPersonalization();
       if (event.target.dataset.settingSelect === "shortAlignment" && route().name === "discover") renderRouteView();
+    }
+  });
+
+  document.addEventListener("submit", event => {
+    if (event.target.id === "feature-unlock-form") {
+      event.preventDefault(); const code=String(new FormData(event.target).get("code")||"").trim().toUpperCase();
+      if (code !== "OD") { toast("Código no reconocido."); return; }
+      A.storage.unlockFeature("preparadora-circulos"); renderRouteView(); toast("Preparadora de círculos activada en este dispositivo."); return;
+    }
+    if (event.target.id === "custom-channel-form") {
+      event.preventDefault(); const form=new FormData(event.target); const kind=String(form.get("kind")); const name=String(form.get("name")||"").trim(); const url=String(form.get("url")||"").trim();
+      const custom={...(A.storage.get().settings.customChannels||{youtube:[],music:[],instagram:[]})}; const list=[...(custom[kind]||[])];
+      if (list.some(item=>item.url===url)) { toast("Ese canal ya está añadido."); return; }
+      list.push({name,url,custom:true}); custom[kind]=list; A.storage.setSetting("customChannels",custom); event.target.reset(); renderRouteView(); toast("Canal personal añadido.");
     }
   });
 

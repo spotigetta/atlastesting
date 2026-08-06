@@ -139,6 +139,38 @@
       .slice(0, limit);
   }
 
+  async function searchLiteral(query, filter = "all", limit = 80) {
+    const needle = String(query || "").trim();
+    if (needle.length < 3) return [];
+    /* El índice solo reduce candidatos; el resultado se confirma leyendo el Markdown real. */
+    const candidates = await searchFullText(needle, filter, 500);
+    const results = [];
+    let cursor = 0;
+    const worker = async () => {
+      while (cursor < candidates.length) {
+        const doc = candidates[cursor++];
+        try {
+          const payload = await window.AtlasRuntime.fetchJson(doc.contentFile);
+          const raw = (payload.chunks || []).map(chunk => chunk.markdown || "").join("\n\n");
+          const haystack = raw.toLocaleLowerCase("es");
+          const exact = needle.toLocaleLowerCase("es");
+          const collapsedHaystack = haystack.replace(/\s+/g, " ");
+          const collapsedNeedle = exact.replace(/\s+/g, " ");
+          const searchable = haystack.includes(exact) ? haystack : collapsedHaystack;
+          const sought = haystack.includes(exact) ? exact : collapsedNeedle;
+          if (!searchable.includes(sought)) continue;
+          let occurrences = 0, position = 0;
+          while ((position = searchable.indexOf(sought, position)) >= 0) { occurrences += 1; position += Math.max(1, sought.length); }
+          const first = searchable.indexOf(sought);
+          const excerpt = searchable.slice(Math.max(0, first - 90), Math.min(searchable.length, first + sought.length + 120)).replace(/\s+/g, " ").trim();
+          results.push({ ...doc, occurrences, excerpt, literalVerified: true });
+        } catch { /* Un documento aislado no invalida las coincidencias verificadas. */ }
+      }
+    };
+    await Promise.all(Array.from({ length: Math.min(6, candidates.length || 1) }, worker));
+    return results.sort((a,b) => b.occurrences - a.occurrences || a.title.localeCompare(b.title)).slice(0, limit);
+  }
+
   root.data = { catalog, documents, documentMap, libraryMap, normalize, expanded };
-  root.search = { run: search, loadFullText, runFullText: searchFullText };
+  root.search = { run: search, loadFullText, runFullText: searchFullText, runLiteral: searchLiteral };
 })();

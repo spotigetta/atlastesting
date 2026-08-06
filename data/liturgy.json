@@ -2138,6 +2138,26 @@
       "authority": "Libro o fuente litúrgica",
       "libraryId": "liturgy",
       "source": "0000_Indice_y_mapa_de_fuentes.md"
+    },
+    {
+      "id": "liturgy-0578_Papa_Francisco_Cartas_Apostolicas",
+      "contentFile": "data/documents/73b798b7a29b973867.json.gz",
+      "catalogId": "0578",
+      "file": "0578_Papa_Francisco_Cartas_Apostolicas.md",
+      "title": "Papa Francisco: Cartas apostólicas",
+      "originals": "0578",
+      "originalNumbers": [
+        "0578"
+      ],
+      "category": "Cartas apostólicas",
+      "words": 113037,
+      "author": "Papa Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "liturgy",
+      "source": "Descubierto directamente en la carpeta"
     }
   ],
   "categories": [
@@ -2180,6 +2200,10 @@
     {
       "name": "Legislación o documentación jurídica",
       "count": 2
+    },
+    {
+      "name": "Cartas apostólicas",
+      "count": 1
     }
   ],
   "authors": [
@@ -2208,6 +2232,10 @@
       "count": 2
     },
     {
+      "name": "Papa Francisco",
+      "count": 1
+    },
+    {
       "name": "San Atanasio",
       "count": 1
     },
@@ -2233,10 +2261,10 @@
     }
   ],
   "stats": {
-    "documents": 97,
-    "words": 12786551,
-    "categories": 10,
-    "authors": 12,
+    "documents": 98,
+    "words": 12899588,
+    "categories": 11,
+    "authors": 13,
     "historical": 3,
     "incomplete": 1,
     "foreignLanguage": 12,

@@ -43,7 +43,8 @@ write(musicPath, {
 const instagramConfig = read(path.join(contentDir, "instagram.json"));
 const instagramPath = path.join(dataDir, "instagram-cache.json");
 const instagramSnapshot = read(instagramPath);
-const manualInstagram = (instagramConfig.items || []).filter(item => item.url).map(item => ({
+const isConcreteInstagramPost = item => /instagram\.com\/(?:p|reel)\/[A-Za-z0-9_-]{8,}/.test(item?.url || "");
+const manualInstagram = (instagramConfig.items || []).filter(isConcreteInstagramPost).map(item => ({
   ...item,
   id: item.id || stableId("instagram", item.url),
   type: "instagram",
@@ -56,31 +57,17 @@ const manualInstagram = (instagramConfig.items || []).filter(item => item.url).m
   verified: true,
   manual: true
 }));
-const profileFallbacks = (instagramConfig.channels || []).filter(channel => channel.enabled !== false).map(channel => ({
-  id: `instagram-profile-${channel.handle}`,
-  type: "instagram",
-  source: channel.name,
-  author: channel.name,
-  title: `Publicaciones de ${channel.name}`,
-  description: "Accede al perfil configurado y a sus publicaciones recientes en Instagram.",
-  url: channel.url,
-  libraryId: "doctrine",
-  external: true,
-  verified: true,
-  profileFallback: true
-}));
 const instagramItems = [...new Map([
   ...manualInstagram,
-  ...(instagramSnapshot.items || []),
-  ...profileFallbacks
+  ...(instagramSnapshot.items || []).filter(isConcreteInstagramPost)
 ].map(item => [item.id || item.url, item])).values()];
 write(instagramPath, {
   ...instagramSnapshot,
   updatedAt: instagramSnapshot.updatedAt || new Date().toISOString(),
-  source: manualInstagram.length ? "manual-and-profiles" : "configured-profiles",
+  source: instagramItems.length ? (manualInstagram.length ? "manual-and-snapshot" : instagramSnapshot.source || "provider-snapshot") : "configured-no-posts",
   channels: instagramConfig.channels || [],
   items: instagramItems,
   failures: instagramSnapshot.failures || []
 });
 
-console.log(`Contenido manual: ${manualMusic.length} canciones y ${instagramItems.length} tarjetas de Instagram.`);
+console.log(`Contenido manual: ${manualMusic.length} canciones y ${instagramItems.length} publicaciones reales de Instagram.`);

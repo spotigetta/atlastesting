@@ -1495,6 +1495,46 @@
       "authority": "Legislación o fuente canónica",
       "libraryId": "canon",
       "source": "0000_Indice_y_mapa_de_fuentes.md"
+    },
+    {
+      "id": "canon-0586_Papa_Francisco_Cartas_Apostolicas",
+      "contentFile": "data/documents/d31ca742c612afd2f1.json.gz",
+      "catalogId": "0586",
+      "file": "0586_Papa_Francisco_Cartas_Apostolicas.md",
+      "title": "Papa Francisco: Cartas apostólicas",
+      "originals": "0586",
+      "originalNumbers": [
+        "0586"
+      ],
+      "category": "Cartas apostólicas",
+      "words": 113037,
+      "author": "Papa Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "canon",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "canon-0587_Papa_Leon_XIV_Cartas_Apostolicas",
+      "contentFile": "data/documents/9bf3366af4e31c6a7d.json.gz",
+      "catalogId": "0587",
+      "file": "0587_Papa_Leon_XIV_Cartas_Apostolicas.md",
+      "title": "Papa León XIV: Cartas apostólicas",
+      "originals": "0587",
+      "originalNumbers": [
+        "0587"
+      ],
+      "category": "Cartas apostólicas",
+      "words": 22965,
+      "author": "Papa León XIV",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "canon",
+      "source": "Descubierto directamente en la carpeta"
     }
   ],
   "categories": [
@@ -1513,19 +1553,31 @@
     {
       "name": "Libro o normativa litúrgica",
       "count": 10
+    },
+    {
+      "name": "Cartas apostólicas",
+      "count": 2
     }
   ],
   "authors": [
+    {
+      "name": "Papa Francisco",
+      "count": 1
+    },
+    {
+      "name": "Papa León XIV",
+      "count": 1
+    },
     {
       "name": "Santo Tomás de Aquino",
       "count": 1
     }
   ],
   "stats": {
-    "documents": 69,
-    "words": 1830537,
-    "categories": 4,
-    "authors": 1,
+    "documents": 71,
+    "words": 1966539,
+    "categories": 5,
+    "authors": 3,
     "historical": 3,
     "incomplete": 0,
     "foreignLanguage": 12,

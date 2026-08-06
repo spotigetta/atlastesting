@@ -79,5 +79,15 @@
     "tone": "gold",
     "notebookUrl": "https://notebooklm.google.com/notebook/0bf40a0a-986d-46c0-9cb5-a9f6b9def41e",
     "description": "Obras, cartas, homilías, meditaciones y tertulias de san Josemaría para profundizar en su pensamiento y descubrir la santidad de la vida ordinaria."
+  },
+  {
+    "id": "preparadora-circulos",
+    "folder": "10_IA_Preparadora_Circulos",
+    "short": "Preparadora de círculos",
+    "mark": "PC",
+    "tone": "olive",
+    "notebookUrl": "",
+    "unlockFeature": "preparadora-circulos",
+    "description": "Corpus reservado para preparar círculos con obras de san Josemaría y textos de los papas Francisco y León XIV."
   }
 ]

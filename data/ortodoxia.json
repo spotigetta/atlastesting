@@ -2913,18 +2913,198 @@
       "authority": "Según género documental",
       "libraryId": "ortodoxia",
       "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "ortodoxia-1272_Papa_Francisco_Enciclicas",
+      "contentFile": "data/documents/503594903a6558bcb7.json.gz",
+      "catalogId": "1272",
+      "file": "1272_Papa_Francisco_Enciclicas.md",
+      "title": "Papa Francisco: Encíclicas",
+      "originals": "1272",
+      "originalNumbers": [
+        "1272"
+      ],
+      "category": "Encíclicas",
+      "words": 147851,
+      "author": "Papa Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "ortodoxia",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "ortodoxia-1273_Papa_Francisco_Exhortaciones_Apostolicas",
+      "contentFile": "data/documents/b618daf4d13e7c3a08.json.gz",
+      "catalogId": "1273",
+      "file": "1273_Papa_Francisco_Exhortaciones_Apostolicas.md",
+      "title": "Papa Francisco: Exhortaciones apostólicas",
+      "originals": "1273",
+      "originalNumbers": [
+        "1273"
+      ],
+      "category": "Exhortaciones apostólicas",
+      "words": 224797,
+      "author": "Papa Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "ortodoxia",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "ortodoxia-1274_Papa_Francisco_Cartas_Apostolicas",
+      "contentFile": "data/documents/d0c82d869370edd2aa.json.gz",
+      "catalogId": "1274",
+      "file": "1274_Papa_Francisco_Cartas_Apostolicas.md",
+      "title": "Papa Francisco: Cartas apostólicas",
+      "originals": "1274",
+      "originalNumbers": [
+        "1274"
+      ],
+      "category": "Cartas apostólicas",
+      "words": 113037,
+      "author": "Papa Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "ortodoxia",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "ortodoxia-1275_Papa_Francisco_Mensajes",
+      "contentFile": "data/documents/f6bf63645989fe554e.json.gz",
+      "catalogId": "1275",
+      "file": "1275_Papa_Francisco_Mensajes.md",
+      "title": "Papa Francisco: Mensajes",
+      "originals": "1275",
+      "originalNumbers": [
+        "1275"
+      ],
+      "category": "Mensajes",
+      "words": 238001,
+      "author": "Papa Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "ortodoxia",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "ortodoxia-1276_Papa_Leon_XIV_Enciclicas",
+      "contentFile": "data/documents/58364c18f50a484123.json.gz",
+      "catalogId": "1276",
+      "file": "1276_Papa_Leon_XIV_Enciclicas.md",
+      "title": "Papa León XIV: Encíclicas",
+      "originals": "1276",
+      "originalNumbers": [
+        "1276"
+      ],
+      "category": "Encíclicas",
+      "words": 50426,
+      "author": "Papa León XIV",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "ortodoxia",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "ortodoxia-1277_Papa_Leon_XIV_Exhortaciones_Apostolicas",
+      "contentFile": "data/documents/22d3fcab52d6b8e117.json.gz",
+      "catalogId": "1277",
+      "file": "1277_Papa_Leon_XIV_Exhortaciones_Apostolicas.md",
+      "title": "Papa León XIV: Exhortaciones apostólicas",
+      "originals": "1277",
+      "originalNumbers": [
+        "1277"
+      ],
+      "category": "Exhortaciones apostólicas",
+      "words": 24033,
+      "author": "Papa León XIV",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "ortodoxia",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "ortodoxia-1278_Papa_Leon_XIV_Cartas_Apostolicas",
+      "contentFile": "data/documents/4a5b28ed1b3cd0c019.json.gz",
+      "catalogId": "1278",
+      "file": "1278_Papa_Leon_XIV_Cartas_Apostolicas.md",
+      "title": "Papa León XIV: Cartas apostólicas",
+      "originals": "1278",
+      "originalNumbers": [
+        "1278"
+      ],
+      "category": "Cartas apostólicas",
+      "words": 22965,
+      "author": "Papa León XIV",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "ortodoxia",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "ortodoxia-1279_Papa_Leon_XIV_Mensajes",
+      "contentFile": "data/documents/0eb346645187026594.json.gz",
+      "catalogId": "1279",
+      "file": "1279_Papa_Leon_XIV_Mensajes.md",
+      "title": "Papa León XIV: Mensajes",
+      "originals": "1279",
+      "originalNumbers": [
+        "1279"
+      ],
+      "category": "Mensajes",
+      "words": 56436,
+      "author": "Papa León XIV",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "ortodoxia",
+      "source": "Descubierto directamente en la carpeta"
     }
   ],
   "categories": [
     {
       "name": "Nuevos documentos",
       "count": 145
+    },
+    {
+      "name": "Cartas apostólicas",
+      "count": 2
+    },
+    {
+      "name": "Encíclicas",
+      "count": 2
+    },
+    {
+      "name": "Exhortaciones apostólicas",
+      "count": 2
+    },
+    {
+      "name": "Mensajes",
+      "count": 2
     }
   ],
   "authors": [
     {
       "name": "Chesterton, G. K. (Gilbert Keith)",
       "count": 13
+    },
+    {
+      "name": "Papa Francisco",
+      "count": 7
     },
     {
       "name": "Plato",
@@ -2943,12 +3123,12 @@
       "count": 4
     },
     {
-      "name": "San Agustín",
+      "name": "Papa León XIV",
       "count": 4
     },
     {
-      "name": "Papa Francisco",
-      "count": 3
+      "name": "San Agustín",
+      "count": 4
     },
     {
       "name": "Proyecto Mercabá",
@@ -3036,10 +3216,10 @@
     }
   ],
   "stats": {
-    "documents": 145,
-    "words": 6696455,
-    "categories": 1,
-    "authors": 28,
+    "documents": 153,
+    "words": 7574001,
+    "categories": 5,
+    "authors": 29,
     "historical": 0,
     "incomplete": 0,
     "foreignLanguage": 120,

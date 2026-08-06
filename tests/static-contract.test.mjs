@@ -6,11 +6,13 @@ import { fileURLToPath } from "node:url";
 
 const root = path.dirname(path.dirname(fileURLToPath(import.meta.url)));
 
-test("las nueve bibliotecas fuente están dentro del repositorio", () => {
+test("todas las bibliotecas registradas están dentro del repositorio", () => {
   const directory = path.join(root, "source", "libraries");
   const libraries = fs.readdirSync(directory, { withFileTypes: true })
     .filter(entry => entry.isDirectory() && /^\d{2,}_IA_/.test(entry.name));
-  assert.equal(libraries.length, 9);
+  const registered = JSON.parse(fs.readFileSync(path.join(root, "content", "libraries.json"), "utf8"));
+  assert.equal(libraries.length, registered.length);
+  assert.ok(registered.some(library => library.id === "preparadora-circulos" && library.unlockFeature));
 });
 
 test("la PWA no llama a endpoints del servidor local", () => {
