@@ -3253,9 +3253,1293 @@
       "authority": "Según género documental",
       "libraryId": "doctrine",
       "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0587_gestis_verbisque_es",
+      "contentFile": "data/documents/0f40cb27420a0bcbaf.json.gz",
+      "catalogId": "0587",
+      "file": "0587_gestis_verbisque_es.md",
+      "title": "Gestis verbisque",
+      "originals": "0587",
+      "originalNumbers": [
+        "0587"
+      ],
+      "category": "Nuevos documentos",
+      "words": 6837,
+      "author": "Dicasterio para la Doctrina de la Fe",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0588_samaritanus_bonus_es",
+      "contentFile": "data/documents/9028943f2d6198b543.json.gz",
+      "catalogId": "0588",
+      "file": "0588_samaritanus_bonus_es.md",
+      "title": "Samaritanus bonus",
+      "originals": "0588",
+      "originalNumbers": [
+        "0588"
+      ],
+      "category": "Nuevos documentos",
+      "words": 17748,
+      "author": "Congregación para la Doctrina de la Fe",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0589_placuit_deo_es",
+      "contentFile": "data/documents/6e7ed816ff6b870dfa.json.gz",
+      "catalogId": "0589",
+      "file": "0589_placuit_deo_es.md",
+      "title": "Placuit Deo",
+      "originals": "0589",
+      "originalNumbers": [
+        "0589"
+      ],
+      "category": "Nuevos documentos",
+      "words": 4227,
+      "author": "Congregación para la Doctrina de la Fe",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0590_oeconomicae_et_pecuniariae_quaestiones_es",
+      "contentFile": "data/documents/df85f30054b3081944.json.gz",
+      "catalogId": "0590",
+      "file": "0590_oeconomicae_et_pecuniariae_quaestiones_es.md",
+      "title": "Oeconomicae et pecuniariae quaestiones",
+      "originals": "0590",
+      "originalNumbers": [
+        "0590"
+      ],
+      "category": "Nuevos documentos",
+      "words": 11177,
+      "author": "Congregación para la Doctrina de la Fe y Dicasterio para el Desarrollo Humano Integral",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0591_iuvenescit_ecclesia_es",
+      "contentFile": "data/documents/5ac09d3be96f8496ab.json.gz",
+      "catalogId": "0591",
+      "file": "0591_iuvenescit_ecclesia_es.md",
+      "title": "Iuvenescit Ecclesia",
+      "originals": "0591",
+      "originalNumbers": [
+        "0591"
+      ],
+      "category": "Nuevos documentos",
+      "words": 12371,
+      "author": "Congregación para la Doctrina de la Fe",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0592_fratelli_tutti_es",
+      "contentFile": "data/documents/d7347e9f148f9c9e16.json.gz",
+      "catalogId": "0592",
+      "file": "0592_fratelli_tutti_es.md",
+      "title": "Fratelli tutti",
+      "originals": "0592",
+      "originalNumbers": [
+        "0592"
+      ],
+      "category": "Nuevos documentos",
+      "words": 44804,
+      "author": "Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0593_gaudete_et_exsultate_es",
+      "contentFile": "data/documents/3f67a4bdbc42ea3577.json.gz",
+      "catalogId": "0593",
+      "file": "0593_gaudete_et_exsultate_es.md",
+      "title": "Gaudete et exsultate",
+      "originals": "0593",
+      "originalNumbers": [
+        "0593"
+      ],
+      "category": "Nuevos documentos",
+      "words": 22820,
+      "author": "Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0594_christus_vivit_es",
+      "contentFile": "data/documents/e071aed84ef61f3fdb.json.gz",
+      "catalogId": "0594",
+      "file": "0594_christus_vivit_es.md",
+      "title": "Christus vivit",
+      "originals": "0594",
+      "originalNumbers": [
+        "0594"
+      ],
+      "category": "Nuevos documentos",
+      "words": 34603,
+      "author": "Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0595_querida_amazonia_es",
+      "contentFile": "data/documents/6ae0d48168135aef3f.json.gz",
+      "catalogId": "0595",
+      "file": "0595_querida_amazonia_es.md",
+      "title": "Querida Amazonia",
+      "originals": "0595",
+      "originalNumbers": [
+        "0595"
+      ],
+      "category": "Nuevos documentos",
+      "words": 16252,
+      "author": "Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0596_patris_corde_es",
+      "contentFile": "data/documents/caa8f3f66a5433982d.json.gz",
+      "catalogId": "0596",
+      "file": "0596_patris_corde_es.md",
+      "title": "Patris corde",
+      "originals": "0596",
+      "originalNumbers": [
+        "0596"
+      ],
+      "category": "Nuevos documentos",
+      "words": 6287,
+      "author": "Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0597_misericordia_et_misera_es",
+      "contentFile": "data/documents/b8a9d5a50f07834417.json.gz",
+      "catalogId": "0597",
+      "file": "0597_misericordia_et_misera_es.md",
+      "title": "Misericordia et misera",
+      "originals": "0597",
+      "originalNumbers": [
+        "0597"
+      ],
+      "category": "Nuevos documentos",
+      "words": 7783,
+      "author": "Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0598_ad_theologiam_promovendam_it",
+      "contentFile": "data/documents/736ce5f2a20f3450c8.json.gz",
+      "catalogId": "0598",
+      "file": "0598_ad_theologiam_promovendam_it.md",
+      "title": "Ad theologiam promovendam",
+      "originals": "0598",
+      "originalNumbers": [
+        "0598"
+      ],
+      "category": "Nuevos documentos",
+      "words": 1461,
+      "author": "Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0599_desiderio_desideravi_es",
+      "contentFile": "data/documents/b7a13268bd641295d5.json.gz",
+      "catalogId": "0599",
+      "file": "0599_desiderio_desideravi_es.md",
+      "title": "Desiderio desideravi",
+      "originals": "0599",
+      "originalNumbers": [
+        "0599"
+      ],
+      "category": "Nuevos documentos",
+      "words": 10196,
+      "author": "Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0600_fiducia_supplicans_es",
+      "contentFile": "data/documents/15b59757949b8621d6.json.gz",
+      "catalogId": "0600",
+      "file": "0600_fiducia_supplicans_es.md",
+      "title": "Fiducia supplicans",
+      "originals": "0600",
+      "originalNumbers": [
+        "0600"
+      ],
+      "category": "Nuevos documentos",
+      "words": 5884,
+      "author": "Dicasterio para la Doctrina de la Fe",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0601_teologia_hoy_perspectivas_principios_y_criterios_es",
+      "contentFile": "data/documents/8db5729590a6b37898.json.gz",
+      "catalogId": "0601",
+      "file": "0601_teologia_hoy_perspectivas_principios_y_criterios_es.md",
+      "title": "Teología hoy perspectivas principios y criterios",
+      "originals": "0601",
+      "originalNumbers": [
+        "0601"
+      ],
+      "category": "Nuevos documentos",
+      "words": 22258,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0602_la_sinodalidad_en_la_vida_y_mision_de_la_iglesia_es",
+      "contentFile": "data/documents/727dc45a83c7a7cbee.json.gz",
+      "catalogId": "0602",
+      "file": "0602_la_sinodalidad_en_la_vida_y_mision_de_la_iglesia_es.md",
+      "title": "La sinodalidad en la vida y misión de la Iglesia",
+      "originals": "0602",
+      "originalNumbers": [
+        "0602"
+      ],
+      "category": "Nuevos documentos",
+      "words": 24826,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0603_la_reciprocidad_entre_fe_y_sacramentos_en_la_economia_sacramental_es",
+      "contentFile": "data/documents/5e3d5a5c98baa38195.json.gz",
+      "catalogId": "0603",
+      "file": "0603_la_reciprocidad_entre_fe_y_sacramentos_en_la_economia_sacramental_es.md",
+      "title": "La reciprocidad entre fe y sacramentos en la economía sacramental",
+      "originals": "0603",
+      "originalNumbers": [
+        "0603"
+      ],
+      "category": "Nuevos documentos",
+      "words": 42450,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0604_el_pueblo_judio_y_sus_sagradas_escrituras_en_la_biblia_cristiana_es",
+      "contentFile": "data/documents/9bc5eae43d39853661.json.gz",
+      "catalogId": "0604",
+      "file": "0604_el_pueblo_judio_y_sus_sagradas_escrituras_en_la_biblia_cristiana_es.md",
+      "title": "El pueblo judío y sus Sagradas Escrituras en la Biblia cristiana",
+      "originals": "0604",
+      "originalNumbers": [
+        "0604"
+      ],
+      "category": "Nuevos documentos",
+      "words": 61266,
+      "author": "Pontificia Comisión Bíblica",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0605_inspiracion_y_verdad_de_la_sagrada_escritura_es",
+      "contentFile": "data/documents/b4f53cdba25a022bd9.json.gz",
+      "catalogId": "0605",
+      "file": "0605_inspiracion_y_verdad_de_la_sagrada_escritura_es.md",
+      "title": "Inspiración y verdad de la Sagrada Escritura",
+      "originals": "0605",
+      "originalNumbers": [
+        "0605"
+      ],
+      "category": "Nuevos documentos",
+      "words": 68020,
+      "author": "Pontificia Comisión Bíblica",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0606_que_es_el_hombre_es",
+      "contentFile": "data/documents/80df3bd7b6fa81afd4.json.gz",
+      "catalogId": "0606",
+      "file": "0606_que_es_el_hombre_es.md",
+      "title": "Qué es el hombre",
+      "originals": "0606",
+      "originalNumbers": [
+        "0606"
+      ],
+      "category": "Nuevos documentos",
+      "words": 132030,
+      "author": "Pontificia Comisión Bíblica",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0607_comunion_y_servicio_la_persona_humana_creada_a_imagen_de_dios_es",
+      "contentFile": "data/documents/acc41aaecf5cd4ba24.json.gz",
+      "catalogId": "0607",
+      "file": "0607_comunion_y_servicio_la_persona_humana_creada_a_imagen_de_dios_es.md",
+      "title": "Comunión y servicio la persona humana creada a imagen de Dios",
+      "originals": "0607",
+      "originalNumbers": [
+        "0607"
+      ],
+      "category": "Nuevos documentos",
+      "words": 16281,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0608_memoria_y_reconciliacion_la_iglesia_y_las_culpas_del_pasado_es",
+      "contentFile": "data/documents/6434a79b4a89d99e6c.json.gz",
+      "catalogId": "0608",
+      "file": "0608_memoria_y_reconciliacion_la_iglesia_y_las_culpas_del_pasado_es.md",
+      "title": "Memoria y reconciliación la Iglesia y las culpas del pasado",
+      "originals": "0608",
+      "originalNumbers": [
+        "0608"
+      ],
+      "category": "Nuevos documentos",
+      "words": 19839,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0609_el_cristianismo_y_las_religiones_es",
+      "contentFile": "data/documents/6789c2459589c4b418.json.gz",
+      "catalogId": "0609",
+      "file": "0609_el_cristianismo_y_las_religiones_es.md",
+      "title": "El cristianismo y las religiones",
+      "originals": "0609",
+      "originalNumbers": [
+        "0609"
+      ],
+      "category": "Nuevos documentos",
+      "words": 20506,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0610_la_esperanza_de_salvacion_para_los_ninos_que_mueren_sin_bautismo_es",
+      "contentFile": "data/documents/21c6f1ab09c90ee54d.json.gz",
+      "catalogId": "0610",
+      "file": "0610_la_esperanza_de_salvacion_para_los_ninos_que_mueren_sin_bautismo_es.md",
+      "title": "La esperanza de salvación para los niños que mueren sin bautismo",
+      "originals": "0610",
+      "originalNumbers": [
+        "0610"
+      ],
+      "category": "Nuevos documentos",
+      "words": 24241,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0611_la_libertad_religiosa_para_el_bien_de_todos_es",
+      "contentFile": "data/documents/6d124f4e30a31496f0.json.gz",
+      "catalogId": "0611",
+      "file": "0611_la_libertad_religiosa_para_el_bien_de_todos_es.md",
+      "title": "La libertad religiosa para el bien de todos",
+      "originals": "0611",
+      "originalNumbers": [
+        "0611"
+      ],
+      "category": "Nuevos documentos",
+      "words": 24377,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0612_el_diaconado_evolucion_y_perspectivas_es",
+      "contentFile": "data/documents/51cebeee2e669aa34b.json.gz",
+      "catalogId": "0612",
+      "file": "0612_el_diaconado_evolucion_y_perspectivas_es.md",
+      "title": "El diaconado evolución y perspectivas",
+      "originals": "0612",
+      "originalNumbers": [
+        "0612"
+      ],
+      "category": "Nuevos documentos",
+      "words": 42314,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0613_jesucristo_hijo_de_dios_salvador_aniversario_de_nicea_es",
+      "contentFile": "data/documents/da90555ff04ba04218.json.gz",
+      "catalogId": "0613",
+      "file": "0613_jesucristo_hijo_de_dios_salvador_aniversario_de_nicea_es.md",
+      "title": "Jesucristo Hijo de Dios Salvador aniversario de Nicea",
+      "originals": "0613",
+      "originalNumbers": [
+        "0613"
+      ],
+      "category": "Nuevos documentos",
+      "words": 37813,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0614_quo_vadis_humanitas_es",
+      "contentFile": "data/documents/887733e82dd90bb8d1.json.gz",
+      "catalogId": "0614",
+      "file": "0614_quo_vadis_humanitas_es.md",
+      "title": "Quo vadis humanitas",
+      "originals": "0614",
+      "originalNumbers": [
+        "0614"
+      ],
+      "category": "Nuevos documentos",
+      "words": 36498,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0615_la_historicidad_de_los_evangelios_es",
+      "contentFile": "data/documents/3ca870bb8fbc8224ef.json.gz",
+      "catalogId": "0615",
+      "file": "0615_la_historicidad_de_los_evangelios_es.md",
+      "title": "La historicidad de los Evangelios",
+      "originals": "0615",
+      "originalNumbers": [
+        "0615"
+      ],
+      "category": "Nuevos documentos",
+      "words": 2955,
+      "author": "Pontificia Comisión Bíblica",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0616_dignitas_infinita_es",
+      "contentFile": "data/documents/df31eb989c268e36d7.json.gz",
+      "catalogId": "0616",
+      "file": "0616_dignitas_infinita_es.md",
+      "title": "Dignitas infinita",
+      "originals": "0616",
+      "originalNumbers": [
+        "0616"
+      ],
+      "category": "Nuevos documentos",
+      "words": 16980,
+      "author": "Dicasterio para la Doctrina de la Fe",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0617_antiqua_et_nova_es",
+      "contentFile": "data/documents/a7e01867ce00cd3d1d.json.gz",
+      "catalogId": "0617",
+      "file": "0617_antiqua_et_nova_es.md",
+      "title": "Antiqua et nova",
+      "originals": "0617",
+      "originalNumbers": [
+        "0617"
+      ],
+      "category": "Nuevos documentos",
+      "words": 24108,
+      "author": "Dicasterio para la Doctrina de la Fe",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0618_gestis_verbisque_es",
+      "contentFile": "data/documents/3204777ab4409d0882.json.gz",
+      "catalogId": "0618",
+      "file": "0618_gestis_verbisque_es.md",
+      "title": "Gestis verbisque",
+      "originals": "0618",
+      "originalNumbers": [
+        "0618"
+      ],
+      "category": "Nuevos documentos",
+      "words": 6837,
+      "author": "Dicasterio para la Doctrina de la Fe",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0619_samaritanus_bonus_es",
+      "contentFile": "data/documents/286375b30f5fddca4c.json.gz",
+      "catalogId": "0619",
+      "file": "0619_samaritanus_bonus_es.md",
+      "title": "Samaritanus bonus",
+      "originals": "0619",
+      "originalNumbers": [
+        "0619"
+      ],
+      "category": "Nuevos documentos",
+      "words": 17748,
+      "author": "Congregación para la Doctrina de la Fe",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0620_dignitas_personae_es",
+      "contentFile": "data/documents/f7e52817d629954dcf.json.gz",
+      "catalogId": "0620",
+      "file": "0620_dignitas_personae_es.md",
+      "title": "Dignitas personae",
+      "originals": "0620",
+      "originalNumbers": [
+        "0620"
+      ],
+      "category": "Nuevos documentos",
+      "words": 11849,
+      "author": "Congregación para la Doctrina de la Fe",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0621_placuit_deo_es",
+      "contentFile": "data/documents/822ab17e58c8886624.json.gz",
+      "catalogId": "0621",
+      "file": "0621_placuit_deo_es.md",
+      "title": "Placuit Deo",
+      "originals": "0621",
+      "originalNumbers": [
+        "0621"
+      ],
+      "category": "Nuevos documentos",
+      "words": 4227,
+      "author": "Congregación para la Doctrina de la Fe",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0622_oeconomicae_et_pecuniariae_quaestiones_es",
+      "contentFile": "data/documents/026a6c9abed8fa8e67.json.gz",
+      "catalogId": "0622",
+      "file": "0622_oeconomicae_et_pecuniariae_quaestiones_es.md",
+      "title": "Oeconomicae et pecuniariae quaestiones",
+      "originals": "0622",
+      "originalNumbers": [
+        "0622"
+      ],
+      "category": "Nuevos documentos",
+      "words": 11177,
+      "author": "Congregación para la Doctrina de la Fe y Dicasterio para el Desarrollo Humano Integral",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0623_iuvenescit_ecclesia_es",
+      "contentFile": "data/documents/83385c982f0b90d601.json.gz",
+      "catalogId": "0623",
+      "file": "0623_iuvenescit_ecclesia_es.md",
+      "title": "Iuvenescit Ecclesia",
+      "originals": "0623",
+      "originalNumbers": [
+        "0623"
+      ],
+      "category": "Nuevos documentos",
+      "words": 12371,
+      "author": "Congregación para la Doctrina de la Fe",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0624_fratelli_tutti_es",
+      "contentFile": "data/documents/3d0809a1466ffa7b96.json.gz",
+      "catalogId": "0624",
+      "file": "0624_fratelli_tutti_es.md",
+      "title": "Fratelli tutti",
+      "originals": "0624",
+      "originalNumbers": [
+        "0624"
+      ],
+      "category": "Nuevos documentos",
+      "words": 44804,
+      "author": "Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0625_amoris_laetitia_es",
+      "contentFile": "data/documents/c59144698feadbfa24.json.gz",
+      "catalogId": "0625",
+      "file": "0625_amoris_laetitia_es.md",
+      "title": "Amoris laetitia",
+      "originals": "0625",
+      "originalNumbers": [
+        "0625"
+      ],
+      "category": "Nuevos documentos",
+      "words": 56316,
+      "author": "Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0626_gaudete_et_exsultate_es",
+      "contentFile": "data/documents/50bb72de40cb4a9650.json.gz",
+      "catalogId": "0626",
+      "file": "0626_gaudete_et_exsultate_es.md",
+      "title": "Gaudete et exsultate",
+      "originals": "0626",
+      "originalNumbers": [
+        "0626"
+      ],
+      "category": "Nuevos documentos",
+      "words": 22820,
+      "author": "Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0627_christus_vivit_es",
+      "contentFile": "data/documents/1cf9977bbc6deeb628.json.gz",
+      "catalogId": "0627",
+      "file": "0627_christus_vivit_es.md",
+      "title": "Christus vivit",
+      "originals": "0627",
+      "originalNumbers": [
+        "0627"
+      ],
+      "category": "Nuevos documentos",
+      "words": 34603,
+      "author": "Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0628_querida_amazonia_es",
+      "contentFile": "data/documents/ea94f5432ccf2ddcde.json.gz",
+      "catalogId": "0628",
+      "file": "0628_querida_amazonia_es.md",
+      "title": "Querida Amazonia",
+      "originals": "0628",
+      "originalNumbers": [
+        "0628"
+      ],
+      "category": "Nuevos documentos",
+      "words": 16252,
+      "author": "Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0629_patris_corde_es",
+      "contentFile": "data/documents/939fd0bf9213178203.json.gz",
+      "catalogId": "0629",
+      "file": "0629_patris_corde_es.md",
+      "title": "Patris corde",
+      "originals": "0629",
+      "originalNumbers": [
+        "0629"
+      ],
+      "category": "Nuevos documentos",
+      "words": 6287,
+      "author": "Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0630_misericordia_et_misera_es",
+      "contentFile": "data/documents/acfbb4af8bd0d903bc.json.gz",
+      "catalogId": "0630",
+      "file": "0630_misericordia_et_misera_es.md",
+      "title": "Misericordia et misera",
+      "originals": "0630",
+      "originalNumbers": [
+        "0630"
+      ],
+      "category": "Nuevos documentos",
+      "words": 7783,
+      "author": "Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0631_ad_theologiam_promovendam_it",
+      "contentFile": "data/documents/ec4f50814310a0d285.json.gz",
+      "catalogId": "0631",
+      "file": "0631_ad_theologiam_promovendam_it.md",
+      "title": "Ad theologiam promovendam",
+      "originals": "0631",
+      "originalNumbers": [
+        "0631"
+      ],
+      "category": "Nuevos documentos",
+      "words": 1461,
+      "author": "Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0632_desiderio_desideravi_es",
+      "contentFile": "data/documents/72b5c89550e7e33ffa.json.gz",
+      "catalogId": "0632",
+      "file": "0632_desiderio_desideravi_es.md",
+      "title": "Desiderio desideravi",
+      "originals": "0632",
+      "originalNumbers": [
+        "0632"
+      ],
+      "category": "Nuevos documentos",
+      "words": 10196,
+      "author": "Francisco",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0633_fiducia_supplicans_es",
+      "contentFile": "data/documents/baa878e185d092223c.json.gz",
+      "catalogId": "0633",
+      "file": "0633_fiducia_supplicans_es.md",
+      "title": "Fiducia supplicans",
+      "originals": "0633",
+      "originalNumbers": [
+        "0633"
+      ],
+      "category": "Nuevos documentos",
+      "words": 5884,
+      "author": "Dicasterio para la Doctrina de la Fe",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0634_teologia_hoy_perspectivas_principios_y_criterios_es",
+      "contentFile": "data/documents/e6356527029c8b6879.json.gz",
+      "catalogId": "0634",
+      "file": "0634_teologia_hoy_perspectivas_principios_y_criterios_es.md",
+      "title": "Teología hoy perspectivas principios y criterios",
+      "originals": "0634",
+      "originalNumbers": [
+        "0634"
+      ],
+      "category": "Nuevos documentos",
+      "words": 22258,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0635_la_sinodalidad_en_la_vida_y_mision_de_la_iglesia_es",
+      "contentFile": "data/documents/328df5ccab6278965f.json.gz",
+      "catalogId": "0635",
+      "file": "0635_la_sinodalidad_en_la_vida_y_mision_de_la_iglesia_es.md",
+      "title": "La sinodalidad en la vida y misión de la Iglesia",
+      "originals": "0635",
+      "originalNumbers": [
+        "0635"
+      ],
+      "category": "Nuevos documentos",
+      "words": 24826,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0636_en_busca_de_una_etica_universal_es",
+      "contentFile": "data/documents/9d9605d48d3f3e9aad.json.gz",
+      "catalogId": "0636",
+      "file": "0636_en_busca_de_una_etica_universal_es.md",
+      "title": "En busca de una ética universal",
+      "originals": "0636",
+      "originalNumbers": [
+        "0636"
+      ],
+      "category": "Nuevos documentos",
+      "words": 30628,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0637_la_reciprocidad_entre_fe_y_sacramentos_en_la_economia_sacramental_es",
+      "contentFile": "data/documents/4821a37cdba8b1e19a.json.gz",
+      "catalogId": "0637",
+      "file": "0637_la_reciprocidad_entre_fe_y_sacramentos_en_la_economia_sacramental_es.md",
+      "title": "La reciprocidad entre fe y sacramentos en la economía sacramental",
+      "originals": "0637",
+      "originalNumbers": [
+        "0637"
+      ],
+      "category": "Nuevos documentos",
+      "words": 42450,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0638_el_pueblo_judio_y_sus_sagradas_escrituras_en_la_biblia_cristiana_es",
+      "contentFile": "data/documents/276459c28d4937f6f2.json.gz",
+      "catalogId": "0638",
+      "file": "0638_el_pueblo_judio_y_sus_sagradas_escrituras_en_la_biblia_cristiana_es.md",
+      "title": "El pueblo judío y sus Sagradas Escrituras en la Biblia cristiana",
+      "originals": "0638",
+      "originalNumbers": [
+        "0638"
+      ],
+      "category": "Nuevos documentos",
+      "words": 61266,
+      "author": "Pontificia Comisión Bíblica",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0639_biblia_y_moral_es",
+      "contentFile": "data/documents/eace9cfa63a49e19d7.json.gz",
+      "catalogId": "0639",
+      "file": "0639_biblia_y_moral_es.md",
+      "title": "Biblia y moral",
+      "originals": "0639",
+      "originalNumbers": [
+        "0639"
+      ],
+      "category": "Nuevos documentos",
+      "words": 62381,
+      "author": "Pontificia Comisión Bíblica",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0640_inspiracion_y_verdad_de_la_sagrada_escritura_es",
+      "contentFile": "data/documents/73b74d9f9d4bd898c9.json.gz",
+      "catalogId": "0640",
+      "file": "0640_inspiracion_y_verdad_de_la_sagrada_escritura_es.md",
+      "title": "Inspiración y verdad de la Sagrada Escritura",
+      "originals": "0640",
+      "originalNumbers": [
+        "0640"
+      ],
+      "category": "Nuevos documentos",
+      "words": 68020,
+      "author": "Pontificia Comisión Bíblica",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0641_que_es_el_hombre_es",
+      "contentFile": "data/documents/515261bb95d8c78bd1.json.gz",
+      "catalogId": "0641",
+      "file": "0641_que_es_el_hombre_es.md",
+      "title": "Qué es el hombre",
+      "originals": "0641",
+      "originalNumbers": [
+        "0641"
+      ],
+      "category": "Nuevos documentos",
+      "words": 132030,
+      "author": "Pontificia Comisión Bíblica",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0642_comunion_y_servicio_la_persona_humana_creada_a_imagen_de_dios_es",
+      "contentFile": "data/documents/f1890a2106b02ff63a.json.gz",
+      "catalogId": "0642",
+      "file": "0642_comunion_y_servicio_la_persona_humana_creada_a_imagen_de_dios_es.md",
+      "title": "Comunión y servicio la persona humana creada a imagen de Dios",
+      "originals": "0642",
+      "originalNumbers": [
+        "0642"
+      ],
+      "category": "Nuevos documentos",
+      "words": 16281,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0643_memoria_y_reconciliacion_la_iglesia_y_las_culpas_del_pasado_es",
+      "contentFile": "data/documents/dde458e5632f27700e.json.gz",
+      "catalogId": "0643",
+      "file": "0643_memoria_y_reconciliacion_la_iglesia_y_las_culpas_del_pasado_es.md",
+      "title": "Memoria y reconciliación la Iglesia y las culpas del pasado",
+      "originals": "0643",
+      "originalNumbers": [
+        "0643"
+      ],
+      "category": "Nuevos documentos",
+      "words": 19839,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0644_el_cristianismo_y_las_religiones_es",
+      "contentFile": "data/documents/9111f5bc50f82bb4b4.json.gz",
+      "catalogId": "0644",
+      "file": "0644_el_cristianismo_y_las_religiones_es.md",
+      "title": "El cristianismo y las religiones",
+      "originals": "0644",
+      "originalNumbers": [
+        "0644"
+      ],
+      "category": "Nuevos documentos",
+      "words": 20506,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0645_la_esperanza_de_salvacion_para_los_ninos_que_mueren_sin_bautismo_es",
+      "contentFile": "data/documents/c3a380c819da2239b5.json.gz",
+      "catalogId": "0645",
+      "file": "0645_la_esperanza_de_salvacion_para_los_ninos_que_mueren_sin_bautismo_es.md",
+      "title": "La esperanza de salvación para los niños que mueren sin bautismo",
+      "originals": "0645",
+      "originalNumbers": [
+        "0645"
+      ],
+      "category": "Nuevos documentos",
+      "words": 24241,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0646_la_libertad_religiosa_para_el_bien_de_todos_es",
+      "contentFile": "data/documents/64091a2fe8035f4d32.json.gz",
+      "catalogId": "0646",
+      "file": "0646_la_libertad_religiosa_para_el_bien_de_todos_es.md",
+      "title": "La libertad religiosa para el bien de todos",
+      "originals": "0646",
+      "originalNumbers": [
+        "0646"
+      ],
+      "category": "Nuevos documentos",
+      "words": 24377,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0647_el_diaconado_evolucion_y_perspectivas_es",
+      "contentFile": "data/documents/a79bd41fbd542ee5df.json.gz",
+      "catalogId": "0647",
+      "file": "0647_el_diaconado_evolucion_y_perspectivas_es.md",
+      "title": "El diaconado evolución y perspectivas",
+      "originals": "0647",
+      "originalNumbers": [
+        "0647"
+      ],
+      "category": "Nuevos documentos",
+      "words": 42314,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0648_jesucristo_hijo_de_dios_salvador_aniversario_de_nicea_es",
+      "contentFile": "data/documents/ae377edaf0d9344489.json.gz",
+      "catalogId": "0648",
+      "file": "0648_jesucristo_hijo_de_dios_salvador_aniversario_de_nicea_es.md",
+      "title": "Jesucristo Hijo de Dios Salvador aniversario de Nicea",
+      "originals": "0648",
+      "originalNumbers": [
+        "0648"
+      ],
+      "category": "Nuevos documentos",
+      "words": 37813,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0649_quo_vadis_humanitas_es",
+      "contentFile": "data/documents/069fe50419db2db2c5.json.gz",
+      "catalogId": "0649",
+      "file": "0649_quo_vadis_humanitas_es.md",
+      "title": "Quo vadis humanitas",
+      "originals": "0649",
+      "originalNumbers": [
+        "0649"
+      ],
+      "category": "Nuevos documentos",
+      "words": 36498,
+      "author": "Comisión Teológica Internacional",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
+    },
+    {
+      "id": "doctrine-0650_la_historicidad_de_los_evangelios_es",
+      "contentFile": "data/documents/5bcad0594a41c3d9d0.json.gz",
+      "catalogId": "0650",
+      "file": "0650_la_historicidad_de_los_evangelios_es.md",
+      "title": "La historicidad de los Evangelios",
+      "originals": "0650",
+      "originalNumbers": [
+        "0650"
+      ],
+      "category": "Nuevos documentos",
+      "words": 2955,
+      "author": "Pontificia Comisión Bíblica",
+      "year": null,
+      "language": null,
+      "status": "not-stated",
+      "authority": "Según género documental",
+      "libraryId": "doctrine",
+      "source": "Descubierto directamente en la carpeta"
     }
   ],
   "categories": [
+    {
+      "name": "Nuevos documentos",
+      "count": 68
+    },
     {
       "name": "Magisterio / documento eclesial",
       "count": 53
@@ -3281,10 +4565,6 @@
       "count": 7
     },
     {
-      "name": "Nuevos documentos",
-      "count": 4
-    },
-    {
       "name": "Repertorio documental magisterial",
       "count": 3
     },
@@ -3303,20 +4583,40 @@
   ],
   "authors": [
     {
+      "name": "Comisión Teológica Internacional",
+      "count": 23
+    },
+    {
       "name": "San Agustín",
       "count": 20
+    },
+    {
+      "name": "Francisco",
+      "count": 17
+    },
+    {
+      "name": "Dicasterio para la Doctrina de la Fe",
+      "count": 10
+    },
+    {
+      "name": "Pontificia Comisión Bíblica",
+      "count": 9
     },
     {
       "name": "Santo Tomás de Aquino",
       "count": 8
     },
     {
-      "name": "Dicasterio para la Doctrina de la Fe",
-      "count": 4
+      "name": "Congregación para la Doctrina de la Fe",
+      "count": 7
     },
     {
       "name": "San Juan de la Cruz",
       "count": 4
+    },
+    {
+      "name": "Congregación para la Doctrina de la Fe y Dicasterio para el Desarrollo Humano Integral",
+      "count": 2
     },
     {
       "name": "San Bernardo de Claraval",
@@ -3368,10 +4668,10 @@
     }
   ],
   "stats": {
-    "documents": 152,
-    "words": 9381940,
+    "documents": 216,
+    "words": 11140450,
     "categories": 11,
-    "authors": 16,
+    "authors": 21,
     "historical": 2,
     "incomplete": 1,
     "foreignLanguage": 16,

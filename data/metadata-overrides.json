@@ -443,6 +443,32 @@
     },
     "changelog": [
       {
+        "version": "5.2.0",
+        "date": "2026-08-06",
+        "title": "Examen diario, libre y privado",
+        "changes": [
+          "Examen de mediodía y de noche con modos rápido y pausado",
+          "Treinta y tres normas editables y más de mil ayudas identificadas",
+          "Gestos accesibles, notas opcionales y selección sin repeticiones inmediatas",
+          "Normas personales, día de guardia y vistas semanal y mensual",
+          "Datos íntimos guardados exclusivamente en el dispositivo",
+          "Gestión visual del catálogo, las fuentes y las ayudas desde el Gestor",
+          "Tres nuevos pasos explicativos dentro del tutorial inicial"
+        ]
+      },
+      {
+        "version": "5.1.0",
+        "date": "2026-07-31",
+        "title": "Gestión visual y contenidos vivos",
+        "changes": [
+          "Gestor visual para enlaces, canales, IA, documentos, Shorts y búsqueda literal",
+          "Presentación animada y experiencia móvil de Descubrir corregida",
+          "Vídeos, música e Instagram intercalados con cadencia aleatoria en Todos",
+          "Refresco gestual de la última versión publicada y acceso directo sin servidores antiguos",
+          "Guía de publicación paso a paso para GitHub Desktop y GitHub Pages"
+        ]
+      },
+      {
         "version": "3.6.1",
         "date": "2026-07-30",
         "title": "YouTube vivo dentro de Atlas",

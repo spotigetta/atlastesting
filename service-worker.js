@@ -10,6 +10,7 @@ const SHELL = [
   "./scripts/database.js", "./scripts/runtime.js", "./scripts/bootstrap.js", "./scripts/storage.js",
   "./scripts/search.js", "./scripts/repository.js", "./scripts/share.js", "./scripts/statistics.js",
   "./scripts/library.js", "./scripts/reader.js", "./scripts/extras.js",
+  "./scripts/examen.js",
   "./scripts/compare.js", "./scripts/feed-mixer.js", "./scripts/reels.js",
   "./scripts/router.js", "./scripts/app.js",
   "./assets/icons/icon-192.png", "./assets/icons/icon-512.png",

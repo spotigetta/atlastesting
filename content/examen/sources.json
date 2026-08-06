@@ -1,0 +1,18 @@
+{
+  "schemaVersion": 1,
+  "policy": "Los documentos locales se enlazan al lector. Las páginas externas se conservan como metadatos y enlaces salvo licencia expresa que permita importar el texto.",
+  "sources": [
+    {"id":"local-atlas-corpus","title":"Corpus documental local de Atlas","kind":"local-corpus","status":"indexed","location":"source/libraries","notes":"Nueve bibliotecas y sus Markdown; fuente prioritaria para citas contextualizadas."},
+    {"id":"opusdei-normas","title":"Normas de piedad y costumbres","kind":"external-index","status":"metadata-only","url":"https://opusdei.org/es/tag/normas-de-piedad-costumbres/?page=1"},
+    {"id":"opusdei-plan-vida","title":"Las normas de piedad del plan de vida","kind":"external-article","status":"metadata-only","url":"https://opusdei.org/es/article/plan-de-vida/"},
+    {"id":"opusdei-visita","title":"Detente y adora: la visita al Santísimo","kind":"external-article","status":"metadata-only","url":"https://opusdei.org/es/article/visita-al-santisimo-sacramento-devocion-eucaristica/"},
+    {"id":"opusdei-ofrecimiento","title":"Una ofrenda agradable a Dios: el ofrecimiento de obras","kind":"external-article","status":"metadata-only","url":"https://opusdei.org/es/article/ofrecimiento-de-obras-serviam-ofrenda-agradable-a-dios/"},
+    {"id":"opusdei-guardia","title":"Una muralla infranqueable: el día de guardia","kind":"external-article","status":"metadata-only","url":"https://opusdei.org/es/article/una-muralla-infranqueable-dia-de-guardia-fraternidad-opus-dei/"},
+    {"id":"opusdei-tarde-noche","title":"El silencio de un alma contemplativa: el tiempo de la tarde y de la noche","kind":"external-article","status":"metadata-only","url":"https://opusdei.org/es/article/silencio-alma-contemplativa-tiempo-tarde-noche-oracion/"},
+    {"id":"opusdei-antifona","title":"La exposición eucarística y la antífona mariana","kind":"external-article","status":"metadata-only","url":"https://opusdei.org/es/article/aurora-dia-del-sol-exposicion-eucaristica-antifona-mariana-sabado/"},
+    {"id":"opusdei-salmo2","title":"Abrazar el mundo con la oración: el salmo 2","kind":"external-article","status":"metadata-only","url":"https://opusdei.org/es/article/abrazar-el-mundo-con-oracion-salmo-dos-filiacion-divina/"},
+    {"id":"opusdei-quicumque","title":"Una puerta abierta al misterio: el símbolo atanasiano","kind":"external-article","status":"metadata-only","url":"https://opusdei.org/es/article/simbolo-atanasiano-quicumque-santisima-trinidad-costumbre/"},
+    {"id":"opusdei-oracion","title":"Orad sin interrupción","kind":"external-article","status":"metadata-only","url":"https://opusdei.org/es/article/orad-sin-interrupcion/"},
+    {"id":"opusdei-diccionario-plan","title":"Plan de vida, voz del Diccionario de san Josemaría","kind":"external-article","status":"metadata-only","url":"https://opusdei.org/es/article/plan-de-vida-opus-dei-diccionario-san-josemaria/"}
+  ]
+}

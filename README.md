@@ -79,6 +79,8 @@ realice esas operaciones siguiendo [SUBIR_A_GITHUB.md](SUBIR_A_GITHUB.md) y
 - [Arquitectura](ARCHITECTURE.md)
 - [Modelo de datos](DATA_MODEL.md)
 - [Guía del Gestor](MANAGER_GUIDE.md)
+- [Examen diario y biblioteca de ayudas](EXAMEN_DIARIO.md)
+- [Actualizar y publicar con GitHub Desktop](ACTUALIZAR_Y_PUBLICAR.md)
 - [Inventario de paridad](PARITY_INVENTORY.md)
 - [Auditoría técnica](AUDIT_REPORT.md)
 - [Despliegue en GitHub Pages](DEPLOY_GITHUB_PAGES.md)

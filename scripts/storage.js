@@ -13,6 +13,17 @@
     annotations: {},
     study: {},
     notifications: { daily: false, reading: false, news: false, routes: false, updates: true },
+    exam: {
+      config: {
+        middayEnabled: false, middayTime: "14:05", middayDays: [1,2,3,4,5,6,0],
+        nightEnabled: true, nightTime: "22:30", nightSecondEnabled: false, nightSecondTime: "23:15",
+        nightDays: [1,2,3,4,5,6,0], quietFrom: "23:45", quietTo: "07:30", guardDay: 1,
+        defaultMode: "quick", includeInSummaries: true
+      },
+      normOverrides: {}, customNorms: [], archivedNormIds: [], records: {}, notes: {},
+      favoriteHelpIds: [], recentHelpIds: [], purposes: [], privateDrafts: {},
+      dataVersion: 1
+    },
     quiz: { correct: 0, total: 0 },
     settings: {
       theme: "system", contrast: false, randomShorts: false, onlyNewShorts: false, tutorialSeen: false, showReserveVideos: false,
@@ -25,7 +36,7 @@
       homeOrder: ["today", "libraries", "reading", "history"], exploreOrder: [], exploreColors: {}, customizeHome: false, customizeExplore: false
     },
     lastLibrary: null,
-    version: 2
+    version: 3
   };
 
   function migrate(stored) {
@@ -39,6 +50,11 @@
       };
       value.version = 2;
     }
+    if (value.version < 3) {
+      value.exam ||= {};
+      value.exam.dataVersion = 1;
+      value.version = 3;
+    }
     return value;
   }
 
@@ -48,6 +64,14 @@
       favorites: { ...base.favorites, ...(stored?.favorites || {}) },
       settings: { ...base.settings, ...(stored?.settings || {}) },
       notifications: { ...base.notifications, ...(stored?.notifications || {}) },
+      exam: {
+        ...base.exam, ...(stored?.exam || {}),
+        config: { ...base.exam.config, ...(stored?.exam?.config || {}) },
+        normOverrides: { ...base.exam.normOverrides, ...(stored?.exam?.normOverrides || {}) },
+        records: { ...base.exam.records, ...(stored?.exam?.records || {}) },
+        notes: { ...base.exam.notes, ...(stored?.exam?.notes || {}) },
+        privateDrafts: { ...base.exam.privateDrafts, ...(stored?.exam?.privateDrafts || {}) }
+      },
       quiz: { ...base.quiz, ...(stored?.quiz || {}) }
     };
   }
@@ -121,6 +145,53 @@
     },
     setSetting(key, value) { state.settings[key] = value; commit(); },
     setNotification(key, value) { state.notifications[key] = Boolean(value); commit(); },
+    updateExamConfig(patch) { state.exam.config = { ...state.exam.config, ...patch }; commit(); },
+    updateExamNorm(normId, patch) {
+      state.exam.normOverrides[normId] = { ...(state.exam.normOverrides[normId] || {}), ...patch };
+      commit();
+    },
+    upsertCustomNorm(norm) {
+      const existing = state.exam.customNorms.findIndex(item => item.id === norm.id);
+      const item = { ...norm, id: norm.id || `personal-${Date.now()}-${Math.random().toString(36).slice(2,7)}`, custom: true, updatedAt: new Date().toISOString() };
+      if (existing >= 0) state.exam.customNorms.splice(existing, 1, item); else state.exam.customNorms.push(item);
+      commit(); return item;
+    },
+    archiveExamNorm(normId, archived = true) {
+      state.exam.archivedNormIds = archived
+        ? uniqueFront(state.exam.archivedNormIds, normId, 500)
+        : state.exam.archivedNormIds.filter(id => id !== normId);
+      commit();
+    },
+    setExamAnswer(date, period, normId, answer) {
+      state.exam.records[date] ||= {};
+      state.exam.records[date][period] ||= { status: "started", mode: "quick", answers: {}, updatedAt: new Date().toISOString() };
+      state.exam.records[date][period].answers[normId] = { ...(state.exam.records[date][period].answers[normId] || {}), answer, updatedAt: new Date().toISOString() };
+      state.exam.records[date][period].status = "started";
+      state.exam.records[date][period].updatedAt = new Date().toISOString();
+      commit();
+    },
+    setExamSession(date, period, patch) {
+      state.exam.records[date] ||= {};
+      state.exam.records[date][period] = { answers: {}, ...(state.exam.records[date][period] || {}), ...patch, updatedAt: new Date().toISOString() };
+      commit();
+    },
+    setExamNote(date, period, normId, note, review = false) {
+      const key = `${date}|${period}|${normId}`;
+      state.exam.notes[key] = { text: String(note || ""), review: Boolean(review), updatedAt: new Date().toISOString() };
+      commit();
+    },
+    toggleExamHelp(helpId) {
+      const list = state.exam.favoriteHelpIds;
+      state.exam.favoriteHelpIds = list.includes(helpId) ? list.filter(id => id !== helpId) : [helpId, ...list];
+      commit(); return state.exam.favoriteHelpIds.includes(helpId);
+    },
+    rememberExamHelp(helpId) { state.exam.recentHelpIds = uniqueFront(state.exam.recentHelpIds, helpId, 120); commit(); },
+    setExamPurpose(purpose) {
+      const item = { id: purpose.id || `purpose-${Date.now()}`, createdAt: purpose.createdAt || new Date().toISOString(), ...purpose };
+      state.exam.purposes = [item, ...state.exam.purposes.filter(current => current.id !== item.id)].slice(0, 200);
+      commit(); return item;
+    },
+    setExamPrivateDraft(key, value) { state.exam.privateDrafts[key] = { ...value, updatedAt: new Date().toISOString() }; commit(); },
     recordQuiz(correct) {
       state.quiz.total += 1;
       if (correct) state.quiz.correct += 1;

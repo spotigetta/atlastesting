@@ -24,11 +24,17 @@
       <button data-tab="shorts">Shorts y frases</button>
       <button data-tab="external">Noticias y lecturas</button>
       <button data-tab="providers">Proveedores</button>
+      <button data-tab="exam">Examen diario</button>
       <button data-tab="publication">Publicación</button>
     </nav>
 
     <section class="panel active" data-panel="documents">
       <div class="panel-head"><div><span class="eyebrow">Fuentes Markdown</span><h1>Añadir y revisar documentos</h1><p>El archivo se numera, renombra y valida antes de entrar en la carpeta de la IA.</p></div></div>
+      <form id="manager-search-form" class="card search-console">
+        <div><span class="eyebrow">Buscador administrativo</span><h2>Encontrar documentos y palabras</h2><p>Busca por ficha o literalmente dentro del texto completo de todas las fuentes.</p></div>
+        <div class="search-console-controls"><input id="manager-search-query" required minlength="2" placeholder="Ej. matrimonio, san Agustín, canon 212"><select id="manager-search-mode"><option value="metadata">Título, autor y categoría</option><option value="content">Palabra o frase dentro de los documentos</option></select><select id="manager-search-library"><option value="">Todas las IA</option></select><button class="primary">Buscar</button></div>
+        <div id="manager-search-results" class="manager-search-results"></div>
+      </form>
       <div class="split">
         <form id="upload-form" class="card form-card">
           <h2>Nuevas fuentes</h2>
@@ -73,28 +79,70 @@
     </section>
 
     <section class="panel" data-panel="shorts">
-      <div class="panel-head"><div><span class="eyebrow">Contenido editorial</span><h1>Shorts, frases y hechos</h1><p>Edita la base editorial como JSON. Los Shorts documentales se generan automáticamente.</p></div><button class="primary" data-save-editor="shorts">Guardar Shorts</button></div>
-      <textarea id="shorts-editor" class="json-editor" spellcheck="false"></textarea><div id="shorts-result" class="result"></div>
+      <div class="panel-head"><div><span class="eyebrow">Contenido editorial</span><h1>Shorts, frases y hechos</h1><p>Crea tarjetas mediante campos normales. Los Shorts documentales continúan generándose automáticamente.</p></div></div>
+      <div class="split">
+        <form id="short-form" class="card form-card"><h2>Nueva tarjeta</h2>
+          <div class="form-row"><label>Formato<select id="short-type"><option value="quote">Frase</option><option value="fact">Hecho</option><option value="curiosity">Anécdota</option><option value="question">Pregunta</option><option value="comparison">Distinción</option></select></label><label>IA<select id="short-library"></select></label></div>
+          <label>Título<input id="short-title" required placeholder="Una idea que invite a descubrir"></label>
+          <label>Contenido<textarea id="short-text" rows="5" required></textarea></label>
+          <label>Fuente o referencia<input id="short-reference" placeholder="Autor, obra o documento"></label>
+          <button class="primary">Añadir tarjeta</button><div id="shorts-result" class="result"></div>
+        </form>
+        <div class="card"><div class="card-head"><div><h2>Tarjetas manuales</h2><p id="short-count"></p></div><input id="short-filter" class="filter small-filter" placeholder="Filtrar"></div><div id="short-list" class="managed-list"></div></div>
+      </div>
+      <details class="advanced-editor"><summary>Edición avanzada en JSON</summary><textarea id="shorts-editor" class="json-editor" spellcheck="false"></textarea><button class="button" data-save-editor="shorts">Guardar JSON</button></details>
     </section>
 
     <section class="panel" data-panel="external">
-      <div class="panel-head"><div><span class="eyebrow">API editorial</span><h1>Noticias, oración y lecturas</h1><p>Añade URLs. Al actualizar, Atlas obtiene metadatos e imágenes y mezcla una selección en el feed.</p></div><div class="button-row"><button id="refresh-external" class="button">Consultar enlaces ahora</button><button class="primary" data-save-editor="external">Guardar base</button></div></div>
-      <textarea id="external-editor" class="json-editor" spellcheck="false"></textarea><div id="external-result" class="result"></div>
+      <div class="panel-head"><div><span class="eyebrow">Centro de contenidos</span><h1>Añadir enlaces sin editar JSON</h1><p>Pega un enlace y Atlas detectará si es noticia, lectura, oración, vídeo, música o Instagram; intentará obtener título, autor, descripción e imagen.</p></div><button id="refresh-external" class="button">Actualizar proveedores ahora</button></div>
+      <div class="split content-manager-layout">
+        <form id="smart-link-form" class="card form-card"><h2>Nuevo enlace</h2>
+          <label>URL<input id="smart-link-url" type="url" required placeholder="https://…"></label>
+          <div class="form-row"><label>Tipo<select id="smart-link-type"><option value="auto">Detectar automáticamente</option><option value="news">Noticia</option><option value="reading">Lectura o libro</option><option value="prayer">Oración</option><option value="video">Vídeo de YouTube</option><option value="music">Música de YouTube</option><option value="instagram">Instagram</option></select></label><label>IA<select id="smart-link-library"></select></label></div>
+          <label>Título opcional<input id="smart-link-title" placeholder="Atlas lo intentará obtener"></label>
+          <label>Fuente opcional<input id="smart-link-source" placeholder="Medio, canal o autor"></label>
+          <div class="button-row"><button id="preview-link" class="button" type="button">Previsualizar</button><button class="primary" type="submit">Añadir a Atlas</button></div>
+          <div id="link-preview" class="link-preview empty-preview">La previsualización aparecerá aquí.</div><div id="external-result" class="result"></div>
+        </form>
+        <div class="card"><div class="card-head"><div><h2>Enlaces gestionados</h2><p id="managed-link-count"></p></div><select id="managed-link-filter"><option value="all">Todos</option><option value="news">Noticias</option><option value="reading">Lecturas</option><option value="prayer">Oración</option><option value="video">Vídeos</option><option value="music">Música</option><option value="instagram">Instagram</option></select></div><div id="managed-link-list" class="managed-list media-list"></div></div>
+      </div>
+      <div class="admin-note"><strong>Instagram, sin falsas promesas</strong><span>Atlas muestra siempre los perfiles configurados. Para garantizar una publicación concreta, pega su enlace directo aquí; Instagram bloquea con frecuencia la lectura automática de perfiles sin autenticación.</span></div>
+      <details class="advanced-editor"><summary>Edición avanzada de noticias y lecturas</summary><textarea id="external-editor" class="json-editor" spellcheck="false"></textarea><button class="button" data-save-editor="external">Guardar JSON</button></details>
     </section>
 
     <section class="panel" data-panel="providers">
-      <div class="panel-head"><div><span class="eyebrow">Conexiones externas</span><h1>Canales y proveedores</h1><p>Configura las fuentes que GitHub Actions consultará. Guardar aquí no publica nada.</p></div><button id="save-providers" class="primary">Guardar configuración</button></div>
-      <div class="provider-editors">
-        <label class="card"><strong>YouTube</strong><textarea id="provider-youtube" class="json-editor compact" spellcheck="false"></textarea></label>
-        <label class="card"><strong>Música</strong><textarea id="provider-music" class="json-editor compact" spellcheck="false"></textarea></label>
-        <label class="card"><strong>Instagram</strong><textarea id="provider-instagram" class="json-editor compact" spellcheck="false"></textarea></label>
-      </div>
+      <div class="panel-head"><div><span class="eyebrow">Conexiones externas</span><h1>Canales y proveedores</h1><p>Añade o retira canales con formularios. GitHub Actions consultará los que estén guardados.</p></div><button id="save-providers" class="primary">Guardar todos los canales</button></div>
+      <form id="channel-form" class="card channel-add-form"><div><h2>Nuevo canal</h2><p>YouTube admite canales, listas o búsquedas; Instagram admite perfiles públicos.</p></div><select id="channel-kind"><option value="youtube">Vídeo</option><option value="music">Música</option><option value="instagram">Instagram</option></select><input id="channel-name" required placeholder="Nombre visible"><input id="channel-url" type="url" required placeholder="https://…"><button class="primary">Añadir canal</button></form>
+      <div id="provider-visual-list" class="provider-visual-list"></div>
+      <details class="advanced-editor"><summary>Configuración avanzada</summary><div class="provider-editors"><label class="card"><strong>YouTube</strong><textarea id="provider-youtube" class="json-editor compact" spellcheck="false"></textarea></label><label class="card"><strong>Música</strong><textarea id="provider-music" class="json-editor compact" spellcheck="false"></textarea></label><label class="card"><strong>Instagram</strong><textarea id="provider-instagram" class="json-editor compact" spellcheck="false"></textarea></label></div></details>
       <div id="providers-result" class="result"></div>
+    </section>
+
+    <section class="panel" data-panel="exam">
+      <div class="panel-head"><div><span class="eyebrow">Plan de vida y ayudas</span><h1>Gestionar el examen diario</h1><p>Edita el catálogo público, añade ayudas verificadas y registra fuentes sin trabajar directamente con JSON.</p></div><a class="button" href="/#/examen" target="_blank">Abrir examen</a></div>
+      <section id="exam-manager-summary" class="summary exam-manager-summary"></section>
+      <div class="split exam-admin-layout">
+        <form id="exam-norm-form" class="card form-card"><input id="exam-norm-id" type="hidden"><h2>Norma del catálogo</h2><label>Nombre<input id="exam-norm-name" required></label><label>Descripción<textarea id="exam-norm-description" rows="3"></textarea></label><div class="form-row"><label>Frecuencia<select id="exam-norm-frequency"><option value="daily">Diaria</option><option value="weekdays">Días concretos</option><option value="manual">Cuando corresponda</option><option value="guard-day">Día de guardia</option><option value="third-sunday">Tercer domingo</option></select></label><label>Días 0–6<input id="exam-norm-days" placeholder="1,2,3,4,5"></label></div><label>Examen<select id="exam-norm-period"><option value="night">Noche</option><option value="midday">Mediodía</option><option value="both">Ambos</option></select></label><label class="check"><input id="exam-norm-partial" type="checkbox" checked> Admite «parcialmente»</label><label>Pregunta<textarea id="exam-norm-question" rows="2"></textarea></label><label>Sugerencia<textarea id="exam-norm-suggestion" rows="2"></textarea></label><label>Etiquetas<input id="exam-norm-tags" placeholder="oración, perseverancia"></label><label>Fuente autorizada<input id="exam-norm-source" type="url"></label><button class="primary">Guardar norma</button><div id="exam-norm-result" class="result"></div></form>
+        <div class="card"><div class="card-head"><div><h2>Catálogo general</h2><p id="exam-norm-count"></p></div><input id="exam-norm-filter" class="filter small-filter" placeholder="Filtrar normas"></div><div id="exam-norm-list" class="managed-list exam-managed-list"></div></div>
+      </div>
+      <div class="split exam-admin-layout">
+        <form id="exam-help-form" class="card form-card"><h2>Nueva ayuda</h2><label>Tipo<select id="exam-help-kind"><option value="quotation">Cita textual</option><option value="editorial-advice">Consejo editorial</option><option value="exam-question">Pregunta para el examen</option><option value="practical-suggestion">Sugerencia práctica</option><option value="prayer">Oración breve</option></select></label><label>Texto<textarea id="exam-help-text" required rows="4"></textarea></label><div class="form-row"><label>Autor<input id="exam-help-author"></label><label>Obra<input id="exam-help-work"></label></div><label>Referencia precisa<input id="exam-help-reference"></label><label>Normas relacionadas<select id="exam-help-norms" multiple size="6"></select></label><label>Etiquetas<input id="exam-help-tags" placeholder="oración, recomenzar"></label><label>Documento de Atlas<input id="exam-help-document" placeholder="ID opcional"></label><label>Enlace externo<input id="exam-help-url" type="url"></label><button class="primary">Guardar ayuda verificada</button><div id="exam-help-result" class="result"></div></form>
+        <div class="card"><div class="card-head"><div><h2>Ayudas añadidas manualmente</h2><p id="exam-help-count"></p></div></div><div id="exam-help-list" class="managed-list exam-managed-list"></div><div class="admin-note"><strong>Citas generadas desde el corpus</strong><span>Las citas automáticas no se duplican aquí. Se regeneran desde las fuentes verificadas y mantienen autor, obra y referencia.</span></div></div>
+      </div>
+      <div class="split exam-admin-layout">
+        <form id="exam-source-form" class="card form-card"><h2>Nueva fuente</h2><label>Título<input id="exam-source-title" required></label><label>URL<input id="exam-source-url" type="url" required></label><label>Tipo<select id="exam-source-kind"><option value="external-article">Artículo externo</option><option value="external-index">Índice externo</option><option value="local-corpus">Corpus local</option></select></label><label>Notas<textarea id="exam-source-notes" rows="3"></textarea></label><button class="primary">Registrar metadatos y enlace</button><div id="exam-source-result" class="result"></div></form>
+        <div class="card"><h2>Inventario de fuentes</h2><div id="exam-source-list" class="managed-list exam-managed-list"></div></div>
+      </div>
     </section>
 
     <section class="panel" data-panel="publication">
       <div class="panel-head"><div><span class="eyebrow">Centro de control</span><h1>Preparar la publicación</h1><p>Comprueba fuentes, derivados y proveedores. El Gestor construye <code>dist</code>, pero nunca sube el proyecto.</p></div><div class="button-row"><button id="run-audit" class="button">Auditar</button><button id="prepare-release" class="primary">Preparar dist</button></div></div>
       <div class="admin-note"><strong>Estados del cambio</strong><span>Borrador → guardado en fuentes → validado → construido en dist → pendiente de que tú lo subas.</span></div>
+      <section class="publish-guide">
+        <header><span class="eyebrow">Tu rutina de actualización</span><h2>Del ordenador a la web publicada</h2><p>El Gestor prepara los archivos. GitHub Desktop los sube. GitHub Actions publica la nueva versión automáticamente.</p></header>
+        <div class="publish-path"><article><b>1</b><h3>Termina los cambios</h3><p>Si usaste el Gestor, pulsa «Construir y preparar». Si programaste, guarda los archivos y ejecuta las pruebas.</p></article><article><b>2</b><h3>GitHub Desktop</h3><p>Abre Atlas → pestaña <strong>Changes</strong> → revisa los cambios → escribe un resumen → <strong>Commit to main/master</strong>.</p></article><article><b>3</b><h3>Subir</h3><p>Pulsa <strong>Push origin</strong>. Si aparece «Fetch origin», púlsalo primero y vuelve a comprobar los cambios.</p></article><article><b>4</b><h3>GitHub web</h3><p>Repositorio → <strong>Actions</strong> → «Construir y publicar Atlas» → espera el círculo verde. No hace falta tocar Pages otra vez.</p></article><article><b>5</b><h3>Usuarios</h3><p>Abren Atlas y pulsan «Actualizar Atlas» o recargan. El Service Worker descarga la versión recién publicada.</p></article></div>
+        <div class="admin-note"><strong>Importante</strong><span>Ni «Preparar dist» ni guardar contenidos los hace públicos. La actualización llega al público solamente después de <strong>Commit → Push origin → Action verde</strong>.</span></div>
+      </section>
       <div id="publication-audit" class="audit-grid"></div>
       <pre id="publication-output" class="build-output"></pre>
     </section>

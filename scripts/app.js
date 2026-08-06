@@ -13,6 +13,7 @@
   const tutorialContent = document.querySelector("#tutorial-content");
   const tutorialProgress = document.querySelector("#tutorial-progress");
   const tutorialSpotlight = document.querySelector("#tutorial-spotlight");
+  const atlasIntro = document.querySelector("#atlas-intro");
   const fullTextStatus = document.querySelector("#fulltext-status");
   const placeholders = ["Misal Romano", "San Agustín", "canon 212", "matrimonio", "Vaticano II", "0348"];
   const state = {
@@ -27,6 +28,8 @@
   let recognition;
   let sharePayload = null;
   let tutorialIndex = 0;
+  let introTimer = 0;
+  let introPendingTutorial = false;
   let routeTransitioning = false;
   const personalizationDefaults = {
     magnetEnabled:true, magnetStrength:34, magnetDelay:120, magnetDuration:300,
@@ -88,6 +91,11 @@
     text: "Atlas consulta nueve canales, baraja las canciones y permite escucharlas sin abandonar la aplicación.",
     bullets: ["«Nueva mezcla» cambia el orden inmediatamente.", "El filtro Música las presenta también como Shorts.", "Si la actualización tarda, Atlas usa la última selección guardada y continúa en segundo plano."]
   });
+  tutorialSteps.splice(-1, 0,
+    { mark: "◒", route: "/examen", target: ".exam-period-grid", eyebrow: "Examen diario", title: "Mediodía y noche, siempre a mano", text: "Atlas ofrece un examen sereno del plan de vida. No utiliza puntos, rachas ni porcentajes: solo guarda lo que tú marcas en este dispositivo.", bullets: ["Puedes continuar un examen empezado.", "El modo rápido usa gestos; el pausado añade pregunta, nota y ayuda.", "Omitir el examen de mediodía nunca se interpreta como incumplimiento."] },
+    { mark: "↔", route: "/examen/run?period=night&mode=paused&tutorial=1", target: ".exam-answer-buttons", eyebrow: "Examen · gestos", title: "Desliza o utiliza los cuatro botones", text: "Derecha significa sí, izquierda no y arriba parcialmente. «No aplica» distingue con claridad lo que hoy no correspondía.", bullets: ["Las normas binarias pueden ocultar el estado parcial.", "La ayuda cambia sin convertir una dificultad en derrota.", "Las notas son opcionales y privadas."] },
+    { mark: "⌂", route: "/examen/norms", target: ".exam-manager-layout", eyebrow: "Examen · personalización", title: "Tu plan permanece tuyo", text: "Añade normas personales, pausa, reordena o archiva. Las actualizaciones del catálogo no borran tu configuración ni alteran el histórico.", bullets: ["Semana y mes describen registros, pero no puntúan la vida espiritual.", "Puedes preparar de forma privada asuntos para una conversación.", "Todo se incluye en la exportación local de Atlas."] }
+  );
 
   function esc(value) { return A.library.esc(value); }
   const infographicUrl = file => window.AtlasRuntime.url(`assets/infografias/${encodeURIComponent(file)}`);
@@ -157,6 +165,37 @@
     if (searchSheet.hidden && detailLayer.hidden && shareLayer.hidden) document.body.classList.remove("modal-open");
   }
 
+  function openIntro(force = false) {
+    if (!atlasIntro) return false;
+    let alreadyShown = false;
+    try { alreadyShown = sessionStorage.getItem("atlas-intro-v1") === "shown"; } catch {}
+    if (!force && alreadyShown) return false;
+    try { sessionStorage.setItem("atlas-intro-v1", "shown"); } catch {}
+    clearInterval(introTimer);
+    atlasIntro.hidden = false;
+    atlasIntro.dataset.scene = "0";
+    document.body.classList.add("modal-open");
+    let scene = 0;
+    introTimer = setInterval(() => {
+      scene += 1;
+      if (scene > 3) { clearInterval(introTimer); return; }
+      atlasIntro.dataset.scene = String(scene);
+    }, 1150);
+    return true;
+  }
+
+  function closeIntro() {
+    if (!atlasIntro || atlasIntro.hidden) return;
+    clearInterval(introTimer);
+    atlasIntro.classList.add("is-closing");
+    setTimeout(() => {
+      atlasIntro.hidden = true;
+      atlasIntro.classList.remove("is-closing");
+      document.body.classList.remove("modal-open");
+      if (introPendingTutorial) { introPendingTutorial = false; openTutorial(); }
+    }, 260);
+  }
+
   function renderHome() {
     const catalog = A.data.catalog;
     const settings = A.storage.get().settings;
@@ -188,6 +227,8 @@
       </div>
 
       ${settings.customizeHome ? `<section class="customize-panel" style="order:.5"><span class="eyebrow">Orden de Inicio</span><h2>Organiza todos los bloques</h2>${homeOrder.map((id,index) => `<div class="customize-row"><b>${homeLabels[id]}</b><span><button data-home-move="${id}" data-direction="-1" ${index===0?"disabled":""}>↑</button><button data-home-move="${id}" data-direction="1" ${index===homeOrder.length-1?"disabled":""}>↓</button></span></div>`).join("")}</section>` : ""}
+
+      ${A.exam.homeCard()}
 
       <section class="section" data-home-block="today" style="order:${homeOrder.indexOf("today") + 1}"><div class="section-head"><div><h2>Atlas Hoy</h2><p>Una selección diaria calculada en tu dispositivo.</p></div><a href="#/discover">Ver Shorts</a></div>
         <div class="daily-strip">
@@ -404,7 +445,7 @@
     return `<section class="page"><header class="explore-hero"><span class="eyebrow">Tu Atlas · versión ${esc(A.data.catalog.meta.dataVersion)}</span><h1>Guardados e historial.</h1><p>Todo permanece en este dispositivo. No necesitas una cuenta.</p><span class="app-version-badge">Atlas ${esc(A.data.catalog.meta.dataVersion)}</span></header>
       <section class="study-summary"><div><strong>${Math.round((today.milliseconds || 0) / 60000)}</strong><span>minutos hoy</span></div><div><strong>${today.documents?.length || 0}</strong><span>documentos</span></div><div><strong>${today.collections?.length || 0}</strong><span>colecciones</span></div></section>
       <div class="chip-row saved-tabs">${tabs.map(([id,label]) => `<button class="chip ${state.savedTab===id?"active":""}" data-saved-tab="${id}">${label}</button>`).join("")}</div>${content}
-      <section class="section"><div class="section-head"><div><h2>Preferencias</h2><p>Adapta lectura, movimiento, iluminación y apariencia.</p></div></div><div class="button-row"><button class="primary-button" data-action="settings">Personalizar Atlas</button><button class="secondary-button" data-action="toggle-contrast">${stored.settings.contrast ? "Desactivar" : "Activar"} alto contraste</button><button class="secondary-button" data-action="toggle-random">${stored.settings.randomShorts ? "Orden diario" : "Orden aleatorio"}</button><button class="secondary-button" data-action="toggle-only-new">${stored.settings.onlyNewShorts ? "Mostrar todos" : "Solo contenido nuevo"}</button></div></section>
+      <section class="section"><div class="section-head"><div><h2>Preferencias</h2><p>Adapta lectura, movimiento, iluminación y apariencia.</p></div></div><div class="button-row"><button class="primary-button" data-action="settings">Personalizar Atlas</button><button class="secondary-button" data-action="intro-replay">Ver presentación</button><button class="secondary-button" data-action="toggle-contrast">${stored.settings.contrast ? "Desactivar" : "Activar"} alto contraste</button><button class="secondary-button" data-action="toggle-random">${stored.settings.randomShorts ? "Orden diario" : "Orden aleatorio"}</button><button class="secondary-button" data-action="toggle-only-new">${stored.settings.onlyNewShorts ? "Mostrar todos" : "Solo contenido nuevo"}</button></div></section>
       <section class="section"><div class="section-head"><div><h2>Datos locales</h2><p>Exporta una copia, impórtala o borra todo.</p></div></div><div class="button-row"><button class="secondary-button" data-action="export-data">Exportar</button><button class="secondary-button" data-action="import-data">Importar</button><button class="secondary-button" data-action="clear-data">Borrar</button><input id="import-file" type="file" accept=".json,application/json" hidden></div></section></section>`;
   }
 
@@ -448,6 +489,7 @@
       return;
     }
     const current = route();
+    document.body.classList.toggle("discover-active", current.name === "discover" || current.name === "short");
     if (current.name !== "reader") A.reader?.stop();
     closeDetail(false);
     setActiveNav(current.name);
@@ -479,6 +521,7 @@
     }
     else if (current.name === "guide") app.innerHTML = A.extras.renderGuide(current.query.get("q") || "");
     else if (current.name === "notifications") app.innerHTML = A.extras.renderNotifications();
+    else if (current.name === "examen") app.innerHTML = A.exam.render(current);
     else if (current.name === "reader") {
       const doc = A.data.documentMap.get(decodeURIComponent(current.segments.slice(1).join("/")));
       if (!doc) app.innerHTML = notFound();
@@ -515,6 +558,7 @@
     if (current.name === "discover") return "Descubrir · Atlas";
     if (current.name === "compare") return "Comparar · Atlas";
     if (current.name === "saved") return "Guardados · Atlas";
+    if (current.name === "examen") return "Examen diario · Atlas";
     return "Atlas · Mercabá";
   }
 
@@ -765,6 +809,13 @@
     const target = event.target.closest("button,a");
     if (!target) return;
     const action = target.dataset.action;
+    if (target.dataset.nav === "discover" && ["discover", "short"].includes(route().name)) {
+      event.preventDefault();
+      A.reels.refresh();
+      return;
+    }
+    if (action === "intro-close") { closeIntro(); return; }
+    if (action === "intro-replay") { event.preventDefault(); openIntro(true); return; }
     if (action === "search") { event.preventDefault(); openSearch(); }
     if (action === "settings") { event.preventDefault(); openSettings(); }
     if (action === "close-settings") closeSettings();
@@ -834,6 +885,8 @@
         || (window.ATLAS_EXTERNAL?.items || []).find(short => short.id === target.dataset.shareShort)
         || (window.ATLAS_QUOTES?.items || []).find(short => short.id === target.dataset.shareShort)
         || (window.ATLAS_YOUTUBE?.items || []).find(short => short.id === target.dataset.shareShort)
+        || (window.ATLAS_MUSIC?.items || []).find(short => short.id === target.dataset.shareShort)
+        || (window.ATLAS_INSTAGRAM?.items || []).find(short => short.id === target.dataset.shareShort)
         || (window.ATLAS_LIVE_SHORTS || []).find(short => short.id === target.dataset.shareShort);
       if (!item) { toast("No se ha podido recuperar esta tarjeta."); return; }
       const url = `${location.href.split("#")[0]}#/short/${encodeURIComponent(item.id)}`;
@@ -936,11 +989,17 @@
   }
 
   window.addEventListener("hashchange", renderRouteView);
+  window.addEventListener("atlas:refresh-discover", () => renderRouteView());
+  window.addEventListener("atlas:exam-changed", () => renderRouteView());
   window.addEventListener("resize", () => {
     const frame = document.querySelector("#infographic-frame");
     if (frame?.src && !document.querySelector("#infographic-layer")?.hidden) fitInfographic(frame);
   }, { passive: true });
   matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", applyTheme);
-  applyTheme(); applyPersonalization(); registerPwa(); renderRouteView(); checkNotifications();
-  if (!A.storage.get().settings.tutorialSeen) setTimeout(() => openTutorial(), 350);
+  applyTheme(); applyPersonalization(); registerPwa(); renderRouteView(); checkNotifications(); A.exam.checkReminders();
+  const introOpened = openIntro();
+  if (!A.storage.get().settings.tutorialSeen) {
+    if (introOpened) introPendingTutorial = true;
+    else setTimeout(() => openTutorial(), 350);
+  }
 })();

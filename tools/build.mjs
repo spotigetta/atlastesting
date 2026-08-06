@@ -57,6 +57,7 @@ copySnapshots();
 for (const script of [
   "build-data.mjs",
   "build-quotes.mjs",
+  "build-examen.mjs",
   "build-youtube-shorts.mjs",
   "build-youtube-music.mjs",
   "build-channel-catalog.mjs",
@@ -65,6 +66,7 @@ for (const script of [
   "build-fulltext.mjs"
 ]) run(script);
 copySnapshots();
+run("build-manual-providers.mjs");
 
 execFileSync(process.execPath, [path.join(root, "tools", "validate.mjs")], {
   cwd: root,
@@ -85,7 +87,7 @@ const publicDataFiles = [
   "catalog.json", "external-content.json", "quotes.json", "youtube-shorts.json",
   "channel-catalog.json", "youtube-live-cache.json", "youtube-music-cache.json",
   "instagram-cache.json", "josemaria-quotes.json", "provider-health.json", "version.json", "changelog.json",
-  "import-report.json"
+  "import-report.json", "examen.json"
 ];
 for (const file of publicDataFiles) copyFile(path.join("data", file));
 for (const directory of ["data/documents", "data/search"]) copyDirectory(directory);

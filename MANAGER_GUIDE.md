@@ -2,53 +2,44 @@
 
 ## Abrir
 
-```powershell
-npm.cmd run manager
-```
+Haz doble clic en `GESTOR_ATLAS.cmd` o ejecuta `npm.cmd run manager` y abre `http://127.0.0.1:8765/gestor/`.
 
-Después abre `http://127.0.0.1:8765/gestor/`.
-
-El servidor no reconstruye Atlas al arrancar. Esto evita procesos prolongados o bloqueados.
-
-## Estados
-
-- **Cambios pendientes:** las fuentes difieren del último build.
-- **Validado:** catálogo, lector e índice coinciden.
-- **Salida dist lista:** existe una construcción pública.
-- **Publicado:** solo puede producirse después de que el propietario suba el proyecto.
+El acceso directo comprueba que el servidor pertenece a la versión actual. Si encuentra una instancia antigua de Atlas, la sustituye; así se evita el mensaje «Ruta API no encontrada».
 
 ## Documentos
 
-- Selecciona varios Markdown.
+- Usa **Encontrar documentos y palabras** para buscar por ficha o literalmente dentro de los Markdown.
+- Selecciona hasta cien archivos Markdown a la vez.
 - Elige biblioteca, categoría, autor y año.
-- El Gestor evita duplicados.
-- Los archivos reciben numeración automática.
-- «Renombrar» conserva el ID.
-- «Papelera» mueve el documento a `.atlas-trash`.
+- El Gestor evita duplicados y asigna numeración automática.
+- Renombrar conserva el identificador; eliminar mueve el documento a `.atlas-trash`.
 
-## Bibliotecas
+## Bibliotecas IA
 
-Una carpeta `NN_IA_Nombre` se detecta al construir. También puede crearse desde el formulario. Las eliminaciones pasan por la papelera.
+Una carpeta `NN_IA_Nombre` se detecta al construir. El formulario también permite crear, editar, activar, desactivar o retirar una IA. Las eliminaciones pasan por la papelera.
+
+## Shorts, frases y enlaces
+
+Los formularios crean y retiran tarjetas sin editar JSON. En **Noticias y lecturas** basta con pegar una URL: Atlas detecta el tipo y recupera, cuando la web lo permite, título, descripción, autor e imagen. La vista previa se puede revisar antes de guardarla. Admite noticias, lecturas, oración, vídeos, música e Instagram.
+
+## Examen diario
+
+La pestaña **Examen diario** permite editar el catálogo general de normas, incorporar ayudas nuevas y mantener el inventario de fuentes. Una cita textual exige autor, obra y referencia; los consejos y preguntas quedan identificados como contenido editorial. La configuración y el histórico íntimo de los usuarios nunca aparecen en el Gestor porque solo existen en sus dispositivos.
 
 ## Proveedores
 
-La pestaña Proveedores edita YouTube, música e Instagram. Guardar modifica la configuración local; no consulta ni publica.
+YouTube, música e Instagram aparecen como fichas interactivas. Puedes añadir, habilitar, deshabilitar o retirar canales. El JSON queda oculto en **Edición avanzada** para casos excepcionales.
 
-«Consultar enlaces ahora» ejecuta adaptadores con timeout y conserva el último snapshot válido.
+**Consultar enlaces ahora** ejecuta los adaptadores con tiempo máximo y conserva el último snapshot válido. Instagram limita el acceso automático sin una sesión autenticada: Atlas mantiene una tarjeta por cada perfil configurado y añade publicaciones concretas detectadas por GitHub Actions o introducidas por URL.
 
-## Centro de publicación
+## Publicación
 
-- **Auditar:** compara de inmediato fuentes, catálogo y lector mediante
-  metadatos.
-- **Validar:** ejecuta controles sin reconstruir.
-- **Preparar dist:** construye y valida la salida pública.
+La pestaña **Publicación** muestra el recorrido completo:
 
-Ningún botón realiza `git push` o publica.
+`Modificar → Preparar versión → Commit to main → Push origin → Actions verde → Actualizar Atlas`
 
-El análisis de «Duplicados exactos» permanece en su pestaña propia porque
-calcula hashes sobre todo el corpus y, por tanto, puede tardar más. No se ejecuta
-al abrir el Gestor.
+**Preparar versión** construye y valida la salida, pero ningún botón del Gestor ejecuta `git push`. Consulta [ACTUALIZAR_Y_PUBLICAR.md](ACTUALIZAR_Y_PUBLICAR.md) para el detalle de clics en GitHub Desktop y GitHub.
 
 ## Recuperación
 
-Los elementos borrados están en `.atlas-trash`. Muévelos de nuevo a su biblioteca antes de construir.
+Los elementos borrados están en `.atlas-trash`. Muévelos de nuevo a su biblioteca antes de construir si deseas restaurarlos.

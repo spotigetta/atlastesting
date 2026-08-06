@@ -32,6 +32,9 @@
   let magnetFrame = 0;
   let magnetizing = false;
   let gestureActive = false;
+  let refreshBusy = false;
+  let pullStart = 0;
+  let pullDistance = 0;
   const batchSize = 18;
 
   function shuffle(items) {
@@ -86,12 +89,22 @@
       ...item, text: item.description, reference: `${item.source} · YouTube`,
       reviewedAt: window.ATLAS_YOUTUBE.generatedAt?.slice(0, 10)
     }));
+    const music = enabledItems(window.ATLAS_MUSIC?.items, "disabledMusicChannels").map(item => ({
+      ...item, type: "music", verified: true, external: true,
+      libraryId: item.libraryId || "liturgy", text: item.description,
+      reference: `${item.source} · YouTube`, reviewedAt: item.publishedAt?.slice(0, 10) || window.ATLAS_MUSIC?.updatedAt?.slice(0, 10)
+    }));
+    const instagram = enabledItems(window.ATLAS_INSTAGRAM?.items, "disabledInstagramChannels").map(item => ({
+      ...item, type: "instagram", verified: true, external: true,
+      libraryId: item.libraryId || "doctrine", text: item.description,
+      reference: `${item.source} · Instagram`, reviewedAt: item.publishedAt?.slice(0, 10) || window.ATLAS_INSTAGRAM?.updatedAt?.slice(0, 10)
+    }));
     shorts = filter === "all" ? balanceEditorial(shorts) : shorts;
-    shorts = mixExternal(shorts, filter === "all" ? balanceExternal([...external, ...videos]) : [...external, ...videos]);
+    shorts = mixExternal(shorts, filter === "all" ? balanceExternal([...external, ...videos, ...music, ...instagram]) : [...external, ...videos, ...music, ...instagram]);
     if (filter !== "all") shorts = shorts.filter(item => item.libraryId === filter || item.type === filter);
     const seen = new Set(root.storage.get().seenShorts || []);
-    if (root.storage.get().settings.onlyNewShorts) shorts = shorts.filter(item => !seen.has(item.id));
-    queue = constrained(shorts);
+    if (root.storage.get().settings.onlyNewShorts && filter !== "instagram") shorts = shorts.filter(item => !seen.has(item.id));
+    queue = filter === "all" ? mixedAll(shorts) : constrained(shorts);
     cursor = 0;
     const initial = nextBatch();
     requestAnimationFrame(() => {
@@ -109,7 +122,8 @@
       ${filter === "video" ? `<div class="short-channel-row">${enabledItems(window.ATLAS_YOUTUBE?.channels, "disabledVideoChannels").filter(channel => channel.tier !== "reserve" || root.storage.get().settings.showReserveVideos).map(channel => `<a href="${esc(channel.url)}" target="_blank" rel="noopener">${esc(channel.name)} ↗</a>`).join("")}</div>` : ""}
       ${filter === "all" || filter === "video" ? `<button class="reserve-video-toggle ${root.storage.get().settings.showReserveVideos ? "active" : ""}" data-toggle-reserve-videos>${root.storage.get().settings.showReserveVideos ? "Canales de reserva activados" : "Canales de reserva desactivados"}</button>` : ""}</div>
       ${["all","video","music","instagram"].includes(filter) ? '<span class="youtube-live-status" id="youtube-live-status">Actualizando canales…</span>' : ""}
-      <div class="short-aurora" aria-hidden="true"><i></i><b></b></div><div class="short-feed">${initial || root.library.empty("No quedan contenidos nuevos", "Desactiva «Solo contenido nuevo» en Guardados.")}</div>
+      <div class="short-refresh-indicator" aria-live="polite"><span>↻</span><b>Arrastra para actualizar</b></div>
+      <div class="short-aurora" aria-hidden="true"><i></i><b></b></div><div class="short-feed">${initial || root.library.empty(filter === "instagram" ? "No hay cuentas de Instagram configuradas" : "No quedan contenidos nuevos", filter === "instagram" ? "Añade perfiles o publicaciones desde el Gestor de Atlas." : "Desactiva «Solo contenido nuevo» en Guardados.")}</div>
     </div>`;
   }
 
@@ -242,7 +256,7 @@
   }
 
   function balanceExternal(items) {
-    const limits = { reading: 4, news: 10, prayer: 9, quote: 12, video: 14 };
+    const limits = { reading: 4, news: 10, prayer: 9, quote: 12, video: 18, music: 8, instagram: 8 };
     const grouped = new Map();
     items.forEach(item => grouped.set(item.type, [...(grouped.get(item.type) || []), item]));
     return [...grouped.entries()].flatMap(([type, values]) => takeRandom(values, limits[type] || 6));
@@ -281,6 +295,34 @@
     });
   }
 
+  function mixedAll(items, prefix = []) {
+    const mediaTypes = new Set(["video", "music", "instagram"]);
+    const editorial = constrained(items.filter(item => !mediaTypes.has(item.type)), prefix);
+    const buckets = {
+      video: constrained(items.filter(item => item.type === "video")),
+      music: constrained(items.filter(item => item.type === "music")),
+      instagram: constrained(items.filter(item => item.type === "instagram"))
+    };
+    const media = [];
+    while (buckets.video.length || buckets.music.length || buckets.instagram.length) {
+      shuffle(["video", "music", "instagram"].filter(type => buckets[type].length))
+        .forEach(type => media.push(buckets[type].shift()));
+    }
+    if (!media.length) return editorial;
+    const result = [];
+    let mediaCursor = 0;
+    let gap = 2 + Math.floor(Math.random() * 3);
+    for (const item of editorial) {
+      result.push(item);
+      gap -= 1;
+      if (gap <= 0 && mediaCursor < media.length) {
+        result.push(media[mediaCursor++]);
+        gap = 3 + Math.floor(Math.random() * 3);
+      }
+    }
+    return result.concat(media.slice(mediaCursor));
+  }
+
   function incorporateFresh(items, feed) {
     if (!items.length) return;
     const known = new Set(queue.map(item => item.id));
@@ -288,7 +330,7 @@
     if (!fresh.length) return;
     if (activeFilter === "all") {
       const prefix = queue.slice(Math.max(0, cursor - 2), cursor);
-      queue = [...queue.slice(0, cursor), ...constrained([...queue.slice(cursor), ...fresh], prefix)];
+      queue = [...queue.slice(0, cursor), ...mixedAll([...queue.slice(cursor), ...fresh], prefix)];
     } else {
       queue.push(...constrained(fresh));
     }
@@ -345,14 +387,66 @@
       magnetizing = false;
     };
     feed.addEventListener("wheel", cancelMagnet, { passive: true });
-    feed.addEventListener("touchstart", () => { gestureActive = true; cancelMagnet(); }, { passive: true });
+    feed.addEventListener("touchstart", event => {
+      gestureActive = true;
+      pullStart = feed.scrollTop <= 2 ? event.touches[0]?.clientY || 0 : 0;
+      pullDistance = 0;
+      cancelMagnet();
+    }, { passive: true });
+    feed.addEventListener("touchmove", event => {
+      if (!pullStart || feed.scrollTop > 2) return;
+      pullDistance = Math.max(0, Math.min(105, (event.touches[0]?.clientY || pullStart) - pullStart));
+      updatePullIndicator(pullDistance);
+    }, { passive: true });
     feed.addEventListener("touchend", () => {
       gestureActive = false;
+      const shouldRefresh = pullDistance >= 68;
+      pullStart = 0;
+      pullDistance = 0;
+      if (shouldRefresh) refresh(); else updatePullIndicator(0);
       clearTimeout(magnetTimer);
       magnetTimer = setTimeout(() => magneticSnap(feed), Math.max(20, Number(root.storage.get().settings.magnetDelay || 120) * .55));
     }, { passive: true });
     observeCards();
     requestAnimationFrame(() => updateAurora(feed));
+  }
+
+  function updatePullIndicator(distance, label = "") {
+    const indicator = document.querySelector(".short-refresh-indicator");
+    if (!indicator) return;
+    const progress = Math.min(1, distance / 68);
+    indicator.style.setProperty("--pull", progress.toFixed(3));
+    indicator.classList.toggle("ready", progress >= 1);
+    const text = indicator.querySelector("b");
+    if (text) text.textContent = label || (progress >= 1 ? "Suelta para actualizar" : "Arrastra para actualizar");
+  }
+
+  async function refresh() {
+    if (refreshBusy) return;
+    refreshBusy = true;
+    updatePullIndicator(68, "Comprobando la última publicación…");
+    document.querySelector(".short-refresh-indicator")?.classList.add("refreshing");
+    try {
+      const [external, youtube, music, instagram, quotes] = await Promise.all([
+        window.AtlasRuntime.fetchJson("data/external-content.json", { fresh: true }).catch(() => window.ATLAS_EXTERNAL),
+        window.AtlasRuntime.fetchJson("data/youtube-live-cache.json", { fresh: true }).catch(() => window.ATLAS_YOUTUBE),
+        window.AtlasRuntime.fetchJson("data/youtube-music-cache.json", { fresh: true }).catch(() => window.ATLAS_MUSIC),
+        window.AtlasRuntime.fetchJson("data/instagram-cache.json", { fresh: true }).catch(() => window.ATLAS_INSTAGRAM),
+        window.AtlasRuntime.fetchJson("data/quotes.json", { fresh: true }).catch(() => window.ATLAS_QUOTES)
+      ]);
+      window.ATLAS_EXTERNAL = external || window.ATLAS_EXTERNAL;
+      window.ATLAS_YOUTUBE = youtube || window.ATLAS_YOUTUBE;
+      window.ATLAS_MUSIC = music || window.ATLAS_MUSIC;
+      window.ATLAS_INSTAGRAM = instagram || window.ATLAS_INSTAGRAM;
+      window.ATLAS_QUOTES = quotes || window.ATLAS_QUOTES;
+      window.dispatchEvent(new CustomEvent("atlas:refresh-discover", { detail: { filter: activeFilter } }));
+    } finally {
+      setTimeout(() => {
+        refreshBusy = false;
+        updatePullIndicator(0, "Selección renovada");
+        document.querySelector(".short-refresh-indicator")?.classList.remove("refreshing");
+      }, 500);
+    }
   }
 
   function magneticSnap(feed) {
@@ -538,5 +632,5 @@
     if (event.key === "Escape") closeVideo();
   });
 
-  root.reels = { render, openVideo, closeVideo };
+  root.reels = { render, refresh, openVideo, closeVideo };
 })();

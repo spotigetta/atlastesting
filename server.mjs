@@ -24,6 +24,9 @@ const musicConfigPath = path.join(contentDir, "youtube-music.json");
 const musicCachePath = path.join(dataDir, "youtube-music-cache.json");
 const instagramConfigPath = path.join(contentDir, "instagram.json");
 const instagramCachePath = path.join(dataDir, "instagram-cache.json");
+const examNormsPath = path.join(contentDir, "examen", "normas.json");
+const examHelpsPath = path.join(contentDir, "examen", "manual-helps.json");
+const examSourcesPath = path.join(contentDir, "examen", "sources.json");
 const youtubeRefreshMs = 30 * 60 * 1000;
 let youtubeRefreshPromise = null;
 let musicRefreshPromise = null;
@@ -495,7 +498,7 @@ async function refreshYoutubeFeed(force = false) {
   if (youtubeRefreshPromise) return youtubeRefreshPromise;
   youtubeRefreshPromise = (async () => {
     const config = youtubeSeedData();
-    const settled = await mapConcurrent(config.channels, 7, fetchYoutubeChannel);
+    const settled = await mapConcurrent(config.channels.filter(channel => channel.enabled !== false), 7, fetchYoutubeChannel);
     const live = settled.flatMap(result => result.status === "fulfilled" ? result.value : []);
     const failures = settled.filter(result => result.status === "rejected").map(result => result.reason?.message || "Canal no disponible");
     const merged = [...live, ...youtubeSeedItems()];
@@ -537,7 +540,7 @@ async function refreshMusicFeed(force = false) {
   if (musicRefreshPromise) return musicRefreshPromise;
   musicRefreshPromise = (async () => {
     const config = musicSeedData();
-    const settled = await mapConcurrent(config.channels, 5, channel => fetchYoutubeChannel({ ...channel, preferFeed: true }));
+    const settled = await mapConcurrent(config.channels.filter(channel => channel.enabled !== false), 5, channel => fetchYoutubeChannel({ ...channel, preferFeed: true }));
     const live = settled.flatMap(result => result.status === "fulfilled" ? result.value : [])
       .map(item => ({
         ...item,
@@ -651,7 +654,7 @@ async function refreshInstagramFeed(force = false) {
   if (instagramRefreshPromise) return instagramRefreshPromise;
   instagramRefreshPromise = (async () => {
     const config = instagramSeedData();
-    const settled = await mapConcurrent(config.channels, 3, fetchInstagramChannel);
+    const settled = await mapConcurrent(config.channels.filter(channel => channel.enabled !== false), 3, fetchInstagramChannel);
     const live = settled.flatMap(result => result.status === "fulfilled" ? result.value : []);
     const failures = settled.filter(result => result.status === "rejected").map(result => result.reason?.message || "Cuenta no disponible");
     if (!live.length && cached?.items?.length) return { ...cached, channels: config.channels, stale: true, failures };
@@ -662,8 +665,225 @@ async function refreshInstagramFeed(force = false) {
   return instagramRefreshPromise;
 }
 
+function readJsonFile(file, fallback = {}) {
+  try { return JSON.parse(fs.readFileSync(file, "utf8")); }
+  catch { return fallback; }
+}
+
+function writeJsonFile(file, value) {
+  const temporary = `${file}.tmp`;
+  fs.writeFileSync(temporary, `${JSON.stringify(value, null, 2)}\n`, "utf8");
+  fs.renameSync(temporary, file);
+}
+
+function publicHttpUrl(value) {
+  const parsed = new URL(String(value || "").trim());
+  if (!/^https?:$/.test(parsed.protocol)) throw new Error("El enlace debe comenzar por http:// o https://.");
+  const host = parsed.hostname.toLowerCase();
+  if (host === "localhost" || host === "::1" || /^127\./.test(host) || /^10\./.test(host)
+    || /^192\.168\./.test(host) || /^172\.(1[6-9]|2\d|3[01])\./.test(host)) throw new Error("No se permiten direcciones locales o privadas.");
+  return parsed;
+}
+
+function metaValue(html, key) {
+  const escaped = key.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  const patterns = [
+    new RegExp(`<meta[^>]+(?:property|name)=["']${escaped}["'][^>]+content=["']([^"']+)["']`, "i"),
+    new RegExp(`<meta[^>]+content=["']([^"']+)["'][^>]+(?:property|name)=["']${escaped}["']`, "i")
+  ];
+  return plainText(decodeXml(patterns.map(pattern => html.match(pattern)?.[1]).find(Boolean) || ""));
+}
+
+function youtubeVideoId(value) {
+  try {
+    const url = new URL(value);
+    if (url.hostname === "youtu.be") return url.pathname.split("/").filter(Boolean)[0] || "";
+    return url.searchParams.get("v") || url.pathname.match(/\/(?:shorts|embed)\/([A-Za-z0-9_-]{11})/)?.[1] || "";
+  } catch { return ""; }
+}
+
+function inferredLinkType(url, requested = "auto") {
+  if (requested && requested !== "auto") return requested;
+  const host = url.hostname.toLowerCase();
+  const value = `${host}${url.pathname}`.toLowerCase();
+  if (host.includes("instagram.com")) return "instagram";
+  if (host.includes("youtube.com") || host === "youtu.be") return "video";
+  if (/opusdei\.org|evangeli|oracion|prayer|meditacion/.test(value)) return "prayer";
+  if (/rialp|palabra|eunsa|editorial|libreria|book|libro/.test(value)) return "reading";
+  return "news";
+}
+
+async function previewManagedLink(input) {
+  const parsed = publicHttpUrl(input.url);
+  const type = inferredLinkType(parsed, input.type);
+  let title = String(input.title || "").trim();
+  let description = String(input.description || "").trim();
+  let source = String(input.source || "").trim();
+  let image = String(input.image || "").trim();
+  let author = String(input.author || "").trim();
+  const videoId = youtubeVideoId(parsed.href);
+  try {
+    if (videoId) {
+      const response = await fetch(`https://www.youtube.com/oembed?url=${encodeURIComponent(parsed.href)}&format=json`, { signal: AbortSignal.timeout(9000) });
+      if (response.ok) {
+        const metadata = await response.json();
+        title ||= metadata.title || ""; source ||= metadata.author_name || "YouTube";
+        author ||= metadata.author_name || ""; image ||= metadata.thumbnail_url || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`;
+      }
+    } else {
+      const response = await fetch(parsed.href, { headers: { "user-agent": "Mozilla/5.0 AtlasMercabaManager/5.1", "accept-language": "es-ES,es;q=0.9" }, signal: AbortSignal.timeout(12000) });
+      if (response.ok) {
+        const html = await response.text();
+        title ||= metaValue(html, "og:title") || plainText(html.match(/<title[^>]*>([\s\S]*?)<\/title>/i)?.[1] || "");
+        description ||= metaValue(html, "og:description") || metaValue(html, "description");
+        image ||= metaValue(html, "og:image"); author ||= metaValue(html, "article:author") || metaValue(html, "author");
+      }
+    }
+  } catch {}
+  source ||= type === "instagram" ? `@${parsed.pathname.split("/").filter(Boolean)[0] || "instagram"}` : parsed.hostname.replace(/^www\./, "");
+  title ||= type === "instagram" ? `Publicación de ${source}` : `Contenido de ${source}`;
+  description ||= type === "instagram" ? "Publicación o perfil añadido directamente desde el Gestor de Atlas." : "Enlace añadido desde el Gestor; Atlas volverá a consultar sus metadatos al actualizar proveedores.";
+  return {
+    id: `${type}-${crypto.createHash("sha1").update(parsed.href).digest("hex").slice(0, 14)}`,
+    type, url: parsed.href, title: title.slice(0, 240), description: description.slice(0, 600), source: source.slice(0, 120),
+    author: author.slice(0, 120), image, videoId, libraryId: input.libraryId || (type === "music" ? "liturgy" : "doctrine"),
+    external: true, verified: true, manual: true
+  };
+}
+
+function managedLinks() {
+  const external = readJsonFile(path.join(contentDir, "external-items.json"), []);
+  const youtube = readJsonFile(youtubeConfigPath, { items: [] });
+  const music = readJsonFile(musicConfigPath, { items: [] });
+  const instagram = readJsonFile(instagramConfigPath, { items: [] });
+  return [
+    ...external.map((item, index) => ({ ...item, managerStore: "external", managerKey: item.id || item.url || String(index) })),
+    ...(youtube.items || []).map((item, index) => ({ ...item, type: "video", url: item.url || `https://www.youtube.com/watch?v=${item.videoId || item.id}`, source: item.source || item.channel, managerStore: "youtube", managerKey: item.videoId || item.id || String(index) })),
+    ...(music.items || []).map((item, index) => ({ ...item, type: "music", managerStore: "music", managerKey: item.videoId || item.id || String(index) })),
+    ...(instagram.items || []).map((item, index) => ({ ...item, type: "instagram", managerStore: "instagram", managerKey: item.id || item.url || String(index) }))
+  ];
+}
+
+function saveManagedLink(item) {
+  if (item.type === "video") {
+    if (!item.videoId) throw new Error("No se ha reconocido un identificador de vídeo de YouTube.");
+    const config = readJsonFile(youtubeConfigPath, { channels: [], items: [] }); config.items ||= [];
+    if (config.items.some(current => (current.videoId || current.id) === item.videoId)) throw new Error("Ese vídeo ya está incluido.");
+    config.items.unshift({ id: item.videoId, videoId: item.videoId, title: item.title, channel: item.source, source: item.source, description: item.description, url: item.url, image: item.image, libraryId: item.libraryId });
+    writeJsonFile(youtubeConfigPath, config); return;
+  }
+  const target = item.type === "music" ? musicConfigPath : item.type === "instagram" ? instagramConfigPath : path.join(contentDir, "external-items.json");
+  const config = readJsonFile(target, item.type === "music" || item.type === "instagram" ? { channels: [], items: [] } : []);
+  const list = Array.isArray(config) ? config : (config.items ||= []);
+  if (list.some(current => current.url === item.url)) throw new Error("Ese enlace ya está incluido.");
+  list.unshift(item); writeJsonFile(target, config);
+}
+
+function deleteManagedLink(store, key) {
+  const target = store === "youtube" ? youtubeConfigPath : store === "music" ? musicConfigPath : store === "instagram" ? instagramConfigPath : path.join(contentDir, "external-items.json");
+  const config = readJsonFile(target, store === "external" ? [] : { channels: [], items: [] });
+  const list = Array.isArray(config) ? config : (config.items ||= []);
+  const filtered = list.filter((item, index) => ![item.id, item.videoId, item.url, String(index)].includes(key));
+  if (list.length === filtered.length) throw new Error("No se encontró el elemento que se quería retirar.");
+  if (Array.isArray(config)) writeJsonFile(target, filtered); else { config.items = filtered; writeJsonFile(target, config); }
+}
+
+async function searchManagedDocuments(query, mode = "metadata", libraryId = "") {
+  const clean = String(query || "").trim(); if (clean.length < 2) return [];
+  const normalized = normalize(clean); const current = catalog();
+  const librariesById = new Map(current.libraries.map(library => [library.id, library]));
+  const docs = current.libraries.flatMap(library => library.documents.map(document => ({ ...document, library: library.short })));
+  if (mode !== "content") return docs.filter(document => (!libraryId || document.libraryId === libraryId) && normalize(`${document.title} ${document.author || ""} ${document.category} ${document.file}`).includes(normalized)).slice(0, 80);
+  const results = []; const needle = clean.toLocaleLowerCase("es");
+  for (const document of docs) {
+    if (libraryId && document.libraryId !== libraryId) continue;
+    const library = librariesById.get(document.libraryId); const file = path.join(workspace, library.folder, document.file);
+    if (!fs.existsSync(file)) continue;
+    const content = fs.readFileSync(file, "utf8"); const lower = content.toLocaleLowerCase("es"); const index = lower.indexOf(needle);
+    if (index < 0) continue;
+    const start = Math.max(0, index - 100);
+    results.push({ ...document, library: library.short, matches: lower.split(needle).length - 1, snippet: plainText(content.slice(start, index + clean.length + 150)) });
+    if (results.length >= 60) break;
+  }
+  return results;
+}
+
+function managedExamContent() {
+  const catalog = readJsonFile(examNormsPath, { schemaVersion: 1, catalogVersion: "1.0.0", norms: [] });
+  const helps = readJsonFile(examHelpsPath, []);
+  const sources = readJsonFile(examSourcesPath, { schemaVersion: 1, sources: [] });
+  const compiled = readJsonFile(path.join(dataDir, "examen.json"), { stats: {} });
+  return { catalog, helps, sources, stats: compiled.stats || {} };
+}
+
+function upsertExamNorm(input) {
+  const catalog = readJsonFile(examNormsPath, { schemaVersion: 1, catalogVersion: "1.0.0", norms: [] });
+  const id = String(input.id || slug(input.name)).replace(/_/g, "-");
+  if (!input.name || !id) throw new Error("La norma necesita nombre e identificador.");
+  const item = {
+    id, name: String(input.name).trim(), description: String(input.description || "").trim(),
+    type: input.type || "practice", frequency: input.frequency || { type: "daily" },
+    periods: Array.isArray(input.periods) && input.periods.length ? input.periods : ["night"],
+    partial: input.partial !== false, tags: Array.isArray(input.tags) ? input.tags : [],
+    question: String(input.question || "").trim(), suggestion: String(input.suggestion || "").trim(),
+    sourceUrl: String(input.sourceUrl || "").trim() || undefined
+  };
+  const index = catalog.norms.findIndex(norm => norm.id === id);
+  if (index >= 0) catalog.norms.splice(index, 1, item); else catalog.norms.push(item);
+  writeJsonFile(examNormsPath, catalog); return item;
+}
+
+function upsertExamHelp(input) {
+  const helps = readJsonFile(examHelpsPath, []);
+  if (!input.text || !input.kind) throw new Error("La ayuda necesita tipo y texto.");
+  if (input.kind === "quotation" && (!input.author || !input.work || !input.reference)) throw new Error("Una cita textual exige autor, obra y referencia.");
+  const id = input.id || `manual-help-${crypto.createHash("sha1").update(`${input.kind}|${input.text}|${input.reference || ""}`).digest("hex").slice(0, 14)}`;
+  const item = { ...input, id, verified: true, tags: input.tags || [], normIds: input.normIds || [] };
+  const index = helps.findIndex(help => help.id === id); if (index >= 0) helps.splice(index, 1, item); else helps.unshift(item);
+  writeJsonFile(examHelpsPath, helps); return item;
+}
+
+function upsertExamSource(input) {
+  const value = readJsonFile(examSourcesPath, { schemaVersion: 1, sources: [] });
+  if (!input.title || !input.url) throw new Error("La fuente necesita título y URL.");
+  publicHttpUrl(input.url);
+  const item = { id: input.id || `source-${slug(input.title)}`, title: String(input.title).trim(), kind: input.kind || "external-article", status: "metadata-only", url: new URL(input.url).href, notes: String(input.notes || "").trim() };
+  const index = value.sources.findIndex(source => source.id === item.id || source.url === item.url); if (index >= 0) value.sources.splice(index, 1, item); else value.sources.push(item);
+  writeJsonFile(examSourcesPath, value); return item;
+}
+
+function deleteExamItem(kind, id) {
+  if (kind === "norm") {
+    const value = readJsonFile(examNormsPath, { norms: [] }); const before = value.norms.length; value.norms = value.norms.filter(item => item.id !== id); if (value.norms.length === before) throw new Error("No se encontró la norma."); writeJsonFile(examNormsPath, value); return;
+  }
+  if (kind === "help") { const value = readJsonFile(examHelpsPath, []); const filtered = value.filter(item => item.id !== id); if (filtered.length === value.length) throw new Error("No se encontró la ayuda."); writeJsonFile(examHelpsPath, filtered); return; }
+  if (kind === "source") { const value = readJsonFile(examSourcesPath, { sources: [] }); const before = value.sources.length; value.sources = value.sources.filter(item => item.id !== id); if (value.sources.length === before) throw new Error("No se encontró la fuente."); writeJsonFile(examSourcesPath, value); return; }
+  throw new Error("Tipo de contenido de examen desconocido.");
+}
+
 async function api(req, res, url) {
   try {
+    if (req.method === "GET" && url.pathname === "/api/exam-content") return json(res, 200, managedExamContent());
+    if (req.method === "POST" && url.pathname === "/api/exam-norms") return json(res, 201, { ok: true, item: upsertExamNorm(await body(req)) });
+    if (req.method === "POST" && url.pathname === "/api/exam-helps") return json(res, 201, { ok: true, item: upsertExamHelp(await body(req)) });
+    if (req.method === "POST" && url.pathname === "/api/exam-sources") return json(res, 201, { ok: true, item: upsertExamSource(await body(req)) });
+    if (req.method === "DELETE" && url.pathname === "/api/exam-content") { const input = await body(req); deleteExamItem(String(input.kind || ""), String(input.id || "")); return json(res, 200, { ok: true }); }
+    if (req.method === "GET" && url.pathname === "/api/health") return json(res, 200, { ok: true, version: catalog().meta.dataVersion, managerApi: 3 });
+    if (req.method === "GET" && url.pathname === "/api/content-links") return json(res, 200, managedLinks());
+    if (req.method === "POST" && url.pathname === "/api/link-preview") return json(res, 200, await previewManagedLink(await body(req)));
+    if (req.method === "POST" && url.pathname === "/api/content-links") {
+      const item = await previewManagedLink(await body(req));
+      saveManagedLink(item);
+      return json(res, 201, { ok: true, item });
+    }
+    if (req.method === "DELETE" && url.pathname === "/api/content-links") {
+      const input = await body(req);
+      deleteManagedLink(String(input.store || ""), String(input.key || ""));
+      return json(res, 200, { ok: true });
+    }
+    if (req.method === "GET" && url.pathname === "/api/manager-search") {
+      return json(res, 200, await searchManagedDocuments(url.searchParams.get("q"), url.searchParams.get("mode"), url.searchParams.get("library")));
+    }
     if (req.method === "GET" && url.pathname === "/api/josemaria-quote") {
       const response = await fetch("https://escriva.org/api/v1/random-item/?site_id=2", {
         headers: { accept: "application/json", "user-agent": "AtlasMercaba/3.5" },
@@ -967,7 +1187,7 @@ async function api(req, res, url) {
       const output = await runTool("refresh-providers.mjs");
       return json(res, 200, { ok: true, output });
     }
-    return json(res, 404, { error: "Ruta API no encontrada" });
+    return json(res, 404, { error: `Ruta del Gestor no disponible: ${req.method} ${url.pathname}. Cierra el Gestor antiguo y vuelve a abrir GESTOR_ATLAS.cmd.` });
   } catch (error) {
     return json(res, 500, { error: error.message });
   }

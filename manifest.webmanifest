@@ -19,6 +19,7 @@
   "shortcuts": [
     {"name":"Explorar bibliotecas","short_name":"Explorar","url":"./#/explore","icons":[{"src":"assets/icons/icon-192.png","sizes":"192x192"}]},
     {"name":"Descubrir","short_name":"Descubrir","url":"./#/discover","icons":[{"src":"assets/icons/icon-192.png","sizes":"192x192"}]},
+    {"name":"Examen diario","short_name":"Examen","url":"./#/examen","icons":[{"src":"assets/icons/icon-192.png","sizes":"192x192"}]},
     {"name":"Guardados","short_name":"Guardados","url":"./#/saved","icons":[{"src":"assets/icons/icon-192.png","sizes":"192x192"}]}
   ]
 }

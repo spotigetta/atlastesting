@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-07-31T03:06:08.371Z",
-  "dataVersion": "5.0.0",
+  "generatedAt": "2026-08-06T15:26:27.403Z",
+  "dataVersion": "5.2.0",
   "counts": [
     {
       "library": "doctrine",
-      "documents": 152,
-      "words": 9381940,
+      "documents": 216,
+      "words": 11140450,
       "categories": 11,
-      "authors": 16,
+      "authors": 21,
       "historical": 2,
       "incomplete": 1,
       "foreignLanguage": 16,

@@ -3,245 +3,95 @@
   const $ = selector => document.querySelector(selector);
   const $$ = selector => [...document.querySelectorAll(selector)];
   const esc = value => String(value ?? "").replace(/[&<>"']/g, char => ({ "&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;" }[char]));
-  let status;
-  let files = [];
-  let libraryRegistry = [];
+  const typeNames = { news:"Noticia",reading:"Lectura",books:"Lectura",prayer:"Oración",video:"Vídeo",music:"Música",instagram:"Instagram",quote:"Frase",fact:"Hecho",curiosity:"Anécdota",question:"Pregunta",comparison:"Distinción" };
+  let status, files = [], libraryRegistry = [], shorts = [], external = [], providers = {}, links = [], previewItem = null, examContent = { catalog:{ norms:[] }, helps:[], sources:{ sources:[] }, stats:{} };
 
   async function request(url, options = {}) {
-    const response = await fetch(url, { headers: { "content-type": "application/json", ...(options.headers || {}) }, ...options });
-    const data = await response.json();
-    if (!response.ok) { const error = new Error(data.error || "Error"); error.data = data; throw error; }
+    const response = await fetch(url, { headers: { "content-type":"application/json", ...(options.headers || {}) }, ...options });
+    let data;
+    try { data = await response.json(); }
+    catch { throw new Error("El Gestor no ha recibido una respuesta válida. Cierra la ventana negra antigua y vuelve a abrir GESTOR_ATLAS.cmd."); }
+    if (!response.ok) { const error = new Error(data.error || "Error del Gestor"); error.data = data; throw error; }
     return data;
   }
-  function toast(message) { const node=$("#toast"); node.textContent=message; node.hidden=false; setTimeout(()=>node.hidden=true,3200); }
-  function result(selector, message, error=false) { const node=$(selector); node.textContent=message; node.classList.toggle("error",error); }
+  function toast(message) { const node=$("#toast"); node.textContent=message; node.hidden=false; setTimeout(()=>node.hidden=true,3600); }
+  function result(selector,message,error=false){const node=$(selector);node.textContent=message;node.classList.toggle("error",error)}
+  const libraryOptions = (blank="") => `${blank ? `<option value="">${esc(blank)}</option>` : ""}${status.libraries.map(lib=>`<option value="${esc(lib.id)}">${esc(lib.short)} · ${lib.documents}</option>`).join("")}`;
 
   async function loadStatus() {
     [status, libraryRegistry] = await Promise.all([request("/api/status"), request("/api/libraries")]);
     $("#server-state").textContent = status.rebuilding ? "Actualizando…" : `Atlas ${status.version} · ${status.pendingBuild ? "cambios pendientes" : "sincronizado"}`;
-    $("#summary").innerHTML = [
-      [status.documents,"Documentos"],[status.libraries.length,"Bibliotecas IA"],
-      [Math.round(status.words/1e6*10)/10+" M","Palabras"],[status.external,"Tarjetas externas"]
-    ].map(([value,label])=>`<article class="metric"><b>${value}</b><span>${label}</span></article>`).join("");
-    const options=status.libraries.map(lib=>`<option value="${esc(lib.id)}">${esc(lib.short)} · ${lib.documents}</option>`).join("");
-    $("#upload-library").innerHTML=options; $("#file-library").innerHTML=options;
-    renderLibraries();
-    await loadFiles();
+    $("#summary").innerHTML = [[status.documents,"Documentos"],[status.libraries.length,"Bibliotecas IA"],[Math.round(status.words/1e6*10)/10+" M","Palabras"],[status.external,"Tarjetas externas"]].map(([value,label])=>`<article class="metric"><b>${value}</b><span>${label}</span></article>`).join("");
+    $("#upload-library").innerHTML=libraryOptions(); $("#file-library").innerHTML=libraryOptions();
+    $("#short-library").innerHTML=libraryOptions(); $("#smart-link-library").innerHTML=libraryOptions();
+    $("#manager-search-library").innerHTML=libraryOptions("Todas las IA");
+    renderLibraries(); await loadFiles();
   }
 
   function renderLibraries() {
-    const counts = new Map(status.libraries.map(item => [item.id, item.documents]));
-    $("#library-list").innerHTML=libraryRegistry.map(lib=>`<article class="library-admin" data-library-id="${esc(lib.id)}">
-      <div class="library-summary">
-        <span class="library-mark tone-${esc(lib.tone)}">${esc(lib.mark || lib.short[0])}</span>
-        <span><b>${esc(lib.short)}</b><small>${esc(lib.folder)} · ${counts.get(lib.id) || 0} documentos</small></span>
-        <button class="button compact" type="button" data-toggle-library>Configurar</button>
-      </div>
-      <form class="library-edit" hidden>
-        <div class="form-row"><label>Nombre visible<input name="short" required value="${esc(lib.short)}"></label><label>Inicial<input name="mark" maxlength="2" value="${esc(lib.mark || "")}"></label></div>
-        <label>Descripción<textarea name="description" rows="3">${esc(lib.description || "")}</textarea></label>
-        <label>Enlace de NotebookLM<input name="notebookUrl" type="url" value="${esc(lib.notebookUrl || "")}"></label>
-        <label>Color<select name="tone">${["amber","blue","clay","violet","emerald","rose","indigo","gold","cyan","olive","burgundy","slate"].map(tone=>`<option${tone===lib.tone?" selected":""}>${tone}</option>`).join("")}</select></label>
-        <div class="library-actions"><button class="primary" type="submit">Guardar cambios</button><button class="danger library-delete" type="button" data-delete-library>Eliminar IA y carpeta</button></div>
-        <div class="result" data-library-result></div>
-      </form>
-    </article>`).join("");
+    const counts=new Map(status.libraries.map(item=>[item.id,item.documents]));
+    $("#library-list").innerHTML=libraryRegistry.map(lib=>`<article class="library-admin" data-library-id="${esc(lib.id)}"><div class="library-summary"><span class="library-mark tone-${esc(lib.tone)}">${esc(lib.mark||lib.short[0])}</span><span><b>${esc(lib.short)}</b><small>${esc(lib.folder)} · ${counts.get(lib.id)||0} documentos</small></span><button class="button compact" type="button" data-toggle-library>Configurar</button></div><form class="library-edit" hidden><div class="form-row"><label>Nombre visible<input name="short" required value="${esc(lib.short)}"></label><label>Inicial<input name="mark" maxlength="2" value="${esc(lib.mark||"")}"></label></div><label>Descripción<textarea name="description" rows="3">${esc(lib.description||"")}</textarea></label><label>Enlace de NotebookLM<input name="notebookUrl" type="url" value="${esc(lib.notebookUrl||"")}"></label><label>Color<select name="tone">${["amber","blue","clay","violet","emerald","rose","indigo","gold","cyan","olive","burgundy","slate"].map(tone=>`<option${tone===lib.tone?" selected":""}>${tone}</option>`).join("")}</select></label><div class="library-actions"><button class="primary" type="submit">Guardar cambios</button><button class="danger library-delete" type="button" data-delete-library>Eliminar IA y carpeta</button></div><div class="result" data-library-result></div></form></article>`).join("");
   }
+  async function rebuildAndReload(message) { $("#server-state").textContent="Sincronizando bibliotecas…"; const response=await request("/api/rebuild",{method:"POST",body:JSON.stringify({force:false})}); if(!response.ok)throw new Error(response.message||"No se pudo reconstruir Atlas."); await loadStatus(); toast(message); }
+  async function loadFiles(){files=await request(`/api/files?library=${encodeURIComponent($("#file-library").value)}`);renderFiles()}
+  function renderFiles(){const query=$("#file-filter").value.toLowerCase();const shown=files.filter(file=>`${file.title} ${file.category} ${file.file}`.toLowerCase().includes(query));$("#file-count").textContent=`${shown.length} de ${files.length}`;$("#file-list").innerHTML=shown.map(file=>`<article class="file-item"><span><b>${esc(file.title)}</b><small>${esc(file.file)} · ${esc(file.category)} · ${Number(file.words).toLocaleString("es-ES")} palabras</small></span><div class="button-row"><button class="compact" data-rename-file="${esc(file.file)}" data-file-title="${esc(file.title)}">Renombrar</button><button class="danger" data-delete-file="${esc(file.file)}">Papelera</button></div></article>`).join("")}
 
-  async function rebuildAndReload(message) {
-    $("#server-state").textContent="Sincronizando bibliotecas…";
-    const response=await request("/api/rebuild",{method:"POST",body:JSON.stringify({force:false})});
-    if(!response.ok) throw new Error(response.message || "No se pudo reconstruir Atlas.");
-    await loadStatus();
-    toast(message);
+  async function loadContent() {
+    [shorts, external, providers, links, examContent] = await Promise.all([request("/api/shorts"),request("/api/external"),request("/api/providers"),request("/api/content-links"),request("/api/exam-content")]);
+    $("#shorts-editor").value=JSON.stringify(shorts,null,2); $("#external-editor").value=JSON.stringify(external,null,2);
+    syncProviderEditors(); renderShorts(); renderManagedLinks(); renderProviders(); renderExamManager();
   }
+  function syncProviderEditors(){$("#provider-youtube").value=JSON.stringify(providers.youtube,null,2);$("#provider-music").value=JSON.stringify(providers.music,null,2);$("#provider-instagram").value=JSON.stringify(providers.instagram,null,2)}
+  function renderShorts(){const query=$("#short-filter").value.toLowerCase();const shown=shorts.map((item,index)=>({...item,index})).filter(item=>`${item.title} ${item.text} ${item.reference}`.toLowerCase().includes(query));$("#short-count").textContent=`${shown.length} de ${shorts.length}`;$("#short-list").innerHTML=shown.map(item=>`<article class="managed-row"><span class="kind-pill">${esc(typeNames[item.type]||item.type)}</span><span><b>${esc(item.title)}</b><small>${esc(item.text||"")}</small><em>${esc(item.reference||"Sin referencia")}</em></span><button class="danger compact" data-delete-short="${item.index}">Retirar</button></article>`).join("")||"<p class='muted-copy'>Todavía no hay tarjetas manuales.</p>"}
+  function renderManagedLinks(){const filter=$("#managed-link-filter").value;const shown=links.filter(item=>filter==="all"||item.type===filter||(filter==="reading"&&item.type==="books"));$("#managed-link-count").textContent=`${shown.length} de ${links.length}`;$("#managed-link-list").innerHTML=shown.map(item=>`<article class="managed-media"><div class="managed-thumb" ${item.image?`style="background-image:url('${esc(item.image)}')"`:""}><span>${esc((typeNames[item.type]||item.type||"A").slice(0,2))}</span></div><span><small>${esc(typeNames[item.type]||item.type)} · ${esc(item.source||item.channel||"")}</small><b>${esc(item.title||item.url)}</b><em>${esc(item.description||"")}</em><a href="${esc(item.url)}" target="_blank" rel="noopener">Abrir enlace ↗</a></span><button class="danger compact" data-delete-link data-store="${esc(item.managerStore)}" data-key="${esc(item.managerKey)}">Retirar</button></article>`).join("")||"<p class='muted-copy'>No hay enlaces de este tipo.</p>"}
+  function renderPreview(item){previewItem=item;if(!item){$("#link-preview").className="link-preview empty-preview";$("#link-preview").textContent="La previsualización aparecerá aquí.";return}$("#link-preview").className="link-preview";$("#link-preview").innerHTML=`${item.image?`<img src="${esc(item.image)}" alt="">`:"<span class='preview-mark'>A</span>"}<div><small>${esc(typeNames[item.type]||item.type)} · ${esc(item.source)}</small><b>${esc(item.title)}</b><p>${esc(item.description)}</p></div>`}
+  function renderProviders(){const groups=[["youtube","Vídeos"],["music","Música"],["instagram","Instagram"]];$("#provider-visual-list").innerHTML=groups.map(([kind,label])=>`<section class="provider-group" data-provider-kind="${kind}"><header><div><span class="eyebrow">${label}</span><h2>${providers[kind].channels.length} canales</h2></div></header><div class="channel-cards">${providers[kind].channels.map((channel,index)=>`<article class="channel-card"><label class="check"><input type="checkbox" data-channel-enabled="${index}" ${channel.enabled===false?"":"checked"}> Activo</label><span><b>${esc(channel.name)}</b><a href="${esc(channel.url)}" target="_blank" rel="noopener">${esc(channel.url)}</a></span><button class="danger compact" data-delete-channel="${index}">Retirar</button></article>`).join("")}</div></section>`).join("")}
 
-  async function loadFiles() {
-    files = await request(`/api/files?library=${encodeURIComponent($("#file-library").value)}`);
-    renderFiles();
-  }
-  function renderFiles() {
-    const query=$("#file-filter").value.toLowerCase();
-    const shown=files.filter(file=>`${file.title} ${file.category} ${file.file}`.toLowerCase().includes(query));
-    $("#file-count").textContent=`${shown.length} de ${files.length}`;
-    $("#file-list").innerHTML=shown.map(file=>`<article class="file-item"><span><b>${esc(file.title)}</b><small>${esc(file.file)} · ${esc(file.category)} · ${Number(file.words).toLocaleString("es-ES")} palabras</small></span><div class="button-row"><button class="compact" data-rename-file="${esc(file.file)}" data-file-title="${esc(file.title)}">Renombrar</button><button class="danger" data-delete-file="${esc(file.file)}">Papelera</button></div></article>`).join("");
-  }
+  async function renderAudit(){const audit=await request("/api/audit");const cards=[[audit.libraries,"Bibliotecas",false],[audit.sourceDocuments,"Fuentes Markdown",audit.sourceDocuments!==audit.catalogDocuments],[audit.catalogDocuments,"Catálogo",audit.catalogDocuments!==audit.generatedDocuments],[audit.generatedDocuments,"Lecturas generadas",audit.catalogDocuments!==audit.generatedDocuments],[audit.duplicates.exactScanDeferred?"Manual":audit.duplicates.exact.length,"Duplicados exactos",false],[audit.duplicates.titles.length,"Títulos repetidos",Boolean(audit.duplicates.titles.length)],[audit.pendingBuild?"Sí":"No","Cambios pendientes",audit.pendingBuild],[audit.distReady?"Lista":"Pendiente","Salida dist",!audit.distReady]];$("#publication-audit").innerHTML=cards.map(([value,label,warning])=>`<article class="audit-card ${warning?"warning":""}"><b>${esc(value)}</b><span>${esc(label)}</span></article>`).join("");return audit}
 
-  async function loadEditors() {
-    const [shorts, external, providers]=await Promise.all([request("/api/shorts"),request("/api/external"),request("/api/providers")]);
-    $("#shorts-editor").value=JSON.stringify(shorts,null,2);
-    $("#external-editor").value=JSON.stringify(external,null,2);
-    $("#provider-youtube").value=JSON.stringify(providers.youtube,null,2);
-    $("#provider-music").value=JSON.stringify(providers.music,null,2);
-    $("#provider-instagram").value=JSON.stringify(providers.instagram,null,2);
-  }
-
-  async function renderAudit() {
-    const audit=await request("/api/audit");
-    const cards=[
-      [audit.libraries,"Bibliotecas",false],
-      [audit.sourceDocuments,"Fuentes Markdown",audit.sourceDocuments!==audit.catalogDocuments],
-      [audit.catalogDocuments,"Catálogo",audit.catalogDocuments!==audit.generatedDocuments],
-      [audit.generatedDocuments,"Lecturas generadas",audit.catalogDocuments!==audit.generatedDocuments],
-      [audit.duplicates.exactScanDeferred?"Manual":audit.duplicates.exact.length,"Duplicados exactos",false],
-      [audit.duplicates.titles.length,"Títulos repetidos",Boolean(audit.duplicates.titles.length)],
-      [audit.pendingBuild?"Sí":"No","Cambios pendientes",audit.pendingBuild],
-      [audit.distReady?"Lista":"Pendiente","Salida dist",!audit.distReady]
-    ];
-    $("#publication-audit").innerHTML=cards.map(([value,label,warning])=>`<article class="audit-card ${warning?"warning":""}"><b>${esc(value)}</b><span>${esc(label)}</span></article>`).join("");
-    return audit;
-  }
-
-  $$(".tabs button").forEach(button=>button.addEventListener("click",()=>{
-    $$(".tabs button").forEach(item=>item.classList.toggle("active",item===button));
-    $$(".panel").forEach(panel=>panel.classList.toggle("active",panel.dataset.panel===button.dataset.tab));
-  }));
-  $("#file-library").addEventListener("change",loadFiles);
-  $("#file-filter").addEventListener("input",renderFiles);
-  $("#upload-file").addEventListener("change",event=>{
-    const selected=[...event.target.files];
-    $("#upload-queue").innerHTML=selected.map(file=>`<span>${esc(file.name)}<small>${Math.max(1,Math.round(file.size/1024))} KB</small></span>`).join("");
-  });
-  $("#upload-form").addEventListener("submit",async event=>{
-    event.preventDefault();
-    const selected=[...$("#upload-file").files]; if(!selected.length)return;
-    result("#upload-result",`Leyendo y comparando ${selected.length} obras…`);
-    const submit=event.submitter; submit.disabled=true; submit.textContent="Procesando lote…";
-    try{
-      const common={category:$("#upload-category").value,author:$("#upload-author").value,year:$("#upload-year").value,force:$("#upload-force").checked};
-      const items=await Promise.all(selected.map(async file=>({
-        ...common,originalName:file.name,
-        title:file.name.replace(/^\d{4}(?:_\d{4})?_?/,"").replace(/_/g," ").replace(/\.md$/i,""),
-        content:await file.text()
-      })));
-      const response=await request("/api/upload-batch",{method:"POST",body:JSON.stringify({libraryId:$("#upload-library").value,items})});
-      const rejected=response.rejected || [];
-      result("#upload-result",`${response.created.length} obras incorporadas.${rejected.length?`\n${rejected.length} rechazadas por duplicidad o validación:\n${rejected.map(item=>`• ${item.originalName}: ${item.error}`).join("\n")}`:""}\nReconstruyendo Atlas…`,Boolean(rejected.length));
-      await rebuildAndReload(`${response.created.length} obras incorporadas y publicadas.`);
-      $("#upload-form").reset(); $("#upload-queue").innerHTML="";
-    }catch(error){
-      const rejected=error.data?.rejected || [];
-      const detail=rejected.map(item=>`${item.originalName}: ${item.error}`).join("\n");
-      result("#upload-result",`${error.message}${detail?`\n${detail}`:""}`,true);
-    }finally{submit.disabled=false;submit.textContent="Incorporar el lote";}
-  });
-  $("#file-list").addEventListener("click",async event=>{
-    const rename=event.target.closest("[data-rename-file]");
-    if(rename){
-      const title=prompt("Nuevo título del documento:",rename.dataset.fileTitle);
-      if(!title||title.trim()===rename.dataset.fileTitle)return;
-      await request("/api/files/rename",{method:"POST",body:JSON.stringify({libraryId:$("#file-library").value,file:rename.dataset.renameFile,title:title.trim()})});
-      toast("Documento renombrado conservando su identificador.");await loadFiles();await loadStatus();return;
-    }
-    const button=event.target.closest("[data-delete-file]"); if(!button)return;
-    if(!confirm(`¿Eliminar ${button.dataset.deleteFile} de la carpeta?`))return;
-    await request("/api/delete",{method:"POST",body:JSON.stringify({libraryId:$("#file-library").value,file:button.dataset.deleteFile,confirm:true})});
-    toast("Documento movido a la papelera local."); await loadStatus();
-  });
-  $("#scan-duplicates").addEventListener("click",async()=>{
-    $("#duplicate-results").innerHTML="<p>Comparando todas las fuentes. Este análisis sí lee el contenido completo y puede tardar unos segundos…</p>";
-    const report=await request("/api/duplicates");
-    const groups=[["Contenido idéntico",report.exact],["Título coincidente",report.titles]];
-    $("#duplicate-results").innerHTML=groups.map(([title,items])=>`<section><h2>${title} · ${items.length}</h2>${items.map(group=>`<article class="duplicate-group"><h3>${esc(group[0].title)}</h3><ul>${group.map(item=>`<li>${esc(item.library)} · ${esc(item.file)}</li>`).join("")}</ul></article>`).join("")||"<p>Sin coincidencias.</p>"}</section>`).join("");
-  });
-  $("#library-form").addEventListener("submit",async event=>{
-    event.preventDefault();
-    try{
-      const created=await request("/api/libraries",{method:"POST",body:JSON.stringify({
-        short:$("#library-short").value,description:$("#library-description").value,notebookUrl:$("#library-url").value,
-        mark:$("#library-mark").value,tone:$("#library-tone").value
-      })});
-      result("#library-result",`Creada ${created.folder}. Sincronizando Atlas…`);
-      $("#library-form").reset();
-      await rebuildAndReload("Nueva IA creada y preparada en dist.");
-    }catch(error){result("#library-result",error.message,true)}
-  });
-  $("#library-list").addEventListener("click",async event=>{
-    const article=event.target.closest("[data-library-id]"); if(!article)return;
-    const form=article.querySelector(".library-edit");
-    if(event.target.closest("[data-toggle-library]")){
-      form.hidden=!form.hidden;
-      event.target.closest("[data-toggle-library]").textContent=form.hidden?"Configurar":"Cerrar";
-      return;
-    }
-    if(event.target.closest("[data-delete-library]")){
-      const library=libraryRegistry.find(item=>item.id===article.dataset.libraryId);
-      const count=status.libraries.find(item=>item.id===library.id)?.documents || 0;
-      const typed=prompt(`Esta acción eliminará “${library.short}”, su carpeta y ${count} documentos. Escribe el nombre completo para confirmar:`);
-      if(typed===null)return;
-      const output=article.querySelector("[data-library-result]");
-      if(typed.trim()!==library.short){output.textContent="El nombre escrito no coincide. No se ha eliminado nada.";output.classList.add("error");return;}
-      if(!confirm(`Última confirmación: ¿eliminar definitivamente ${library.short} y todos sus documentos?`))return;
-      try{
-        await request(`/api/libraries/${encodeURIComponent(library.id)}`,{method:"DELETE",body:JSON.stringify({
-          confirmDelete:true,confirmName:typed,deleteDocuments:true
-        })});
-        await rebuildAndReload(`${library.short} eliminada localmente y salida reconstruida.`);
-      }catch(error){output.textContent=error.message;output.classList.add("error");}
-    }
-  });
-  $("#library-list").addEventListener("submit",async event=>{
-    const form=event.target.closest(".library-edit"); if(!form)return;
-    event.preventDefault();
-    const article=form.closest("[data-library-id]");
-    const output=form.querySelector("[data-library-result]");
-    output.textContent="Guardando y sincronizando…"; output.classList.remove("error");
-    const values=Object.fromEntries(new FormData(form));
-    try{
-      await request(`/api/libraries/${encodeURIComponent(article.dataset.libraryId)}`,{method:"PATCH",body:JSON.stringify(values)});
-      await rebuildAndReload("Configuración de la IA actualizada.");
-    }catch(error){output.textContent=error.message;output.classList.add("error");}
-  });
-  $$("[data-save-editor]").forEach(button=>button.addEventListener("click",async()=>{
-    const type=button.dataset.saveEditor;
-    try{
-      const items=JSON.parse($(`#${type}-editor`).value);
-      await request(`/api/${type==="external"?"external":"shorts"}`,{method:"POST",body:JSON.stringify({items})});
-      result(`#${type}-result`,`${items.length} elementos guardados.`); toast("Base editorial guardada.");
-    }catch(error){result(`#${type}-result`,error.message,true)}
-  }));
-  $("#refresh-external").addEventListener("click",async()=>{
-    $("#refresh-external").disabled=true; $("#refresh-external").textContent="Consultando…";
-    try{await request("/api/refresh-external",{method:"POST",body:"{}"});toast("Tarjetas externas actualizadas.");}
-    finally{$("#refresh-external").disabled=false;$("#refresh-external").textContent="Consultar enlaces ahora";}
-  });
-  $("#save-providers").addEventListener("click",async()=>{
-    try{
-      const payload={
-        youtube:JSON.parse($("#provider-youtube").value),
-        music:JSON.parse($("#provider-music").value),
-        instagram:JSON.parse($("#provider-instagram").value)
-      };
-      await request("/api/providers",{method:"POST",body:JSON.stringify(payload)});
-      result("#providers-result","Configuración guardada en las fuentes. Queda pendiente construir Atlas.");
-      await loadStatus();
-    }catch(error){result("#providers-result",error.message,true)}
-  });
-  $("#validate").addEventListener("click",async()=>{
-    $("#validate").disabled=true;
-    try{
-      const response=await request("/api/validate",{method:"POST",body:"{}"});
-      toast("Validación completada.");
-      $("#publication-output").textContent=response.output||"Validación correcta.";
-    }catch(error){toast(error.message)}
-    finally{$("#validate").disabled=false}
-  });
+  $$(".tabs button").forEach(button=>button.addEventListener("click",()=>{$$(".tabs button").forEach(item=>item.classList.toggle("active",item===button));$$(".panel").forEach(panel=>panel.classList.toggle("active",panel.dataset.panel===button.dataset.tab))}));
+  $("#file-library").addEventListener("change",loadFiles); $("#file-filter").addEventListener("input",renderFiles); $("#short-filter").addEventListener("input",renderShorts); $("#managed-link-filter").addEventListener("change",renderManagedLinks);
+  $("#upload-file").addEventListener("change",event=>{$("#upload-queue").innerHTML=[...event.target.files].map(file=>`<span>${esc(file.name)}<small>${Math.max(1,Math.round(file.size/1024))} KB</small></span>`).join("")});
+  $("#upload-form").addEventListener("submit",async event=>{event.preventDefault();const selected=[...$("#upload-file").files];if(!selected.length)return;const submit=event.submitter;submit.disabled=true;result("#upload-result",`Leyendo y comparando ${selected.length} obras…`);try{const common={category:$("#upload-category").value,author:$("#upload-author").value,year:$("#upload-year").value,force:$("#upload-force").checked};const items=await Promise.all(selected.map(async file=>({...common,originalName:file.name,title:file.name.replace(/^\d{4}(?:_\d{4})?_?/,"").replace(/_/g," ").replace(/\.md$/i,""),content:await file.text()})));const response=await request("/api/upload-batch",{method:"POST",body:JSON.stringify({libraryId:$("#upload-library").value,items})});result("#upload-result",`${response.created.length} obras incorporadas. Pulsa «Construir y preparar» al terminar todos tus cambios.`);await loadStatus();$("#upload-form").reset();$("#upload-queue").innerHTML=""}catch(error){result("#upload-result",error.message,true)}finally{submit.disabled=false}});
+  $("#manager-search-form").addEventListener("submit",async event=>{event.preventDefault();const box=$("#manager-search-results");box.innerHTML="<p>Buscando…</p>";try{const params=new URLSearchParams({q:$("#manager-search-query").value,mode:$("#manager-search-mode").value,library:$("#manager-search-library").value});const items=await request(`/api/manager-search?${params}`);box.innerHTML=`<p><strong>${items.length}</strong> resultados</p>`+items.map(item=>`<article><b>${esc(item.title)}</b><small>${esc(item.library)} · ${esc(item.file)}${item.matches?` · ${item.matches} coincidencias`:""}</small>${item.snippet?`<p>${esc(item.snippet)}</p>`:""}</article>`).join("")}catch(error){box.innerHTML=`<p class="error">${esc(error.message)}</p>`}});
+  $("#file-list").addEventListener("click",async event=>{const rename=event.target.closest("[data-rename-file]");if(rename){const title=prompt("Nuevo título del documento:",rename.dataset.fileTitle);if(!title||title.trim()===rename.dataset.fileTitle)return;await request("/api/files/rename",{method:"POST",body:JSON.stringify({libraryId:$("#file-library").value,file:rename.dataset.renameFile,title:title.trim()})});toast("Documento renombrado conservando su identificador.");await loadFiles();await loadStatus();return}const button=event.target.closest("[data-delete-file]");if(!button||!confirm(`¿Mover ${button.dataset.deleteFile} a la papelera?`))return;await request("/api/delete",{method:"POST",body:JSON.stringify({libraryId:$("#file-library").value,file:button.dataset.deleteFile,confirm:true})});toast("Documento movido a la papelera local.");await loadStatus()});
+  $("#scan-duplicates").addEventListener("click",async()=>{$("#duplicate-results").innerHTML="<p>Comparando todas las fuentes; puede tardar unos segundos…</p>";const report=await request("/api/duplicates");$("#duplicate-results").innerHTML=[["Contenido idéntico",report.exact],["Título coincidente",report.titles]].map(([title,items])=>`<section><h2>${title} · ${items.length}</h2>${items.map(group=>`<article class="duplicate-group"><h3>${esc(group[0].title)}</h3><ul>${group.map(item=>`<li>${esc(item.library)} · ${esc(item.file)}</li>`).join("")}</ul></article>`).join("")||"<p>Sin coincidencias.</p>"}</section>`).join("")});
+  $("#library-form").addEventListener("submit",async event=>{event.preventDefault();try{const created=await request("/api/libraries",{method:"POST",body:JSON.stringify({short:$("#library-short").value,description:$("#library-description").value,notebookUrl:$("#library-url").value,mark:$("#library-mark").value,tone:$("#library-tone").value})});result("#library-result",`Creada ${created.folder}. Queda pendiente construir Atlas.`);$("#library-form").reset();await loadStatus()}catch(error){result("#library-result",error.message,true)}});
+  $("#library-list").addEventListener("click",async event=>{const article=event.target.closest("[data-library-id]");if(!article)return;const form=article.querySelector(".library-edit");if(event.target.closest("[data-toggle-library]")){form.hidden=!form.hidden;event.target.closest("[data-toggle-library]").textContent=form.hidden?"Configurar":"Cerrar";return}if(event.target.closest("[data-delete-library]")){const library=libraryRegistry.find(item=>item.id===article.dataset.libraryId);const typed=prompt(`Escribe “${library.short}” para mover la IA y su carpeta a la papelera:`);if(typed!==library.short)return;await request(`/api/libraries/${encodeURIComponent(library.id)}`,{method:"DELETE",body:JSON.stringify({confirmDelete:true,confirmName:typed,deleteDocuments:true})});toast(`${library.short} movida a la papelera.`);await loadStatus()}});
+  $("#library-list").addEventListener("submit",async event=>{const form=event.target.closest(".library-edit");if(!form)return;event.preventDefault();const article=form.closest("[data-library-id]");try{await request(`/api/libraries/${encodeURIComponent(article.dataset.libraryId)}`,{method:"PATCH",body:JSON.stringify(Object.fromEntries(new FormData(form)))});toast("Configuración de la IA guardada.");await loadStatus()}catch(error){result("[data-library-result]",error.message,true)}});
+  $("#short-form").addEventListener("submit",async event=>{event.preventDefault();shorts.unshift({id:`short-manual-${Date.now()}`,type:$("#short-type").value,libraryId:$("#short-library").value,title:$("#short-title").value,text:$("#short-text").value,reference:$("#short-reference").value,verified:true});await request("/api/shorts",{method:"POST",body:JSON.stringify({items:shorts})});$("#shorts-editor").value=JSON.stringify(shorts,null,2);renderShorts();event.target.reset();toast("Tarjeta guardada en las fuentes.")});
+  $("#short-list").addEventListener("click",async event=>{const button=event.target.closest("[data-delete-short]");if(!button)return;shorts.splice(Number(button.dataset.deleteShort),1);await request("/api/shorts",{method:"POST",body:JSON.stringify({items:shorts})});$("#shorts-editor").value=JSON.stringify(shorts,null,2);renderShorts()});
+  async function previewLink(){const input={url:$("#smart-link-url").value,type:$("#smart-link-type").value,libraryId:$("#smart-link-library").value,title:$("#smart-link-title").value,source:$("#smart-link-source").value};result("#external-result","Consultando el enlace…");try{renderPreview(await request("/api/link-preview",{method:"POST",body:JSON.stringify(input)}));result("#external-result","Previsualización lista. Revisa y pulsa «Añadir a Atlas».")}catch(error){result("#external-result",error.message,true)}}
+  $("#preview-link").addEventListener("click",previewLink);
+  $("#smart-link-form").addEventListener("submit",async event=>{event.preventDefault();const input={url:$("#smart-link-url").value,type:$("#smart-link-type").value,libraryId:$("#smart-link-library").value,title:$("#smart-link-title").value,source:$("#smart-link-source").value};try{const response=await request("/api/content-links",{method:"POST",body:JSON.stringify(input)});links.unshift({...response.item,managerStore:response.item.type==="video"?"youtube":response.item.type,managerKey:response.item.videoId||response.item.id||response.item.url});event.target.reset();renderPreview(null);await loadContent();result("#external-result","Enlace guardado. Construye Atlas cuando termines tus cambios.");toast("Contenido añadido.")}catch(error){result("#external-result",error.message,true)}});
+  $("#managed-link-list").addEventListener("click",async event=>{const button=event.target.closest("[data-delete-link]");if(!button||!confirm("¿Retirar este enlace de Atlas?"))return;await request("/api/content-links",{method:"DELETE",body:JSON.stringify({store:button.dataset.store,key:button.dataset.key})});await loadContent();toast("Enlace retirado.")});
+  $("#channel-form").addEventListener("submit",event=>{event.preventDefault();const kind=$("#channel-kind").value;const url=$("#channel-url").value;const channel={name:$("#channel-name").value,url,enabled:true};if(kind==="youtube")channel.tier="main";if(kind==="instagram")channel.handle=new URL(url).pathname.split("/").filter(Boolean)[0]||channel.name;providers[kind].channels.push(channel);event.target.reset();renderProviders();syncProviderEditors();toast("Canal añadido al borrador. Pulsa «Guardar todos los canales».")});
+  $("#provider-visual-list").addEventListener("click",event=>{const group=event.target.closest("[data-provider-kind]");const button=event.target.closest("[data-delete-channel]");if(!group||!button)return;providers[group.dataset.providerKind].channels.splice(Number(button.dataset.deleteChannel),1);renderProviders();syncProviderEditors()});
+  $("#provider-visual-list").addEventListener("change",event=>{const input=event.target.closest("[data-channel-enabled]");const group=event.target.closest("[data-provider-kind]");if(!input||!group)return;providers[group.dataset.providerKind].channels[Number(input.dataset.channelEnabled)].enabled=input.checked;syncProviderEditors()});
+  $("#save-providers").addEventListener("click",async()=>{try{await request("/api/providers",{method:"POST",body:JSON.stringify(providers)});result("#providers-result","Canales guardados. Queda pendiente actualizar proveedores y construir Atlas.");toast("Configuración guardada.")}catch(error){result("#providers-result",error.message,true)}});
+  $$('[data-save-editor]').forEach(button=>button.addEventListener("click",async()=>{const type=button.dataset.saveEditor;try{const items=JSON.parse($(`#${type}-editor`).value);await request(`/api/${type==="external"?"external":"shorts"}`,{method:"POST",body:JSON.stringify({items})});await loadContent();toast("Edición avanzada guardada.")}catch(error){result(`#${type}-result`,error.message,true)}}));
+  $("#refresh-external").addEventListener("click",async()=>{$("#refresh-external").disabled=true;$("#refresh-external").textContent="Consultando…";try{await request("/api/refresh-external",{method:"POST",body:"{}"});toast("Snapshots de proveedores actualizados. Pulsa «Construir y preparar».");await loadContent()}catch(error){toast(error.message)}finally{$("#refresh-external").disabled=false;$("#refresh-external").textContent="Actualizar proveedores ahora"}});
+  $("#validate").addEventListener("click",async()=>{$("#validate").disabled=true;try{const response=await request("/api/validate",{method:"POST",body:"{}"});$("#publication-output").textContent=response.output||"Validación correcta.";toast("Validación completada.")}catch(error){toast(error.message)}finally{$("#validate").disabled=false}});
   $("#run-audit").addEventListener("click",()=>renderAudit().catch(error=>toast(error.message)));
-  $("#prepare-release").addEventListener("click",async()=>{
-    $("#prepare-release").disabled=true;$("#publication-output").textContent="Construyendo y validando dist…";
-    try{
-      const response=await request("/api/rebuild",{method:"POST",body:JSON.stringify({force:true,external:false})});
-      if(!response.ok)throw new Error(response.message||"No se pudo construir.");
-      $("#publication-output").textContent=(response.output||[]).join("\n\n");
-      await Promise.all([loadStatus(),renderAudit()]);
-      toast("dist está preparado. No se ha subido nada.");
-    }catch(error){$("#publication-output").textContent=error.message;toast(error.message)}
-    finally{$("#prepare-release").disabled=false}
-  });
-  $("#rebuild").addEventListener("click",async()=>{
-    $("#rebuild").disabled=true;$("#rebuild").textContent="Reconstruyendo…";$("#server-state").textContent="Actualizando catálogo y buscador…";
-    try{const response=await request("/api/rebuild",{method:"POST",body:JSON.stringify({force:false})});toast(response.ok?"Atlas actualizado.":"No se pudo actualizar.");await loadStatus();}
-    catch(error){toast(error.message)}finally{$("#rebuild").disabled=false;$("#rebuild").textContent="Construir y preparar";}
-  });
-  Promise.all([loadStatus(),loadEditors(),renderAudit()]).catch(error=>toast(error.message));
+  async function prepare(){const button=$("#prepare-release");button.disabled=true;$("#publication-output").textContent="Construyendo y validando dist…";try{const response=await request("/api/rebuild",{method:"POST",body:JSON.stringify({force:true,external:false})});if(!response.ok)throw new Error(response.message||"No se pudo construir.");$("#publication-output").textContent=(response.output||[]).join("\n\n");await Promise.all([loadStatus(),renderAudit()]);toast("Versión preparada. Ahora: GitHub Desktop → Commit → Push origin.")}catch(error){$("#publication-output").textContent=error.message;toast(error.message)}finally{button.disabled=false}}
+  $("#prepare-release").addEventListener("click",prepare); $("#rebuild").addEventListener("click",prepare);
+  $("#exam-norm-filter").addEventListener("input",renderExamManager);
+  $("#exam-norm-form").addEventListener("submit",async event=>{event.preventDefault();const frequencyType=$("#exam-norm-frequency").value;const days=$("#exam-norm-days").value.split(",").map(Number).filter(day=>day>=0&&day<=6);const period=$("#exam-norm-period").value;const frequency=frequencyType==="third-sunday"?{type:"monthly",rule:"third-sunday"}:frequencyType==="weekdays"?{type:"weekdays",days}:{type:frequencyType};try{await request("/api/exam-norms",{method:"POST",body:JSON.stringify({id:$("#exam-norm-id").value||undefined,name:$("#exam-norm-name").value,description:$("#exam-norm-description").value,frequency,periods:period==="both"?["midday","night"]:[period],partial:$("#exam-norm-partial").checked,question:$("#exam-norm-question").value,suggestion:$("#exam-norm-suggestion").value,tags:$("#exam-norm-tags").value.split(",").map(value=>value.trim()).filter(Boolean),sourceUrl:$("#exam-norm-source").value})});event.target.reset();$("#exam-norm-id").value="";examContent=await request("/api/exam-content");renderExamManager();result("#exam-norm-result","Norma guardada. Construye Atlas cuando termines.");}catch(error){result("#exam-norm-result",error.message,true)}});
+  $("#exam-help-form").addEventListener("submit",async event=>{event.preventDefault();const normIds=[...$("#exam-help-norms").selectedOptions].map(option=>option.value);try{await request("/api/exam-helps",{method:"POST",body:JSON.stringify({kind:$("#exam-help-kind").value,text:$("#exam-help-text").value,author:$("#exam-help-author").value,work:$("#exam-help-work").value,reference:$("#exam-help-reference").value,normIds,tags:$("#exam-help-tags").value.split(",").map(value=>value.trim()).filter(Boolean),sourceDocumentId:$("#exam-help-document").value||null,sourceUrl:$("#exam-help-url").value||null})});event.target.reset();examContent=await request("/api/exam-content");renderExamManager();result("#exam-help-result","Ayuda guardada e identificada por su tipo.");}catch(error){result("#exam-help-result",error.message,true)}});
+  $("#exam-source-form").addEventListener("submit",async event=>{event.preventDefault();try{await request("/api/exam-sources",{method:"POST",body:JSON.stringify({title:$("#exam-source-title").value,url:$("#exam-source-url").value,kind:$("#exam-source-kind").value,notes:$("#exam-source-notes").value})});event.target.reset();examContent=await request("/api/exam-content");renderExamManager();result("#exam-source-result","Fuente registrada como metadatos y enlace.");}catch(error){result("#exam-source-result",error.message,true)}});
+  $("[data-panel='exam']").addEventListener("click",async event=>{const edit=event.target.closest("[data-edit-exam-norm]");if(edit){const norm=examContent.catalog.norms.find(item=>item.id===edit.dataset.editExamNorm);if(norm)fillExamNorm(norm);return}const remove=event.target.closest("[data-delete-exam-item]");if(!remove||!confirm("¿Retirar este elemento del catálogo general del examen? El histórico personal de los usuarios no se modifica."))return;try{await request("/api/exam-content",{method:"DELETE",body:JSON.stringify({kind:remove.dataset.deleteExamItem,id:remove.dataset.examId})});examContent=await request("/api/exam-content");renderExamManager();toast("Elemento retirado de las fuentes editables.")}catch(error){toast(error.message)}});
+
+  function renderExamManager(){
+    const norms=examContent.catalog?.norms||[],helps=examContent.helps||[],sources=examContent.sources?.sources||[],stats=examContent.stats||{};
+    $("#exam-manager-summary").innerHTML=[[norms.length,"Normas"],[stats.helps||helps.length,"Ayudas totales"],[stats.quotations||0,"Citas verificadas"],[stats.contextualDocuments||0,"Contextos en el lector"]].map(([value,label])=>`<article class="metric"><b>${value}</b><span>${label}</span></article>`).join("");
+    $("#exam-help-norms").innerHTML=norms.map(norm=>`<option value="${esc(norm.id)}">${esc(norm.name)}</option>`).join("");
+    const query=$("#exam-norm-filter").value.toLowerCase();const shown=norms.filter(norm=>`${norm.name} ${norm.description} ${(norm.tags||[]).join(" ")}`.toLowerCase().includes(query));$("#exam-norm-count").textContent=`${shown.length} de ${norms.length}`;
+    $("#exam-norm-list").innerHTML=shown.map(norm=>`<article class="managed-row"><span class="kind-pill">${esc(norm.frequency?.type||"daily")}</span><span><b>${esc(norm.name)}</b><small>${esc(norm.description||"")}</small><em>${esc((norm.tags||[]).join(" · "))}</em></span><div class="button-row"><button class="compact" data-edit-exam-norm="${esc(norm.id)}">Editar</button><button class="danger compact" data-delete-exam-item="norm" data-exam-id="${esc(norm.id)}">Retirar</button></div></article>`).join("");
+    $("#exam-help-count").textContent=`${helps.length} manuales · ${stats.helps||helps.length} totales`;
+    $("#exam-help-list").innerHTML=helps.map(help=>`<article class="managed-row"><span class="kind-pill">${esc(help.kind)}</span><span><b>${esc(help.text)}</b><small>${esc([help.author,help.work,help.reference].filter(Boolean).join(" · "))}</small></span><button class="danger compact" data-delete-exam-item="help" data-exam-id="${esc(help.id)}">Retirar</button></article>`).join("")||"<p class='muted-copy'>Aún no hay ayudas manuales; el generador aporta las citas del corpus.</p>";
+    $("#exam-source-list").innerHTML=sources.map(item=>`<article class="managed-row"><span class="kind-pill">${esc(item.status||"metadata")}</span><span><b>${esc(item.title)}</b><small>${esc(item.url||item.location||"")}</small></span>${item.id!=="local-atlas-corpus"?`<button class="danger compact" data-delete-exam-item="source" data-exam-id="${esc(item.id)}">Retirar</button>`:""}</article>`).join("");
+  }
+  function fillExamNorm(norm){$("#exam-norm-id").value=norm.id;$("#exam-norm-name").value=norm.name||"";$("#exam-norm-description").value=norm.description||"";$("#exam-norm-frequency").value=norm.frequency?.rule==="third-sunday"?"third-sunday":norm.frequency?.type||"daily";$("#exam-norm-days").value=(norm.frequency?.days||[]).join(",");$("#exam-norm-period").value=(norm.periods||[]).length>1?"both":norm.periods?.[0]||"night";$("#exam-norm-partial").checked=norm.partial!==false;$("#exam-norm-question").value=norm.question||"";$("#exam-norm-suggestion").value=norm.suggestion||"";$("#exam-norm-tags").value=(norm.tags||[]).join(", ");$("#exam-norm-source").value=norm.sourceUrl||"";$("#exam-norm-form").scrollIntoView({behavior:"smooth"})}
+
+  Promise.all([loadStatus(),loadContent(),renderAudit()]).catch(error=>toast(error.message));
 })();

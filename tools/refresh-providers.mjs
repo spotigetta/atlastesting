@@ -87,7 +87,8 @@ async function mapLimit(items, limit, task) {
 
 async function refreshYoutube(configName, snapshotName, type) {
   const config = read(path.join(contentDir, configName));
-  const responses = await mapLimit(config.channels || [], 6, async channel => {
+  const enabledChannels = (config.channels || []).filter(channel => channel.enabled !== false);
+  const responses = await mapLimit(enabledChannels, 6, async channel => {
     const html = await get(channel.url);
     const channelId = channel.channelId || channelIdFromHtml(html);
     if (!channelId) throw new Error("No se encontró el identificador del canal");
@@ -96,8 +97,29 @@ async function refreshYoutube(configName, snapshotName, type) {
   });
   const failures = responses.filter(item => item?.error).map(item => ({ source: item.item.name, error: item.error }));
   const live = responses.flatMap(item => item?.items || []);
+  const manual = (config.items || []).map(item => {
+    const videoId = item.videoId || item.id;
+    if (!videoId) return null;
+    return {
+      ...item,
+      id: item.id?.startsWith("youtube-") || item.id?.startsWith("music-") ? item.id : `${type === "music" ? "music" : "youtube"}-${videoId}`,
+      videoId,
+      type,
+      source: item.source || item.channel || (type === "music" ? "Música" : "YouTube"),
+      author: item.author || item.source || item.channel || "",
+      title: item.title || (type === "music" ? "Pieza musical" : "Vídeo de YouTube"),
+      description: item.description || "Contenido añadido manualmente desde el Gestor de Atlas.",
+      url: item.url || `https://www.youtube.com/watch?v=${videoId}`,
+      image: item.image || `https://i.ytimg.com/vi/${videoId}/hqdefault.jpg`,
+      libraryId: item.libraryId || (type === "music" ? "liturgy" : "doctrine"),
+      external: true,
+      verified: true,
+      manual: true,
+      tier: item.tier || "main"
+    };
+  }).filter(Boolean);
   const old = previous(snapshotName).items || [];
-  const items = [...new Map([...live, ...old].map(item => [item.id, item])).values()]
+  const items = [...new Map([...manual, ...live, ...old].map(item => [item.videoId || item.id, item])).values()]
     .sort((a, b) => String(b.publishedAt || "").localeCompare(String(a.publishedAt || "")))
     .slice(0, type === "music" ? 300 : 2500);
   if (!items.length) throw new Error(`${configName} no produjo ningún elemento y tampoco existe reserva`);
@@ -110,6 +132,64 @@ async function refreshYoutube(configName, snapshotName, type) {
   };
   write(snapshotName, value);
   return { provider: type === "music" ? "music" : "youtube", ok: true, live: live.length, total: items.length, failures: failures.length };
+}
+
+async function refreshInstagram() {
+  const config = read(path.join(contentDir, "instagram.json"));
+  const old = previous("instagram-cache.json").items || [];
+  const manual = (config.items || []).filter(item => item.url).map(item => ({
+    ...item,
+    id: item.id || `instagram-${Buffer.from(item.url).toString("base64url").slice(0, 18)}`,
+    type: "instagram",
+    source: item.source || item.author || "Instagram",
+    author: item.author || item.source || "Instagram",
+    title: item.title || "Publicación de Instagram",
+    description: item.description || "Publicación añadida desde el Gestor de Atlas.",
+    libraryId: item.libraryId || "doctrine",
+    external: true,
+    verified: true,
+    manual: true
+  }));
+  const enabledChannels = (config.channels || []).filter(channel => channel.enabled !== false);
+  const responses = await mapLimit(enabledChannels, 3, async channel => {
+    const html = await get(channel.url, 12000);
+    const codes = [...new Set([
+      ...[...html.matchAll(/\"shortcode\":\"([A-Za-z0-9_-]+)\"/g)].map(match => match[1]),
+      ...[...html.matchAll(/\"code\":\"([A-Za-z0-9_-]{5,})\"/g)].map(match => match[1])
+    ])].slice(0, 12);
+    const image = decode(html.match(/<meta property=["']og:image["'] content=["']([^"']+)/i)?.[1] || "");
+    const description = decode(html.match(/<meta property=["']og:description["'] content=["']([^"']+)/i)?.[1] || "");
+    return codes.map(code => ({
+      id: `instagram-${channel.handle}-${code}`, type: "instagram", source: channel.name, author: channel.name,
+      title: `Publicación de ${channel.name}`, description: description || `Publicación reciente de @${channel.handle}.`,
+      url: `https://www.instagram.com/p/${code}/`, image, libraryId: "doctrine",
+      external: true, verified: true, dynamic: true
+    }));
+  });
+  const live = responses.flatMap(result => Array.isArray(result) ? result : []);
+  const failures = responses.filter(result => result?.error).map(result => ({ source: result.item.name, error: result.error }));
+  const profiles = enabledChannels.map(channel => ({
+    id: `instagram-profile-${channel.handle}`,
+    type: "instagram",
+    source: channel.name,
+    author: channel.name,
+    title: `Publicaciones de ${channel.name}`,
+    description: "Accede al perfil configurado y a sus publicaciones recientes en Instagram.",
+    url: channel.url,
+    libraryId: "doctrine",
+    external: true,
+    verified: true,
+    profileFallback: true
+  }));
+  const items = [...new Map([...manual, ...live, ...old, ...profiles].map(item => [item.id || item.url, item])).values()];
+  write("instagram-cache.json", {
+    updatedAt: new Date().toISOString(),
+    source: live.length ? "instagram-public-pages" : manual.length ? "manual-and-profiles" : "configured-profiles",
+    channels: config.channels || [],
+    items,
+    failures
+  });
+  return { provider: "instagram", ok: Boolean(items.length), total: items.length, live: live.length, manual: manual.length, failures: failures.length };
 }
 
 async function refreshJosemaria() {
@@ -166,11 +246,7 @@ for (const operation of [
   catch (error) { health.push({ provider: "unknown", ok: false, error: error.message }); }
 }
 health.push(refreshEditorial());
-health.push({
-  provider: "instagram",
-  ok: Boolean(previous("instagram-cache.json").items?.length),
-  total: previous("instagram-cache.json").items?.length || 0,
-  note: "Instagram no ofrece una API pública estable sin autenticación; se conserva el último snapshot válido."
-});
+try { health.push(await refreshInstagram()); }
+catch (error) { health.push({ provider: "instagram", ok: false, error: error.message }); }
 write("provider-health.json", { updatedAt: new Date().toISOString(), providers: health });
 console.log(JSON.stringify(health, null, 2));
