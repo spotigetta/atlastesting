@@ -34,11 +34,11 @@
       interfaceScale: 100, cornerRadius: 100, fontStyle: "editorial", headingFont: "literata", bodyFont: "dm-sans", palette: "sage", surfaceStyle: "soft",
       compactMode: false, showExternalImages: true,
       homeOrder: ["exam", "today", "libraries", "reading", "history"], exploreOrder: [], exploreColors: {}, customizeHome: false, customizeExplore: false,
-      libraryOrder: [], pinnedLibraries: [], hiddenLibraries: [], libraryColors: {}, libraryLabels: {},
+      libraryOrder: [], pinnedLibraries: [], hiddenLibraries: [], libraryColors: {}, libraryLabels: {}, customizeLibraries: false,
       customChannels: { youtube: [], music: [], instagram: [] }, unlockedFeatures: []
     },
     lastLibrary: null,
-    version: 5
+    version: 6
   };
 
   function migrate(stored) {
@@ -72,6 +72,11 @@
       value.settings.customChannels ||= { youtube: [], music: [], instagram: [] };
       value.settings.unlockedFeatures ||= [];
       value.version = 5;
+    }
+    if (value.version < 6) {
+      value.settings ||= {};
+      value.settings.customizeLibraries ??= false;
+      value.version = 6;
     }
     return value;
   }

@@ -11,12 +11,15 @@
   }
 
   function cover(library) {
+    const settings=root.storage.get().settings; const pinned=settings.pinnedLibraries?.includes(library.id); const hidden=settings.hiddenLibraries?.includes(library.id);
+    const tones=["amber","blue","clay","violet","emerald","rose","indigo","gold","cyan","olive","burgundy","slate"];
     return `<section class="library-cover tone-${library.tone}" data-library="${library.id}">
       <div class="library-cover-inner library-cover-grid">
         <div>
           <div class="library-identity"><span class="library-mark">${library.mark}</span><div><span class="eyebrow">Biblioteca especializada</span><h1>${esc(library.short)}</h1></div></div>
           <p>${esc(library.purpose)}</p>
           <div class="button-row"><a class="secondary-button" href="#/explore">Todas las bibliotecas</a>${notebookButton(library)}</div>
+          <details class="library-cover-customizer"><summary>Personalizar esta IA</summary><div><label><span>Etiqueta personal</span><input data-library-label="${esc(library.id)}" value="${esc(settings.libraryLabels?.[library.id]||"")}" placeholder="Nombre para mí"></label><div class="library-tone-swatches">${tones.map(tone=>`<button class="tone-${tone} ${(settings.libraryColors?.[library.id]||library.tone)===tone?"active":""}" data-library-tone="${esc(library.id)}" data-tone="${tone}" aria-label="Color ${tone}"><i></i></button>`).join("")}</div><div class="library-quick-actions"><button class="${pinned?"active":""}" data-library-pin="${esc(library.id)}">${pinned?"★ Fijada":"☆ Fijar"}</button><button data-library-move="${esc(library.id)}" data-direction="-1">← Mover</button><button data-library-move="${esc(library.id)}" data-direction="1">Mover →</button><button data-library-hide="${esc(library.id)}">${hidden?"Mostrar en Inicio":"Ocultar de Inicio"}</button></div></div></details>
         </div>
         <div class="metric-scroller">
           ${metric(library.stats.documents, "Documentos")}

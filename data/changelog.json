@@ -1,7 +1,20 @@
 {
-  "currentVersion": "5.3.0",
+  "currentVersion": "5.4.0",
   "updatedAt": "2026-08-06",
   "entries": [
+    {
+      "version": "5.4.0",
+      "date": "2026-08-07",
+      "title": "Examen inmersivo y guía viva de las IA",
+      "changes": [
+        "Examen a pantalla completa con Sí a la izquierda y No a la derecha",
+        "Dos recorridos: breve esencial y completo",
+        "Personalización visual de las IA desde Inicio y cada biblioteca",
+        "Etiquetas, colores, orden, fijación y visibilidad guardados localmente",
+        "Herramientas de anotación del lector plegadas en un control discreto",
+        "Videoguía animada con usos, fuentes y ejemplos concretos de cada IA"
+      ]
+    },
     {
       "version": "5.3.0",
       "date": "2026-08-06",

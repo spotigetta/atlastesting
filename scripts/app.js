@@ -15,6 +15,10 @@
   const tutorialSpotlight = document.querySelector("#tutorial-spotlight");
   const atlasIntro = document.querySelector("#atlas-intro");
   const fullTextStatus = document.querySelector("#fulltext-status");
+  const iaFilmLayer = document.querySelector("#ia-film-layer");
+  const iaFilmContent = document.querySelector("#ia-film-content");
+  const iaFilmProgress = document.querySelector("#ia-film-progress");
+  const iaFilmCounter = document.querySelector("#ia-film-counter");
   const placeholders = ["Misal Romano", "San Agustín", "canon 212", "matrimonio", "Vaticano II", "0348"];
   const state = {
     previousRoute: "/",
@@ -31,6 +35,9 @@
   let introTimer = 0;
   let introPendingTutorial = false;
   let routeTransitioning = false;
+  let iaFilmIndex = 0;
+  let iaFilmTimer = 0;
+  let iaFilmPlaying = true;
   const personalizationDefaults = {
     magnetEnabled:true, magnetStrength:34, magnetDelay:120, magnetDuration:300,
     auroraIntensity:88, auroraSize:100, motionLevel:100, josemariaPortraitIntensity:18, shortTextScale:100,
@@ -42,7 +49,7 @@
     canon: { file: "infografiaCanonIA_v2.html", purpose: "Localiza normas, cánones, procesos y criterios interpretativos del Derecho de la Iglesia.", examples: ["¿Qué diferencia hay entre validez y licitud?", "¿Qué fuentes regulan un proceso matrimonial?"] },
     history: { file: "infohistoria.html", purpose: "Sitúa acontecimientos, concilios, autores y Padres de la Iglesia en su contexto y conecta fuentes de distintas épocas.", examples: ["¿Qué ocurrió entre Nicea y Constantinopla?", "Compara a san Ireneo y san Agustín."] },
     liturgy: { file: "infografiaLiturgIA_v2.html", purpose: "Explica el sentido teológico de la celebración y consulta libros, normas, ritos y desarrollo histórico.", examples: ["¿Qué significa este gesto de la Misa?", "¿Qué indican el Misal y la IGMR?"] },
-    ortodoxia: { file: "infoCirculos.html", purpose: "Ayuda a comprender la lógica interna de la fe con lenguaje razonado antes de acudir a fuentes especializadas.", examples: ["Explica esta objeción sin caricaturizarla.", "¿Qué presupuestos conviene distinguir?"] },
+    ortodoxia: { file: "infoOrtodoxIA.html", purpose: "Ayuda a comprender la lógica interna de la fe con lenguaje razonado antes de acudir a fuentes especializadas.", examples: ["Explica esta objeción sin caricaturizarla.", "¿Qué presupuestos conviene distinguir?"] },
     cinepilot: { file: "infografiaCinepilot.html", purpose: "Consulta películas por ficha técnica, calidad artística, edad, contenido y orientación moral.", examples: ["¿Es adecuada para adolescentes?", "Compara dos películas por temas y tratamiento."] },
     bibliotecaria: { file: "infobib.html", purpose: "Descubre libros y diseña recorridos literarios por autores, géneros, épocas, temas o nivel lector.", examples: ["Haz una ruta por la novela rusa.", "¿Qué leer después de esta obra?"] },
     clasicos: { file: "infografiaLosClasicos_v2.html", purpose: "Explora el canon literario, consulta obras completas y relaciona grandes autores y tradiciones.", examples: ["Compara la tragedia griega y Shakespeare.", "Propón cinco clásicos sobre libertad."] },
@@ -76,7 +83,7 @@
     { mark: "✦", route: "/", target: '[data-home-block="today"]', eyebrow: "Inicio · Atlas Hoy", title: "Una selección nueva cada día", text: "Aquí aparecen documento, descubrimiento, frase célebre y pregunta del día.", bullets: ["La selección cambia con la fecha.", "Puedes subir o bajar este bloque desde «Personalizar Inicio»."] },
     { mark: "IA", route: "/", target: '[data-home-block="libraries"]', eyebrow: "Inicio · Bibliotecas", title: "Entra en una IA", text: "Cada tarjeta muestra tamaño, categorías y acceso a sus fuentes o a su cuaderno.", bullets: ["Explorar fuentes abre Atlas.", "Abrir IA lleva al Notebook configurado."] },
     { mark: "B", route: `/library/${A.data.catalog.libraries[0]?.id || "doctrine"}/documents`, target: ".library-tabs", eyebrow: "Biblioteca · secciones", title: "Cambia de vista sin perder la IA", text: "Las pestañas abren documentos, mapa, preguntas, autores y estadísticas de la biblioteca seleccionada.", bullets: ["La barra inferior filtra y ordena fuentes.", "Cada ficha permite leer, guardar, compartir o abrir la IA."] },
-    { mark: "L", route: `/reader/${encodeURIComponent(A.data.documents[0]?.id || "")}`, target: ".reader-tools", eyebrow: "Lector · herramientas", title: "Lee como en un libro de estudio", text: "La barra reúne esquema, búsqueda, subrayado, nota y marcador.", bullets: ["El esquema muestra hasta cuatro niveles.", "Los ajustes cambian letra, tamaño y anchura de columna."] },
+    { mark: "L", route: `/reader/${encodeURIComponent(A.data.documents[0]?.id || "")}`, target: ".reader-tools", eyebrow: "Lector · herramientas", title: "Lee como en un libro de estudio", text: "El pequeño botón flotante despliega guardar, subrayar, anotar y marcar sin tapar el documento.", bullets: ["El esquema muestra hasta cuatro niveles.", "Los ajustes cambian letra, tamaño y anchura de columna."] },
     { mark: "◇", route: "/explore", target: ".explore-grid", eyebrow: "Explorar", title: "Doce formas de entrar en el conocimiento", text: "Colecciones, rutas, mapas, comparación, cronología y noticias ofrecen perspectivas distintas.", bullets: ["Pulsa «Personalizar botones» para reordenarlos.", "Cada botón puede tener su propio color."] },
     { mark: "◎", route: "/graph", target: ".graph-workspace", eyebrow: "Grafos", title: "Mira la estructura y las conexiones", text: "Un grafo muestra IA, categorías y fuentes por niveles; el otro cruza documentos relacionados.", bullets: ["Pulsa cualquier nodo para abrirlo.", "Usa +, − y centrar para inspeccionar nombres largos."] },
     { mark: "✦", route: "/discover", target: ".short-filters", eyebrow: "Descubrir", title: "Filtra el feed vivo", text: "Los filtros separan frases, hechos, anécdotas, oración, noticias, IA y formatos.", bullets: ["Las frases de san Josemaría llegan aleatoriamente de escriva.org.", "Guarda, comparte o abre la fuente original."] },
@@ -107,8 +114,8 @@
     bullets: ["«Nueva mezcla» cambia el orden inmediatamente.", "El filtro Música las presenta también como Shorts.", "Si la actualización tarda, Atlas usa la última selección guardada y continúa en segundo plano."]
   });
   tutorialSteps.splice(-1, 0,
-    { mark: "◒", route: "/examen", target: ".exam-period-grid", eyebrow: "Examen diario", title: "Mediodía y noche, siempre a mano", text: "Atlas ofrece un examen sereno del plan de vida. No utiliza puntos, rachas ni porcentajes: solo guarda lo que tú marcas en este dispositivo.", bullets: ["Puedes continuar un examen empezado.", "El modo rápido usa gestos; el pausado añade pregunta, nota y ayuda.", "Omitir el examen de mediodía nunca se interpreta como incumplimiento."] },
-    { mark: "↔", route: "/examen/run?period=night&mode=paused&tutorial=1", target: ".exam-answer-buttons", eyebrow: "Examen · gestos", title: "Desliza o utiliza los cuatro botones", text: "Derecha significa sí, izquierda no y arriba parcialmente. «No aplica» distingue con claridad lo que hoy no correspondía.", bullets: ["Las normas binarias pueden ocultar el estado parcial.", "La ayuda cambia sin convertir una dificultad en derrota.", "Las notas son opcionales y privadas."] },
+    { mark: "◒", route: "/examen", target: ".exam-period-grid", eyebrow: "Examen diario", title: "Breve o completo, siempre sereno", text: "Elige lo esencial para una pausa rápida o recorre el plan completo. Atlas no utiliza puntos, rachas ni porcentajes: solo guarda lo que tú marcas en este dispositivo.", bullets: ["Breve selecciona ocho normas esenciales.", "Completo recorre todas las normas activas.", "Omitir el examen de mediodía nunca se interpreta como incumplimiento."] },
+    { mark: "↔", route: "/examen/run?period=night&mode=quick&scope=brief&tutorial=1", target: ".exam-answer-buttons", eyebrow: "Examen · gestos", title: "Sí a la izquierda; No a la derecha", text: "La norma ocupa la pantalla y basta un gesto: desliza hacia la izquierda para Sí y hacia la derecha para No.", bullets: ["También puedes tocar los dos botones inferiores.", "Parcial y No aplica quedan en opciones secundarias.", "El modo Reflexionar añade ayuda y nota privada."] },
     { mark: "⌂", route: "/examen/norms", target: ".exam-manager-layout", eyebrow: "Examen · personalización", title: "Tu plan permanece tuyo", text: "Añade normas personales, pausa, reordena o archiva. Las actualizaciones del catálogo no borran tu configuración ni alteran el histórico.", bullets: ["Semana y mes describen registros, pero no puntúan la vida espiritual.", "Puedes preparar de forma privada asuntos para una conversación.", "Todo se incluye en la exportación local de Atlas."] }
   );
 
@@ -214,7 +221,7 @@
   function renderHome() {
     const catalog = A.data.catalog;
     const settings = A.storage.get().settings;
-    const libraries = visibleLibraries();
+    const libraries = visibleLibraries(Boolean(settings.customizeLibraries));
     const homeBlocks = ["exam", "today", "libraries", "reading", "history"];
     const homeOrder = [...new Set([...(settings.homeOrder || []), ...homeBlocks])].filter(id => homeBlocks.includes(id));
     const homeLabels = { exam: "Examen diario", today: "Atlas Hoy", libraries: "Explora las IA", reading: "Continúa leyendo", history: "Continúa explorando" };
@@ -255,7 +262,7 @@
         </div>
       </section>
 
-      <section class="section" data-home-block="libraries" style="order:${homeOrder.indexOf("libraries") + 1}"><div class="section-head"><div><h2>Explora las IA</h2><p>Fuentes reales extraídas de sus carpetas.</p></div></div><div class="library-deck">${libraries.map(libraryCard).join("")}</div><div class="section-head ia-guide-heading"><div><h2>Guía visual de cada IA</h2><p>Resumen práctico e infografía completa siempre disponibles.</p></div><a href="#/infographics">Ver todas</a></div><div class="ia-guide-strip">${libraries.map(lib => guideCard(lib)).join("")}</div></section>
+      <section class="section" data-home-block="libraries" style="order:${homeOrder.indexOf("libraries") + 1}"><div class="section-head"><div><h2>Explora las IA</h2><p>Ordénalas, fíjalas y dales un nombre propio.</p></div><div class="button-row"><button class="secondary-button" data-action="ia-film">▶ Cómo usar las IA</button><button class="${settings.customizeLibraries ? "primary-button" : "secondary-button"}" data-action="customize-libraries">${settings.customizeLibraries ? "Terminar" : "Personalizar"}</button></div></div>${settings.customizeLibraries ? `<div class="library-customize-notice"><b>Tu biblioteca, a tu manera</b><span>Arrastra el orden con las flechas, fija tus favoritas, oculta las que no uses y añade etiquetas personales. Todo queda solo en este dispositivo.</span></div>` : ""}<div class="library-deck ${settings.customizeLibraries ? "is-customizing" : ""}">${libraries.map((lib,index) => libraryCard(lib,index,libraries.length)).join("")}</div><div class="section-head ia-guide-heading"><div><h2>Guía visual de cada IA</h2><p>Resumen práctico e infografía completa siempre disponibles.</p></div><a href="#/infographics">Ver todas</a></div><div class="ia-guide-strip">${libraries.filter(lib => !(settings.hiddenLibraries || []).includes(lib.id)).map(lib => guideCard(lib)).join("")}</div></section>
 
       ${reading.length ? `<section class="section" data-home-block="reading" style="order:${homeOrder.indexOf("reading") + 1}"><div class="section-head"><div><h2>Continúa leyendo</h2><p>Retoma cada fuente exactamente donde la dejaste.</p></div><a href="#/saved">Ver actividad</a></div><div class="continue-reading-grid">${reading.map(item => readingItem(item.doc, item.progress)).join("")}</div></section>` : ""}
 
@@ -266,14 +273,68 @@
     </section>`;
   }
 
-  function libraryCard(lib) {
+  function libraryCustomizeControls(lib, index, total) {
+    const settings=A.storage.get().settings; const hidden=settings.hiddenLibraries?.includes(lib.id); const pinned=settings.pinnedLibraries?.includes(lib.id);
+    const tones=["amber","blue","clay","violet","emerald","rose","indigo","gold","cyan","olive","burgundy","slate"];
+    return `<div class="library-quick-customize"><label><span>Etiqueta personal</span><input data-library-label="${esc(lib.id)}" value="${esc(settings.libraryLabels?.[lib.id] || "")}" placeholder="Ej. Mi IA de historia"></label><div class="library-tone-swatches" aria-label="Color de ${esc(lib.short)}">${tones.map(tone=>`<button class="tone-${tone} ${(settings.libraryColors?.[lib.id]||lib.tone)===tone?"active":""}" data-library-tone="${esc(lib.id)}" data-tone="${tone}" aria-label="Color ${tone}"><i></i></button>`).join("")}</div><div class="library-quick-actions"><button data-library-move="${esc(lib.id)}" data-direction="-1" ${index===0?"disabled":""}>← Mover</button><button data-library-move="${esc(lib.id)}" data-direction="1" ${index===total-1?"disabled":""}>Mover →</button><button class="${pinned?"active":""}" data-library-pin="${esc(lib.id)}">${pinned?"★ Fijada":"☆ Fijar"}</button><button data-library-hide="${esc(lib.id)}">${hidden?"Mostrar":"Ocultar"}</button></div></div>`;
+  }
+
+  function iaFilmScenes() {
+    const libraries = visibleLibraries();
+    return [
+      { kind: "intro", mark: "A", tone: "emerald", title: "Descubre qué IA necesitas", purpose: "Atlas convierte una duda imprecisa en una consulta útil, documentada y dirigida al cuaderno adecuado.", examples: ["¿Qué quiero comprender?", "¿Qué tipo de fuente necesito?", "¿Cómo puedo comprobar la respuesta?"] },
+      ...libraries.map(lib => ({ kind: "library", ...lib, ...(libraryGuides[lib.id] || {}), title: lib.short })),
+      { kind: "outro", mark: "→", tone: "amber", title: "Pregunta. Lee. Comprueba.", purpose: "No hace falta conocer todo Atlas para empezar: elige una IA, formula una pregunta concreta y abre las fuentes que cite.", examples: ["Describe el contexto y el nivel que necesitas.", "Pide distinciones, referencias y ejemplos.", "Vuelve al documento para verificar cada cita."] }
+    ];
+  }
+
+  function renderIaFilm() {
+    if (!iaFilmLayer || !iaFilmContent) return;
+    const scenes = iaFilmScenes();
+    const scene = scenes[Math.max(0, Math.min(iaFilmIndex, scenes.length - 1))];
+    const examples = scene.examples || ["Explora sus fuentes.", "Formula una pregunta concreta."];
+    const library = scene.kind === "library" ? scene : null;
+    iaFilmLayer.dataset.tone = scene.tone || "emerald";
+    iaFilmCounter.textContent = `${iaFilmIndex + 1} / ${scenes.length}`;
+    iaFilmProgress.style.width = `${(iaFilmIndex + 1) / scenes.length * 100}%`;
+    iaFilmContent.innerHTML = `<section class="ia-film-scene scene-${scene.kind} tone-${esc(scene.tone || "emerald")}">
+      <div class="ia-film-visual" aria-hidden="true"><i class="ia-film-orb"></i><span class="ia-film-mark">${esc(scene.mark || "IA")}</span><div class="ia-film-files"><b>FUENTE</b><b>CITA</b><b>CONTEXTO</b></div><div class="ia-film-question"><small>Pregunta con precisión</small><span>${esc(examples[0])}</span><i></i><i></i><i></i></div></div>
+      <div class="ia-film-copy"><span class="eyebrow">${scene.kind === "intro" ? "Empieza aquí" : scene.kind === "outro" ? "Tu método" : `IA · ${esc(scene.title)}`}</span><h2>${esc(scene.title)}</h2><p>${esc(scene.purpose || scene.description || "")}</p><ol>${examples.slice(0,3).map((item,index) => `<li><i>0${index + 1}</i><span>${esc(item)}</span></li>`).join("")}</ol>${library ? `<div class="ia-film-meta"><span><b>${library.stats.documents}</b> fuentes</span><span><b>${library.stats.categories}</b> áreas</span><a href="#/library/${encodeURIComponent(library.id)}/documents" data-action="ia-film-close">Explorar esta IA →</a></div>` : ""}</div>
+    </section>`;
+    iaFilmLayer.querySelector('[data-action="ia-film-previous"]').disabled = iaFilmIndex === 0;
+    iaFilmLayer.querySelector('[data-action="ia-film-next"]').textContent = iaFilmIndex === scenes.length - 1 ? "Terminar" : "Siguiente →";
+    iaFilmLayer.querySelector('[data-action="ia-film-toggle"]').textContent = iaFilmPlaying ? "Pausar" : "Reproducir";
+    clearTimeout(iaFilmTimer);
+    if (iaFilmPlaying) iaFilmTimer = setTimeout(() => {
+      if (iaFilmIndex < scenes.length - 1) { iaFilmIndex += 1; renderIaFilm(); }
+      else iaFilmPlaying = false;
+    }, 5600);
+  }
+
+  function openIaFilm(index = 0) {
+    if (!iaFilmLayer) return;
+    iaFilmIndex = index; iaFilmPlaying = true;
+    iaFilmLayer.hidden = false;
+    document.body.classList.add("modal-open");
+    renderIaFilm();
+  }
+
+  function closeIaFilm() {
+    if (!iaFilmLayer) return;
+    clearTimeout(iaFilmTimer);
+    iaFilmLayer.hidden = true;
+    if (tutorialLayer.hidden && searchSheet.hidden && detailLayer.hidden && shareLayer.hidden) document.body.classList.remove("modal-open");
+  }
+
+  function libraryCard(lib, index = 0, total = 1) {
     const guide = libraryGuides[lib.id];
-    return `<article class="library-card tone-${lib.tone}" data-library="${lib.id}">
+    const settings=A.storage.get().settings; const hidden=settings.hiddenLibraries?.includes(lib.id);
+    return `<article class="library-card tone-${lib.tone} ${hidden?"is-library-hidden":""}" data-library="${lib.id}">
       <div class="library-top"><span class="library-mark">${lib.mark}</span><span class="eyebrow">${lib.stats.categories} categorías</span></div>
       <h3>${esc(lib.short)}</h3><p>${esc(lib.description)}</p>
       ${guide ? `<details class="library-purpose"><summary>¿Para qué sirve?</summary><p>${esc(guide.purpose)}</p><ul>${guide.examples.map(item => `<li>${esc(item)}</li>`).join("")}</ul><button class="text-button" data-open-infographic="${esc(guide.file)}" data-infographic-title="${esc(lib.short)}" data-infographic-tone="${esc(lib.tone)}">Ver infografía completa ↗</button></details>` : ""}
       <div class="mini-stats"><div><b>${lib.stats.documents}</b><span>Documentos</span></div><div><b>${A.library.compact(lib.stats.words)}</b><span>Palabras</span></div><div><b>${lib.stats.authors}</b><span>Autores</span></div></div>
-      <div class="library-actions"><a class="secondary-button" href="#/library/${lib.id}/documents">Explorar fuentes</a>${A.library.notebookButton(lib, "Abrir IA")}</div>
+      <div class="library-actions"><a class="secondary-button" href="#/library/${lib.id}/documents">Explorar fuentes</a>${A.library.notebookButton(lib, "Abrir IA")}</div>${settings.customizeLibraries ? libraryCustomizeControls(lib,index,total) : ""}
     </article>`;
   }
 
@@ -301,7 +362,7 @@
 
   function renderCapabilities() {
     const libraries=visibleLibraries();
-    return `<section class="page capabilities-page"><header class="capabilities-hero"><div><span class="eyebrow">Atlas de capacidades</span><h1>Una IA para cada clase de pregunta.</h1><p>Explora visualmente para qué sirve cada cuaderno, qué fuentes domina y cómo formular una consulta eficaz.</p></div><div class="capability-orbit" aria-hidden="true"><i>A</i>${libraries.slice(0,9).map((lib,index)=>`<span style="--orbit-index:${index};--orbit-total:${Math.min(9,libraries.length)}" class="tone-${lib.tone}">${esc(lib.mark)}</span>`).join("")}</div></header><div class="capability-flow"><span>1 · Elige el tipo de duda</span><i>→</i><span>2 · Entra en la IA adecuada</span><i>→</i><span>3 · Verifica en sus fuentes</span></div><div class="ia-guide-grid capabilities-showcase">${libraries.map(lib=>guideCard(lib,true)).join("")}</div></section>`;
+    return `<section class="page capabilities-page"><header class="capabilities-hero"><div><span class="eyebrow">Atlas de capacidades</span><h1>Una IA para cada clase de pregunta.</h1><p>Explora visualmente para qué sirve cada cuaderno, qué fuentes domina y cómo formular una consulta eficaz.</p><button class="primary-button" data-action="ia-film">▶ Ver videoguía animada</button></div><div class="capability-orbit" aria-hidden="true"><i>A</i>${libraries.slice(0,9).map((lib,index)=>`<span style="--orbit-index:${index};--orbit-total:${Math.min(9,libraries.length)}" class="tone-${lib.tone}">${esc(lib.mark)}</span>`).join("")}</div></header><div class="capability-flow"><span>1 · Elige el tipo de duda</span><i>→</i><span>2 · Entra en la IA adecuada</span><i>→</i><span>3 · Verifica en sus fuentes</span></div><div class="ia-guide-grid capabilities-showcase">${libraries.map(lib=>guideCard(lib,true)).join("")}</div></section>`;
   }
 
   function continueItem(lib, href, label) {
@@ -848,6 +909,19 @@
   }
 
   document.addEventListener("click", async event => {
+    const iaFilmAction = event.target.closest("[data-action^='ia-film']");
+    if (iaFilmAction) {
+      const filmAction = iaFilmAction.dataset.action;
+      if (filmAction === "ia-film") openIaFilm();
+      else if (filmAction === "ia-film-close") closeIaFilm();
+      else if (filmAction === "ia-film-previous") { iaFilmIndex = Math.max(0, iaFilmIndex - 1); renderIaFilm(); }
+      else if (filmAction === "ia-film-next") {
+        const last = iaFilmScenes().length - 1;
+        if (iaFilmIndex >= last) closeIaFilm(); else { iaFilmIndex += 1; renderIaFilm(); }
+      } else if (filmAction === "ia-film-toggle") { iaFilmPlaying = !iaFilmPlaying; renderIaFilm(); }
+      if (iaFilmAction.tagName !== "A") event.preventDefault();
+      if (filmAction !== "ia-film-close" || iaFilmAction.tagName !== "A") return;
+    }
     const infographicTrigger = event.target.closest("[data-open-infographic]");
     if (infographicTrigger) {
       openInfographic(infographicTrigger.dataset.openInfographic, infographicTrigger.dataset.infographicTitle, infographicTrigger.dataset.infographicTone);
@@ -903,6 +977,7 @@
     if (action === "toggle-only-new") { A.storage.setSetting("onlyNewShorts", !A.storage.get().settings.onlyNewShorts); renderRouteView(); }
     if (action === "customize-home") { A.storage.setSetting("customizeHome", !A.storage.get().settings.customizeHome); renderRouteView(); }
     if (action === "customize-explore") { A.storage.setSetting("customizeExplore", !A.storage.get().settings.customizeExplore); renderRouteView(); }
+    if (action === "customize-libraries") { A.storage.setSetting("customizeLibraries", !A.storage.get().settings.customizeLibraries); renderRouteView(); }
     if (action === "apply-update") location.reload();
     if (action === "refresh-atlas") { event.preventDefault(); refreshAtlas(target); }
     if (target.dataset.channelGroup) {
@@ -913,6 +988,7 @@
       toast(target.dataset.channelState === "on" ? "Canales habilitados." : "Canales deshabilitados.");
     }
     if (target.dataset.libraryMove) moveSetting("libraryOrder", target.dataset.libraryMove, target.dataset.direction, A.data.catalog.libraries.map(lib=>lib.id));
+    if (target.dataset.libraryTone) { A.storage.setSetting("libraryColors", { ...(A.storage.get().settings.libraryColors||{}), [target.dataset.libraryTone]:target.dataset.tone }); renderRouteView(); }
     if (target.dataset.libraryPin) {
       const ids=new Set(A.storage.get().settings.pinnedLibraries||[]); ids.has(target.dataset.libraryPin)?ids.delete(target.dataset.libraryPin):ids.add(target.dataset.libraryPin); A.storage.setSetting("pinnedLibraries",[...ids]); renderRouteView();
     }
@@ -1050,7 +1126,7 @@
 
   document.addEventListener("keydown", event => {
     if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") { event.preventDefault(); openSearch(); }
-    if (event.key === "Escape") { closeSearch(); closeDetail(); closeShare(); closeSettings(); closeInfographic(); if (!tutorialLayer.hidden) closeTutorial(); }
+    if (event.key === "Escape") { closeSearch(); closeDetail(); closeShare(); closeSettings(); closeInfographic(); closeIaFilm(); if (!tutorialLayer.hidden) closeTutorial(); }
   });
 
   function registerPwa() {

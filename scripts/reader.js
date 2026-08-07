@@ -4,7 +4,7 @@
   const esc = value => String(value ?? "").replace(/[&<>"']/g, char => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
   const state = {
     doc: null, payload: null, chunk: 0, continuous: false, fontSize: 19, width: 720,
-    query: "", matches: [], matchIndex: -1, sessionStarted: 0, progressTimer: null
+    query: "", matches: [], matchIndex: -1, sessionStarted: 0, progressTimer: null, toolsOpen: false
   };
   let loading = new Map();
 
@@ -25,6 +25,7 @@
     state.query = query;
     state.matches = [];
     state.matchIndex = -1;
+    state.toolsOpen = false;
     const saved = root.storage.getReaderProgress(doc.id);
     state.chunk = saved?.chunkIndex || 0;
     state.fontSize = saved?.fontSize || 19;
@@ -116,11 +117,14 @@
           <section><a class="secondary-button" href="#/graph?focus=${encodeURIComponent(doc.id)}">Abrir mapa de relaciones</a></section>
         </aside>
       </div>
-      <footer class="reader-tools" aria-label="Herramientas de lectura">
-        <button class="${favorite ? "active" : ""}" data-reader-action="favorite"><span class="reader-tool-icon">${root.library.icon("bookmark")}</span><span class="reader-tool-label">${favorite ? "Guardado" : "Guardar"}</span></button>
-        <button data-reader-action="highlight"><span class="reader-tool-icon tool-highlight">Aa</span><span class="reader-tool-label">Subrayar</span></button>
-        <button data-reader-action="note"><span class="reader-tool-icon tool-note">✎</span><span class="reader-tool-label">Anotar</span></button>
-        <button data-reader-action="bookmark"><span class="reader-tool-icon tool-pin">⌖</span><span class="reader-tool-label">Marcar</span></button>
+      <footer class="reader-tools ${state.toolsOpen ? "is-open" : ""}" aria-label="Herramientas de lectura">
+        <button class="reader-tools-toggle" data-reader-action="tools-toggle" aria-label="${state.toolsOpen ? "Ocultar herramientas" : "Mostrar herramientas"}" aria-expanded="${state.toolsOpen}">${state.toolsOpen ? "×" : "✦"}</button>
+        <div class="reader-tool-group">
+          <button class="${favorite ? "active" : ""}" data-reader-action="favorite"><span class="reader-tool-icon">${root.library.icon("bookmark")}</span><span class="reader-tool-label">${favorite ? "Guardado" : "Guardar"}</span></button>
+          <button data-reader-action="highlight"><span class="reader-tool-icon tool-highlight">Aa</span><span class="reader-tool-label">Subrayar</span></button>
+          <button data-reader-action="note"><span class="reader-tool-icon tool-note">✎</span><span class="reader-tool-label">Anotar</span></button>
+          <button data-reader-action="bookmark"><span class="reader-tool-icon tool-pin">⌖</span><span class="reader-tool-label">Marcar</span></button>
+        </div>
       </footer>
     </div>`;
     bind();
@@ -357,6 +361,7 @@
       const target = event.target.closest("button");
       if (!target) return;
       const action = target.dataset.readerAction;
+      if (action === "tools-toggle") { state.toolsOpen = !state.toolsOpen; render(); return; }
       if (action === "toc") togglePanel("reader-toc");
       if (action === "settings") togglePanel("reader-settings");
       if (action === "close-panels") closePanels();

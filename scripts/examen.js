@@ -9,6 +9,7 @@
   let run = null;
   let activeHelp = new Map();
   let pointer = null;
+  const briefNormIds = new Set(["presencia-dios", "acciones-gracias", "oracion-manana", "santa-misa", "trabajo", "alegria", "apostolado", "examen-general"]);
   const pad = number => String(number).padStart(2, "0");
   const dayKey = date => `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
   const parseDay = value => { const [year, month, day] = value.split("-").map(Number); return new Date(year, month - 1, day); };
@@ -57,7 +58,8 @@
     const norms = normsFor(period);
     const answered = Object.keys(current.answers || {}).filter(id => norms.some(norm => norm.id === id)).length;
     const disabled = period === "midday" && !stored().config.middayEnabled;
-    return `<article class="exam-period-card ${disabled ? "disabled" : ""}"><span class="exam-period-mark">${period === "midday" ? "☼" : "◒"}</span><div><span class="eyebrow">${esc(statusText(current.status))}</span><h2>${esc(title)}</h2><p>${esc(subtitle)}</p>${disabled ? `<button class="text-button" data-exam-open-settings>Activar y configurar</button>` : `<div class="exam-card-meta"><span>${answered ? `${answered} respuestas guardadas` : `${norms.length} aspectos previstos`}</span><span>Datos solo en este dispositivo</span></div><div class="button-row"><a class="primary-button" href="#/examen/run?period=${period}&mode=${esc(current.mode || stored().config.defaultMode || "quick")}">${current.status === "started" ? "Continuar" : current.status === "complete" ? "Revisar" : "Comenzar"}</a>${current.status !== "complete" ? `<a class="secondary-button" href="#/examen/run?period=${period}&mode=paused">Modo pausado</a>` : ""}</div>`}</div></article>`;
+    const briefCount = norms.filter(norm => briefNormIds.has(norm.id)).length || Math.min(6, norms.length);
+    return `<article class="exam-period-card ${disabled ? "disabled" : ""}"><span class="exam-period-mark">${period === "midday" ? "☼" : "◒"}</span><div><span class="eyebrow">${esc(statusText(current.status))}</span><h2>${esc(title)}</h2><p>${esc(subtitle)}</p>${disabled ? `<button class="text-button" data-exam-open-settings>Activar</button>` : `<div class="exam-start-types"><a class="exam-start-brief" href="#/examen/run?period=${period}&mode=quick&scope=brief"><b>Breve</b><small>${briefCount} esenciales · pocos minutos</small></a><a href="#/examen/run?period=${period}&mode=quick&scope=complete"><b>Completo</b><small>${norms.length} aspectos · recorrido habitual</small></a></div>${answered ? `<small class="exam-resume-note">${answered} respuestas guardadas hoy</small>` : ""}`}</div></article>`;
   }
 
   function descriptiveSummary(days = 7) {
@@ -81,7 +83,7 @@
   function dashboard() {
     const config = stored().config;
     return `<section class="page exam-page"><header class="exam-hero"><div><span class="eyebrow">Examen diario · privado y local</span><h1>Mirar el día con verdad y con paz.</h1><p>Sin puntos, rachas ni porcentajes. Un espacio para agradecer, rectificar y recomenzar con libertad.</p></div><span class="exam-privacy-seal">⌂<b>Solo en este dispositivo</b><small>Atlas no recibe tus respuestas ni tus notas.</small></span></header>
-      <div class="exam-period-grid">${periodCard("midday", "Examen de mediodía", config.middayEnabled ? `Aviso previsto a las ${config.middayTime}` : "Una pausa breve y opcional para rectificar la tarde.")}${periodCard("night", "Examen de la noche", `Aviso previsto a las ${config.nightTime}`)}</div>
+      <div class="exam-type-intro"><span>Dos maneras de empezar</span><b>Breve</b><small>lo esencial</small><i></i><b>Completo</b><small>todo tu plan</small></div><div class="exam-period-grid">${periodCard("midday", "Examen de mediodía", config.middayEnabled ? `Aviso previsto a las ${config.middayTime}` : "Una pausa breve y opcional para rectificar la tarde.")}${periodCard("night", "Examen de la noche", `Aviso previsto a las ${config.nightTime}`)}</div>
       <section class="exam-observation"><span>Una observación, no una nota</span><p>${esc(descriptiveSummary(7))}</p></section>
       <nav class="exam-dashboard-nav"><a href="#/examen/week"><b>Semana</b><span>Revisa días, estados y notas.</span></a><a href="#/examen/month"><b>Mes</b><span>Cuadrícula sobria y accesible.</span></a><a href="#/examen/norms"><b>Mi plan de vida</b><span>Añade, pausa y ordena normas.</span></a><a href="#/examen/prepare"><b>Preparar una conversación</b><span>Vista privada y opcional.</span></a><a href="#/examen/settings"><b>Avisos y día de guardia</b><span>Horarios, días y preferencias.</span></a><a href="#/examen/sources"><b>Fuentes y ayudas</b><span>${source.stats?.helps || source.helps.length} piezas identificadas.</span></a></nav>
       <p class="exam-principle">El examen ayuda a mirar; no diagnostica la conciencia ni sustituye la dirección espiritual o la confesión.</p></section>`;
@@ -127,20 +129,23 @@
     return `<aside class="exam-help" data-help-id="${esc(help.id)}"><span class="eyebrow">${esc(kindLabels[help.kind] || "Ayuda")}</span><blockquote>${esc(help.text)}</blockquote><p>${esc(help.author)}${help.work ? ` · <cite>${esc(help.work)}</cite>` : ""}</p>${help.relevanceBasis ? `<small class="exam-help-relevance">Por qué aparece: ${esc(help.relevanceBasis)}</small>` : ""}<div class="button-row"><button class="text-button" data-exam-another-help="${esc(norm.id)}">Otra ayuda</button><button class="text-button ${favorite ? "saved" : ""}" data-exam-save-help="${esc(help.id)}">${favorite ? "★ Guardada" : "☆ Guardar"}</button>${help.sourceDocumentId ? `<a class="text-button" href="#/reader/${encodeURIComponent(help.sourceDocumentId)}${query ? `?q=${encodeURIComponent(query)}` : ""}">Leer en contexto</a>` : help.sourceUrl ? `<a class="text-button" href="${esc(help.sourceUrl)}" target="_blank" rel="noopener">Abrir fuente ↗</a>` : ""}</div></aside>`;
   }
 
-  function initRun(period, mode, date = todayKey(), persist = true) {
-    const norms = normsFor(period, parseDay(date));
+  function initRun(period, mode, date = todayKey(), persist = true, scope = "complete") {
+    const allNorms = normsFor(period, parseDay(date));
+    const essential = allNorms.filter(norm => briefNormIds.has(norm.id));
+    const norms = scope === "brief" ? (essential.length ? essential : allNorms.slice(0, Math.min(6, allNorms.length))) : allNorms;
     const current = session(date, period);
     const firstUnanswered = norms.findIndex(norm => !current.answers?.[norm.id]);
-    run = { period, mode, date, norms, index: Math.max(0, firstUnanswered), reviewing: current.status === "complete", preview: !persist };
-    if (persist) root.storage.setExamSession(date, period, { status: current.status === "complete" ? "complete" : "started", mode });
+    run = { period, mode, scope, date, norms, index: Math.max(0, firstUnanswered), reviewing: current.status === "complete", preview: !persist };
+    if (persist) root.storage.setExamSession(date, period, { status: current.status === "complete" ? "complete" : "started", mode, scope });
   }
 
   function runView(route) {
     const period = route.query.get("period") === "midday" ? "midday" : "night";
     const mode = route.query.get("mode") === "paused" ? "paused" : "quick";
+    const scope = route.query.get("scope") === "brief" ? "brief" : "complete";
     const date = route.query.get("date") || todayKey();
     const tutorialPreview = route.query.get("tutorial") === "1";
-    if (!run || run.period !== period || run.mode !== mode || run.date !== date || run.preview !== tutorialPreview) initRun(period, mode, date, !tutorialPreview);
+    if (!run || run.period !== period || run.mode !== mode || run.scope !== scope || run.date !== date || run.preview !== tutorialPreview) initRun(period, mode, date, !tutorialPreview, scope);
     const current = session(date, period);
     if (!run.norms.length) return `<section class="page exam-page">${root.library.empty("Hoy no hay elementos previstos", "Puedes activar normas o modificar sus frecuencias en Mi plan de vida.")}<a class="primary-button" href="#/examen/norms">Configurar el plan</a></section>`;
     if (run.index >= run.norms.length) return finishView();
@@ -148,19 +153,20 @@
     const saved = current.answers?.[norm.id]?.answer || "";
     const note = stored().notes[`${date}|${period}|${norm.id}`] || {};
     const showGesture = !root.storage.get().settings.examSwipeSeen;
-    return `<section class="exam-run"><header class="exam-run-head"><a href="#/examen" class="text-button">← Salir</a><span>${run.index + 1} de ${run.norms.length}</span><button class="text-button" data-exam-toggle-mode>${mode === "quick" ? "Modo pausado" : "Modo rápido"}</button></header><div class="exam-progress"><i style="width:${((run.index + 1) / run.norms.length) * 100}%"></i></div>
-      <div class="exam-card-stage"><article class="exam-swipe-card" data-exam-norm="${esc(norm.id)}"><span class="eyebrow">${esc(frequencyLabel(norm))}</span><h1>${esc(norm.name)}</h1><p>${esc(norm.description || "")}</p>${norm.personalNote ? `<div class="exam-personal-note"><b>Tu nota</b>${esc(norm.personalNote)}</div>` : ""}${mode === "paused" ? `<p class="exam-question">${esc(norm.question || "¿Cómo he vivido hoy este aspecto?")}</p>` : ""}<div class="exam-swipe-feedback" aria-hidden="true"></div>${helpCard(norm, saved, mode === "paused")}</article></div>
-      ${showGesture ? `<aside class="exam-gesture-guide"><button data-exam-dismiss-gestures aria-label="Cerrar">×</button><b>Cuatro respuestas, sin puntuación</b><div><span>←<small>No</small></span><span>↑<small>Parcial</small></span><span>→<small>Sí</small></span><span>•••<small>No aplica</small></span></div><p>También puedes usar siempre los botones. Esta explicación no volverá a aparecer.</p></aside>` : ""}
-      <div class="exam-answer-buttons"><button data-exam-answer="no"><i>←</i>No</button>${norm.partial !== false ? `<button data-exam-answer="partial"><i>↑</i>Parcial</button>` : ""}<button data-exam-answer="yes"><i>→</i>Sí</button><button data-exam-answer="na"><i>—</i>No aplica</button></div>
-      <div class="exam-card-tools"><button data-exam-help="${esc(norm.id)}">Una idea</button><label><span>Nota opcional</span><textarea data-exam-note="${esc(norm.id)}" placeholder="Solo tú puedes leerla">${esc(note.text || "")}</textarea></label><label class="exam-review-check"><input type="checkbox" data-exam-review-note="${esc(norm.id)}" ${note.review ? "checked" : ""}> Revisar esta nota más adelante</label><a href="#/examen/norms?focus=${encodeURIComponent(norm.id)}">Ficha y configuración</a></div></section>`;
+    return `<section class="exam-run exam-run-full"><header class="exam-run-head"><a href="#/examen" class="exam-exit" aria-label="Salir">×</a><span><b>${scope === "brief" ? "Breve" : "Completo"}</b> · ${run.index + 1} / ${run.norms.length}</span><button class="exam-detail-toggle" data-exam-toggle-mode>${mode === "quick" ? "Reflexionar" : "Simplificar"}</button></header><div class="exam-progress"><i style="width:${((run.index + 1) / run.norms.length) * 100}%"></i></div>
+      <div class="exam-card-stage"><article class="exam-swipe-card" data-exam-norm="${esc(norm.id)}"><span class="eyebrow">${esc(frequencyLabel(norm))}</span><h1>${esc(norm.name)}</h1>${norm.description ? `<p>${esc(norm.description)}</p>` : ""}${mode === "paused" ? `<p class="exam-question">${esc(norm.question || "¿Cómo he vivido hoy este aspecto?")}</p>${helpCard(norm, saved, true)}<label class="exam-inline-note"><span>Nota privada</span><textarea data-exam-note="${esc(norm.id)}" placeholder="Opcional">${esc(note.text || "")}</textarea></label>` : ""}<div class="exam-swipe-feedback" aria-hidden="true"></div><div class="exam-swipe-directions" aria-hidden="true"><span>← Sí</span><span>No →</span></div></article></div>
+      ${showGesture ? `<aside class="exam-gesture-guide exam-gesture-simple"><button data-exam-dismiss-gestures aria-label="Cerrar">×</button><b>Desliza: Sí ← · No →</b><p>También puedes tocar los dos botones inferiores.</p></aside>` : ""}
+      <div class="exam-answer-buttons exam-primary-answers"><button data-exam-answer="yes"><i>←</i>Sí</button><button data-exam-answer="no">No<i>→</i></button></div>
+      <details class="exam-more-answers"><summary>Otra respuesta</summary><div>${norm.partial !== false ? `<button data-exam-answer="partial">Parcial</button>` : ""}<button data-exam-answer="na">No aplica</button><a href="#/examen/norms?focus=${encodeURIComponent(norm.id)}">Configurar</a></div></details></section>`;
   }
 
   function finishView() {
     const current = session(run.date, run.period);
     const values = Object.values(current.answers || {}).map(item => item.answer);
     const counts = Object.fromEntries(["yes", "partial", "no", "na"].map(answer => [answer, values.filter(value => value === answer).length]));
-    if (current.status !== "complete") root.storage.setExamSession(run.date, run.period, { status: "complete", completedAt: new Date().toISOString(), mode: run.mode });
-    return `<section class="page exam-finish"><span class="exam-finish-mark">✦</span><span class="eyebrow">Examen terminado</span><h1>Gracias. Rectificar y descansar también forman parte del camino.</h1><p>Este resumen describe lo que has marcado; no calcula una nota.</p><div class="exam-result-summary">${Object.entries(counts).filter(([,count]) => count).map(([answer,count]) => `<span data-answer="${answer}"><i>${answerMarks[answer]}</i><b>${count}</b><small>${answerLabels[answer]}</small></span>`).join("")}</div><div class="button-row"><a class="primary-button" href="#/examen">Volver al examen diario</a><a class="secondary-button" href="#/examen/run?period=${run.period}&mode=paused&date=${run.date}">Revisar despacio</a></div><p class="exam-principle">Si algo no salió, mañana no empieza desde cero: empieza desde la experiencia de hoy.</p></section>`;
+    if (run.scope === "brief") root.storage.setExamSession(run.date, run.period, { briefCompletedAt: new Date().toISOString(), mode: run.mode, scope: run.scope });
+    else if (current.status !== "complete") root.storage.setExamSession(run.date, run.period, { status: "complete", completedAt: new Date().toISOString(), mode: run.mode, scope: run.scope });
+    return `<section class="page exam-finish"><span class="exam-finish-mark">✦</span><span class="eyebrow">Examen ${run.scope === "brief" ? "breve" : "completo"} terminado</span><h1>Gracias. Rectificar y descansar también forman parte del camino.</h1><p>Este resumen describe lo que has marcado; no calcula una nota.</p><div class="exam-result-summary">${Object.entries(counts).filter(([,count]) => count).map(([answer,count]) => `<span data-answer="${answer}"><i>${answerMarks[answer]}</i><b>${count}</b><small>${answerLabels[answer]}</small></span>`).join("")}</div><div class="button-row"><a class="primary-button" href="#/examen">Terminar</a>${run.scope === "brief" ? `<a class="secondary-button" href="#/examen/run?period=${run.period}&mode=quick&scope=complete&date=${run.date}">Continuar con el completo</a>` : `<a class="secondary-button" href="#/examen/run?period=${run.period}&mode=paused&scope=complete&date=${run.date}">Revisar despacio</a>`}</div><p class="exam-principle">Si algo no salió, mañana no empieza desde cero: empieza desde la experiencia de hoy.</p></section>`;
   }
 
   function weekStart(date = new Date()) { const result = new Date(date); const day = result.getDay() || 7; result.setDate(result.getDate() - day + 1); result.setHours(0,0,0,0); return result; }
@@ -235,12 +241,12 @@
   function recordAnswer(answer, card) {
     if (!run) return;
     const norm = run.norms[run.index];
-    const move = answer === "yes" ? "right" : answer === "no" ? "left" : answer === "partial" ? "up" : "fade";
+    const move = answer === "yes" ? "left" : answer === "no" ? "right" : answer === "partial" ? "up" : "fade";
     card?.classList.add(`answered-${move}`);
     setTimeout(() => {
       root.storage.setExamAnswer(run.date, run.period, norm.id, answer);
       run.index += 1;
-      if (run.index >= run.norms.length) root.storage.setExamSession(run.date, run.period, { status: "complete", completedAt: new Date().toISOString(), mode: run.mode });
+      if (run.index >= run.norms.length) root.storage.setExamSession(run.date, run.period, run.scope === "brief" ? { briefCompletedAt: new Date().toISOString(), mode: run.mode, scope: run.scope } : { status: "complete", completedAt: new Date().toISOString(), mode: run.mode, scope: run.scope });
       rerender();
     }, card ? 190 : 0);
   }
@@ -257,7 +263,7 @@
   document.addEventListener("click", event => {
     const answer = event.target.closest("[data-exam-answer]"); if (answer) { recordAnswer(answer.dataset.examAnswer, document.querySelector(".exam-swipe-card")); return; }
     if (event.target.closest("[data-exam-dismiss-gestures]")) { root.storage.setSetting("examSwipeSeen", true); document.querySelector(".exam-gesture-guide")?.remove(); return; }
-    if (event.target.closest("[data-exam-toggle-mode]")) { location.hash = `/examen/run?period=${run.period}&mode=${run.mode === "quick" ? "paused" : "quick"}&date=${run.date}`; return; }
+    if (event.target.closest("[data-exam-toggle-mode]")) { location.hash = `/examen/run?period=${run.period}&mode=${run.mode === "quick" ? "paused" : "quick"}&scope=${run.scope}&date=${run.date}`; return; }
     const helpButton = event.target.closest("[data-exam-help], [data-exam-another-help]");
     if (helpButton) { const id = helpButton.dataset.examHelp || helpButton.dataset.examAnotherHelp; const norm = combinedNorms(true).find(item => item.id === id); if (norm) { chooseHelp(norm, session(run.date, run.period).answers?.[norm.id]?.answer, true); rerender(); } return; }
     const saveHelp = event.target.closest("[data-exam-save-help]"); if (saveHelp) { root.storage.toggleExamHelp(saveHelp.dataset.examSaveHelp); rerender(); return; }
@@ -294,8 +300,8 @@
   document.addEventListener("focusout", event => { if (event.target.dataset.examNote && run) { const review = document.querySelector(`[data-exam-review-note="${CSS.escape(event.target.dataset.examNote)}"]`); root.storage.setExamNote(run.date, run.period, event.target.dataset.examNote, event.target.value, review?.checked); } });
 
   document.addEventListener("pointerdown", event => { const card = event.target.closest(".exam-swipe-card"); if (!card || event.target.closest("button,a,textarea,input")) return; pointer = { card, x: event.clientX, y: event.clientY, dx: 0, dy: 0 }; card.setPointerCapture?.(event.pointerId); });
-  document.addEventListener("pointermove", event => { if (!pointer) return; pointer.dx = event.clientX - pointer.x; pointer.dy = event.clientY - pointer.y; pointer.card.style.transform = `translate3d(${pointer.dx}px,${Math.min(0,pointer.dy)}px,0) rotate(${pointer.dx * .025}deg)`; pointer.card.style.setProperty("--swipe-strength", Math.min(1, Math.max(Math.abs(pointer.dx), Math.abs(Math.min(0,pointer.dy))) / 120)); const feedback = pointer.card.querySelector(".exam-swipe-feedback"); if (feedback) feedback.textContent = Math.abs(pointer.dx) > Math.abs(pointer.dy) ? pointer.dx > 0 ? "Sí" : "No" : pointer.dy < 0 ? "Parcialmente" : ""; });
-  document.addEventListener("pointerup", () => { if (!pointer) return; const { card, dx, dy } = pointer; pointer = null; card.style.transform = ""; card.style.removeProperty("--swipe-strength"); if (dx > 90) recordAnswer("yes", card); else if (dx < -90) recordAnswer("no", card); else if (dy < -80 && run?.norms[run.index]?.partial !== false) recordAnswer("partial", card); });
+  document.addEventListener("pointermove", event => { if (!pointer) return; pointer.dx = event.clientX - pointer.x; pointer.dy = event.clientY - pointer.y; const dx = Math.abs(pointer.dx) > Math.abs(pointer.dy) ? pointer.dx : pointer.dx * .35; pointer.card.style.transform = `translate3d(${dx}px,0,0) rotate(${dx * .018}deg)`; pointer.card.style.setProperty("--swipe-strength", Math.min(1, Math.abs(dx) / 120)); const feedback = pointer.card.querySelector(".exam-swipe-feedback"); if (feedback) feedback.textContent = Math.abs(dx) > 18 ? dx < 0 ? "Sí" : "No" : ""; });
+  document.addEventListener("pointerup", () => { if (!pointer) return; const { card, dx, dy } = pointer; pointer = null; card.style.transform = ""; card.style.removeProperty("--swipe-strength"); if (Math.abs(dx) > Math.abs(dy) && dx < -90) recordAnswer("yes", card); else if (Math.abs(dx) > Math.abs(dy) && dx > 90) recordAnswer("no", card); });
 
   function checkReminders() {
     const config = stored().config; if (!("Notification" in window) || Notification.permission !== "granted") return;

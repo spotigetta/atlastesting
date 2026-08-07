@@ -27,6 +27,7 @@
   <link rel="stylesheet" href="styles/components.css">
   <link rel="stylesheet" href="styles/themes.css">
   <link rel="stylesheet" href="styles/responsive.css">
+  <link rel="stylesheet" href="styles/features-5.4.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -180,6 +181,16 @@
         <span id="tutorial-progress"></span>
         <button class="primary-button" data-action="tutorial-next">Siguiente</button>
       </div>
+    </article>
+  </section>
+
+  <section class="ia-film-layer" id="ia-film-layer" hidden aria-label="Videoguía animada de las IA">
+    <div class="ia-film-backdrop" data-action="ia-film-close"></div>
+    <article class="ia-film" role="dialog" aria-modal="true" aria-label="Videoguía animada de las IA">
+      <header><div><span class="eyebrow">Atlas · videoguía</span><b id="ia-film-counter">1 / 1</b></div><button data-action="ia-film-close" aria-label="Cerrar">×</button></header>
+      <div class="ia-film-progress"><i id="ia-film-progress"></i></div>
+      <div id="ia-film-content"></div>
+      <footer><button data-action="ia-film-previous" aria-label="Anterior">← Anterior</button><button data-action="ia-film-toggle" id="ia-film-toggle">Pausar</button><button data-action="ia-film-next" aria-label="Siguiente">Siguiente →</button></footer>
     </article>
   </section>
 

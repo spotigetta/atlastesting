@@ -1,4 +1,4 @@
-const BUILD_VERSION = "5.3.0-a3cd1b448734";
+const BUILD_VERSION = "5.4.0-immersive-exam";
 const SHELL_CACHE = `atlas-shell-${BUILD_VERSION}`;
 const DATA_CACHE = `atlas-data-${BUILD_VERSION}`;
 const DOCUMENT_CACHE = "atlas-documents-v1";
@@ -6,7 +6,7 @@ const DOCUMENT_CACHE = "atlas-documents-v1";
 const SHELL = [
   "./", "./index.html", "./offline.html", "./manifest.webmanifest",
   "./styles/tokens.css", "./styles/base.css", "./styles/components.css",
-  "./styles/themes.css", "./styles/responsive.css",
+  "./styles/themes.css", "./styles/responsive.css", "./styles/features-5.4.css",
   "./scripts/database.js", "./scripts/runtime.js", "./scripts/bootstrap.js", "./scripts/storage.js",
   "./scripts/search.js", "./scripts/repository.js", "./scripts/share.js", "./scripts/statistics.js",
   "./scripts/library.js", "./scripts/reader.js", "./scripts/extras.js",
