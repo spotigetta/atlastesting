@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Doctrina y Moral — Texto grande</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+3:wght@600;700&family=IM+Fell+English+SC&display=swap');
+  *{box-sizing:border-box}
+  html,body{margin:0;min-height:100%;background:#1c2f2c}
+  body{display:flex;justify-content:center;align-items:flex-start}
+  .slide-container{position:relative;width:1440px;height:1480px;overflow:hidden;color:#253732;font-family:'Cardo',serif;
+    background:
+      radial-gradient(circle at 87% 7%,#d2624930,transparent 22%),
+      repeating-radial-gradient(circle at 87% 7%,transparent 0 30px,#294e4812 30px 31px),
+      linear-gradient(145deg,#f7f1e3,#eee4cd 72%,#e5d5b3)}
+  .slide-container::before{content:"";position:absolute;inset:26px;border:2px solid #294e48;pointer-events:none}
+  .slide-container::after{content:"DOCTRINA · MORALIS · MAGISTERIUM";position:absolute;right:-185px;top:680px;transform:rotate(90deg);font:700 13px 'Source Sans 3';letter-spacing:6px;color:#294e4828}
+
+  .head{position:absolute;left:70px;top:55px;width:1300px;height:280px;padding:28px 42px;color:#f7f0df;background:#294e48;border:3px solid #d6a23e;box-shadow:10px 10px #d26249}
+  .head::before{content:"";position:absolute;inset:18px;border:1px solid #d6a23e66}
+  .pre{position:relative;font:700 13px 'Source Sans 3';letter-spacing:5px;text-transform:uppercase;color:#d6a23e}
+  .pre b{color:#e47860}
+  .head h1{position:relative;margin:8px 0 4px;font:700 94px/.88 'IM Fell English SC';letter-spacing:1px;text-shadow:3px 3px #d26249}
+  .head h1 i{color:#d6a23e;font:italic 700 74px 'Cardo';text-shadow:none}
+  .inscription{position:relative;max-width:1030px;font:italic 700 23px/1.18 'Cardo';color:#e8c875}
+  .inscription b{color:#ef8e77}
+  .seal{position:absolute;right:48px;top:38px;width:172px;height:172px;border:3px solid #d6a23e;border-radius:50%;box-shadow:0 0 0 8px #294e48,0 0 0 10px #d6a23e;
+    display:grid;place-items:center;background:radial-gradient(circle,#d6a23e 0 14%,#f5efdf 14% 18%,#d26249 18% 32%,#f5efdf 32% 35%,#253732 35% 51%,#294e48 51%);color:#fff;font:700 52px 'Cardo'}
+  .seal::after{content:"SCRIPTURA · TRADITIO";position:absolute;bottom:-30px;white-space:nowrap;color:#d6a23e;font:700 11px 'Source Sans 3';letter-spacing:3px}
+
+  .lead{position:absolute;left:70px;top:375px;width:1300px;height:108px;padding:20px 30px 18px 82px;background:#fff9ee;border:3px solid #294e48;border-left:14px solid #d26249;box-shadow:8px 8px #294e48}
+  .lead::before{content:"§";position:absolute;left:26px;top:17px;color:#d26249;font:700 52px/1 'Cardo';opacity:.7}
+  .lead p{margin:0;max-width:1160px;font:italic 700 22px/1.25 'Cardo'}
+  .lead b{color:#294e48}
+  .lead-tag{position:absolute;right:22px;bottom:7px;color:#d26249;font:700 11px 'Source Sans 3';letter-spacing:3px;text-transform:uppercase}
+
+  .panel-title{margin:0;font:700 30px/1 'IM Fell English SC';letter-spacing:.5px}
+  .rule{width:48%;height:3px;margin:7px 0 14px;background:#d26249}
+  .razona{position:absolute;left:70px;top:525px;width:790px;height:370px;padding:24px 28px;background:#fff9ee;border:3px solid #294e48;box-shadow:8px 8px #d26249}
+  .razona::before,.jerar::before{position:absolute;left:-3px;top:-25px;padding:5px 15px;font:700 12px 'Source Sans 3';letter-spacing:3px;text-transform:uppercase}
+  .razona::before{content:"QUAESTIO · CÓMO RAZONA";background:#294e48;color:#d6a23e}
+  .razona .panel-title{color:#294e48}
+  .steps{display:grid;grid-template-columns:repeat(3,1fr);gap:11px}
+  .step{min-height:124px;padding:13px 14px;background:#294e48;border-left:6px solid #d6a23e;color:#f5efdf}
+  .step:nth-child(even){background:#253732;border-left-color:#d26249}
+  .step .num{display:block;color:#d6a23e;font:700 25px/1 'IM Fell English SC'}
+  .step b{display:block;margin:4px 0;color:#edbb58;font:700 16px 'Source Sans 3';letter-spacing:1.5px}
+  .step span:last-child{display:block;font-size:18px;line-height:1.13}
+
+  .jerar{position:absolute;left:890px;top:525px;width:480px;height:354px;padding:24px 27px;background:#294e48;border:3px solid #d6a23e;box-shadow:8px 8px #253732;color:#f5efdf}
+  .jerar::before{content:"HIERARCHIA FONTIVM";background:#d6a23e;color:#253732}
+  .jerar .panel-title{color:#d6a23e;font-size:28px}
+  .stack{display:flex;flex-direction:column;align-items:center;gap:5px}
+  .lvl{width:100%;padding:5px 9px;background:#f5efdf;border:2px solid #d6a23e;color:#253732;text-align:center;font-size:16.5px;font-weight:700;line-height:1.05}
+  .lvl:nth-child(1){background:#d26249;color:#fff;border-color:#f5efdf}.lvl:nth-child(2){width:94%;background:#d6a23e}.lvl:nth-child(3){width:88%}.lvl:nth-child(4){width:82%;background:#3a615a;color:#fff;border-color:#d26249}.lvl:nth-child(5){width:76%;background:#253732;color:#fff;border-color:#d26249}.lvl:nth-child(6){width:70%}.lvl:nth-child(7){width:64%}
+
+  .disting,.fontes{position:absolute;top:920px;height:164px;padding:20px 20px;border:3px solid #294e48;box-shadow:6px 6px #253732}
+  .disting{left:70px;width:790px;background:#fff9ee;border-left:14px solid #d6a23e}
+  .fontes{left:890px;width:480px;background:#d6a23e}
+  .disting .panel-title,.fontes .panel-title{font-size:27px;color:#294e48}
+  .disting .rule,.fontes .rule{margin-bottom:10px}
+  .fontes .rule{background:#294e48}
+  .chips{display:flex;flex-wrap:wrap;gap:7px}
+  .chips span{padding:6px 11px;background:#294e48;border:1px solid #253732;color:#f5efdf;font-size:17px;font-weight:700;line-height:1}
+  .disting .chips span:nth-child(even){background:#d6a23e;color:#253732}
+  .fontes .chips span{background:#f7f0df;color:#253732;border-color:#294e48;font-size:16px}
+  .fontes .chips span:nth-child(4n){color:#bd4934;border-color:#d26249}
+
+  .queries{position:absolute;left:70px;top:1122px;width:1300px;height:204px;padding:24px 34px;background:#294e48;border:4px solid #d6a23e;box-shadow:8px 8px #d26249;color:#f5efdf}
+  .queries::before{content:"PRAEPARATIO QUAESTIONUM";position:absolute;left:-4px;top:-27px;padding:6px 20px;background:#d26249;border:3px solid #f5efdf;font:700 12px 'Source Sans 3';letter-spacing:4px}
+  .queries .panel-title{text-align:center;color:#d6a23e}
+  .queries .rule{width:22%;margin:6px auto 9px}
+  .queries ul{columns:2;column-gap:44px;list-style:none;margin:0;padding:0}
+  .queries li{position:relative;break-inside:avoid;padding:5px 0 5px 22px;border-bottom:1px solid #d6a23e55;font-size:19.5px;line-height:1.12}
+  .queries li::before{content:"◆";position:absolute;left:1px;top:8px;color:#d6a23e;font-size:11px}
+
+  .cta{position:absolute;left:70px;top:1361px;width:1300px;height:52px;display:grid;grid-template-columns:.65fr 1.2fr .72fr;align-items:center;background:#f5efdf;border:3px solid #294e48;box-shadow:7px 7px #d26249}
+  .cta-title{padding-left:22px;color:#294e48;font:700 24px 'IM Fell English SC'}
+  .cta-title b{color:#d26249}
+  .cta-note{text-align:center;font:italic 700 17px 'Cardo'}
+  .cta a{height:100%;display:grid;place-items:center;background:#294e48;color:#f5efdf;text-decoration:none;font:700 16px 'Source Sans 3';letter-spacing:2px;text-transform:uppercase}
+  .cta a span{color:#d6a23e}
+
+  /* Versión de lectura ampliada */
+  .pre{font-size:14.5px}
+  .inscription{font-size:26px;line-height:1.14;max-width:1040px}
+  .lead p{font-size:25px;line-height:1.18}
+  .panel-title{font-size:33px}
+  .step .num{font-size:28px}
+  .step b{font-size:17px}
+  .step span:last-child{font-size:20.5px;line-height:1.08}
+  .jerar .panel-title{font-size:30px}
+  .lvl{font-size:18px;line-height:1}
+  .disting .panel-title,.fontes .panel-title{font-size:29px}
+  .chips span{font-size:18.5px}
+  .fontes .chips span{font-size:17.5px}
+  .disting,.fontes{top:900px;height:200px;padding-bottom:24px}
+  .queries{top:1135px;height:220px;padding-top:18px;padding-bottom:22px}
+  .queries .panel-title{font-size:31px}
+  .queries .rule{margin-top:4px;margin-bottom:7px}
+  .cta{top:1364px;height:49px}
+  .queries li{font-size:21.5px;line-height:1.08}
+  .cta-title{font-size:26px}
+  .cta-note{font-size:19px}
+  .cta a{font-size:17px}
+</style>
+</head>
+<body>
+<main class="slide-container">
+  <header class="head">
+    <div class="pre">✦ <b>Doctrina et moralis</b> · cum Magisterio Ecclesiae ✦</div>
+    <h1>Doctrina <i>y</i> Moral</h1>
+    <div class="inscription">Fuentes católicas para <b>comprender</b>, <b>discernir</b> y <b>explicar</b>: Escritura, teología dogmática y moral, Magisterio, concilios, Padres, santo Tomás, doctrina social y espiritualidad.</div>
+    <div class="seal">✚</div>
+  </header>
+
+  <section class="lead">
+    <p>Un <b>compendio ordenado</b> para estudiar cuestiones complejas con prudencia: distinguir norma de opinión, dogma de disciplina, pecado de culpabilidad y enseñanza de consejo pastoral.</p>
+    <div class="lead-tag">Ex ordine · con rigor y prudencia</div>
+  </section>
+
+  <section class="razona">
+    <h2 class="panel-title">Cómo razona</h2><div class="rule"></div>
+    <div class="steps">
+      <div class="step"><span class="num">I</span><b>COMPRENDE</b><span>La pregunta y sus términos precisos.</span></div>
+      <div class="step"><span class="num">II</span><b>IDENTIFICA</b><span>Los principios doctrinales en juego.</span></div>
+      <div class="step"><span class="num">III</span><b>CONSULTA</b><span>La autoridad competente y vigente.</span></div>
+      <div class="step"><span class="num">IV</span><b>DISTINGUE</b><span>Norma, prudencia y responsabilidad.</span></div>
+      <div class="step"><span class="num">V</span><b>APLICA</b><span>Con prudencia pastoral y caridad.</span></div>
+      <div class="step"><span class="num">VI</span><b>CITA</b><span>Y explica con rigor y claridad.</span></div>
+    </div>
+  </section>
+
+  <section class="jerar">
+    <h2 class="panel-title">Jerarquía documental</h2><div class="rule"></div>
+    <div class="stack">
+      <div class="lvl">Sagrada Escritura</div><div class="lvl">Concilios y Magisterio solemne</div><div class="lvl">Catecismo de la Iglesia Católica</div><div class="lvl">Magisterio ordinario y dicasterios</div><div class="lvl">Padres y Doctores</div><div class="lvl">Santo Tomás y teólogos</div><div class="lvl">Espiritualidad y comentarios</div>
+    </div>
+  </section>
+
+  <section class="disting">
+    <h2 class="panel-title">§ Distinciones esenciales</h2><div class="rule"></div>
+    <div class="chips"><span>Doctrina / opinión</span><span>Dogma / disciplina</span><span>Objeto / intención / circunstancias</span><span>Gravedad / culpabilidad</span><span>Norma / prudencia</span><span>Enseñanza / consejo</span></div>
+  </section>
+
+  <section class="fontes">
+    <h2 class="panel-title">Fuentes principales</h2><div class="rule"></div>
+    <div class="chips"><span>Biblia</span><span>Vaticano I y II</span><span>Trento</span><span>Catecismo</span><span>Denzinger</span><span>Encíclicas</span><span>Padres</span><span>Suma Teológica</span><span>Bioética</span></div>
+  </section>
+
+  <section class="queries">
+    <h2 class="panel-title">Preguntas para orientarte</h2><div class="rule"></div>
+    <ul>
+      <li>¿Cómo influyen presión, miedo o ignorancia?</li><li>Diferencia pecado objetivamente grave y culpabilidad subjetiva.</li><li>¿Qué distingue una doctrina definida de una disciplina eclesiástica?</li><li>¿Cómo se aplica la norma a casos complejos con prudencia pastoral?</li><li>¿Qué enseña el Catecismo sobre un tema de bioética actual?</li><li>¿Cuál es la autoridad de una encíclica frente a una constitución conciliar?</li>
+    </ul>
+  </section>
+
+  <section class="cta">
+    <div class="cta-title">Doctrina · <b>y</b> · Moral</div>
+    <div class="cta-note">Compendio doctrinal y moral con rigor, jerarquía de fuentes y prudencia.</div>
+    <a href="https://notebooklm.google.com/notebook/19bebd87-7c07-46c7-8e44-78c8b84a0d8e"><span>Abrir compendio ↗</span></a>
+  </section>
+</main>
+</body>
+</html>

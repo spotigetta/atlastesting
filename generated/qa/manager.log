@@ -1,0 +1,3 @@
+Atlas:  http://127.0.0.1:8768
+Gestor: http://127.0.0.1:8768/gestor/
+El catálogo no se reconstruye al iniciar. Usa el botón «Actualizar Atlas» del Gestor.

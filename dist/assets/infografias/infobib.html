@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>BibliotecarIA — Infografía promocional</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,600&display=swap');
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#183226}
+  body{display:flex;justify-content:center;align-items:flex-start}
+  .slide-container{position:relative;width:1080px;height:1440px;overflow:hidden;padding:66px 72px 56px;color:#25342d;
+    font-family:'DM Sans',sans-serif;background:
+      radial-gradient(circle at 90% 5%,#c88b4d24,transparent 24%),
+      repeating-linear-gradient(0deg,transparent 0 35px,#9b74400c 35px 36px),#fbf5e7}
+  .slide-container::before{content:"";position:absolute;inset:22px;border:14px solid #123520;pointer-events:none}
+  .slide-container::after{content:"";position:absolute;inset:42px;border:2px solid #c9a976;pointer-events:none}
+  .inner{position:relative;z-index:2;height:100%}
+  header{position:absolute;left:0;top:0;width:100%;height:190px;border-bottom:2px solid #123520;padding-right:140px}
+  .kicker{font-size:14px;font-weight:700;letter-spacing:4px;text-transform:uppercase;color:#8b1934}
+  h1{margin:4px 0 2px;font:800 76px/.95 'Playfair Display';color:#123520;letter-spacing:-2px}
+  header p{margin:8px 0 0;font:italic 600 25px/1.25 'Playfair Display';color:#8b1934}
+  .catalog-mark{position:absolute;right:0;top:0;width:112px;height:132px;padding:14px 10px;background:#8b1934;color:#fff6df;text-align:center;box-shadow:7px 7px 0 #c9a976}
+  .catalog-mark b{display:block;font:800 48px/1 'Playfair Display'}
+  .catalog-mark span{font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase}
+
+  .lead{position:absolute;left:0;top:210px;width:100%;height:112px;margin:0;padding:17px 22px;background:#fffdf7;border-left:8px solid #c28b42;
+    font:500 20px/1.42 'DM Sans';box-shadow:0 5px 16px #17332712}
+  .lead b{color:#123520}
+
+  .actions{position:absolute;left:0;top:344px;width:100%;height:112px;display:grid;grid-template-columns:repeat(5,1fr);gap:10px}
+  .action{padding:13px 10px;background:#123520;color:#f7edd8;text-align:center;font-size:16px;line-height:1.15;border-top:5px solid #c9a976}
+  .action b{display:block;margin-bottom:6px;font:700 24px 'Playfair Display';color:#e1b678}
+
+  .questions-card{position:absolute;left:0;top:484px;width:100%;height:300px;padding:22px 26px;background:#fffdf8;border:2px dashed #b38d65;box-shadow:7px 7px 0 #e2d4ba}
+  .questions-card::before{content:"PREGUNTAS AL TUTOR";position:absolute;right:24px;top:-17px;padding:6px 14px;background:#8b1934;color:#fff;font-size:12px;font-weight:700;letter-spacing:2px}
+  h2{margin:0 0 13px;font:700 28px/1 'Playfair Display';color:#123520}
+  .questions{margin:0;padding:0;list-style:none;columns:2;column-gap:36px}
+  .questions li{position:relative;break-inside:avoid;margin:0 0 9px;padding:0 0 8px 24px;border-bottom:1px solid #d9c7a9;font:500 17px/1.25 'DM Sans';color:#343b37}
+  .questions li::before{content:"“";position:absolute;left:0;top:-7px;font:800 32px 'Playfair Display';color:#8b1934}
+
+  .journey{position:absolute;left:0;top:812px;width:100%;height:136px;padding:18px 24px 14px;background:#ede3cf;border:1px solid #c9a976}
+  .journey h2{font-size:24px;margin-bottom:20px}
+  .timeline{position:relative;display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+  .timeline::before{content:"";position:absolute;left:52px;right:52px;top:8px;height:3px;background:#8b1934}
+  .era{position:relative;padding-top:22px;text-align:center;font-size:14px;font-weight:700;line-height:1.1;color:#123520}
+  .era::before{content:"";position:absolute;left:50%;top:0;transform:translateX(-50%);width:18px;height:18px;border:3px solid #8b1934;border-radius:50%;background:#fbf5e7}
+
+  .shelf-card{position:absolute;left:0;top:976px;width:100%;height:258px;padding:16px 25px 18px;background:#efe3cb;border:1px solid #c9a976}
+  .shelf-card h2{text-align:center;font-size:23px;margin-bottom:5px}
+  .shelf-card .small{text-align:center;margin:0 0 8px;color:#75583e;font-size:13px;font-weight:600;letter-spacing:1px;text-transform:uppercase}
+  .shelf{position:relative;height:158px;display:flex;justify-content:center;align-items:flex-end;padding:0 4px 10px;border-bottom:11px solid #5b3a20;box-shadow:0 5px 0 #b18a59}
+  .book{width:38px;margin:0 2px;padding:7px 4px;display:flex;justify-content:center;align-items:center;border-radius:3px 3px 0 0;color:#fff5df;box-shadow:inset 3px 0 #ffffff18,inset -3px 0 #00000026;font-size:10px;font-weight:700;line-height:1.05;text-align:center;writing-mode:vertical-rl;transform:rotate(180deg)}
+  .green{background:#1c4a34}.wine{background:#76223a}.blue{background:#263e57}.brown{background:#624329}.gold{background:#b27b28;color:#18271f}
+
+  .cta{position:absolute;left:0;bottom:0;width:100%;height:76px;display:flex;align-items:center;justify-content:space-between;padding:0 18px 0 26px;background:#123520;color:#f7edd8;text-decoration:none;box-shadow:7px 7px 0 #8b1934}
+  .cta span{font:italic 700 21px 'Playfair Display'}
+  .cta b{padding:12px 20px;background:#8b1934;color:#fff;font-size:15px;letter-spacing:2px;text-transform:uppercase}
+</style>
+</head>
+<body>
+<main class="slide-container">
+  <div class="inner">
+    <header>
+      <div class="kicker">Cuaderno especializado de NotebookLM</div>
+      <h1>BibliotecarIA</h1>
+      <p>Una guía culta y acogedora para orientarse en la literatura universal.</p>
+      <div class="catalog-mark"><b>B</b><span>Catálogo<br>universal</span></div>
+    </header>
+
+    <p class="lead"><b>Descubre autores y obras, comprende su contexto histórico-cultural y diseña planes de lectura.</b> El cuaderno relaciona épocas, géneros, países y grandes temas desde la Antigüedad clásica hasta el siglo XX.</p>
+
+    <section class="actions">
+      <div class="action"><b>I</b>Descubrir qué leer</div>
+      <div class="action"><b>II</b>Conocer el contexto</div>
+      <div class="action"><b>III</b>Comparar épocas</div>
+      <div class="action"><b>IV</b>Diseñar itinerarios</div>
+      <div class="action"><b>V</b>Buscar por tema</div>
+    </section>
+
+    <section class="questions-card">
+      <h2>Preguntas para empezar</h2>
+      <ul class="questions">
+        <li>¿Por dónde debería empezar a leer a Dostoievski?</li>
+        <li>Compara lo fantástico en Dante, Hoffmann, Poe, Chesterton y Kafka.</li>
+        <li>Diseña un itinerario de doce obras sobre la evolución del héroe desde Homero hasta el siglo XX.</li>
+        <li>Diseña diez novelas para conocer el siglo XIX.</li>
+        <li>¿Qué debería leer después de Jane Austen?</li>
+        <li>Explícame el contexto de <i>La divina comedia</i>.</li>
+        <li>Recomiéndame clásicos breves para recuperar el hábito lector.</li>
+      </ul>
+    </section>
+
+    <section class="journey">
+      <h2>Recorrido literario</h2>
+      <div class="timeline">
+        <div class="era">Antigüedad</div><div class="era">Edad<br>Media</div><div class="era">Renacimiento<br>y Barroco</div><div class="era">Ilustración</div><div class="era">Romanticismo</div><div class="era">Realismo</div><div class="era">Siglo XX</div>
+      </div>
+    </section>
+
+    <section class="shelf-card">
+      <h2>Colección literaria integrada</h2>
+      <p class="small">19 autores destacados · una biblioteca que relaciona obras y épocas</p>
+      <div class="shelf">
+        <div class="book green" style="height:90px">Homero · Ilíada</div><div class="book green" style="height:94px">Homero · Odisea</div><div class="book blue" style="height:84px">Sófocles · Antígona</div><div class="book brown" style="height:90px">Virgilio · Eneida</div><div class="book wine" style="height:99px">Dante · Comedia</div><div class="book gold" style="height:96px">Cervantes · Quijote</div><div class="book brown" style="height:92px">Shakespeare · Hamlet</div><div class="book green" style="height:88px">Calderón · La vida</div><div class="book blue" style="height:82px">Molière · Avaro</div><div class="book wine" style="height:95px">Goethe · Fausto</div>
+        <div class="book gold" style="height:88px">Austen · Orgullo</div><div class="book blue" style="height:92px">Dickens · Esperanzas</div><div class="book green" style="height:99px">Dostoievski · Crimen</div><div class="book green" style="height:102px">Tolstói · Guerra</div><div class="book brown" style="height:84px">Poe · Cuentos</div><div class="book wine" style="height:88px">Stevenson · Isla</div><div class="book gold" style="height:93px">Chesterton · Ortodoxia</div><div class="book blue" style="height:96px">Conan Doyle · Holmes</div><div class="book brown" style="height:85px">Unamuno · Niebla</div>
+      </div>
+    </section>
+
+    <a class="cta" href="https://notebooklm.google.com/notebook/ac9ab2ee-6d04-4a21-b48b-6fe530eb3250"><span>Respuestas basadas en las fuentes incorporadas</span><b>Abrir BibliotecarIA ↗</b></a>
+  </div>
+</main>
+</body>
+</html>

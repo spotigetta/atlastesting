@@ -1,0 +1,110 @@
+{
+  "currentVersion": "5.3.2",
+  "updatedAt": "2026-08-07",
+  "entries": [
+    {
+      "version": "5.3.2",
+      "date": "2026-08-07",
+      "title": "Infografías completas y proporcionadas",
+      "changes": [
+        "El visor mide el lienzo editorial real antes de aplicar la escala",
+        "Preparador de círculos, OrtodoxIA, HistorIA y Doctrina dejan de abrirse estrechas o recortadas",
+        "El mismo ajuste protege automáticamente el resto de infografías, tanto cuadradas como verticales"
+      ]
+    },
+    {
+      "version": "5.3.1",
+      "date": "2026-08-07",
+      "title": "Actualización fiable y personalización visible",
+      "changes": [
+        "El modo local elimina el Service Worker antiguo y sirve siempre los archivos actuales",
+        "El botón Actualizar Atlas distingue el Gestor local de GitHub Pages",
+        "El manifiesto de construcción responde también desde el servidor local",
+        "El examen puede subirse o bajarse directamente al personalizar Inicio",
+        "Retrato móvil de san Josemaría más grande y presente",
+        "Nuevos controles de ambiente, profundidad, movimiento y color personal"
+      ]
+    },
+    {
+      "version": "5.3.0",
+      "date": "2026-08-06",
+      "title": "Examen contextual, bibliotecas personales y proveedores vivos",
+      "changes": [
+        "Citas de las normas vinculadas por capítulo, punto o expresión temática específica",
+        "Vista semanal y mensual global con domingos y festividades",
+        "Informe privado para la Charla fraterna",
+        "Preparadora de círculos desbloqueable con guía visual obligatoria",
+        "Orden, fijación, color, etiqueta y visibilidad personal de las IA",
+        "Búsqueda literal verificada dentro de cada Markdown",
+        "Música distribuida entre nueve artistas e Instagram con publicaciones concretas",
+        "Paletas, acabados y familias tipográficas ampliadas"
+      ]
+    },
+    {
+      "version": "3.9.0",
+      "date": "2026-07-30",
+      "title": "Música compatible, aurora fluida e infografías compuestas",
+      "changes": [
+        "Música funciona también con servidores anteriores mediante reserva estática automática",
+        "Foco luminoso interpolado continuamente en posición, escala y color",
+        "Seis composiciones oscuras distintas para los Shorts",
+        "Vídeos y canciones insertados en orden aleatorio real",
+        "Nueve resúmenes temáticos para el tutorial",
+        "Apertura cinematográfica y a pantalla completa de cada infografía"
+      ]
+    },
+    {
+      "version": "3.8.0",
+      "date": "2026-07-30",
+      "title": "Guías visuales, música y movimiento",
+      "changes": [
+        "Galería visible con resúmenes e infografías completas de las nueve IA",
+        "Tutorial ampliado con progreso, animaciones y carga directa de infografías",
+        "Autores y obras corregidos en las frases de la colección literaria",
+        "Vídeos y canciones barajados con una mezcla nueva en cada actualización",
+        "Actualización musical en segundo plano para los nueve canales",
+        "Transiciones fluidas entre Shorts y ventanas"
+      ]
+    },
+    {
+      "version": "3.7.0",
+      "date": "2026-07-30",
+      "title": "Atlas visual, musical y editorial",
+      "changes": [
+        "Corpus ampliado y filtro editorial auditable de frases",
+        "Explicación resumida de cada IA e infografías completas en el tutorial",
+        "Más canales dinámicos y colección de reserva activable",
+        "Shorts más fluidos con transiciones de luz y movimiento",
+        "Novedades de San Pablo, EUNSA, Encuentro y Alianza",
+        "Explorar dividido en tres paneles claros",
+        "Nueva sección musical y música integrada en Shorts"
+      ]
+    },
+    {
+      "version": "2.1.0",
+      "date": "2026-07-28",
+      "title": "Búsqueda y exploración ampliadas",
+      "changes": [
+        "Búsqueda dentro del texto documental",
+        "Panel de compartir mejorado",
+        "Mapa interactivo de nodos",
+        "Doce estadísticas por biblioteca",
+        "Corrección de la navegación de bibliotecas",
+        "Documentación completa"
+      ]
+    },
+    {
+      "version": "2.0.0",
+      "date": "2026-07-28",
+      "title": "Nueva arquitectura de Atlas",
+      "changes": [
+        "Diseño móvil primero",
+        "PWA y funcionamiento sin conexión",
+        "Biblioteca visual y estadísticas",
+        "Shorts verificados",
+        "Colecciones, rutas y guardados",
+        "Generador de datos validado"
+      ]
+    }
+  ]
+}

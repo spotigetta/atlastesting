@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>San JosemarIA</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500;1,9..144,700&family=Nunito+Sans:wght@500;600;700;800;900&display=swap');
+
+  *{box-sizing:border-box}
+  html,body{margin:0;background:#f06f59}
+  body{display:grid;place-items:start center}
+
+  .slide-container{
+    position:relative;
+    width:1440px;
+    height:1500px;
+    overflow:hidden;
+    color:#30423b;
+    font-family:'Nunito Sans',sans-serif;
+    background:
+      radial-gradient(circle at 101% -1%, #73bfa380 0 230px, transparent 231px),
+      radial-gradient(circle at -2% 91%, #f4bd4590 0 150px, transparent 151px),
+      linear-gradient(180deg, #fff8e9 0%, #fbecc4 34%, #fff8e9 72%, #fbecc4 100%);
+  }
+
+  .door,.door2{position:absolute;z-index:0;pointer-events:none;border-radius:50%}
+  .door{right:-38px;top:-38px;width:320px;height:320px;background:#73bfa3}
+  .door2{left:-38px;bottom:64px;width:230px;height:230px;background:#f4bd45}
+
+  .head{
+    position:absolute;
+    left:80px;
+    top:58px;
+    z-index:10;
+    display:flex;
+    align-items:center;
+    gap:34px;
+    width:1280px;
+    height:286px;
+  }
+  .head-text{flex:1;text-align:left}
+  .eyebrow{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:12px;
+    color:#ef6f58;
+    font:800 18px 'Nunito Sans';
+    letter-spacing:5px;
+    text-transform:uppercase;
+  }
+  .eyebrow::before{content:"";width:60px;height:3px;background:#ef6f58}
+  .eyebrow b{color:#30423b}
+  h1{
+    margin:0;
+    color:#30423b;
+    font:italic 700 120px/.82 'Fraunces';
+    letter-spacing:-2px;
+  }
+  h1 .alt{color:#ef6f58;font:italic 500 86px/.82 'Fraunces'}
+  .subtitle{
+    max-width:860px;
+    margin-top:14px;
+    color:#ef6f58;
+    font:italic 500 31px/1.23 'Fraunces';
+  }
+  .subtitle b{color:#30423b;font-weight:700;font-style:normal}
+
+  .portrait-frame{position:relative;z-index:10;flex:0 0 300px;width:300px;height:300px}
+  .portrait-card{
+    position:absolute;
+    inset:0;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:16px;
+    text-align:center;
+    background:#fff;
+    border:4px solid #30423b;
+    border-radius:50% 50% 14px 14px;
+    box-shadow:8px 8px 0 #ef6f58;
+  }
+  /* Reemplaza desde la definición de .oval hasta el final de .oval::after */
+  .oval{
+    position:relative;
+    width:185px;
+    height:205px;
+    border:3px dashed #ef6f58;
+    border-radius:50% 50% 45% 45%/55% 55% 45% 45%;
+    overflow:hidden; /* Corta la imagen con la forma del óvalo */
+  }
+  .oval img{
+    width:100%;
+    height:100%;
+    object-fit:cover; /* Ajusta la imagen sin deformarla */
+  }
+  
+  .label{margin-top:12px;color:#ef6f58;font:800 12px 'Nunito Sans';letter-spacing:4px;text-transform:uppercase}
+  .label b{color:#30423b}
+  .year{margin-top:2px;color:#30423b;font:italic 700 20px 'Fraunces'}
+  .tape,.tape2{
+    position:absolute;
+    z-index:12;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:30px;
+    border:2px solid #30423b;
+    font:900 11px 'Nunito Sans';
+    letter-spacing:3px;
+    text-transform:uppercase;
+  }
+  .tape{top:-12px;left:40px;width:142px;background:#f4bd45;color:#30423b;transform:rotate(-6deg)}
+  .tape2{right:30px;bottom:-12px;width:130px;background:#ef6f58;color:#fff;transform:rotate(8deg)}
+
+  .lead{
+    position:absolute;
+    left:80px;
+    top:375px;
+    z-index:10;
+    width:1280px;
+    height:150px;
+    padding:24px 34px;
+    background:#fff;
+    border:3px solid #30423b;
+    border-left:14px solid #ef6f58;
+    box-shadow:8px 8px 0 #f4bd45;
+    transform:rotate(-.35deg);
+  }
+  .lead::before{content:"“";position:absolute;left:18px;top:-15px;color:#ef6f58;font:700 92px 'Fraunces';line-height:1}
+  .lead p{max-width:1130px;margin:0 0 0 64px;color:#30423b;font:italic 500 28px/1.28 'Fraunces'}
+  .lead p b{color:#ef6f58;font-weight:700;font-style:normal}
+  .tag{position:absolute;right:20px;bottom:8px;color:#ef6f58;font:900 13px 'Nunito Sans';letter-spacing:4px;text-transform:uppercase}
+
+  .journey{
+    position:absolute;
+    left:80px;
+    top:555px;
+    z-index:10;
+    width:1280px;
+    height:112px;
+    padding:20px 28px;
+    background:#73bfa3;
+    border:3px solid #30423b;
+    box-shadow:8px 8px 0 #ef6f58;
+    transform:rotate(.35deg);
+  }
+  .journey::before{
+    content:"EL CAMINO";
+    position:absolute;
+    left:-3px;
+    top:-26px;
+    padding:6px 16px;
+    background:#f4bd45;
+    border:2px solid #30423b;
+    color:#30423b;
+    font:900 12px 'Nunito Sans';
+    letter-spacing:5px;
+  }
+  .pills{display:flex;align-items:center;justify-content:space-between;gap:6px}
+  .pill{
+    flex:1;
+    padding:13px 8px;
+    text-align:center;
+    background:#fff8e9;
+    border:2px solid #30423b;
+    border-radius:50% 40% 60% 50%/40% 50% 50% 60%;
+    color:#153128;
+    font:900 20px/1.05 'Nunito Sans';
+  }
+  .pill:nth-child(even){background:#f4bd45}
+  .arr{flex-shrink:0;color:#153128;font:900 28px 'Nunito Sans'}
+
+  .left-col,.right-col{position:absolute;top:710px;z-index:10;height:350px}
+  .left-col{left:80px;width:625px;display:flex;flex-direction:column;gap:16px}
+  .right-col{left:735px;width:625px}
+
+  .aclar{
+    position:relative;
+    padding:24px 28px;
+    background:#fff;
+    border:3px solid #30423b;
+    border-left:14px solid #ef6f58;
+    box-shadow:6px 6px 0 #f4bd45;
+    transform:rotate(-.4deg);
+  }
+  .aclar::before{
+    content:"ACLARACION";
+    position:absolute;
+    left:-3px;
+    top:-22px;
+    padding:5px 14px;
+    background:#ef6f58;
+    color:#fff;
+    font:900 10px 'Nunito Sans';
+    letter-spacing:4px;
+  }
+  .aclar b{display:block;margin-bottom:7px;color:#ef6f58;font:800 25px 'Fraunces'}
+  .aclar p{margin:0;color:#30423b;font:700 22px/1.25 'Nunito Sans'}
+  .aclar p b{display:inline;margin:0;color:#ef6f58;font:900 22px/1.25 'Nunito Sans'}
+
+  .concepts{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;height:170px;transform:rotate(.4deg)}
+  .concept{
+    position:relative;
+    display:flex;
+    align-items:flex-end;
+    padding:14px;
+    background:#fff8e9;
+    border:2px solid #30423b;
+    color:#30423b;
+    font:700 24px/1.08 'Fraunces';
+  }
+  .concept::after{content:"";position:absolute;left:8px;top:8px;width:8px;height:8px;background:#ef6f58;border-radius:50%}
+  .concept:nth-child(1){background:#73bfa344}
+  .concept:nth-child(2){background:#f4bd4555}
+  .concept:nth-child(3){background:#ef6f5833}
+  .concept:nth-child(4){background:#fff}
+
+  .plan-card{
+    height:100%;
+    padding:24px 26px;
+    background:#30423b;
+    border:3px solid #ef6f58;
+    box-shadow:8px 8px 0 #153128;
+    color:#fff8e9;
+    transform:rotate(.4deg);
+  }
+  .plan-card h3{margin:0 0 4px;color:#f4bd45;font:italic 700 34px/1 'Fraunces';letter-spacing:1px}
+  .sub{margin-bottom:12px;color:#73bfa3;font:800 16px 'Nunito Sans';letter-spacing:2px;text-transform:uppercase}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .src{padding:12px 14px;background:#fff8e9;color:#30423b;border-radius:50% 0 50% 0/30% 0 30% 50%}
+  .src b{display:block;margin-bottom:4px;color:#ef6f58;font:900 16px 'Nunito Sans';letter-spacing:1px;text-transform:uppercase}
+  .src span{display:block;color:#30423b;font:700 18px/1.18 'Nunito Sans'}
+  .note{margin-top:12px;padding:10px 14px;background:#ef6f58;color:#fff;text-align:center;font:italic 500 19px/1.2 'Fraunces'}
+
+  .queries{
+    position:absolute;
+    left:80px;
+    top:1170px;
+    z-index:10;
+    width:1280px;
+    height:198px;
+    padding:18px 38px;
+    background:#fff8e9;
+    border:4px solid #30423b;
+    box-shadow:8px 8px 0 #f4bd45;
+  }
+  .queries::before{
+    content:"HABLALE DE TU VIDA";
+    position:absolute;
+    left:-4px;
+    top:-30px;
+    padding:8px 18px;
+    background:#73bfa3;
+    border:3px solid #30423b;
+    color:#153128;
+    font:900 12px 'Nunito Sans';
+    letter-spacing:5px;
+  }
+  .queries h3{margin:0 0 4px;color:#30423b;text-align:center;font:italic 700 34px/1 'Fraunces';letter-spacing:1px}
+  .subline{width:30%;height:3px;margin:0 auto 7px;background:#ef6f58}
+  .queries ul{columns:2;column-gap:32px;list-style:none;margin:0;padding:0}
+  .queries li{position:relative;break-inside:avoid;padding:5px 0 5px 32px;border-bottom:1px solid #73bfa366;color:#30423b;font:800 20px/1.12 'Nunito Sans'}
+  .queries li::before{content:"·";position:absolute;left:14px;top:2px;color:#ef6f58;font:800 34px/1 'Fraunces'}
+
+  .cta{
+    position:absolute;
+    left:80px;
+    top:1380px;
+    z-index:10;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    width:1280px;
+    height:80px;
+    padding:0 32px;
+    background:linear-gradient(90deg,#30423b 0%,#ef6f58 50%,#30423b 100%);
+    border:3px solid #30423b;
+    box-shadow:8px 8px 0 #f4bd45;
+    color:#fff8e9;
+  }
+  .cta .l{flex:1;color:#f4bd45;font:italic 700 44px/1 'Fraunces';letter-spacing:1px}
+  .cta .l b{color:#fff;font-style:normal}
+  .cta .m{flex:1.15;max-width:560px;color:#fff;text-align:center;font:800 17px/1.25 'Nunito Sans'}
+  .cta a{
+    display:block;
+    padding:12px 26px;
+    background:#f4bd45;
+    border:3px solid #fff;
+    color:#30423b;
+    text-decoration:none;
+    font:900 15px 'Nunito Sans';
+    letter-spacing:4px;
+    text-transform:uppercase;
+  }
+  .cta a b{display:block;margin-bottom:2px;color:#30423b;font:italic 800 24px/1.05 'Fraunces';letter-spacing:1px;text-transform:none}
+</style>
+</head>
+<body>
+  <div class="slide-container">
+    <div class="door"></div>
+    <div class="door2"></div>
+
+    <div class="head" data-object="true" data-object-type="textbox">
+      <div class="head-text">
+        <div class="eyebrow">Vida Ordinaria · Cuaderno NotebookLM · <b>San Josemaría</b></div>
+        <h1>San<br>Josem<i class="alt">ar</i>IA</h1>
+        <div class="subtitle">Una conversación inspirada en sus <b>escritos</b>, <b>homilías</b> y <b>encuentros</b>: con tono humano, paternal y esperanzado.</div>
+      </div>
+      <div class="portrait-frame" data-object="true" data-object-type="image">
+        <div class="tape">Vida ordinaria</div>
+        <div class="tape2">San Josemaría</div>
+        <div class="portrait-card">
+          <div class="oval">
+            <img src="portadaSanJosemarIA.png" alt="Portada San Josemaría">
+          </div>
+          <div class="label"><b>Fundador</b> · Opus Dei</div>
+          <div class="year">1902 - 1975</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lead" data-object="true" data-object-type="textbox">
+      <p>Un cuaderno conversacional que busca responder con <b>tono humano, paternal y esperanzado</b>: ayudarte a descubrir a Dios en la vida ordinaria, en el trabajo bien hecho, la familia y la amistad.</p>
+      <div class="tag">de corazón a corazón</div>
+    </div>
+
+    <div class="journey" data-object="true" data-object-type="textbox">
+      <div class="pills">
+        <div class="pill">Escucha</div>
+        <div class="arr">→</div>
+        <div class="pill">Comprende</div>
+        <div class="arr">→</div>
+        <div class="pill">Anima</div>
+        <div class="arr">→</div>
+        <div class="pill">Ilumina</div>
+        <div class="arr">→</div>
+        <div class="pill">Propone</div>
+        <div class="arr">→</div>
+        <div class="pill">Ayuda a<br>recomenzar</div>
+      </div>
+    </div>
+
+    <div class="left-col">
+      <div class="aclar" data-object="true" data-object-type="textbox">
+        <b>Una aclaración importante</b>
+        <p>No es san Josemaría ni lo representa. Es una herramienta basada en sus fuentes que intenta conservar un espíritu de <b>cercanía, libertad, filiación divina</b> y <b>santificación de la vida cotidiana</b>.</p>
+      </div>
+      <div class="concepts" data-object="true" data-object-type="textbox">
+        <div class="concept">Dios<br>es Padre</div>
+        <div class="concept">Santidad<br>en lo ordinario</div>
+        <div class="concept">Filiación<br>divina</div>
+        <div class="concept">Libertad</div>
+        <div class="concept">Trabajo<br>bien hecho</div>
+        <div class="concept">Amistad<br>y apostolado</div>
+      </div>
+    </div>
+
+    <div class="right-col">
+      <div class="plan-card" data-object="true" data-object-type="textbox">
+        <h3>Fuentes con una función</h3>
+        <div class="sub">Escritos y palabra</div>
+        <div class="grid2">
+          <div class="src"><b>Tertulias</b><span>Cercanía y consejo.</span></div>
+          <div class="src"><b>Homilías</b><span>Profundidad teológica.</span></div>
+          <div class="src"><b>Cartas</b><span>Libertad y misión.</span></div>
+          <div class="src"><b>Meditaciones</b><span>Oración y trato con Cristo.</span></div>
+          <div class="src"><b>Camino · Surco · Forja</b><span>Impulsos para la lucha.</span></div>
+          <div class="src"><b>Otros escritos</b><span>Contemplación y devoción.</span></div>
+        </div>
+        <div class="note">Con espíritu de filiación divina y libertad</div>
+      </div>
+    </div>
+
+    <div class="queries" data-object="true" data-object-type="textbox">
+      <h3>Háblale de tu vida</h3>
+      <div class="subline"></div>
+      <ul>
+        <li>¿Cómo recomenzar tras volver a caer?</li>
+        <li>¿Cómo encontrar a Dios en lo rutinario?</li>
+        <li>Me distraigo al rezar.</li>
+        <li>¿Cómo corregir sin herir?</li>
+        <li>¿Qué es vivir como hijo de Dios?</li>
+        <li>¿Cómo compaginar trabajo, familia y oración?</li>
+      </ul>
+    </div>
+
+    <div class="cta" data-object="true" data-object-type="textbox">
+      <div class="l">San Josem<i>ar</i>IA</div>
+      <div class="m">Un cuaderno conversacional inspirado en los escritos y palabra de san Josemaría</div>
+      <div class="r">
+        <a href="https://notebooklm.google.com/notebook/19bebd87-7c07-46c7-8e44-78c8b84a0d8e">
+          <b>Conversar ↗</b>
+          con él
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

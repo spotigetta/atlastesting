@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CanonIA</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=EB+Garamond:wght@500;600;700&family=Roboto+Mono:wght@500;700&display=swap');
+
+    @page { size: 210mm 250mm; margin: 0; }
+    * { box-sizing: border-box; }
+    
+    html, body {
+      margin: 0;
+      background: #102b4e;
+      font-family: 'Crimson Text', serif;
+      color: #102b4e;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .page {
+      width: 210mm;
+      height: 250mm;
+      background: #fcfaf2;
+      position: relative;
+      padding: 8mm 12mm;
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      border: 2mm solid #102b4e;
+      box-shadow: 0 0 0 4mm #102b4e, 0 0 0 6mm #d4af37;
+    }
+
+    /* Sello de cera simulado */
+    .page::after {
+      content: "CIC";
+      position: absolute;
+      top: 10mm;
+      right: 12mm;
+      width: 18mm;
+      height: 18mm;
+      background: radial-gradient(circle, #b81726, #9b111e);
+      border-radius: 50%;
+      color: #fcfaf2;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 8pt;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      border: 1px solid #7a0c16;
+    }
+
+    header {
+      border-bottom: 3px double #102b4e;
+      padding-bottom: 2mm;
+      margin-bottom: 3mm;
+      padding-right: 20mm;
+    }
+
+    .subtitle {
+      font-family: 'Roboto Mono', monospace;
+      font-size: 10pt;
+      font-weight: 700;
+      color: #9b111e;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 2mm;
+    }
+
+    h1 {
+      font-size: 42pt;
+      font-weight: 700;
+      margin: 0 0 2mm;
+      color: #102b4e;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+
+    header p {
+      font-size: 14.5pt;
+      margin: 0;
+      font-style: italic;
+      color: #102b4e;
+    }
+
+    .lead {
+      font-size: 13pt;
+      line-height: 1.25;
+      font-weight: 600;
+      padding: 2mm 3mm;
+      background: rgba(212, 175, 55, 0.15);
+      border-left: 4px solid #d4af37;
+      margin-bottom: 3mm;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: .72fr 1.55fr;
+      gap: 4mm;
+      margin-bottom: 3mm;
+    }
+
+    h2 {
+      font-size: 16pt;
+      color: #9b111e;
+      margin: 0 0 3mm;
+      font-weight: 700;
+      border-bottom: 1px solid #102b4e;
+      display: inline-block;
+      padding-right: 5mm;
+    }
+
+    .dist {
+      display: flex;
+      flex-direction: column;
+      gap: .7mm;
+    }
+
+    .pair {
+      font-size: 9.8pt;
+      background: #fff;
+      border: 1px solid #102b4e;
+      padding: .6mm 1.6mm;
+      line-height: 1.12;
+    }
+
+    .pair b {
+      display: block;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 7.4pt;
+      color: #9b111e;
+      text-transform: uppercase;
+      margin-bottom: .4mm;
+    }
+
+    .ladder {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .law {
+      font-size: 11.5pt;
+      padding: 1.5mm 0;
+      border-bottom: 1px dotted #102b4e;
+      display: flex;
+    }
+
+    .law::before {
+      content: "§ ";
+      color: #d4af37;
+      font-family: 'Roboto Mono', monospace;
+      font-weight: 700;
+      margin-right: 2mm;
+    }
+
+    .marriage {
+      grid-column: 1 / -1;
+      background: #102b4e;
+      color: #fcfaf2;
+      padding: 2.2mm 4mm;
+      font-size: 11.5pt;
+      border: 2px solid #d4af37;
+      margin-bottom: 2mm;
+    }
+
+    .sources-title {
+      font-family: 'Cinzel', serif;
+      font-size: 12pt;
+      color: #1e2430;
+      text-align: center;
+      margin: 0 0 2mm;
+      letter-spacing: 1.4px;
+      text-transform: uppercase;
+      line-height: 1.15;
+    }
+
+    .sources-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0,1fr));
+      gap: .9mm 3mm;
+      font-size: 9.5pt;
+      font-family: 'EB Garamond', serif;
+      line-height: 1.12;
+    }
+
+    .sources-grid > div {
+      padding: 0 0 .6mm 3mm;
+      border-bottom: 1px dotted #8d98a8;
+      position: relative;
+    }
+
+    .sources-grid > div::before {
+      content: "§";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #b08a23;
+      font-weight: 700;
+    }
+
+    .juris-tag {
+      display: inline-block;
+      margin-left: 1.2mm;
+      padding: .25mm 1.1mm;
+      border-radius: 2mm;
+      font: 700 6.5pt 'Roboto Mono', monospace;
+      letter-spacing: .2px;
+      text-transform: uppercase;
+      vertical-align: 1px;
+      white-space: nowrap;
+    }
+
+    .tag-vigente { background:#dce9df; color:#1f5d39; border:1px solid #77a186; }
+    .tag-historico { background:#eee5da; color:#754b2b; border:1px solid #b89a7a; }
+    .tag-procesal { background:#e2e7f2; color:#304d78; border:1px solid #8ba0c2; }
+    .tag-interpretativo { background:#f3e5c2; color:#76570e; border:1px solid #c3a34e; }
+
+    .marriage b {
+      color: #d4af37;
+      font-size: 13pt;
+      text-transform: uppercase;
+      font-family: 'Roboto Mono', monospace;
+      letter-spacing: 1px;
+    }
+
+    .questions-box {
+      border: 2px solid #102b4e;
+      padding: 2.5mm;
+      background: #fff;
+    }
+    
+    .questions-box h2 {
+      border-bottom: none;
+      margin-bottom: 2mm;
+    }
+
+    .questions {
+      columns: 2;
+      column-gap: 6mm;
+      margin: 0;
+      padding-left: 5mm;
+      font-size: 11.2pt;
+      line-height: 1.2;
+    }
+    
+    .questions li {
+      margin-bottom: 1mm;
+    }
+
+    .warning {
+      text-align: center;
+      font-family: 'Roboto Mono', monospace;
+      font-size: 9.8pt;
+      color: #9b111e;
+      font-weight: 700;
+      margin-top: 3mm;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 3px double #102b4e;
+      padding-top: 2mm;
+      font-size: 12pt;
+      font-style: italic;
+      margin-top: 2mm;
+    }
+
+    .cta {
+      background: #9b111e;
+      color: #fcfaf2;
+      text-decoration: none;
+      padding: 2mm 6mm;
+      font-family: 'Roboto Mono', monospace;
+      font-weight: 700;
+      font-size: 10pt;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-style: normal;
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <header>
+      <div class="subtitle">Cuaderno de NotebookLM</div>
+      <h1>CanonIA</h1>
+      <p>Consulta guiada del Derecho Canónico de la Iglesia</p>
+    </header>
+
+    <main>
+      <p class="lead">Legislación canónica, organización eclesiástica, sacramentos, matrimonio, procesos, vida consagrada, delitos y sanciones. Distingue normas vigentes, históricas e interpretaciones auténticas.</p>
+      
+      <div class="row">
+        <section>
+          <h2>Distinciones clave</h2>
+          <div class="dist">
+            <div class="pair"><b>No son lo mismo</b> Derecho y moral</div>
+            <div class="pair"><b>No son lo mismo</b> Validez y licitud</div>
+            <div class="pair"><b>No son lo mismo</b> Potestad y facultad</div>
+            <div class="pair"><b>No son lo mismo</b> Ley universal y derecho particular</div>
+            <div class="pair"><b>No son lo mismo</b> Fuero interno y fuero externo</div>
+            <div class="pair"><b>No son lo mismo</b> Norma vigente y legislación histórica</div>
+          </div>
+        </section>
+
+        <section>
+          <h3 class="sources-title">Fuentes Legislativas e Interpretativas de la Iglesia</h3>
+          <div class="sources-grid">
+            <div><strong>Código de Derecho Canónico (1983)</strong> <span class="juris-tag tag-vigente">Vigente</span></div>
+            <div><strong>Código de Iglesias Orientales (CCEO)</strong> <span class="juris-tag tag-vigente">Vigente</span></div>
+            <div><strong>Código de Derecho Canónico (1917)</strong> <span class="juris-tag tag-historico">Histórico</span></div>
+            <div><strong>Dignitas Connubii</strong> (Procesos matrimoniales) <span class="juris-tag tag-procesal">Procesal</span></div>
+            <div><strong>Mitis Iudex Dominus Iesus</strong> (Reforma) <span class="juris-tag tag-vigente">Vigente</span> <span class="juris-tag tag-procesal">Procesal</span></div>
+            <div><strong>Sacramentorum Sanctitatis Tutela</strong> <span class="juris-tag tag-vigente">Vigente</span> <span class="juris-tag tag-procesal">Procesal</span></div>
+            <div><strong>Pascite Gregem Dei</strong> (Derecho Penal) <span class="juris-tag tag-vigente">Vigente</span></div>
+            <div><strong>Vos Estis Lux Mundi</strong> <span class="juris-tag tag-vigente">Vigente</span></div>
+            <div><strong>Universi Dominici Gregis</strong> (Sede Vacante) <span class="juris-tag tag-vigente">Vigente</span></div>
+            <div><strong>Pastor Bonus</strong> (Curia Romana) <span class="juris-tag tag-historico">Histórico</span></div>
+            <div><strong>Praedicate Evangelium</strong> (Nueva Curia) <span class="juris-tag tag-vigente">Vigente</span></div>
+            <div><strong>Redemptionis Sacramentum</strong> <span class="juris-tag tag-vigente">Vigente</span> <span class="juris-tag tag-interpretativo">Interpr.</span></div>
+            <div><strong>Rulon. e Interpretaciones auténticas</strong> <span class="juris-tag tag-interpretativo">Interpr.</span></div>
+            <div><strong>Directorios y Normas de Vida Consagrada</strong> <span class="juris-tag tag-vigente">Vigente</span></div>
+          </div>
+        </section>
+      </div>
+
+      <div class="marriage">
+        <b>Un derecho para la vida de la Iglesia</b><br>
+        Fieles · sacramentos · parroquias · diócesis · asociaciones · enseñanza · vida consagrada · procesos · patrimonio · gobierno · delitos y sanciones.
+      </div>
+
+      <section class="questions-box">
+        <h2>Preguntas sugerentes</h2>
+        <ul class="questions">
+          <li>¿Qué derechos y deberes posee un fiel laico dentro de la Iglesia?</li>
+          <li>¿Quién tiene competencia en una diócesis?</li>
+          <li>¿Qué requisitos se exigen al padrino?</li>
+          <li>Analiza un posible caso de nulidad matrimonial.</li>
+          <li>¿Qué puede hacer un administrador diocesano?</li>
+          <li>¿Qué decisiones puede tomar un párroco y cuáles corresponden al obispo diocesano?</li>
+        </ul>
+        <div class="warning">Orienta y localiza normas; no sustituye a un canonista o tribunal.</div>
+      </section>
+    </main>
+
+    <footer>
+      <span>Respuestas basadas en fuentes incorporadas</span>
+      <a class="cta" href="https://notebooklm.google.com/notebook/d60e1d37-8407-499c-b079-8c37c28a1b21">Abrir CanonIA ↗</a>
+    </footer>
+  </article>
+</body>
+</html>
