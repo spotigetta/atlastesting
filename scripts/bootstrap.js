@@ -4,7 +4,8 @@
   const main = document.querySelector("#main");
 
   try {
-    const [catalog, external, quotes, youtube, music, instagram, channels, exam] = await Promise.all([
+    const [buildManifest, catalog, external, quotes, youtube, music, instagram, channels, exam] = await Promise.all([
+      runtime.fetchJson("build-manifest.json", { fresh: true }).catch(() => ({ version: "", buildId: "", local: true })),
       runtime.fetchJson("data/catalog.json"),
       runtime.fetchJson("data/external-content.json").catch(() => ({ generatedAt: "", items: [] })),
       runtime.fetchJson("data/quotes.json").catch(() => ({ generatedAt: "", items: [] })),
@@ -15,6 +16,7 @@
       runtime.fetchJson("data/examen.json").catch(() => ({ norms: [], helps: [], notifications: {}, sources: [] }))
     ]);
 
+    window.ATLAS_BUILD_MANIFEST = buildManifest;
     window.ATLAS_CATALOG = catalog;
     window.ATLAS_EXTERNAL = external;
     window.ATLAS_QUOTES = quotes;

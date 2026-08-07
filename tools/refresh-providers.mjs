@@ -55,7 +55,7 @@ async function getInstagramProfile(handle, timeout = 12000) {
 async function getMetaBusinessPosts(channel, timeout = 15000) {
   const accessToken=process.env.INSTAGRAM_ACCESS_TOKEN; const accountId=process.env.INSTAGRAM_BUSINESS_ACCOUNT_ID;
   if (!accessToken || !accountId) return [];
-  const fields=`business_discovery.username(${channel.handle}){media.limit(8){caption,media_url,permalink,timestamp,thumbnail_url}}`;
+  const fields=`business_discovery.username(${channel.handle}){media.limit(8){caption,media_type,media_url,permalink,timestamp,thumbnail_url}}`;
   const url=`https://graph.facebook.com/v21.0/${encodeURIComponent(accountId)}?fields=${encodeURIComponent(fields)}&access_token=${encodeURIComponent(accessToken)}`;
   const controller=new AbortController(); const timer=setTimeout(()=>controller.abort(),timeout);
   try {
@@ -65,7 +65,7 @@ async function getMetaBusinessPosts(channel, timeout = 15000) {
     return items.filter(item=>item.permalink).map(item=>({
       id:`instagram-${channel.handle}-${item.id}`,type:"instagram",source:channel.name,author:channel.name,
       title:`Publicación de ${channel.name}`,description:decode(item.caption||`Publicación reciente de @${channel.handle}.`),
-      url:item.permalink,image:item.media_url||item.thumbnail_url||"",publishedAt:item.timestamp||"",libraryId:"doctrine",
+      url:item.permalink,image:item.thumbnail_url||item.media_url||"",publishedAt:item.timestamp||"",libraryId:"doctrine",
       external:true,verified:true,dynamic:true,concretePost:true,provider:"meta-business-discovery"
     }));
   } finally { clearTimeout(timer); }

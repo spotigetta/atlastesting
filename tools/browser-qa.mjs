@@ -32,6 +32,10 @@ const profile = path.join(os.tmpdir(), `atlas-browser-qa-${process.pid}`);
 const outputDirectory = path.join(root, "generated", "qa");
 const screenshotPath = path.join(outputDirectory, "atlas-browser.png");
 const examScreenshotPath = path.join(outputDirectory, "atlas-exam.png");
+const preparadorScreenshotPath = path.join(outputDirectory, "atlas-preparador.png");
+const instagramScreenshotPath = path.join(outputDirectory, "atlas-instagram.png");
+const infographicScreenshotPath = path.join(outputDirectory, "atlas-infographic-fit.png");
+const infographicFiles = fs.readdirSync(path.join(root, "assets", "infografias")).filter(file => file.endsWith(".html")).sort();
 fs.mkdirSync(outputDirectory, { recursive: true });
 
 const preview = spawn(process.execPath, ["tools/preview.mjs"], {
@@ -134,11 +138,30 @@ try {
     introVisible: !document.querySelector("#atlas-intro")?.hidden,
     introScene: document.querySelector("#atlas-intro")?.dataset.scene,
     libraries: document.querySelectorAll("[data-library]").length,
-    updateBannerVisible: !document.querySelector("#update-banner")?.hidden
+    updateBannerVisible: !document.querySelector("#update-banner")?.hidden,
+    preparadorVisible: /Preparador de círculos/i.test(document.querySelector("#main")?.innerText || ""),
+    preparadorSearchResults: window.Atlas.search.run("Preparador de círculos").libraries.length,
+    preparadorContext: (() => { const text=document.querySelector("#main")?.innerText || ""; const at=text.search(/Preparador de círculos/i); return at < 0 ? "" : text.slice(Math.max(0,at-100),at+180); })()
   })`);
   await evaluate(`document.querySelector('[data-action="intro-close"]')?.click()`);
   await wait(400);
   await evaluate(`document.querySelector('[data-action="tutorial-close"]')?.click()`);
+  await evaluate(`location.hash = "/saved"`);
+  await wait(450);
+  const unlockForm = await evaluate(`({
+    visible: Boolean(document.querySelector("#feature-unlock-form")),
+    passwordType: document.querySelector("#feature-unlock-form input")?.type || ""
+  })`);
+  await evaluate(`(() => { const form=document.querySelector("#feature-unlock-form"); if(!form)return false; form.querySelector("input").value="OD"; form.requestSubmit(); return true; })()`);
+  await wait(700);
+  const preparadorUnlocked = await evaluate(`({
+    intro: Boolean(document.querySelector(".preparadora-intro")),
+    infographic: document.querySelector(".preparadora-guide-preview iframe")?.src || "",
+    notebook: document.querySelector('.preparadora-guide-preview a[href*="ef6005d5"]')?.href || "",
+    examples: document.querySelectorAll(".preparadora-steps article").length,
+    searchable: window.Atlas.search.run("Preparador de círculos").libraries.length
+  })`);
+  await captureTo(preparadorScreenshotPath);
   await evaluate(`location.hash = "/discover"`);
   await wait(2500);
   const discover = await evaluate(`({
@@ -165,7 +188,33 @@ try {
     hasVideo: [...document.querySelectorAll(".short-card")].some(card => card.classList.contains("short-type-video")),
     hasInstagram: [...document.querySelectorAll(".short-card")].some(card => card.classList.contains("short-type-instagram"))
   })`);
+  await evaluate(`document.querySelector('[data-short-filter="instagram"]')?.click()`);
+  await wait(700);
+  const instagramDirectory = await evaluate(`({
+    visible: Boolean(document.querySelector(".instagram-source-directory")),
+    accounts: document.querySelectorAll(".instagram-source-directory a").length,
+    status: document.querySelector("#youtube-live-status")?.textContent || "",
+    heading: document.querySelector(".instagram-source-directory h2")?.textContent || ""
+  })`);
+  await captureTo(instagramScreenshotPath);
   await command("Emulation.setDeviceMetricsOverride", { width: 1440, height: 1000, deviceScaleFactor: 1, mobile: false });
+  await evaluate(`location.hash = "/infographics"`);
+  await wait(600);
+  const infographicFit = [];
+  for (const file of infographicFiles) {
+    await evaluate(`(() => { const trigger=[...document.querySelectorAll("[data-open-infographic]")].find(item => item.dataset.openInfographic === ${JSON.stringify(file)}); trigger?.click(); return Boolean(trigger); })()`);
+    await wait(750);
+    infographicFit.push(await evaluate(`(() => {
+      const frame=document.querySelector("#infographic-frame"); const wrap=frame?.closest(".infographic-frame-wrap");
+      const canvas=frame?.contentDocument?.body?.querySelector(":scope > .slide-container, :scope > .page") || frame?.contentDocument?.body?.firstElementChild;
+      if(!frame||!wrap||!canvas)return {file:${JSON.stringify(file)},ready:false};
+      const canvasRect=canvas.getBoundingClientRect(); const frameRect=frame.getBoundingClientRect(); const wrapRect=wrap.getBoundingClientRect();
+      return {file:${JSON.stringify(file)},ready:true,source:[frame.clientWidth,frame.clientHeight],canvas:[Math.round(canvasRect.left),Math.round(canvasRect.top),Math.round(canvasRect.width),Math.round(canvasRect.height)],display:[Math.round(frameRect.width),Math.round(frameRect.height)],available:[Math.round(wrapRect.width),Math.round(wrapRect.height)],complete:canvasRect.left>=-1&&canvasRect.top>=-1&&canvasRect.right<=frame.clientWidth+1&&canvasRect.bottom<=frame.clientHeight+1&&frameRect.width<=wrapRect.width+1&&frameRect.height<=wrapRect.height+1};
+    })()`));
+    if (file === "infohistoria.html") await captureTo(infographicScreenshotPath);
+    await evaluate(`document.querySelector("[data-close-infographic]")?.click()`);
+    await wait(330);
+  }
   await evaluate(`location.hash = "/reader/" + encodeURIComponent(window.Atlas.data.documents[0].id)`);
   await wait(3500);
   const reader = await evaluate(`({
@@ -251,8 +300,12 @@ try {
 
   const report = {
     home,
+    unlockForm,
+    preparadorUnlocked,
     discover,
     discoverMobile,
+    instagramDirectory,
+    infographicFit,
     reader,
     examDashboard,
     examRun,
@@ -265,15 +318,31 @@ try {
     consoleErrors: [...new Set(consoleErrors)],
     networkErrors: [...new Set(networkErrors)],
     screenshot: path.relative(root, screenshotPath).replaceAll("\\", "/"),
-    examScreenshot: path.relative(root, examScreenshotPath).replaceAll("\\", "/")
+    examScreenshot: path.relative(root, examScreenshotPath).replaceAll("\\", "/"),
+    preparadorScreenshot: path.relative(root, preparadorScreenshotPath).replaceAll("\\", "/"),
+    instagramScreenshot: path.relative(root, instagramScreenshotPath).replaceAll("\\", "/"),
+    infographicScreenshot: path.relative(root, infographicScreenshotPath).replaceAll("\\", "/")
   };
   console.log(JSON.stringify(report, null, 2));
   if (
     home.mainHtmlLength < 100 ||
+    home.preparadorVisible ||
+    home.preparadorSearchResults !== 0 ||
+    !unlockForm.visible ||
+    unlockForm.passwordType !== "password" ||
+    !preparadorUnlocked.intro ||
+    !preparadorUnlocked.infographic.includes("infoCirculos.html") ||
+    !preparadorUnlocked.notebook.includes("ef6005d5-dacf-4f99-b3c9-b853a0b365d4") ||
+    preparadorUnlocked.examples !== 3 ||
+    preparadorUnlocked.searchable < 1 ||
     !home.introVisible ||
     home.updateBannerVisible ||
     discover.cards < 3 ||
     !discoverMobile.hasVideo ||
+    !instagramDirectory.visible ||
+    infographicFit.length !== infographicFiles.length ||
+    infographicFit.some(item => !item.ready || !item.complete) ||
+    instagramDirectory.accounts < 10 ||
     Math.abs(discoverMobile.pageHeight - discoverMobile.feedHeight) > 2 ||
     reader.contentLength < 100 ||
     examDashboard.periodCards !== 2 ||

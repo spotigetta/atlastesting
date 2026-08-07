@@ -252,8 +252,8 @@
   }
 
   function relatedDocuments(doc) {
-    const sameTitle = root.data.documents.filter(item => item.id !== doc.id && root.data.normalize(item.title) === root.data.normalize(doc.title));
-    const sameAuthor = doc.author ? root.data.documents.filter(item => item.id !== doc.id && item.author === doc.author) : [];
+    const sameTitle = root.data.accessibleDocuments().filter(item => item.id !== doc.id && root.data.normalize(item.title) === root.data.normalize(doc.title));
+    const sameAuthor = doc.author ? root.data.accessibleDocuments().filter(item => item.id !== doc.id && item.author === doc.author) : [];
     const sameCategory = doc.library.documents.filter(item => item.id !== doc.id && item.category === doc.category).map(item => root.data.documentMap.get(item.id));
     const collectionDocs = root.data.catalog.collections
       .filter(item => item.documentIds.includes(doc.id))

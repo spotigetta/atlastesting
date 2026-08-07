@@ -35,19 +35,20 @@
     magnetEnabled:true, magnetStrength:34, magnetDelay:120, magnetDuration:300,
     auroraIntensity:88, auroraSize:100, motionLevel:100, josemariaPortraitIntensity:18, shortTextScale:100,
     shortContentWidth:720, shortAlignment:"mixed", interfaceScale:100,
-    cornerRadius:100, fontStyle:"editorial", headingFont:"literata", bodyFont:"dm-sans", palette:"sage", surfaceStyle:"soft", compactMode:false, showExternalImages:true
+    cornerRadius:100, animationSpeed:100, fontStyle:"editorial", headingFont:"literata", bodyFont:"dm-sans", palette:"sage", surfaceStyle:"soft",
+    pageMood:"warm", cardDepth:"soft", headerDensity:"comfortable", useCustomAccent:false, customAccent:"#245647", compactMode:false, showExternalImages:true
   };
   const libraryGuides = {
     doctrine: { file: "infodoctrina_textogrande.html", purpose: "Aclara qué enseña la Iglesia y cómo se fundamenta en Escritura, Tradición, Magisterio, teología y moral.", examples: ["¿Qué enseña el Catecismo sobre la conciencia?", "Distingue doctrina definida, opinión teológica y criterio pastoral."] },
     canon: { file: "infografiaCanonIA_v2.html", purpose: "Localiza normas, cánones, procesos y criterios interpretativos del Derecho de la Iglesia.", examples: ["¿Qué diferencia hay entre validez y licitud?", "¿Qué fuentes regulan un proceso matrimonial?"] },
     history: { file: "infohistoria.html", purpose: "Sitúa acontecimientos, concilios, autores y Padres de la Iglesia en su contexto y conecta fuentes de distintas épocas.", examples: ["¿Qué ocurrió entre Nicea y Constantinopla?", "Compara a san Ireneo y san Agustín."] },
     liturgy: { file: "infografiaLiturgIA_v2.html", purpose: "Explica el sentido teológico de la celebración y consulta libros, normas, ritos y desarrollo histórico.", examples: ["¿Qué significa este gesto de la Misa?", "¿Qué indican el Misal y la IGMR?"] },
-    ortodoxia: { file: "infoCirculos.html", purpose: "Ayuda a comprender la lógica interna de la fe con lenguaje razonado antes de acudir a fuentes especializadas.", examples: ["Explica esta objeción sin caricaturizarla.", "¿Qué presupuestos conviene distinguir?"] },
+    ortodoxia: { file: "infoOrtodoxIA.html", purpose: "Ayuda a comprender antes de discutir: expone la lógica interna de la fe y distingue doctrina, razonamiento y objeciones con un lenguaje cercano.", examples: ["Explica esta objeción sin caricaturizarla.", "¿Qué presupuestos filosóficos y doctrinales conviene distinguir?"] },
     cinepilot: { file: "infografiaCinepilot.html", purpose: "Consulta películas por ficha técnica, calidad artística, edad, contenido y orientación moral.", examples: ["¿Es adecuada para adolescentes?", "Compara dos películas por temas y tratamiento."] },
     bibliotecaria: { file: "infobib.html", purpose: "Descubre libros y diseña recorridos literarios por autores, géneros, épocas, temas o nivel lector.", examples: ["Haz una ruta por la novela rusa.", "¿Qué leer después de esta obra?"] },
     clasicos: { file: "infografiaLosClasicos_v2.html", purpose: "Explora el canon literario, consulta obras completas y relaciona grandes autores y tradiciones.", examples: ["Compara la tragedia griega y Shakespeare.", "Propón cinco clásicos sobre libertad."] },
     "san-josemaria": { file: "infoSJM.html", purpose: "Profundiza en sus obras y enseñanzas sobre oración, trabajo, libertad y santidad cotidiana.", examples: ["Busca textos sobre santificar el trabajo.", "Relaciona Camino, Surco y Forja sobre la alegría."] },
-    "preparadora-circulos": { file: "infoCirculos.html", purpose: "Prepara círculos breves, documentados y pedagógicos a partir de las obras de san Josemaría y textos pontificios.", examples: ["Diseña un círculo de 25 minutos sobre oración mental.", "Propón preguntas, citas y aplicaciones para una sesión sobre trabajo."] }
+    "preparadora-circulos": { file: "infoCirculos.html", purpose: "Prepara círculos breves, documentados y pedagógicos a partir de las obras de san Josemaría y textos pontificios, con una estructura lista para revisar y exponer.", examples: ["Diseña un círculo de 25 minutos sobre oración mental para universitarios.", "Prepara introducción, tres ideas, citas verificables, preguntas y aplicaciones sobre santificar el trabajo.", "Adapta un círculo ya preparado a otro público sin perder sus fuentes."] }
   };
   function libraryDisplay(library) {
     const settings = A.storage.get().settings;
@@ -62,6 +63,10 @@
       .filter(lib => includeHidden || !hidden.has(lib.id))
       .sort((a,b) => Number(pinned.has(b.id)) - Number(pinned.has(a.id)) || (order.indexOf(a.id) < 0 ? 999 : order.indexOf(a.id)) - (order.indexOf(b.id) < 0 ? 999 : order.indexOf(b.id)))
       .map(libraryDisplay);
+  }
+  function visibleDocuments() {
+    const ids = new Set(visibleLibraries().map(lib => lib.id));
+    return A.data.documents.filter(doc => ids.has(doc.libraryId));
   }
   const tutorialSteps = [
     { mark: "A", route: "/", target: ".brand", eyebrow: "Primero · qué es", title: "Atlas es la puerta de entrada a tus IA", text: "Reúne fuentes, organiza bibliotecas y te ayuda a decidir dónde leer o qué IA consultar. No sustituye los documentos ni inventa una respuesta.", bullets: ["Ejemplo: busca «matrimonio» y compara doctrina, Derecho e historia.", "El logotipo siempre devuelve al Inicio."] },
@@ -215,17 +220,19 @@
     const catalog = A.data.catalog;
     const settings = A.storage.get().settings;
     const libraries = visibleLibraries();
+    const accessibleShorts = catalog.shorts.filter(item => !item.libraryId || A.data.libraryAccessible(item.libraryId));
     const homeBlocks = ["exam", "today", "libraries", "reading", "history"];
     const homeOrder = [...new Set([...(settings.homeOrder || []), ...homeBlocks])].filter(id => homeBlocks.includes(id));
     const homeLabels = { exam: "Examen diario", today: "Atlas Hoy", libraries: "Explora las IA", reading: "Continúa leyendo", history: "Continúa explorando" };
-    const todayDoc = dailyPick(A.data.documents.filter(doc => doc.status !== "incomplete"), 3);
-    const todayShort = dailyPick(catalog.shorts.filter(item => item.verified), 7);
+    const documents = visibleDocuments();
+    const todayDoc = dailyPick(documents.filter(doc => doc.status !== "incomplete"), 3);
+    const todayShort = dailyPick(accessibleShorts.filter(item => item.verified), 7);
     const todayQuote = dailyPick([
-      ...catalog.shorts.filter(item => item.verified && item.type === "quote"),
+      ...accessibleShorts.filter(item => item.verified && item.type === "quote"),
       ...(window.ATLAS_QUOTES?.items || []),
       ...(window.ATLAS_EXTERNAL?.items || []).filter(item => item.type === "quote").map(item => ({ ...item, text: item.description, reference: item.source }))
     ], 19);
-    const uniqueDocs = A.data.documents.filter(doc => A.data.documents.filter(other => A.data.normalize(other.title) === A.data.normalize(doc.title)).length === 1);
+    const uniqueDocs = documents.filter(doc => documents.filter(other => A.data.normalize(other.title) === A.data.normalize(doc.title)).length === 1);
     const quizDoc = dailyPick(uniqueDocs, 11);
     const history = A.storage.get().history.map(id => A.data.documentMap.get(id)).filter(Boolean).slice(0, 4);
     const lastLib = A.data.libraryMap.get(A.storage.get().lastLibrary);
@@ -251,7 +258,7 @@
           ${todayDoc ? `<article class="daily-card tone-${todayDoc.library.tone}" data-library="${todayDoc.libraryId}"><span class="eyebrow">Documento del día · ${esc(todayDoc.library.short)}</span><h3>${esc(todayDoc.title)}</h3><p>${A.library.compact(todayDoc.words)} palabras · ${esc(todayDoc.category)}</p><button class="ghost-button" data-open-document="${esc(todayDoc.id)}" style="margin-top:15px">Abrir ficha</button></article>` : ""}
           ${todayShort ? `<article class="daily-card"><span class="eyebrow">Descubrimiento del día</span><h3>${esc(todayShort.title)}</h3><p>${esc(todayShort.text)}</p><a class="ghost-button" href="#/short/${todayShort.id}" style="margin-top:15px">Ver contenido</a></article>` : ""}
           ${todayQuote ? `<article class="daily-card daily-quote"><span class="eyebrow">Frase célebre del día</span><h3>${esc(todayQuote.title)}</h3><p>${esc(todayQuote.text || todayQuote.description || "")}</p><small>${esc(todayQuote.reference || todayQuote.source || "")}</small></article>` : ""}
-          ${quizDoc ? `<article class="daily-card tone-${quizDoc.library.tone}" data-library="${quizDoc.libraryId}"><span class="eyebrow">Pregunta del día</span><h3>¿En qué biblioteca aparece «${esc(quizDoc.title)}»?</h3><div class="button-row">${catalog.libraries.map(lib => `<button class="ghost-button" data-quiz-answer="${lib.id}" data-quiz-correct="${quizDoc.libraryId}">${esc(lib.short)}</button>`).join("")}</div></article>` : ""}
+          ${quizDoc ? `<article class="daily-card tone-${quizDoc.library.tone}" data-library="${quizDoc.libraryId}"><span class="eyebrow">Pregunta del día</span><h3>¿En qué biblioteca aparece «${esc(quizDoc.title)}»?</h3><div class="button-row">${libraries.map(lib => `<button class="ghost-button" data-quiz-answer="${lib.id}" data-quiz-correct="${quizDoc.libraryId}">${esc(lib.short)}</button>`).join("")}</div></article>` : ""}
         </div>
       </section>
 
@@ -288,11 +295,11 @@
 
   function preparadoraIntro(lib) {
     const guide=libraryGuides[lib.id];
-    return `<section class="page preparadora-intro tone-${lib.tone}" data-library="${lib.id}"><header><span class="library-mark">${esc(lib.mark)}</span><div><span class="eyebrow">Función adicional desbloqueada</span><h1>Antes de preparar el círculo</h1><p>${esc(guide.purpose)}</p></div></header><div class="preparadora-steps"><article><b>1</b><h3>Define el tema y el público</h3><p>Indica duración, edad, formación previa y objetivo concreto.</p></article><article><b>2</b><h3>Pide una estructura verificable</h3><p>Introducción, dos o tres ideas, citas literales, preguntas y aplicación práctica.</p></article><article><b>3</b><h3>Comprueba cada cita</h3><p>Abre el documento enlazado y conserva autor, obra, punto o documento pontificio.</p></article></div><div class="preparadora-guide-preview"><iframe src="${infographicUrl(guide.file)}" title="Instrucciones de la Preparadora de círculos" loading="eager"></iframe><div><h2>La infografía contiene el método completo</h2><p>Ábrela antes del primer uso; después podrás volver a ella desde la guía visual.</p><div class="button-row"><button class="primary-button" data-open-infographic="${esc(guide.file)}" data-infographic-title="Preparadora de círculos" data-infographic-tone="${esc(lib.tone)}">Ver instrucciones completas</button><a class="secondary-button" href="#/library/${lib.id}/documents?ready=1">Ya la conozco · ver fuentes</a></div></div></div></section>`;
+    return `<section class="page preparadora-intro tone-${lib.tone}" data-library="${lib.id}"><header><span class="library-mark">${esc(lib.mark)}</span><div><span class="eyebrow">Función adicional desbloqueada</span><h1>Antes de preparar el círculo</h1><p>${esc(guide.purpose)}</p></div></header><div class="preparadora-steps"><article><b>1</b><h3>Define el tema y el público</h3><p>Indica duración, edad, formación previa y objetivo concreto.</p></article><article><b>2</b><h3>Pide una estructura verificable</h3><p>Introducción, dos o tres ideas, citas literales, preguntas y aplicación práctica.</p></article><article><b>3</b><h3>Comprueba cada cita</h3><p>Abre el documento enlazado y conserva autor, obra, punto o documento pontificio.</p></article></div><div class="preparadora-guide-preview"><iframe src="${infographicUrl(guide.file)}" title="Instrucciones del Preparador de círculos" loading="eager"></iframe><div><h2>La infografía contiene el método completo</h2><p>Ábrela antes del primer uso; después podrás volver a ella desde la guía visual.</p><div class="button-row"><button class="primary-button" data-open-infographic="${esc(guide.file)}" data-infographic-title="Preparador de círculos" data-infographic-tone="${esc(lib.tone)}">Ver instrucciones completas</button><a class="secondary-button" href="#/library/${lib.id}/documents?ready=1">Ya la conozco · ver fuentes</a><a class="ghost-button" href="${esc(lib.notebookUrl)}" target="_blank" rel="noopener">Abrir IA ↗</a></div></div></div></section>`;
   }
 
   function lockedFeature() {
-    return `<section class="page"><div class="feature-lock"><span>PC</span><h1>Preparadora de círculos</h1><p>Esta función necesita activarse en Guardados con el código correspondiente.</p><a class="primary-button" href="#/saved">Ir a Guardados</a></div></section>`;
+    return `<section class="page"><div class="feature-lock"><span>PC</span><h1>Preparador de círculos</h1><p>Esta IA está oculta. Actívala desde Guardados con la contraseña correspondiente.</p><a class="primary-button" href="#/saved">Ir a Guardados</a></div></section>`;
   }
 
   function renderInfographics() {
@@ -410,12 +417,20 @@
         <label class="setting-select"><span><b>Colocación del texto</b><small>San Josemaría permanece siempre a la izquierda.</small></span><select data-setting-select="shortAlignment"><option value="mixed" ${settings.shortAlignment==="mixed"?"selected":""}>Alternada</option><option value="left" ${settings.shortAlignment==="left"?"selected":""}>Siempre izquierda</option><option value="right" ${settings.shortAlignment==="right"?"selected":""}>Siempre derecha</option></select></label>
         ${toggleSetting("showExternalImages","Fotografías externas","Muestra imágenes en noticias, Instagram, música y vídeos.")}</section>
       <section><span class="eyebrow">Interfaz</span><h3>Apariencia general</h3>${rangeSetting("interfaceScale","Escala de la interfaz",85,120,1,"%")}${rangeSetting("cornerRadius","Redondez",35,140,1,"%")}
+        ${rangeSetting("animationSpeed","Velocidad de las transiciones",60,160,5,"%")}
         <label class="setting-select"><span><b>Estilo general</b><small>Editorial conserva contraste entre títulos y texto; contemporáneo unifica la voz.</small></span><select data-setting-select="fontStyle"><option value="editorial" ${settings.fontStyle==="editorial"?"selected":""}>Editorial</option><option value="modern" ${settings.fontStyle==="modern"?"selected":""}>Contemporáneo</option></select></label>
         <label class="setting-select"><span><b>Fuente de títulos</b><small>Cinco familias web con personalidades distintas.</small></span><select data-setting-select="headingFont"><option value="literata" ${settings.headingFont==="literata"?"selected":""}>Literata</option><option value="cormorant" ${settings.headingFont==="cormorant"?"selected":""}>Cormorant Garamond</option><option value="alegreya" ${settings.headingFont==="alegreya"?"selected":""}>Alegreya</option><option value="lora" ${settings.headingFont==="lora"?"selected":""}>Lora</option><option value="merriweather" ${settings.headingFont==="merriweather"?"selected":""}>Merriweather</option></select></label>
         <label class="setting-select"><span><b>Fuente de lectura</b><small>Escoge una voz sobria, humanista o geométrica.</small></span><select data-setting-select="bodyFont"><option value="dm-sans" ${settings.bodyFont==="dm-sans"?"selected":""}>DM Sans</option><option value="manrope" ${settings.bodyFont==="manrope"?"selected":""}>Manrope</option><option value="source-sans" ${settings.bodyFont==="source-sans"?"selected":""}>Source Sans 3</option><option value="montserrat" ${settings.bodyFont==="montserrat"?"selected":""}>Montserrat</option><option value="system" ${settings.bodyFont==="system"?"selected":""}>Sistema</option></select></label>
         <label class="setting-select"><span><b>Paleta de acento</b><small>Cambia botones, enlaces, focos y detalles.</small></span><select data-setting-select="palette"><option value="sage" ${settings.palette==="sage"?"selected":""}>Verde Atlas</option><option value="burgundy" ${settings.palette==="burgundy"?"selected":""}>Burdeos clásico</option><option value="ocean" ${settings.palette==="ocean"?"selected":""}>Azul océano</option><option value="indigo" ${settings.palette==="indigo"?"selected":""}>Índigo</option><option value="amber" ${settings.palette==="amber"?"selected":""}>Ámbar</option><option value="rose" ${settings.palette==="rose"?"selected":""}>Rosa viejo</option></select></label>
         <label class="setting-select"><span><b>Acabado de superficies</b><small>Suave, papel editorial o nítido.</small></span><select data-setting-select="surfaceStyle"><option value="soft" ${settings.surfaceStyle==="soft"?"selected":""}>Suave</option><option value="paper" ${settings.surfaceStyle==="paper"?"selected":""}>Papel</option><option value="crisp" ${settings.surfaceStyle==="crisp"?"selected":""}>Nítido</option></select></label>
         ${toggleSetting("compactMode","Modo compacto","Reduce espacios en listados, paneles y cabeceras.")}</section>
+      <section><span class="eyebrow">Sensación visual</span><h3>Haz Atlas más tuyo</h3>
+        <label class="setting-select"><span><b>Temperatura del fondo</b><small>Cálida para leer, neutra para concentrarse o fría para una apariencia más técnica.</small></span><select data-setting-select="pageMood"><option value="warm" ${settings.pageMood==="warm"?"selected":""}>Cálida</option><option value="neutral" ${settings.pageMood==="neutral"?"selected":""}>Neutra</option><option value="cool" ${settings.pageMood==="cool"?"selected":""}>Fría</option></select></label>
+        <label class="setting-select"><span><b>Profundidad de tarjetas</b><small>Controla cuánto se separan visualmente las fichas del fondo.</small></span><select data-setting-select="cardDepth"><option value="flat" ${settings.cardDepth==="flat"?"selected":""}>Plana</option><option value="soft" ${settings.cardDepth==="soft"?"selected":""}>Suave</option><option value="deep" ${settings.cardDepth==="deep"?"selected":""}>Profunda</option></select></label>
+        <label class="setting-select"><span><b>Altura de cabecera</b><small>Reduce la barra superior si prefieres dedicar más espacio al contenido.</small></span><select data-setting-select="headerDensity"><option value="comfortable" ${settings.headerDensity==="comfortable"?"selected":""}>Cómoda</option><option value="compact" ${settings.headerDensity==="compact"?"selected":""}>Compacta</option></select></label>
+        ${toggleSetting("useCustomAccent","Color de acento propio","Sustituye la paleta elegida por el color exacto que indiques.")}
+        <label class="setting-color"><span><b>Tu color</b><small>Se aplica inmediatamente a botones, enlaces y detalles.</small></span><input type="color" value="${esc(settings.customAccent || "#245647")}" data-setting-color="customAccent"></label>
+      </section>
     </div>`;
   }
 
@@ -426,19 +441,24 @@
     const bodyFonts={"dm-sans":'"DM Sans",system-ui,sans-serif',manrope:'"Manrope",system-ui,sans-serif',"source-sans":'"Source Sans 3",system-ui,sans-serif',montserrat:'"Montserrat",system-ui,sans-serif',system:'system-ui,-apple-system,sans-serif'};
     const palettes={sage:["#245647","#dbe8e1"],burgundy:["#793b4b","#eddde2"],ocean:["#27617a","#d9e9ef"],indigo:["#4d57a1","#e1e3f2"],amber:["#966517","#f1e5cf"],rose:["#9a4964","#f1dce4"]};
     const palette=palettes[s.palette]||palettes.sage;
+    const accent = s.useCustomAccent && /^#[0-9a-f]{6}$/i.test(s.customAccent || "") ? s.customAccent : palette[0];
     root.style.setProperty("--serif",headingFonts[s.headingFont]||headingFonts.literata);
     root.style.setProperty("--sans",bodyFonts[s.bodyFont]||bodyFonts["dm-sans"]);
-    root.style.setProperty("--atlas",palette[0]); root.style.setProperty("--atlas-soft",palette[1]);
+    root.style.setProperty("--atlas",accent); root.style.setProperty("--atlas-soft",s.useCustomAccent ? `color-mix(in srgb, ${accent} 17%, var(--paper))` : palette[1]);
     root.style.setProperty("--short-text-scale", Number(s.shortTextScale || 100) / 100);
     root.style.setProperty("--short-content-width", `${Number(s.shortContentWidth || 720)}px`);
     root.style.setProperty("--ui-scale", Number(s.interfaceScale || 100) / 100);
     root.style.setProperty("--corner-scale", Number(s.cornerRadius || 100) / 100);
+    root.style.setProperty("--ui-transition", `${Math.round(22000 / Number(s.animationSpeed || 100))}ms`);
     const auroraSize = Number(s.auroraSize || 100) / 100;
     root.style.setProperty("--aurora-diameter", `${76 * auroraSize}vmax`);
     root.style.setProperty("--aurora-max", `${1050 * auroraSize}px`);
     root.style.setProperty("--sjm-portrait-opacity", Number(s.josemariaPortraitIntensity || 18) / 100);
     document.body.dataset.fontStyle = s.fontStyle || "editorial";
     document.body.dataset.surfaceStyle = s.surfaceStyle || "soft";
+    document.body.dataset.pageMood = s.pageMood || "warm";
+    document.body.dataset.cardDepth = s.cardDepth || "soft";
+    document.body.dataset.headerDensity = s.headerDensity || "comfortable";
     document.body.classList.toggle("compact-ui", Boolean(s.compactMode));
     document.body.classList.toggle("hide-external-images", !s.showExternalImages);
   }
@@ -493,35 +513,84 @@
     return `<section class="page"><header class="explore-hero"><span class="eyebrow">Tu Atlas · versión ${esc(A.data.catalog.meta.dataVersion)}</span><h1>Guardados e historial.</h1><p>Todo permanece en este dispositivo. No necesitas una cuenta.</p><span class="app-version-badge">Atlas ${esc(A.data.catalog.meta.dataVersion)}</span></header>
       <section class="study-summary"><div><strong>${Math.round((today.milliseconds || 0) / 60000)}</strong><span>minutos hoy</span></div><div><strong>${today.documents?.length || 0}</strong><span>documentos</span></div><div><strong>${today.collections?.length || 0}</strong><span>colecciones</span></div></section>
       <div class="chip-row saved-tabs">${tabs.map(([id,label]) => `<button class="chip ${state.savedTab===id?"active":""}" data-saved-tab="${id}">${label}</button>`).join("")}</div>${content}
-      <section class="section feature-unlocks"><div class="section-head"><div><h2>Funciones adicionales</h2><p>Un sistema extensible de activaciones locales.</p></div></div>${A.storage.isFeatureUnlocked("preparadora-circulos")?`<article class="feature-unlock active"><span>✓</span><div><b>Preparadora de círculos activa</b><small>Quedará disponible tras cerrar y volver a abrir Atlas.</small></div><a class="secondary-button" href="#/library/preparadora-circulos/documents">Abrir guía</a></article>`:`<form id="feature-unlock-form" class="feature-unlock"><span>PC</span><div><b>Desbloquear una funcionalidad</b><small>Introduce el código que has recibido.</small></div><input name="code" autocomplete="off" required placeholder="Código"><button class="primary-button">Activar</button></form>`}</section>
+      <section class="section feature-unlocks"><div class="section-head"><div><h2>Funciones adicionales</h2><p>Un sistema extensible de activaciones locales.</p></div></div>${A.storage.isFeatureUnlocked("preparadora-circulos")?`<article class="feature-unlock active"><span>✓</span><div><b>Preparador de círculos activo</b><small>Ya está visible en Inicio, Explorar, Capacidades y la guía visual.</small></div><a class="secondary-button" href="#/library/preparadora-circulos/documents">Abrir guía</a></article>`:`<form id="feature-unlock-form" class="feature-unlock"><span>PC</span><div><b>Desbloquear el Preparador de círculos</b><small>Introduce la contraseña de activación. Mientras esté bloqueado no aparecerá entre las IA.</small></div><input name="code" type="password" autocomplete="off" required placeholder="Contraseña"><button class="primary-button">Activar</button></form>`}</section>
       <section class="section"><div class="section-head"><div><h2>Preferencias</h2><p>Adapta lectura, movimiento, iluminación y apariencia.</p></div></div><div class="button-row"><button class="primary-button" data-action="settings">Personalizar Atlas</button><button class="secondary-button" data-action="refresh-atlas">↻ Actualizar Atlas</button><button class="secondary-button" data-action="intro-replay">Ver presentación</button><button class="secondary-button" data-action="toggle-contrast">${stored.settings.contrast ? "Desactivar" : "Activar"} alto contraste</button><button class="secondary-button" data-action="toggle-random">${stored.settings.randomShorts ? "Orden diario" : "Orden aleatorio"}</button><button class="secondary-button" data-action="toggle-only-new">${stored.settings.onlyNewShorts ? "Mostrar todos" : "Solo contenido nuevo"}</button></div></section>
       <section class="section"><div class="section-head"><div><h2>Datos locales</h2><p>Exporta una copia, impórtala o borra todo.</p></div></div><div class="button-row"><button class="secondary-button" data-action="export-data">Exportar</button><button class="secondary-button" data-action="import-data">Importar</button><button class="secondary-button" data-action="clear-data">Borrar</button><input id="import-file" type="file" accept=".json,application/json" hidden></div></section></section>`;
+  }
+
+  const isLocalAtlas = () => ["localhost", "127.0.0.1", "::1"].includes(location.hostname);
+
+  async function clearTechnicalCaches({ unregister = false } = {}) {
+    await window.AtlasDatabase?.clear?.();
+    if ("caches" in window) {
+      const keys = await caches.keys();
+      await Promise.all(keys.filter(key => key.startsWith("atlas-")).map(key => caches.delete(key)));
+    }
+    if (unregister && "serviceWorker" in navigator) {
+      const registrations = await navigator.serviceWorker.getRegistrations();
+      await Promise.all(registrations.filter(item => item.scope.startsWith(location.origin)).map(item => item.unregister()));
+    }
+  }
+
+  async function activateLatestAtlas() {
+    const registration = await navigator.serviceWorker?.getRegistration?.();
+    registration?.waiting?.postMessage("SKIP_WAITING");
+    await clearTechnicalCaches({ unregister: isLocalAtlas() });
+    location.reload();
+  }
+
+  async function fetchFreshJson(url, options = {}, timeout = 12000) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), timeout);
+    try {
+      const response = await fetch(`${url}${url.includes("?") ? "&" : "?"}_=${Date.now()}`, {
+        ...options, cache: "no-store", signal: controller.signal,
+        headers: { "cache-control": "no-cache", ...(options.headers || {}) }
+      });
+      if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
+      return await response.json();
+    } finally { clearTimeout(timer); }
   }
 
   async function refreshAtlas(button) {
     const original = button.innerHTML;
     button.disabled = true;
-    button.innerHTML = "↻ <span>Actualizando…</span>";
-    toast("Atlas está comprobando la última versión publicada.");
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), 8000);
+    button.innerHTML = "↻ <span>Comprobando…</span>";
+    toast(isLocalAtlas() ? "Atlas está revisando los archivos locales." : "Atlas está comprobando la última versión publicada.");
     try {
-      const manifest = await window.AtlasRuntime.fetchJson("build-manifest.json", { fresh: true, signal: controller.signal });
-      await navigator.serviceWorker?.getRegistration()?.then(registration => registration?.update());
-      const current = A.data.catalog.meta.dataVersion;
-      if (manifest.version !== current || !String(manifest.buildId || "").startsWith(current)) {
-        toast("Hay una versión nueva. Actualizando Atlas…");
-        setTimeout(() => location.reload(), 350);
-      } else {
-        toast("Atlas ya utiliza la última versión publicada.");
-        button.disabled = false;
-        button.innerHTML = original;
+      if (isLocalAtlas()) {
+        const status = await fetchFreshJson("api/status", {}, 10000);
+        if (status.pendingBuild) {
+          button.innerHTML = "⚙ <span>Construyendo…</span>";
+          toast("Hay cambios locales. Atlas los está preparando; la pantalla seguirá disponible.");
+          const result = await fetchFreshJson("api/rebuild", {
+            method: "POST", headers: { "content-type": "application/json" },
+            body: JSON.stringify({ force: false, external: false })
+          }, 240000);
+          if (!result.ok) throw new Error(result.message || "La construcción local no terminó correctamente.");
+        }
+        toast("Archivos locales listos. Recargando Atlas sin caché antigua…");
+        setTimeout(() => activateLatestAtlas(), 250);
+        return;
       }
+
+      const manifest = await fetchFreshJson("build-manifest.json", {}, 12000);
+      const registration = await navigator.serviceWorker?.getRegistration?.();
+      await registration?.update?.();
+      const currentVersion = A.data.catalog.meta.dataVersion;
+      const currentBuild = document.querySelector('meta[name="atlas-build"]')?.content || window.ATLAS_BUILD_MANIFEST?.buildId || "";
+      const hasNewBuild = manifest.version !== currentVersion
+        || (currentBuild && !currentBuild.includes("__ATLAS_") && manifest.buildId !== currentBuild);
+      toast(hasNewBuild ? "Hay una versión nueva. Instalándola…" : "Atlas está al día. Renovando sus contenidos…");
+      setTimeout(() => activateLatestAtlas(), 250);
     } catch (error) {
-      toast(error.name === "AbortError" ? "La comprobación ha tardado demasiado." : "No se pudo comprobar la versión publicada.");
+      const message = error.name === "AbortError"
+        ? "La comprobación ha tardado demasiado. Atlas no ha cambiado tus datos."
+        : `No se pudo actualizar Atlas: ${error.message || "error de conexión"}.`;
+      toast(message);
       button.disabled = false;
       button.innerHTML = original;
-    } finally { clearTimeout(timer); }
+    }
   }
 
   function renderUpdates() {
@@ -574,6 +643,7 @@
     else if (current.name === "reader") {
       const doc = A.data.documentMap.get(decodeURIComponent(current.segments.slice(1).join("/")));
       if (!doc) app.innerHTML = notFound();
+      else if (!A.data.libraryAccessible(doc.libraryId)) app.innerHTML = lockedFeature();
       else {
         app.innerHTML = `<section class="page"><div class="empty-state"><span class="empty-glyph">${A.library.icon("books")}</span><h2>Abriendo el documento…</h2></div></section>`;
         A.reader.open(doc, current.query.get("q") || "");
@@ -743,7 +813,7 @@
     const day = new Date().toISOString().slice(0, 10);
     if (!stored.notifications?.daily || !("Notification" in window) || Notification.permission !== "granted" || stored.settings.lastDailyNotification === day) return;
     try {
-      const item = dailyPick(A.data.documents.filter(doc => doc.status !== "incomplete"), 5);
+      const item = dailyPick(visibleDocuments().filter(doc => doc.status !== "incomplete"), 5);
       const notification = new Notification("Atlas · Lectura del día", { body: item?.title || "Hay una nueva selección preparada para ti.", icon: "assets/icons/icon-192.png" });
       notification.onclick = () => { window.focus(); if (item) location.hash = `/reader/${encodeURIComponent(item.id)}`; };
       A.storage.setSetting("lastDailyNotification", day);
@@ -813,8 +883,23 @@
       const body = doc?.body;
       if (!root || !body) return;
       frame.style.cssText = "";
-      const sourceWidth = Math.max(root.scrollWidth, body.scrollWidth, root.offsetWidth, body.offsetWidth);
-      const sourceHeight = Math.max(root.scrollHeight, body.scrollHeight, root.offsetHeight, body.offsetHeight);
+      /*
+       * Varias infografías centran un lienzo fijo de 1440 px dentro del body. Si medimos
+       * el documento con el ancho inicial del iframe, Flexbox deja parte del lienzo en
+       * desbordamiento negativo y scrollWidth devuelve una medida recortada. El lienzo
+       * editorial es la fuente de verdad; el documento completo queda como respaldo.
+      */
+      const canvas = body.querySelector(":scope > .slide-container, :scope > .page") || body.firstElementChild;
+      canvas?.style?.setProperty("flex-shrink", "0", "important");
+      const bounds = canvas?.getBoundingClientRect();
+      const sourceWidth = Math.ceil(Math.max(
+        bounds?.width || 0, canvas?.offsetWidth || 0, canvas?.scrollWidth || 0,
+        root.scrollWidth, body.scrollWidth, root.offsetWidth, body.offsetWidth
+      ));
+      const sourceHeight = Math.ceil(Math.max(
+        bounds?.height || 0, canvas?.offsetHeight || 0, canvas?.scrollHeight || 0,
+        root.scrollHeight, body.scrollHeight, root.offsetHeight, body.offsetHeight
+      ));
       const availableWidth = Math.max(1, wrap.clientWidth - 20);
       const availableHeight = Math.max(1, wrap.clientHeight - 20);
       const scale = Math.min(availableWidth / sourceWidth, availableHeight / sourceHeight, 1);
@@ -824,6 +909,7 @@
       frame.style.transform = `scale(${scale})`;
       frame.style.transformOrigin = "center center";
       frame.style.flex = `0 0 ${sourceWidth}px`;
+      frame.setAttribute("scrolling", "no");
       wrap.style.setProperty("--infographic-source-width", `${sourceWidth}px`);
       wrap.style.setProperty("--infographic-source-height", `${sourceHeight}px`);
       wrap.style.setProperty("--infographic-scale", String(scale));
@@ -903,7 +989,7 @@
     if (action === "toggle-only-new") { A.storage.setSetting("onlyNewShorts", !A.storage.get().settings.onlyNewShorts); renderRouteView(); }
     if (action === "customize-home") { A.storage.setSetting("customizeHome", !A.storage.get().settings.customizeHome); renderRouteView(); }
     if (action === "customize-explore") { A.storage.setSetting("customizeExplore", !A.storage.get().settings.customizeExplore); renderRouteView(); }
-    if (action === "apply-update") location.reload();
+    if (action === "apply-update") { event.preventDefault(); activateLatestAtlas(); }
     if (action === "refresh-atlas") { event.preventDefault(); refreshAtlas(target); }
     if (target.dataset.channelGroup) {
       const map = { youtube: "disabledVideoChannels", music: "disabledMusicChannels", instagram: "disabledInstagramChannels" };
@@ -995,6 +1081,10 @@
       if (output) output.textContent = `${event.target.value}${event.target.dataset.suffix || ""}`;
       applyPersonalization();
     }
+    if (event.target.dataset.settingColor) {
+      A.storage.setSetting(event.target.dataset.settingColor, event.target.value);
+      applyPersonalization();
+    }
   });
 
   document.addEventListener("change", async event => {
@@ -1038,7 +1128,10 @@
     if (event.target.id === "feature-unlock-form") {
       event.preventDefault(); const code=String(new FormData(event.target).get("code")||"").trim().toUpperCase();
       if (code !== "OD") { toast("Código no reconocido."); return; }
-      A.storage.unlockFeature("preparadora-circulos"); renderRouteView(); toast("Preparadora de círculos activada en este dispositivo."); return;
+      A.storage.unlockFeature("preparadora-circulos");
+      toast("Preparador de círculos activado en este dispositivo.");
+      location.hash = "/library/preparadora-circulos/documents";
+      return;
     }
     if (event.target.id === "custom-channel-form") {
       event.preventDefault(); const form=new FormData(event.target); const kind=String(form.get("kind")); const name=String(form.get("name")||"").trim(); const url=String(form.get("url")||"").trim();
@@ -1053,8 +1146,17 @@
     if (event.key === "Escape") { closeSearch(); closeDetail(); closeShare(); closeSettings(); closeInfographic(); if (!tutorialLayer.hidden) closeTutorial(); }
   });
 
-  function registerPwa() {
+  async function registerPwa() {
     if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
+    if (isLocalAtlas()) {
+      const controlled = Boolean(navigator.serviceWorker.controller);
+      await clearTechnicalCaches({ unregister: true }).catch(() => {});
+      if (controlled && !sessionStorage.getItem("atlas-local-cache-cleared")) {
+        sessionStorage.setItem("atlas-local-cache-cleared", "1");
+        location.reload();
+      }
+      return;
+    }
     navigator.serviceWorker.register("./service-worker.js").then(registration => {
       registration.addEventListener("updatefound", () => {
         const worker = registration.installing;

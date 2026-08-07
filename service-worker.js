@@ -1,4 +1,5 @@
 const BUILD_VERSION = "__ATLAS_VERSION__";
+const LOCAL_DEVELOPMENT = ["localhost", "127.0.0.1", "::1"].includes(self.location.hostname);
 const SHELL_CACHE = `atlas-shell-${BUILD_VERSION}`;
 const DATA_CACHE = `atlas-data-${BUILD_VERSION}`;
 const DOCUMENT_CACHE = "atlas-documents-v1";
@@ -23,6 +24,10 @@ const timeoutFetch = (request, milliseconds = 4500) => Promise.race([
 ]);
 
 self.addEventListener("install", event => {
+  if (LOCAL_DEVELOPMENT) {
+    event.waitUntil(self.skipWaiting());
+    return;
+  }
   event.waitUntil(caches.open(SHELL_CACHE).then(cache => cache.addAll(SHELL)));
   self.skipWaiting();
 });
@@ -30,6 +35,14 @@ self.addEventListener("install", event => {
 self.addEventListener("activate", event => {
   event.waitUntil((async () => {
     const keys = await caches.keys();
+    if (LOCAL_DEVELOPMENT) {
+      await Promise.all(keys.filter(key => key.startsWith("atlas-")).map(key => caches.delete(key)));
+      await self.clients.claim();
+      await self.registration.unregister();
+      const clients = await self.clients.matchAll({ type: "window" });
+      clients.forEach(client => client.postMessage({ type: "ATLAS_LOCAL_CACHE_CLEARED" }));
+      return;
+    }
     await Promise.all(keys
       .filter(key => key.startsWith("atlas-") && ![SHELL_CACHE, DATA_CACHE, DOCUMENT_CACHE].includes(key))
       .map(key => caches.delete(key)));
@@ -38,6 +51,7 @@ self.addEventListener("activate", event => {
 });
 
 self.addEventListener("fetch", event => {
+  if (LOCAL_DEVELOPMENT) return;
   if (event.request.method !== "GET") return;
   const url = new URL(event.request.url);
   if (url.origin !== self.location.origin) return;

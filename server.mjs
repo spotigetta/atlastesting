@@ -1204,9 +1204,12 @@ const server = http.createServer(async (req, res) => {
     return res.end(`<!doctype html><html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width"><meta http-equiv="refresh" content="3"><title>Actualizando Atlas</title><style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f5f2ea;color:#1c211d;font-family:system-ui}.box{text-align:center}.a{width:64px;height:64px;margin:auto;display:grid;place-items:center;border-radius:20px;background:#1c211d;color:white;font:700 32px Georgia}.line{width:220px;height:4px;margin:24px auto;border-radius:9px;background:#d9d5ca;overflow:hidden}.line:after{content:"";display:block;width:45%;height:100%;background:#16604c;animation:x 1.2s infinite alternate}@keyframes x{to{transform:translateX(125%)}}</style><div class="box"><div class="a">A</div><h1>Atlas consulta las carpetas</h1><p>Reconstruyendo la base documental…</p><div class="line"></div></div></html>`);
   }
   const infographicRoot = path.join(workspace, "infografiasfinal");
+  const localBuildManifest = pathname === "/build-manifest.json";
   const target = pathname.startsWith("/infografias/")
     ? path.resolve(infographicRoot, `.${pathname.slice("/infografias".length)}`)
-    : path.resolve(atlasRoot, `.${pathname}`);
+    : localBuildManifest
+      ? path.join(atlasRoot, "dist", "build-manifest.json")
+      : path.resolve(atlasRoot, `.${pathname}`);
   const allowedRoot = pathname.startsWith("/infografias/") ? infographicRoot : atlasRoot;
   if (!target.startsWith(allowedRoot + path.sep) || !fs.existsSync(target) || fs.statSync(target).isDirectory()) {
     res.writeHead(404, { "content-type": "text/plain; charset=utf-8" }); return res.end("No encontrado");

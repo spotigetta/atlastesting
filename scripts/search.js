@@ -10,6 +10,14 @@
   let fullTextPromise;
   const shardPromises = new Map();
 
+  function libraryAccessible(libraryId) {
+    const library = libraryMap.get(libraryId);
+    if (!library) return false;
+    const settings = root.storage?.get?.().settings || {};
+    if ((settings.hiddenLibraries || []).includes(libraryId)) return false;
+    return !library.unlockFeature || Boolean(root.storage?.isFeatureUnlocked?.(library.unlockFeature));
+  }
+
   function expanded(value) {
     let text = normalize(value);
     for (const [term, variants] of Object.entries(aliases)) {
@@ -39,7 +47,7 @@
     const languageFilter = filter === "language:foreign";
 
     const docResults = documents
-      .filter(doc => (!allowedLibrary || doc.libraryId === allowedLibrary)
+      .filter(doc => libraryAccessible(doc.libraryId) && (!allowedLibrary || doc.libraryId === allowedLibrary)
         && (!statusFilter || doc.status === statusFilter)
         && (!languageFilter || Boolean(doc.language)))
       .map(doc => ({
@@ -51,16 +59,16 @@
       .slice(0, limit);
 
     const authors = catalog.libraries.flatMap(lib => lib.authors.map(author => ({ ...author, library: lib })))
-      .filter(item => (!allowedLibrary || item.library.id === allowedLibrary) && score(item.name, q, item.name))
+      .filter(item => libraryAccessible(item.library.id) && (!allowedLibrary || item.library.id === allowedLibrary) && score(item.name, q, item.name))
       .sort((a, b) => b.count - a.count).slice(0, 20);
     const categories = catalog.libraries.flatMap(lib => lib.categories.map(category => ({ ...category, library: lib })))
-      .filter(item => (!allowedLibrary || item.library.id === allowedLibrary) && score(item.name, q, item.name))
+      .filter(item => libraryAccessible(item.library.id) && (!allowedLibrary || item.library.id === allowedLibrary) && score(item.name, q, item.name))
       .sort((a, b) => b.count - a.count).slice(0, 20);
     const collections = catalog.collections.filter(item => (!allowedLibrary || item.libraryIds.includes(allowedLibrary)) && score(`${item.title} ${item.primary} ${item.complementary}`, q, item.title)).slice(0, 20);
     const routes = catalog.routes.filter(item => (!allowedLibrary || item.libraryIds.includes(allowedLibrary)) && score(`${item.title} ${item.description}`, q, item.title)).slice(0, 20);
     const questions = Object.entries(catalog.editorial?.questions || {}).flatMap(([libraryId, values]) => values.map((text, index) => ({ id: `${libraryId}-${index}`, text, libraryId })))
-      .filter(item => (!allowedLibrary || item.libraryId === allowedLibrary) && score(item.text, q, item.text)).slice(0, 20);
-    const libraries = catalog.libraries.filter(item => (!allowedLibrary || item.id === allowedLibrary) && score(`${item.name} ${item.short} ${item.description} ${item.purpose}`, q, item.name));
+      .filter(item => libraryAccessible(item.libraryId) && (!allowedLibrary || item.libraryId === allowedLibrary) && score(item.text, q, item.text)).slice(0, 20);
+    const libraries = catalog.libraries.filter(item => libraryAccessible(item.id) && (!allowedLibrary || item.id === allowedLibrary) && score(`${item.name} ${item.short} ${item.description} ${item.purpose}`, q, item.name));
 
     const result = { documents: docResults, authors, categories, collections, routes, questions, libraries };
     if (typeFilter && result[typeFilter]) {
@@ -134,7 +142,7 @@
         const document = documentMap.get(reference.id);
         return document ? { ...document, occurrences } : null;
       })
-      .filter(document => document && (!allowedLibrary || document.libraryId === allowedLibrary))
+      .filter(document => document && libraryAccessible(document.libraryId) && (!allowedLibrary || document.libraryId === allowedLibrary))
       .sort((a, b) => b.occurrences - a.occurrences || a.title.localeCompare(b.title))
       .slice(0, limit);
   }
@@ -171,6 +179,6 @@
     return results.sort((a,b) => b.occurrences - a.occurrences || a.title.localeCompare(b.title)).slice(0, limit);
   }
 
-  root.data = { catalog, documents, documentMap, libraryMap, normalize, expanded };
+  root.data = { catalog, documents, documentMap, libraryMap, normalize, expanded, libraryAccessible, accessibleDocuments: () => documents.filter(doc => libraryAccessible(doc.libraryId)) };
   root.search = { run: search, loadFullText, runFullText: searchFullText, runLiteral: searchLiteral };
 })();

@@ -31,14 +31,16 @@
       magnetEnabled: true, magnetStrength: 34, magnetDelay: 120, magnetDuration: 300,
       auroraIntensity: 88, auroraSize: 100, motionLevel: 100, josemariaPortraitIntensity: 18,
       shortTextScale: 100, shortContentWidth: 720, shortAlignment: "mixed",
-      interfaceScale: 100, cornerRadius: 100, fontStyle: "editorial", headingFont: "literata", bodyFont: "dm-sans", palette: "sage", surfaceStyle: "soft",
+      interfaceScale: 100, cornerRadius: 100, animationSpeed: 100,
+      fontStyle: "editorial", headingFont: "literata", bodyFont: "dm-sans", palette: "sage", surfaceStyle: "soft",
+      pageMood: "warm", cardDepth: "soft", headerDensity: "comfortable", useCustomAccent: false, customAccent: "#245647",
       compactMode: false, showExternalImages: true,
       homeOrder: ["exam", "today", "libraries", "reading", "history"], exploreOrder: [], exploreColors: {}, customizeHome: false, customizeExplore: false,
       libraryOrder: [], pinnedLibraries: [], hiddenLibraries: [], libraryColors: {}, libraryLabels: {},
       customChannels: { youtube: [], music: [], instagram: [] }, unlockedFeatures: []
     },
     lastLibrary: null,
-    version: 5
+    version: 6
   };
 
   function migrate(stored) {
@@ -72,6 +74,16 @@
       value.settings.customChannels ||= { youtube: [], music: [], instagram: [] };
       value.settings.unlockedFeatures ||= [];
       value.version = 5;
+    }
+    if (value.version < 6) {
+      value.settings ||= {};
+      value.settings.animationSpeed ??= 100;
+      value.settings.pageMood ||= "warm";
+      value.settings.cardDepth ||= "soft";
+      value.settings.headerDensity ||= "comfortable";
+      value.settings.useCustomAccent ??= false;
+      value.settings.customAccent ||= "#245647";
+      value.version = 6;
     }
     return value;
   }

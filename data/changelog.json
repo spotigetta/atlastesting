@@ -1,7 +1,30 @@
 {
-  "currentVersion": "5.3.0",
-  "updatedAt": "2026-08-06",
+  "currentVersion": "5.3.2",
+  "updatedAt": "2026-08-07",
   "entries": [
+    {
+      "version": "5.3.2",
+      "date": "2026-08-07",
+      "title": "Infografías completas y proporcionadas",
+      "changes": [
+        "El visor mide el lienzo editorial real antes de aplicar la escala",
+        "Preparador de círculos, OrtodoxIA, HistorIA y Doctrina dejan de abrirse estrechas o recortadas",
+        "El mismo ajuste protege automáticamente el resto de infografías, tanto cuadradas como verticales"
+      ]
+    },
+    {
+      "version": "5.3.1",
+      "date": "2026-08-07",
+      "title": "Actualización fiable y personalización visible",
+      "changes": [
+        "El modo local elimina el Service Worker antiguo y sirve siempre los archivos actuales",
+        "El botón Actualizar Atlas distingue el Gestor local de GitHub Pages",
+        "El manifiesto de construcción responde también desde el servidor local",
+        "El examen puede subirse o bajarse directamente al personalizar Inicio",
+        "Retrato móvil de san Josemaría más grande y presente",
+        "Nuevos controles de ambiente, profundidad, movimiento y color personal"
+      ]
+    },
     {
       "version": "5.3.0",
       "date": "2026-08-06",

@@ -54,6 +54,18 @@
     return (items || []).filter(item => !hidden.has(item.source || item.name));
   };
 
+  function instagramSourceDirectory() {
+    const settings = root.storage.get().settings;
+    const configured = [
+      ...(window.ATLAS_INSTAGRAM?.channels || []),
+      ...(settings.customChannels?.instagram || [])
+    ];
+    const unique = [...new Map(configured.filter(item => item?.url).map(item => [item.url, item])).values()];
+    const channels = enabledItems(unique, "disabledInstagramChannels");
+    if (!channels.length) return root.library.empty("No hay cuentas de Instagram activas", "Activa o añade cuentas desde Guardados.");
+    return `<section class="instagram-source-directory"><header><span>Fuentes configuradas</span><h2>${channels.length} cuentas preparadas</h2><p>Atlas solo presenta como publicación lo que incluye una imagen, descripción y enlace concreto. Mientras el proveedor no entregue posts, puedes abrir las cuentas verificadas desde aquí.</p></header><div>${channels.map(channel => `<a href="${esc(channel.url)}" target="_blank" rel="noopener"><i>@</i><span><b>${esc(channel.name)}</b><small>@${esc(channel.handle || String(channel.url).split("/").filter(Boolean).pop() || "instagram")}</small></span><em>Abrir cuenta ↗</em></a>`).join("")}</div><footer>Añade enlaces directos <code>/p/…</code> o <code>/reel/…</code> en el Gestor para mostrarlos como tarjetas completas.</footer></section>`;
+  }
+
   async function instagramPayload(cursorValue = 0, limit = 24) {
     const payload = await window.AtlasRuntime.fetchJson("data/instagram-cache.json", { fresh: true });
     const concrete = (payload.items || []).filter(item => !item.profileFallback && item.image && /\/(?:p|reel)\//.test(item.url || ""));
@@ -86,7 +98,7 @@
     musicRefreshRetries = 0;
     feedSeed = `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
     let shorts = [
-      ...root.data.catalog.shorts.filter(item => item.verified),
+      ...root.data.catalog.shorts.filter(item => item.verified && (!item.libraryId || root.data.libraryAccessible(item.libraryId))),
       ...(window.ATLAS_QUOTES?.items || [])
     ];
     const external = (window.ATLAS_EXTERNAL?.items || []).map(item => ({
@@ -94,7 +106,9 @@
       type: item.type === "books" ? "reading" : item.type,
       text: item.description, reference: item.source, reviewedAt: item.date || window.ATLAS_EXTERNAL.generatedAt.slice(0, 10)
     }));
-    const videos = enabledItems(window.ATLAS_YOUTUBE?.items, "disabledVideoChannels").map(item => ({
+    const reserveEnabled = root.storage.get().settings.showReserveVideos;
+    const videos = enabledItems(window.ATLAS_YOUTUBE?.items, "disabledVideoChannels")
+      .filter(item => item.tier !== "reserve" || reserveEnabled).map(item => ({
       ...item, text: item.description, reference: `${item.source} · YouTube`,
       reviewedAt: window.ATLAS_YOUTUBE.generatedAt?.slice(0, 10)
     }));
@@ -114,8 +128,13 @@
     const seen = new Set(root.storage.get().seenShorts || []);
     if (root.storage.get().settings.onlyNewShorts) {
       const unseen = shorts.filter(item => !seen.has(item.id));
-      /* Nunca dejamos el feed vacío ni reducido a una sola fuente por un snapshot ya visto. */
-      if (unseen.length >= Math.min(10, shorts.length)) shorts = unseen;
+      /* En Todos, «nuevo» solo sustituye el conjunto si conserva variedad y algún medio. */
+      const unseenTypes = new Set(unseen.map(item => item.type));
+      const mediaTypes = new Set(["video", "music", "instagram"]);
+      const mediaAvailable = shorts.some(item => mediaTypes.has(item.type));
+      const unseenHasMedia = unseen.some(item => mediaTypes.has(item.type));
+      const diverseEnough = filter !== "all" || (unseenTypes.size >= 3 && (!mediaAvailable || unseenHasMedia));
+      if (unseen.length >= Math.min(10, shorts.length) && diverseEnough) shorts = unseen;
     }
     queue = filter === "all" ? mixedAll(shorts) : constrained(shorts);
     cursor = 0;
@@ -139,7 +158,7 @@
       ${filter === "video" ? `<button class="reserve-video-toggle ${root.storage.get().settings.showReserveVideos ? "active" : ""}" data-toggle-reserve-videos>${root.storage.get().settings.showReserveVideos ? "Canales de reserva activados" : "Canales de reserva desactivados"}</button>` : ""}</div>
       ${["all","video","music","instagram"].includes(filter) ? '<span class="youtube-live-status" id="youtube-live-status">Actualizando canales…</span>' : ""}
       <div class="short-refresh-indicator" aria-live="polite"><span>↻</span><b>Arrastra para actualizar</b></div>
-      <div class="short-aurora" aria-hidden="true"><i></i><b></b></div><div class="short-feed">${initial || root.library.empty(filter === "instagram" ? "No hay publicaciones reales disponibles" : "No quedan contenidos nuevos", filter === "instagram" ? "Añade enlaces directos de publicaciones en el Gestor o configura Meta Business Discovery." : "Desactiva «Solo contenido nuevo» en Guardados.")}</div>
+      <div class="short-aurora" aria-hidden="true"><i></i><b></b></div><div class="short-feed">${initial || (filter === "instagram" ? instagramSourceDirectory() : root.library.empty("No quedan contenidos nuevos", "Desactiva «Solo contenido nuevo» en Guardados."))}</div>
     </div>`;
   }
 
@@ -241,7 +260,9 @@
       })).filter(item => !known.has(item.id)));
       const feed = document.querySelector(".short-feed");
       incorporateFresh(fresh, feed);
-      if (status && activeFilter === "instagram") status.textContent = `${payload.total || fresh.length} publicaciones · selección dinámica`;
+      if (status && activeFilter === "instagram") status.textContent = payload.total
+        ? `${payload.total} publicaciones reales · selección dinámica`
+        : `${enabledItems(payload.channels, "disabledInstagramChannels").length} cuentas configuradas · esperando publicaciones reales`;
     } catch {
       if (status && activeFilter === "instagram") status.textContent = "Instagram necesita publicaciones directas o credenciales de Meta configuradas en el Gestor";
     } finally { instagramLoading = false; }

@@ -89,8 +89,10 @@
 
   function homeCard() {
     const date = todayKey(); const night = session(date, "night"); const midday = session(date, "midday"); const config = stored().config;
-    const order = (root.storage.get().settings.homeOrder || ["exam"]).indexOf("exam") + 1;
-    return `<section class="section exam-home-card" data-home-block="exam" style="order:${Math.max(1,order)}"><div><span class="eyebrow">Examen diario · privado</span><h2>Agradecer, rectificar y recomenzar.</h2><p>Sin puntuaciones. Tus respuestas y notas permanecen únicamente en este dispositivo.</p></div><div class="exam-home-status">${config.middayEnabled ? `<span><i>☼</i><b>Mediodía</b><small>${statusText(midday.status)}</small></span>` : ""}<span><i>◒</i><b>Noche</b><small>${statusText(night.status)}</small></span></div><div class="button-row"><a class="primary-button" href="#/examen">Abrir examen</a>${night.status === "started" ? `<a class="secondary-button" href="#/examen/run?period=night&mode=${esc(night.mode || config.defaultMode)}">Continuar</a>` : ""}<a class="text-button" href="#/examen/week">Ver semana</a></div></section>`;
+    const settings = root.storage.get().settings; const homeOrder = settings.homeOrder || ["exam"];
+    const index = homeOrder.indexOf("exam"); const order = index + 1;
+    const controls = settings.customizeHome ? `<div class="exam-home-order"><span><b>Posición en Inicio</b><small>Mueve este bloque sin salir del examen.</small></span><button data-home-move="exam" data-direction="-1" ${index <= 0 ? "disabled" : ""}>↑ Subir</button><button data-home-move="exam" data-direction="1" ${index >= homeOrder.length - 1 ? "disabled" : ""}>↓ Bajar</button></div>` : "";
+    return `<section class="section exam-home-card" data-home-block="exam" style="order:${Math.max(1,order)}">${controls}<div><span class="eyebrow">Examen diario · privado</span><h2>Agradecer, rectificar y recomenzar.</h2><p>Sin puntuaciones. Tus respuestas y notas permanecen únicamente en este dispositivo.</p></div><div class="exam-home-status">${config.middayEnabled ? `<span><i>☼</i><b>Mediodía</b><small>${statusText(midday.status)}</small></span>` : ""}<span><i>◒</i><b>Noche</b><small>${statusText(night.status)}</small></span></div><div class="button-row"><a class="primary-button" href="#/examen">Abrir examen</a>${night.status === "started" ? `<a class="secondary-button" href="#/examen/run?period=night&mode=${esc(night.mode || config.defaultMode)}">Continuar</a>` : ""}<a class="text-button" href="#/examen/week">Ver semana</a></div></section>`;
   }
 
   function frequencyLabel(norm) {

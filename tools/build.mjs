@@ -50,6 +50,22 @@ function hashFile(file) {
   return crypto.createHash("sha256").update(fs.readFileSync(file)).digest("hex");
 }
 
+function publicSourceFingerprint() {
+  const hash = crypto.createHash("sha256");
+  const visit = relative => {
+    const absolute = path.join(root, relative);
+    const stat = fs.statSync(absolute);
+    if (stat.isDirectory()) {
+      for (const name of fs.readdirSync(absolute).sort((a, b) => a.localeCompare(b))) visit(path.join(relative, name));
+      return;
+    }
+    hash.update(relative.replaceAll("\\", "/"));
+    hash.update(fs.readFileSync(absolute));
+  };
+  for (const relative of ["index.html", "scripts", "styles", path.join("assets", "infografias")]) visit(relative);
+  return hash.digest("hex");
+}
+
 fs.mkdirSync(generatedDir, { recursive: true });
 fs.mkdirSync(dataDir, { recursive: true });
 copySnapshots();
@@ -95,6 +111,7 @@ for (const directory of ["data/documents", "data/search"]) copyDirectory(directo
 const buildId = `${packageMetadata.version}-${crypto.createHash("sha256")
   .update(hashFile(path.join(dataDir, "catalog.json")))
   .update(hashFile(path.join(dataDir, "documents", "manifest.json")))
+  .update(publicSourceFingerprint())
   .digest("hex").slice(0, 12)}`;
 const buildManifest = {
   app: "ATLAS",
@@ -106,6 +123,13 @@ const buildManifest = {
 };
 fs.writeFileSync(path.join(stagingDir, "build-manifest.json"), `${JSON.stringify(buildManifest, null, 2)}\n`);
 fs.writeFileSync(path.join(stagingDir, ".nojekyll"), "");
+
+const stagedIndexPath = path.join(stagingDir, "index.html");
+fs.writeFileSync(
+  stagedIndexPath,
+  fs.readFileSync(stagedIndexPath, "utf8").replaceAll("__ATLAS_BUILD_ID__", buildId),
+  "utf8"
+);
 
 const serviceWorkerPath = path.join(stagingDir, "service-worker.js");
 fs.writeFileSync(

@@ -42,7 +42,7 @@
 
   function renderTimeline() {
     const groups = new Map();
-    root.data.documents.forEach(doc => {
+    root.data.accessibleDocuments().forEach(doc => {
       const match = String(doc.year || "").match(/\b(30|[1-9]\d{2}|1\d{3}|20[0-2]\d)\b/);
       if (!match) return;
       const year = Number(match[1]);
@@ -72,7 +72,7 @@
   ];
 
   function placeDocs(place) {
-    return root.data.documents.filter(doc => place.terms.test(`${doc.title} ${doc.author || ""} ${doc.category}`)).slice(0, 20);
+    return root.data.accessibleDocuments().filter(doc => place.terms.test(`${doc.title} ${doc.author || ""} ${doc.category}`)).slice(0, 20);
   }
 
   function renderMap() {
@@ -91,7 +91,7 @@
   }
 
   function related(doc) {
-    const items = root.data.documents.filter(item => item.id !== doc.id && (
+    const items = root.data.accessibleDocuments().filter(item => item.id !== doc.id && (
       (doc.author && item.author === doc.author) ||
       root.data.normalize(item.title) === root.data.normalize(doc.title) ||
       (item.libraryId === doc.libraryId && item.category === doc.category)
@@ -102,15 +102,18 @@
   let graphScale = 1;
 
   function renderGraph(focusId = "", view = "hierarchy", libraryId = "") {
-    const library = root.data.libraryMap.get(libraryId) || root.data.catalog.libraries[0];
-    const focus = root.data.documentMap.get(focusId) || library.documents[0];
+    const libraries = root.data.catalog.libraries.filter(lib => root.data.libraryAccessible(lib.id));
+    const requestedLibrary = root.data.libraryMap.get(libraryId);
+    const library = requestedLibrary && root.data.libraryAccessible(requestedLibrary.id) ? requestedLibrary : libraries[0];
+    const requestedFocus = root.data.documentMap.get(focusId);
+    const focus = requestedFocus && root.data.libraryAccessible(requestedFocus.libraryId) ? requestedFocus : library.documents[0];
     const activeView = view === "sources" ? "sources" : "hierarchy";
     return `<section class="page graph-page"><header class="explore-hero"><span class="eyebrow">Atlas conectado</span><h1>${activeView === "hierarchy" ? "IA, categorías y fuentes" : "Conexiones entre documentos"}</h1><p>${activeView === "hierarchy" ? "Recorre tres niveles del corpus. Cada nodo es clicable y conduce al siguiente nivel." : "Las aristas proceden de coincidencias de autor, título, categoría o biblioteca."}</p></header>
       <div class="graph-switcher">
         <a class="chip ${activeView === "hierarchy" ? "active" : ""}" href="#/graph?view=hierarchy&library=${library.id}">Niveles de cada IA</a>
         <a class="chip ${activeView === "sources" ? "active" : ""}" href="#/graph?view=sources&focus=${encodeURIComponent(focus.id)}">Fuentes conectadas</a>
       </div>
-      ${activeView === "hierarchy" ? `<div class="chip-row graph-library-filter">${root.data.catalog.libraries.map(lib => `<a class="chip ${lib.id === library.id ? "active" : ""}" href="#/graph?view=hierarchy&library=${lib.id}">${esc(lib.short)}</a>`).join("")}</div>` : ""}
+      ${activeView === "hierarchy" ? `<div class="chip-row graph-library-filter">${libraries.map(lib => `<a class="chip ${lib.id === library.id ? "active" : ""}" href="#/graph?view=hierarchy&library=${lib.id}">${esc(lib.short)}</a>`).join("")}</div>` : ""}
       <div class="graph-toolbar"><button data-graph-zoom="-0.15" aria-label="Alejar">−</button><button data-graph-reset>100%</button><button data-graph-zoom="0.15" aria-label="Acercar">+</button><span>Arrastra las barras de desplazamiento para recorrer el mapa</span></div>
       <div class="relationship-map graph-workspace">${activeView === "hierarchy" ? hierarchyGraph(library) : sourceGraph(focus)}</div>
       ${activeView === "sources" ? `<div class="button-row"><a class="primary-button" href="#/reader/${encodeURIComponent(focus.id)}">Leer documento central</a><a class="secondary-button" href="#/graph?view=hierarchy&library=${focus.libraryId}">Ver su jerarquía</a></div>` : ""}
@@ -235,7 +238,7 @@
       clasicos: { terms: ["clasico","clasicos","obra","autor","leer","canon literario","tradicion cultural"], reason: "La pregunta busca una obra clásica, conexiones entre autores o una orientación de lectura." },
       "san-josemaria": { terms: ["josemaria","escriva","camino","surco","forja","trabajo","vida ordinaria","santificacion"], reason: "La consulta se refiere expresamente a san Josemaría o a sus enseñanzas sobre la vida ordinaria." }
     };
-    const docs = root.data.documents.map(doc => {
+    const docs = root.data.accessibleDocuments().map(doc => {
       const haystack = root.data.normalize(`${doc.title} ${doc.category} ${doc.author || ""} ${doc.file}`);
       const score = tokens.reduce((sum, token) => sum + (haystack.includes(token) ? 1 : 0), 0);
       return { doc, score };
@@ -305,7 +308,7 @@
     const yearButton = event.target.closest("[data-timeline-year]");
     if (yearButton) {
       const year = Number(yearButton.dataset.timelineYear);
-      const docs = root.data.documents.filter(doc => String(doc.year || "").match(new RegExp(`\\b${year}\\b`)));
+      const docs = root.data.accessibleDocuments().filter(doc => String(doc.year || "").match(new RegExp(`\\b${year}\\b`)));
       document.querySelector("#timeline-detail").innerHTML = timelineGroup(year, docs);
     }
     const placeButton = event.target.closest("[data-map-place]");

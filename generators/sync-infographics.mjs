@@ -7,7 +7,7 @@ const externalSourceRoot = path.join(path.dirname(atlasRoot), "infografiasfinal"
 const targetRoot = path.join(atlasRoot, "assets", "infografias");
 const files = [
   "infodoctrina_textogrande.html", "infografiaCanonIA_v2.html", "infohistoria.html",
-  "infografiaLiturgIA_v2.html", "infoCirculos.html", "infografiaCinepilot.html",
+  "infografiaLiturgIA_v2.html", "infoOrtodoxIA.html", "infoCirculos.html", "infografiaCinepilot.html",
   "infobib.html", "infografiaLosClasicos_v2.html", "infoSJM.html"
 ];
 
