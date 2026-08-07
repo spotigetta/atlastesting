@@ -1,0 +1,26 @@
+:root{
+  color-scheme:light dark;
+  --paper:#f4f0e7;--paper-2:#ebe5d9;--surface:#fbfaf6;--surface-raised:#fffefb;
+  --ink:#1c201d;--ink-2:#353c37;--muted:#6f756f;--faint:#989d98;
+  --line:#d7d3c8;--line-strong:#bbb7ac;--atlas:#245647;--atlas-soft:#dbe8e1;
+  --amber:#a86f17;--amber-soft:#f1e5cf;--blue:#3b6594;--blue-soft:#dce6f0;
+  --clay:#9a4d43;--clay-soft:#eeddda;--violet:#72538e;--violet-soft:#e7deec;
+  --emerald:#24735b;--emerald-soft:#d8ebe3;--rose:#a34862;--rose-soft:#f1dce3;
+  --indigo:#475ba3;--indigo-soft:#dfe3f3;--gold:#9a6b08;--gold-soft:#f2e6c4;
+  --cyan:#24758a;--cyan-soft:#d8eaf0;--olive:#697529;--olive-soft:#e5e9d2;
+  --burgundy:#843b4c;--burgundy-soft:#edd9de;--slate:#52636d;--slate-soft:#dfe6e9;
+  --danger:#a3463d;--success:#39765e;--warning:#9b6c20;
+  --shadow-sm:0 8px 24px rgba(27,35,30,.07);--shadow-lg:0 24px 70px rgba(23,31,27,.16);
+  --radius-sm:12px;--radius-md:18px;--radius-lg:26px;--radius-xl:34px;
+  --sans:"DM Sans",system-ui,-apple-system,sans-serif;--serif:"Literata",Georgia,serif;
+  --header-h:62px;--bottom-h:72px;--safe-bottom:env(safe-area-inset-bottom,0px);
+  --content:min(1180px,calc(100vw - 28px));
+}
+[data-library="doctrine"],.tone-amber{--tone:var(--amber);--tone-soft:var(--amber-soft)}
+[data-library="canon"],.tone-blue{--tone:var(--blue);--tone-soft:var(--blue-soft)}
+[data-library="history"],.tone-clay{--tone:var(--clay);--tone-soft:var(--clay-soft)}
+[data-library="liturgy"],.tone-violet{--tone:var(--violet);--tone-soft:var(--violet-soft)}
+.tone-emerald{--tone:var(--emerald);--tone-soft:var(--emerald-soft)}.tone-rose{--tone:var(--rose);--tone-soft:var(--rose-soft)}
+.tone-indigo{--tone:var(--indigo);--tone-soft:var(--indigo-soft)}.tone-gold{--tone:var(--gold);--tone-soft:var(--gold-soft)}
+.tone-cyan{--tone:var(--cyan);--tone-soft:var(--cyan-soft)}.tone-olive{--tone:var(--olive);--tone-soft:var(--olive-soft)}
+.tone-burgundy{--tone:var(--burgundy);--tone-soft:var(--burgundy-soft)}.tone-slate{--tone:var(--slate);--tone-soft:var(--slate-soft)}

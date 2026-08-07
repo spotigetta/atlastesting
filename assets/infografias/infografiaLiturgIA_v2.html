@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>LiturgIA</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&family=Cinzel+Decorative:wght@700&display=swap');
+
+    @page { size: 210mm 250mm; margin: 0; }
+    * { box-sizing: border-box; }
+    
+    html, body {
+      margin: 0;
+      background: #4a235a;
+      font-family: 'Alegreya', serif;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .page {
+      width: 210mm;
+      height: 290mm;
+      background: #ffffff;
+      position: relative;
+      padding: 12mm;
+      display: grid;
+      grid-template-rows: auto auto 1fr auto;
+      border: 4mm solid #d4af37;
+      box-shadow: inset 0 0 0 2mm #ffffff, inset 0 0 0 3mm #8b0000;
+    }
+
+    /* Ornamento central superior e inferior */
+    .page::before, .page::after {
+      content: "☩";
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 16pt;
+      color: #8b0000;
+    }
+    .page::before { top: 6mm; }
+    .page::after { bottom: 6mm; }
+
+    header {
+      text-align: center;
+      margin-bottom: 4mm;
+      padding-top: 4mm;
+    }
+
+    .subtitle {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 11pt;
+      color: #8b0000;
+      letter-spacing: 3px;
+      margin-bottom: 2mm;
+    }
+
+    h1 {
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 44pt;
+      font-weight: 700;
+      margin: 0 0 2mm;
+      color: #4a235a;
+      line-height: 1;
+    }
+
+    header p {
+      font-size: 16pt;
+      font-weight: 700;
+      margin: 0;
+      color: #8b0000;
+      font-style: italic;
+    }
+
+    .lead {
+      font-size: 14pt;
+      line-height: 1.4;
+      text-align: center;
+      margin: 2mm auto 6mm;
+      max-width: 90%;
+      color: #333;
+    }
+
+    h2 {
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 18pt;
+      color: #4a235a;
+      text-align: center;
+      margin: 0 0 4mm;
+    }
+
+    .areas {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4mm;
+      margin-bottom: 6mm;
+    }
+
+    .area {
+      text-align: center;
+      border: 1px solid #d4af37;
+      padding: 3mm;
+      background: rgba(212, 175, 55, 0.1);
+    }
+
+    .area b {
+      display: block;
+      font-family: 'Cinzel Decorative', cursive;
+      font-size: 14pt;
+      color: #8b0000;
+      margin-bottom: 1mm;
+    }
+
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6mm;
+      margin-bottom: 4mm;
+    }
+
+    .hierarchy {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5mm;
+    }
+
+    .hierarchy div {
+      font-size: 11.5pt;
+      border-bottom: 1px dotted #8b0000;
+      padding-bottom: 1mm;
+      display: flex;
+      align-items: center;
+    }
+
+    .hierarchy div::before {
+      content: "❖";
+      color: #d4af37;
+      margin-right: 2mm;
+      font-size: 9pt;
+    }
+
+    .answer {
+      background: #4a235a;
+      color: #ffffff;
+      padding: 4mm;
+      text-align: center;
+      border: 2px solid #d4af37;
+    }
+
+    .answer h2 {
+      color: #d4af37;
+      font-size: 16pt;
+      margin-bottom: 2mm;
+    }
+
+    .chain {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2mm;
+    }
+
+    .chain span {
+      background: #8b0000;
+      padding: 1.5mm 3mm;
+      font-size: 10pt;
+      font-weight: 700;
+    }
+
+    .sources {
+      margin-top: 4mm;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2mm;
+    }
+
+    .sources span {
+      border: 1px solid #4a235a;
+      padding: 1.5mm 2.5mm;
+      font-size: 10pt;
+      font-weight: 700;
+      color: #4a235a;
+    }
+
+    .questions-box {
+      border-top: 1px solid #d4af37;
+      border-bottom: 1px solid #d4af37;
+      padding: 4mm 0;
+      margin-bottom: 2mm;
+    }
+
+    .questions {
+      columns: 2;
+      column-gap: 6mm;
+      margin: 0;
+      padding-left: 5mm;
+      font-size: 12pt;
+      line-height: 1.35;
+    }
+    
+    .questions li {
+      margin-bottom: 2mm;
+    }
+
+    /* Rúbrica simulada en el texto (texto rojo para instrucciones) */
+    .rubric {
+      color: #8b0000;
+      font-style: italic;
+    }
+
+    .note {
+      text-align: center;
+      font-size: 10pt;
+      color: #8b0000;
+      margin-top: 3mm;
+      font-style: italic;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 2px solid #8b0000;
+      padding-top: 4mm;
+      font-size: 12pt;
+      font-style: italic;
+    }
+
+    .cta {
+      background: #4a235a;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 2.5mm 6mm;
+      font-weight: 700;
+      font-style: normal;
+      border: 1px solid #d4af37;
+    }
+  </style>
+</head>
+<body>
+  <article class="page">
+    <header>
+      <div class="subtitle">Cuaderno especializado de NotebookLM</div>
+      <h1>LiturgIA</h1>
+      <p>Comprende la celebración, sus normas y su historia</p>
+    </header>
+
+    <main>
+      <p class="lead">Consulta la Misa, sacramentos, sacramentales, Liturgia de las Horas, calendario, <span class="rubric">rúbricas</span>, ministros, música, arte sacro, teología sacramental e historia de los ritos.</p>
+      
+      <section class="areas">
+        <div class="area"><b>I.</b>Signos, gestos y oraciones</div>
+        <div class="area"><b>II.</b>Normas de la Misa</div>
+        <div class="area"><b>III.</b>Sacramentos y sacramentales</div>
+        <div class="area"><b>IV.</b>Liturgia de las Horas</div>
+        <div class="area"><b>V.</b>Año y calendario</div>
+        <div class="area"><b>VI.</b>Historia de los ritos</div>
+      </section>
+
+      <div class="row">
+        <section>
+          <h2>Orden de consulta</h2>
+          <div class="hierarchy">
+            <div>Libros oficiales vigentes</div>
+            <div>Normativa y rúbricas</div>
+            <div>Derecho Canónico y Catecismo</div>
+            <div>Concilios y Dicasterios</div>
+            <div>Padres y teólogos</div>
+            <div>Historia y pastoral</div>
+          </div>
+        </section>
+        
+        <section>
+          <div class="answer">
+            <h2>¿Se puede hacer esto en Misa?</h2>
+            <div class="chain">
+              <span>Respuesta</span> <span>Norma</span> <span>Autoridad</span>
+              <span>Opciones</span> <span>Excepciones</span>
+            </div>
+          </div>
+          <div class="sources">
+            <span>Biblia</span> <span>Sacrosanctum Concilium</span> <span>Catecismo</span>
+            <span>Misal Romano 2002</span> <span>Ordo Missae</span>
+            <span>Culto Divino</span>
+          </div>
+        </section>
+      </div>
+
+      <section class="questions-box">
+        <h2>Preguntas para empezar</h2>
+        <ul class="questions">
+          <li>¿Qué puede adaptar libremente el sacerdote?</li>
+          <li>Diferencia rúbrica, opción y costumbre.</li>
+          <li>Explica el significado del incienso.</li>
+          <li>¿Cómo se determina una precedencia?</li>
+          <li>Compara origen histórico y sentido actual.</li>
+          <li>¿Qué regula la comunión bajo las dos especies?</li>
+        </ul>
+      </section>
+      
+      <p class="note">Las normas pueden depender del rito, edición, país, diócesis y año concreto.</p>
+    </main>
+
+    <footer>
+      <span>Respuestas basadas en las fuentes incorporadas</span>
+      <a class="cta" href="https://notebooklm.google.com/notebook/c289c2e2-3dc2-4663-abde-b97acea31baf">Abrir LiturgIA ↗</a>
+    </footer>
+  </article>
+</body>
+</html>

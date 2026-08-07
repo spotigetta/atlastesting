@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CinePilot</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;600;800&display=swap');
+
+    @page { size: 210mm 250mm; margin: 0; }
+    * { box-sizing: border-box; }
+    
+    html, body {
+      margin: 0;
+      background: #1a1a1a;
+      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .page {
+      width: 210mm;
+      height: 290mm;
+      background: #1a1a1a;
+      position: relative;
+      overflow: hidden;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      border: 4mm solid #f4d03f;
+      padding: 12mm;
+    }
+
+    /* Luces de marquesina */
+    .page::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      border: 2mm dotted #e74c3c;
+      pointer-events: none;
+      z-index: 10;
+      opacity: 0.8;
+    }
+
+    header {
+      text-align: center;
+      position: relative;
+      margin-bottom: 8mm;
+      padding-bottom: 6mm;
+      border-bottom: 1.5mm solid #f4d03f;
+    }
+
+    .subtitle {
+      font-weight: 800;
+      text-transform: uppercase;
+      font-size: 14pt;
+      color: #f4d03f;
+      letter-spacing: 3px;
+      margin-bottom: 2mm;
+      display: inline-block;
+      background: #e74c3c;
+      padding: 1mm 4mm;
+      transform: skew(-10deg);
+    }
+
+    h1 {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 64pt;
+      line-height: 0.85;
+      margin: 0;
+      color: #f4d03f;
+      text-shadow: 4px 4px 0px #e74c3c;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    header p {
+      font-size: 16pt;
+      font-weight: 600;
+      margin: 4mm 0 0;
+      color: #fff;
+    }
+
+    .stat {
+      position: absolute;
+      right: 0;
+      top: 0;
+      background: #f4d03f;
+      color: #1a1a1a;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 20pt;
+      padding: 2mm 4mm;
+      transform: rotate(5deg);
+      box-shadow: 2px 2px 0 #e74c3c;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8mm;
+      align-content: start;
+    }
+
+    .lead {
+      grid-column: 1 / -1;
+      font-size: 15pt;
+      line-height: 1.4;
+      font-weight: 600;
+      text-align: center;
+      margin: 0 0 4mm;
+      color: #f4d03f;
+    }
+
+    .panel {
+      background: #2a2a2a;
+      border: 1mm solid #f4d03f;
+      padding: 2mm;
+      position: relative;
+      box-shadow: 6px 6px 0 #e74c3c;
+    }
+
+    h2 {
+      font-family: 'Bebas Neue', cursive;
+      font-size: 26pt;
+      color: #e74c3c;
+      margin: 0 0 4mm;
+      letter-spacing: 1px;
+      line-height: 1;
+    }
+
+    .cards {
+      display: grid;
+      gap: 3mm;
+    }
+
+    .card {
+      background: #e74c3c;
+      color: #fff;
+      font-weight: 600;
+      font-size: 12pt;
+      padding: 2.5mm 4mm;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      transform: skew(-5deg);
+    }
+
+    .ticket {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2mm;
+    }
+
+    .ticket span {
+      background: #f4d03f;
+      color: #1a1a1a;
+      font-weight: 800;
+      font-size: 11pt;
+      padding: 1.5mm 3mm;
+      border-radius: 2px;
+    }
+
+    .note {
+      font-size: 10pt;
+      color: #aaa;
+      margin-top: 4mm;
+      line-height: 1.3;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    .questions {
+      grid-column: 1 / -1;
+      background: #f4d03f;
+      border-color: #e74c3c;
+      box-shadow: 6px 6px 0 #fff;
+    }
+
+    .questions h2 {
+      color: #1a1a1a;
+    }
+
+    .questions ul {
+      columns: 2;
+      column-gap: 8mm;
+      margin: 0;
+      padding-left: 5mm;
+      font-size: 10pt;
+      font-weight: 600;
+      color: #1a1a1a;
+      line-height: 1.3;
+    }
+
+    .questions li {
+      margin-bottom: 2mm;
+      break-inside: avoid;
+    }
+
+    .flow {
+      grid-column: 1 / -1;
+      text-align: center;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 22pt;
+      color: #fff;
+      margin-top: -3mm;
+      letter-spacing: 2px;
+    }
+
+    .flow span {
+      color: #e74c3c;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: auto;
+      padding-top: 4mm;
+      font-size: 10pt;
+      font-weight: 600;
+      color: #f4d03f;
+    }
+
+
+  </style>
+</head>
+<body>
+  <article class="page">
+    <header>
+      <div class="subtitle">Cuaderno de NotebookLM</div>
+      <h1>CinePilot</h1>
+      <p>Encuentra qué ver y conoce su contenido antes de elegir</p>
+      <div class="stat">5.312 Films</div>
+    </header>
+
+    <main>
+      <p class="lead">Consulta cine por año, género, dirección, valoración, público apropiado, valoración moral y posibles contenidos sensibles.</p>
+      
+      <section class="panel">
+        <h2>Para qué sirve</h2>
+        <div class="cards">
+          <div class="card">Encontrar por género, año o público</div>
+          <div class="card">Recibir recomendaciones por edad</div>
+          <div class="card">Conocer posibles inconvenientes</div>
+          <div class="card">Comparar antes de elegir</div>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Información incluida</h2>
+        <div class="ticket">
+          <span>Título y año</span>
+          <span>Género</span>
+          <span>Dirección</span>
+          <span>Valoración</span>
+          <span>Público</span>
+          <span>Valoración moral</span>
+          <span>Advertencias</span>
+        </div>
+        <p class="note">La valoración procede del catálogo y no sustituye el criterio personal o de educadores.</p>
+      </section>
+
+      <section class="panel questions">
+        <h2>Pruébala con preguntas como…</h2>
+        <ul>
+          <li>Diseña una sesión de cine familiar con tres películas de estilos distintos y explica cuál encaja mejor según la edad de los espectadores.</li>
+          <li>Compara estas películas por calidad, duración, público apropiado y posibles contenidos sensibles.</li>
+          <li>Recomiéndame una película intensa y adulta, pero sin sexualidad explícita ni violencia excesiva.</li>
+          <li>Busca cine histórico bien valorado que además pueda servir para conversar después sobre cuestiones humanas o morales.</li>
+          <li>¿Qué película elegirías para un adolescente al que le gustan los thrillers, pero cuyos padres quieren evitar contenidos especialmente problemáticos?</li>
+          <li>Encuentra una película breve, entretenida y poco conocida, y justifica por qué merece la pena verla.</li>
+        </ul>
+      </section>
+      
+      <div class="flow">Buscar <span>→</span> comparar <span>→</span> conocer contenidos <span>→</span> elegir</div>
+    </main>
+
+    
+  </article>
+</body>
+</html>

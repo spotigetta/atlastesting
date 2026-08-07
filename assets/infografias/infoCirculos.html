@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Preparador de Círculos SJM</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Newsreader:ital,wght@0,600;1,600;1,700&family=IBM+Plex+Mono:wght@600;700&display=swap');
+  *{box-sizing:border-box}
+  html,body{margin:0;min-height:100%;background:#20272b}
+  body{display:flex;justify-content:center;align-items:flex-start}
+  .slide-container{position:relative;width:1440px;height:1440px;overflow:hidden;color:#20272b;font-family:'Bricolage Grotesque',sans-serif;
+    background:
+      linear-gradient(90deg,transparent 78px,#20272b13 78px 80px,transparent 80px) 0 0/160px 100%,
+      radial-gradient(circle at 100% 0,#ff6a4d28,transparent 34%),
+      radial-gradient(circle at 0 100%,#246f7733,transparent 32%),
+      linear-gradient(180deg,#f5efde,#e9ddb9 72%,#dfcf9d)}
+  .slide-container::after{content:"";position:absolute;inset:26px;border:2px solid #20272b;pointer-events:none}
+  .spiral{position:absolute;left:0;top:0;width:38px;height:1440px;z-index:20;background:radial-gradient(circle at 19px 30px,#20272b 0 8px,transparent 9px) 0 0/38px 72px,linear-gradient(#20272b,#3f4649)}
+  .spiral::after{content:"";position:absolute;left:34px;top:0;width:4px;height:100%;background:#20272b}
+  .corner-tag{position:absolute;right:60px;top:50px;z-index:15;padding:7px 15px;background:#ffd24b;border:3px solid #20272b;transform:rotate(3deg);font:700 14px 'IBM Plex Mono';letter-spacing:3px}
+  .corner-tag::before{content:"WORKSHOP · 03 / 03"}
+
+  .head{position:absolute;left:74px;top:54px;width:1296px;height:278px;padding:29px 46px;color:#fff;background:#246f77;border:4px solid #20272b;box-shadow:10px 10px 0 #ff6a4d;clip-path:polygon(0 0,96% 0,100% 87%,3% 100%)}
+  .filing{display:inline-block;padding:5px 12px;background:#ffd24b;color:#20272b;font:700 13px 'IBM Plex Mono';letter-spacing:3px;text-transform:uppercase}
+  .head h1{margin:8px 0 5px;max-width:920px;font:800 83px/.84 'Bricolage Grotesque';letter-spacing:-3px;text-shadow:4px 4px #20272b}
+  .head h1 i{color:#ffd24b}
+  .inscript{max-width:970px;font:italic 600 24px/1.18 'Newsreader';color:#fff2b7}
+  .inscript b{color:#ff8a70;font-family:'Bricolage Grotesque';font-style:normal;font-weight:800}
+  .num-stamp{position:absolute;right:70px;top:58px;text-align:right}
+  .num-stamp b{display:block;font:800 104px/.7 'Bricolage Grotesque';color:#ffd24b;text-shadow:4px 4px #20272b}
+  .num-stamp span{font:800 40px 'Bricolage Grotesque';color:#ff6a4d;text-shadow:3px 3px #20272b}
+
+  .lead{position:absolute;left:74px;top:370px;width:1296px;height:112px;padding:22px 30px;background:#ffd24b;border:3px solid #20272b;border-left:14px solid #ff6a4d;box-shadow:8px 8px #20272b;transform:rotate(-.2deg)}
+  .lead::before{content:"NOTA DEL FORMADOR";position:absolute;left:-3px;top:-25px;padding:5px 15px;background:#ff6a4d;border:2px solid #20272b;color:#fff;font:700 12px 'IBM Plex Mono';letter-spacing:3px}
+  .lead p{margin:0;max-width:1180px;font:600 23px/1.25 'Bricolage Grotesque'}
+  .lead b{color:#246f77;font-weight:800}
+  .lead .tag{position:absolute;right:18px;bottom:7px;color:#b93e2b;font:700 11px 'IBM Plex Mono';letter-spacing:2px;text-transform:uppercase}
+
+  .modes{position:absolute;left:74px;top:525px;width:790px;height:228px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  .mode-card{position:relative;padding:20px 22px;background:#fff;border:3px solid #20272b;box-shadow:6px 6px #ff6a4d}
+  .mode-card:nth-child(2){background:#246f77;color:#fff;box-shadow:-6px 6px #ff6a4d}
+  .badge{width:38px;height:38px;display:grid;place-items:center;border-radius:50%;background:#ff6a4d;color:#fff;font-weight:800;font-size:17px}
+  .mode-card:nth-child(2) .badge{background:#ffd24b;color:#20272b}
+  .label{display:inline-block;margin:10px 0 8px;padding:7px 14px 6px;background:#ffe0c9;border:2px solid #20272b;color:#9f2f1d;font:800 24px/1 'IBM Plex Mono';letter-spacing:2px;text-transform:uppercase;box-shadow:4px 4px 0 #20272b}
+  .mode-card:nth-child(2) .label{background:#ffd24b;color:#20272b;box-shadow:4px 4px 0 #0f3f44}
+  .mode-card h2{margin:0 0 8px;font:800 31px/.95 'Bricolage Grotesque';letter-spacing:-1px}
+  .mode-card p{margin:0;font-size:19px;line-height:1.2}
+
+  .checklist{position:absolute;left:894px;top:525px;width:476px;height:228px;padding:19px 25px;background:#fff;border:3px solid #20272b;box-shadow:6px 6px #246f77;transform:rotate(.25deg)}
+  .checklist h2{margin:0 0 7px;color:#246f77;font:800 27px/1 'Bricolage Grotesque'}
+  .checklist ul{display:grid;grid-template-columns:1fr 1fr;gap:7px 12px;list-style:none;margin:0;padding:0}
+  .checklist li{position:relative;min-height:50px;padding:7px 6px 6px 34px;background:#f4eddb;border-bottom:2px solid #ff6a4d;font-size:17px;line-height:1.08}
+  .checklist li::before{content:"✓";position:absolute;left:7px;top:8px;width:21px;height:21px;display:grid;place-items:center;border-radius:50%;background:#ff6a4d;color:#fff;font-size:14px;font-weight:800}
+  .checklist li b{display:block;color:#246f77;font-size:16px;text-transform:uppercase}
+
+  .ways{position:absolute;left:74px;top:794px;width:1296px;height:246px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .way{position:relative;padding:20px 22px;background:#fff;border:3px solid #20272b;border-top-width:10px;box-shadow:6px 6px #20272b}
+  .way:nth-child(1){border-top-color:#246f77;box-shadow:6px 6px #246f77}.way:nth-child(2){border-top-color:#ff6a4d;box-shadow:6px 6px #ff6a4d}.way:nth-child(3){border-top-color:#ffd24b;box-shadow:6px 6px #c49a2e}
+  .pill{position:absolute;left:-3px;top:-10px;padding:6px 12px;background:#20272b;color:#ffd24b;font:700 11px 'IBM Plex Mono';letter-spacing:2px}
+  .way h2{margin:27px 0 3px;font:800 29px/1 'Bricolage Grotesque'}
+  .way:nth-child(1) h2{color:#246f77}.way:nth-child(2) h2{color:#e14e35}.way:nth-child(3) h2{color:#a67708}
+  .way p{margin:0 0 8px;font:italic 600 18px/1.16 'Newsreader'}
+  .way ul{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+  .way li{padding:4px 9px;background:#f0e8d5;border:1px solid #cbbd9c;font-size:16px;font-weight:700}
+
+  .queries{position:absolute;left:74px;top:1082px;width:1296px;height:178px;padding:25px 30px 20px;background:#246f77;border:4px solid #20272b;box-shadow:8px 8px #ff6a4d;color:#fff}
+  .queries::before{content:"✦ SOLICITUDES QUE PUEDES HACER ✦";position:absolute;left:-4px;top:-27px;padding:6px 16px;background:#ff6a4d;border:3px solid #20272b;font:700 12px 'IBM Plex Mono';letter-spacing:3px}
+  .queries h2{margin:0 0 12px;color:#ffd24b;font:800 29px/1 'Bricolage Grotesque'}
+  .samples{display:grid;grid-template-columns:1fr 1fr;gap:10px 14px}
+  .sample{position:relative;padding:10px 15px 10px 45px;background:#fff8e9;border:2px solid #ffd24b;color:#20272b;font-size:19px;font-weight:700;line-height:1.1}
+  .sample::before{content:attr(data-n);position:absolute;left:8px;top:7px;padding:3px 7px;background:#ff6a4d;border:2px solid #20272b;color:#fff;font-size:13px}
+
+  .cta{position:absolute;left:74px;top:1300px;width:1296px;height:104px;display:grid;grid-template-columns:1.65fr .8fr;gap:18px}
+  .cta-copy{position:relative;padding:15px 24px;background:#20272b;border:4px solid #ff6a4d;box-shadow:8px 8px #ffd24b;color:#fff}
+  .cta-copy h2{display:inline;margin:0 12px 0 0;color:#ffd24b;font:800 29px 'Bricolage Grotesque'}
+  .cta-copy p{display:inline;margin:0;font-size:19.5px;line-height:1.15}
+  .cta-copy b{color:#ff8067}
+  .cta a{display:grid;place-items:center;padding:10px;background:#ff6a4d;border:4px solid #20272b;box-shadow:-7px 7px #20272b;color:#fff;text-align:center;text-decoration:none;font:800 24px/1.05 'Bricolage Grotesque'}
+  .cta a span{display:block;color:#ffd24b;font:700 11px 'IBM Plex Mono';letter-spacing:3px;text-transform:uppercase}
+</style>
+</head>
+<body>
+<main class="slide-container">
+  <div class="spiral"></div><div class="corner-tag"></div>
+
+  <header class="head">
+    <div class="filing">✦ Preparador · de círculos</div>
+    <h1>Preparado<i>r</i> de Círculos SJM</h1>
+    <div class="inscript">De los <b>temas</b> y las <b>fuentes</b> a unas <b>notas claras de predicación</b>: localiza ideas en las obras de san Josemaría, relaciona fuentes y crea notas desarrolladas.</div>
+    <div class="num-stamp"><b>03</b><span>× 03</span></div>
+  </header>
+
+  <section class="lead">
+    <p>Prepara un <b>cuaderno de notas</b> que ayuda al formador a estudiar, rezar y predicar con su propio estilo —<b>sin sustituir al formador</b> ni redactar un discurso cerrado.</p>
+    <div class="tag">Del estudio a la predicación</div>
+  </section>
+
+  <section class="modes">
+    <article class="mode-card"><div class="badge">M1</div><div class="label">Modo 1</div><h2>Temas</h2><p>Adjunta los temas (ej: 3 puntos) <b>y devuelve el esquema completo</b> del círculo, listo para ser trabajado.</p></article>
+    <article class="mode-card"><div class="badge">M2</div><div class="label">Modo 2</div><h2>Temas + Evangelio</h2><p>Añade el Evangelio del día y tendrás: <b>meditación inicial</b> y esquema completo.</p></article>
+  </section>
+
+  <section class="checklist">
+    <h2>Cada punto incluye</h2>
+    <ul>
+      <li><b>Idea central</b></li><li><b>Explicación</b></li><li><b>Aplicación</b>ordinaria</li><li><b>Ejemplo</b>o imagen</li><li><b>Conexión</b>con el espíritu</li><li><b>Referencias</b>a los escritos</li>
+    </ul>
+  </section>
+
+  <section class="ways">
+    <article class="way"><div class="pill">✦ VERDADES</div><h2>1 · Doctrina</h2><p>Forma criterios, explica la verdad cristiana y aporta referencias.</p><ul><li>Credo</li><li>Gracia</li><li>Iglesia</li><li>Sacramentos</li><li>Moral</li></ul></article>
+    <article class="way"><div class="pill">✦ PRÁCTICA</div><h2>2 · Norma de piedad</h2><p>Explica su sentido sobrenatural, dificultades y consejos prácticos.</p><ul><li>Oración</li><li>Misa</li><li>Confesión</li><li>Rosario</li><li>Examen</li></ul></article>
+    <article class="way"><div class="pill">✦ VIDA</div><h2>3 · Costumbre o lucha</h2><p>Aterriza en virtudes, trabajo, familia, apostolado y propósitos.</p><ul><li>Orden</li><li>Fortaleza</li><li>Alegría</li><li>Trabajo</li><li>Amistad y familia</li></ul></article>
+  </section>
+
+  <section class="queries">
+    <h2>Solicitudes que puedes hacer</h2>
+    <div class="samples">
+      <div class="sample" data-n="01">Filiación divina, oración y alegría.</div><div class="sample" data-n="02">Gracia, confesión y sinceridad.</div><div class="sample" data-n="03">Evangelio, trabajo, Misa y apostolado.</div><div class="sample" data-n="04">Referencias sobre unidad de vida y familia.</div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="cta-copy"><h2>Pedirlo</h2><p>Solo se necesita: <b>formador</b>, <b>temas</b> y, si se quiere, <b>Evangelio del día</b>. Devuelve notas claras, ejemplos, referencias y aplicación.</p></div>
+    <a href="https://notebooklm.google.com/notebook/19bebd87-7c07-46c7-8e44-78c8b84a0d8e"><span>Cuaderno NotebookLM</span>Abrir Preparador ↗</a>
+  </section>
+</main>
+</body>
+</html>

@@ -1,0 +1,120 @@
+{
+  "generatedAt": "2026-08-07T10:41:44.069Z",
+  "dataVersion": "5.3.0",
+  "counts": [
+    {
+      "library": "doctrine",
+      "documents": 224,
+      "words": 12017996,
+      "categories": 15,
+      "authors": 23,
+      "historical": 2,
+      "incomplete": 1,
+      "foreignLanguage": 16,
+      "dated": 1
+    },
+    {
+      "library": "canon",
+      "documents": 71,
+      "words": 1966539,
+      "categories": 5,
+      "authors": 3,
+      "historical": 3,
+      "incomplete": 0,
+      "foreignLanguage": 12,
+      "dated": 2
+    },
+    {
+      "library": "history",
+      "documents": 170,
+      "words": 16063304,
+      "categories": 9,
+      "authors": 19,
+      "historical": 0,
+      "incomplete": 0,
+      "foreignLanguage": 52,
+      "dated": 1
+    },
+    {
+      "library": "liturgy",
+      "documents": 98,
+      "words": 12899588,
+      "categories": 11,
+      "authors": 13,
+      "historical": 3,
+      "incomplete": 1,
+      "foreignLanguage": 12,
+      "dated": 3
+    },
+    {
+      "library": "ortodoxia",
+      "documents": 153,
+      "words": 7574001,
+      "categories": 5,
+      "authors": 29,
+      "historical": 0,
+      "incomplete": 0,
+      "foreignLanguage": 120,
+      "dated": 0
+    },
+    {
+      "library": "cinepilot",
+      "documents": 10,
+      "words": 4455313,
+      "categories": 1,
+      "authors": 0,
+      "historical": 0,
+      "incomplete": 0,
+      "foreignLanguage": 0,
+      "dated": 0
+    },
+    {
+      "library": "bibliotecaria",
+      "documents": 21,
+      "words": 120714,
+      "categories": 1,
+      "authors": 0,
+      "historical": 0,
+      "incomplete": 0,
+      "foreignLanguage": 0,
+      "dated": 0
+    },
+    {
+      "library": "clasicos",
+      "documents": 300,
+      "words": 57213131,
+      "categories": 1,
+      "authors": 1,
+      "historical": 0,
+      "incomplete": 0,
+      "foreignLanguage": 0,
+      "dated": 1
+    },
+    {
+      "library": "san-josemaria",
+      "documents": 19,
+      "words": 631725,
+      "categories": 1,
+      "authors": 0,
+      "historical": 0,
+      "incomplete": 0,
+      "foreignLanguage": 0,
+      "dated": 0
+    },
+    {
+      "library": "preparadora-circulos",
+      "documents": 27,
+      "words": 1509271,
+      "categories": 5,
+      "authors": 2,
+      "historical": 0,
+      "incomplete": 0,
+      "foreignLanguage": 0,
+      "dated": 0
+    }
+  ],
+  "validation": {
+    "errors": [],
+    "warnings": []
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "./",
+  "name": "Atlas · Mercabá",
+  "short_name": "Atlas",
+  "description": "Portal documental de las inteligencias artificiales especializadas de Mercabá.",
+  "lang": "es",
+  "start_url": "./#/",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#f4f0e7",
+  "theme_color": "#f4f0e7",
+  "categories": ["education", "books", "reference"],
+  "icons": [
+    {"src":"assets/icons/icon-192.png","sizes":"192x192","type":"image/png","purpose":"any"},
+    {"src":"assets/icons/icon-512.png","sizes":"512x512","type":"image/png","purpose":"any"},
+    {"src":"assets/icons/icon-maskable-512.png","sizes":"512x512","type":"image/png","purpose":"maskable"}
+  ],
+  "shortcuts": [
+    {"name":"Explorar bibliotecas","short_name":"Explorar","url":"./#/explore","icons":[{"src":"assets/icons/icon-192.png","sizes":"192x192"}]},
+    {"name":"Descubrir","short_name":"Descubrir","url":"./#/discover","icons":[{"src":"assets/icons/icon-192.png","sizes":"192x192"}]},
+    {"name":"Examen diario","short_name":"Examen","url":"./#/examen","icons":[{"src":"assets/icons/icon-192.png","sizes":"192x192"}]},
+    {"name":"Guardados","short_name":"Guardados","url":"./#/saved","icons":[{"src":"assets/icons/icon-192.png","sizes":"192x192"}]}
+  ]
+}

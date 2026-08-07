@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#f4f0e7">
+  <meta name="description" content="Atlas: portal documental de las inteligencias artificiales especializadas de Mercabá">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Atlas">
+  <title>Atlas · Mercabá</title>
+  <link rel="icon" href="assets/icons/icon-192.png" type="image/png">
+  <script>
+    if (location.protocol !== "file:") {
+      const manifest = document.createElement("link");
+      manifest.rel = "manifest";
+      manifest.href = "manifest.webmanifest";
+      document.head.append(manifest);
+    }
+  </script>
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500;600;700&family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Literata:opsz,wght@7..72,500;7..72,600;7..72,700&family=Lora:wght@500;600;700&family=Manrope:wght@400;500;600;700&family=Merriweather:wght@400;700&family=Montserrat:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/tokens.css">
+  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="styles/components.css">
+  <link rel="stylesheet" href="styles/themes.css">
+  <link rel="stylesheet" href="styles/responsive.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <div class="paper-grain" aria-hidden="true"></div>
+
+  <section class="atlas-intro" id="atlas-intro" hidden aria-label="Presentación de Atlas">
+    <div class="intro-light" aria-hidden="true"></div>
+    <button class="intro-skip" data-action="intro-close">Saltar</button>
+    <div class="intro-stage">
+      <span class="intro-monogram">A</span>
+      <div class="intro-scene" data-intro-scene="0"><small>Una biblioteca que piensa en relaciones</small><h1>Todo tu Atlas.<br>En un solo lugar.</h1></div>
+      <div class="intro-scene" data-intro-scene="1"><small>975 fuentes documentales</small><h1>Busca. Lee.<br>Conecta.</h1><div class="intro-orbit"><i></i><i></i><i></i><i></i></div></div>
+      <div class="intro-scene" data-intro-scene="2"><small>Contenido vivo</small><h1>Descubre cada día.</h1><p>Vídeos · música · lecturas · oración · historia</p></div>
+      <div class="intro-scene" data-intro-scene="3"><small>Mercabá presenta</small><h1>Atlas</h1><p>Tu mapa para saber dónde buscar.</p><button class="intro-enter" data-action="intro-close">Entrar en Atlas →</button></div>
+    </div>
+    <div class="intro-progress"><i></i><i></i><i></i><i></i></div>
+  </section>
+
+  <header class="app-header">
+    <a class="brand" href="#/" aria-label="Atlas, inicio">
+      <span class="brand-glyph">A</span>
+      <span class="brand-copy"><b>Atlas</b><small>Mercabá</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#/" data-nav="home">Inicio</a>
+      <a href="#/explore" data-nav="explore">Explorar</a>
+      <a href="#/discover" data-nav="discover">Descubrir</a>
+      <a href="#/examen" data-nav="examen">Examen</a>
+      <a href="#/compare" data-nav="compare">Capacidades</a>
+      <a href="#/saved" data-nav="saved">Guardados</a>
+    </nav>
+    <div class="header-tools">
+      <button class="desktop-refresh-button" data-action="refresh-atlas" title="Reconstruir el catálogo y consultar fuentes recientes">↻ <span>Actualizar Atlas</span></button>
+      <button class="round-button mobile-refresh-button" data-action="refresh-atlas" aria-label="Actualizar Atlas" title="Actualizar Atlas">↻</button>
+      <button class="round-button settings-button" data-action="settings" aria-label="Personalizar Atlas" title="Personalizar Atlas">⚙</button>
+      <button class="round-button help-button" data-action="tutorial" aria-label="Cómo usar Atlas" title="Cómo usar Atlas">?</button>
+      <button class="round-button" data-action="search" aria-label="Buscar" title="Buscar (Ctrl K)">
+        <svg aria-hidden="true"><use href="#icon-search"></use></svg>
+      </button>
+      <button class="round-button" data-action="theme" aria-label="Cambiar tema" title="Cambiar tema">
+        <svg aria-hidden="true"><use href="#icon-theme"></use></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1"></main>
+
+  <nav class="bottom-nav" aria-label="Navegación móvil">
+    <a href="#/" data-nav="home"><svg><use href="#icon-home"></use></svg><span>Inicio</span></a>
+    <a href="#/explore" data-nav="explore"><svg><use href="#icon-compass"></use></svg><span>Explorar</span></a>
+    <a href="#/discover" data-nav="discover"><svg><use href="#icon-spark"></use></svg><span>Descubrir</span></a>
+    <a href="#/examen" data-nav="examen"><svg><use href="#icon-check"></use></svg><span>Examen</span></a>
+    <a href="#/saved" data-nav="saved"><svg><use href="#icon-bookmark"></use></svg><span>Guardados</span></a>
+  </nav>
+
+  <section class="search-sheet" id="search-sheet" hidden aria-label="Búsqueda global">
+    <button class="sheet-scrim" data-action="close-search" aria-label="Cerrar búsqueda"></button>
+    <div class="search-panel" role="dialog" aria-modal="true" aria-labelledby="search-heading">
+      <div class="search-input-wrap">
+        <svg><use href="#icon-search"></use></svg>
+        <input id="global-search" type="search" autocomplete="off" placeholder="Busca “Misal Romano”" aria-labelledby="search-heading">
+        <button class="voice-button" data-action="voice-search" aria-label="Buscar por voz" title="Buscar por voz">
+          <svg><use href="#icon-mic"></use></svg>
+        </button>
+        <button class="text-button" data-action="close-search">Cerrar</button>
+      </div>
+      <div class="search-help"><span id="search-heading">Busca documentos, autores, categorías, rutas o preguntas</span><kbd>Ctrl K</kbd></div>
+      <div class="chip-row search-filters" id="search-filters" aria-label="Filtros de búsqueda"></div>
+      <div class="fulltext-bar">
+        <button class="secondary-button" data-action="fulltext-search">
+          <svg><use href="#icon-books"></use></svg>
+          Buscar este texto dentro de los documentos
+        </button>
+        <button class="guide-ai-button" data-action="atlas-guide">
+          <span class="ai-glyph">IA</span>
+          <span><b>¿A qué IA debería preguntar?</b><small>Atlas orienta la consulta sin responder doctrinalmente</small></span>
+          <svg><use href="#icon-arrow"></use></svg>
+        </button>
+        <span id="fulltext-status">El índice completo se carga solo al utilizarlo.</span>
+      </div>
+      <div id="search-results" class="search-results" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <section class="detail-layer" id="detail-layer" hidden>
+    <button class="sheet-scrim" data-action="close-detail" aria-label="Cerrar ficha"></button>
+    <article class="detail-sheet" role="dialog" aria-modal="true" aria-labelledby="detail-title">
+      <div id="detail-content"></div>
+    </article>
+  </section>
+
+  <section class="settings-layer" id="settings-layer" hidden aria-label="Personalización de Atlas">
+    <button class="sheet-scrim" data-action="close-settings" aria-label="Cerrar personalización"></button>
+    <article class="settings-panel" role="dialog" aria-modal="true" aria-labelledby="settings-title">
+      <header><div><span class="eyebrow">Tu experiencia</span><h2 id="settings-title">Personalizar Atlas</h2></div><button class="icon-button" data-action="close-settings" aria-label="Cerrar"><svg><use href="#icon-close"></use></svg></button></header>
+      <div id="settings-content"></div>
+      <footer><button class="text-button" data-action="reset-personalization">Restablecer</button><button class="primary-button" data-action="close-settings">Guardar y cerrar</button></footer>
+    </article>
+  </section>
+
+  <section class="share-layer" id="share-layer" hidden aria-label="Compartir">
+    <button class="sheet-scrim" data-action="close-share" aria-label="Cerrar opciones de compartir"></button>
+    <div class="share-panel" role="dialog" aria-modal="true" aria-labelledby="share-title">
+      <div class="section-head">
+        <div><span class="eyebrow">Compartir desde Atlas</span><h2 id="share-title">Elige una opción</h2></div>
+        <button class="icon-button" data-action="close-share" aria-label="Cerrar"><svg><use href="#icon-close"></use></svg></button>
+      </div>
+      <p id="share-preview" class="muted small"></p>
+      <div class="share-options">
+        <button data-share-choice="native"><svg><use href="#icon-share"></use></svg><span><b>Compartir</b><small>Usar el menú del dispositivo</small></span></button>
+        <button data-share-choice="whatsapp"><span class="share-letter">W</span><span><b>WhatsApp</b><small>Abrir un mensaje preparado</small></span></button>
+        <button data-share-choice="copy-link"><span class="share-letter">↗</span><span><b>Copiar enlace</b><small>Enlace profundo al contenido</small></span></button>
+        <button data-share-choice="copy-text"><span class="share-letter">T</span><span><b>Copiar texto y enlace</b><small>Contenido listo para pegar</small></span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-layer" id="video-layer" hidden aria-label="Reproductor de YouTube">
+    <button class="video-scrim" data-video-close aria-label="Cerrar reproductor"></button>
+    <article class="video-player-dialog" role="dialog" aria-modal="true" aria-labelledby="video-player-title">
+      <header>
+        <div><span class="eyebrow">YouTube · reproducción integrada</span><h2 id="video-player-title">Vídeo</h2></div>
+        <button class="icon-button" data-video-close aria-label="Cerrar"><svg><use href="#icon-close"></use></svg></button>
+      </header>
+      <div class="video-frame-wrap"><iframe id="youtube-player" title="Reproductor de YouTube" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+      <footer><p>El vídeo se transmite directamente desde YouTube; Atlas no lo descarga ni almacena.</p><a id="youtube-original-link" class="secondary-button" target="_blank" rel="noopener">Abrir en YouTube</a></footer>
+    </article>
+  </section>
+
+  <section class="infographic-layer" id="infographic-layer" hidden aria-label="Infografía completa">
+    <div class="infographic-scrim" data-close-infographic></div>
+    <article class="infographic-stage" role="dialog" aria-modal="true" aria-labelledby="infographic-title">
+      <div class="infographic-composition" aria-hidden="true">
+        <i></i><i></i><i></i><i></i><i></i><i></i>
+        <span class="composition-mark">A</span>
+      </div>
+      <header><div><span class="eyebrow">Atlas · composición visual</span><h2 id="infographic-title">Infografía</h2></div><button class="icon-button" data-close-infographic aria-label="Cerrar"><svg><use href="#icon-close"></use></svg></button></header>
+      <div class="infographic-frame-wrap"><iframe id="infographic-frame" title="Infografía completa"></iframe></div>
+      <footer><span>Diseño original de la biblioteca</span><a id="infographic-new-window" class="secondary-button" target="_blank" rel="noopener">Abrir en otra ventana ↗</a></footer>
+    </article>
+  </section>
+
+  <section class="tutorial-layer" id="tutorial-layer" hidden aria-label="Tutorial de Atlas">
+    <div class="tutorial-scrim"></div>
+    <div class="tutorial-spotlight" id="tutorial-spotlight" hidden aria-hidden="true"></div>
+    <article class="tutorial-panel" role="dialog" aria-modal="true" aria-labelledby="tutorial-title">
+      <div id="tutorial-content"></div>
+      <div class="tutorial-controls">
+        <button class="secondary-button" data-action="tutorial-close">Salir</button>
+        <button class="secondary-button" data-action="tutorial-previous">Anterior</button>
+        <span id="tutorial-progress"></span>
+        <button class="primary-button" data-action="tutorial-next">Siguiente</button>
+      </div>
+    </article>
+  </section>
+
+  <div class="toast-region" id="toast-region" aria-live="polite" aria-atomic="true"></div>
+  <div class="update-banner" id="update-banner" hidden>
+    <span>Hay una nueva versión de Atlas disponible.</span>
+    <button data-action="apply-update">Actualizar ahora</button>
+  </div>
+
+  <svg class="svg-defs" aria-hidden="true">
+    <symbol id="icon-home" viewBox="0 0 24 24"><path d="M3 11.5 12 4l9 7.5v8a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="icon-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2.2 4.8-4.8 2.2 2.2-4.8z"/></symbol>
+    <symbol id="icon-spark" viewBox="0 0 24 24"><path d="M12 2c.6 5.7 4.3 9.4 10 10-5.7.6-9.4 4.3-10 10-.6-5.7-4.3-9.4-10-10 5.7-.6 9.4-4.3 10-10z"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="icon-bookmark" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4z"/></symbol>
+    <symbol id="icon-theme" viewBox="0 0 24 24"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></symbol>
+    <symbol id="icon-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="12" rx="3"/><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3m-4 0h8"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+    <symbol id="icon-external" viewBox="0 0 24 24"><path d="M14 4h6v6m0-6-9 9"/><path d="M19 13v6H5V5h6"/></symbol>
+    <symbol id="icon-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="2.5"/><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="19" r="2.5"/><path d="m8.2 10.8 7.6-4.5m-7.6 6.9 7.6 4.5"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m4 12 5 5L20 6"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="icon-grid" viewBox="0 0 24 24"><path d="M4 4h6v6H4zm10 0h6v6h-6zM4 14h6v6H4zm10 0h6v6h-6z"/></symbol>
+    <symbol id="icon-list" viewBox="0 0 24 24"><path d="M8 6h12M8 12h12M8 18h12M4 6h.01M4 12h.01M4 18h.01"/></symbol>
+    <symbol id="icon-books" viewBox="0 0 24 24"><path d="M4 4h4v16H4zm6 2h4v14h-4zm6-3h4v17h-4z"/></symbol>
+  </svg>
+
+  <script src="scripts/database.js"></script>
+  <script src="scripts/runtime.js"></script>
+  <script src="scripts/bootstrap.js"></script>
+</body>
+</html>
