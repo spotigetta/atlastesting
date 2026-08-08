@@ -6,7 +6,8 @@
     document: "Documento", fact: "Dato del índice", question: "Pregunta",
     quiz: "Quiz", quote: "Cita para explorar", author: "Autor",
     timeline: "Mini cronología", curiosity: "Sabías que", comparison: "Distinción clave",
-    news: "Actualidad", reading: "Nueva lectura", prayer: "Para orar", video: "Vídeo · YouTube", music: "Música · YouTube", instagram: "Instagram"
+    news: "Actualidad", reading: "Nueva lectura", prayer: "Para orar", video: "Vídeo · YouTube", music: "Música · YouTube", instagram: "Instagram",
+    "saint-life": "Una vida en 30 segundos", "saint-anecdote": "La anécdota", "saint-quote": "La frase", "saint-decision": "Momento decisivo", "saint-before": "Antes de ser santo", "saint-quiz": "Adivina el santo", "saint-route": "Ruta espiritual"
   };
   let queue = [];
   let cursor = 0;
@@ -54,6 +55,18 @@
     return (items || []).filter(item => !hidden.has(item.source || item.name));
   };
 
+  function saintEditorialItem(item) {
+    const typeMap = { "life-30s":"saint-life", anecdote:"saint-anecdote", quote:"saint-quote", "decisive-moment":"saint-decision", "before-after":"saint-before", "did-you-know":"curiosity", "against-current":"saint-decision", "guess-saint":"saint-quiz", "who-said":"saint-quiz", decision:"saint-decision" };
+    let text = item.body || item.context || item.explanation || item.answer || "";
+    if (item.slides?.length) text = item.slides.map(slide => `${slide.eyebrow}: ${slide.text}`).join(" · ");
+    if (item.before || item.turningPoint || item.after) text = [`Antes: ${item.before || ""}`, `El giro: ${item.turningPoint || ""}`, `Después: ${item.after || ""}`].join(" · ");
+    if (item.clues?.length) text = item.clues.map(clue => `• ${clue}`).join(" ");
+    if (item.quote) text = `“${item.quote}”${item.context ? ` ${item.context}` : ""}`;
+    if (item.question) text = `${item.placeDate ? `${item.placeDate}. ` : ""}${item.question}`;
+    const reveal = item.type === "guess-saint" ? `${item.answer}. ${item.explanation || ""}` : item.type === "who-said" ? `${item.answer}. ${item.context || ""}` : item.type === "decision" ? item.answer : "";
+    return { ...item, type:typeMap[item.type] || item.type, text, reveal, author:item.saint || "", reference:"Vida de los Santos · biografía enlazada", verified:true, libraryId:"vida-santos" };
+  }
+
   async function instagramPayload(cursorValue = 0, limit = 24) {
     const payload = await window.AtlasRuntime.fetchJson("data/instagram-cache.json", { fresh: true });
     const concrete = (payload.items || []).filter(item => !item.profileFallback && item.image && /\/(?:p|reel)\//.test(item.url || ""));
@@ -87,7 +100,8 @@
     feedSeed = `${Date.now()}-${Math.random().toString(36).slice(2, 9)}`;
     let shorts = [
       ...root.data.catalog.shorts.filter(item => item.verified),
-      ...(window.ATLAS_QUOTES?.items || [])
+      ...(window.ATLAS_QUOTES?.items || []),
+      ...(window.ATLAS_SAINTS_SHORTS?.items || []).map(saintEditorialItem)
     ];
     const external = (window.ATLAS_EXTERNAL?.items || []).map(item => ({
       ...item, verified: true, external: true, libraryId: externalLibrary(item.type),
@@ -604,7 +618,7 @@
     const sideSeed = [...String(item.id || index)].reduce((sum, character) => sum + character.charCodeAt(0), 0);
     const right = alignment === "right" || (alignment === "mixed" && sideSeed % 2 === 1);
     return `<article class="short-card short-type-${item.type} short-variant-${index % 6} ${right ? "text-right" : "text-left"} ${item.external ? "short-external" : ""} ${josemaria ? `short-josemaria sjm-figure-${right ? "left" : "right"}` : ""} tone-${lib.tone}" ${image} ${playable} data-library="${lib.id}" data-glow-x="${glowX}" data-glow-y="${glowY}" data-glow-scale="${glowScale}" data-mark="${item.external ? "A" : lib.mark}" data-short-id="${esc(item.id)}" id="${esc(item.id)}-${cursor}">
-      ${josemaria && item.type !== "video" ? '<span class="josemaria-watermark" aria-hidden="true"><i></i></span>' : ""}${["video","music"].includes(item.type) ? '<button class="video-play" aria-label="Reproducir dentro de Atlas">▶</button>' : ""}${item.type === "instagram" && item.image ? `<figure class="instagram-post-preview"><img src="${esc(item.image)}" alt="Publicación de ${esc(item.source)}" loading="lazy"></figure>` : ""}<div class="short-content"><span class="short-type">${index + 1} / ${total} · ${typeLabels[item.type] || item.type} · ${esc(item.external ? item.source : lib.short)}</span><h2>${esc(item.title)}</h2><p>${esc(item.text)}</p>${item.author || item.date ? `<p class="short-byline">${esc(item.author || "")}${item.author && item.date ? " · " : ""}${esc(item.date || "")}</p>` : ""}<p class="short-source">Fuente: ${esc(item.reference)}${item.sourceDocumentId ? " · Documento enlazado" : ""}</p>
+      ${josemaria && item.type !== "video" ? '<span class="josemaria-watermark" aria-hidden="true"><i></i></span>' : ""}${["video","music"].includes(item.type) ? '<button class="video-play" aria-label="Reproducir dentro de Atlas">▶</button>' : ""}${item.type === "instagram" && item.image ? `<figure class="instagram-post-preview"><img src="${esc(item.image)}" alt="Publicación de ${esc(item.source)}" loading="lazy"></figure>` : ""}<div class="short-content"><span class="short-type">${index + 1} / ${total} · ${typeLabels[item.type] || item.type} · ${esc(item.external ? item.source : lib.short)}</span><h2>${esc(item.title)}</h2><p>${esc(item.text)}</p>${item.reveal ? `<button class="short-reveal" data-short-reveal>Mostrar respuesta</button><p class="short-reveal-answer" hidden>${esc(item.reveal)}</p>` : ""}${item.author || item.date ? `<p class="short-byline">${esc(item.author || "")}${item.author && item.date ? " · " : ""}${esc(item.date || "")}</p>` : ""}<p class="short-source">Fuente: ${esc(item.reference)}${item.sourceDocumentId ? " · Documento enlazado" : ""}</p>
       <div class="short-actions"><button class="${saved ? "saved" : ""}" data-save-short="${esc(item.id)}" aria-label="Guardar">${root.library.icon("bookmark")}</button><button data-share-short="${esc(item.id)}" aria-label="Compartir">${root.library.icon("share")}</button>${item.sourceDocumentId ? `<a href="#/reader/${encodeURIComponent(item.sourceDocumentId)}" aria-label="Leer documento">${root.library.icon("books")}</a>` : ""}${item.external ? `<a class="wide" href="${esc(item.url)}" target="_blank" rel="noopener">${["video","music"].includes(item.type) ? "Ver en YouTube" : item.type === "instagram" ? "Ver en Instagram" : "Leer original"}${root.library.icon("external")}</a>` : `<a class="wide" href="${esc(lib.notebookUrl)}" target="_blank" rel="noopener">Abrir IA${root.library.icon("external")}</a>`}</div></div>
     </article>`;
   }
@@ -635,6 +649,8 @@
   }
 
   document.addEventListener("click", event => {
+    const reveal = event.target.closest("[data-short-reveal]");
+    if (reveal) { const answer=reveal.nextElementSibling; answer.hidden=!answer.hidden; reveal.textContent=answer.hidden?"Mostrar respuesta":"Ocultar respuesta"; return; }
     if (event.target.closest("[data-toggle-reserve-videos]")) {
       root.storage.setSetting("showReserveVideos", !root.storage.get().settings.showReserveVideos);
       document.querySelector(`[data-short-filter="${activeFilter}"]`)?.click();

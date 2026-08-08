@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@huggingface/transformers": "^3.7.2"
+  },
+  "overrides": {
+    "sharp": "0.35.3"
+  }
+}

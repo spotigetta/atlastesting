@@ -36,7 +36,9 @@
 
   function tabs(library, active) {
     const items = [["documents", "Documentos"], ["shelf", "Biblioteca visual"], ["topics", "Mapa temático"], ["authors", "Autores"], ["stats", "Estadísticas"], ["questions", "Qué puedo preguntar"]];
-    return `<nav class="library-tabs tone-${library.tone}"><div class="chip-row">${items.map(([id, label]) => `<a class="chip ${active === id ? "active" : ""}" href="#/library/${library.id}/${id}">${label}</a>`).join("")}</div></nav>`;
+    if (library.audiobooks?.length) items.splice(1, 0, ["audiobooks", "Audiolibro"]);
+    if (library.id === "vida-santos") items.splice(1, 0, ["saints-moods", "Cómo vivieron"]);
+    return `<nav class="library-tabs tone-${library.tone}"><div class="chip-row">${items.map(([id, label]) => `<a class="chip ${active === id ? "active" : ""}" href="${id === "saints-moods" ? "#/spiritual/saints" : `#/library/${library.id}/${id}`}">${label}</a>`).join("")}</div></nav>`;
   }
 
   function docCard(doc, library) {
@@ -92,7 +94,14 @@
   function questionsView(library) {
     const questions = root.data.catalog.editorial?.questions?.[library.id] || [];
     const tagline = root.data.catalog.editorial?.taglines?.[library.id] || "Ejemplos preparados para orientar una consulta en el cuaderno.";
-    return `<div class="section-head"><div><h2>¿Qué puedo preguntar?</h2><p>${esc(tagline)}</p></div></div><div class="question-list">${questions.map((question, index) => `<article class="question-card"><span class="question-number">${index + 1}</span><p>${esc(question)}</p><div class="question-actions"><button data-copy-question="${esc(question)}">Copiar</button><button data-save-question="${library.id}-${index}">Guardar</button><a href="${esc(library.notebookUrl)}" target="_blank" rel="noopener">Llevar a la IA</a></div></article>`).join("")}</div>`;
+    const consult = library.notebookUrl ? `<a href="${esc(library.notebookUrl)}" target="_blank" rel="noopener">Llevar a la IA</a>` : `<span class="muted small">Consulta documental en Atlas</span>`;
+    return `<div class="section-head"><div><h2>¿Qué puedo preguntar?</h2><p>${esc(tagline)}</p></div></div><div class="question-list">${questions.map((question, index) => `<article class="question-card"><span class="question-number">${index + 1}</span><p>${esc(question)}</p><div class="question-actions"><button data-copy-question="${esc(question)}">Copiar</button><button data-save-question="${library.id}-${index}">Guardar</button>${consult}</div></article>`).join("")}</div>`;
+  }
+
+  function audiobookView(library) {
+    const books = library.audiobooks || [];
+    if (!books.length) return empty("No hay audiolibros registrados", "Cuando se incorporen aparecerán aquí.");
+    return `<header class="section-head"><div><span class="eyebrow">Escucha guiada</span><h2>Audiolibros de la biblioteca</h2><p>La escucha se realiza desde la fuente original; las transcripciones se conservan como documentos de estudio y búsqueda.</p></div></header>${books.map(book => `<article class="audiobook-feature tone-${library.tone}"><div class="audiobook-cover"><span>▶</span><small>${esc(book.provider || "Audio")}</small></div><div class="audiobook-copy"><span class="eyebrow">${esc(book.duration || "Audiolibro")}</span><h2>${esc(book.title)}</h2><p>${esc(book.description || "")}</p><p class="muted small">${esc(book.author || "")}</p><div class="button-row"><a class="primary-button" href="${esc(book.url)}" target="_blank" rel="noopener">Escuchar en SoundCloud ↗</a><a class="secondary-button" href="#/library/${library.id}/documents?category=${encodeURIComponent("Audiolibro · Pedro Ballester")}">Ver transcripciones</a></div></div><iframe class="audiobook-player" title="${esc(book.title)}" loading="lazy" allow="autoplay" src="https://w.soundcloud.com/player/?url=${encodeURIComponent(book.url)}&color=%23a64762&auto_play=false&hide_related=true&show_comments=false&show_user=true&show_reposts=false&show_teaser=true"></iframe></article><section class="audiobook-chapters"><div class="section-head"><div><h2>Capítulos</h2><p>${book.chapters.length} episodios con acceso de escucha y texto.</p></div></div><div class="document-list">${book.chapters.map((chapter, index) => `<article class="audiobook-chapter"><span>${String(index + 1).padStart(2, "0")}</span><b>${esc(chapter.title)}</b><a href="#/reader/${encodeURIComponent(chapter.documentId)}">Leer</a><a href="${esc(chapter.url)}" target="_blank" rel="noopener">Escuchar ↗</a></article>`).join("")}</div></section>`).join("")}`;
   }
 
   function empty(title, text) {
@@ -106,6 +115,7 @@
     else if (active === "authors") content = authorsView(library);
     else if (active === "stats") content = root.statistics.library(library);
     else if (active === "questions") content = questionsView(library);
+    else if (active === "audiobooks") content = audiobookView(library);
     else content = documentView(library, options);
     return `<div class="tone-${library.tone}" data-library="${library.id}">${cover(library)}${tabs(library, active)}<section class="page">${content}</section></div>`;
   }

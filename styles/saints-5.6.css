@@ -1,0 +1,9 @@
+.saint-passage-frame{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(250px,.72fr);gap:clamp(22px,3vw,44px);align-items:start}
+.saint-passage-frame blockquote{max-width:none}
+.saint-passage-summary{position:sticky;top:92px;padding:20px;border-left:1px solid var(--line);border-radius:0 18px 18px 0;background:color-mix(in srgb,var(--surface) 90%,#9a4964 10%)}
+.saint-passage-summary ol{display:grid;gap:15px;margin:12px 0 0;padding:0;list-style:none;counter-reset:keys}
+.saint-passage-summary li{position:relative;padding-left:30px;counter-increment:keys}
+.saint-passage-summary li::before{content:counter(keys);position:absolute;left:0;top:0;width:21px;height:21px;display:grid;place-items:center;border-radius:50%;background:#9a4964;color:#fff;font:700 10px var(--sans)}
+.saint-passage-summary b{font-size:12px;color:var(--text)}
+.saint-passage-summary p{margin:4px 0 0;color:var(--muted);font-size:12px;line-height:1.45}
+@media(max-width:900px){.saint-passage-frame{grid-template-columns:1fr}.saint-passage-summary{position:static;border-left:0;border-top:1px solid var(--line);border-radius:0 0 18px 18px}}

@@ -4,7 +4,7 @@
   const main = document.querySelector("#main");
 
   try {
-    const [catalog, external, quotes, youtube, music, instagram, channels, exam] = await Promise.all([
+    const [catalog, external, quotes, youtube, music, instagram, channels, exam, saintsMoods, spiritualGuides, songbook, saintsShorts, saintsRoutes] = await Promise.all([
       runtime.fetchJson("data/catalog.json"),
       runtime.fetchJson("data/external-content.json").catch(() => ({ generatedAt: "", items: [] })),
       runtime.fetchJson("data/quotes.json").catch(() => ({ generatedAt: "", items: [] })),
@@ -12,7 +12,12 @@
       runtime.fetchJson("data/youtube-music-cache.json").catch(() => ({ updatedAt: "", channels: [], items: [] })),
       runtime.fetchJson("data/instagram-cache.json").catch(() => ({ updatedAt: "", channels: [], items: [] })),
       runtime.fetchJson("data/channel-catalog.json").catch(() => ({ youtube: [], music: [], instagram: [] })),
-      runtime.fetchJson("data/examen.json").catch(() => ({ norms: [], helps: [], notifications: {}, sources: [] }))
+      runtime.fetchJson("data/examen.json").catch(() => ({ norms: [], helps: [], notifications: {}, sources: [] })),
+      runtime.fetchJson("data/saints-moods.json").catch(() => ({ moods: [] })),
+      runtime.fetchJson("data/spiritual-guides.json").catch(() => ({})),
+      runtime.fetchJson("data/songbook.json").catch(() => ({ songs: [], categories: [] })),
+      runtime.fetchJson("data/saints-shorts.json").catch(() => ({ items: [] })),
+      runtime.fetchJson("data/saints-routes.json").catch(() => ({ routes: [] }))
     ]);
 
     window.ATLAS_CATALOG = catalog;
@@ -23,6 +28,11 @@
     window.ATLAS_INSTAGRAM = instagram;
     window.ATLAS_CHANNELS = channels;
     window.ATLAS_EXAM = exam;
+    window.ATLAS_SAINTS_MOODS = saintsMoods;
+    window.ATLAS_SPIRITUAL_GUIDES = spiritualGuides;
+    window.ATLAS_SONGBOOK = songbook;
+    window.ATLAS_SAINTS_SHORTS = saintsShorts;
+    window.ATLAS_SAINTS_ROUTES = saintsRoutes;
 
     const modules = [
       "scripts/storage.js",
@@ -33,6 +43,7 @@
       "scripts/library.js",
       "scripts/reader.js",
       "scripts/extras.js",
+      "scripts/spiritual.js",
       "scripts/examen.js",
       "scripts/compare.js",
       "scripts/feed-mixer.js",

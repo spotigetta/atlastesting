@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "2026-08-08",
+  "libraryId": "vida-santos",
+  "title": "Rutas espirituales con los santos",
+  "subtitle": "Recorridos breves: una vida, un pasaje para localizar y una pregunta para llevar a la oración",
+  "editorialPolicy": "Los textos son introducciones editoriales. Cada etapa enlaza la biografía local y aporta términos para localizar el pasaje de apoyo; no atribuye al santo frases no documentadas.",
+  "routes": [
+    {
+      "id": "saints-route-prayer",
+      "title": "Quiero aprender sobre oración",
+      "description": "Cinco maestros, desde la amistad con Cristo hasta la confianza en lo pequeño.",
+      "estimatedMinutes": 35,
+      "stages": [
+        {
+          "order": 1,
+          "saint": "Santa Teresa de Jesús",
+          "focus": "Oración como relación viva",
+          "intro": "Su autobiografía permite seguir una oración que madura entre dificultades, gracia y perseverancia.",
+          "sourceDocumentId": "vida-santos-1123-santa-teresa-de-jesus",
+          "sourceLocator": { "queries": ["mental prayer", "friendship", "prayer"] },
+          "reflectionQuestion": "¿Trato la oración como una tarea que cumplo o como un encuentro que cultivo?"
+        },
+        {
+          "order": 2,
+          "saint": "San Juan de la Cruz",
+          "focus": "Buscar a Dios cuando no hay consuelo",
+          "intro": "La pobreza, la reforma y la prisión muestran una fidelidad que no depende de sentir facilidad.",
+          "sourceDocumentId": "vida-santos-1124-san-juan-de-la-cruz",
+          "sourceLocator": { "queries": ["cárcel", "Toledo", "confianza"] },
+          "reflectionQuestion": "¿Qué hago cuando la oración deja de resultar consoladora?"
+        },
+        {
+          "order": 3,
+          "saint": "San Ignacio de Loyola",
+          "focus": "Reconocer lo que mueve el corazón",
+          "intro": "Manresa fue escuela de oración y discernimiento para aprender a distinguir impulsos, engaños y llamadas.",
+          "sourceDocumentId": "vida-santos-1119-san-ignacio-de-loyola",
+          "sourceLocator": { "queries": ["Manresa", "consolaciones e ilustraciones", "vida espiritual"] },
+          "reflectionQuestion": "¿Qué pensamientos me dejan más disponible para amar y servir después de la oración?"
+        },
+        {
+          "order": 4,
+          "saint": "San Francisco de Sales",
+          "focus": "Devoción posible en la vida real",
+          "intro": "Su ministerio unió profundidad espiritual, mansedumbre y atención a las circunstancias concretas de cada persona.",
+          "sourceDocumentId": "vida-santos-1139-san-francisco-de-sales",
+          "sourceLocator": { "queries": ["oración", "dulzura", "Annecy"] },
+          "reflectionQuestion": "¿Mi forma de orar me ayuda a vivir con más paciencia y caridad?"
+        },
+        {
+          "order": 5,
+          "saint": "Santa Teresa de Lisieux",
+          "focus": "Confianza y pequeñez",
+          "intro": "Su historia propone avanzar por el amor en lo pequeño cuando uno no se siente capaz de grandes obras.",
+          "sourceDocumentId": "vida-santos-1159-santa-teresa-de-lisieux",
+          "sourceLocator": { "queries": ["little way", "confidence", "prayer"] },
+          "reflectionQuestion": "¿Cuál es el acto pequeño de amor que sí puedo ofrecer hoy?"
+        }
+      ]
+    },
+    {
+      "id": "saints-route-desolation",
+      "title": "Cuando atravieso desolación",
+      "description": "Santos que vivieron oscuridad, cárcel, enfermedad, violencia o abandono sin maquillar el sufrimiento.",
+      "estimatedMinutes": 40,
+      "stages": [
+        {
+          "order": 1,
+          "saint": "San Ignacio de Loyola",
+          "focus": "No decidir desde el abatimiento",
+          "intro": "Sus años de conversión enseñan que los estados interiores cambian y necesitan discernimiento, paciencia y ayudas concretas.",
+          "sourceDocumentId": "vida-santos-1119-san-ignacio-de-loyola",
+          "sourceLocator": { "queries": ["Manresa", "escrúpulos", "consolaciones e ilustraciones"] },
+          "reflectionQuestion": "¿Estoy tomando una decisión definitiva bajo una emoción pasajera?"
+        },
+        {
+          "order": 2,
+          "saint": "San Juan de la Cruz",
+          "focus": "La libertad interior en la cárcel",
+          "intro": "El encierro de Toledo muestra que una circunstancia opresiva puede herir profundamente sin agotar toda la libertad de la persona.",
+          "sourceDocumentId": "vida-santos-1124-san-juan-de-la-cruz",
+          "sourceLocator": { "queries": ["nueve meses", "cárcel", "audacia y confianza"] },
+          "reflectionQuestion": "¿Qué espacio interior permanece libre para confiar y pedir ayuda?"
+        },
+        {
+          "order": 3,
+          "saint": "San Maximiliano Kolbe",
+          "focus": "Amar dentro de un sistema de odio",
+          "intro": "Auschwitz no es presentado como una dificultad romántica, sino como hambre, frío, violencia y degradación donde aún fue posible un acto libre de entrega.",
+          "sourceDocumentId": "vida-santos-1167-san-maximiliano-kolbe",
+          "sourceLocator": { "queries": ["hambre, frío", "AUSCHWITZ", "Gajownieczek"] },
+          "reflectionQuestion": "Sin negar lo que duele, ¿qué acto de amor sigue estando en mis manos?"
+        },
+        {
+          "order": 4,
+          "saint": "San Óscar Romero",
+          "focus": "Permanecer junto a su pueblo bajo la violencia",
+          "intro": "Su cercanía a campesinos, trabajadores y víctimas continuó en un contexto de amenazas; un disparo acabó con su vida mientras celebraba la Eucaristía.",
+          "sourceDocumentId": "vida-santos-1173-san-oscar-romero",
+          "sourceLocator": { "queries": ["cercanía a la gente", "violencia", "disparo al corazón"] },
+          "reflectionQuestion": "¿Qué bien concreto puedo seguir sosteniendo sin negar el miedo ni actuar solo?"
+        },
+        {
+          "order": 5,
+          "saint": "San Damián de Molokai",
+          "focus": "Soledad y pertenencia",
+          "intro": "Al compartir la vida de las personas aisladas por la lepra, hizo de la presencia estable una respuesta a la exclusión.",
+          "sourceDocumentId": "vida-santos-1162-san-damian-de-molokai",
+          "sourceLocator": { "queries": ["Molokai", "leprosy", "Father Damien"] },
+          "reflectionQuestion": "¿A quién puedo pedir presencia y a quién puedo ofrecerla sin intentar resolverlo todo?"
+        }
+      ],
+      "pastoralSafety": "La desolación espiritual no sustituye categorías clínicas. Ante riesgo de autolesión, crisis grave o síntomas persistentes, busca ayuda profesional y de emergencia además del acompañamiento espiritual."
+    },
+    {
+      "id": "saints-route-conversion",
+      "title": "Volver a empezar",
+      "description": "Conversiones distintas: intelectuales, morales, vocacionales y prácticas.",
+      "estimatedMinutes": 35,
+      "stages": [
+        {
+          "order": 1,
+          "saint": "San Agustín de Hipona",
+          "focus": "Una búsqueda larga",
+          "intro": "Su conversión no fue un giro instantáneo: cruzó estudio, ambición, relaciones, preguntas filosóficas y resistencias interiores.",
+          "sourceDocumentId": "vida-santos-1081-san-agustin-de-hipona",
+          "sourceLocator": { "queries": ["Ambrose", "conversion", "baptism"] },
+          "reflectionQuestion": "¿Qué verdad reconozco ya, pero sigo aplazando vivir?"
+        },
+        {
+          "order": 2,
+          "saint": "San Francisco de Asís",
+          "focus": "Cambiar la idea de grandeza",
+          "intro": "La guerra, la enfermedad y el encuentro con los pobres deshicieron gradualmente el proyecto de prestigio de su juventud.",
+          "sourceDocumentId": "vida-santos-1102-san-francisco-de-asis",
+          "sourceLocator": { "queries": ["prisoner", "illness", "leper"] },
+          "reflectionQuestion": "¿Qué criterio de éxito necesito dejar que el Evangelio cuestione?"
+        },
+        {
+          "order": 3,
+          "saint": "San Ignacio de Loyola",
+          "focus": "Del entusiasmo al discernimiento",
+          "intro": "Tras la herida llegó una nueva imaginación de la vida; después tuvo que aprender que no todo impulso religioso conduce igualmente a Dios.",
+          "sourceDocumentId": "vida-santos-1119-san-ignacio-de-loyola",
+          "sourceLocator": { "queries": ["Pamplona", "Manresa", "conversión"] },
+          "reflectionQuestion": "¿Mi propósito es concreto, humilde y sostenible, o solo intenso?"
+        },
+        {
+          "order": 4,
+          "saint": "San Juan de Dios",
+          "focus": "La misericordia aprendida desde abajo",
+          "intro": "Su itinerario turbulento y su propia experiencia de incomprensión transformaron la conversión en cuidado organizado de los enfermos.",
+          "sourceDocumentId": "vida-santos-1130-san-juan-de-dios",
+          "sourceLocator": { "queries": ["ejército", "hospital", "enfermos"] },
+          "reflectionQuestion": "¿Qué herida personal podría hacerme más atento al dolor ajeno?"
+        },
+        {
+          "order": 5,
+          "saint": "San Camilo de Lelis",
+          "focus": "Una fragilidad convertida en servicio",
+          "intro": "La dependencia del juego, la vida militar y una enfermedad persistente no fueron el final: su vida tomó forma en el cuidado hospitalario.",
+          "sourceDocumentId": "vida-santos-1135-san-camilo-de-lelis",
+          "sourceLocator": { "queries": ["gambling", "wound", "hospital"] },
+          "reflectionQuestion": "¿Qué ayuda concreta necesito aceptar para que mi deseo de cambiar se vuelva camino?"
+        }
+      ]
+    },
+    {
+      "id": "saints-route-charity",
+      "title": "Aprender una caridad concreta",
+      "description": "Del afecto general al servicio que se organiza, permanece y asume costes.",
+      "estimatedMinutes": 35,
+      "stages": [
+        {
+          "order": 1,
+          "saint": "San Vicente de Paúl",
+          "focus": "Organizar el bien",
+          "intro": "Su respuesta a la pobreza no quedó en emoción: articuló obras, colaboradores y formación para que la ayuda perdurase.",
+          "sourceDocumentId": "vida-santos-1137-san-vicente-de-paul",
+          "sourceLocator": { "queries": ["pauvres", "charité", "Mission"] },
+          "reflectionQuestion": "¿Qué bien necesita menos improvisación y más constancia?"
+        },
+        {
+          "order": 2,
+          "saint": "San Juan de Dios",
+          "focus": "Acoger al que nadie quiere",
+          "intro": "Su hospitalidad nació de mirar a la persona sufriente antes que su utilidad, reputación o capacidad de pagar.",
+          "sourceDocumentId": "vida-santos-1130-san-juan-de-dios",
+          "sourceLocator": { "queries": ["hospital", "pobres", "enfermos"] },
+          "reflectionQuestion": "¿A quién estoy dejando fuera de mi atención por resultar incómodo?"
+        },
+        {
+          "order": 3,
+          "saint": "San Camilo de Lelis",
+          "focus": "Cuidar bien, no de cualquier manera",
+          "intro": "La compasión se convirtió en una vocación con criterios, formación y presencia junto al enfermo.",
+          "sourceDocumentId": "vida-santos-1135-san-camilo-de-lelis",
+          "sourceLocator": { "queries": ["sick", "hospital", "wound"] },
+          "reflectionQuestion": "¿Qué competencia debo aprender para servir mejor, además de tener buena intención?"
+        },
+        {
+          "order": 4,
+          "saint": "San Damián de Molokai",
+          "focus": "Permanecer",
+          "intro": "Su servicio consistió en compartir tiempo, lugar y destino con una comunidad excluida.",
+          "sourceDocumentId": "vida-santos-1162-san-damian-de-molokai",
+          "sourceLocator": { "queries": ["Molokai", "lepers", "Father Damien"] },
+          "reflectionQuestion": "¿Mi ayuda crea relación o solo me permite marcharme satisfecho?"
+        },
+        {
+          "order": 5,
+          "saint": "San Maximiliano Kolbe",
+          "focus": "Elegir a una persona concreta",
+          "intro": "En Auschwitz, su caridad tomó la forma de ofrecerse por un condenado que lloraba por su familia.",
+          "sourceDocumentId": "vida-santos-1167-san-maximiliano-kolbe",
+          "sourceLocator": { "queries": ["Gajownieczek", "diez condenados", "AUSCHWITZ"] },
+          "reflectionQuestion": "¿Quién es hoy la persona concreta que no debería convertirse para mí en una cifra?"
+        }
+      ]
+    },
+    {
+      "id": "saints-route-young",
+      "title": "Santidad joven y vida ordinaria",
+      "description": "Estudio, amistad, tecnología, enfermedad y decisiones posibles antes de sentirse «preparado».",
+      "estimatedMinutes": 30,
+      "stages": [
+        {
+          "order": 1,
+          "saint": "Santa Teresa de Lisieux",
+          "focus": "Lo pequeño cuenta",
+          "intro": "La juventud y la clausura no redujeron su horizonte: descubrió una fecundidad basada en confianza y amor cotidiano.",
+          "sourceDocumentId": "vida-santos-1159-santa-teresa-de-lisieux",
+          "sourceLocator": { "queries": ["little way", "love", "confidence"] },
+          "reflectionQuestion": "¿Qué acción pequeña estoy despreciando por no parecer extraordinaria?"
+        },
+        {
+          "order": 2,
+          "saint": "San Pier Giorgio Frassati",
+          "focus": "Amistad, estudio y servicio",
+          "intro": "Su vida joven reunió relaciones, compromiso social, montaña, oración y ayuda discreta a personas pobres.",
+          "sourceDocumentId": "vida-santos-1186-san-pier-giorgio-frassati",
+          "sourceLocator": { "queries": ["pobres", "montaña", "Turín"] },
+          "reflectionQuestion": "¿Cómo puede mi afición favorita convertirse también en lugar de amistad y servicio?"
+        },
+        {
+          "order": 3,
+          "saint": "San Carlo Acutis",
+          "focus": "Tecnología con propósito",
+          "intro": "Usó Internet para el apostolado, creó programas y ayudó en los deberes a otros niños en situación vulnerable.",
+          "sourceDocumentId": "vida-santos-1185-san-carlo-acutis",
+          "sourceLocator": { "queries": ["Internet para hacer obras de apostolado", "programas informáticos", "situación de vulnerabilidad"] },
+          "reflectionQuestion": "¿Mi uso de la tecnología me dispersa o puede servir a una realidad valiosa?"
+        },
+        {
+          "order": 4,
+          "saint": "San Maximiliano Kolbe",
+          "focus": "Decisiones que preparan decisiones",
+          "intro": "La escena de las dos coronas muestra una disponibilidad temprana que después tomó forma mediante estudio, comunidad, misión y sacrificio.",
+          "sourceDocumentId": "vida-santos-1167-san-maximiliano-kolbe",
+          "sourceLocator": { "queries": ["dos coronas", "pureza", "mártir"] },
+          "reflectionQuestion": "¿Qué compromiso pequeño de hoy está educando la libertad que necesitaré mañana?"
+        },
+        {
+          "order": 5,
+          "saint": "Santa Juana de Arco",
+          "focus": "Responsabilidad y discernimiento",
+          "intro": "Su juventud no evitó decisiones de enorme alcance, oposición, interrogatorios y sufrimiento.",
+          "sourceDocumentId": "vida-santos-1117-santa-juana-de-arco",
+          "sourceLocator": { "queries": ["Orleans", "trial", "voices"] },
+          "reflectionQuestion": "¿Con quién contrasto las decisiones importantes para no confundir valentía con impulsividad?"
+        }
+      ]
+    }
+  ]
+}

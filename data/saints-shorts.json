@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "2026-08-08",
+  "libraryId": "vida-santos",
+  "title": "Reels de santos",
+  "editorialPolicy": {
+    "source": "Cada tarjeta remite a una biografía local de la biblioteca Vida de los Santos.",
+    "quotes": "Solo se usan comillas cuando el texto aparece literalmente en la fuente local. Los demás textos son resúmenes editoriales y no se presentan como palabras del santo.",
+    "openSource": "sourceDocumentId abre la biografía; evidenceQueries permite buscar los pasajes de apoyo dentro del documento."
+  },
+  "types": [
+    { "id": "life-30s", "label": "Una vida en 30 segundos" },
+    { "id": "anecdote", "label": "La anécdota" },
+    { "id": "quote", "label": "La frase" },
+    { "id": "decisive-moment", "label": "El momento decisivo" },
+    { "id": "before-after", "label": "Antes y después" },
+    { "id": "did-you-know", "label": "¿Sabías que...?" },
+    { "id": "against-current", "label": "Santo contra corriente" },
+    { "id": "guess-saint", "label": "Adivina el santo" },
+    { "id": "who-said", "label": "¿Quién dijo esto?" },
+    { "id": "decision", "label": "Decisiones que cambiaron una vida" }
+  ],
+  "items": [
+    {
+      "id": "saint-short-kolbe-life",
+      "type": "life-30s",
+      "saint": "San Maximiliano Kolbe",
+      "title": "Una libertad que Auschwitz no pudo encerrar",
+      "slides": [
+        { "eyebrow": "1894", "text": "Raimundo Kolbe creció en una familia polaca pobre y profundamente cristiana." },
+        { "eyebrow": "Dos coronas", "text": "De niño relató una experiencia mariana que vinculó su vocación con la pureza y el martirio." },
+        { "eyebrow": "Misión", "text": "Como franciscano impulsó una gran obra apostólica bajo el amparo de la Inmaculada." },
+        { "eyebrow": "Auschwitz", "text": "En el campo de concentración se ofreció para ocupar el lugar de otro prisionero condenado." },
+        { "eyebrow": "La última palabra", "text": "Su biografía muestra que el odio no logró arrebatarle la capacidad de amar." }
+      ],
+      "sourceDocumentId": "vida-santos-1167-san-maximiliano-kolbe",
+      "evidenceQueries": ["dos coronas", "AUSCHWITZ", "Gajownieczek"],
+      "topics": ["martirio", "caridad", "libertad interior"]
+    },
+    {
+      "id": "saint-short-ignatius-life",
+      "type": "life-30s",
+      "saint": "San Ignacio de Loyola",
+      "title": "De buscar gloria a buscar la gloria de Dios",
+      "slides": [
+        { "eyebrow": "Loyola", "text": "Íñigo creció con ideales de honor, corte y hazañas." },
+        { "eyebrow": "Pamplona", "text": "Una herida interrumpió su carrera y le obligó a detenerse." },
+        { "eyebrow": "La convalecencia", "text": "La lectura y la oración abrieron una pregunta nueva: ¿qué quedaba después de cada deseo?" },
+        { "eyebrow": "Manresa", "text": "Aprendió a reconocer los movimientos interiores y a dejarse enseñar por Dios." },
+        { "eyebrow": "Compañeros", "text": "La búsqueda personal se convirtió en misión compartida y servicio a la Iglesia." }
+      ],
+      "sourceDocumentId": "vida-santos-1119-san-ignacio-de-loyola",
+      "evidenceQueries": ["Pamplona", "Manresa", "Compañía de Jesús"],
+      "topics": ["conversión", "discernimiento", "misión"]
+    },
+    {
+      "id": "saint-short-kolbe-crowns",
+      "type": "anecdote",
+      "saint": "San Maximiliano Kolbe",
+      "title": "Las dos coronas",
+      "hook": "Su madre notó que el niño había cambiado y le preguntó qué le ocurría.",
+      "body": "Maximiliano contó que la Virgen le había mostrado una corona blanca y otra roja, símbolos de pureza y martirio, y que había aceptado las dos. La biografía interpreta aquel recuerdo como raíz de su futuro.",
+      "sourceDocumentId": "vida-santos-1167-san-maximiliano-kolbe",
+      "evidenceQueries": ["teniendo en las manos dos coronas", "Conteste que las aceptaba"],
+      "topics": ["vocación", "María", "decisión"]
+    },
+    {
+      "id": "saint-short-francis-sales-diocese",
+      "type": "anecdote",
+      "saint": "San Francisco de Sales",
+      "title": "No cambió una diócesis pobre por otra más rica",
+      "hook": "El rey de Francia le ofreció un obispado espléndido.",
+      "body": "Francisco respondió con una imagen nupcial: amaba la diócesis pobre que le había sido confiada y no quería abandonarla por una más rica.",
+      "sourceDocumentId": "vida-santos-1139-san-francisco-de-sales",
+      "evidenceQueries": ["me he desposado con una pobre mujer", "espléndido obispado"],
+      "topics": ["fidelidad", "pobreza", "servicio"]
+    },
+    {
+      "id": "saint-short-kolbe-quote",
+      "type": "quote",
+      "saint": "San Maximiliano Kolbe",
+      "title": "Una misión sin fronteras",
+      "quote": "Tenemos que ganar el mundo entero y cada alma […] para el Corazón Eucarístico de Jesús.",
+      "context": "La frase abre la semblanza local y resume el horizonte apostólico que guio sus iniciativas.",
+      "sourceDocumentId": "vida-santos-1167-san-maximiliano-kolbe",
+      "evidenceQueries": ["ganar el mundo"],
+      "topics": ["apostolado", "Eucaristía", "María"]
+    },
+    {
+      "id": "saint-short-francis-sales-quote",
+      "type": "quote",
+      "saint": "San Francisco de Sales",
+      "title": "Fidelidad a lo que se le había confiado",
+      "quote": "Estoy casado; me he desposado con una pobre mujer y no puedo dejarla por otra más rica.",
+      "context": "Respuesta al rey Enrique IV cuando le ofreció un obispado más próspero.",
+      "sourceDocumentId": "vida-santos-1139-san-francisco-de-sales",
+      "evidenceQueries": ["estoy casado", "dejarla por otra más rica"],
+      "topics": ["fidelidad", "vocación", "Iglesia"]
+    },
+    {
+      "id": "saint-short-john-cross-prison",
+      "type": "decisive-moment",
+      "saint": "San Juan de la Cruz",
+      "title": "Toledo: cuando la prisión no tuvo la última palabra",
+      "hook": "Nueve meses de encierro, dureza y soledad.",
+      "body": "La oposición a la reforma carmelita lo llevó a la cárcel conventual de Toledo. La biografía enlaza aquel sufrimiento con su audacia, su confianza y su posterior fuga.",
+      "sourceDocumentId": "vida-santos-1124-san-juan-de-la-cruz",
+      "evidenceQueries": ["nueve meses de durísima", "su cárcel", "audacia y confianza"],
+      "topics": ["desolación", "confianza", "persecución"]
+    },
+    {
+      "id": "saint-short-ignatius-manresa",
+      "type": "decisive-moment",
+      "saint": "San Ignacio de Loyola",
+      "title": "Manresa: aprender a leer lo que sucede dentro",
+      "hook": "La conversión necesitaba pasar de un impulso a un camino.",
+      "body": "En Manresa vivió una etapa decisiva de oración, aprendizaje interior y purificación. La biografía lo presenta como un tiempo de grandes beneficios recibidos de Dios.",
+      "sourceDocumentId": "vida-santos-1119-san-ignacio-de-loyola",
+      "evidenceQueries": ["en Manresa recibió grandes beneficios de Dios", "primeros años de su conversión"],
+      "topics": ["discernimiento", "oración", "conversión"]
+    },
+    {
+      "id": "saint-short-augustine-before-after",
+      "type": "before-after",
+      "saint": "San Agustín de Hipona",
+      "title": "Antes de ser obispo y doctor",
+      "before": "Fue estudiante y maestro de retórica, atravesó búsquedas intelectuales y afectivas y deseó una verdad que no alcanzaba a poseer.",
+      "turningPoint": "La predicación de san Ambrosio y un largo proceso interior ayudaron a desmontar sus resistencias.",
+      "after": "Recibió el bautismo, volvió a África y acabó sirviendo a la Iglesia como obispo de Hipona.",
+      "sourceDocumentId": "vida-santos-1081-san-agustin-de-hipona",
+      "evidenceQueries": ["rhetoric", "Ambrose", "Hippo"],
+      "topics": ["búsqueda", "conversión", "inteligencia y fe"]
+    },
+    {
+      "id": "saint-short-francis-before-after",
+      "type": "before-after",
+      "saint": "San Francisco de Asís",
+      "title": "Antes de abrazar la pobreza",
+      "before": "Hijo de un mercader, conoció la ambición juvenil, la guerra, el cautiverio y la enfermedad.",
+      "turningPoint": "El encuentro con el sufrimiento y su respuesta progresiva a Dios cambiaron sus criterios de grandeza.",
+      "after": "Eligió una vida pobre, fraterna y evangélica que atrajo compañeros y renovó a muchos.",
+      "sourceDocumentId": "vida-santos-1102-san-francisco-de-asis",
+      "evidenceQueries": ["merchant", "prisoner", "leper"],
+      "topics": ["pobreza", "conversión", "fraternidad"]
+    },
+    {
+      "id": "saint-short-john-god-before-after",
+      "type": "before-after",
+      "saint": "San Juan de Dios",
+      "title": "Antes de cuidar a los enfermos",
+      "before": "Su vida recorrió oficios y experiencias muy distintas, entre ellas la vida de soldado.",
+      "turningPoint": "Una conversión radical lo hizo pasar por humillación, incomprensión y un aprendizaje directo del sufrimiento humano.",
+      "after": "Dedicó sus fuerzas a acoger y cuidar a personas enfermas y abandonadas.",
+      "sourceDocumentId": "vida-santos-1130-san-juan-de-dios",
+      "evidenceQueries": ["ejército", "hospital", "enfermos"],
+      "topics": ["conversión", "misericordia", "enfermedad"]
+    },
+    {
+      "id": "saint-short-camillus-before-after",
+      "type": "before-after",
+      "saint": "San Camilo de Lelis",
+      "title": "Antes de reformar el cuidado hospitalario",
+      "before": "Fue soldado y sufrió la dependencia del juego, además de una herida persistente en la pierna.",
+      "turningPoint": "La conversión y su propia experiencia como enfermo cambiaron su manera de mirar a quienes sufrían.",
+      "after": "Convirtió el servicio hospitalario en vocación y formó una comunidad dedicada al cuidado de los enfermos.",
+      "sourceDocumentId": "vida-santos-1135-san-camilo-de-lelis",
+      "evidenceQueries": ["gambling", "hospital", "wound"],
+      "topics": ["adicción", "conversión", "servicio"]
+    },
+    {
+      "id": "saint-short-damien-did-you-know",
+      "type": "did-you-know",
+      "saint": "San Damián de Molokai",
+      "title": "¿Sabías que eligió compartir la vida de los aislados?",
+      "body": "Damián se ofreció para servir en Molokai entre personas apartadas por la lepra. No limitó su misión a visitas: compartió sus condiciones de vida y finalmente contrajo la enfermedad.",
+      "sourceDocumentId": "vida-santos-1162-san-damian-de-molokai",
+      "evidenceQueries": ["Molokai", "leprosy"],
+      "topics": ["enfermedad", "servicio", "soledad"]
+    },
+    {
+      "id": "saint-short-carlo-did-you-know",
+      "type": "did-you-know",
+      "saint": "San Carlo Acutis",
+      "title": "¿Sabías que un adolescente convirtió su afición digital en apostolado?",
+      "body": "Su biografía une vida ordinaria, interés por la informática, uso apostólico de Internet y ayuda a otros niños.",
+      "sourceDocumentId": "vida-santos-1185-san-carlo-acutis",
+      "evidenceQueries": ["Internet para hacer obras de apostolado", "programas informáticos"],
+      "topics": ["juventud", "tecnología", "apostolado"]
+    },
+    {
+      "id": "saint-short-more-against-current",
+      "type": "against-current",
+      "saint": "Santo Tomás Moro",
+      "title": "La conciencia no estaba en venta",
+      "hook": "Tenía prestigio, familia y una alta responsabilidad política.",
+      "body": "Cuando obedecer al poder exigió traicionar lo que reconocía como verdadero, aceptó perder cargo, libertad y vida antes que actuar contra su conciencia.",
+      "sourceDocumentId": "vida-santos-1131-santo-tomas-moro",
+      "evidenceQueries": ["conciencia", "cárcel", "rey"],
+      "topics": ["conciencia", "martirio", "libertad"]
+    },
+    {
+      "id": "saint-short-romero-against-current",
+      "type": "against-current",
+      "saint": "San Óscar Romero",
+      "title": "Una voz junto a quienes no tenían voz",
+      "hook": "El miedo y la violencia podían imponer silencio.",
+      "body": "Su ministerio episcopal quedó marcado por la defensa de la dignidad humana, la denuncia de la violencia y la cercanía a las víctimas, hasta ser asesinado mientras celebraba la Eucaristía.",
+      "sourceDocumentId": "vida-santos-1173-san-oscar-romero",
+      "evidenceQueries": ["violencia", "Eucaristía", "disparo al corazón"],
+      "topics": ["justicia", "persecución", "fortaleza"]
+    },
+    {
+      "id": "saint-short-guess-ignatius",
+      "type": "guess-saint",
+      "title": "Adivina el santo",
+      "clues": [
+        "Nació en Loyola.",
+        "Buscó honor como hombre de armas.",
+        "Una herida detuvo sus planes.",
+        "Manresa fue decisiva en su aprendizaje interior.",
+        "Fundó una orden con sus compañeros."
+      ],
+      "answer": "San Ignacio de Loyola",
+      "explanation": "Su itinerario conduce de la ambición caballeresca al discernimiento y al servicio apostólico.",
+      "sourceDocumentId": "vida-santos-1119-san-ignacio-de-loyola",
+      "evidenceQueries": ["Loyola", "Manresa", "Compañía de Jesús"]
+    },
+    {
+      "id": "saint-short-guess-joan",
+      "type": "guess-saint",
+      "title": "Adivina la santa",
+      "clues": [
+        "Fue una joven campesina francesa.",
+        "Su historia está ligada a la Guerra de los Cien Años.",
+        "Compareció ante un tribunal eclesiástico.",
+        "Murió en la hoguera.",
+        "Su proceso fue revisado años después."
+      ],
+      "answer": "Santa Juana de Arco",
+      "explanation": "Su figura reúne vocación, misión pública, juicio, martirio y rehabilitación histórica.",
+      "sourceDocumentId": "vida-santos-1117-santa-juana-de-arco",
+      "evidenceQueries": ["Orleans", "trial", "stake"]
+    },
+    {
+      "id": "saint-short-who-said-kolbe",
+      "type": "who-said",
+      "title": "¿Quién dijo esto?",
+      "quote": "Tenemos que ganar el mundo entero y cada alma […] para el Corazón Eucarístico de Jesús.",
+      "options": ["San Maximiliano Kolbe", "San Francisco de Sales", "San Vicente de Paúl"],
+      "answer": "San Maximiliano Kolbe",
+      "context": "La semblanza presenta esta frase al comienzo para expresar su horizonte mariano y eucarístico.",
+      "sourceDocumentId": "vida-santos-1167-san-maximiliano-kolbe",
+      "evidenceQueries": ["ganar el mundo"]
+    },
+    {
+      "id": "saint-short-who-said-sales",
+      "type": "who-said",
+      "title": "¿Quién dijo esto?",
+      "quote": "Me he desposado con una pobre mujer y no puedo dejarla por otra más rica.",
+      "options": ["San Francisco de Sales", "Santo Tomás Moro", "San Felipe Neri"],
+      "answer": "San Francisco de Sales",
+      "context": "La «pobre mujer» era su diócesis de Ginebra, con sede en Annecy, que no quiso cambiar por un obispado más rico.",
+      "sourceDocumentId": "vida-santos-1139-san-francisco-de-sales",
+      "evidenceQueries": ["me he desposado con una pobre mujer"]
+    },
+    {
+      "id": "saint-short-decision-ignatius-montserrat",
+      "type": "decision",
+      "saint": "San Ignacio de Loyola",
+      "title": "Montserrat: dejar atrás un personaje",
+      "placeDate": "Montserrat, 1522",
+      "question": "¿Qué decisión estaba expresando Ignacio con sus gestos de peregrino?",
+      "answer": "Quería romper con su antigua manera de vivir y ponerse al servicio de Cristo, iniciando un camino que aún tendría que purificarse y madurar.",
+      "sourceDocumentId": "vida-santos-1119-san-ignacio-de-loyola",
+      "evidenceQueries": ["Montserrat", "armas", "peregrino"],
+      "topics": ["conversión", "desprendimiento", "peregrinación"]
+    },
+    {
+      "id": "saint-short-decision-francis-leper",
+      "type": "decision",
+      "saint": "San Francisco de Asís",
+      "title": "Acercarse a aquello de lo que huía",
+      "question": "¿Qué cambió cuando Francisco dejó de evitar al leproso?",
+      "answer": "El encuentro con quien le producía rechazo quebró su antigua escala de valores y abrió una forma nueva de reconocer y servir a Cristo en el que sufría.",
+      "sourceDocumentId": "vida-santos-1102-san-francisco-de-asis",
+      "evidenceQueries": ["leper", "kiss", "conversion"],
+      "topics": ["misericordia", "conversión", "pobreza"]
+    },
+    {
+      "id": "saint-short-decision-teresa-reform",
+      "type": "decision",
+      "saint": "Santa Teresa de Jesús",
+      "title": "Una reforma que comenzó en pequeño",
+      "question": "¿Qué decisión tomó Teresa ante su deseo de una vida carmelita más recogida?",
+      "answer": "Impulsó una fundación pequeña y pobre, centrada en la oración y la fraternidad, y perseveró pese a fuertes resistencias.",
+      "sourceDocumentId": "vida-santos-1123-santa-teresa-de-jesus",
+      "evidenceQueries": ["St. Joseph", "monastery", "reform"],
+      "topics": ["oración", "fortaleza", "reforma"]
+    },
+    {
+      "id": "saint-short-decision-teresa-lisieux",
+      "type": "decision",
+      "saint": "Santa Teresa de Lisieux",
+      "title": "Elegir lo pequeño",
+      "question": "¿Cómo respondió Teresa al sentirse incapaz de grandes obras?",
+      "answer": "Buscó un camino de confianza, amor y fidelidad en acciones pequeñas, sin esperar a sentirse fuerte o extraordinaria.",
+      "sourceDocumentId": "vida-santos-1159-santa-teresa-de-lisieux",
+      "evidenceQueries": ["little way", "confidence", "love"],
+      "topics": ["confianza", "pequeñez", "vida ordinaria"]
+    }
+  ]
+}

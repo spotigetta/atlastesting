@@ -1,7 +1,7 @@
 {
   "app": "ATLAS",
-  "version": "5.4.0",
-  "buildId": "5.4.0-immersive-exam",
+  "version": "5.6.1",
+  "buildId": "5.6.1-santos-castellano",
   "generatedAt": "2026-08-07T10:43:12.531Z",
   "basePath": "./",
   "catalog": "data/catalog.json"

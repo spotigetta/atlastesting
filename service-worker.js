@@ -1,4 +1,4 @@
-const BUILD_VERSION = "5.4.0-immersive-exam";
+const BUILD_VERSION = "5.6.1-santos-castellano";
 const SHELL_CACHE = `atlas-shell-${BUILD_VERSION}`;
 const DATA_CACHE = `atlas-data-${BUILD_VERSION}`;
 const DOCUMENT_CACHE = "atlas-documents-v1";
@@ -6,13 +6,16 @@ const DOCUMENT_CACHE = "atlas-documents-v1";
 const SHELL = [
   "./", "./index.html", "./offline.html", "./manifest.webmanifest",
   "./styles/tokens.css", "./styles/base.css", "./styles/components.css",
-  "./styles/themes.css", "./styles/responsive.css", "./styles/features-5.4.css",
+  "./styles/themes.css", "./styles/responsive.css", "./styles/features-5.4.css", "./styles/features-5.6.css", "./styles/reader-5.6.css", "./styles/saints-5.6.css",
   "./scripts/database.js", "./scripts/runtime.js", "./scripts/bootstrap.js", "./scripts/storage.js",
   "./scripts/search.js", "./scripts/repository.js", "./scripts/share.js", "./scripts/statistics.js",
   "./scripts/library.js", "./scripts/reader.js", "./scripts/extras.js",
+  "./scripts/spiritual.js",
   "./scripts/examen.js",
   "./scripts/compare.js", "./scripts/feed-mixer.js", "./scripts/reels.js",
   "./scripts/router.js", "./scripts/app.js",
+  "./data/saints-moods.json", "./data/saints-shorts.json", "./data/saints-routes.json",
+  "./data/spiritual-guides.json", "./data/songbook.json",
   "./assets/icons/icon-192.png", "./assets/icons/icon-512.png",
   "./assets/icons/icon-maskable-512.png", "./assets/icons/apple-touch-icon.png"
 ];

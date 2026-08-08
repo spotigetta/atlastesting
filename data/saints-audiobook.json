@@ -1,0 +1,107 @@
+{
+  "updatedAt": "2026-08-08T02:28:29.447Z",
+  "libraryId": "vida-santos",
+  "audiobooks": [
+    {
+      "id": "pedro-ballester",
+      "title": "Pedro Ballester. ¡Nunca he sido tan feliz!",
+      "author": "Jorge Boronat · Cobel Ediciones",
+      "provider": "SoundCloud · Opus Dei",
+      "url": "https://soundcloud.com/opusdei/sets/pedro-ballester-audiolibro",
+      "duration": "2:51:35",
+      "description": "La vida de Pedro Ballester: una historia de fe, alegría y fidelidad en la enfermedad.",
+      "chapters": [
+        {
+          "id": "pedro-ballester-01",
+          "title": "01. Introducción ｜ Pedro Ballester. ¡Nunca he sido tan feliz!",
+          "url": "https://soundcloud.com/opusdei/introduccion-pedro-ballester",
+          "documentId": "vida-santos-pedro-ballester-audiolibro-01-introduccin-pedro-ballester-nunca-he-sido-tan-feliz"
+        },
+        {
+          "id": "pedro-ballester-02",
+          "title": "02. 1. Primeros años ｜ Pedro Ballester. ¡Nunca he sido tan feliz!",
+          "url": "https://soundcloud.com/opusdei/infancia-pedro-ballester",
+          "documentId": "vida-santos-pedro-ballester-audiolibro-02-1-primeros-anos-pedro-ballester-nunca-he-sido-tan-feliz"
+        },
+        {
+          "id": "pedro-ballester-03",
+          "title": "03. 2. Mallorca ｜ Pedro Ballester. ¡Nunca he sido tan feliz!",
+          "url": "https://soundcloud.com/opusdei/mallorca-pedro-ballester",
+          "documentId": "vida-santos-pedro-ballester-audiolibro-03-2-mallorca-pedro-ballester-nunca-he-sido-tan-feliz"
+        },
+        {
+          "id": "pedro-ballester-04",
+          "title": "04. 3. Estrenando vocación ｜ Pedro Ballester.  ¡Nunca he sido tan feliz!",
+          "url": "https://soundcloud.com/opusdei/vocacion-opusdei-pedro",
+          "documentId": "vida-santos-pedro-ballester-audiolibro-04-3-estrenando-vocacin-pedro-ballester-nunca-he-sido-tan-feliz"
+        },
+        {
+          "id": "pedro-ballester-05",
+          "title": "05. 4. La Cruz ｜ Pedro Ballester.  ¡Nunca he sido tan feliz!",
+          "url": "https://soundcloud.com/opusdei/cruz-pedro-ballester",
+          "documentId": "vida-santos-pedro-ballester-audiolibro-05-4-la-cruz-pedro-ballester-nunca-he-sido-tan-feliz"
+        },
+        {
+          "id": "pedro-ballester-06",
+          "title": "06. 5. La lucha ｜ Pedro Ballester. ¡Nunca he sido tan feliz!",
+          "url": "https://api-v2.soundcloud.com/tracks/1434591133",
+          "documentId": "vida-santos-pedro-ballester-audiolibro-06-5-la-lucha-pedro-ballester-nunca-he-sido-tan-feliz"
+        },
+        {
+          "id": "pedro-ballester-07",
+          "title": "07. 6. Apostolado ｜ Pedro Ballester. ¡Nunca he sido tan feliz!",
+          "url": "https://api-v2.soundcloud.com/tracks/1434591124",
+          "documentId": "vida-santos-pedro-ballester-audiolibro-07-6-apostolado-pedro-ballester-nunca-he-sido-tan-feliz"
+        },
+        {
+          "id": "pedro-ballester-08",
+          "title": "08. 7. Fidelidad ｜ Pedro Ballester. ¡Nunca he sido tan feliz!",
+          "url": "https://api-v2.soundcloud.com/tracks/1434591109",
+          "documentId": "vida-santos-pedro-ballester-audiolibro-08-7-fidelidad-pedro-ballester-nunca-he-sido-tan-feliz"
+        },
+        {
+          "id": "pedro-ballester-09",
+          "title": "09. 8. Buen humor ｜ Pedro Ballester. ¡Nunca he sido tan feliz!",
+          "url": "https://api-v2.soundcloud.com/tracks/1434591097",
+          "documentId": "vida-santos-pedro-ballester-audiolibro-09-8-buen-humor-pedro-ballester-nunca-he-sido-tan-feliz"
+        },
+        {
+          "id": "pedro-ballester-10",
+          "title": "10. 9. Darse a los demás ｜ Pedro Ballester. ¡Nunca he sido tan feliz!",
+          "url": "https://api-v2.soundcloud.com/tracks/1434591088",
+          "documentId": "vida-santos-pedro-ballester-audiolibro-10-9-darse-a-los-dems-pedro-ballester-nunca-he-sido-tan-feliz"
+        },
+        {
+          "id": "pedro-ballester-11",
+          "title": "11. 10. La colina del Calvario ｜ Pedro Ballester. ¡Nunca he sido tan feliz!",
+          "url": "https://api-v2.soundcloud.com/tracks/1434591079",
+          "documentId": "vida-santos-pedro-ballester-audiolibro-11-10-la-colina-del-calvario-pedro-ballester-nunca-he-sido-tan-feliz"
+        },
+        {
+          "id": "pedro-ballester-12",
+          "title": "12. 11. Fidelidad en el Calvario ｜ Pedro Ballester. ¡Nunca he sido tan feliz!",
+          "url": "https://api-v2.soundcloud.com/tracks/1434591049",
+          "documentId": "vida-santos-pedro-ballester-audiolibro-12-11-fidelidad-en-el-calvario-pedro-ballester-nunca-he-sido-tan-feliz"
+        },
+        {
+          "id": "pedro-ballester-13",
+          "title": "13. 12. Fieles hasta la muerte ｜ Pedro Ballester. ¡Nunca he sido tan feliz!",
+          "url": "https://api-v2.soundcloud.com/tracks/1434591037",
+          "documentId": "vida-santos-pedro-ballester-audiolibro-13-12-fieles-hasta-la-muerte-pedro-ballester-nunca-he-sido-tan-feliz"
+        },
+        {
+          "id": "pedro-ballester-14",
+          "title": "14. 13. Desde el Cielo ｜ Pedro Ballester. ¡Nunca he sido tan feliz!",
+          "url": "https://api-v2.soundcloud.com/tracks/1434591028",
+          "documentId": "vida-santos-pedro-ballester-audiolibro-14-13-desde-el-cielo-pedro-ballester-nunca-he-sido-tan-feliz"
+        },
+        {
+          "id": "pedro-ballester-15",
+          "title": "15. Epilogo ｜ Pedro Ballester. ¡Nunca he sido tan feliz!",
+          "url": "https://api-v2.soundcloud.com/tracks/1434591019",
+          "documentId": "vida-santos-pedro-ballester-audiolibro-15-epilogo-pedro-ballester-nunca-he-sido-tan-feliz"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,439 @@
+{
+  "schemaVersion": 1,
+  "dataVersion": "2026-08-08",
+  "locale": "es-ES",
+  "editorialStatus": "reviewed-starter",
+  "disclaimer": "Estas guías ofrecen orientación catequética general. No sustituyen la atención pastoral de un sacerdote ni las normas litúrgicas particulares legítimas.",
+  "confession": {
+    "id": "guide-confession",
+    "title": "Guía de confesión",
+    "subtitle": "Prepararse con paz, hablar con sencillez y acoger el perdón de Dios",
+    "estimatedMinutes": 8,
+    "tone": "serene",
+    "quickStart": [
+      "Ponte en presencia de Dios y pide luz al Espíritu Santo.",
+      "Examina con sinceridad tu vida desde la última confesión.",
+      "Arrepiéntete y forma un propósito concreto de mejora.",
+      "Confiesa los pecados con claridad, brevedad y sin justificarte.",
+      "Escucha el consejo, acepta la penitencia y recibe la absolución.",
+      "Cumple la penitencia cuanto antes y da gracias a Dios."
+    ],
+    "sections": [
+      {
+        "id": "prepare",
+        "title": "Antes: preparar el corazón",
+        "intro": "La confesión no es un examen para obtener nota: es el encuentro sacramental con la misericordia de Cristo.",
+        "steps": [
+          {
+            "title": "Oración inicial",
+            "body": "Pide luz para reconocer el bien recibido, tus faltas y el paso concreto que Dios te invita a dar."
+          },
+          {
+            "title": "Examen de conciencia",
+            "body": "Revisa tu relación con Dios, la familia, el trabajo o estudio, los demás, el uso de los bienes, la afectividad y el cuidado de tus deberes. Mira hechos concretos, no solo sensaciones."
+          },
+          {
+            "title": "Dolor y propósito",
+            "body": "El dolor es rechazo sincero del pecado por amor a Dios o por reconocer el mal cometido. El propósito busca evitar el pecado y sus ocasiones; no exige garantizar que nunca volverás a caer."
+          },
+          {
+            "title": "Notas opcionales",
+            "body": "Si ayuda a recordar, lleva una lista breve. Evita convertirla en un relato exhaustivo y destrúyela después por privacidad."
+          }
+        ]
+      },
+      {
+        "id": "celebrate",
+        "title": "Durante: celebrar el sacramento",
+        "steps": [
+          {
+            "title": "Saludo",
+            "body": "Puedes comenzar con «Ave María Purísima» y responder «Sin pecado concebida», o simplemente saludar y decir que deseas confesarte. La costumbre puede variar."
+          },
+          {
+            "title": "Situar la confesión",
+            "body": "Indica aproximadamente cuánto tiempo ha pasado desde tu última confesión y cualquier circunstancia necesaria para comprender lo que vas a confesar."
+          },
+          {
+            "title": "Confesar",
+            "body": "Manifiesta todos los pecados mortales que recuerdes, indicando su especie y número aproximado; añade los veniales que te ayuden a crecer. Habla de tus propios pecados, no de los ajenos."
+          },
+          {
+            "title": "Cerrar",
+            "body": "Puedes terminar diciendo: «Me arrepiento también de todos los pecados de mi vida pasada y de los que ahora no recuerdo»."
+          },
+          {
+            "title": "Consejo y penitencia",
+            "body": "Escucha sin prisa. Si algo no se entiende o la penitencia no puede cumplirse, dilo antes de la absolución."
+          },
+          {
+            "title": "Acto de contrición",
+            "body": "Expresa tu arrepentimiento con una fórmula conocida o con palabras propias, mientras el sacerdote pronuncia la absolución."
+          }
+        ]
+      },
+      {
+        "id": "after",
+        "title": "Después: agradecer y comenzar de nuevo",
+        "steps": [
+          {
+            "title": "Acción de gracias",
+            "body": "Agradece el perdón recibido y evita volver a revisar con ansiedad lo ya confesado y absuelto."
+          },
+          {
+            "title": "Penitencia",
+            "body": "Cúmplela cuanto antes. Si la olvidas involuntariamente, no se invalida la confesión; procura recordarla o coméntalo en la próxima."
+          },
+          {
+            "title": "Reparación",
+            "body": "Cuando corresponda, devuelve lo tomado, repara el daño o pide perdón con prudencia, siguiendo el consejo recibido."
+          },
+          {
+            "title": "Un paso concreto",
+            "body": "Elige una ayuda sencilla y verificable: evitar una ocasión, pedir ayuda, cuidar una norma de piedad o corregir un hábito."
+          }
+        ]
+      }
+    ],
+    "formulas": [
+      {
+        "id": "simple-opening",
+        "label": "Comienzo sencillo",
+        "text": "Padre, quiero confesarme. Mi última confesión fue hace aproximadamente…"
+      },
+      {
+        "id": "simple-ending",
+        "label": "Final de la acusación",
+        "text": "No recuerdo nada más. Me arrepiento de estos pecados y de todos los de mi vida pasada."
+      },
+      {
+        "id": "contrition-short",
+        "label": "Acto de contrición breve",
+        "text": "Señor Jesús, me arrepiento de haberte ofendido. Confío en tu misericordia y, con tu gracia, quiero evitar el pecado y comenzar de nuevo."
+      }
+    ],
+    "faq": [
+      {
+        "question": "¿Y si me da vergüenza?",
+        "answer": "La vergüenza es frecuente. Puedes decirlo al comenzar; el sacerdote está para ayudarte y está obligado por el sigilo sacramental."
+      },
+      {
+        "question": "¿Y si no sé por dónde empezar?",
+        "answer": "Dilo con sencillez: «Hace tiempo que no me confieso y necesito ayuda». El sacerdote puede guiar la celebración."
+      },
+      {
+        "question": "¿Tengo que contar todos los detalles?",
+        "answer": "Solo los necesarios para identificar el pecado y las circunstancias que cambian seriamente su naturaleza. Evita detalles innecesarios o morbosos."
+      },
+      {
+        "question": "¿Qué ocurre si olvido sin querer un pecado grave?",
+        "answer": "Queda perdonado con la confesión válida, pero conviene manifestarlo en la siguiente confesión cuando se recuerde. Ocultarlo deliberadamente es distinto."
+      },
+      {
+        "question": "¿Puedo confesar dudas o tentaciones?",
+        "answer": "La tentación no es pecado mientras no haya consentimiento. Puedes mencionarla brevemente si necesitas orientación, distinguiéndola de los actos consentidos."
+      },
+      {
+        "question": "¿Qué hago si no recuerdo el número exacto?",
+        "answer": "Da una estimación honrada: una vez, varias veces, con frecuencia o durante cierto periodo. No se exige una precisión imposible."
+      },
+      {
+        "question": "¿Puedo llevar una lista?",
+        "answer": "Sí, si te da serenidad y es breve. Protégela y elimínala después. La lista sirve a la confesión; no debe alimentar escrúpulos."
+      },
+      {
+        "question": "¿Y si tengo escrúpulos o ansiedad religiosa?",
+        "answer": "Busca un confesor estable, sigue sus indicaciones y evita repetir pecados ya confesados por mera duda. Si la ansiedad es intensa o persistente, puede ser útil apoyo profesional además del acompañamiento espiritual."
+      },
+      {
+        "question": "¿Puede negarse la absolución?",
+        "answer": "La absolución requiere arrepentimiento y propósito de enmienda. Si hay una dificultad, habla con sinceridad para que el sacerdote pueda ayudarte a discernirla."
+      },
+      {
+        "question": "¿La confesión sustituye pedir perdón a quien dañé?",
+        "answer": "No. El sacramento reconcilia con Dios y la Iglesia; cuando sea posible y prudente, también corresponde reparar el daño causado."
+      }
+    ],
+    "privacy": {
+      "storeByDefault": false,
+      "message": "Atlas no debe guardar el contenido del examen de conciencia ni los pecados. Si el usuario escribe una nota, debe ser local, opcional y eliminable."
+    }
+  },
+  "mass": {
+    "id": "guide-mass",
+    "title": "Guía de la Misa",
+    "subtitle": "Qué sucede en cada momento y por qué",
+    "estimatedMinutes": 12,
+    "controls": {
+      "liturgicalExplanation": {
+        "label": "Explicación litúrgica",
+        "default": false,
+        "description": "Al activarla se muestran el sentido teológico y la función ritual de cada momento."
+      },
+      "responses": {
+        "label": "Mostrar respuestas",
+        "default": true
+      }
+    },
+    "notes": [
+      "Las posturas y algunos gestos pueden variar legítimamente según el rito, el país, la celebración y las indicaciones de la autoridad competente.",
+      "La guía acompaña la participación; no pretende sustituir el Misal ni distraer durante la celebración."
+    ],
+    "parts": [
+      {
+        "id": "introductory-rites",
+        "title": "Ritos iniciales",
+        "purpose": "Reunir a la asamblea, disponerla a escuchar la Palabra y celebrar dignamente la Eucaristía.",
+        "moments": [
+          {
+            "id": "entrance",
+            "title": "Entrada y canto",
+            "visibleSummary": "La comunidad reunida acoge al celebrante y comienza como un solo pueblo.",
+            "liturgicalExplanation": "El canto abre la celebración, fomenta la unión de quienes se han congregado e introduce en el misterio del día o tiempo litúrgico.",
+            "participation": "Canta y toma conciencia de que no celebras aisladamente."
+          },
+          {
+            "id": "sign-cross-greeting",
+            "title": "Señal de la cruz y saludo",
+            "visibleSummary": "La celebración comienza en el nombre del Padre, del Hijo y del Espíritu Santo.",
+            "liturgicalExplanation": "La señal de la cruz expresa el carácter trinitario de la liturgia; el saludo manifiesta la presencia del Señor en la Iglesia reunida.",
+            "response": "Y con tu espíritu."
+          },
+          {
+            "id": "penitential-act",
+            "title": "Acto penitencial",
+            "visibleSummary": "Reconocemos que necesitamos la misericordia de Dios.",
+            "liturgicalExplanation": "Dispone a celebrar los santos misterios. No sustituye ordinariamente al sacramento de la Penitencia cuando existe conciencia de pecado grave.",
+            "participation": "Reconoce con humildad tus faltas y acoge la misericordia."
+          },
+          {
+            "id": "gloria",
+            "title": "Gloria",
+            "visibleSummary": "La Iglesia alaba al Padre y suplica al Cordero.",
+            "liturgicalExplanation": "Es un himno antiquísimo; se canta o recita en los días prescritos, y se omite en otros tiempos y celebraciones según las normas litúrgicas."
+          },
+          {
+            "id": "collect",
+            "title": "Oración colecta",
+            "visibleSummary": "El sacerdote recoge la oración de todos y presenta la intención propia de la celebración.",
+            "liturgicalExplanation": "El silencio previo permite formular interiormente las súplicas; la oración expresa el carácter de la celebración y concluye los ritos iniciales.",
+            "response": "Amén."
+          }
+        ]
+      },
+      {
+        "id": "liturgy-word",
+        "title": "Liturgia de la Palabra",
+        "purpose": "Dios habla a su pueblo; Cristo anuncia el Evangelio y la comunidad responde con fe y oración.",
+        "moments": [
+          {
+            "id": "first-reading",
+            "title": "Primera lectura",
+            "visibleSummary": "Escuchamos un texto de la Sagrada Escritura.",
+            "liturgicalExplanation": "En domingos y solemnidades suele mostrar la historia de la salvación o iluminar el Evangelio; en el tiempo pascual procede ordinariamente del Nuevo Testamento.",
+            "response": "Te alabamos, Señor."
+          },
+          {
+            "id": "responsorial-psalm",
+            "title": "Salmo responsorial",
+            "visibleSummary": "La asamblea responde a la Palabra con la misma Palabra inspirada.",
+            "liturgicalExplanation": "El salmo favorece la meditación de la lectura y es parte integrante de la Liturgia de la Palabra.",
+            "participation": "Repite la respuesta y escucha las estrofas como oración."
+          },
+          {
+            "id": "second-reading",
+            "title": "Segunda lectura",
+            "visibleSummary": "En domingos y solemnidades escuchamos normalmente un texto apostólico.",
+            "liturgicalExplanation": "Presenta el testimonio y la enseñanza de los Apóstoles, y ayuda a reconocer cómo vivió la primera comunidad cristiana."
+          },
+          {
+            "id": "gospel-acclamation",
+            "title": "Aclamación al Evangelio",
+            "visibleSummary": "Nos ponemos en pie para acoger a Cristo que habla en el Evangelio.",
+            "liturgicalExplanation": "La aclamación constituye un rito propio. El Aleluya se sustituye durante la Cuaresma por la aclamación prevista."
+          },
+          {
+            "id": "gospel",
+            "title": "Evangelio",
+            "visibleSummary": "Escuchamos las palabras y los hechos de Jesucristo.",
+            "liturgicalExplanation": "Es la cumbre de la Liturgia de la Palabra. Los signos de honor expresan la presencia de Cristo que proclama el Evangelio en la Iglesia.",
+            "responses": [
+              "Gloria a ti, Señor.",
+              "Gloria a ti, Señor Jesús."
+            ]
+          },
+          {
+            "id": "homily",
+            "title": "Homilía",
+            "visibleSummary": "La Palabra proclamada se explica y se aplica a la vida cristiana.",
+            "liturgicalExplanation": "Forma parte de la liturgia y en los días prescritos no debe omitirse. Parte de las lecturas o textos litúrgicos y conduce al misterio celebrado."
+          },
+          {
+            "id": "creed",
+            "title": "Profesión de fe",
+            "visibleSummary": "Respondemos a la Palabra proclamando juntos la fe de la Iglesia.",
+            "liturgicalExplanation": "El Credo recuerda y confiesa los grandes misterios de la fe antes de celebrar la Eucaristía; se usa en los días señalados."
+          },
+          {
+            "id": "universal-prayer",
+            "title": "Oración de los fieles",
+            "visibleSummary": "Intercedemos por la Iglesia, el mundo, quienes sufren y la comunidad.",
+            "liturgicalExplanation": "El pueblo ejerce su sacerdocio bautismal presentando súplicas de alcance verdaderamente universal."
+          }
+        ]
+      },
+      {
+        "id": "liturgy-eucharist",
+        "title": "Liturgia eucarística",
+        "purpose": "La Iglesia hace memorial de la Pascua de Cristo: presenta los dones, da gracias, participa del sacrificio sacramental y recibe la comunión.",
+        "moments": [
+          {
+            "id": "preparation-gifts",
+            "title": "Preparación de los dones",
+            "visibleSummary": "Pan y vino son llevados al altar; con ellos ofrecemos nuestra vida y trabajo.",
+            "liturgicalExplanation": "Se prepara el altar y se presentan los elementos que se convertirán en el Cuerpo y la Sangre de Cristo. También pueden recogerse dones para los pobres y la Iglesia."
+          },
+          {
+            "id": "prayer-offerings",
+            "title": "Oración sobre las ofrendas",
+            "visibleSummary": "La preparación de los dones concluye con una oración.",
+            "liturgicalExplanation": "El sacerdote invita a orar y pide que la ofrenda sea aceptada para gloria de Dios y bien de toda la Iglesia.",
+            "response": "El Señor reciba de tus manos este sacrificio, para alabanza y gloria de su nombre, para nuestro bien y el de toda su santa Iglesia."
+          },
+          {
+            "id": "preface-sanctus",
+            "title": "Prefacio y Santo",
+            "visibleSummary": "Damos gracias al Padre y unimos nuestra alabanza a la de los ángeles y santos.",
+            "liturgicalExplanation": "El prefacio proclama un motivo particular de acción de gracias; el Santo es la aclamación de toda la asamblea."
+          },
+          {
+            "id": "eucharistic-prayer",
+            "title": "Plegaria eucarística",
+            "visibleSummary": "Es el centro y la cumbre de toda la celebración.",
+            "liturgicalExplanation": "Incluye acción de gracias, invocación del Espíritu Santo, relato de la institución y consagración, memorial, ofrenda, intercesiones y doxología final. La asamblea se une con atención y responde «Amén».",
+            "participation": "Escucha en oración; adora a Cristo realmente presente y ofrece con Él tu vida."
+          },
+          {
+            "id": "lords-prayer",
+            "title": "Padrenuestro",
+            "visibleSummary": "Como hijos, pedimos el pan de cada día y el perdón.",
+            "liturgicalExplanation": "Prepara para la comunión y pide la purificación del pecado y la liberación del mal."
+          },
+          {
+            "id": "peace",
+            "title": "Rito de la paz",
+            "visibleSummary": "Pedimos la paz y la unidad para la Iglesia y la familia humana.",
+            "liturgicalExplanation": "El gesto, cuando se realiza, expresa comunión eclesial antes de recibir el mismo Pan; debe conservar sobriedad."
+          },
+          {
+            "id": "fraction-lamb",
+            "title": "Fracción del Pan y Cordero de Dios",
+            "visibleSummary": "El pan consagrado se parte mientras invocamos a Cristo, Cordero de Dios.",
+            "liturgicalExplanation": "La fracción recuerda que los fieles, siendo muchos, forman un solo cuerpo al participar del único Pan de vida."
+          },
+          {
+            "id": "communion",
+            "title": "Comunión",
+            "visibleSummary": "Quienes están debidamente dispuestos reciben el Cuerpo de Cristo.",
+            "liturgicalExplanation": "La procesión y el canto expresan la unión espiritual de quienes comulgan. Quien no comulga puede permanecer en oración y realizar una comunión espiritual.",
+            "response": "Amén."
+          },
+          {
+            "id": "silence-thanksgiving",
+            "title": "Silencio y acción de gracias",
+            "visibleSummary": "Permanecemos con Cristo y agradecemos el don recibido.",
+            "liturgicalExplanation": "Tras la comunión puede guardarse silencio o entonarse un canto de alabanza; la oración después de la comunión pide los frutos del misterio celebrado."
+          }
+        ]
+      },
+      {
+        "id": "concluding-rites",
+        "title": "Ritos de conclusión",
+        "purpose": "Recibir la bendición y ser enviados a vivir lo celebrado.",
+        "moments": [
+          {
+            "id": "notices",
+            "title": "Avisos, cuando procedan",
+            "visibleSummary": "Se comunican brevemente asuntos necesarios para la comunidad.",
+            "liturgicalExplanation": "No pertenecen al núcleo del misterio celebrado y conviene que sean breves."
+          },
+          {
+            "id": "blessing",
+            "title": "Bendición",
+            "visibleSummary": "Dios fortalece a su pueblo para la misión.",
+            "liturgicalExplanation": "Puede ser simple o solemne según la celebración. La asamblea la recibe y responde «Amén»."
+          },
+          {
+            "id": "dismissal",
+            "title": "Envío",
+            "visibleSummary": "La Misa continúa en la vida: somos enviados a amar y servir.",
+            "liturgicalExplanation": "La despedida no es un mero final organizativo; expresa la misión de llevar al mundo lo recibido.",
+            "response": "Demos gracias a Dios."
+          }
+        ]
+      }
+    ]
+  },
+  "escrivaOrg": {
+    "id": "escriva-org",
+    "title": "San Josemaría en escriva.org",
+    "subtitle": "Acceso temático a las obras publicadas en el sitio oficial",
+    "officialBaseUrl": "https://escriva.org/es/",
+    "linkPolicy": "Solo se enlaza la portada oficial verificada. Las áreas proporcionan términos de búsqueda y no construyen rutas específicas no comprobadas.",
+    "areas": [
+      {
+        "id": "prayer",
+        "title": "Oración y presencia de Dios",
+        "description": "Textos para aprender a tratar a Dios en la vida ordinaria.",
+        "suggestedSearches": ["oración", "presencia de Dios", "vida interior", "silencio"]
+      },
+      {
+        "id": "work",
+        "title": "Trabajo y santificación",
+        "description": "Trabajo bien hecho, servicio, rectitud de intención y unidad de vida.",
+        "suggestedSearches": ["trabajo", "santificar el trabajo", "rectitud de intención", "servicio"]
+      },
+      {
+        "id": "mass-eucharist",
+        "title": "Misa y Eucaristía",
+        "description": "Preparación, participación, comunión y acción de gracias.",
+        "suggestedSearches": ["Santa Misa", "Eucaristía", "Comunión", "acción de gracias"]
+      },
+      {
+        "id": "confession-conversion",
+        "title": "Confesión y conversión",
+        "description": "Contrición, sinceridad, lucha y recomienzo.",
+        "suggestedSearches": ["confesión", "contrición", "sinceridad", "recomenzar"]
+      },
+      {
+        "id": "mary",
+        "title": "La Virgen",
+        "description": "Filiación mariana, rosario y fiestas de Santa María.",
+        "suggestedSearches": ["Virgen", "Santa María", "Rosario", "Madre de Dios"]
+      },
+      {
+        "id": "freedom-charity",
+        "title": "Libertad, amistad y caridad",
+        "description": "Amor a la libertad, comprensión, convivencia y servicio a todos.",
+        "suggestedSearches": ["libertad", "amistad", "caridad", "comprensión"]
+      },
+      {
+        "id": "suffering-hope",
+        "title": "Cruz, sufrimiento y esperanza",
+        "description": "Textos para vivir la dificultad unidos a Cristo, sin negar el dolor.",
+        "suggestedSearches": ["Cruz", "dolor", "enfermedad", "esperanza"]
+      },
+      {
+        "id": "family-world",
+        "title": "Familia y vida en el mundo",
+        "description": "Vocación cristiana en la familia, las relaciones y la sociedad.",
+        "suggestedSearches": ["familia", "matrimonio", "hogar", "mundo"]
+      }
+    ],
+    "featuredVerifiedLink": {
+      "title": "Camino, punto 90: aprender a comenzar la oración",
+      "url": "https://escriva.org/es/camino/90/",
+      "reason": "Enlace aportado y verificado en el corpus editorial de Atlas."
+    }
+  }
+}

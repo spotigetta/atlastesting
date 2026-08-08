@@ -10,6 +10,26 @@
   let fullTextPromise;
   const shardPromises = new Map();
 
+  function parseFilter(filter = "all") {
+    const parts = String(filter || "all").split("|").filter(Boolean);
+    const libraryPart = parts.find(part => part.startsWith("libraries:"));
+    const legacyLibrary = parts.find(part => part.startsWith("library:"));
+    const documentPart = parts.find(part => part.startsWith("document:"));
+    const libraries = new Set((libraryPart ? libraryPart.slice(10).split(",") : legacyLibrary ? [legacyLibrary.slice(8)] : []).filter(Boolean));
+    return {
+      libraries,
+      documentId: documentPart?.slice(9) || "",
+      type: parts.find(part => part.startsWith("type:"))?.slice(5) || "",
+      status: parts.find(part => part.startsWith("status:"))?.slice(7) || "",
+      foreign: parts.includes("language:foreign")
+    };
+  }
+
+  function allowed(doc, parsed) {
+    return (!parsed.libraries.size || parsed.libraries.has(doc.libraryId))
+      && (!parsed.documentId || parsed.documentId === doc.id);
+  }
+
   function expanded(value) {
     let text = normalize(value);
     for (const [term, variants] of Object.entries(aliases)) {
@@ -33,15 +53,12 @@
   function search(query, filter = "all", limit = 80) {
     const q = query.trim();
     if (!q) return { documents: [], authors: [], categories: [], collections: [], routes: [], questions: [], libraries: [] };
-    const allowedLibrary = filter.startsWith("library:") ? filter.split(":")[1] : null;
-    const typeFilter = filter.startsWith("type:") ? filter.split(":")[1] : null;
-    const statusFilter = filter.startsWith("status:") ? filter.split(":")[1] : null;
-    const languageFilter = filter === "language:foreign";
+    const parsed = parseFilter(filter);
 
     const docResults = documents
-      .filter(doc => (!allowedLibrary || doc.libraryId === allowedLibrary)
-        && (!statusFilter || doc.status === statusFilter)
-        && (!languageFilter || Boolean(doc.language)))
+      .filter(doc => allowed(doc, parsed)
+        && (!parsed.status || doc.status === parsed.status)
+        && (!parsed.foreign || Boolean(doc.language)))
       .map(doc => ({
         ...doc,
         score: score(`${doc.title} ${doc.file} ${doc.originals} ${doc.category} ${doc.author || ""} ${doc.language || ""} ${doc.year || ""} ${doc.status} ${doc.library.name} ${doc.library.short}`, q, doc.title)
@@ -51,20 +68,20 @@
       .slice(0, limit);
 
     const authors = catalog.libraries.flatMap(lib => lib.authors.map(author => ({ ...author, library: lib })))
-      .filter(item => (!allowedLibrary || item.library.id === allowedLibrary) && score(item.name, q, item.name))
+      .filter(item => !parsed.documentId && (!parsed.libraries.size || parsed.libraries.has(item.library.id)) && score(item.name, q, item.name))
       .sort((a, b) => b.count - a.count).slice(0, 20);
     const categories = catalog.libraries.flatMap(lib => lib.categories.map(category => ({ ...category, library: lib })))
-      .filter(item => (!allowedLibrary || item.library.id === allowedLibrary) && score(item.name, q, item.name))
+      .filter(item => !parsed.documentId && (!parsed.libraries.size || parsed.libraries.has(item.library.id)) && score(item.name, q, item.name))
       .sort((a, b) => b.count - a.count).slice(0, 20);
-    const collections = catalog.collections.filter(item => (!allowedLibrary || item.libraryIds.includes(allowedLibrary)) && score(`${item.title} ${item.primary} ${item.complementary}`, q, item.title)).slice(0, 20);
-    const routes = catalog.routes.filter(item => (!allowedLibrary || item.libraryIds.includes(allowedLibrary)) && score(`${item.title} ${item.description}`, q, item.title)).slice(0, 20);
+    const collections = catalog.collections.filter(item => !parsed.documentId && (!parsed.libraries.size || item.libraryIds.some(id => parsed.libraries.has(id))) && score(`${item.title} ${item.primary} ${item.complementary}`, q, item.title)).slice(0, 20);
+    const routes = catalog.routes.filter(item => !parsed.documentId && (!parsed.libraries.size || item.libraryIds.some(id => parsed.libraries.has(id))) && score(`${item.title} ${item.description}`, q, item.title)).slice(0, 20);
     const questions = Object.entries(catalog.editorial?.questions || {}).flatMap(([libraryId, values]) => values.map((text, index) => ({ id: `${libraryId}-${index}`, text, libraryId })))
-      .filter(item => (!allowedLibrary || item.libraryId === allowedLibrary) && score(item.text, q, item.text)).slice(0, 20);
-    const libraries = catalog.libraries.filter(item => (!allowedLibrary || item.id === allowedLibrary) && score(`${item.name} ${item.short} ${item.description} ${item.purpose}`, q, item.name));
+      .filter(item => !parsed.documentId && (!parsed.libraries.size || parsed.libraries.has(item.libraryId)) && score(item.text, q, item.text)).slice(0, 20);
+    const libraries = catalog.libraries.filter(item => !parsed.documentId && (!parsed.libraries.size || parsed.libraries.has(item.id)) && score(`${item.name} ${item.short} ${item.description} ${item.purpose}`, q, item.name));
 
     const result = { documents: docResults, authors, categories, collections, routes, questions, libraries };
-    if (typeFilter && result[typeFilter]) {
-      for (const key of Object.keys(result)) if (key !== typeFilter) result[key] = [];
+    if (parsed.type && result[parsed.type]) {
+      for (const key of Object.keys(result)) if (key !== parsed.type) result[key] = [];
     }
     return result;
   }
@@ -127,14 +144,14 @@
       if (!candidates.size) return [];
     }
 
-    const allowedLibrary = filter.startsWith("library:") ? filter.split(":")[1] : null;
+    const parsed = parseFilter(filter);
     return [...candidates.entries()]
       .map(([docIndex, occurrences]) => {
         const reference = index.documents[docIndex];
         const document = documentMap.get(reference.id);
         return document ? { ...document, occurrences } : null;
       })
-      .filter(document => document && (!allowedLibrary || document.libraryId === allowedLibrary))
+      .filter(document => document && allowed(document, parsed))
       .sort((a, b) => b.occurrences - a.occurrences || a.title.localeCompare(b.title))
       .slice(0, limit);
   }

@@ -25,6 +25,8 @@
     library: { query: "", category: "all", status: "all", view: "cards" },
     compare: ["doctrine", "canon"],
     searchFilter: "all",
+    searchLibraries: [],
+    searchDocument: "",
     shortFilter: "all",
     savedTab: "documents"
   };
@@ -39,9 +41,10 @@
   let iaFilmTimer = 0;
   let iaFilmPlaying = true;
   const personalizationDefaults = {
+    theme:"system", contrast:false,
     magnetEnabled:true, magnetStrength:34, magnetDelay:120, magnetDuration:300,
     auroraIntensity:88, auroraSize:100, motionLevel:100, josemariaPortraitIntensity:18, shortTextScale:100,
-    shortContentWidth:720, shortAlignment:"mixed", interfaceScale:100,
+    shortContentWidth:720, shortAlignment:"mixed", shortTheme:"auto", interfaceScale:100,
     cornerRadius:100, fontStyle:"editorial", headingFont:"literata", bodyFont:"dm-sans", palette:"sage", surfaceStyle:"soft", compactMode:false, showExternalImages:true
   };
   const libraryGuides = {
@@ -54,6 +57,7 @@
     bibliotecaria: { file: "infobib.html", purpose: "Descubre libros y diseña recorridos literarios por autores, géneros, épocas, temas o nivel lector.", examples: ["Haz una ruta por la novela rusa.", "¿Qué leer después de esta obra?"] },
     clasicos: { file: "infografiaLosClasicos_v2.html", purpose: "Explora el canon literario, consulta obras completas y relaciona grandes autores y tradiciones.", examples: ["Compara la tragedia griega y Shakespeare.", "Propón cinco clásicos sobre libertad."] },
     "san-josemaria": { file: "infoSJM.html", purpose: "Profundiza en sus obras y enseñanzas sobre oración, trabajo, libertad y santidad cotidiana.", examples: ["Busca textos sobre santificar el trabajo.", "Relaciona Camino, Surco y Forja sobre la alegría."] },
+    "vida-santos": { purpose: "Conoce la vida de los santos desde biografías identificadas, sitúalas en su tiempo y escucha el recorrido completo de Pedro Ballester.", examples: ["¿Qué decisiones concretas marcaron la vida de este santo?", "Compara cómo vivieron la enfermedad Pedro Ballester y otro santo.", "Resume por capítulos el audiolibro Pedro Ballester. Nunca he sido tan feliz."] },
     "preparadora-circulos": { file: "infoCirculos.html", purpose: "Prepara círculos breves, documentados y pedagógicos a partir de las obras de san Josemaría y textos pontificios.", examples: ["Diseña un círculo de 25 minutos sobre oración mental.", "Propón preguntas, citas y aplicaciones para una sesión sobre trabajo."] }
   };
   function libraryDisplay(library) {
@@ -112,6 +116,12 @@
     eyebrow: "Música", title: "Canciones que cambian con cada mezcla",
     text: "Atlas consulta nueve canales, baraja las canciones y permite escucharlas sin abandonar la aplicación.",
     bullets: ["«Nueva mezcla» cambia el orden inmediatamente.", "El filtro Música las presenta también como Shorts.", "Si la actualización tarda, Atlas usa la última selección guardada y continúa en segundo plano."]
+  });
+  tutorialSteps.splice(-1, 0, {
+    mark: "✦", route: "/spiritual/saints", target: ".saints-mode",
+    eyebrow: "Vida de los santos", title: "Busca compañía para una experiencia concreta",
+    text: "Cincuenta etiquetas reúnen pasajes exactos de distintas biografías para ver cómo vivieron la desolación, el miedo, la enfermedad, la cruz, la confianza o la paz.",
+    bullets: ["Cada tarjeta conserva el documento del que procede.", "«Leer en contexto» abre la biografía en la frase localizada.", "No sustituye la ayuda médica, psicológica, sacramental o pastoral que pueda ser necesaria."]
   });
   tutorialSteps.splice(-1, 0,
     { mark: "◒", route: "/examen", target: ".exam-period-grid", eyebrow: "Examen diario", title: "Breve o completo, siempre sereno", text: "Elige lo esencial para una pausa rápida o recorre el plan completo. Atlas no utiliza puntos, rachas ni porcentajes: solo guarda lo que tú marcas en este dispositivo.", bullets: ["Breve selecciona ocho normas esenciales.", "Completo recorre todas las normas activas.", "Omitir el examen de mediodía nunca se interpreta como incumplimiento."] },
@@ -246,6 +256,7 @@
         <div><span class="eyebrow">Atlas · Mercabá</span><h1>${libraries.length} bibliotecas.<br>Miles de fuentes.</h1></div>
         <p>Descubre qué sabe cada IA, qué documentos contiene y qué puedes preguntarle.</p>
         <div class="hero-search"><button data-action="search">${A.library.icon("search")}<span id="hero-placeholder">Busca “${placeholders[daySeed() % placeholders.length]}”</span><kbd>Ctrl K</kbd></button></div>
+        <a class="home-saints-entry" href="#/spiritual/saints"><span>✦</span><span><b>¿Qué necesito hoy?</b><small>Descubre cómo vivieron los santos la desolación, el miedo, la cruz, la paz o la confianza.</small></span><i>Explorar 50 experiencias →</i></a>
         <button class="customize-trigger subtle" data-action="customize-home" title="Cambiar el orden de Inicio">↕ Personalizar</button>
       </div>
 
@@ -341,9 +352,11 @@
   function guideCard(lib, full = false) {
     const guide = libraryGuides[lib.id];
     if (!guide) return "";
+    const preview = guide.file ? `<iframe src="${infographicUrl(guide.file)}" title="Vista previa de ${esc(lib.short)}" loading="lazy" tabindex="-1"></iframe>` : `<div class="ia-guide-symbolic"><i>${esc(lib.mark)}</i><span>VIDAS · FUENTES · ESCUCHA</span></div>`;
+    const actions = `${guide.file ? `<button class="secondary-button" data-open-infographic="${esc(guide.file)}" data-infographic-title="${esc(lib.short)}" data-infographic-tone="${esc(lib.tone)}">Infografía completa</button>` : ""}<a class="ghost-button" href="#/library/${lib.id}/${lib.id === "vida-santos" ? "audiobooks" : "documents"}">${lib.id === "vida-santos" ? "Ver audiolibro" : "Ver fuentes"}</a>`;
     return `<article class="ia-guide-card tone-${lib.tone}" data-library="${lib.id}">
-      <div class="ia-guide-preview"><iframe src="${infographicUrl(guide.file)}" title="Vista previa de ${esc(lib.short)}" loading="lazy" tabindex="-1"></iframe><span class="library-mark">${esc(lib.mark)}</span></div>
-      <div class="ia-guide-copy"><span class="eyebrow">${esc(lib.short)}</span><h3>¿Para qué sirve?</h3><p>${esc(guide.purpose)}</p>${full ? `<ul>${guide.examples.map(item => `<li>${esc(item)}</li>`).join("")}</ul>` : ""}<div class="button-row"><button class="secondary-button" data-open-infographic="${esc(guide.file)}" data-infographic-title="${esc(lib.short)}" data-infographic-tone="${esc(lib.tone)}">Infografía completa</button><a class="ghost-button" href="#/library/${lib.id}/documents">Ver fuentes</a></div></div>
+      <div class="ia-guide-preview">${preview}<span class="library-mark">${esc(lib.mark)}</span></div>
+      <div class="ia-guide-copy"><span class="eyebrow">${esc(lib.short)}</span><h3>¿Para qué sirve?</h3><p>${esc(guide.purpose)}</p>${full ? `<ul>${guide.examples.map(item => `<li>${esc(item)}</li>`).join("")}</ul>` : ""}<div class="button-row">${actions}</div></div>
     </article>`;
   }
 
@@ -396,13 +409,14 @@
       ["guide","search", "¿Dónde buscar?", "Atlas orienta sin responder doctrinalmente", "#/guide"],
       ["sources","spark", "Noticias y lecturas", "Medios, opinión, oración y novedades editoriales", "#/sources"],
       ["music","spark", "Música", "Canciones, oración cantada y artistas seleccionados", "#/music"],
+      ["spiritual","spark", "Vida espiritual", "Santos por experiencia, confesión, Misa y cancionero", "#/spiritual"],
       ["notifications","bookmark", "Notificaciones", "Avisos configurables y guardados localmente", "#/notifications"]
     ];
     const order = settings.exploreOrder?.length ? settings.exploreOrder : tiles.map(item => item[0]);
     const ordered = [...tiles].sort((a,b) => order.indexOf(a[0]) - order.indexOf(b[0]));
     const tones = ["amber","blue","clay","violet","emerald","rose","indigo","gold","cyan","olive","burgundy","slate"];
     const groups = [
-      ["Bibliotecas y estudio", "Elige un corpus o sigue un recorrido.", ["libraries","infographics","collections","routes","guide"]],
+      ["Bibliotecas y estudio", "Elige un corpus o sigue un recorrido.", ["libraries","infographics","collections","routes","guide","spiritual"]],
       ["Descubrir y actualidad", "Contenido vivo, lecturas y propuestas para volver cada día.", ["discover","sources","music","notifications"]],
       ["Mapas y análisis", "Compara, sitúa y visualiza las conexiones.", ["stats","compare","timeline","map","graph"]]
     ];
@@ -469,6 +483,7 @@
       <section><span class="eyebrow">Atmósfera</span><h3>Iluminación</h3>${rangeSetting("auroraIntensity","Intensidad de la luz",20,100,1,"%")}${rangeSetting("auroraSize","Tamaño del foco",60,145,1,"%")}${rangeSetting("motionLevel","Recorrido de la luz",0,140,1,"%")}${rangeSetting("josemariaPortraitIntensity","Presencia de san Josemaría",5,42,1,"%")}</section>
       <section><span class="eyebrow">Lectura de tarjetas</span><h3>Texto y composición</h3>${rangeSetting("shortTextScale","Tamaño del texto",80,135,1,"%")}${rangeSetting("shortContentWidth","Anchura del texto",480,1000,10," px")}
         <label class="setting-select"><span><b>Colocación del texto</b><small>San Josemaría permanece siempre a la izquierda.</small></span><select data-setting-select="shortAlignment"><option value="mixed" ${settings.shortAlignment==="mixed"?"selected":""}>Alternada</option><option value="left" ${settings.shortAlignment==="left"?"selected":""}>Siempre izquierda</option><option value="right" ${settings.shortAlignment==="right"?"selected":""}>Siempre derecha</option></select></label>
+        <label class="setting-select"><span><b>Tema de los Shorts</b><small>Permite leer las tarjetas también sobre un fondo claro.</small></span><select data-setting-select="shortTheme"><option value="auto" ${settings.shortTheme==="auto"?"selected":""}>Seguir Atlas</option><option value="dark" ${settings.shortTheme==="dark"?"selected":""}>Oscuro</option><option value="light" ${settings.shortTheme==="light"?"selected":""}>Claro</option></select></label>
         ${toggleSetting("showExternalImages","Fotografías externas","Muestra imágenes en noticias, Instagram, música y vídeos.")}</section>
       <section><span class="eyebrow">Interfaz</span><h3>Apariencia general</h3>${rangeSetting("interfaceScale","Escala de la interfaz",85,120,1,"%")}${rangeSetting("cornerRadius","Redondez",35,140,1,"%")}
         <label class="setting-select"><span><b>Estilo general</b><small>Editorial conserva contraste entre títulos y texto; contemporáneo unifica la voz.</small></span><select data-setting-select="fontStyle"><option value="editorial" ${settings.fontStyle==="editorial"?"selected":""}>Editorial</option><option value="modern" ${settings.fontStyle==="modern"?"selected":""}>Contemporáneo</option></select></label>
@@ -500,6 +515,7 @@
     root.style.setProperty("--sjm-portrait-opacity", Number(s.josemariaPortraitIntensity || 18) / 100);
     document.body.dataset.fontStyle = s.fontStyle || "editorial";
     document.body.dataset.surfaceStyle = s.surfaceStyle || "soft";
+    document.body.dataset.shortTheme = s.shortTheme || "auto";
     document.body.classList.toggle("compact-ui", Boolean(s.compactMode));
     document.body.classList.toggle("hide-external-images", !s.showExternalImages);
   }
@@ -629,6 +645,7 @@
       app.innerHTML = A.extras.renderMusic();
       requestAnimationFrame(() => A.extras.hydrateMusic());
     }
+    else if (current.name === "spiritual") app.innerHTML = A.spiritual.render(current);
     else if (current.name === "guide") app.innerHTML = A.extras.renderGuide(current.query.get("q") || "");
     else if (current.name === "notifications") app.innerHTML = A.extras.renderNotifications();
     else if (current.name === "examen") app.innerHTML = A.exam.render(current);
@@ -671,11 +688,12 @@
     if (current.name === "compare") return "Capacidades de las IA · Atlas";
     if (current.name === "saved") return "Guardados · Atlas";
     if (current.name === "examen") return "Examen diario · Atlas";
+    if (current.name === "spiritual") return "Vida espiritual · Atlas";
     return "Atlas · Mercabá";
   }
 
   function setActiveNav(name) {
-    const mapped = name === "library" || name === "collections" || name === "routes" || name === "compare" ? (name === "compare" ? "compare" : "explore") : name === "short" ? "discover" : name;
+    const mapped = name === "library" || name === "collections" || name === "routes" || name === "compare" || name === "spiritual" ? (name === "compare" ? "compare" : "explore") : name === "short" ? "discover" : name;
     document.querySelectorAll("[data-nav]").forEach(item => item.classList.toggle("active", item.dataset.nav === mapped));
   }
 
@@ -729,8 +747,17 @@
   }
 
   function searchFilters() {
-    const filters = [["all","Todo"],["library:doctrine","Doctrina"],["library:canon","CanonIA"],["library:history","HistorIA"],["library:liturgy","LiturgIA"],["type:documents","Documentos"],["type:authors","Autores"],["type:categories","Categorías"],["status:historical","Históricos"],["status:incomplete","Incompletos"],["language:foreign","Otros idiomas"]];
-    document.querySelector("#search-filters").innerHTML = filters.map(([id,label]) => `<button class="chip ${state.searchFilter===id?"active":""}" data-search-filter="${id}">${label}</button>`).join("");
+    const filters = [["all","Todo"],["type:documents","Documentos"],["type:authors","Autores"],["type:categories","Categorías"],["status:historical","Históricos"],["status:incomplete","Incompletos"],["language:foreign","Otros idiomas"]];
+    const libraries = visibleLibraries();
+    const selected = new Set(state.searchLibraries);
+    const scopedDocuments = selected.size ? A.data.documents.filter(doc => selected.has(doc.libraryId)) : [];
+    document.querySelector("#search-filters").innerHTML = `<div class="search-filter-block"><b>Tipo de resultado</b><div>${filters.map(([id,label]) => `<button class="chip ${state.searchFilter===id?"active":""}" data-search-filter="${id}">${label}</button>`).join("")}</div></div>
+      <div class="search-filter-block"><b>Buscar dentro de estas IA</b><small>${selected.size ? `${selected.size} seleccionada${selected.size === 1 ? "" : "s"}` : "Todas las IA"}</small><div><button class="chip ${selected.size ? "" : "active"}" data-search-library="all">Todas</button>${libraries.map(lib => `<button class="chip ${selected.has(lib.id)?"active":""}" data-search-library="${esc(lib.id)}">${esc(lib.short)}</button>`).join("")}</div></div>
+      <label class="search-source-scope"><span><b>Fuente concreta</b><small>${selected.size ? "Opcional: limita la consulta a un único documento." : "Selecciona antes una o varias IA para elegir una fuente."}</small></span><select id="search-document-filter" ${selected.size ? "" : "disabled"}><option value="">Cualquier fuente de la selección</option>${scopedDocuments.map(doc => `<option value="${esc(doc.id)}" ${state.searchDocument === doc.id ? "selected" : ""}>${esc(doc.title)} · ${esc(doc.library.short)}</option>`).join("")}</select></label>`;
+  }
+
+  function activeSearchFilter() {
+    return [state.searchFilter, state.searchLibraries.length ? `libraries:${state.searchLibraries.join(",")}` : "", state.searchDocument ? `document:${state.searchDocument}` : ""].filter(value => value && value !== "all").join("|") || "all";
   }
 
   function renderSearch(value) {
@@ -738,10 +765,10 @@
     const q = value.trim();
     if (!q) {
       const recent = A.storage.get().recentSearches;
-      searchResults.innerHTML = recent.length ? `<div class="result-group"><h3>Búsquedas recientes</h3>${recent.map(term => `<button class="search-result" data-search-term="${esc(term)}"><span class="result-mark">⌕</span><span><b>${esc(term)}</b><small>Buscar de nuevo</small></span><span>→</span></button>`).join("")}</div>` : A.library.empty("Busca en 476 fuentes", "Escribe un título, autor, categoría o número de catálogo.");
+      searchResults.innerHTML = recent.length ? `<div class="result-group"><h3>Búsquedas recientes</h3>${recent.map(term => `<button class="search-result" data-search-term="${esc(term)}"><span class="result-mark">⌕</span><span><b>${esc(term)}</b><small>Buscar de nuevo</small></span><span>→</span></button>`).join("")}</div>` : A.library.empty(`Busca en ${A.data.documents.length.toLocaleString("es-ES")} fuentes`, "Escribe un título, autor, categoría o número de catálogo.");
       return;
     }
-    const results = A.search.run(q, state.searchFilter);
+    const results = A.search.run(q, activeSearchFilter());
     const groups = [
       ["documents","Documentos", item => searchDoc(item)],
       ["authors","Autores", item => searchEntity(item.name, `${item.count} documentos · ${item.library.short}`, `#/author/${encodeURIComponent(item.name)}`, item.library)],
@@ -766,7 +793,7 @@
     fullTextStatus.textContent = "Localizando candidatos y verificando la frase en los Markdown…";
     searchResults.innerHTML = `<div class="empty-state"><span class="empty-glyph">${A.library.icon("books")}</span><h2>Buscando dentro de los documentos</h2><p>La primera búsqueda puede tardar unos segundos.</p></div>`;
     try {
-      const results = await A.search.runLiteral(query, state.searchFilter);
+      const results = await A.search.runLiteral(query, activeSearchFilter());
       fullTextStatus.textContent = `Búsqueda literal verificada · ${window.ATLAS_FULLTEXT.meta.terms.toLocaleString("es-ES")} términos de apoyo`;
       searchResults.innerHTML = results.length
         ? `<div class="result-group"><h3>Coincidencias literales verificadas · ${results.length}</h3>${results.map(doc => `<button class="search-result tone-${doc.library.tone}" data-open-reader="${esc(doc.id)}" data-reader-query="${esc(query)}"><span class="result-mark">${doc.library.mark}</span><span><b>${esc(doc.title)}</b><small>${esc(doc.category)} · ${esc(doc.library.short)} · “…${esc(doc.excerpt)}…”</small></span><span>${doc.occurrences.toLocaleString("es-ES")} apariciones</span></button>`).join("")}</div>`
@@ -941,14 +968,14 @@
     }
     if (action === "intro-close") { closeIntro(); return; }
     if (action === "intro-replay") { event.preventDefault(); openIntro(true); return; }
-    if (action === "search") { event.preventDefault(); openSearch(); }
+    if (action === "search") { event.preventDefault(); if (target.dataset.searchLibraryPreset) { state.searchLibraries = [target.dataset.searchLibraryPreset]; state.searchDocument = ""; } openSearch(); }
     if (action === "settings") { event.preventDefault(); openSettings(); }
     if (action === "close-settings") closeSettings();
     if (action === "reset-personalization") {
       Object.entries(personalizationDefaults).forEach(([key,value]) => A.storage.setSetting(key,value));
-      applyPersonalization();
+      applyTheme(); applyPersonalization();
       settingsLayer.querySelector("#settings-content").innerHTML = renderSettings();
-      toast("Personalización restablecida.");
+      toast("Tema, colores y apariencia restablecidos a fábrica.");
     }
     if (action === "tutorial") { event.preventDefault(); closeSearch(); openTutorial(); }
     if (action === "tutorial-close") closeTutorial();
@@ -1019,6 +1046,7 @@
     }
     if (target.dataset.shareShort) {
       const item = A.data.catalog.shorts.find(short => short.id === target.dataset.shareShort)
+        || (window.ATLAS_SAINTS_SHORTS?.items || []).find(short => short.id === target.dataset.shareShort)
         || (window.ATLAS_EXTERNAL?.items || []).find(short => short.id === target.dataset.shareShort)
         || (window.ATLAS_QUOTES?.items || []).find(short => short.id === target.dataset.shareShort)
         || (window.ATLAS_YOUTUBE?.items || []).find(short => short.id === target.dataset.shareShort)
@@ -1027,7 +1055,8 @@
         || (window.ATLAS_LIVE_SHORTS || []).find(short => short.id === target.dataset.shareShort);
       if (!item) { toast("No se ha podido recuperar esta tarjeta."); return; }
       const url = `${location.href.split("#")[0]}#/short/${encodeURIComponent(item.id)}`;
-      openShare({ title: `${item.title} · Atlas`, text: `${item.text || item.description}\nFuente: ${item.reference || item.source}`, url: item.url || url });
+      const shortText = item.text || item.description || item.body || item.quote || item.answer || item.slides?.map(slide => slide.text).join(" ") || item.title;
+      openShare({ title: `${item.title} · Atlas`, text: `${shortText}\nFuente: ${item.reference || item.source || "Vida de los Santos"}`, url: item.url || url });
     }
     if (target.dataset.shareChoice && sharePayload) {
       const choice = target.dataset.shareChoice;
@@ -1040,6 +1069,14 @@
       if (choice !== "whatsapp") closeShare();
     }
     if (target.dataset.searchFilter) { state.searchFilter = target.dataset.searchFilter; renderSearch(searchInput.value); }
+    if (target.dataset.searchLibrary) {
+      const id = target.dataset.searchLibrary;
+      if (id === "all") state.searchLibraries = [];
+      else state.searchLibraries = state.searchLibraries.includes(id) ? state.searchLibraries.filter(item => item !== id) : [...state.searchLibraries, id];
+      if (state.searchDocument && !A.data.documentMap.has(state.searchDocument)) state.searchDocument = "";
+      if (state.searchDocument && state.searchLibraries.length && !state.searchLibraries.includes(A.data.documentMap.get(state.searchDocument)?.libraryId)) state.searchDocument = "";
+      renderSearch(searchInput.value);
+    }
     if (target.dataset.searchTerm) { event.preventDefault(); openSearch(target.dataset.searchTerm); }
     if (target.dataset.docView) { state.library.view = target.dataset.docView; renderRouteView(); }
     if (target.dataset.status) { state.library.status = target.dataset.status; renderRouteView(); }
@@ -1055,7 +1092,7 @@
     if (target.dataset.routeStep) { A.storage.toggleRouteStep(target.dataset.routeStep, target.dataset.documentId); renderRouteView(); }
     if (target.dataset.quizAnswer) { const correct = target.dataset.quizAnswer === target.dataset.quizCorrect; A.storage.recordQuiz(correct); toast(correct ? "Correcto. Esa fuente aparece en esa biblioteca." : "No es esa biblioteca. Puedes abrir la ficha para comprobarlo."); }
     if (target.dataset.homeMove) moveSetting("homeOrder", target.dataset.homeMove, target.dataset.direction, ["exam","today","libraries","reading","history"]);
-    if (target.dataset.exploreMove) moveSetting("exploreOrder", target.dataset.exploreMove, target.dataset.direction, ["libraries","collections","routes","discover","stats","compare","timeline","map","graph","guide","sources","notifications"]);
+    if (target.dataset.exploreMove) moveSetting("exploreOrder", target.dataset.exploreMove, target.dataset.direction, ["libraries","infographics","collections","routes","spiritual","discover","stats","compare","timeline","map","graph","guide","sources","music","notifications"]);
   });
 
   document.addEventListener("input", event => {
@@ -1074,6 +1111,7 @@
   });
 
   document.addEventListener("change", async event => {
+    if (event.target.id === "search-document-filter") { state.searchDocument = event.target.value; renderSearch(searchInput.value); return; }
     if (event.target.dataset.shortFilterSelect) { state.shortFilter=event.target.value; renderRouteView(); return; }
     if (event.target.id === "library-category") { state.library.category = event.target.value; renderRouteView(); }
     if (event.target.id === "import-file" && event.target.files[0]) {
@@ -1106,7 +1144,7 @@
     if (event.target.dataset.settingSelect) {
       A.storage.setSetting(event.target.dataset.settingSelect, event.target.value);
       applyPersonalization();
-      if (event.target.dataset.settingSelect === "shortAlignment" && route().name === "discover") renderRouteView();
+      if (["shortAlignment","shortTheme"].includes(event.target.dataset.settingSelect) && route().name === "discover") renderRouteView();
     }
   });
 

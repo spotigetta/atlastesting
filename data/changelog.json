@@ -1,7 +1,42 @@
 {
-  "currentVersion": "5.4.0",
+  "currentVersion": "5.6.1",
   "updatedAt": "2026-08-06",
   "entries": [
+    {
+      "version": "5.6.1",
+      "date": "2026-08-08",
+      "title": "Pasajes de santos en castellano y lectura desarrollada",
+      "changes": [
+        "Quinientas tarjetas mostradas íntegramente en castellano, con traducción local cuando la biografía original está en otra lengua",
+        "Fragmentos biográficos ampliados hasta aproximadamente el doble de extensión",
+        "Tres claves extractivas a la derecha de cada pasaje y diseño adaptado para móvil",
+        "Cita original, posición y enlace al contexto conservados para asegurar la trazabilidad"
+      ]
+    },
+    {
+      "version": "5.6.0",
+      "date": "2026-08-08",
+      "title": "Vida espiritual, santos por experiencia y lector inmersivo",
+      "changes": [
+        "Cincuenta experiencias espirituales con quinientos pasajes literales y trazables de cincuenta y ocho santos",
+        "Guías de confesión y de la Misa con explicación litúrgica activable",
+        "Cancionero católico responsable, sección escriva.org, cinco rutas y veinticuatro Shorts de santos",
+        "Búsqueda textual acotable por varias IA o por una fuente concreta",
+        "Lector Markdown inmersivo con índice, rail de progreso, notas funcionales y navegación histórica correcta",
+        "Tema claro para Shorts, restablecimiento visual de fábrica y editor rápido del examen"
+      ]
+    },
+    {
+      "version": "5.5.0",
+      "date": "2026-08-08",
+      "title": "Vida de los Santos y audiolibro de Pedro Ballester",
+      "changes": [
+        "Undécima biblioteca con 265 documentos y más de seis millones de palabras",
+        "Vidas apostólicas, Padres, santos medievales y contemporáneos con búsqueda literal",
+        "Audiolibro de Pedro Ballester integrado con quince capítulos, reproducción en SoundCloud y transcripciones locales",
+        "Preguntas, mapa temático, guía visual y Shorts propios de la nueva biblioteca"
+      ]
+    },
     {
       "version": "5.4.0",
       "date": "2026-08-07",

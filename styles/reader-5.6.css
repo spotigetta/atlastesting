@@ -1,0 +1,247 @@
+/* Lector inmersivo de Atlas 5.6: una superficie editorial independiente del shell. */
+.reader-app.reader-immersive{
+  --reader-header-h:62px;
+  position:fixed!important;
+  inset:0!important;
+  z-index:140;
+  width:100vw;
+  height:100dvh!important;
+  max-height:none!important;
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  background:var(--paper);
+  color:var(--ink);
+  isolation:isolate;
+}
+
+.reader-immersive .reader-header{
+  min-height:var(--reader-header-h);
+  height:var(--reader-header-h);
+  grid-template-columns:42px minmax(120px,1fr) auto;
+  gap:10px;
+  padding:7px max(12px,env(safe-area-inset-right)) 7px max(12px,env(safe-area-inset-left));
+  border-bottom:1px solid color-mix(in srgb,var(--line) 72%,transparent);
+  background:color-mix(in srgb,var(--paper) 88%,transparent);
+  box-shadow:0 4px 22px rgba(20,24,22,.045);
+  backdrop-filter:blur(22px) saturate(1.15);
+  -webkit-backdrop-filter:blur(22px) saturate(1.15);
+}
+
+.reader-immersive .reader-back svg{transform:rotate(180deg)}
+.reader-immersive .reader-title-button{display:block;min-width:0;text-align:left;pointer-events:none}
+.reader-immersive .reader-title-button b{font:650 13px/1.2 var(--serif)}
+.reader-immersive .reader-title-button small{font:600 8px/1.2 var(--sans);letter-spacing:.04em;color:var(--muted)}
+.reader-immersive .reader-header-actions{display:flex;align-items:center;gap:3px}
+.reader-immersive .reader-header-button{
+  min-width:54px;
+  height:44px;
+  display:grid;
+  grid-template-columns:18px auto;
+  place-content:center;
+  align-items:center;
+  gap:5px;
+  padding:0 10px;
+  border:0;
+  border-radius:13px;
+  background:transparent;
+  color:var(--muted);
+  font:700 9px var(--sans);
+  transition:background .18s ease,color .18s ease,transform .18s ease;
+}
+.reader-immersive .reader-header-button:hover,.reader-immersive .reader-header-button:focus-visible{background:var(--tone-soft);color:var(--tone);transform:translateY(-1px)}
+.reader-immersive .reader-header-button span,.reader-immersive .reader-header-button svg{display:block;width:18px;height:18px}
+.reader-immersive .reader-toc-trigger{color:var(--tone);background:color-mix(in srgb,var(--tone-soft) 58%,transparent)}
+
+.reader-immersive .reader-progress{height:2px;z-index:3;background:transparent}
+.reader-immersive .reader-progress span{background:var(--tone);box-shadow:0 0 14px color-mix(in srgb,var(--tone) 55%,transparent);transition:width .12s linear}
+.reader-immersive .reader-layout{min-height:0;flex:1;display:grid!important;grid-template-columns:minmax(0,1fr)!important;background:var(--paper)}
+.reader-immersive .reader-scroll{height:100%;min-height:0;overflow:auto;scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--tone) 25%,transparent) transparent;overscroll-behavior:contain;scroll-padding-top:26px}
+.reader-immersive .reader-scroll::-webkit-scrollbar{width:5px}.reader-immersive .reader-scroll::-webkit-scrollbar-track{background:transparent}.reader-immersive .reader-scroll::-webkit-scrollbar-thumb{border-radius:99px;background:color-mix(in srgb,var(--tone) 25%,transparent)}
+.reader-immersive .reader-document{
+  width:min(calc(100% - 96px),var(--reader-width));
+  max-width:none;
+  margin:0 auto;
+  padding:clamp(42px,7vh,86px) 0 max(130px,14vh);
+  font:400 var(--reader-size)/1.82 var(--serif);
+  letter-spacing:.002em;
+  text-rendering:optimizeLegibility;
+}
+.reader-immersive .reader-document-head{padding-bottom:clamp(24px,4vh,42px);margin-bottom:clamp(30px,5vh,52px)}
+.reader-immersive .reader-document-head h1{max-width:15ch;margin:12px 0 22px;font-size:clamp(38px,5vw,68px);line-height:1.02;letter-spacing:-.035em}
+.reader-immersive .reader-meta{font-size:10px;gap:8px 20px}
+.reader-immersive .reader-chunk p{margin-bottom:1.22em}
+.reader-immersive .reader-chunk h1,.reader-immersive .reader-chunk h2,.reader-immersive .reader-chunk h3,.reader-immersive .reader-chunk h4{scroll-margin-top:32px;text-wrap:balance}
+.reader-immersive .reader-chunk h2{margin-top:2.05em}
+.reader-immersive .reader-chunk img{display:block;max-width:100%;height:auto;margin:2em auto;border-radius:10px}
+.reader-immersive .reader-chunk blockquote{border-radius:0 14px 14px 0}
+.reader-immersive mark.user-highlight{padding:.04em .08em;border-radius:.12em;background:color-mix(in srgb,#f2d560 58%,transparent);color:inherit;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.reader-immersive mark.search-hit{padding:.04em .08em;border-radius:.12em;background:color-mix(in srgb,var(--tone) 24%,#fff);color:inherit;box-shadow:inset 0 -2px var(--tone)}
+.reader-immersive mark.search-hit.current-hit{background:var(--tone);color:#fff;box-shadow:0 0 0 3px color-mix(in srgb,var(--tone) 20%,transparent)}
+
+.reader-immersive .reader-search{
+  position:absolute;
+  z-index:154;
+  top:calc(var(--reader-header-h) + 10px);
+  left:50%;
+  width:min(720px,calc(100% - 32px));
+  transform:translateX(-50%);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:7px;
+  background:color-mix(in srgb,var(--surface) 96%,transparent);
+  box-shadow:0 18px 55px rgba(18,22,20,.18);
+  backdrop-filter:blur(22px);
+}
+.reader-immersive .reader-search input{height:42px}
+
+.reader-immersive .reader-panel-backdrop{
+  position:fixed;
+  inset:0;
+  z-index:156;
+  border:0;
+  background:rgba(12,15,13,.25);
+  backdrop-filter:blur(2px);
+  animation:reader-backdrop-in .18s ease both;
+}
+.reader-immersive .reader-panel-backdrop[hidden],.reader-immersive .reader-toc[hidden],.reader-immersive .reader-settings[hidden],.reader-immersive .reader-context[hidden],.reader-immersive .reader-note-layer[hidden]{display:none!important}
+.reader-immersive .reader-toc,.reader-immersive .reader-settings,.reader-immersive .reader-context{
+  position:fixed!important;
+  z-index:158;
+  top:0!important;
+  bottom:0!important;
+  left:0!important;
+  width:min(430px,92vw)!important;
+  height:100dvh;
+  display:block;
+  padding:max(20px,env(safe-area-inset-top)) 20px max(24px,env(safe-area-inset-bottom));
+  overflow:auto;
+  border:0;
+  border-right:1px solid var(--line);
+  border-radius:0 22px 22px 0;
+  background:var(--surface);
+  box-shadow:24px 0 70px rgba(18,22,20,.2);
+  animation:reader-panel-in .24s cubic-bezier(.2,.85,.25,1) both;
+}
+.reader-immersive .reader-settings{display:grid;align-content:start;gap:14px}
+.reader-immersive .reader-context{left:auto!important;right:0!important;border-right:0;border-left:1px solid var(--line);border-radius:22px 0 0 22px;animation-name:reader-context-in}
+.reader-immersive .reader-panel-head{position:sticky;top:-20px;z-index:2;min-height:58px;padding:8px 0 14px;background:linear-gradient(var(--surface) 82%,transparent)}
+.reader-immersive .reader-panel-head h2{margin:0;font-size:25px}
+.reader-immersive .reader-context section{display:block;padding:17px 0;border-bottom:1px solid var(--line)}
+.reader-immersive .reader-context section.reader-panel-head{display:flex;padding-top:8px}
+.reader-immersive .reader-context h3{margin:0 0 8px;font:750 9px var(--sans);text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.reader-immersive .reader-context p,.reader-immersive .reader-context a,.reader-immersive .reader-context section>button{display:block;width:100%;margin:7px 0;padding:0;border:0;background:none;color:var(--ink);font:500 11px/1.5 var(--sans);text-align:left;text-decoration:none}
+.reader-immersive .reader-context a:hover,.reader-immersive .reader-context section>button:hover{color:var(--tone)}
+.reader-immersive .reader-context .secondary-button{padding:11px 14px;text-align:center}
+
+.reader-immersive .reader-rail{
+  position:absolute;
+  z-index:18;
+  top:50%;
+  right:max(10px,env(safe-area-inset-right));
+  transform:translateY(-50%);
+  width:34px;
+  display:grid;
+  justify-items:center;
+  gap:7px;
+  padding:8px 3px;
+  border:1px solid color-mix(in srgb,var(--line) 72%,transparent);
+  border-radius:20px;
+  background:color-mix(in srgb,var(--surface) 75%,transparent);
+  box-shadow:0 8px 30px rgba(18,22,20,.08);
+  backdrop-filter:blur(12px);
+  opacity:.62;
+  transition:opacity .2s ease,transform .2s ease;
+}
+.reader-immersive .reader-rail:hover,.reader-immersive .reader-rail:focus-within{opacity:1;transform:translateY(-50%) scale(1.02)}
+.reader-immersive .reader-rail button{width:27px;height:27px;padding:0;border:0;border-radius:50%;background:transparent;color:var(--muted);font-size:13px}
+.reader-immersive .reader-rail button:hover{background:var(--tone-soft);color:var(--tone)}
+.reader-immersive .reader-rail button:disabled{opacity:.25}
+.reader-immersive .reader-rail input{width:24px;height:160px;margin:0;writing-mode:vertical-lr;direction:rtl;accent-color:var(--tone);cursor:pointer}
+.reader-immersive .reader-rail span{font:750 7px var(--sans);color:var(--muted)}
+
+.reader-immersive .reader-tools{z-index:150;right:max(18px,env(safe-area-inset-right));bottom:max(18px,env(safe-area-inset-bottom));left:auto;transform:none}
+.reader-immersive .reader-tools .reader-tools-toggle{background:color-mix(in srgb,var(--ink) 92%,var(--tone));box-shadow:0 12px 36px rgba(12,15,13,.22)}
+.reader-immersive .reader-tool-group{background:color-mix(in srgb,var(--surface) 95%,transparent)}
+
+.reader-immersive .reader-note-layer{
+  position:fixed;
+  inset:0;
+  z-index:170;
+  display:grid;
+  place-items:center;
+  padding:20px;
+  background:rgba(12,15,13,.42);
+  backdrop-filter:blur(5px);
+  animation:reader-backdrop-in .18s ease both;
+}
+.reader-immersive .reader-note-editor{
+  width:min(580px,100%);
+  max-height:min(720px,calc(100dvh - 40px));
+  display:grid;
+  gap:14px;
+  padding:22px;
+  overflow:auto;
+  border:1px solid var(--line);
+  border-radius:22px;
+  background:var(--surface);
+  box-shadow:0 28px 90px rgba(12,15,13,.32);
+  animation:reader-note-in .26s cubic-bezier(.2,.85,.25,1) both;
+}
+.reader-immersive .reader-note-editor header,.reader-immersive .reader-note-editor footer{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.reader-immersive .reader-note-editor h2{margin:2px 0 0;font-size:28px}
+.reader-immersive .reader-note-editor blockquote{max-height:130px;margin:0;padding:13px 15px;overflow:auto;border-left:3px solid var(--tone);border-radius:0 12px 12px 0;background:var(--tone-soft);font:italic 14px/1.55 var(--serif)}
+.reader-immersive .reader-note-editor blockquote.is-general{font-style:normal;color:var(--muted)}
+.reader-immersive .reader-note-editor label{font:750 10px var(--sans);letter-spacing:.04em;color:var(--muted)}
+.reader-immersive .reader-note-editor textarea{width:100%;min-height:170px;resize:vertical;padding:14px;border:1px solid var(--line-strong);border-radius:14px;background:var(--paper);color:var(--ink);font:500 15px/1.55 var(--sans)}
+.reader-immersive .reader-note-editor footer{justify-content:flex-end}
+.reader-immersive .annotation-item small{display:block;margin:5px 0;color:var(--muted);font:italic 9px/1.45 var(--serif)}
+
+@keyframes reader-panel-in{from{opacity:0;transform:translateX(-24px)}}
+@keyframes reader-context-in{from{opacity:0;transform:translateX(24px)}}
+@keyframes reader-backdrop-in{from{opacity:0}}
+@keyframes reader-note-in{from{opacity:0;transform:translateY(16px) scale(.98)}}
+
+@media(max-width:720px){
+  .reader-app.reader-immersive{--reader-header-h:56px}
+  .reader-immersive .reader-header{grid-template-columns:38px minmax(70px,1fr) auto;gap:5px;padding:5px max(7px,env(safe-area-inset-right)) 5px max(7px,env(safe-area-inset-left))}
+  .reader-immersive .reader-header-button{min-width:39px;width:39px;height:40px;grid-template-columns:18px;padding:0}
+  .reader-immersive .reader-header-button b{display:none}
+  .reader-immersive .reader-title-button b{font-size:11px}.reader-immersive .reader-title-button small{font-size:7px}
+  .reader-immersive .reader-document{width:calc(100% - 54px);margin-left:18px;margin-right:36px;padding:38px 0 120px;font-size:var(--reader-size);line-height:1.74}
+  .reader-immersive .reader-document-head h1{font-size:clamp(36px,12vw,55px)}
+  .reader-immersive .reader-document-head{margin-bottom:32px}
+  .reader-immersive .reader-rail{right:2px;width:29px;padding-inline:1px;opacity:.5}
+  .reader-immersive .reader-rail input{height:128px;width:20px}
+  .reader-immersive .reader-rail button{width:25px;height:25px}
+  .reader-immersive .reader-tools{right:8px;bottom:max(10px,env(safe-area-inset-bottom))}
+  .reader-immersive .reader-toc,.reader-immersive .reader-settings,.reader-immersive .reader-context{width:min(390px,96vw)!important;border-radius:0 18px 18px 0}
+  .reader-immersive .reader-context{border-radius:18px 0 0 18px}
+  .reader-immersive .reader-search{top:calc(var(--reader-header-h) + 7px);width:calc(100% - 18px);grid-template-columns:minmax(0,1fr) 34px 34px auto 34px;padding:5px}
+  .reader-immersive .reader-search button{width:34px;height:36px}.reader-immersive .reader-search input{height:38px}
+  .reader-immersive .reader-note-layer{align-items:end;padding:0}
+  .reader-immersive .reader-note-editor{width:100%;max-height:88dvh;padding:20px 18px max(20px,env(safe-area-inset-bottom));border-radius:24px 24px 0 0}
+  .reader-immersive .reader-note-editor textarea{min-height:150px}
+  .reader-immersive .reader-pagination{grid-template-columns:1fr 1fr}.reader-immersive .reader-pagination span{grid-column:1/-1;grid-row:1;font-size:9px}.reader-immersive .reader-pagination button{grid-row:2}
+}
+
+@media(max-width:420px){
+  .reader-immersive .reader-title-button small{display:none}
+  .reader-immersive .reader-document{width:calc(100% - 47px);margin-left:14px;margin-right:33px}
+  .reader-immersive .reader-meta{display:grid;gap:4px}
+  .reader-immersive .reader-tool-group{flex-direction:column}
+  .reader-immersive .reader-tool-group button{width:48px;min-width:48px}
+  .reader-immersive .reader-tool-group .reader-tool-label{display:none!important}
+}
+
+@media(prefers-reduced-motion:reduce){
+  .reader-immersive *{scroll-behavior:auto!important}
+  .reader-immersive .reader-toc,.reader-immersive .reader-settings,.reader-immersive .reader-context,.reader-immersive .reader-note-layer,.reader-immersive .reader-note-editor{animation:none!important}
+}
+
+@media print{
+  .reader-app.reader-immersive{position:static!important;height:auto!important;overflow:visible!important}
+  .reader-immersive .reader-header,.reader-immersive .reader-progress,.reader-immersive .reader-search,.reader-immersive .reader-rail,.reader-immersive .reader-tools{display:none!important}
+  .reader-immersive .reader-scroll{height:auto;overflow:visible}
+  .reader-immersive .reader-document{width:100%;padding:0}
+}

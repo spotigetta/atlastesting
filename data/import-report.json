@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-08-07T10:41:44.069Z",
-  "dataVersion": "5.4.0",
+  "generatedAt": "2026-08-08T00:00:00.000Z",
+  "dataVersion": "5.6.1",
   "counts": [
     {
       "library": "doctrine",
@@ -110,6 +110,17 @@
       "historical": 0,
       "incomplete": 0,
       "foreignLanguage": 0,
+      "dated": 0
+    },
+    {
+      "library": "vida-santos",
+      "documents": 265,
+      "words": 6401810,
+      "categories": 7,
+      "authors": 63,
+      "historical": 0,
+      "incomplete": 0,
+      "foreignLanguage": 81,
       "dated": 0
     }
   ],

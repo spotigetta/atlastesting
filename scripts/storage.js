@@ -31,6 +31,7 @@
       magnetEnabled: true, magnetStrength: 34, magnetDelay: 120, magnetDuration: 300,
       auroraIntensity: 88, auroraSize: 100, motionLevel: 100, josemariaPortraitIntensity: 18,
       shortTextScale: 100, shortContentWidth: 720, shortAlignment: "mixed",
+      shortTheme: "auto",
       interfaceScale: 100, cornerRadius: 100, fontStyle: "editorial", headingFont: "literata", bodyFont: "dm-sans", palette: "sage", surfaceStyle: "soft",
       compactMode: false, showExternalImages: true,
       homeOrder: ["exam", "today", "libraries", "reading", "history"], exploreOrder: [], exploreColors: {}, customizeHome: false, customizeExplore: false,
@@ -180,6 +181,15 @@
       const item = { ...norm, id: norm.id || `personal-${Date.now()}-${Math.random().toString(36).slice(2,7)}`, custom: true, updatedAt: new Date().toISOString() };
       if (existing >= 0) state.exam.customNorms.splice(existing, 1, item); else state.exam.customNorms.push(item);
       commit(); return item;
+    },
+    setCustomNormsFromLines(lines) {
+      const currentByName = new Map((state.exam.customNorms || []).map(item => [String(item.name || "").trim().toLocaleLowerCase("es"), item]));
+      state.exam.customNorms = [...new Set((lines || []).map(line => String(line).trim()).filter(Boolean))].map((name, index) => {
+        const existing = currentByName.get(name.toLocaleLowerCase("es"));
+        return existing || { id: `personal-${Date.now()}-${index}-${Math.random().toString(36).slice(2,6)}`, name, description: "", type: "personal", frequency: { type: "daily" }, periods: ["night"], partial: true, tags: ["personal"], custom: true, updatedAt: new Date().toISOString() };
+      });
+      commit();
+      return state.exam.customNorms;
     },
     archiveExamNorm(normId, archived = true) {
       state.exam.archivedNormIds = archived
