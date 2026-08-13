@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "guides": [
+    {
+      "id": "recomenzar",
+      "title": "Volver a empezar",
+      "audience": "Para quien lleva tiempo sin examinarse o no sabe cómo hacerlo",
+      "introduction": "No intentes reconstruir toda tu vida en una noche. Mira el día de hoy delante de Dios: agradece un bien, reconoce con sencillez lo que necesita cambiar y elige un paso posible.",
+      "steps": [
+        {"title":"Párate","text":"Haz silencio durante medio minuto. No tienes que fabricar sentimientos ni encontrar palabras perfectas."},
+        {"title":"Agradece","text":"Nombra una persona, una ayuda, una alegría pequeña o algo bueno que hayas recibido hoy."},
+        {"title":"Pide luz","text":"Puedes decir sencillamente: «Señor, ayúdame a mirar este día con verdad y sin miedo»."},
+        {"title":"Mira lo concreto","text":"Repasa la mañana, la tarde y la noche. Detente solo en dos o tres hechos reales, no en impresiones vagas."},
+        {"title":"Reconoce y recomienza","text":"Si has fallado, llámalo por su nombre sin excusas y sin machacarte. Pide perdón y decide una reparación o un paso pequeño para mañana."}
+      ],
+      "questions": [
+        "¿Qué bien concreto he recibido hoy?",
+        "¿A quién he tratado con cariño y a quién podría haber tratado mejor?",
+        "¿He dicho la verdad y cumplido mi palabra?",
+        "¿He pedido perdón cuando era necesario?",
+        "¿He cuidado mis deberes o he escapado de ellos?",
+        "¿Qué me ha quitado la paz y cómo he respondido?",
+        "¿He dejado algún momento para Dios?",
+        "¿Hay algo que convenga llevar a la confesión?",
+        "¿Qué única cosa concreta quiero intentar mañana?"
+      ],
+      "closing": "Termina con un acto de contrición o con tus propias palabras. Un examen sincero conduce a la esperanza, no al desánimo."
+    },
+    {
+      "id": "cotidiano",
+      "title": "Examen cotidiano",
+      "audience": "Para quien ya tiene práctica y desea una mirada franca, íntima y diaria",
+      "introduction": "Habla con Dios desde la filiación: sin generalidades, sin convertir el examen en estadística y sin esconder el punto concreto donde hoy pide una respuesta.",
+      "steps": [
+        {"title":"Presencia y gratitud","text":"Reconoce que estás delante de tu Padre y agradece dones concretos, también los que llegaron envueltos en dificultad."},
+        {"title":"Luz sobre el día","text":"Pide ver motivos, omisiones y afectos; no solo conductas externas."},
+        {"title":"Franqueza","text":"Llama a cada cosa por su nombre: dónde hubo amor, dónde amor propio, dónde cobardía, dónde generosidad."},
+        {"title":"Contrición filial","text":"El dolor nace del amor y abre a recomenzar. Evita tanto justificarte como mirarte con dureza estéril."},
+        {"title":"Propósito verificable","text":"Formula un propósito pequeño, positivo y unido a una situación concreta de mañana."}
+      ],
+      "questions": [
+        "¿He buscado de verdad la voluntad de Dios o que las cosas salieran a mi gusto?",
+        "¿Dónde he vivido hoy la presencia de Dios?",
+        "¿Cómo he cuidado la oración, la Misa y los momentos de recogimiento?",
+        "¿He santificado el trabajo con orden, intensidad y servicio?",
+        "¿He perdido el tiempo o he dejado lo importante para después?",
+        "¿He sido leal en pensamientos, palabras y silencios?",
+        "¿He juzgado interiormente, murmurado o herido con ironía?",
+        "¿He escuchado de verdad a los demás?",
+        "¿He sabido ceder sin abandonar la verdad?",
+        "¿He vivido la pureza de corazón y la templanza?",
+        "¿He cuidado las cosas pequeñas cuando nadie miraba?",
+        "¿Qué contrariedad ha revelado hoy mi disposición interior?",
+        "¿He pedido ayuda con sencillez cuando la necesitaba?",
+        "¿A quién me está invitando Dios a servir o acercar a Él?",
+        "¿Qué reparación concreta debo hacer?",
+        "¿Cuál es el punto preciso de mi lucha para mañana?"
+      ],
+      "closing": "Renueva el propósito con confianza y déjalo en manos de Dios. Mañana no empieza desde cero: empieza desde la misericordia."
+    }
+  ]
+}

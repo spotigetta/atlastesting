@@ -1,11 +1,11 @@
 {
   "meta": {
     "app": "ATLAS",
-    "dataVersion": "5.6.1",
-    "generatedAt": "2026-08-08T02:28:22.235Z",
+    "dataVersion": "5.8.0",
+    "generatedAt": "2026-08-13T12:00:00.000Z",
     "source": "Once bibliotecas documentales, incluida Vida de los Santos",
-    "documents": 1358,
-    "words": 120853392
+    "documents": 1361,
+    "words": 121629509
   },
   "libraries": [
     {
@@ -22171,6 +22171,60 @@
           "authority": "Según género documental",
           "libraryId": "san-josemaria",
           "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "san-josemaria-fundador-vol-1",
+          "contentFile": "data/documents/b5fe8f89dbd633ae76.json.gz",
+          "catalogId": null,
+          "file": "fundador-vol-1.md",
+          "title": "Fundador Volumen 1",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Biografía · El Fundador",
+          "words": 220645,
+          "author": "Andrés Vázquez de Prada",
+          "year": null,
+          "language": "es",
+          "status": "not-stated",
+          "authority": "Biografía histórica",
+          "libraryId": "san-josemaria",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "san-josemaria-fundador-vol-2",
+          "contentFile": "data/documents/37e9dc98147a2f2983.json.gz",
+          "catalogId": null,
+          "file": "fundador-vol-2.md",
+          "title": "Fundador Volumen 2",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Biografía · El Fundador",
+          "words": 278055,
+          "author": "Andrés Vázquez de Prada",
+          "year": null,
+          "language": "es",
+          "status": "not-stated",
+          "authority": "Biografía histórica",
+          "libraryId": "san-josemaria",
+          "source": "Descubierto directamente en la carpeta"
+        },
+        {
+          "id": "san-josemaria-fundador-vol-3",
+          "contentFile": "data/documents/412a615cf591796157.json.gz",
+          "catalogId": null,
+          "file": "fundador-vol-3.md",
+          "title": "Fundador Volumen 3",
+          "originals": "No consignados",
+          "originalNumbers": [],
+          "category": "Biografía · El Fundador",
+          "words": 277417,
+          "author": "Andrés Vázquez de Prada",
+          "year": null,
+          "language": "es",
+          "status": "not-stated",
+          "authority": "Biografía histórica",
+          "libraryId": "san-josemaria",
+          "source": "Descubierto directamente en la carpeta"
         }
       ],
       "categories": [
@@ -22181,9 +22235,9 @@
       ],
       "authors": [],
       "stats": {
-        "documents": 19,
-        "words": 631725,
-        "categories": 1,
+        "documents": 22,
+        "words": 1407842,
+        "categories": 2,
         "authors": 0,
         "historical": 0,
         "incomplete": 0,
@@ -44275,6 +44329,31 @@
       ]
     },
     "changelog": [
+      {
+        "version": "5.8.0",
+        "date": "2026-08-13",
+        "title": "Contenido diario y actualización fiable",
+        "changes": [
+          "10 Minutos con Jesús en Inicio con episodio diario, audio, horario y visibilidad personalizables",
+          "Acceso directo a horarios y templos mediante Misas.org",
+          "Permiso, prueba y entrega de notificaciones mediante el service worker",
+          "Actualización automática del episodio diario mediante GitHub Actions",
+          "Activación de versiones nuevas con limpieza de caché y recarga controlada"
+        ]
+      },
+      {
+        "version": "5.7.0",
+        "date": "2026-08-13",
+        "title": "Vidas, cronologías y una experiencia instalable",
+        "changes": [
+          "Cincuenta experiencias de santos con pasajes extensos en castellano, original conservado y tres claves de lectura",
+          "Cronología simultánea de 135 biografías y recorrido individual de los principales hechos",
+          "Treinta experiencias contemporáneas de san Josemaría extraídas de los tres volúmenes de El Fundador",
+          "Portadas temáticas optimizadas, QR público, contacto e instalación en la pantalla de inicio",
+          "Dos tutoriales de examen, eliminación de normas personales y controles móviles de Descubrir corregidos",
+          "Corpus anual estructurado de meditaciones oficiales preparado sin republicar artículos protegidos"
+        ]
+      },
       {
         "version": "5.6.1",
         "date": "2026-08-08",

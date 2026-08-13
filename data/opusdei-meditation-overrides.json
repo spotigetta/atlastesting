@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "source": "https://opusdei.org/es/meditation/",
+  "rightsPolicy": "Atlas almacena metadatos, temas, referencias bíblicas, enlaces y fragmentos breves. No republica automáticamente el artículo completo.",
+  "items": [
+    {
+      "date": "2026-06-03",
+      "title": "Meditaciones: miércoles de la 9.ª semana del Tiempo Ordinario",
+      "officialUrl": "https://opusdei.org/es/meditation/2026-06-03/",
+      "themes": ["sinceridad", "verdad de Dios", "eternidad", "amor a Dios"],
+      "gospelRefs": ["Mc 12,18-27"],
+      "gospelLinks": ["https://www.biblegateway.com/passage/?search=Marcos%2012%3A18-27&version=NVI"],
+      "excerpt": "Una reflexión sobre la sinceridad para buscar la verdad de Dios, los horizontes de eternidad y amar con todo el corazón y toda la mente.",
+      "status": "reviewed"
+    },
+    {
+      "date": "2026-06-10",
+      "title": "Meditaciones: miércoles de la 10.ª semana del Tiempo Ordinario",
+      "officialUrl": "https://opusdei.org/es/meditation/2026-06-10/",
+      "themes": ["plenitud de la ley", "libertad", "Reino de Dios", "cosas pequeñas"],
+      "gospelRefs": ["Mt 5,17-19"],
+      "gospelLinks": ["https://www.biblegateway.com/passage/?search=Mateo%205%3A17-19&version=NVI"],
+      "excerpt": "Jesús revela la plenitud de la ley; la libertad se presenta como camino hacia el cielo y el Reino se descubre en las cosas pequeñas.",
+      "status": "reviewed"
+    }
+  ]
+}

@@ -12,7 +12,7 @@
     readerProgress: {},
     annotations: {},
     study: {},
-    notifications: { daily: false, reading: false, news: false, routes: false, updates: true },
+    notifications: { daily: false, tenMinutes: false, reading: false, news: false, routes: false, updates: true },
     exam: {
       config: {
         middayEnabled: false, middayTime: "14:05", middayDays: [1,2,3,4,5,6,0],
@@ -26,20 +26,20 @@
     },
     quiz: { correct: 0, total: 0 },
     settings: {
-      theme: "system", contrast: false, randomShorts: false, onlyNewShorts: false, tutorialSeen: false, showReserveVideos: false,
+      theme: "system", contrast: false, randomShorts: false, onlyNewShorts: false, tutorialSeen: false, introSeen: false, installSuggestionDismissed: false, showReserveVideos: false,
       disabledVideoChannels: [], disabledMusicChannels: [], disabledInstagramChannels: [],
       magnetEnabled: true, magnetStrength: 34, magnetDelay: 120, magnetDuration: 300,
       auroraIntensity: 88, auroraSize: 100, motionLevel: 100, josemariaPortraitIntensity: 18,
       shortTextScale: 100, shortContentWidth: 720, shortAlignment: "mixed",
       shortTheme: "auto",
       interfaceScale: 100, cornerRadius: 100, fontStyle: "editorial", headingFont: "literata", bodyFont: "dm-sans", palette: "sage", surfaceStyle: "soft",
-      compactMode: false, showExternalImages: true,
+      compactMode: false, showExternalImages: true, showTenMinutesHome: true, showMassFinderHome: true, tenMinutesTime: "08:00",
       homeOrder: ["exam", "today", "libraries", "reading", "history"], exploreOrder: [], exploreColors: {}, customizeHome: false, customizeExplore: false,
       libraryOrder: [], pinnedLibraries: [], hiddenLibraries: [], libraryColors: {}, libraryLabels: {}, customizeLibraries: false,
       customChannels: { youtube: [], music: [], instagram: [] }, unlockedFeatures: []
     },
     lastLibrary: null,
-    version: 6
+    version: 7
   };
 
   function migrate(stored) {
@@ -78,6 +78,12 @@
       value.settings ||= {};
       value.settings.customizeLibraries ??= false;
       value.version = 6;
+    }
+    if (value.version < 7) {
+      value.settings ||= {};
+      value.settings.introSeen ??= false;
+      value.settings.installSuggestionDismissed ??= false;
+      value.version = 7;
     }
     return value;
   }
@@ -190,6 +196,13 @@
       });
       commit();
       return state.exam.customNorms;
+    },
+    removeCustomNorm(normId) {
+      state.exam.customNorms = (state.exam.customNorms || []).filter(item => item.id !== normId);
+      delete state.exam.normOverrides[normId];
+      for (const record of Object.values(state.exam.records || {})) for (const period of Object.values(record || {})) if (period?.answers) delete period.answers[normId];
+      for (const key of Object.keys(state.exam.notes || {})) if (key.endsWith(`|${normId}`)) delete state.exam.notes[key];
+      commit();
     },
     archiveExamNorm(normId, archived = true) {
       state.exam.archivedNormIds = archived

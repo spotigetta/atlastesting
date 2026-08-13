@@ -40,12 +40,21 @@
   let iaFilmIndex = 0;
   let iaFilmTimer = 0;
   let iaFilmPlaying = true;
+  let installPromptEvent = null;
+  const PUBLIC_APP_URL = "https://spotigetta.github.io/atlastesting/#/";
+  const libraryCovers = {
+    canon:"canoniaportada.webp", history:"historiaportada.webp", liturgy:"liturgiaportada.webp",
+    ortodoxia:"ortodoxiaportada.webp", cinepilot:"cinepilotportada.webp", bibliotecaria:"bibliotecariaportada.webp",
+    clasicos:"clasicosportada.webp", "san-josemaria":"portadaSanJosemarIA.webp",
+    "preparadora-circulos":"preparadordecirculosportada.webp"
+  };
   const personalizationDefaults = {
     theme:"system", contrast:false,
     magnetEnabled:true, magnetStrength:34, magnetDelay:120, magnetDuration:300,
     auroraIntensity:88, auroraSize:100, motionLevel:100, josemariaPortraitIntensity:18, shortTextScale:100,
     shortContentWidth:720, shortAlignment:"mixed", shortTheme:"auto", interfaceScale:100,
-    cornerRadius:100, fontStyle:"editorial", headingFont:"literata", bodyFont:"dm-sans", palette:"sage", surfaceStyle:"soft", compactMode:false, showExternalImages:true
+    cornerRadius:100, fontStyle:"editorial", headingFont:"literata", bodyFont:"dm-sans", palette:"sage", surfaceStyle:"soft", compactMode:false, showExternalImages:true,
+    showTenMinutesHome:true, showMassFinderHome:true, tenMinutesTime:"08:00"
   };
   const libraryGuides = {
     doctrine: { file: "infodoctrina_textogrande.html", purpose: "Aclara qué enseña la Iglesia y cómo se fundamenta en Escritura, Tradición, Magisterio, teología y moral.", examples: ["¿Qué enseña el Catecismo sobre la conciencia?", "Distingue doctrina definida, opinión teológica y criterio pastoral."] },
@@ -199,10 +208,9 @@
 
   function openIntro(force = false) {
     if (!atlasIntro) return false;
-    let alreadyShown = false;
-    try { alreadyShown = sessionStorage.getItem("atlas-intro-v1") === "shown"; } catch {}
+    const alreadyShown = Boolean(A.storage.get().settings.introSeen);
     if (!force && alreadyShown) return false;
-    try { sessionStorage.setItem("atlas-intro-v1", "shown"); } catch {}
+    A.storage.setSetting("introSeen", true);
     clearInterval(introTimer);
     atlasIntro.hidden = false;
     atlasIntro.dataset.scene = "0";
@@ -232,9 +240,10 @@
     const catalog = A.data.catalog;
     const settings = A.storage.get().settings;
     const libraries = visibleLibraries(Boolean(settings.customizeLibraries));
-    const homeBlocks = ["exam", "today", "libraries", "reading", "history"];
+    const homeBlocks = ["exam", "tenminutes", "massfinder", "today", "libraries", "reading", "history"];
     const homeOrder = [...new Set([...(settings.homeOrder || []), ...homeBlocks])].filter(id => homeBlocks.includes(id));
-    const homeLabels = { exam: "Examen diario", today: "Atlas Hoy", libraries: "Explora las IA", reading: "Continúa leyendo", history: "Continúa explorando" };
+    const homeLabels = { exam: "Examen diario", tenminutes: "10 Minutos con Jesús", massfinder: "Buscar una Misa", today: "Atlas Hoy", libraries: "Explora las IA", reading: "Continúa leyendo", history: "Continúa explorando" };
+    const tenMinutes = window.ATLAS_TEN_MINUTES?.episodes?.[0];
     const todayDoc = dailyPick(A.data.documents.filter(doc => doc.status !== "incomplete"), 3);
     const todayShort = dailyPick(catalog.shorts.filter(item => item.verified), 7);
     const todayQuote = dailyPick([
@@ -263,6 +272,10 @@
       ${settings.customizeHome ? `<section class="customize-panel" style="order:.5"><span class="eyebrow">Orden de Inicio</span><h2>Organiza todos los bloques</h2>${homeOrder.map((id,index) => `<div class="customize-row"><b>${homeLabels[id]}</b><span><button data-home-move="${id}" data-direction="-1" ${index===0?"disabled":""}>↑</button><button data-home-move="${id}" data-direction="1" ${index===homeOrder.length-1?"disabled":""}>↓</button></span></div>`).join("")}</section>` : ""}
 
       ${A.exam.homeCard()}
+
+      ${settings.showTenMinutesHome ? `<section class="section home-daily-audio" data-home-block="tenminutes" style="order:${homeOrder.indexOf("tenminutes") + 1}"><div class="daily-audio-mark">10′</div><div><span class="eyebrow">Oración de hoy · 10 Minutos con Jesús</span><h2>${esc(tenMinutes?.title || "Un rato diario con Jesús")}</h2><p>${esc(tenMinutes?.description || "Una meditación breve para comenzar o sostener el día.")}</p>${tenMinutes?.audioUrl ? `<audio controls preload="metadata" src="${esc(tenMinutes.audioUrl)}"></audio>` : ""}<div class="button-row">${tenMinutes?.pageUrl ? `<a class="primary-button" href="${esc(tenMinutes.pageUrl)}" target="_blank" rel="noopener">Escuchar episodio</a>` : `<a class="primary-button" href="https://www.10minutosconjesus.org/" target="_blank" rel="noopener">Abrir 10 Minutos con Jesús</a>`}<button class="text-button" data-home-hide="showTenMinutesHome">Ocultar de Inicio</button></div></div></section>` : ""}
+
+      ${settings.showMassFinderHome ? `<section class="section home-mass-finder" data-home-block="massfinder" style="order:${homeOrder.indexOf("massfinder") + 1}"><span class="mass-finder-mark">✦</span><div><span class="eyebrow">Misas.org</span><h2>Encuentra una Misa cerca de ti</h2><p>Consulta templos, horarios y celebraciones actualizados directamente en Misas.org.</p><div class="button-row"><a class="primary-button" href="https://misas.org/" target="_blank" rel="noopener">Buscar horarios ↗</a><button class="text-button" data-home-hide="showMassFinderHome">Ocultar de Inicio</button></div></div></section>` : ""}
 
       <section class="section" data-home-block="today" style="order:${homeOrder.indexOf("today") + 1}"><div class="section-head"><div><h2>Atlas Hoy</h2><p>Una selección diaria calculada en tu dispositivo.</p></div><a href="#/discover">Ver Shorts</a></div>
         <div class="daily-strip">
@@ -340,7 +353,8 @@
   function libraryCard(lib, index = 0, total = 1) {
     const guide = libraryGuides[lib.id];
     const settings=A.storage.get().settings; const hidden=settings.hiddenLibraries?.includes(lib.id);
-    return `<article class="library-card tone-${lib.tone} ${hidden?"is-library-hidden":""}" data-library="${lib.id}">
+    const cover = libraryCovers[lib.id];
+    return `<article class="library-card tone-${lib.tone} ${hidden?"is-library-hidden":""} ${cover?"has-library-cover":"library-cover-symbolic"}" data-library="${lib.id}"${cover?` style="--library-cover:url('assets/images/libraries/${cover}')"`:""}>
       <div class="library-top"><span class="library-mark">${lib.mark}</span><span class="eyebrow">${lib.stats.categories} categorías</span></div>
       <h3>${esc(lib.short)}</h3><p>${esc(lib.description)}</p>
       ${guide ? `<details class="library-purpose"><summary>¿Para qué sirve?</summary><p>${esc(guide.purpose)}</p><ul>${guide.examples.map(item => `<li>${esc(item)}</li>`).join("")}</ul><button class="text-button" data-open-infographic="${esc(guide.file)}" data-infographic-title="${esc(lib.short)}" data-infographic-tone="${esc(lib.tone)}">Ver infografía completa ↗</button></details>` : ""}
@@ -492,6 +506,7 @@
         <label class="setting-select"><span><b>Paleta de acento</b><small>Cambia botones, enlaces, focos y detalles.</small></span><select data-setting-select="palette"><option value="sage" ${settings.palette==="sage"?"selected":""}>Verde Atlas</option><option value="burgundy" ${settings.palette==="burgundy"?"selected":""}>Burdeos clásico</option><option value="ocean" ${settings.palette==="ocean"?"selected":""}>Azul océano</option><option value="indigo" ${settings.palette==="indigo"?"selected":""}>Índigo</option><option value="amber" ${settings.palette==="amber"?"selected":""}>Ámbar</option><option value="rose" ${settings.palette==="rose"?"selected":""}>Rosa viejo</option></select></label>
         <label class="setting-select"><span><b>Acabado de superficies</b><small>Suave, papel editorial o nítido.</small></span><select data-setting-select="surfaceStyle"><option value="soft" ${settings.surfaceStyle==="soft"?"selected":""}>Suave</option><option value="paper" ${settings.surfaceStyle==="paper"?"selected":""}>Papel</option><option value="crisp" ${settings.surfaceStyle==="crisp"?"selected":""}>Nítido</option></select></label>
         ${toggleSetting("compactMode","Modo compacto","Reduce espacios en listados, paneles y cabeceras.")}</section>
+      <section><span class="eyebrow">Inicio diario</span><h3>Oración y Misa</h3>${toggleSetting("showTenMinutesHome","10 Minutos con Jesús","Muestra el episodio diario en Inicio.")}${toggleSetting("showMassFinderHome","Acceso a Misas.org","Muestra el buscador de horarios en Inicio.")}<label class="setting-select"><span><b>Hora del aviso diario</b><small>Se comprobará mientras Atlas esté abierto o activo.</small></span><input type="time" data-setting-select="tenMinutesTime" value="${esc(settings.tenMinutesTime || "08:00")}"></label></section>
     </div>`;
   }
 
@@ -572,6 +587,8 @@
       <div class="chip-row saved-tabs">${tabs.map(([id,label]) => `<button class="chip ${state.savedTab===id?"active":""}" data-saved-tab="${id}">${label}</button>`).join("")}</div>${content}
       <section class="section feature-unlocks"><div class="section-head"><div><h2>Funciones adicionales</h2><p>Un sistema extensible de activaciones locales.</p></div></div>${A.storage.isFeatureUnlocked("preparadora-circulos")?`<article class="feature-unlock active"><span>✓</span><div><b>Preparadora de círculos activa</b><small>Quedará disponible tras cerrar y volver a abrir Atlas.</small></div><a class="secondary-button" href="#/library/preparadora-circulos/documents">Abrir guía</a></article>`:`<form id="feature-unlock-form" class="feature-unlock"><span>PC</span><div><b>Desbloquear una funcionalidad</b><small>Introduce el código que has recibido.</small></div><input name="code" autocomplete="off" required placeholder="Código"><button class="primary-button">Activar</button></form>`}</section>
       <section class="section"><div class="section-head"><div><h2>Preferencias</h2><p>Adapta lectura, movimiento, iluminación y apariencia.</p></div></div><div class="button-row"><button class="primary-button" data-action="settings">Personalizar Atlas</button><button class="secondary-button" data-action="refresh-atlas">↻ Actualizar Atlas</button><button class="secondary-button" data-action="intro-replay">Ver presentación</button><button class="secondary-button" data-action="toggle-contrast">${stored.settings.contrast ? "Desactivar" : "Activar"} alto contraste</button><button class="secondary-button" data-action="toggle-random">${stored.settings.randomShorts ? "Orden diario" : "Orden aleatorio"}</button><button class="secondary-button" data-action="toggle-only-new">${stored.settings.onlyNewShorts ? "Mostrar todos" : "Solo contenido nuevo"}</button></div></section>
+      <section class="section atlas-share-card"><img src="assets/images/atlas-public-qr.svg" alt="Código QR de la aplicación pública de Atlas"><div><span class="eyebrow">Lleva Atlas contigo</span><h2>Compartir e instalar</h2><p>Escanea el QR o comparte la dirección pública. En móvil puedes instalar Atlas en la pantalla de inicio como una aplicación.</p><code>${PUBLIC_APP_URL}</code><div class="button-row"><button class="primary-button" data-action="install-atlas">Añadir a inicio</button><button class="secondary-button" data-action="share-public-app">Compartir Atlas</button><button class="secondary-button" data-action="copy-public-link">Copiar enlace</button></div></div></section>
+      <section class="section atlas-contact-card"><span>?</span><div><h2>Sugerencias y ayuda</h2><p>Cuéntanos un error, una fuente que falta o una idea para mejorar Atlas.</p><div class="button-row"><a class="secondary-button" href="mailto:pablonrg03@gmail.com?subject=Sugerencia%20para%20Atlas">pablonrg03@gmail.com</a><a class="secondary-button" href="tel:+34674979827">674 979 827</a></div></div></section>
       <section class="section"><div class="section-head"><div><h2>Datos locales</h2><p>Exporta una copia, impórtala o borra todo.</p></div></div><div class="button-row"><button class="secondary-button" data-action="export-data">Exportar</button><button class="secondary-button" data-action="import-data">Importar</button><button class="secondary-button" data-action="clear-data">Borrar</button><input id="import-file" type="file" accept=".json,application/json" hidden></div></section></section>`;
   }
 
@@ -584,11 +601,23 @@
     const timer = setTimeout(() => controller.abort(), 8000);
     try {
       const manifest = await window.AtlasRuntime.fetchJson("build-manifest.json", { fresh: true, signal: controller.signal });
-      await navigator.serviceWorker?.getRegistration()?.then(registration => registration?.update());
+      const registration = await navigator.serviceWorker?.getRegistration();
+      await registration?.update();
       const current = A.data.catalog.meta.dataVersion;
-      if (manifest.version !== current || !String(manifest.buildId || "").startsWith(current)) {
-        toast("Hay una versión nueva. Actualizando Atlas…");
-        setTimeout(() => location.reload(), 350);
+      const compare = (left, right) => {
+        const a=String(left).split(".").map(Number), b=String(right).split(".").map(Number);
+        for(let i=0;i<3;i++){ if((a[i]||0)!==(b[i]||0)) return (a[i]||0)-(b[i]||0); }
+        return 0;
+      };
+      if (compare(manifest.version, current) > 0) {
+        toast(`Versión ${manifest.version} encontrada. Preparando la actualización…`);
+        await Promise.all((await caches.keys()).filter(key => key.startsWith("atlas-shell-") || key.startsWith("atlas-data-")).map(key => caches.delete(key)));
+        if (registration?.waiting) registration.waiting.postMessage("SKIP_WAITING");
+        else setTimeout(() => location.reload(), 500);
+      } else if (compare(manifest.version, current) < 0) {
+        toast(`Esta carpeta ya contiene Atlas ${current}; GitHub todavía publica ${manifest.version}. Haz commit y push para ponerla al día.`);
+        button.disabled = false;
+        button.innerHTML = original;
       } else {
         toast("Atlas ya utiliza la última versión publicada.");
         button.disabled = false;
@@ -828,15 +857,44 @@
 
   function checkNotifications() {
     const stored = A.storage.get();
-    const day = new Date().toISOString().slice(0, 10);
-    if (!stored.notifications?.daily || !("Notification" in window) || Notification.permission !== "granted" || stored.settings.lastDailyNotification === day) return;
-    try {
+    const now = new Date();
+    const day = now.toLocaleDateString("sv-SE");
+    if (!("Notification" in window) || Notification.permission !== "granted") return;
+    if (stored.notifications?.daily && stored.settings.lastDailyNotification !== day) {
       const item = dailyPick(A.data.documents.filter(doc => doc.status !== "incomplete"), 5);
-      const notification = new Notification("Atlas · Lectura del día", { body: item?.title || "Hay una nueva selección preparada para ti.", icon: "assets/icons/icon-192.png" });
-      notification.onclick = () => { window.focus(); if (item) location.hash = `/reader/${encodeURIComponent(item.id)}`; };
+      sendAtlasNotification("Atlas · Lectura del día", item?.title || "Hay una nueva selección preparada para ti.", item ? `#/reader/${encodeURIComponent(item.id)}` : "#/", "atlas-daily");
       A.storage.setSetting("lastDailyNotification", day);
-    } catch { /* El navegador puede restringir avisos fuera de una PWA instalada. */ }
+    }
+    const preferred = stored.settings.tenMinutesTime || "08:00";
+    const current = `${String(now.getHours()).padStart(2,"0")}:${String(now.getMinutes()).padStart(2,"0")}`;
+    if (stored.notifications?.tenMinutes && current >= preferred && stored.settings.lastTenMinutesNotification !== day) {
+      const episode = window.ATLAS_TEN_MINUTES?.episodes?.[0];
+      sendAtlasNotification("10 Minutos con Jesús", episode?.title || "Tu oración de hoy ya está preparada.", "#/", "atlas-ten-minutes");
+      A.storage.setSetting("lastTenMinutesNotification", day);
+    }
   }
+
+  async function requestNotificationPermission() {
+    if (!("Notification" in window)) { toast("Este navegador no admite notificaciones."); return false; }
+    const permission = await Notification.requestPermission();
+    toast(permission === "granted" ? "Notificaciones activadas." : "El navegador no concedió el permiso.");
+    if (route().name === "notifications") renderRouteView();
+    return permission === "granted";
+  }
+
+  async function sendAtlasNotification(title, body, routeTarget = "#/", tag = "atlas") {
+    if (!("Notification" in window)) { toast("Este navegador no admite notificaciones."); return false; }
+    if (Notification.permission !== "granted" && !(await requestNotificationPermission())) return false;
+    const options = { body, icon: "assets/icons/icon-192.png", badge: "assets/icons/icon-192.png", tag, data: { route: routeTarget } };
+    try {
+      const registration = await navigator.serviceWorker?.ready;
+      if (registration?.showNotification) await registration.showNotification(title, options);
+      else { const notification = new Notification(title, options); notification.onclick = () => { window.focus(); location.href = routeTarget; }; }
+      return true;
+    } catch { toast("No se pudo mostrar la notificación."); return false; }
+  }
+  A.requestNotificationPermission = requestNotificationPermission;
+  A.sendAtlasNotification = sendAtlasNotification;
 
   function toast(message) {
     const node = document.createElement("div"); node.className = "toast"; node.textContent = message;
@@ -1005,8 +1063,22 @@
     if (action === "customize-home") { A.storage.setSetting("customizeHome", !A.storage.get().settings.customizeHome); renderRouteView(); }
     if (action === "customize-explore") { A.storage.setSetting("customizeExplore", !A.storage.get().settings.customizeExplore); renderRouteView(); }
     if (action === "customize-libraries") { A.storage.setSetting("customizeLibraries", !A.storage.get().settings.customizeLibraries); renderRouteView(); }
-    if (action === "apply-update") location.reload();
+    if (action === "apply-update") { const registration = await navigator.serviceWorker?.getRegistration(); if (registration?.waiting) registration.waiting.postMessage("SKIP_WAITING"); else { await caches?.keys?.().then(keys => Promise.all(keys.filter(key => key.startsWith("atlas-shell-") || key.startsWith("atlas-data-")).map(key => caches.delete(key)))); location.reload(); } }
     if (action === "refresh-atlas") { event.preventDefault(); refreshAtlas(target); }
+    if (target.dataset.homeHide) { A.storage.setSetting(target.dataset.homeHide, false); renderRouteView(); toast("Bloque ocultado. Puedes recuperarlo en Personalización."); }
+    if (action === "copy-public-link") { event.preventDefault(); await A.share.copy(PUBLIC_APP_URL); toast("Enlace público copiado."); }
+    if (action === "share-public-app") { event.preventDefault(); openShare({ title:"Atlas · Mercabá", text:"Atlas reúne bibliotecas, documentos, IA y recursos para estudiar y descubrir.", url:PUBLIC_APP_URL }); }
+    if (action === "install-atlas") {
+      event.preventDefault();
+      if (installPromptEvent) {
+        installPromptEvent.prompt();
+        const choice = await installPromptEvent.userChoice;
+        if (choice.outcome === "accepted") toast("Atlas se está añadiendo a tu pantalla de inicio.");
+        installPromptEvent = null;
+      } else if (/iphone|ipad|ipod/i.test(navigator.userAgent)) toast("En Safari: Compartir → Añadir a pantalla de inicio.");
+      else toast("En el menú del navegador, elige «Instalar aplicación» o «Añadir a inicio».");
+    }
+    if (action === "dismiss-install") { event.preventDefault(); A.storage.setSetting("installSuggestionDismissed", true); document.querySelector("#install-banner")?.setAttribute("hidden", ""); }
     if (target.dataset.channelGroup) {
       const map = { youtube: "disabledVideoChannels", music: "disabledMusicChannels", instagram: "disabledInstagramChannels" };
       const channels = [...(window.ATLAS_CHANNELS?.[target.dataset.channelGroup] || []), ...(A.storage.get().settings.customChannels?.[target.dataset.channelGroup] || [])];
@@ -1091,7 +1163,7 @@
     if (target.dataset.savedTab) { state.savedTab = target.dataset.savedTab; renderRouteView(); }
     if (target.dataset.routeStep) { A.storage.toggleRouteStep(target.dataset.routeStep, target.dataset.documentId); renderRouteView(); }
     if (target.dataset.quizAnswer) { const correct = target.dataset.quizAnswer === target.dataset.quizCorrect; A.storage.recordQuiz(correct); toast(correct ? "Correcto. Esa fuente aparece en esa biblioteca." : "No es esa biblioteca. Puedes abrir la ficha para comprobarlo."); }
-    if (target.dataset.homeMove) moveSetting("homeOrder", target.dataset.homeMove, target.dataset.direction, ["exam","today","libraries","reading","history"]);
+    if (target.dataset.homeMove) moveSetting("homeOrder", target.dataset.homeMove, target.dataset.direction, ["exam","tenminutes","massfinder","today","libraries","reading","history"]);
     if (target.dataset.exploreMove) moveSetting("exploreOrder", target.dataset.exploreMove, target.dataset.direction, ["libraries","infographics","collections","routes","spiritual","discover","stats","compare","timeline","map","graph","guide","sources","music","notifications"]);
   });
 
@@ -1169,6 +1241,8 @@
 
   function registerPwa() {
     if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
+    let reloading = false;
+    navigator.serviceWorker.addEventListener("controllerchange", () => { if (!reloading) { reloading = true; location.reload(); } });
     navigator.serviceWorker.register("./service-worker.js").then(registration => {
       registration.addEventListener("updatefound", () => {
         const worker = registration.installing;
@@ -1184,6 +1258,14 @@
     }).catch(() => {});
   }
 
+  window.addEventListener("beforeinstallprompt", event => {
+    event.preventDefault();
+    installPromptEvent = event;
+    if (!A.storage.get().settings.installSuggestionDismissed) document.querySelector("#install-banner")?.removeAttribute("hidden");
+  });
+
+  window.addEventListener("appinstalled", () => { installPromptEvent = null; document.querySelector("#install-banner")?.setAttribute("hidden", ""); });
+
   window.addEventListener("hashchange", renderRouteView);
   window.addEventListener("atlas:refresh-discover", () => renderRouteView());
   window.addEventListener("atlas:exam-changed", () => renderRouteView());
@@ -1192,7 +1274,8 @@
     if (frame?.src && !document.querySelector("#infographic-layer")?.hidden) fitInfographic(frame);
   }, { passive: true });
   matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", applyTheme);
-  applyTheme(); applyPersonalization(); registerPwa(); renderRouteView(); checkNotifications(); A.exam.checkReminders();
+  applyTheme(); applyPersonalization(); registerPwa(); renderRouteView(); checkNotifications(); setInterval(checkNotifications, 30000); A.exam.checkReminders();
+  if (/iphone|ipad|ipod/i.test(navigator.userAgent) && !navigator.standalone && !A.storage.get().settings.installSuggestionDismissed) setTimeout(() => document.querySelector("#install-banner")?.removeAttribute("hidden"), 1800);
   const introOpened = openIntro();
   if (!A.storage.get().settings.tutorialSeen) {
     if (introOpened) introPendingTutorial = true;

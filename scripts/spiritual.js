@@ -6,9 +6,39 @@
   const guides = () => window.ATLAS_SPIRITUAL_GUIDES || {};
   const songbook = () => window.ATLAS_SONGBOOK || { songs: [], categories: [] };
   const routes = () => window.ATLAS_SAINTS_ROUTES?.routes || [];
+  const timelines = () => window.ATLAS_SAINTS_TIMELINES?.timelines || [];
+  const josemariaExperiences = () => window.ATLAS_JOSEMARIA_EXPERIENCES?.experiences || [];
+
+  const windows1252 = { "€":128,"‚":130,"ƒ":131,"„":132,"…":133,"†":134,"‡":135,"ˆ":136,"‰":137,"Š":138,"‹":139,"Œ":140,"Ž":142,"‘":145,"’":146,"“":147,"”":148,"•":149,"–":150,"—":151,"˜":152,"™":153,"š":154,"›":155,"œ":156,"ž":158,"Ÿ":159 };
+  function repairEncoding(value) {
+    let text = String(value || "");
+    for (let pass = 0; pass < 2 && /(?:Ã.|Â.|â.|ðŸ)/.test(text); pass++) {
+      const bytes = [];
+      let compatible = true;
+      for (const character of text) {
+        const code = character.codePointAt(0);
+        if (code <= 255) bytes.push(code);
+        else if (windows1252[character] !== undefined) bytes.push(windows1252[character]);
+        else { compatible = false; break; }
+      }
+      if (!compatible) break;
+      const repaired = new TextDecoder("utf-8").decode(Uint8Array.from(bytes));
+      if ((repaired.match(/(?:Ã.|Â.|â.|ðŸ)/g) || []).length >= (text.match(/(?:Ã.|Â.|â.|ðŸ)/g) || []).length) break;
+      text = repaired;
+    }
+    return text;
+  }
+  function readablePassage(value) {
+    return repairEncoding(value)
+      .replace(/([\p{L}])-[ \t]*\r?\n[ \t]*([\p{Ll}])/gu, "$1$2")
+      .replace(/^[ \t]*(?:Digitized by.*|Project Gutenberg.*|[-—–]\s*\d{1,4}\s*[-—–]|\d{1,4})[ \t]*$/gim, "")
+      .replace(/[ \t]{2,}/g, " ")
+      .replace(/\r?\n(?:[ \t]*\r?\n){2,}/g, "\n\n")
+      .trim();
+  }
 
   function shell(active, body) {
-    const items = [["","Inicio"],["saints","Cómo vivieron"],["routes","Rutas de santos"],["confession","Confesión"],["mass","La Misa"],["songbook","Cancionero"],["escriva","escriva.org"]];
+    const items = [["","Inicio"],["saints","Cómo vivieron"],["timeline","Cronología"],["routes","Rutas de santos"],["confession","Confesión"],["mass","La Misa"],["songbook","Cancionero"],["escriva","escriva.org"]];
     return `<div class="spiritual-space"><header class="spiritual-header"><a href="#/spiritual" class="spiritual-mark">✦</a><div><span class="eyebrow">Atlas · vida espiritual</span><h1>Aprender desde vidas y fuentes.</h1></div></header><nav class="spiritual-nav">${items.map(([id,label]) => `<a class="${active === id ? "active" : ""}" href="#/spiritual${id ? `/${id}` : ""}">${esc(label)}</a>`).join("")}</nav>${body}</div>`;
   }
 
@@ -22,6 +52,7 @@
       ["songbook","Cancionero católico","Cantos por momento, tradición e idioma","Repertorio moderno, tradicional y latino con fuentes responsables."],
       ["escriva","escriva.org","Obras y búsqueda temática","Acceso ordenado a la fuente oficial de san Josemaría."],
       ["routes","Rutas espirituales","Oración, conversión, fortaleza y caridad","Recorridos por santos, textos y preguntas para el estudio personal."]
+      ,["timeline","Vidas en el tiempo",`${timelines().length} biografías con hechos fechados`,"Compara varias vidas a la vez o recorre la cronología de un santo."]
     ];
     return shell("", `<main class="page spiritual-home"><section class="spiritual-hero"><span>Una pregunta humana</span><h2>¿Cómo lo vivieron quienes caminaron antes?</h2><p>Atlas no convierte el sufrimiento en una frase fácil: abre pasajes concretos, conserva su procedencia y permite leerlos en la biografía completa.</p><a class="primary-button" href="#/spiritual/saints">Encontrar una experiencia</a></section><div class="spiritual-card-grid">${cards.map(([id,title,meta,text],index) => `<a class="spiritual-card spiritual-card-${index + 1}" href="#/spiritual/${id}"><i>${String(index + 1).padStart(2,"0")}</i><span class="eyebrow">${esc(meta)}</span><h3>${esc(title)}</h3><p>${esc(text)}</p><b>Abrir →</b></a>`).join("")}</div></main>`);
   }
@@ -47,9 +78,12 @@
     const doc = root.data.documentMap.get(passage.documentId);
     const title = passage.saint || passage.title || doc?.title || "Vida de un santo";
     const query = passage.query || String(passage.excerpt || "").replace(/\s+/g," ").trim().slice(0,90);
-    passage = { ...passage, excerpt: passage.excerptSpanish || passage.excerpt };
+    const originalExcerpt = readablePassage(passage.originalExcerpt || passage.excerpt || "");
+    const translated = Boolean(passage.translation && passage.translation.method !== "fuente original castellana");
+    passage = { ...passage, excerpt: readablePassage(passage.excerptSpanish || passage.excerpt) };
     const points = passage.summaryPoints || [];
-    return `<article class="saint-passage"><span class="passage-number">${String(index + 1).padStart(2,"0")}</span><div class="saint-passage-content"><span class="eyebrow">${esc(passage.context || passage.theme || "Pasaje biográfico en castellano")}</span><h3>${esc(title)}</h3><div class="saint-passage-frame"><blockquote>${esc(passage.excerpt || passage.text || "")}</blockquote><aside class="saint-passage-summary"><span class="eyebrow">Tres claves</span><ol>${points.map(point => `<li><b>${esc(point.label)}</b><p>${esc(point.text)}</p></li>`).join("")}</ol></aside></div>${passage.takeaway ? `<p class="passage-takeaway"><b>Para mirar despacio</b>${esc(passage.takeaway)}</p>` : ""}<div class="button-row">${doc ? `<a class="primary-button" href="#/reader/${encodeURIComponent(doc.id)}?q=${encodeURIComponent(query)}">Leer en contexto</a>` : ""}${passage.sourceUrl ? `<a class="secondary-button" href="${esc(passage.sourceUrl)}" target="_blank" rel="noopener">Fuente externa ↗</a>` : ""}</div><small>${esc(passage.sourcePath || doc?.file || "Fuente biográfica identificada")}</small></div></article>`;
+    const words = passage.excerpt.split(/\s+/).filter(Boolean).length;
+    return `<article class="saint-passage"><span class="passage-number">${String(index + 1).padStart(2,"0")}</span><div class="saint-passage-content"><div class="passage-kicker"><span class="eyebrow">${esc(repairEncoding(passage.context || passage.theme || "Pasaje biográfico en castellano"))}</span><small>${words} palabras · ${Math.max(1, Math.ceil(words / 210))} min</small></div><h3>${esc(repairEncoding(title))}</h3><div class="saint-passage-frame"><div class="saint-passage-reading"><blockquote>${esc(passage.excerpt || passage.text || "")}</blockquote>${translated && originalExcerpt ? `<details class="passage-original"><summary>Ver el texto original</summary><blockquote lang="${esc(passage.language || "")}">${esc(originalExcerpt)}</blockquote></details>` : ""}</div><aside class="saint-passage-summary"><span class="eyebrow">Tres claves</span><ol>${points.map(point => `<li><b>${esc(repairEncoding(point.label))}</b><p>${esc(readablePassage(point.text))}</p></li>`).join("")}</ol>${translated ? `<small>Traducción local al castellano. El original se conserva íntegro.</small>` : `<small>Fuente originalmente en castellano.</small>`}</aside></div>${passage.takeaway ? `<p class="passage-takeaway"><b>Para mirar despacio</b>${esc(readablePassage(passage.takeaway))}</p>` : ""}<div class="button-row">${doc ? `<a class="primary-button" href="#/reader/${encodeURIComponent(doc.id)}?q=${encodeURIComponent(query)}">Leer en contexto</a>` : ""}${passage.sourceUrl ? `<a class="secondary-button" href="${esc(passage.sourceUrl)}" target="_blank" rel="noopener">Fuente externa ↗</a>` : ""}</div><small>${esc(repairEncoding(passage.sourcePath || doc?.file || "Fuente biográfica identificada"))}</small></div></article>`;
   }
 
   function guidePage(id, title, intro) {
@@ -68,14 +102,28 @@
     const requested = route.query.get("category") || "all";
     const songs = (data.songs || data.items || []).filter(song => requested === "all" || song.category === requested || song.categories?.includes(requested));
     const categories = data.categories || [...new Set((data.songs || []).flatMap(song => song.categories || [song.category]).filter(Boolean))].map(id => ({ id, label: id }));
-    return shell("songbook", `<main class="page songbook-page"><header><span class="eyebrow">Repertorio para celebrar y orar</span><h2>Cancionero católico</h2><p>Busca por momento, tradición o idioma. Atlas muestra letras completas únicamente cuando son de dominio público o han sido incorporadas con permiso; para repertorio moderno enlaza la fuente autorizada.</p></header><div class="chip-row songbook-filters"><a class="chip ${requested === "all" ? "active" : ""}" href="#/spiritual/songbook">Todos</a>${categories.map(category => { const id=typeof category === "string" ? category : category.id; const label=typeof category === "string" ? category : category.label || category.name; return `<a class="chip ${requested === id ? "active" : ""}" href="#/spiritual/songbook?category=${encodeURIComponent(id)}">${esc(label)}</a>`; }).join("")}</div><div class="song-grid">${songs.map(song => { const media=song.officialMediaUrl || song.videoUrl || song.url || song.sourceUrl; const mayShowLyrics=(song.publicDomain || song.rights === "public-domain") && song.lyrics; return `<article class="song-card"><span class="eyebrow">${esc((song.categories || [song.category]).filter(Boolean).join(" · "))}</span><h3>${esc(song.title)}</h3><p>${esc(song.artist || song.tradition || "Tradicional")}${song.language ? ` · ${esc(song.language)}` : ""}</p>${song.useNote ? `<p>${esc(song.useNote)}</p>` : ""}${mayShowLyrics ? `<details><summary>Ver letra completa</summary><pre>${esc(song.lyrics)}</pre></details>` : `<p class="song-rights">Letra no reproducida en Atlas. Ábrela en su fuente autorizada.</p>`}<div class="button-row">${media ? `<a class="secondary-button" href="${esc(media)}" target="_blank" rel="noopener">Escuchar / fuente ↗</a>` : ""}</div></article>`; }).join("") || root.library.empty("No hay cantos en esta categoría", "Prueba otra selección.")}</div></main>`);
+    return shell("songbook", `<main class="page songbook-page"><header><span class="eyebrow">Repertorio para celebrar y orar</span><h2>Cancionero católico</h2><p>Busca por momento, tradición o idioma. Atlas muestra dentro de la app la letra completa cuando es de dominio público o está autorizada; las obras modernas conservan enlace a su publicación oficial.</p></header><div class="chip-row songbook-filters"><a class="chip ${requested === "all" ? "active" : ""}" href="#/spiritual/songbook">Todos</a>${categories.map(category => { const id=typeof category === "string" ? category : category.id; const label=typeof category === "string" ? category : category.label || category.name; return `<a class="chip ${requested === id ? "active" : ""}" href="#/spiritual/songbook?category=${encodeURIComponent(id)}">${esc(label)}</a>`; }).join("")}</div><div class="song-grid">${songs.map(song => { const media=song.officialMediaUrl || song.videoUrl || song.url || song.sourceUrl; const videoId=String(media||"").match(/(?:youtu\.be\/|[?&]v=|\/embed\/)([\w-]{11})/)?.[1]||""; const mayShowLyrics=(song.publicDomain || song.rights === "public-domain") && song.lyrics; return `<article class="song-card"><span class="eyebrow">${esc((song.categories || [song.category]).filter(Boolean).join(" · "))}</span><h3>${esc(song.title)}</h3><p>${esc(song.artist || song.tradition || "Tradicional")}${song.language ? ` · ${esc(song.language)}` : ""}</p>${song.useNote ? `<p>${esc(song.useNote)}</p>` : ""}${mayShowLyrics ? `<details><summary>Ver letra completa dentro de Atlas</summary><pre>${esc(song.lyrics)}</pre></details>` : `<p class="song-rights"><b>Letra protegida</b><br>Atlas no copia letras modernas sin licencia. La canción puede escucharse aquí y la fuente oficial se abre en una pestaña aparte.</p>`}<div class="button-row">${videoId ? `<button class="primary-button" data-play-youtube="${esc(videoId)}" data-video-title="${esc(song.title)}" data-video-url="${esc(media)}">▶ Escuchar en Atlas</button>` : ""}${media ? `<a class="secondary-button" href="${esc(media)}" target="_blank" rel="noopener">Fuente oficial ↗</a>` : ""}</div></article>`; }).join("") || root.library.empty("No hay cantos en esta categoría", "Prueba otra selección.")}</div></main>`);
   }
 
   function escrivaPage() {
     const data = guides().escrivaOrg || guides().escriva || {};
     const sections = data.sections || data.areas || [];
-    return shell("escriva", `<main class="page escriva-page"><header><span class="eyebrow">Fuente oficial</span><h2>${esc(data.title || "escriva.org dentro de Atlas")}</h2><p>${esc(data.subtitle || data.description || "Accesos para leer las obras de san Josemaría y localizar textos por tema desde su fuente oficial.")}</p><a class="primary-button" href="${esc(data.officialBaseUrl || data.url || "https://escriva.org/es/")}" target="_blank" rel="noopener">Abrir escriva.org ↗</a></header><div class="escriva-grid">${sections.map(section => `<article><span>${esc(section.mark || "E")}</span><h3>${esc(section.title || section.name)}</h3><p>${esc(section.description || section.text || "")}</p>${section.url ? `<a href="${esc(section.url)}" target="_blank" rel="noopener">Abrir →</a>` : ""}</article>`).join("")}</div><section class="escriva-search-card"><h3>Buscar también en tus documentos</h3><p>Atlas puede localizar una expresión literal en las obras indexadas de san Josemaría.</p><button class="primary-button" data-action="search" data-search-library-preset="san-josemaria">Abrir búsqueda textual</button></section></main>`);
+    return shell("escriva", `<main class="page escriva-page"><header><span class="eyebrow">Fuente oficial</span><h2>${esc(data.title || "escriva.org dentro de Atlas")}</h2><p>${esc(data.subtitle || data.description || "Accesos para leer las obras de san Josemaría y localizar textos por tema desde su fuente oficial.")}</p><a class="primary-button" href="${esc(data.officialBaseUrl || data.url || "https://escriva.org/es/")}" target="_blank" rel="noopener">Abrir escriva.org ↗</a></header><a class="josemaria-interior-entry" href="#/spiritual/escriva/interior"><span>30 experiencias contemporáneas</span><h3>La vida interior de san Josemaría</h3><p>Angustia, cansancio, soledad, paz, incomprensión, no llegar a todo, rutina, libertad y recomenzar desde los tres volúmenes de <em>El Fundador</em>.</p><b>Buscar una experiencia →</b></a><div class="escriva-grid">${sections.map(section => `<article><span>${esc(section.mark || "E")}</span><h3>${esc(section.title || section.name)}</h3><p>${esc(section.description || section.text || "")}</p>${section.url ? `<a href="${esc(section.url)}" target="_blank" rel="noopener">Abrir →</a>` : ""}</article>`).join("")}</div><section class="escriva-search-card"><h3>Buscar también en tus documentos</h3><p>Atlas puede localizar una expresión literal en las obras indexadas de san Josemaría.</p><button class="primary-button" data-action="search" data-search-library-preset="san-josemaria">Abrir búsqueda textual</button></section></main>`);
   }
+
+  function josemariaInterior(id="") {
+    const items=josemariaExperiences();
+    if(id){const experience=items.find(item=>item.id===id);if(!experience)return escrivaPage();return shell("escriva",`<main class="page mood-detail"><header class="mood-hero"><a href="#/spiritual/escriva/interior">← Todas las experiencias</a><span class="eyebrow">El Fundador · ${experience.passages.length} pasajes</span><h2>${esc(experience.label)}</h2><p>${esc(experience.description)}</p></header><div class="saints-passage-list">${experience.passages.map((passage,index)=>passageCard({...passage,saint:"San Josemaría"},index)).join("")}</div></main>`)}
+    return shell("escriva",`<main class="page saints-mode"><header class="saints-hero"><span class="eyebrow">El Fundador · tres volúmenes</span><h2>Una vida interior muy humana.</h2><p>Busca una experiencia cotidiana y abre escenas concretas de la biografía de san Josemaría.</p><label class="saints-search">⌕<input type="search" data-spiritual-tag-search placeholder="Escribe: burnout, angustia, paz, rutina…"></label></header><div class="saints-tag-grid">${items.map(item=>`<a class="saints-tag" data-spiritual-search="${esc(`${item.label} ${item.description} ${item.keywords?.join(" ")}`.toLocaleLowerCase("es"))}" href="#/spiritual/escriva/interior/${encodeURIComponent(item.id)}"><span>J</span><div><h4>${esc(item.label)}</h4><p>${esc(item.description)}</p><small>${item.passages.length} pasajes de El Fundador</small></div></a>`).join("")}</div></main>`);
+  }
+
+  function timelinePage(route) {
+    const all=timelines(),requested=(route.query.get("saints")||"").split(",").filter(Boolean),selected=requested.length?all.filter(item=>requested.includes(item.documentId)):all.slice(0,6);
+    const min=Math.min(...selected.map(x=>x.startYear)),max=Math.max(...selected.map(x=>x.endYear)),span=Math.max(1,max-min);
+    return shell("timeline",`<main class="page saints-timeline-page"><header class="saints-hero"><span class="eyebrow">${all.length} vidas fechadas</span><h2>Los santos, en simultáneo.</h2><p>Marca u oculta vidas para comparar épocas. Toca un nombre o un hecho para abrir su cronología completa.</p><details class="timeline-picker"><summary>Elegir santos · ${selected.length} visibles</summary><label class="saints-search">⌕<input type="search" data-timeline-search placeholder="Buscar santo"></label><div>${all.map(item=>`<label data-timeline-option="${esc(item.saint.toLocaleLowerCase("es"))}"><input type="checkbox" data-timeline-toggle value="${esc(item.documentId)}" ${selected.some(current=>current.documentId===item.documentId)?"checked":""}><span>${esc(item.saint)}</span><small>${item.startYear}–${item.endYear}</small></label>`).join("")}</div></details></header><div class="timeline-scale"><span>${min}</span><span>${Math.round(min+span/2)}</span><span>${max}</span></div><div class="saints-parallel-timeline">${selected.map(item=>`<article><a href="#/spiritual/timeline/${encodeURIComponent(item.documentId)}"><b>${esc(item.saint)}</b><small>${item.startYear}–${item.endYear}</small></a><div class="life-track">${item.events.map(event=>`<a href="#/reader/${encodeURIComponent(item.documentId)}?q=${encodeURIComponent(event.query)}" style="--event-x:${((event.year-min)/span*100).toFixed(2)}%" title="${esc(event.summary)}"><i></i><span>${event.year}</span></a>`).join("")}</div></article>`).join("")}</div></main>`);
+  }
+
+  function timelineDetail(documentId){const item=timelines().find(current=>current.documentId===documentId);if(!item)return timelinePage({query:new URLSearchParams()});return shell("timeline",`<main class="page saint-life-detail"><header><a href="#/spiritual/timeline">← Cronología comparada</a><span class="eyebrow">${item.startYear}–${item.endYear} · ${item.events.length} hechos</span><h2>${esc(item.saint)}</h2><p>Los hechos se extraen de la biografía local. Abre cada escena para leerla en contexto.</p></header><ol>${item.events.map(event=>`<li><time>${event.year}</time><div><h3>${esc(event.title)}</h3><p>${esc(event.summary)}</p><a href="#/reader/${encodeURIComponent(item.documentId)}?q=${encodeURIComponent(event.query)}">Leer este momento →</a></div></li>`).join("")}</ol></main>`)}
 
   function routesPage() {
     const items = routes();
@@ -87,20 +135,26 @@
     if (!section) return home();
     if (section === "saints" && route.segments[2]) return moodDetail(decodeURIComponent(route.segments.slice(2).join("/")));
     if (section === "saints") return saintsIndex();
+    if (section === "timeline" && route.segments[2]) return timelineDetail(decodeURIComponent(route.segments[2]));
+    if (section === "timeline") return timelinePage(route);
     if (section === "confession") return guidePage("confession", "Guía para preparar la confesión", "Preparación, estructura, fórmulas y dudas frecuentes.");
     if (section === "mass") return guidePage("mass", "Comprender la Santa Misa", "Qué sucede en cada momento y por qué.");
     if (section === "songbook") return songbookPage(route);
+    if (section === "escriva" && route.segments[2] === "interior") return josemariaInterior(decodeURIComponent(route.segments[3] || ""));
     if (section === "escriva") return escrivaPage();
     if (section === "routes") return routesPage();
     return home();
   }
 
   document.addEventListener("input", event => {
+    if(event.target.matches("[data-timeline-search]")){const query=event.target.value.normalize("NFD").replace(/\p{Diacritic}/gu,"").toLocaleLowerCase("es");document.querySelectorAll("[data-timeline-option]").forEach(item=>item.hidden=Boolean(query&&!item.dataset.timelineOption.normalize("NFD").replace(/\p{Diacritic}/gu,"").includes(query)));return}
+    if(event.target.matches("[data-spiritual-tag-search]")){const query=event.target.value.normalize("NFD").replace(/\p{Diacritic}/gu,"").toLocaleLowerCase("es");document.querySelectorAll("[data-spiritual-search]").forEach(card=>card.hidden=Boolean(query&&!card.dataset.spiritualSearch.normalize("NFD").replace(/\p{Diacritic}/gu,"").includes(query)));return}
     if (!event.target.matches("[data-saints-mood-search]")) return;
     const query = event.target.value.normalize("NFD").replace(/\p{Diacritic}/gu,"").toLocaleLowerCase("es");
     document.querySelectorAll("[data-mood-search]").forEach(card => { const text=card.dataset.moodSearch.normalize("NFD").replace(/\p{Diacritic}/gu,""); card.hidden = Boolean(query && !text.includes(query)); });
   });
   document.addEventListener("change", event => {
+    if(event.target.matches("[data-timeline-toggle]")){const ids=[...document.querySelectorAll("[data-timeline-toggle]:checked")].map(input=>input.value).slice(0,12);location.hash=`/spiritual/timeline${ids.length?`?saints=${encodeURIComponent(ids.join(","))}`:""}`;return}
     if (event.target.matches("[data-liturgical-explanation]")) document.querySelector(".guide-reading")?.classList.toggle("show-liturgical-explanations", event.target.checked);
   });
 

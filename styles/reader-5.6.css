@@ -157,7 +157,7 @@
 .reader-immersive .reader-rail button{width:27px;height:27px;padding:0;border:0;border-radius:50%;background:transparent;color:var(--muted);font-size:13px}
 .reader-immersive .reader-rail button:hover{background:var(--tone-soft);color:var(--tone)}
 .reader-immersive .reader-rail button:disabled{opacity:.25}
-.reader-immersive .reader-rail input{width:24px;height:160px;margin:0;writing-mode:vertical-lr;direction:rtl;accent-color:var(--tone);cursor:pointer}
+.reader-immersive .reader-rail input{width:24px;height:160px;margin:0;writing-mode:vertical-lr;direction:ltr;accent-color:var(--tone);cursor:pointer}
 .reader-immersive .reader-rail span{font:750 7px var(--sans);color:var(--muted)}
 
 .reader-immersive .reader-tools{z-index:150;right:max(18px,env(safe-area-inset-right));bottom:max(18px,env(safe-area-inset-bottom));left:auto;transform:none}

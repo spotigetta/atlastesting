@@ -1,8 +1,12 @@
 {
   "private": true,
   "type": "module",
+  "scripts": {
+    "update:ten-minutes": "node tools/update-ten-minutes.mjs"
+  },
   "devDependencies": {
-    "@huggingface/transformers": "^3.7.2"
+    "@huggingface/transformers": "^3.7.2",
+    "qrcode": "^1.5.4"
   },
   "overrides": {
     "sharp": "0.35.3"

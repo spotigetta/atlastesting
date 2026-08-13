@@ -1,7 +1,18 @@
 {
-  "currentVersion": "5.6.1",
+  "currentVersion": "5.8.0",
   "updatedAt": "2026-08-06",
   "entries": [
+    {
+      "version": "5.8.0",
+      "date": "2026-08-13",
+      "title": "Contenido diario, Misas y notificaciones",
+      "changes": [
+        "10 Minutos con Jesús en Inicio con reproducción y actualización automática",
+        "Vinculación directa con el buscador de horarios de Misas.org",
+        "Permisos, prueba y entrega de notificaciones mediante la PWA",
+        "Actualización pública con activación del nuevo service worker y limpieza de caché"
+      ]
+    },
     {
       "version": "5.6.1",
       "date": "2026-08-08",

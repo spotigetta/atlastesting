@@ -135,7 +135,7 @@ function narrativeBlocks(markdown, bodyStart) {
     localStart = localEnd;
     if (text.length < 180 || text.length > 5000) return;
     if (/^(#{1,6}|\*\*Fuente|\*\*T.tulo|\*\*Autor|\|)/i.test(text.trim())) return;
-    if (/Project Gutenberg|START OF (?:THIS|THE) PROJECT|END OF (?:THIS|THE) PROJECT/i.test(text)) return;
+    if (/Project Gutenberg|START OF (?:THIS|THE) PROJECT|END OF (?:THIS|THE) PROJECT|Google Book Search|Digitized by|PUBLISHED IN|all rights reserved|copyright/i.test(text)) return;
     if ((text.match(/[\p{L}]{2,}/gu) || []).length < 35) return;
     if ((text.match(/https?:\/\//g) || []).length > 1) return;
     blocks.push({ start, end: start + text.length, text, normalized: normalize(text) });
@@ -308,6 +308,7 @@ for (const mood of moods) {
       if (!matched.matches.length) continue;
       let excerpt = compactExactExcerpt(block, matched.matches);
       excerpt = expandExactContext(document.markdown, document.bodyStart, excerpt);
+      if (/Project Gutenberg|Google Book Search|Digitized by|PUBLISHED IN|all rights reserved|copyright/i.test(excerpt.text)) continue;
       const context = mood.contextPatterns.length ? matchTerms(normalize(excerpt.text), mood.contextPatterns) : { matches: [], score: 0 };
       if (mood.contextPatterns.length && !context.matches.length) continue;
       if (mood.excludePatterns.length && matchTerms(normalize(excerpt.text), mood.excludePatterns).matches.length) continue;

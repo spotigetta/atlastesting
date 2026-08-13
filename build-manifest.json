@@ -1,8 +1,8 @@
 {
   "app": "ATLAS",
-  "version": "5.6.1",
-  "buildId": "5.6.1-santos-castellano",
-  "generatedAt": "2026-08-07T10:43:12.531Z",
+  "version": "5.8.0",
+  "buildId": "5.8.0-diario-misas-notificaciones",
+  "generatedAt": "2026-08-13T12:00:00.000Z",
   "basePath": "./",
   "catalog": "data/catalog.json"
 }

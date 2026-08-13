@@ -274,15 +274,19 @@
     const settings = root.storage.get().notifications || {};
     const options = [
       ["daily", "Selección diaria", "Un documento o Short para volver a Atlas."],
+      ["tenMinutes", "10 Minutos con Jesús", "Aviso diario a la hora elegida en Personalización."],
       ["reading", "Continúa leyendo", "Recordatorio de documentos empezados."],
       ["news", "Fuentes editoriales", "Aviso para revisar noticias y novedades."],
       ["routes", "Rutas de estudio", "Recordatorio de recorridos incompletos."],
       ["updates", "Actualizaciones de Atlas", "Cambios de versión y nuevos contenidos."]
     ];
-    return `<section class="page"><header class="explore-hero"><span class="eyebrow">Notificaciones</span><h1>Tú decides qué interrumpe.</h1><p>Las preferencias se guardan localmente. Sin un servidor de notificaciones, los avisos programados funcionan mientras Atlas está abierto o instalado como PWA compatible.</p></header><div class="notification-list">${options.map(([id,title,text]) => `<label class="notification-row"><span><b>${title}</b><small>${text}</small></span><input type="checkbox" data-notification="${id}" ${settings[id] ? "checked" : ""}></label>`).join("")}</div></section>`;
+    const permission = !("Notification" in window) ? "no disponible" : Notification.permission === "granted" ? "permitido" : Notification.permission === "denied" ? "bloqueado por el navegador" : "pendiente de permiso";
+    return `<section class="page"><header class="explore-hero"><span class="eyebrow">Notificaciones</span><h1>Tú decides qué interrumpe.</h1><p>Las preferencias se guardan localmente. En una PWA estática los avisos funcionan mientras Atlas está abierto o activo; con la aplicación totalmente cerrada requieren un servidor push.</p><div class="button-row"><button class="primary-button" data-notification-permission>Activar permisos</button><button class="secondary-button" data-notification-test>Enviar prueba</button><span class="notification-permission">Estado: ${permission}</span></div></header><div class="notification-list">${options.map(([id,title,text]) => `<label class="notification-row"><span><b>${title}</b><small>${text}</small></span><input type="checkbox" data-notification="${id}" ${settings[id] ? "checked" : ""}></label>`).join("")}</div></section>`;
   }
 
   document.addEventListener("click", event => {
+    if (event.target.closest("[data-notification-permission]")) { root.requestNotificationPermission?.(); return; }
+    if (event.target.closest("[data-notification-test]")) { root.sendAtlasNotification?.("Atlas · Prueba", "Las notificaciones están funcionando correctamente.", "#/notifications", "atlas-test"); return; }
     if (event.target.closest("[data-music-refresh]")) {
       const container = document.querySelector("#music-content");
       if (container) {

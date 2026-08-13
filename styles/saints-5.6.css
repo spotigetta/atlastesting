@@ -1,9 +1,14 @@
-.saint-passage-frame{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(250px,.72fr);gap:clamp(22px,3vw,44px);align-items:start}
+.saint-passage-frame{display:grid;grid-template-columns:minmax(0,1.85fr) minmax(280px,.75fr);gap:clamp(24px,3.5vw,52px);align-items:start}
 .saint-passage-frame blockquote{max-width:none}
+.saint-passage-reading>blockquote{font-size:clamp(19px,2vw,25px);line-height:1.72;text-wrap:pretty}
+.passage-kicker{display:flex;align-items:center;justify-content:space-between;gap:12px}.passage-kicker small{color:var(--muted);font-size:10px;white-space:nowrap}
 .saint-passage-summary{position:sticky;top:92px;padding:20px;border-left:1px solid var(--line);border-radius:0 18px 18px 0;background:color-mix(in srgb,var(--surface) 90%,#9a4964 10%)}
 .saint-passage-summary ol{display:grid;gap:15px;margin:12px 0 0;padding:0;list-style:none;counter-reset:keys}
 .saint-passage-summary li{position:relative;padding-left:30px;counter-increment:keys}
 .saint-passage-summary li::before{content:counter(keys);position:absolute;left:0;top:0;width:21px;height:21px;display:grid;place-items:center;border-radius:50%;background:#9a4964;color:#fff;font:700 10px var(--sans)}
 .saint-passage-summary b{font-size:12px;color:var(--text)}
 .saint-passage-summary p{margin:4px 0 0;color:var(--muted);font-size:12px;line-height:1.45}
-@media(max-width:900px){.saint-passage-frame{grid-template-columns:1fr}.saint-passage-summary{position:static;border-left:0;border-top:1px solid var(--line);border-radius:0 0 18px 18px}}
+.saint-passage-summary>small{display:block!important;margin-top:18px!important;padding-top:14px;border-top:1px solid var(--line);font-size:9px!important;line-height:1.45}
+.passage-original{margin-top:24px;border:1px solid var(--line);border-radius:16px;background:var(--surface)}.passage-original summary{padding:14px 16px;cursor:pointer;font-size:11px;font-weight:750}.passage-original blockquote{margin:0!important;padding:2px 18px 20px!important;color:var(--muted);font-size:15px!important;line-height:1.6!important}
+html[data-theme="dark"] .saint-passage-summary{background:color-mix(in srgb,var(--surface) 84%,#9a4964 16%)}
+@media(max-width:900px){.saint-passage-frame{grid-template-columns:1fr}.saint-passage-summary{position:static;border-left:0;border-top:1px solid var(--line);border-radius:0 0 18px 18px}.passage-kicker{align-items:flex-start;flex-direction:column}}

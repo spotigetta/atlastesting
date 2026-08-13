@@ -1,0 +1,28 @@
+name: Actualizar contenido diario
+
+on:
+  schedule:
+    - cron: "17 */4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  ten-minutes-with-jesus:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Actualizar 10 Minutos con Jesús
+        run: node tools/update-ten-minutes.mjs
+      - name: Publicar solo si hay cambios
+        run: |
+          if git diff --quiet -- data/ten-minutes-daily.json; then exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/ten-minutes-daily.json
+          git commit -m "content: actualizar 10 Minutos con Jesús"
+          git push
