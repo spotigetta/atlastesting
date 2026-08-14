@@ -1,4 +1,4 @@
-const BUILD_VERSION = "6.0.0-cronologias-evangelio-nocturno";
+const BUILD_VERSION = "6.0.1-meditaciones-markdown-portadas-movil";
 const SHELL_CACHE = `atlas-shell-${BUILD_VERSION}`;
 const DATA_CACHE = `atlas-data-${BUILD_VERSION}`;
 const DOCUMENT_CACHE = `atlas-documents-${BUILD_VERSION}`;
@@ -57,7 +57,7 @@ self.addEventListener("fetch", event => {
     return;
   }
 
-  if (/\/data\/(?:documents|search)\//.test(pathname)) {
+  if (/\/data\/(?:documents|search)\//.test(pathname) || /\/content\/opusdei-meditations\//.test(pathname)) {
     event.respondWith(caches.open(DOCUMENT_CACHE).then(async cache => {
       const cached = await cache.match(event.request);
       if (cached) return cached;

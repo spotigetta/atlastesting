@@ -1,7 +1,18 @@
 {
-  "currentVersion": "6.0.0",
+  "currentVersion": "6.0.1",
   "updatedAt": "2026-08-14",
   "entries": [
+    {
+      "version": "6.0.1",
+      "date": "2026-08-14",
+      "title": "Meditaciones diarias en Markdown",
+      "changes": [
+        "Importador autorizado con un Markdown por fecha, YAML, categorías, referencias evangélicas y checksum",
+        "Actualización incremental nocturna y backfill manual desde GitHub Actions",
+        "Lectura de la meditación descargada dentro de Atlas con enlace a la fuente oficial",
+        "Corrección definitiva del escalado proporcional de las portadas en tarjetas móviles"
+      ]
+    },
     {
       "version": "6.0.0",
       "date": "2026-08-14",

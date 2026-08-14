@@ -6,6 +6,8 @@
     "update:daily-content": "node tools/refresh-daily-content.mjs",
     "build:gospel-meditations": "node tools/build-gospel-meditations.mjs",
     "build:saints-timelines": "node tools/generate-saints-timelines.mjs",
+    "update:opusdei-meditation": "node tools/update-opusdei-meditations.mjs --strict",
+    "backfill:opusdei-meditations": "node tools/update-opusdei-meditations.mjs --all --strict",
     "audit:markdown": "python tools/normalize_markdown_corpus.py --dry-run",
     "sync:markdown": "node tools/sync-normalized-markdown.mjs"
   },

@@ -1,9 +1,8 @@
 {
-  "schemaVersion": 1,
-  "generatedAt": "2026-08-14T01:03:38.360Z",
-  "year": 2026,
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-14T01:41:17.713Z",
   "source": "https://opusdei.org/es/meditation/",
-  "rightsPolicy": "Atlas almacena metadatos, temas, referencias bíblicas, enlaces y fragmentos breves. No republica automáticamente el artículo completo.",
+  "rightsPolicy": "Atlas almacena fichas editoriales, categorías y enlaces; no replica automáticamente el cuerpo íntegro.",
   "records": [
     {
       "date": "2026-01-01",
@@ -2284,14 +2283,38 @@
       "status": "pending-review"
     },
     {
+      "id": "opusdei-meditation-2026-08-15",
       "date": "2026-08-15",
-      "title": "Meditación del 15/08/2026",
+      "title": "Meditaciones: la Asunción de la Virgen María",
       "officialUrl": "https://opusdei.org/es/meditation/2026-08-15/",
-      "themes": [],
-      "gospelRefs": [],
-      "gospelLinks": [],
+      "source": "Opus Dei",
+      "language": "es",
+      "contentType": "meditation",
+      "themes": [
+        "oración",
+        "alegría",
+        "prueba",
+        "Virgen María",
+        "Eucaristía",
+        "caridad",
+        "trabajo",
+        "esperanza"
+      ],
+      "topics": [
+        "Como María, el cielo es nuestro destino",
+        "El camino que subió la Virgen",
+        "Cercanía en la normalidad"
+      ],
+      "gospelRefs": [
+        "Ap 12,1",
+        "Lc 1,39-56",
+        "Lc 1,46-47"
+      ],
+      "summary": "Meditación para contemplar como maría, el cielo es nuestro destino; el camino que subió la virgen; cercanía en la normalidad.",
       "excerpt": "",
-      "status": "pending-review"
+      "status": "imported-metadata",
+      "importedAt": "2026-08-14T01:41:17.679Z",
+      "contentFile": "content/opusdei-meditations/2026/2026-08-15.md"
     },
     {
       "date": "2026-08-16",
@@ -3676,7 +3699,13 @@
   ],
   "stats": {
     "total": 365,
-    "reviewed": 2,
-    "pending": 363
+    "imported": 1,
+    "pending": 364
+  },
+  "lastRun": {
+    "from": "2026-08-15",
+    "to": "2026-08-15",
+    "imported": 1,
+    "failures": 0
   }
 }

@@ -7,6 +7,16 @@ on:
     - cron: "1 22 * * *"
     - cron: "1 23 * * *"
   workflow_dispatch:
+    inputs:
+      opusdei_backfill:
+        description: "Descargar el histórico completo de meditaciones"
+        required: false
+        type: boolean
+        default: false
+      opusdei_from:
+        description: "Fecha inicial opcional (AAAA-MM-DD)"
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -42,6 +52,24 @@ jobs:
       - name: Actualizar vídeos, música y noticias
         if: steps.madrid.outputs.run == 'true'
         run: node tools/refresh-daily-content.mjs
+      - name: Descargar meditación diaria del Opus Dei
+        if: steps.madrid.outputs.run == 'true'
+        continue-on-error: true
+        env:
+          OPUSDEI_SOURCE_BASE: ${{ vars.OPUSDEI_SOURCE_BASE }}
+          OPUSDEI_ARCHIVE_START: ${{ vars.OPUSDEI_ARCHIVE_START }}
+          OPUSDEI_CF_ACCESS_CLIENT_ID: ${{ secrets.OPUSDEI_CF_ACCESS_CLIENT_ID }}
+          OPUSDEI_CF_ACCESS_CLIENT_SECRET: ${{ secrets.OPUSDEI_CF_ACCESS_CLIENT_SECRET }}
+          OPUSDEI_API_TOKEN: ${{ secrets.OPUSDEI_API_TOKEN }}
+          BACKFILL: ${{ inputs.opusdei_backfill }}
+          BACKFILL_FROM: ${{ inputs.opusdei_from }}
+        shell: bash
+        run: |
+          if [ "$BACKFILL" = "true" ]; then
+            node tools/update-opusdei-meditations.mjs --from "${BACKFILL_FROM:-2025-11-30}" --to "$(TZ=Europe/Madrid date +%F)" --strict
+          else
+            node tools/update-opusdei-meditations.mjs --date "$(TZ=Europe/Madrid date +%F)" --strict
+          fi
       - name: Regenerar meditaciones del Evangelio si está disponible
         if: steps.madrid.outputs.run == 'true'
         shell: bash
@@ -57,7 +85,8 @@ jobs:
         if: steps.madrid.outputs.run == 'true'
         shell: bash
         run: |
-          git add data dist/data
+          git add data dist/data content/opusdei-meditations
+          if [ -d dist/content/opusdei-meditations ]; then git add dist/content/opusdei-meditations; fi
           if git diff --cached --quiet; then echo "No hay contenido nuevo."; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

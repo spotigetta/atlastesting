@@ -1,7 +1,7 @@
 {
   "meta": {
     "app": "ATLAS",
-    "dataVersion": "6.0.0",
+    "dataVersion": "6.0.1",
     "generatedAt": "2026-08-14T12:00:00.000Z",
     "source": "Once bibliotecas documentales, incluida Vida de los Santos",
     "documents": 1361,
@@ -44329,6 +44329,16 @@
       ]
     },
     "changelog": [
+      {
+        "version": "6.0.1",
+        "date": "2026-08-14",
+        "title": "Meditaciones diarias en Markdown",
+        "changes": [
+          "Un Markdown autorizado por fecha con YAML, categorías y referencias evangélicas",
+          "Actualización nocturna incremental y backfill desde GitHub Actions",
+          "Lector integrado y corrección proporcional de portadas móviles"
+        ]
+      },
       {
         "version": "6.0.0",
         "date": "2026-08-14",

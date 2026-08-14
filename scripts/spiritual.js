@@ -145,7 +145,32 @@
     const daily = (window.ATLAS_OPUSDEI_MEDITATIONS?.records || []).find(item => item.date === today);
     const filters = (data.themes || []).map(theme => `<a class="${selected === theme.id ? "active" : ""}" href="#/spiritual/gospel?theme=${encodeURIComponent(theme.id)}"><i>${esc(theme.icon)}</i><span>${esc(theme.label)}</span><small>${theme.count || 0}</small></a>`).join("");
     const cards = items.map(item => `<article class="gospel-card">${item.image ? `<div class="gospel-card-image" style="background-image:url('${esc(item.image)}')"></div>` : ""}<div><span class="eyebrow">${esc((item.categoryIds || []).map(id => data.themes?.find(theme => theme.id === id)?.label).filter(Boolean).slice(0, 3).join(" · "))}</span><h3>${esc(item.title)}</h3><p>${esc(item.description)}</p><a class="primary-button" href="${esc(item.url)}" target="_blank" rel="noopener">Meditar en Opus Dei ↗</a></div></article>`).join("");
-    return shell("gospel", `<main class="page gospel-meditations"><header class="gospel-hero"><span class="eyebrow">Evangelio contemplado · fuente oficial</span><h2>Medita el Evangelio para…</h2><p>Elige lo que estás viviendo. Atlas te conduce a una escena evangélica y conserva el enlace a la meditación completa del Opus Dei.</p>${daily ? `<a class="gospel-today" href="${esc(daily.officialUrl || daily.url)}" target="_blank" rel="noopener"><span>Hoy · ${esc(today)}</span><b>${esc(daily.title || "Meditación del Evangelio del día")}</b><small>Abrir en la fuente oficial ↗</small></a>` : ""}</header><form class="gospel-search" data-gospel-search><input type="search" name="q" value="${esc(route.query.get("q") || "")}" placeholder="Busca una escena, una dificultad, una persona…"><button>Buscar</button></form><div class="gospel-theme-grid"><a class="${selected === "all" ? "active" : ""}" href="#/spiritual/gospel"><i>∞</i><span>ver todas</span></a>${filters}</div><div class="gospel-card-grid">${cards || root.library.empty("No hay meditaciones con estos filtros", "Prueba otra experiencia o borra la búsqueda.")}</div><p class="guide-disclaimer">Atlas muestra título, resumen editorial y enlace; la meditación completa permanece en su fuente oficial.</p></main>`);
+    const dailyHref = daily?.contentFile ? `#/spiritual/gospel/meditation/${encodeURIComponent(daily.date)}` : daily?.officialUrl || daily?.url;
+    return shell("gospel", `<main class="page gospel-meditations"><header class="gospel-hero"><span class="eyebrow">Evangelio contemplado · fuente oficial</span><h2>Medita el Evangelio para…</h2><p>Elige lo que estás viviendo. Atlas te conduce a una escena evangélica y conserva el enlace a la meditación completa del Opus Dei.</p>${daily ? `<a class="gospel-today" href="${esc(dailyHref)}" ${daily.contentFile ? "" : `target="_blank" rel="noopener"`}><span>Hoy · ${esc(today)}</span><b>${esc(daily.title || "Meditación del Evangelio del día")}</b><small>${daily.contentFile ? "Leer en Atlas →" : "Abrir en la fuente oficial ↗"}</small></a>` : ""}</header><form class="gospel-search" data-gospel-search><input type="search" name="q" value="${esc(route.query.get("q") || "")}" placeholder="Busca una escena, una dificultad, una persona…"><button>Buscar</button></form><div class="gospel-theme-grid"><a class="${selected === "all" ? "active" : ""}" href="#/spiritual/gospel"><i>∞</i><span>ver todas</span></a>${filters}</div><div class="gospel-card-grid">${cards || root.library.empty("No hay meditaciones con estos filtros", "Prueba otra experiencia o borra la búsqueda.")}</div><p class="guide-disclaimer">Las meditaciones diarias autorizadas se conservan además como Markdown y pueden leerse dentro de Atlas.</p></main>`);
+  }
+
+  function meditationMarkdown(markdown) {
+    const content = String(markdown || "").replace(/^---\s*[\s\S]*?\s---\s*/, "").trim();
+    const inline = value => esc(value).replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>').replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>").replace(/\*([^*]+)\*/g, "<em>$1</em>");
+    return content.split(/\n{2,}/).map(block => {
+      if (/^#{1,4}\s/.test(block)) { const [, marks, text] = block.match(/^(#{1,4})\s+([\s\S]*)$/); return `<h${Math.min(4, marks.length + 1)}>${inline(text)}</h${Math.min(4, marks.length + 1)}>`; }
+      if (/^>\s/.test(block)) return `<blockquote>${inline(block.replace(/^>\s?/gm, ""))}</blockquote>`;
+      if (/^---$/.test(block.trim())) return "<hr>";
+      if (/^(?:[-*]\s.+\n?)+$/.test(block)) return `<ul>${block.split("\n").map(line => `<li>${inline(line.replace(/^[-*]\s+/, ""))}</li>`).join("")}</ul>`;
+      return `<p>${inline(block).replace(/\n/g, "<br>")}</p>`;
+    }).join("");
+  }
+
+  function gospelMeditationDetail(date) {
+    const record = (window.ATLAS_OPUSDEI_MEDITATIONS?.records || []).find(item => item.date === date && item.contentFile);
+    if (!record) return shell("gospel", `<main class="page">${root.library.empty("Meditación todavía no descargada", "La actualización nocturna volverá a intentarlo.")}<a class="primary-button" href="#/spiritual/gospel">Volver al Evangelio</a></main>`);
+    requestAnimationFrame(async () => {
+      const target = document.querySelector("[data-opusdei-meditation-body]");
+      if (!target) return;
+      try { target.innerHTML = meditationMarkdown(await fetch(window.AtlasRuntime.url(record.contentFile), { cache: "no-store" }).then(response => { if (!response.ok) throw new Error(); return response.text(); })); }
+      catch { target.innerHTML = root.library.empty("No se pudo abrir el Markdown", "Conservamos el enlace a la fuente oficial."); }
+    });
+    return shell("gospel", `<main class="page opusdei-meditation-reader"><header><a href="#/spiritual/gospel">← Medita el Evangelio para…</a><span class="eyebrow">${esc(record.date)} · ${(record.themes || []).map(esc).join(" · ")}</span><h2>${esc(record.title)}</h2><p>${esc(record.excerpt || "Meditación diaria para la oración personal.")}</p></header><article data-opusdei-meditation-body><p>Cargando meditación…</p></article><footer><a class="secondary-button" href="${esc(record.officialUrl)}" target="_blank" rel="noopener">Fuente oficial ↗</a></footer></main>`);
   }
 
   function render(route) {
@@ -161,6 +186,7 @@
     if (section === "escriva" && route.segments[2] === "interior") return josemariaInterior(decodeURIComponent(route.segments[3] || ""));
     if (section === "escriva") return escrivaPage();
     if (section === "routes") return routesPage();
+    if (section === "gospel" && route.segments[2] === "meditation") return gospelMeditationDetail(decodeURIComponent(route.segments[3] || ""));
     if (section === "gospel") return gospelPage(route);
     return home();
   }

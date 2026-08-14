@@ -1,7 +1,7 @@
 {
   "app": "ATLAS",
-  "version": "6.0.0",
-  "buildId": "6.0.0-cronologias-evangelio-nocturno",
+  "version": "6.0.1",
+  "buildId": "6.0.1-meditaciones-markdown-portadas-movil",
   "generatedAt": "2026-08-14T12:00:00.000Z",
   "basePath": "./",
   "catalog": "data/catalog.json"
