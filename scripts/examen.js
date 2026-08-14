@@ -11,6 +11,10 @@
   let activeHelp = new Map();
   let pointer = null;
   const briefNormIds = new Set(["presencia-dios", "acciones-gracias", "oracion-manana", "santa-misa", "trabajo", "alegria", "apostolado", "examen-general"]);
+  const guideSections = guide => guide?.sections?.length
+    ? guide.sections
+    : [{ id: "generales", title: "Preguntas orientativas", introduction: "", questions: guide?.questions || [] }];
+  const guideQuestionCount = guide => guideSections(guide).reduce((total, section) => total + (section.questions?.length || 0), 0);
   const pad = number => String(number).padStart(2, "0");
   const dayKey = date => `${date.getFullYear()}-${pad(date.getMonth() + 1)}-${pad(date.getDate())}`;
   const parseDay = value => { const [year, month, day] = value.split("-").map(Number); return new Date(year, month - 1, day); };
@@ -86,7 +90,7 @@
     return `<section class="page exam-page"><header class="exam-hero"><div><span class="eyebrow">Examen diario · privado y local</span><h1>Mirar el día con verdad y con paz.</h1><p>Sin puntos, rachas ni porcentajes. Un espacio para agradecer, rectificar y recomenzar con libertad.</p></div><span class="exam-privacy-seal">⌂<b>Solo en este dispositivo</b><small>Atlas no recibe tus respuestas ni tus notas.</small></span></header>
       <div class="exam-type-intro"><span>Dos maneras de empezar</span><b>Breve</b><small>lo esencial</small><i></i><b>Completo</b><small>todo tu plan</small></div><div class="exam-period-grid">${periodCard("midday", "Examen de mediodía", config.middayEnabled ? `Aviso previsto a las ${config.middayTime}` : "Una pausa breve y opcional para rectificar la tarde.")}${periodCard("night", "Examen de la noche", `Aviso previsto a las ${config.nightTime}`)}</div>
       <section class="exam-observation"><span>Una observación, no una nota</span><p>${esc(descriptiveSummary(7))}</p></section>
-      <section class="exam-guide-choices"><div><span class="eyebrow">Aprender a examinarse</span><h2>Dos recorridos, según tu momento.</h2><p>No son dos niveles de santidad: son dos formas de empezar con la ayuda que necesitas hoy.</p></div>${examGuides().map(guide => `<a href="#/examen/guide/${encodeURIComponent(guide.id)}"><span>${guide.id === "recomenzar" ? "01" : "02"}</span><div><small>${esc(guide.audience)}</small><h3>${esc(guide.title)}</h3><p>${esc(guide.introduction)}</p><b>Abrir tutorial →</b></div></a>`).join("")}</section>
+      <section class="exam-guide-choices"><div><span class="eyebrow">Aprender a examinarse</span><h2>Dos tutoriales y dos plantillas.</h2><p>Elige la que corresponda a tu situación. No son niveles ni pruebas: ambas ayudan a mirar el día con verdad y paz.</p></div>${examGuides().map((guide, index) => `<a href="#/examen/guide/${encodeURIComponent(guide.id)}"><span>${String(index + 1).padStart(2, "0")}</span><div><small>${esc(guide.audience)}</small><h3>${esc(guide.shortTitle || guide.title)}</h3><p>${esc(guide.introduction)}</p><em>${esc(guide.duration || "A tu ritmo")} · ${guideQuestionCount(guide)} preguntas por ámbitos</em><b>Abrir tutorial y plantilla →</b></div></a>`).join("")}</section>
       <nav class="exam-dashboard-nav"><a href="#/examen/week"><b>Semana</b><span>Revisa días, estados y notas.</span></a><a href="#/examen/month"><b>Mes</b><span>Cuadrícula sobria y accesible.</span></a><a href="#/examen/norms"><b>Mi plan de vida</b><span>Añade, pausa y ordena normas.</span></a><a href="#/examen/prepare"><b>Preparar una conversación</b><span>Vista privada y opcional.</span></a><a href="#/examen/settings"><b>Avisos y día de guardia</b><span>Horarios, días y preferencias.</span></a><a href="#/examen/sources"><b>Fuentes y ayudas</b><span>${source.stats?.helps || source.helps.length} piezas identificadas.</span></a></nav>
       <p class="exam-principle">El examen ayuda a mirar; no diagnostica la conciencia ni sustituye la dirección espiritual o la confesión.</p></section>`;
   }
@@ -234,7 +238,20 @@
   function guideView(id) {
     const guide = examGuides().find(item => item.id === id);
     if (!guide) return dashboard();
-    return `<section class="page exam-page exam-guide-page"><header><a href="#/examen">← Examen diario</a><span class="eyebrow">Tutorial práctico · ${esc(guide.audience)}</span><h1>${esc(guide.title)}</h1><p>${esc(guide.introduction)}</p></header><ol class="exam-guide-steps">${guide.steps.map((step,index) => `<li><span>${String(index + 1).padStart(2,"0")}</span><div><h2>${esc(step.title)}</h2><p>${esc(step.text)}</p></div></li>`).join("")}</ol><section class="exam-guide-questions"><span class="eyebrow">Preguntas orientativas</span><h2>No tienes que contestarlas todas.</h2><p>Elige las que hoy te ayuden a hablar con más verdad y confianza.</p><ol>${guide.questions.map(question => `<li>${esc(question)}</li>`).join("")}</ol></section><blockquote>${esc(guide.closing)}</blockquote><div class="button-row"><a class="primary-button" href="#/examen/run?period=night&mode=paused&scope=${guide.id === "recomenzar" ? "brief" : "complete"}">Empezar ahora</a><a class="secondary-button" href="#/examen">Volver</a></div></section>`;
+    const sections = guideSections(guide);
+    const starterQuestions = guide.starterQuestions?.length
+      ? guide.starterQuestions
+      : sections.flatMap(section => section.questions || []).slice(0, 10);
+    const totalQuestions = guideQuestionCount(guide);
+    return `<section class="page exam-page exam-guide-page" data-guide="${esc(guide.id)}">
+      <header><a href="#/examen">← Examen diario</a><span class="eyebrow">Tutorial y plantilla · ${esc(guide.audience)}</span><h1>${esc(guide.title)}</h1><p>${esc(guide.introduction)}</p><div class="exam-guide-meta"><span>${esc(guide.duration || "A tu ritmo")}</span><span>${totalQuestions} preguntas por ámbitos</span><span>Uso privado</span></div></header>
+      <aside class="exam-guide-note"><b>Cómo usar esta guía</b><p>${esc(guide.useNote || "No tienes que responder a todo. Elige las preguntas que hoy te ayuden a hablar con más verdad y confianza.")}</p></aside>
+      <section class="exam-guide-method"><div><span class="eyebrow">Primero, aprende el recorrido</span><h2>Un modo sencillo de hacer examen</h2><p>Sigue estos pasos con calma. Con la práctica, terminarán formando una sola conversación.</p></div><ol class="exam-guide-steps">${guide.steps.map((step,index) => `<li><span>${String(index + 1).padStart(2,"0")}</span><div><h3>${esc(step.title)}</h3><p>${esc(step.text)}</p></div></li>`).join("")}</ol></section>
+      <section class="exam-guide-essential"><header><div><span class="eyebrow">Plantilla breve</span><h2>${esc(guide.starterTitle || "Preguntas esenciales")}</h2><p>${esc(guide.starterIntroduction || "Recorre estas preguntas y detente en las que hoy te den luz.")}</p></div><strong>${starterQuestions.length}</strong></header><ol>${starterQuestions.map(question => `<li>${esc(question)}</li>`).join("")}</ol></section>
+      <section class="exam-question-bank"><header><span class="eyebrow">Plantilla completa</span><h2>${totalQuestions} preguntas agrupadas para no abrumarte</h2><p>Abre solo uno o dos ámbitos cada día. El primer bloque aparece desplegado como ejemplo.</p></header><div>${sections.map((section,index) => `<details ${index === 0 ? "open" : ""}><summary><span><b>${esc(section.title)}</b><small>${esc(section.introduction || "Preguntas para una revisión concreta")}</small></span><i>${section.questions?.length || 0}</i></summary><ol>${(section.questions || []).map(question => `<li>${esc(question)}</li>`).join("")}</ol></details>`).join("")}</div></section>
+      <blockquote>${esc(guide.closing)}</blockquote>
+      <div class="exam-guide-actions"><a class="primary-button" href="#/examen/run?period=night&mode=paused&scope=brief">Hacer examen breve</a><a class="secondary-button" href="#/examen/run?period=night&mode=paused&scope=complete">Hacer examen completo</a><a class="text-button" href="#/examen">Volver</a></div>
+    </section>`;
   }
 
   function render(route) {
@@ -342,8 +359,9 @@
       const key = `${date}|${option.period}|${option.suffix || "first"}`;
       if (!option.enabled || minute !== option.time || config.lastReminderKey === key || session(date, option.period).status === "complete") return;
       const messages = source.notifications?.[option.period] || []; const body = messages[Math.floor(Math.random() * messages.length)] || "Un momento breve para agradecer y recomenzar.";
-      const notification = new Notification(option.period === "midday" ? "Atlas · Examen de mediodía" : "Atlas · Examen de la noche", { body, icon: "assets/icons/icon-192.png", tag: `atlas-exam-${option.period}` });
-      notification.onclick = () => { window.focus(); location.hash = `/examen/run?period=${option.period}&mode=${config.defaultMode || "quick"}`; };
+      const title = option.period === "midday" ? "Atlas · Examen de mediodía" : "Atlas · Examen de la noche";
+      if (root.sendAtlasNotification) root.sendAtlasNotification(title, body, `#/examen/run?period=${option.period}&mode=${config.defaultMode || "quick"}`, `atlas-exam-${option.period}`);
+      else { const notification = new Notification(title, { body, icon: "assets/icons/icon-192.png", tag: `atlas-exam-${option.period}` }); notification.onclick = () => { window.focus(); location.hash = `/examen/run?period=${option.period}&mode=${config.defaultMode || "quick"}`; }; }
       root.storage.updateExamConfig({ lastReminderKey: key });
     });
   }

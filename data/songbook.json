@@ -1,11 +1,11 @@
 {
   "schemaVersion": 1,
-  "dataVersion": "2026-08-08",
+  "dataVersion": "2026-08-14",
   "locale": "es-ES",
   "title": "Cancionero católico",
   "subtitle": "Repertorio por momento, estilo e idioma",
   "editorialPolicy": {
-    "copyright": "Las letras modernas protegidas no se reproducen. Atlas conserva título, intérprete, categorías, idioma, uso orientativo y enlace a una publicación oficial o a una búsqueda. Los textos tradicionales de dominio público pueden incorporarse en una fase posterior tras revisar también los derechos de cada traducción y arreglo musical.",
+    "copyright": "Atlas reproduce letras completas únicamente cuando el texto es de dominio público o existe permiso verificable. Las letras modernas protegidas no se copian: se conserva su ficha y un enlace a la publicación del titular. Que una letra pueda encontrarse públicamente en Internet no la convierte en dominio público. Las traducciones, arreglos, partituras y grabaciones pueden conservar derechos aunque el texto original sea antiguo.",
     "liturgicalUse": "La inclusión de una canción no implica que sea adecuada para cualquier momento de la Misa. La selección corresponde a quienes preparan la celebración conforme a las normas litúrgicas y a las indicaciones diocesanas.",
     "links": "Los enlaces directos modernos proceden del caché de canales musicales configurados en Atlas. Los repertorios tradicionales usan búsquedas de YouTube para no atribuir una interpretación concreta sin comprobarla."
   },
@@ -323,7 +323,9 @@
       "categories": ["communion", "latin"],
       "useNote": "Caridad, Jueves Santo, comunión y adoración según la celebración.",
       "rights": "public-domain-text; arrangement-varies",
-      "lyrics": null,
+      "publicDomain": true,
+      "lyricsSource": "Texto litúrgico latino tradicional (dominio público). Las traducciones, arreglos y grabaciones pueden conservar derechos.",
+      "lyrics": "Ubi caritas et amor, Deus ibi est.\n\nCongregavit nos in unum Christi amor.\nExsultemus et in ipso iucundemur.\nTimeamus et amemus Deum vivum.\nEt ex corde diligamus nos sincero.",
       "searchUrl": "https://www.youtube.com/results?search_query=Ubi+caritas+gregoriano"
     },
     {
@@ -335,7 +337,9 @@
       "categories": ["adoration", "communion", "latin"],
       "useNote": "Adoración eucarística y acción de gracias.",
       "rights": "public-domain-text; arrangement-varies",
-      "lyrics": null,
+      "publicDomain": true,
+      "lyricsSource": "Santo Tomás de Aquino, texto latino del siglo XIII (dominio público).",
+      "lyrics": "Adoro te devote, latens Deitas,\nQuae sub his figuris vere latitas:\nTibi se cor meum totum subicit,\nQuia te contemplans totum deficit.\n\nVisus, tactus, gustus in te fallitur,\nSed auditu solo tuto creditur;\nCredo quidquid dixit Dei Filius:\nNil hoc verbo Veritatis verius.\n\nIn cruce latebat sola Deitas,\nAt hic latet simul et humanitas;\nAmbo tamen credens atque confitens,\nPeto quod petivit latro paenitens.\n\nPlagas, sicut Thomas, non intueor;\nDeum tamen meum te confiteor;\nFac me tibi semper magis credere,\nIn te spem habere, te diligere.\n\nO memoriale mortis Domini,\nPanis vivus, vitam praestans homini,\nPraesta meae menti de te vivere,\nEt te illi semper dulce sapere.\n\nPie pellicane, Iesu Domine,\nMe immundum munda tuo sanguine,\nCuius una stilla salvum facere\nTotum mundum quit ab omni scelere.\n\nIesu, quem velatum nunc aspicio,\nOro, fiat illud quod tam sitio:\nUt te revelata cernens facie,\nVisu sim beatus tuae gloriae. Amen.",
       "searchUrl": "https://www.youtube.com/results?search_query=Adoro+te+devote+gregoriano"
     },
     {
@@ -347,7 +351,9 @@
       "categories": ["adoration", "lent-easter", "latin"],
       "useNote": "Procesión y adoración eucarística, especialmente en el contexto previsto por la liturgia.",
       "rights": "public-domain-text; arrangement-varies",
-      "lyrics": null,
+      "publicDomain": true,
+      "lyricsSource": "Santo Tomás de Aquino, texto latino del siglo XIII (dominio público).",
+      "lyrics": "Pange, lingua, gloriosi\nCorporis mysterium,\nSanguinisque pretiosi,\nQuem in mundi pretium\nFructus ventris generosi\nRex effudit gentium.\n\nNobis datus, nobis natus\nEx intacta Virgine,\nEt in mundo conversatus,\nSparso verbi semine,\nSui moras incolatus\nMiro clausit ordine.\n\nIn supremae nocte cenae\nRecumbens cum fratribus,\nObservata lege plene\nCibis in legalibus,\nCibum turbae duodenae\nSe dat suis manibus.\n\nVerbum caro, panem verum\nVerbo carnem efficit,\nFitque sanguis Christi merum,\nEt si sensus deficit,\nAd firmandum cor sincerum\nSola fides sufficit.\n\nTantum ergo Sacramentum\nVeneremur cernui,\nEt antiquum documentum\nNovo cedat ritui;\nPraestet fides supplementum\nSensuum defectui.\n\nGenitori Genitoque\nLaus et iubilatio,\nSalus, honor, virtus quoque\nSit et benedictio;\nProcedenti ab utroque\nCompar sit laudatio. Amen.",
       "searchUrl": "https://www.youtube.com/results?search_query=Pange+lingua+gregoriano"
     },
     {
@@ -359,7 +365,9 @@
       "categories": ["adoration", "blessing", "latin"],
       "useNote": "Bendición con el Santísimo Sacramento.",
       "rights": "public-domain-text; arrangement-varies",
-      "lyrics": null,
+      "publicDomain": true,
+      "lyricsSource": "Estrofas finales de Pange lingua, de santo Tomás de Aquino (dominio público).",
+      "lyrics": "Tantum ergo Sacramentum\nVeneremur cernui,\nEt antiquum documentum\nNovo cedat ritui;\nPraestet fides supplementum\nSensuum defectui.\n\nGenitori Genitoque\nLaus et iubilatio,\nSalus, honor, virtus quoque\nSit et benedictio;\nProcedenti ab utroque\nCompar sit laudatio. Amen.",
       "searchUrl": "https://www.youtube.com/results?search_query=Tantum+ergo+gregoriano"
     },
     {
@@ -371,7 +379,9 @@
       "categories": ["holy-spirit", "mission", "latin"],
       "useNote": "Invocación solemne del Espíritu Santo.",
       "rights": "public-domain-text; arrangement-varies",
-      "lyrics": null,
+      "publicDomain": true,
+      "lyricsSource": "Himno latino tradicional atribuido a Rábano Mauro (dominio público).",
+      "lyrics": "Veni, Creator Spiritus,\nMentes tuorum visita,\nImple superna gratia\nQuae tu creasti pectora.\n\nQui diceris Paraclitus,\nAltissimi donum Dei,\nFons vivus, ignis, caritas,\nEt spiritalis unctio.\n\nTu septiformis munere,\nDigitus paternae dexterae,\nTu rite promissum Patris,\nSermone ditans guttura.\n\nAccende lumen sensibus,\nInfunde amorem cordibus,\nInfirma nostri corporis\nVirtute firmans perpeti.\n\nHostem repellas longius,\nPacemque dones protinus;\nDuctore sic te praevio\nVitemus omne noxium.\n\nPer te sciamus da Patrem,\nNoscamus atque Filium,\nTeque utriusque Spiritum\nCredamus omni tempore.\n\nDeo Patri sit gloria,\nEt Filio, qui a mortuis\nSurrexit, ac Paraclito,\nIn saeculorum saecula. Amen.",
       "searchUrl": "https://www.youtube.com/results?search_query=Veni+Creator+Spiritus+gregoriano"
     },
     {
@@ -383,7 +393,9 @@
       "categories": ["holy-spirit", "lent-easter", "latin"],
       "useNote": "Secuencia de Pentecostés y oración al Espíritu Santo.",
       "rights": "public-domain-text; arrangement-varies",
-      "lyrics": null,
+      "publicDomain": true,
+      "lyricsSource": "Secuencia latina medieval de Pentecostés (dominio público).",
+      "lyrics": "Veni, Sancte Spiritus,\nEt emitte caelitus\nLucis tuae radium.\n\nVeni, pater pauperum,\nVeni, dator munerum,\nVeni, lumen cordium.\n\nConsolator optime,\nDulcis hospes animae,\nDulce refrigerium.\n\nIn labore requies,\nIn aestu temperies,\nIn fletu solacium.\n\nO lux beatissima,\nReple cordis intima\nTuorum fidelium.\n\nSine tuo numine,\nNihil est in homine,\nNihil est innoxium.\n\nLava quod est sordidum,\nRiga quod est aridum,\nSana quod est saucium.\n\nFlecte quod est rigidum,\nFove quod est frigidum,\nRege quod est devium.\n\nDa tuis fidelibus,\nIn te confidentibus,\nSacrum septenarium.\n\nDa virtutis meritum,\nDa salutis exitum,\nDa perenne gaudium. Amen. Alleluia.",
       "searchUrl": "https://www.youtube.com/results?search_query=Veni+Sancte+Spiritus+gregoriano"
     },
     {
@@ -395,7 +407,9 @@
       "categories": ["mary", "latin", "blessing"],
       "useNote": "Oración mariana y cierre de la Liturgia de las Horas o encuentros.",
       "rights": "public-domain-text; arrangement-varies",
-      "lyrics": null,
+      "publicDomain": true,
+      "lyricsSource": "Antífona mariana latina medieval (dominio público).",
+      "lyrics": "Salve, Regina, mater misericordiae;\nvita, dulcedo et spes nostra, salve.\nAd te clamamus, exsules filii Hevae.\nAd te suspiramus, gementes et flentes\nin hac lacrimarum valle.\nEia ergo, advocata nostra,\nillos tuos misericordes oculos ad nos converte.\nEt Iesum, benedictum fructum ventris tui,\nnobis post hoc exsilium ostende.\nO clemens, o pia, o dulcis Virgo Maria.",
       "searchUrl": "https://www.youtube.com/results?search_query=Salve+Regina+gregoriano+Solesmes"
     },
     {
@@ -407,7 +421,9 @@
       "categories": ["mary", "latin"],
       "useNote": "Fiestas marianas y oración comunitaria.",
       "rights": "public-domain-text; arrangement-varies",
-      "lyrics": null,
+      "publicDomain": true,
+      "lyricsSource": "Himno mariano latino medieval (dominio público).",
+      "lyrics": "Ave, maris stella,\nDei Mater alma,\nAtque semper Virgo,\nFelix caeli porta.\n\nSumens illud Ave\nGabrielis ore,\nFunda nos in pace,\nMutans Evae nomen.\n\nSolve vincla reis,\nProfer lumen caecis,\nMala nostra pelle,\nBona cuncta posce.\n\nMonstra te esse matrem,\nSumat per te preces,\nQui pro nobis natus\nTulit esse tuus.\n\nVirgo singularis,\nInter omnes mitis,\nNos culpis solutos\nMites fac et castos.\n\nVitam praesta puram,\nIter para tutum,\nUt videntes Iesum\nSemper collaetemur.\n\nSit laus Deo Patri,\nSummo Christo decus,\nSpiritui Sancto,\nTribus honor unus. Amen.",
       "searchUrl": "https://www.youtube.com/results?search_query=Ave+maris+stella+gregoriano"
     },
     {
@@ -419,7 +435,9 @@
       "categories": ["mary", "lent-easter", "latin"],
       "useNote": "Tiempo pascual.",
       "rights": "public-domain-text; arrangement-varies",
-      "lyrics": null,
+      "publicDomain": true,
+      "lyricsSource": "Antífona mariana latina medieval (dominio público).",
+      "lyrics": "Regina caeli, laetare, alleluia.\nQuia quem meruisti portare, alleluia.\nResurrexit, sicut dixit, alleluia.\nOra pro nobis Deum, alleluia.",
       "searchUrl": "https://www.youtube.com/results?search_query=Regina+caeli+gregoriano"
     },
     {
@@ -431,7 +449,9 @@
       "categories": ["mary", "christmas", "latin"],
       "useNote": "Adviento y tiempo de Navidad, según el uso litúrgico.",
       "rights": "public-domain-text; arrangement-varies",
-      "lyrics": null,
+      "publicDomain": true,
+      "lyricsSource": "Antífona mariana latina medieval (dominio público).",
+      "lyrics": "Alma Redemptoris Mater,\nquae pervia caeli porta manes,\net stella maris,\nsuccurre cadenti,\nsurgere qui curat, populo.\nTu quae genuisti,\nnatura mirante,\ntuum sanctum Genitorem;\nVirgo prius ac posterius,\nGabrielis ab ore\nsumens illud Ave,\npeccatorum miserere.",
       "searchUrl": "https://www.youtube.com/results?search_query=Alma+Redemptoris+Mater+gregoriano"
     },
     {
@@ -443,7 +463,9 @@
       "categories": ["christmas", "entrance", "latin"],
       "useNote": "Navidad; entrada o canto festivo según la celebración.",
       "rights": "public-domain-text; arrangement-varies",
-      "lyrics": null,
+      "publicDomain": true,
+      "lyricsSource": "Himno navideño latino tradicional (dominio público).",
+      "lyrics": "Adeste fideles,\nlaeti triumphantes,\nVenite, venite in Bethlehem.\nNatum videte,\nRegem angelorum.\n\nVenite adoremus,\nVenite adoremus,\nVenite adoremus Dominum.\n\nDeum de Deo,\nlumen de lumine,\nGestant puellae viscera.\nDeum verum,\ngenitum non factum.\n\nVenite adoremus,\nVenite adoremus,\nVenite adoremus Dominum.\n\nCantet nunc Io,\nchorus angelorum;\nCantet nunc aula caelestium:\nGloria, gloria\nin excelsis Deo.\n\nVenite adoremus,\nVenite adoremus,\nVenite adoremus Dominum.",
       "searchUrl": "https://www.youtube.com/results?search_query=Adeste+fideles+tradicional"
     },
     {
@@ -455,7 +477,9 @@
       "categories": ["lent-easter", "latin"],
       "useNote": "Secuencia del Domingo de Pascua y su octava conforme a las normas litúrgicas.",
       "rights": "public-domain-text; arrangement-varies",
-      "lyrics": null,
+      "publicDomain": true,
+      "lyricsSource": "Secuencia pascual latina medieval (dominio público).",
+      "lyrics": "Victimae paschali laudes\nimmolent Christiani.\nAgnus redemit oves:\nChristus innocens Patri\nreconciliavit peccatores.\n\nMors et vita duello\nconflixere mirando:\ndux vitae mortuus,\nregnat vivus.\n\nDic nobis, Maria,\nquid vidisti in via?\nSepulcrum Christi viventis,\net gloriam vidi resurgentis:\nAngelicos testes,\nsudarium et vestes.\nSurrexit Christus spes mea:\npraecedet suos in Galilaeam.\n\nScimus Christum surrexisse\na mortuis vere:\ntu nobis, victor Rex, miserere. Amen. Alleluia.",
       "searchUrl": "https://www.youtube.com/results?search_query=Victimae+paschali+laudes+gregoriano"
     },
     {
@@ -467,7 +491,9 @@
       "categories": ["communion", "adoration", "latin"],
       "useNote": "Comunión y adoración eucarística.",
       "rights": "public-domain-text; arrangement-varies",
-      "lyrics": null,
+      "publicDomain": true,
+      "lyricsSource": "Himno eucarístico latino medieval (dominio público).",
+      "lyrics": "Ave verum Corpus,\nnatum de Maria Virgine,\nvere passum, immolatum\nin cruce pro homine;\ncuius latus perforatum\nfluxit aqua et sanguine.\nEsto nobis praegustatum\nin mortis examine.\nO Iesu dulcis,\nO Iesu pie,\nO Iesu, fili Mariae.",
       "searchUrl": "https://www.youtube.com/results?search_query=Ave+verum+corpus+gregoriano"
     },
     {
@@ -479,7 +505,9 @@
       "categories": ["penitential", "latin"],
       "useNote": "Kyrie del Ordinario; su uso depende del formulario y repertorio de la celebración.",
       "rights": "public-domain-melody; arrangement-varies",
-      "lyrics": null,
+      "publicDomain": true,
+      "lyricsSource": "Texto del Ordinario de la Misa (dominio público). La melodía y cada grabación pueden tener derechos propios.",
+      "lyrics": "Kyrie, eleison.\nKyrie, eleison.\nChriste, eleison.\nChriste, eleison.\nKyrie, eleison.\nKyrie, eleison.",
       "searchUrl": "https://www.youtube.com/results?search_query=Kyrie+VIII+De+Angelis+gregoriano"
     },
     {
@@ -491,7 +519,9 @@
       "categories": ["praise", "latin"],
       "useNote": "Gloria del Ordinario en los días en que está prescrito.",
       "rights": "public-domain-melody; arrangement-varies",
-      "lyrics": null,
+      "publicDomain": true,
+      "lyricsSource": "Texto latino del Ordinario de la Misa (dominio público). La melodía, el arreglo y la grabación pueden tener derechos propios.",
+      "lyrics": "Gloria in excelsis Deo\net in terra pax hominibus bonae voluntatis.\nLaudamus te, benedicimus te,\nadoramus te, glorificamus te,\ngratias agimus tibi propter magnam gloriam tuam,\nDomine Deus, Rex caelestis,\nDeus Pater omnipotens.\nDomine Fili unigenite, Iesu Christe,\nDomine Deus, Agnus Dei, Filius Patris,\nqui tollis peccata mundi, miserere nobis;\nqui tollis peccata mundi, suscipe deprecationem nostram.\nQui sedes ad dexteram Patris, miserere nobis.\nQuoniam tu solus Sanctus,\ntu solus Dominus,\ntu solus Altissimus, Iesu Christe,\ncum Sancto Spiritu: in gloria Dei Patris. Amen.",
       "searchUrl": "https://www.youtube.com/results?search_query=Gloria+VIII+De+Angelis+gregoriano"
     },
     {
@@ -503,7 +533,9 @@
       "categories": ["praise", "latin"],
       "useNote": "Aclamación dentro de la Plegaria eucarística.",
       "rights": "public-domain-melody; arrangement-varies",
-      "lyrics": null,
+      "publicDomain": true,
+      "lyricsSource": "Texto latino del Ordinario de la Misa (dominio público). La melodía, el arreglo y la grabación pueden tener derechos propios.",
+      "lyrics": "Sanctus, Sanctus, Sanctus\nDominus Deus Sabaoth.\nPleni sunt caeli et terra gloria tua.\nHosanna in excelsis.\nBenedictus qui venit in nomine Domini.\nHosanna in excelsis.",
       "searchUrl": "https://www.youtube.com/results?search_query=Sanctus+VIII+De+Angelis+gregoriano"
     },
     {
@@ -515,7 +547,9 @@
       "categories": ["communion", "latin"],
       "useNote": "Acompaña la fracción del Pan.",
       "rights": "public-domain-melody; arrangement-varies",
-      "lyrics": null,
+      "publicDomain": true,
+      "lyricsSource": "Texto latino del Ordinario de la Misa (dominio público). La melodía, el arreglo y la grabación pueden tener derechos propios.",
+      "lyrics": "Agnus Dei, qui tollis peccata mundi,\nmiserere nobis.\nAgnus Dei, qui tollis peccata mundi,\nmiserere nobis.\nAgnus Dei, qui tollis peccata mundi,\ndona nobis pacem.",
       "searchUrl": "https://www.youtube.com/results?search_query=Agnus+Dei+VIII+De+Angelis+gregoriano"
     }
   ],

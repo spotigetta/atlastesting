@@ -149,6 +149,21 @@
     </div>
   </section>
 
+  <section class="qr-layer" id="qr-layer" hidden aria-label="Código QR de Atlas">
+    <button class="qr-scrim" data-action="close-qr" aria-label="Cerrar código QR"></button>
+    <article class="qr-dialog" role="dialog" aria-modal="true" aria-labelledby="qr-title" aria-describedby="qr-description">
+      <header>
+        <div><span class="eyebrow">Atlas en tu móvil</span><h2 id="qr-title">Escanea para abrir Atlas</h2></div>
+        <button class="icon-button" data-action="close-qr" aria-label="Cerrar"><svg><use href="#icon-close"></use></svg></button>
+      </header>
+      <div class="qr-fullscreen-image"><img src="assets/images/atlas-public-qr.svg" alt="Código QR que abre la aplicación pública de Atlas"></div>
+      <footer>
+        <p id="qr-description">Apunta la cámara del móvil al código. También puedes copiar o compartir el enlace.</p>
+        <div class="button-row"><button class="primary-button" data-action="copy-public-link">Copiar enlace</button><button class="secondary-button" data-action="share-public-app">Compartir Atlas</button></div>
+      </footer>
+    </article>
+  </section>
+
   <section class="video-layer" id="video-layer" hidden aria-label="Reproductor de YouTube">
     <button class="video-scrim" data-video-close aria-label="Cerrar reproductor"></button>
     <article class="video-player-dialog" role="dialog" aria-modal="true" aria-labelledby="video-player-title">

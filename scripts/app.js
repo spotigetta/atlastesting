@@ -8,6 +8,7 @@
   const detailLayer = document.querySelector("#detail-layer");
   const detailContent = document.querySelector("#detail-content");
   const shareLayer = document.querySelector("#share-layer");
+  const qrLayer = document.querySelector("#qr-layer");
   const settingsLayer = document.querySelector("#settings-layer");
   const tutorialLayer = document.querySelector("#tutorial-layer");
   const tutorialContent = document.querySelector("#tutorial-content");
@@ -41,6 +42,7 @@
   let iaFilmTimer = 0;
   let iaFilmPlaying = true;
   let installPromptEvent = null;
+  let qrReturnFocus = null;
   const PUBLIC_APP_URL = "https://spotigetta.github.io/atlastesting/#/";
   const libraryCovers = {
     canon:"canoniaportada.webp", history:"historiaportada.webp", liturgy:"liturgiaportada.webp",
@@ -354,7 +356,7 @@
     const guide = libraryGuides[lib.id];
     const settings=A.storage.get().settings; const hidden=settings.hiddenLibraries?.includes(lib.id);
     const cover = libraryCovers[lib.id];
-    return `<article class="library-card tone-${lib.tone} ${hidden?"is-library-hidden":""} ${cover?"has-library-cover":"library-cover-symbolic"}" data-library="${lib.id}"${cover?` style="--library-cover:url('assets/images/libraries/${cover}')"`:""}>
+    return `<article class="library-card tone-${lib.tone} ${hidden?"is-library-hidden":""} ${cover?"has-library-cover":"library-cover-symbolic"}" data-library="${lib.id}"${cover?` style="--library-cover:url('../assets/images/libraries/${cover}')"`:""}>
       <div class="library-top"><span class="library-mark">${lib.mark}</span><span class="eyebrow">${lib.stats.categories} categorías</span></div>
       <h3>${esc(lib.short)}</h3><p>${esc(lib.description)}</p>
       ${guide ? `<details class="library-purpose"><summary>¿Para qué sirve?</summary><p>${esc(guide.purpose)}</p><ul>${guide.examples.map(item => `<li>${esc(item)}</li>`).join("")}</ul><button class="text-button" data-open-infographic="${esc(guide.file)}" data-infographic-title="${esc(lib.short)}" data-infographic-tone="${esc(lib.tone)}">Ver infografía completa ↗</button></details>` : ""}
@@ -587,7 +589,7 @@
       <div class="chip-row saved-tabs">${tabs.map(([id,label]) => `<button class="chip ${state.savedTab===id?"active":""}" data-saved-tab="${id}">${label}</button>`).join("")}</div>${content}
       <section class="section feature-unlocks"><div class="section-head"><div><h2>Funciones adicionales</h2><p>Un sistema extensible de activaciones locales.</p></div></div>${A.storage.isFeatureUnlocked("preparadora-circulos")?`<article class="feature-unlock active"><span>✓</span><div><b>Preparadora de círculos activa</b><small>Quedará disponible tras cerrar y volver a abrir Atlas.</small></div><a class="secondary-button" href="#/library/preparadora-circulos/documents">Abrir guía</a></article>`:`<form id="feature-unlock-form" class="feature-unlock"><span>PC</span><div><b>Desbloquear una funcionalidad</b><small>Introduce el código que has recibido.</small></div><input name="code" autocomplete="off" required placeholder="Código"><button class="primary-button">Activar</button></form>`}</section>
       <section class="section"><div class="section-head"><div><h2>Preferencias</h2><p>Adapta lectura, movimiento, iluminación y apariencia.</p></div></div><div class="button-row"><button class="primary-button" data-action="settings">Personalizar Atlas</button><button class="secondary-button" data-action="refresh-atlas">↻ Actualizar Atlas</button><button class="secondary-button" data-action="intro-replay">Ver presentación</button><button class="secondary-button" data-action="toggle-contrast">${stored.settings.contrast ? "Desactivar" : "Activar"} alto contraste</button><button class="secondary-button" data-action="toggle-random">${stored.settings.randomShorts ? "Orden diario" : "Orden aleatorio"}</button><button class="secondary-button" data-action="toggle-only-new">${stored.settings.onlyNewShorts ? "Mostrar todos" : "Solo contenido nuevo"}</button></div></section>
-      <section class="section atlas-share-card"><img src="assets/images/atlas-public-qr.svg" alt="Código QR de la aplicación pública de Atlas"><div><span class="eyebrow">Lleva Atlas contigo</span><h2>Compartir e instalar</h2><p>Escanea el QR o comparte la dirección pública. En móvil puedes instalar Atlas en la pantalla de inicio como una aplicación.</p><code>${PUBLIC_APP_URL}</code><div class="button-row"><button class="primary-button" data-action="install-atlas">Añadir a inicio</button><button class="secondary-button" data-action="share-public-app">Compartir Atlas</button><button class="secondary-button" data-action="copy-public-link">Copiar enlace</button></div></div></section>
+      <section class="section atlas-share-card"><button class="atlas-qr-trigger" data-action="open-qr" aria-label="Ampliar el código QR a pantalla completa"><img src="assets/images/atlas-public-qr.svg" alt=""></button><div><span class="eyebrow">Lleva Atlas contigo</span><h2>Compartir e instalar</h2><p>Toca el QR para verlo a pantalla completa, escanéalo o comparte la dirección pública. En móvil puedes instalar Atlas en la pantalla de inicio como una aplicación.</p><code>${PUBLIC_APP_URL}</code><div class="button-row"><button class="primary-button" data-action="install-atlas">Añadir a inicio</button><button class="secondary-button" data-action="share-public-app">Compartir Atlas</button><button class="secondary-button" data-action="copy-public-link">Copiar enlace</button></div></div></section>
       <section class="section atlas-contact-card"><span>?</span><div><h2>Sugerencias y ayuda</h2><p>Cuéntanos un error, una fuente que falta o una idea para mejorar Atlas.</p><div class="button-row"><a class="secondary-button" href="mailto:pablonrg03@gmail.com?subject=Sugerencia%20para%20Atlas">pablonrg03@gmail.com</a><a class="secondary-button" href="tel:+34674979827">674 979 827</a></div></div></section>
       <section class="section"><div class="section-head"><div><h2>Datos locales</h2><p>Exporta una copia, impórtala o borra todo.</p></div></div><div class="button-row"><button class="secondary-button" data-action="export-data">Exportar</button><button class="secondary-button" data-action="import-data">Importar</button><button class="secondary-button" data-action="clear-data">Borrar</button><input id="import-file" type="file" accept=".json,application/json" hidden></div></section></section>`;
   }
@@ -772,7 +774,29 @@
   function closeShare() {
     shareLayer.hidden = true;
     sharePayload = null;
-    if (searchSheet.hidden && detailLayer.hidden) document.body.classList.remove("modal-open");
+    if (searchSheet.hidden && detailLayer.hidden && qrLayer?.hidden) document.body.classList.remove("modal-open");
+  }
+
+  function openQr(trigger) {
+    if (!qrLayer) return;
+    qrReturnFocus = trigger || document.activeElement;
+    qrLayer.hidden = false;
+    document.body.classList.add("modal-open");
+    requestAnimationFrame(() => {
+      qrLayer.classList.add("is-visible");
+      qrLayer.querySelector(".qr-dialog [data-action='close-qr']")?.focus();
+    });
+  }
+
+  function closeQr() {
+    if (!qrLayer || qrLayer.hidden) return;
+    qrLayer.classList.remove("is-visible");
+    setTimeout(() => {
+      qrLayer.hidden = true;
+      if (searchSheet.hidden && detailLayer.hidden && shareLayer.hidden && settingsLayer.hidden && tutorialLayer.hidden) document.body.classList.remove("modal-open");
+      if (qrReturnFocus?.isConnected) qrReturnFocus.focus();
+      qrReturnFocus = null;
+    }, 180);
   }
 
   function searchFilters() {
@@ -1019,6 +1043,8 @@
     const target = event.target.closest("button,a");
     if (!target) return;
     const action = target.dataset.action;
+    if (action === "open-qr") { event.preventDefault(); openQr(target); return; }
+    if (action === "close-qr") { event.preventDefault(); closeQr(); return; }
     if (target.dataset.nav === "discover" && ["discover", "short"].includes(route().name)) {
       event.preventDefault();
       A.reels.refresh();
@@ -1067,7 +1093,12 @@
     if (action === "refresh-atlas") { event.preventDefault(); refreshAtlas(target); }
     if (target.dataset.homeHide) { A.storage.setSetting(target.dataset.homeHide, false); renderRouteView(); toast("Bloque ocultado. Puedes recuperarlo en Personalización."); }
     if (action === "copy-public-link") { event.preventDefault(); await A.share.copy(PUBLIC_APP_URL); toast("Enlace público copiado."); }
-    if (action === "share-public-app") { event.preventDefault(); openShare({ title:"Atlas · Mercabá", text:"Atlas reúne bibliotecas, documentos, IA y recursos para estudiar y descubrir.", url:PUBLIC_APP_URL }); }
+    if (action === "share-public-app") {
+      event.preventDefault();
+      const payload = { title:"Atlas · Mercabá", text:"Atlas reúne bibliotecas, documentos, IA y recursos para estudiar y descubrir.", url:PUBLIC_APP_URL };
+      if (qrLayer && !qrLayer.hidden) { closeQr(); setTimeout(() => openShare(payload), 160); }
+      else openShare(payload);
+    }
     if (action === "install-atlas") {
       event.preventDefault();
       if (installPromptEvent) {
@@ -1235,7 +1266,17 @@
   });
 
   document.addEventListener("keydown", event => {
+    if (event.key === "Tab" && qrLayer && !qrLayer.hidden) {
+      const focusable = [...qrLayer.querySelectorAll("button:not([disabled]),a[href]")].filter(item => item.offsetParent !== null);
+      if (focusable.length) {
+        const first = focusable[0]; const last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      }
+      return;
+    }
     if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "k") { event.preventDefault(); openSearch(); }
+    if (event.key === "Escape" && qrLayer && !qrLayer.hidden) { event.preventDefault(); closeQr(); return; }
     if (event.key === "Escape") { closeSearch(); closeDetail(); closeShare(); closeSettings(); closeInfographic(); closeIaFilm(); if (!tutorialLayer.hidden) closeTutorial(); }
   });
 

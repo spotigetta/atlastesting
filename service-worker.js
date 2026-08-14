@@ -1,7 +1,7 @@
-const BUILD_VERSION = "5.8.0-diario-misas-notificaciones";
+const BUILD_VERSION = "5.9.0-cancionero-examen-corpus";
 const SHELL_CACHE = `atlas-shell-${BUILD_VERSION}`;
 const DATA_CACHE = `atlas-data-${BUILD_VERSION}`;
-const DOCUMENT_CACHE = "atlas-documents-v1";
+const DOCUMENT_CACHE = `atlas-documents-${BUILD_VERSION}`;
 
 const SHELL = [
   "./", "./index.html", "./offline.html", "./manifest.webmanifest",

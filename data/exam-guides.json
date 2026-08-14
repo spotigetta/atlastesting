@@ -1,62 +1,348 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "guides": [
     {
       "id": "recomenzar",
-      "title": "Volver a empezar",
-      "audience": "Para quien lleva tiempo sin examinarse o no sabe cómo hacerlo",
-      "introduction": "No intentes reconstruir toda tu vida en una noche. Mira el día de hoy delante de Dios: agradece un bien, reconoce con sencillez lo que necesita cambiar y elige un paso posible.",
+      "title": "Examen de conciencia: empezar desde cero",
+      "shortTitle": "Para empezar o volver",
+      "audience": "Para quien está alejado, no sabe cómo hacerlo o vuelve después de mucho tiempo",
+      "duration": "5–10 minutos",
+      "introduction": "No necesitas conocer fórmulas ni reconstruir toda tu vida de una vez. Empieza por hoy: ponte delante de Dios como estás, agradece el bien recibido, reconoce con sencillez lo que necesita cambiar y elige un paso posible.",
+      "useNote": "Esta plantilla enseña a mirar la vida con verdad y esperanza. No es una prueba, no exige responder a todo y no sustituye una conversación personal o la confesión.",
       "steps": [
-        {"title":"Párate","text":"Haz silencio durante medio minuto. No tienes que fabricar sentimientos ni encontrar palabras perfectas."},
-        {"title":"Agradece","text":"Nombra una persona, una ayuda, una alegría pequeña o algo bueno que hayas recibido hoy."},
-        {"title":"Pide luz","text":"Puedes decir sencillamente: «Señor, ayúdame a mirar este día con verdad y sin miedo»."},
-        {"title":"Mira lo concreto","text":"Repasa la mañana, la tarde y la noche. Detente solo en dos o tres hechos reales, no en impresiones vagas."},
-        {"title":"Reconoce y recomienza","text":"Si has fallado, llámalo por su nombre sin excusas y sin machacarte. Pide perdón y decide una reparación o un paso pequeño para mañana."}
+        {
+          "title": "Detente",
+          "text": "Busca unos minutos sin pantalla ni ruido. Respira despacio. No tienes que fabricar sentimientos ni encontrar palabras perfectas."
+        },
+        {
+          "title": "Ponte ante Dios",
+          "text": "Puedes decir sencillamente: «Señor, aquí estoy. Ayúdame a mirar este día con verdad, sin excusas y sin miedo»."
+        },
+        {
+          "title": "Empieza agradeciendo",
+          "text": "Nombra algo concreto: una persona, una ayuda, una oportunidad, una alegría pequeña o incluso una dificultad que te haya enseñado algo."
+        },
+        {
+          "title": "Repasa hechos reales",
+          "text": "Recorre mañana, tarde y noche. Quédate en momentos concretos: qué hiciste, qué evitaste, cómo hablaste y qué decidiste."
+        },
+        {
+          "title": "Mira también el corazón",
+          "text": "Pregúntate qué buscabas: amar, servir y cumplir tu deber, o proteger tu comodidad, tu imagen, tu orgullo o tu miedo."
+        },
+        {
+          "title": "Reconoce y repara",
+          "text": "Si has fallado, llámalo por su nombre sin justificarte ni machacarte. Piensa si debes pedir perdón, devolver algo, aclarar una mentira o cumplir una obligación."
+        },
+        {
+          "title": "Termina con un paso",
+          "text": "Pide perdón y formula una decisión pequeña, positiva y comprobable para mañana. Un solo paso verdadero vale más que muchas promesas vagas."
+        }
       ],
-      "questions": [
-        "¿Qué bien concreto he recibido hoy?",
-        "¿A quién he tratado con cariño y a quién podría haber tratado mejor?",
-        "¿He dicho la verdad y cumplido mi palabra?",
-        "¿He pedido perdón cuando era necesario?",
-        "¿He cuidado mis deberes o he escapado de ellos?",
-        "¿Qué me ha quitado la paz y cómo he respondido?",
-        "¿He dejado algún momento para Dios?",
-        "¿Hay algo que convenga llevar a la confesión?",
-        "¿Qué única cosa concreta quiero intentar mañana?"
+      "starterTitle": "Plantilla esencial para esta noche",
+      "starterIntroduction": "Si no sabes por dónde empezar, recorre solo estas diez preguntas. Detente en las dos o tres que de verdad te interpelen.",
+      "starterQuestions": [
+        "¿Qué bien concreto he recibido hoy y a quién debo agradecérselo?",
+        "¿Cuál ha sido el momento más verdadero del día?",
+        "¿Qué situación he evitado porque me daba miedo, pereza o vergüenza?",
+        "¿A quién he tratado con cariño y a quién no he tratado como merecía?",
+        "¿He sido sincero o he ocultado, exagerado o puesto excusas?",
+        "¿He cumplido mis responsabilidades o he dejado que otro cargara con ellas?",
+        "¿Qué ha mandado hoy en mí: el amor, la comodidad, el enfado, la necesidad de agradar o el miedo?",
+        "¿He dejado algún espacio real para Dios o he vivido como si no existiera?",
+        "¿Debo pedir perdón, reparar un daño o aclarar algo mañana?",
+        "¿Cuál es el paso más pequeño y concreto que puedo dar al levantarme?"
       ],
-      "closing": "Termina con un acto de contrición o con tus propias palabras. Un examen sincero conduce a la esperanza, no al desánimo."
+      "sections": [
+        {
+          "id": "ante-dios",
+          "title": "Ante Dios, sin máscaras",
+          "introduction": "No busques una emoción especial. Mira con sencillez cómo has vivido tu relación con Dios.",
+          "questions": [
+            "¿He pensado alguna vez hoy que mi vida es un don y no solo algo que tengo que soportar o controlar?",
+            "¿He acudido a Dios con mis palabras, aunque fueran pocas y torpes?",
+            "¿He evitado el silencio porque temía encontrarme conmigo mismo o con Dios?",
+            "¿Me he acordado de Dios solo para pedir una solución o también para agradecer y escuchar?",
+            "¿Hay algo que no quiero poner delante de Dios porque prefiero seguir justificándolo?",
+            "¿Estoy dispuesto a dejarme ayudar o sigo aplazando indefinidamente el primer paso?"
+          ]
+        },
+        {
+          "id": "verdad-personal",
+          "title": "La verdad sobre mí",
+          "introduction": "Mira tus decisiones y también los motivos que las movieron.",
+          "questions": [
+            "¿En qué momento he sabido lo que debía hacer y he elegido lo contrario?",
+            "¿He culpado a otros de una decisión que en realidad fue mía?",
+            "¿He mentido, exagerado, fingido o contado solo la parte que me favorecía?",
+            "¿He actuado para hacer el bien o principalmente para que me vieran y aprobaran?",
+            "¿Qué crítica me ha dolido porque contenía una verdad que no quería escuchar?",
+            "¿He confundido «no puedo» con «no quiero hacer el esfuerzo»?",
+            "¿Qué costumbre me está quitando libertad y sigo llamando inofensiva?"
+          ]
+        },
+        {
+          "id": "personas",
+          "title": "Personas concretas",
+          "introduction": "Pon nombres y escenas; evita respuestas generales como «soy buena persona» o «todo fue normal».",
+          "questions": [
+            "¿He escuchado a alguien sin preparar mi respuesta mientras hablaba?",
+            "¿He ridiculizado, ignorado o rebajado a alguien, también con bromas o ironías?",
+            "¿He hablado de una persona de un modo que no usaría si estuviera delante?",
+            "¿He utilizado el cansancio como permiso para tratar mal a quienes tengo cerca?",
+            "¿He sido agradecido con quien me sirve, me cuida o soporta mis defectos?",
+            "¿He dejado solo a alguien que necesitaba una llamada, una visita o unos minutos de atención?",
+            "¿He respetado la libertad y los límites de los demás o he intentado controlarlos?"
+          ]
+        },
+        {
+          "id": "deberes-justicia",
+          "title": "Deberes, trabajo y justicia",
+          "introduction": "Revisa aquello que otros podían esperar legítimamente de ti.",
+          "questions": [
+            "¿He cumplido lo que prometí o confié en que nadie lo recordaría?",
+            "¿He trabajado o estudiado con honradez, sin engañar ni apropiarme del esfuerzo ajeno?",
+            "¿He perdido tiempo de manera consciente mientras otro esperaba mi trabajo?",
+            "¿He cuidado el dinero y las cosas, especialmente las que no eran mías?",
+            "¿He sido justo con quien depende de mí o he abusado de mi posición, experiencia o autoridad?",
+            "¿Hay una deuda, devolución, respuesta o trámite que sigo dejando sin una razón seria?"
+          ]
+        },
+        {
+          "id": "afectos-cuerpo-digital",
+          "title": "Afectos, cuerpo y vida digital",
+          "introduction": "Mira con franqueza cómo buscas alivio, placer, compañía y reconocimiento.",
+          "questions": [
+            "¿He usado el móvil para escapar de una conversación, una obligación o un malestar que debía afrontar?",
+            "¿Qué contenido he buscado o consumido y qué ha dejado después en mi interior?",
+            "¿He mirado o tratado a alguien como un objeto, también a través de una pantalla?",
+            "¿He respetado mi cuerpo y el de los demás en mis decisiones, palabras y relaciones?",
+            "¿He comido, bebido, comprado o navegado sin medida para tapar tristeza, ansiedad, aburrimiento o soledad?",
+            "¿He alimentado una relación ambigua, desleal o secreta que puede herir a alguien?",
+            "¿He cuidado el descanso necesario o he llevado voluntariamente mi cansancio a quienes me rodean?"
+          ]
+        },
+        {
+          "id": "heridas-perdon",
+          "title": "Heridas, perdón y reparación",
+          "introduction": "Perdonar no niega el daño. Pregúntate qué puedes hacer hoy sin forzar procesos que necesitan tiempo o ayuda.",
+          "questions": [
+            "¿Qué resentimiento he vuelto a alimentar mediante recuerdos, fantasías o conversaciones?",
+            "¿He usado una herida real como permiso permanente para herir a otros?",
+            "¿He pedido perdón con claridad o he dicho «lo siento si te molestó» para no reconocer mi responsabilidad?",
+            "¿He reparado el daño posible o me he conformado con sentirme mal?",
+            "¿Necesito pedir ayuda para afrontar algo que me supera en vez de seguir escondiéndolo?",
+            "¿Puedo dar hoy un paso hacia el perdón sin negar la verdad ni abandonar límites necesarios?"
+          ]
+        },
+        {
+          "id": "bien-recibido",
+          "title": "El bien que sí ocurrió",
+          "introduction": "El examen no consiste solo en buscar fallos. Reconoce la gracia, la ayuda y las respuestas buenas.",
+          "questions": [
+            "¿Dónde he sido más paciente, valiente o generoso de lo habitual?",
+            "¿Qué persona me ha ayudado hoy y cómo puedo agradecérselo?",
+            "¿Qué dificultad he afrontado mejor que otras veces?",
+            "¿Qué belleza, alegría o descanso he recibido sin haberlo merecido ni fabricado?",
+            "¿Qué deseo bueno ha aparecido hoy y conviene cuidar?"
+          ]
+        },
+        {
+          "id": "paso-manana",
+          "title": "Mañana: un paso posible",
+          "introduction": "Cierra el examen con una decisión sencilla y una esperanza concreta.",
+          "questions": [
+            "¿Qué conversación concreta no debo seguir aplazando?",
+            "¿Qué obligación puedo dejar preparada esta noche?",
+            "¿A quién voy a pedir perdón, dar las gracias o prestar atención?",
+            "¿Cuándo y dónde reservaré un momento para Dios?",
+            "¿Qué ayuda humana o espiritual necesito pedir mañana?"
+          ]
+        }
+      ],
+      "closing": "Termina con un acto de contrición o con tus propias palabras. La sinceridad no termina en culpa: abre al perdón, a la reparación y a un comienzo real."
     },
     {
       "id": "cotidiano",
-      "title": "Examen cotidiano",
-      "audience": "Para quien ya tiene práctica y desea una mirada franca, íntima y diaria",
-      "introduction": "Habla con Dios desde la filiación: sin generalidades, sin convertir el examen en estadística y sin esconder el punto concreto donde hoy pide una respuesta.",
+      "title": "Examen de conciencia habitual: ir a la raíz",
+      "shortTitle": "Para quien ya se examina",
+      "audience": "Para quien hace examen habitualmente y desea una mirada más íntima, franca y ascética",
+      "duration": "10–15 minutos",
+      "introduction": "Habla con Dios desde la filiación: sin generalidades, sin convertir el examen en estadística y sin esconder el punto concreto donde hoy pide una respuesta. Mira acciones, omisiones, afectos e intenciones.",
+      "useNote": "No recorras el banco entero cada noche. Alterna ámbitos, detente donde haya luz y evita alimentar escrúpulos: el fruto esperado es más amor, sinceridad, reparación y paz.",
       "steps": [
-        {"title":"Presencia y gratitud","text":"Reconoce que estás delante de tu Padre y agradece dones concretos, también los que llegaron envueltos en dificultad."},
-        {"title":"Luz sobre el día","text":"Pide ver motivos, omisiones y afectos; no solo conductas externas."},
-        {"title":"Franqueza","text":"Llama a cada cosa por su nombre: dónde hubo amor, dónde amor propio, dónde cobardía, dónde generosidad."},
-        {"title":"Contrición filial","text":"El dolor nace del amor y abre a recomenzar. Evita tanto justificarte como mirarte con dureza estéril."},
-        {"title":"Propósito verificable","text":"Formula un propósito pequeño, positivo y unido a una situación concreta de mañana."}
+        {
+          "title": "Presencia filial",
+          "text": "Sitúate ante Dios Padre. No entras en un tribunal ni en una auditoría de rendimiento: vuelves a una relación de amor y verdad."
+        },
+        {
+          "title": "Gratitud concreta",
+          "text": "Agradece personas, luces, trabajos, cruces y ayudas precisas. La gratitud impide que el examen se reduzca a mirarte a ti mismo."
+        },
+        {
+          "title": "Luz sobre los motivos",
+          "text": "Pide ver no solo qué hiciste, sino por qué: amor de Dios y de los demás, vanidad, comodidad, temor, sensualidad, orgullo o generosidad."
+        },
+        {
+          "title": "Franqueza sin dramatismo",
+          "text": "Llama a cada cosa por su nombre. Evita tanto la excusa elegante como la dureza estéril. Distingue una caída, una omisión y una dificultad no consentida."
+        },
+        {
+          "title": "Contrición y reparación",
+          "text": "Pide perdón desde el amor. Decide cómo repararás una palabra, una pérdida de tiempo, una deslealtad, una deuda o una falta de servicio."
+        },
+        {
+          "title": "Un propósito verificable",
+          "text": "Elige una acción positiva, pequeña y situada: qué harás, con quién, en qué momento y qué obstáculo vas a prevenir."
+        }
       ],
-      "questions": [
-        "¿He buscado de verdad la voluntad de Dios o que las cosas salieran a mi gusto?",
-        "¿Dónde he vivido hoy la presencia de Dios?",
-        "¿Cómo he cuidado la oración, la Misa y los momentos de recogimiento?",
-        "¿He santificado el trabajo con orden, intensidad y servicio?",
-        "¿He perdido el tiempo o he dejado lo importante para después?",
-        "¿He sido leal en pensamientos, palabras y silencios?",
-        "¿He juzgado interiormente, murmurado o herido con ironía?",
-        "¿He escuchado de verdad a los demás?",
-        "¿He sabido ceder sin abandonar la verdad?",
-        "¿He vivido la pureza de corazón y la templanza?",
-        "¿He cuidado las cosas pequeñas cuando nadie miraba?",
-        "¿Qué contrariedad ha revelado hoy mi disposición interior?",
-        "¿He pedido ayuda con sencillez cuando la necesitaba?",
-        "¿A quién me está invitando Dios a servir o acercar a Él?",
-        "¿Qué reparación concreta debo hacer?",
-        "¿Cuál es el punto preciso de mi lucha para mañana?"
+      "starterTitle": "Plantilla diaria de raíz",
+      "starterIntroduction": "Diez preguntas para un examen habitual breve pero hondo. Si una de ellas da luz suficiente, no hace falta forzar las demás.",
+      "starterQuestions": [
+        "¿Qué don concreto de Dios he reconocido hoy y cómo he respondido?",
+        "¿En qué momento he estado más cerca de Cristo y en cuál he vivido de espaldas a Él?",
+        "¿He rezado de verdad o me he limitado a cubrir un tiempo?",
+        "¿Qué intención menos limpia se ha mezclado hoy con una acción aparentemente buena?",
+        "¿A quién he llevado paz y a quién he hecho más difícil el día?",
+        "¿Qué contrariedad ha revelado mi orgullo, mi comodidad o mi falta de abandono?",
+        "¿Dónde he sido cobarde, desleal o poco sincero?",
+        "¿Qué gracia, corrección o petición de ayuda he dejado pasar?",
+        "¿Qué debo reparar antes de que termine mañana?",
+        "¿Cuál es el punto único, concreto y comprobable de mi lucha para mañana?"
       ],
-      "closing": "Renueva el propósito con confianza y déjalo en manos de Dios. Mañana no empieza desde cero: empieza desde la misericordia."
+      "sections": [
+        {
+          "id": "filiacion-gratitud",
+          "title": "Filiación, gratitud y abandono",
+          "introduction": "Mira si has vivido como hijo de Dios o como dueño ansioso y solitario de todo.",
+          "questions": [
+            "¿He recibido el día como un don o como un territorio que debía controlar?",
+            "¿He agradecido también lo ordinario o solo he reparado en lo que faltaba?",
+            "¿Qué preocupación he entregado a Dios y cuál he rumiado sin confiar?",
+            "¿He aceptado con paz no ser imprescindible, no saberlo todo o no tener la última palabra?",
+            "¿He reconocido una llamada de Dios dentro de una contrariedad concreta?",
+            "¿Mi alegría de hoy ha nacido de saberse querido o de que otros confirmaran mi valor?"
+          ]
+        },
+        {
+          "id": "oracion-sacramentos",
+          "title": "Oración y sacramentos",
+          "introduction": "Revisa calidad de presencia y correspondencia, no solo cumplimiento exterior.",
+          "questions": [
+            "¿He protegido el tiempo de oración o lo he cedido a la primera urgencia evitable?",
+            "¿He hablado con Dios de lo que realmente me ocupa o he mantenido una conversación paralela y superficial?",
+            "¿He perseverado en la sequedad o he buscado sentir antes que amar?",
+            "¿He preparado y vivido la Misa con atención, fe y acción de gracias?",
+            "¿He acudido a la Palabra de Dios para escuchar o solo para confirmar lo que ya pensaba?",
+            "¿He convertido alguna norma de piedad en rutina sin afecto ni lucha por recomenzar?"
+          ]
+        },
+        {
+          "id": "intenciones-interior",
+          "title": "Intenciones y vida interior",
+          "introduction": "Baja de la conducta visible a aquello que has consentido, buscado o alimentado por dentro.",
+          "questions": [
+            "¿Dónde he buscado que me vieran, me felicitaran o reconocieran mi sacrificio?",
+            "¿He defendido la verdad o, en realidad, mi orgullo y mi necesidad de vencer?",
+            "¿Qué juicio interior he mantenido aunque externamente guardara silencio?",
+            "¿He saboreado la comparación, la envidia o el fracaso ajeno?",
+            "¿He disfrazado de prudencia una comodidad o de caridad una falta de valentía?",
+            "¿Qué apego ha reducido hoy mi libertad para escuchar a Dios?"
+          ]
+        },
+        {
+          "id": "trabajo-orden",
+          "title": "Trabajo, estudio y orden",
+          "introduction": "Pregunta si tu tarea ha sido ofrenda y servicio, no solo producción o refugio.",
+          "questions": [
+            "¿He comenzado por lo importante o por lo que me resultaba más agradable?",
+            "¿He trabajado con intensidad cuando nadie podía comprobarlo?",
+            "¿He cuidado los detalles necesarios sin caer en perfeccionismo que retrasa o agota a otros?",
+            "¿He usado el trabajo para servir o para evitar personas, oración, familia o descanso?",
+            "¿He respetado tiempos, compromisos y bienes ajenos?",
+            "¿Qué pérdida de tiempo concreta debo prevenir mañana y cómo lo haré?"
+          ]
+        },
+        {
+          "id": "caridad-relaciones",
+          "title": "Caridad, familia y amistad",
+          "introduction": "Pon delante de Dios rostros concretos, especialmente los más próximos y los menos fáciles.",
+          "questions": [
+            "¿He escuchado hasta el final o he usado la conversación para volver a hablar de mí?",
+            "¿He herido con impaciencia, indiferencia, ironía o una corrección innecesariamente dura?",
+            "¿He hablado de ausentes sin necesidad o sin el respeto que habría tenido delante de ellos?",
+            "¿A quién he evitado porque sus necesidades podían alterar mis planes?",
+            "¿He dado por supuesto el servicio y el cariño de quienes conviven conmigo?",
+            "¿He sabido pedir perdón sin explicar inmediatamente por qué yo también tenía razón?"
+          ]
+        },
+        {
+          "id": "templanza-pureza-digital",
+          "title": "Templanza, pureza y vida digital",
+          "introduction": "Mira el uso de los sentidos, el tiempo, el cuerpo y los afectos con verdad y sin vaguedades.",
+          "questions": [
+            "¿He buscado imágenes, conversaciones o fantasías que dañan la limpieza del corazón?",
+            "¿He mirado a una persona como alguien a quien amar o como alguien de quien obtener placer, atención o validación?",
+            "¿He puesto límites concretos al móvil o he obedecido cada impulso de consultarlo?",
+            "¿He usado comida, bebida, compras, series o redes para no afrontar un vacío interior?",
+            "¿He sido leal en mis afectos, mensajes, confidencias y límites?",
+            "¿He cuidado sueño, ejercicio y salud con equilibrio, sin culto al cuerpo ni abandono?"
+          ]
+        },
+        {
+          "id": "libertad-pobreza-descanso",
+          "title": "Libertad, sobriedad y descanso",
+          "introduction": "Examina cómo usas las cosas y cómo aceptas necesitar a otros.",
+          "questions": [
+            "¿Qué objeto, comodidad, plan o preferencia me ha costado demasiado soltar?",
+            "¿He comprado por necesidad real o para compensar cansancio, comparación o deseo de imagen?",
+            "¿He cuidado las cosas comunes como propias y las propias sin apego?",
+            "¿He sabido descansar o he convertido el ocio en dispersión que me deja más vacío?",
+            "¿He aceptado ayuda con humildad o he preferido sobrecargarme para sentirme autosuficiente?",
+            "¿He respetado el descanso de los demás y contribuido a un ambiente de paz?"
+          ]
+        },
+        {
+          "id": "servicio-apostolado",
+          "title": "Servicio y apostolado",
+          "introduction": "Mira si tu interés por los demás ha sido personal, libre y sostenido por la oración.",
+          "questions": [
+            "¿Por quién he rezado hoy con nombre y situación concretos?",
+            "¿He mostrado interés real por una persona o solo por que aceptara mis ideas?",
+            "¿He dejado de hablar de Dios por respeto a la libertad o por miedo a quedar mal?",
+            "¿He sabido proponer sin presionar y acompañar sin controlar?",
+            "¿He servido en tareas ocultas o he elegido las que daban más visibilidad?",
+            "¿Qué persona espera de mí una llamada, una invitación o un gesto sencillo?"
+          ]
+        },
+        {
+          "id": "lucha-ascetica",
+          "title": "Lucha ascética y normas de vida",
+          "introduction": "Concreta la lucha sin reducirla a una contabilidad ni esconderla en buenas intenciones.",
+          "questions": [
+            "¿He cumplido mis normas con puntualidad y amor o las he desplazado según el estado de ánimo?",
+            "¿He recomenzado pronto después de una omisión o he dejado que una caída arrastrara el resto del día?",
+            "¿Mi mortificación ha sido razonable, oculta y orientada al amor, o rígida y centrada en mí?",
+            "¿He cuidado el examen particular o lo he formulado de modo tan vago que no podía comprobarlo?",
+            "¿He ofrecido el cansancio y la contradicción o los he convertido en mal humor para otros?",
+            "¿He buscado formación y consejo donde sé que tengo una carencia concreta?"
+          ]
+        },
+        {
+          "id": "sinceridad-reparacion",
+          "title": "Sinceridad, reparación y propósito",
+          "introduction": "Termina nombrando el punto real, la reparación debida y la ayuda que vas a pedir.",
+          "questions": [
+            "¿Qué estoy evitando contar por vergüenza, orgullo o deseo de conservar una doble vida?",
+            "¿He sido claro en la dirección espiritual o he presentado una versión cuidadosamente favorable?",
+            "¿Qué palabra, omisión, pérdida o daño concreto debo reparar?",
+            "¿Hay una ocasión de caída que puedo apartar hoy en vez de confiar solo en mi fuerza mañana?",
+            "¿Mi propósito responde al punto que más me cuesta o al que resulta más cómodo revisar?",
+            "¿Qué gracia concreta pido para mañana y qué medio humano pondré de mi parte?"
+          ]
+        }
+      ],
+      "closing": "Renueva el propósito con confianza y déjalo en manos de Dios. La lucha cristiana no consiste en no necesitar misericordia, sino en recibirla, levantarse y amar de nuevo."
     }
   ]
 }

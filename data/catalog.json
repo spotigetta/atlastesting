@@ -1,8 +1,8 @@
 {
   "meta": {
     "app": "ATLAS",
-    "dataVersion": "5.8.0",
-    "generatedAt": "2026-08-13T12:00:00.000Z",
+    "dataVersion": "5.9.0",
+    "generatedAt": "2026-08-14T12:00:00.000Z",
     "source": "Once bibliotecas documentales, incluida Vida de los Santos",
     "documents": 1361,
     "words": 121629509
@@ -22247,7 +22247,7 @@
     },
     {
       "id": "preparadora-circulos",
-      "folder": "10_IA_Preparadora_Circulos",
+      "folder": "10_IA_Preparador_de_Círculos",
       "short": "Preparadora de círculos",
       "mark": "PC",
       "tone": "olive",
@@ -44329,6 +44329,18 @@
       ]
     },
     "changelog": [
+      {
+        "version": "5.9.0",
+        "date": "2026-08-14",
+        "title": "Lectura, examen y corpus editorial",
+        "changes": [
+          "Cancionero con letras completas de dominio público y acceso oficial para repertorio protegido",
+          "Código QR ampliable a pantalla completa, accesible y compartible",
+          "Dos tutoriales de examen con plantillas esenciales y un banco amplio de preguntas concretas",
+          "Revisión reproducible de los 1.407 documentos Markdown, con copia íntegra previa y validación semántica",
+          "Sincronización de los documentos normalizados con el lector de la PWA"
+        ]
+      },
       {
         "version": "5.8.0",
         "date": "2026-08-13",

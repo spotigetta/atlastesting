@@ -1,8 +1,8 @@
 {
   "app": "ATLAS",
-  "version": "5.8.0",
-  "buildId": "5.8.0-diario-misas-notificaciones",
-  "generatedAt": "2026-08-13T12:00:00.000Z",
+  "version": "5.9.0",
+  "buildId": "5.9.0-cancionero-examen-corpus",
+  "generatedAt": "2026-08-14T12:00:00.000Z",
   "basePath": "./",
   "catalog": "data/catalog.json"
 }
