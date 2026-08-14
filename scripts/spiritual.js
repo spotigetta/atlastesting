@@ -8,6 +8,7 @@
   const routes = () => window.ATLAS_SAINTS_ROUTES?.routes || [];
   const timelines = () => window.ATLAS_SAINTS_TIMELINES?.timelines || [];
   const josemariaExperiences = () => window.ATLAS_JOSEMARIA_EXPERIENCES?.experiences || [];
+  const gospelMeditations = () => window.ATLAS_GOSPEL_MEDITATIONS || { themes: [], meditations: [] };
 
   const windows1252 = { "€":128,"‚":130,"ƒ":131,"„":132,"…":133,"†":134,"‡":135,"ˆ":136,"‰":137,"Š":138,"‹":139,"Œ":140,"Ž":142,"‘":145,"’":146,"“":147,"”":148,"•":149,"–":150,"—":151,"˜":152,"™":153,"š":154,"›":155,"œ":156,"ž":158,"Ÿ":159 };
   function repairEncoding(value) {
@@ -38,7 +39,7 @@
   }
 
   function shell(active, body) {
-    const items = [["","Inicio"],["saints","Cómo vivieron"],["timeline","Cronología"],["routes","Rutas de santos"],["confession","Confesión"],["mass","La Misa"],["songbook","Cancionero"],["escriva","escriva.org"]];
+    const items = [["","Inicio"],["saints","Cómo vivieron"],["timeline","Cronología"],["routes","Rutas de santos"],["gospel","Evangelio"],["confession","Confesión"],["mass","La Misa"],["songbook","Cancionero"],["escriva","escriva.org"]];
     return `<div class="spiritual-space"><header class="spiritual-header"><a href="#/spiritual" class="spiritual-mark">✦</a><div><span class="eyebrow">Atlas · vida espiritual</span><h1>Aprender desde vidas y fuentes.</h1></div></header><nav class="spiritual-nav">${items.map(([id,label]) => `<a class="${active === id ? "active" : ""}" href="#/spiritual${id ? `/${id}` : ""}">${esc(label)}</a>`).join("")}</nav>${body}</div>`;
   }
 
@@ -52,6 +53,7 @@
       ["songbook","Cancionero católico","Cantos por momento, tradición e idioma","Repertorio moderno, tradicional y latino con fuentes responsables."],
       ["escriva","escriva.org","Obras y búsqueda temática","Acceso ordenado a la fuente oficial de san Josemaría."],
       ["routes","Rutas espirituales","Oración, conversión, fortaleza y caridad","Recorridos por santos, textos y preguntas para el estudio personal."]
+      ,["gospel","Medita el Evangelio para…","Tristeza, oración, fiat, confianza y prueba","Escenas del Evangelio para iluminar lo que vives, desde la serie oficial del Opus Dei."]
       ,["timeline","Vidas en el tiempo",`${timelines().length} biografías con hechos fechados`,"Compara varias vidas a la vez o recorre la cronología de un santo."]
     ];
     return shell("", `<main class="page spiritual-home"><section class="spiritual-hero"><span>Una pregunta humana</span><h2>¿Cómo lo vivieron quienes caminaron antes?</h2><p>Atlas no convierte el sufrimiento en una frase fácil: abre pasajes concretos, conserva su procedencia y permite leerlos en la biografía completa.</p><a class="primary-button" href="#/spiritual/saints">Encontrar una experiencia</a></section><div class="spiritual-card-grid">${cards.map(([id,title,meta,text],index) => `<a class="spiritual-card spiritual-card-${index + 1}" href="#/spiritual/${id}"><i>${String(index + 1).padStart(2,"0")}</i><span class="eyebrow">${esc(meta)}</span><h3>${esc(title)}</h3><p>${esc(text)}</p><b>Abrir →</b></a>`).join("")}</div></main>`);
@@ -131,6 +133,21 @@
     return shell("routes", `<main class="page saints-routes"><header><span class="eyebrow">Recorridos guiados</span><h2>Rutas espirituales entre santos.</h2><p>Cada etapa enlaza una vida o una fuente concreta y propone una pregunta para continuar.</p></header><div class="route-grid">${items.map(route => { const steps=route.steps || route.stages || []; return `<article class="route-card"><span class="eyebrow">${steps.length} etapas</span><h3>${esc(route.title)}</h3><p>${esc(route.description || "")}</p><ol>${steps.map(step => { const id=step.documentId || step.sourceDocumentId; return `<li>${id ? `<a href="#/reader/${encodeURIComponent(id)}${step.sourceLocator?.queries?.[0] ? `?q=${encodeURIComponent(step.sourceLocator.queries[0])}` : ""}"><b>${esc(step.saint || step.title)}</b><small>${esc(step.reflectionQuestion || step.question || step.intro || step.text || "Abrir biografía")}</small></a>` : `<span><b>${esc(step.saint || step.title)}</b><small>${esc(step.reflectionQuestion || step.question || step.text || "")}</small></span>`}</li>`; }).join("")}</ol></article>`; }).join("") || root.library.empty("Las rutas se están preparando", "Los pasajes seguirán disponibles por experiencia.")}</div></main>`);
   }
 
+  function gospelPage(route) {
+    const data = gospelMeditations();
+    const selected = route.query.get("theme") || "all";
+    const query = (route.query.get("q") || "").trim().toLocaleLowerCase("es");
+    const items = (data.meditations || []).filter(item =>
+      (selected === "all" || item.categoryIds?.includes(selected)) &&
+      (!query || `${item.title} ${item.description}`.toLocaleLowerCase("es").includes(query))
+    );
+    const today = new Date().toISOString().slice(0, 10);
+    const daily = (window.ATLAS_OPUSDEI_MEDITATIONS?.records || []).find(item => item.date === today);
+    const filters = (data.themes || []).map(theme => `<a class="${selected === theme.id ? "active" : ""}" href="#/spiritual/gospel?theme=${encodeURIComponent(theme.id)}"><i>${esc(theme.icon)}</i><span>${esc(theme.label)}</span><small>${theme.count || 0}</small></a>`).join("");
+    const cards = items.map(item => `<article class="gospel-card">${item.image ? `<div class="gospel-card-image" style="background-image:url('${esc(item.image)}')"></div>` : ""}<div><span class="eyebrow">${esc((item.categoryIds || []).map(id => data.themes?.find(theme => theme.id === id)?.label).filter(Boolean).slice(0, 3).join(" · "))}</span><h3>${esc(item.title)}</h3><p>${esc(item.description)}</p><a class="primary-button" href="${esc(item.url)}" target="_blank" rel="noopener">Meditar en Opus Dei ↗</a></div></article>`).join("");
+    return shell("gospel", `<main class="page gospel-meditations"><header class="gospel-hero"><span class="eyebrow">Evangelio contemplado · fuente oficial</span><h2>Medita el Evangelio para…</h2><p>Elige lo que estás viviendo. Atlas te conduce a una escena evangélica y conserva el enlace a la meditación completa del Opus Dei.</p>${daily ? `<a class="gospel-today" href="${esc(daily.officialUrl || daily.url)}" target="_blank" rel="noopener"><span>Hoy · ${esc(today)}</span><b>${esc(daily.title || "Meditación del Evangelio del día")}</b><small>Abrir en la fuente oficial ↗</small></a>` : ""}</header><form class="gospel-search" data-gospel-search><input type="search" name="q" value="${esc(route.query.get("q") || "")}" placeholder="Busca una escena, una dificultad, una persona…"><button>Buscar</button></form><div class="gospel-theme-grid"><a class="${selected === "all" ? "active" : ""}" href="#/spiritual/gospel"><i>∞</i><span>ver todas</span></a>${filters}</div><div class="gospel-card-grid">${cards || root.library.empty("No hay meditaciones con estos filtros", "Prueba otra experiencia o borra la búsqueda.")}</div><p class="guide-disclaimer">Atlas muestra título, resumen editorial y enlace; la meditación completa permanece en su fuente oficial.</p></main>`);
+  }
+
   function render(route) {
     const section = route.segments[1] || "";
     if (!section) return home();
@@ -144,6 +161,7 @@
     if (section === "escriva" && route.segments[2] === "interior") return josemariaInterior(decodeURIComponent(route.segments[3] || ""));
     if (section === "escriva") return escrivaPage();
     if (section === "routes") return routesPage();
+    if (section === "gospel") return gospelPage(route);
     return home();
   }
 
@@ -157,6 +175,12 @@
   document.addEventListener("change", event => {
     if(event.target.matches("[data-timeline-toggle]")){const ids=[...document.querySelectorAll("[data-timeline-toggle]:checked")].map(input=>input.value).slice(0,12);location.hash=`/spiritual/timeline${ids.length?`?saints=${encodeURIComponent(ids.join(","))}`:""}`;return}
     if (event.target.matches("[data-liturgical-explanation]")) document.querySelector(".guide-reading")?.classList.toggle("show-liturgical-explanations", event.target.checked);
+  });
+  document.addEventListener("submit", event => {
+    if (!event.target.matches("[data-gospel-search]")) return;
+    event.preventDefault();
+    const query = new FormData(event.target).get("q")?.trim() || "";
+    location.hash = `/spiritual/gospel${query ? `?q=${encodeURIComponent(query)}` : ""}`;
   });
 
   root.spiritual = { render };

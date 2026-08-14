@@ -20,7 +20,10 @@ async function main() {
   })).filter(item => item.title && item.pageUrl);
   if (!episodes.length) throw new Error("El RSS no devolvió episodios");
   const payload = { updatedAt: new Date().toISOString(), source: FEED, episodes };
-  await writeFile(OUTPUT, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+  const previous = JSON.parse(await readFile(OUTPUT, "utf8").catch(() => "null"));
+  const unchanged = previous && previous.source === FEED
+    && JSON.stringify(previous.episodes || []) === JSON.stringify(episodes);
+  if (!unchanged) await writeFile(OUTPUT, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
   console.log(`10 Minutos con Jesús: ${episodes.length} episodios actualizados.`);
 }
 

@@ -28,7 +28,10 @@ const payload = {
   records,
   stats: { total: records.length, reviewed: records.filter(item => item.status === "reviewed").length, pending: records.filter(item => item.status !== "reviewed").length }
 };
-await writeFile(join(root, "data", "opusdei-meditations.json"), `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+const serialized = `${JSON.stringify(payload, null, 2)}\n`;
+await writeFile(join(root, "data", "opusdei-meditations.json"), serialized, "utf8");
+await mkdir(join(root, "dist", "data"), { recursive: true });
+await writeFile(join(root, "dist", "data", "opusdei-meditations.json"), serialized, "utf8");
 const output = join(root, "content", "opusdei-meditations", String(year));
 await mkdir(output, { recursive: true });
 for (let month = 1; month <= 12; month += 1) {

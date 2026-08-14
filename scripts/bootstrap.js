@@ -4,7 +4,7 @@
   const main = document.querySelector("#main");
 
   try {
-    const [catalog, external, quotes, youtube, music, instagram, channels, exam, saintsMoods, spiritualGuides, songbook, saintsShorts, saintsRoutes, saintsTimelines, josemariaExperiences, examGuides, tenMinutes] = await Promise.all([
+    const [catalog, external, quotes, youtube, music, instagram, channels, exam, saintsMoods, spiritualGuides, songbook, saintsShorts, saintsRoutes, saintsTimelines, josemariaExperiences, examGuides, tenMinutes, gospelMeditations, opusdeiMeditations] = await Promise.all([
       runtime.fetchJson("data/catalog.json"),
       runtime.fetchJson("data/external-content.json").catch(() => ({ generatedAt: "", items: [] })),
       runtime.fetchJson("data/quotes.json").catch(() => ({ generatedAt: "", items: [] })),
@@ -21,7 +21,9 @@
       runtime.fetchJson("data/saints-timelines.json").catch(() => ({ timelines: [] })),
       runtime.fetchJson("data/josemaria-experiences.json").catch(() => ({ experiences: [] })),
       runtime.fetchJson("data/exam-guides.json").catch(() => ({ guides: [] })),
-      runtime.fetchJson("data/ten-minutes-daily.json", { fresh: true }).catch(() => ({ episodes: [] }))
+      runtime.fetchJson("data/ten-minutes-daily.json", { fresh: true }).catch(() => ({ episodes: [] })),
+      runtime.fetchJson("data/gospel-meditations.json", { fresh: true }).catch(() => ({ themes: [], meditations: [] })),
+      runtime.fetchJson("data/opusdei-meditations.json", { fresh: true }).catch(() => ({ records: [] }))
     ]);
 
     window.ATLAS_CATALOG = catalog;
@@ -41,6 +43,8 @@
     window.ATLAS_JOSEMARIA_EXPERIENCES = josemariaExperiences;
     window.ATLAS_EXAM_GUIDES = examGuides;
     window.ATLAS_TEN_MINUTES = tenMinutes;
+    window.ATLAS_GOSPEL_MEDITATIONS = gospelMeditations;
+    window.ATLAS_OPUSDEI_MEDITATIONS = opusdeiMeditations;
 
     const modules = [
       "scripts/storage.js",

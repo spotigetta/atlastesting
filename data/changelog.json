@@ -1,17 +1,22 @@
 {
-  "currentVersion": "5.9.0",
+  "currentVersion": "6.0.0",
   "updatedAt": "2026-08-14",
   "entries": [
     {
-      "version": "5.9.0",
+      "version": "6.0.0",
       "date": "2026-08-14",
-      "title": "Lectura, examen y corpus editorial",
+      "title": "Cronologías, Evangelio y actualización nocturna",
       "changes": [
         "Cancionero con letras completas de dominio público y acceso oficial para repertorio protegido",
         "Código QR ampliable a pantalla completa, accesible y compartible",
         "Dos tutoriales de examen con plantillas esenciales y un banco amplio de preguntas concretas",
         "Revisión reproducible de los 1.407 documentos Markdown, con copia íntegra previa y validación semántica",
-        "Sincronización de los documentos normalizados con el lector de la PWA"
+        "Sincronización de los documentos normalizados con el lector de la PWA",
+        "Cronologías verificadas: 123 vidas, 614 hechos y ninguna duración imposible",
+        "Meditaciones del Evangelio clasificadas por tristeza, oración, fiat, confianza y conversión",
+        "Actualización automática a las 00:01 de Madrid de 10 Minutos con Jesús, vídeos, música, noticias y lecturas",
+        "Portadas de las IA como fondo de tarjetas y fichas, también bajo GitHub Pages",
+        "Corrección móvil de Experiencias del Fundador y respeto de la orientación del dispositivo"
       ]
     },
     {

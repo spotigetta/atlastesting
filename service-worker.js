@@ -1,4 +1,4 @@
-const BUILD_VERSION = "5.9.0-cancionero-examen-corpus";
+const BUILD_VERSION = "6.0.0-cronologias-evangelio-nocturno";
 const SHELL_CACHE = `atlas-shell-${BUILD_VERSION}`;
 const DATA_CACHE = `atlas-data-${BUILD_VERSION}`;
 const DOCUMENT_CACHE = `atlas-documents-${BUILD_VERSION}`;
@@ -15,7 +15,7 @@ const SHELL = [
   "./scripts/compare.js", "./scripts/feed-mixer.js", "./scripts/reels.js",
   "./scripts/router.js", "./scripts/app.js",
   "./data/saints-moods.json", "./data/saints-shorts.json", "./data/saints-routes.json", "./data/saints-timelines.json",
-  "./data/spiritual-guides.json", "./data/songbook.json", "./data/josemaria-experiences.json", "./data/exam-guides.json", "./data/ten-minutes-daily.json",
+  "./data/spiritual-guides.json", "./data/songbook.json", "./data/josemaria-experiences.json", "./data/exam-guides.json", "./data/ten-minutes-daily.json", "./data/gospel-meditations.json", "./data/opusdei-meditations.json",
   "./assets/images/atlas-public-qr.svg",
   "./assets/images/libraries/bibliotecariaportada.webp", "./assets/images/libraries/canoniaportada.webp", "./assets/images/libraries/cinepilotportada.webp",
   "./assets/images/libraries/clasicosportada.webp", "./assets/images/libraries/historiaportada.webp", "./assets/images/libraries/liturgiaportada.webp",

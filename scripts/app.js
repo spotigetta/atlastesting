@@ -48,8 +48,12 @@
     canon:"canoniaportada.webp", history:"historiaportada.webp", liturgy:"liturgiaportada.webp",
     ortodoxia:"ortodoxiaportada.webp", cinepilot:"cinepilotportada.webp", bibliotecaria:"bibliotecariaportada.webp",
     clasicos:"clasicosportada.webp", "san-josemaria":"portadaSanJosemarIA.webp",
-    "preparadora-circulos":"preparadordecirculosportada.webp"
+    "preparadora-circulos":"preparadordecirculosportada.webp", "vida-santos":"santosportada.png"
   };
+  const libraryCoverUrl = library => libraryCovers[library?.id]
+    ? AtlasRuntime.url(`assets/images/libraries/${libraryCovers[library.id]}`)
+    : "";
+  A.libraryCoverUrl = libraryCoverUrl;
   const personalizationDefaults = {
     theme:"system", contrast:false,
     magnetEnabled:true, magnetStrength:34, magnetDelay:120, magnetDuration:300,
@@ -355,8 +359,8 @@
   function libraryCard(lib, index = 0, total = 1) {
     const guide = libraryGuides[lib.id];
     const settings=A.storage.get().settings; const hidden=settings.hiddenLibraries?.includes(lib.id);
-    const cover = libraryCovers[lib.id];
-    return `<article class="library-card tone-${lib.tone} ${hidden?"is-library-hidden":""} ${cover?"has-library-cover":"library-cover-symbolic"}" data-library="${lib.id}"${cover?` style="--library-cover:url('../assets/images/libraries/${cover}')"`:""}>
+    const cover = libraryCoverUrl(lib);
+    return `<article class="library-card tone-${lib.tone} ${hidden?"is-library-hidden":""} ${cover?"has-library-cover":"library-cover-symbolic"}" data-library="${lib.id}"${cover?` style="--library-cover:url('${cover}')"`:""}>
       <div class="library-top"><span class="library-mark">${lib.mark}</span><span class="eyebrow">${lib.stats.categories} categorías</span></div>
       <h3>${esc(lib.short)}</h3><p>${esc(lib.description)}</p>
       ${guide ? `<details class="library-purpose"><summary>¿Para qué sirve?</summary><p>${esc(guide.purpose)}</p><ul>${guide.examples.map(item => `<li>${esc(item)}</li>`).join("")}</ul><button class="text-button" data-open-infographic="${esc(guide.file)}" data-infographic-title="${esc(lib.short)}" data-infographic-tone="${esc(lib.tone)}">Ver infografía completa ↗</button></details>` : ""}

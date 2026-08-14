@@ -2,7 +2,12 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "update:ten-minutes": "node tools/update-ten-minutes.mjs"
+    "update:ten-minutes": "node tools/update-ten-minutes.mjs",
+    "update:daily-content": "node tools/refresh-daily-content.mjs",
+    "build:gospel-meditations": "node tools/build-gospel-meditations.mjs",
+    "build:saints-timelines": "node tools/generate-saints-timelines.mjs",
+    "audit:markdown": "python tools/normalize_markdown_corpus.py --dry-run",
+    "sync:markdown": "node tools/sync-normalized-markdown.mjs"
   },
   "devDependencies": {
     "@huggingface/transformers": "^3.7.2",

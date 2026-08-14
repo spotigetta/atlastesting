@@ -13,7 +13,8 @@
   function cover(library) {
     const settings=root.storage.get().settings; const pinned=settings.pinnedLibraries?.includes(library.id); const hidden=settings.hiddenLibraries?.includes(library.id);
     const tones=["amber","blue","clay","violet","emerald","rose","indigo","gold","cyan","olive","burgundy","slate"];
-    return `<section class="library-cover tone-${library.tone}" data-library="${library.id}">
+    const coverUrl=root.libraryCoverUrl?.(library)||"";
+    return `<section class="library-cover tone-${library.tone} ${coverUrl?"has-library-cover":""}" data-library="${library.id}"${coverUrl?` style="--library-cover:url('${coverUrl}')"`:""}>
       <div class="library-cover-inner library-cover-grid">
         <div>
           <div class="library-identity"><span class="library-mark">${library.mark}</span><div><span class="eyebrow">Biblioteca especializada</span><h1>${esc(library.short)}</h1></div></div>

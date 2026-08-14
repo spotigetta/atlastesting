@@ -2,27 +2,64 @@ name: Actualizar contenido diario
 
 on:
   schedule:
-    - cron: "17 */4 * * *"
+    # GitHub programa en UTC. Dos candidatas cubren 00:01 de Madrid tanto
+    # en verano (UTC+2) como en invierno (UTC+1); el paso TZ descarta la otra.
+    - cron: "1 22 * * *"
+    - cron: "1 23 * * *"
   workflow_dispatch:
 
 permissions:
   contents: write
 
+concurrency:
+  group: atlas-daily-content
+  cancel-in-progress: false
+
 jobs:
-  ten-minutes-with-jesus:
+  daily-content:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Actualizar 10 Minutos con Jesús
-        run: node tools/update-ten-minutes.mjs
-      - name: Publicar solo si hay cambios
+      - name: Comprobar medianoche en Europe/Madrid
+        id: madrid
+        shell: bash
+        env:
+          SCHEDULE: ${{ github.event.schedule }}
         run: |
-          if git diff --quiet -- data/ten-minutes-daily.json; then exit 0; fi
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "run=true" >> "$GITHUB_OUTPUT"; exit 0; fi
+          run=$(node -e 'const h=Number(process.env.SCHEDULE.split(" ")[1]); const n=new Date(), d=new Date(Date.UTC(n.getUTCFullYear(),n.getUTCMonth(),n.getUTCDate(),h,1)); process.stdout.write(new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Madrid",hour:"2-digit",hourCycle:"h23"}).format(d)==="00"?"true":"false")')
+          echo "run=$run" >> "$GITHUB_OUTPUT"
+      - name: Actualizar 10 Minutos con Jesús
+        if: steps.madrid.outputs.run == 'true'
+        continue-on-error: true
+        run: node tools/update-ten-minutes.mjs
+      - name: Actualizar vídeos, música y noticias
+        if: steps.madrid.outputs.run == 'true'
+        run: node tools/refresh-daily-content.mjs
+      - name: Regenerar meditaciones del Evangelio si está disponible
+        if: steps.madrid.outputs.run == 'true'
+        shell: bash
+        run: |
+          if [ -f tools/build-gospel-meditations.mjs ]; then node tools/build-gospel-meditations.mjs; fi
+      - name: Sincronizar 10 Minutos con Jesús en GitHub Pages
+        if: steps.madrid.outputs.run == 'true'
+        shell: bash
+        run: |
+          cp data/ten-minutes-daily.json dist/data/ten-minutes-daily.json
+          if [ -f data/gospel-meditations.json ]; then cp data/gospel-meditations.json dist/data/gospel-meditations.json; fi
+      - name: Publicar solo si hay cambios
+        if: steps.madrid.outputs.run == 'true'
+        shell: bash
+        run: |
+          git add data dist/data
+          if git diff --cached --quiet; then echo "No hay contenido nuevo."; exit 0; fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data/ten-minutes-daily.json
-          git commit -m "content: actualizar 10 Minutos con Jesús"
+          git commit -m "content: actualización diaria de Atlas"
           git push
