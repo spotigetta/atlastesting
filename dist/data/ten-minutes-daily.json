@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-08-14T22:23:50.526Z",
+  "updatedAt": "2026-08-16T22:21:44.553Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "16-08-2026 Casi todos somos perros - 10 Minutos con Jesús",
+      "publishedAt": "2026-08-16T00:09:41.000Z",
+      "description": "** Ponte en presencia de Dios. Trata de hablar con Él. ** 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. ** Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándot",
+      "pageUrl": "https://www.spreaker.com/episode/16-08-2026-casi-todos-somos-perros-10-minutos-con-jesus--74091831",
+      "audioUrl": "https://api.spreaker.com/download/episode/74091831/16_08_2026_casi_todos_somos_perros_10_minutos_mf_178974097_feed_1.mp3",
+      "duration": "676"
+    },
     {
       "title": "15-08-2026 El álbum de la Virgen - 10 Minutos con Jesús",
       "publishedAt": "2026-08-14T21:13:28.000Z",
@@ -153,14 +161,6 @@
       "pageUrl": "https://www.spreaker.com/episode/28-07-2026-hombre-no-angel-10-minutos-con-jesus--73220170",
       "audioUrl": "https://api.spreaker.com/download/episode/73220170/28_07_2026_hombre_no_angel_10_minutos_con_mf_178057346_feed_1.mp3",
       "duration": "630"
-    },
-    {
-      "title": "27-07-2026 Hazte levadura - 10 Minutos con Jesús",
-      "publishedAt": "2026-07-26T23:26:23.000Z",
-      "description": "** Ponte en presencia de Dios. Trata de hablar con Él. ** 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. ** Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándot",
-      "pageUrl": "https://www.spreaker.com/episode/27-07-2026-hazte-levadura-10-minutos-con-jesus--73185182",
-      "audioUrl": "https://api.spreaker.com/download/episode/73185182/27_07_2026_hazte_levadura_10_minutos_jesus_mf_177920787_feed_1.mp3",
-      "duration": "599"
     }
   ]
 }
