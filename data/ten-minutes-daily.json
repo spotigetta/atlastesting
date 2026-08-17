@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-08-16T22:21:44.553Z",
+  "updatedAt": "2026-08-17T22:25:22.088Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "17-08-2026 Chequeo al cumplimiento - 10 Minutos con Jesús",
+      "publishedAt": "2026-08-17T00:22:46.000Z",
+      "description": "** Ponte en presencia de Dios. Trata de hablar con Él. ** 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. ** Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándot",
+      "pageUrl": "https://www.spreaker.com/episode/17-08-2026-chequeo-al-cumplimiento-10-minutos-con-jesus--74164025",
+      "audioUrl": "https://api.spreaker.com/download/episode/74164025/17_08_2026_chequeo_al_cumplimiento_10_minutos_con_mf_179003755_feed_1.mp3",
+      "duration": "631"
+    },
     {
       "title": "16-08-2026 Casi todos somos perros - 10 Minutos con Jesús",
       "publishedAt": "2026-08-16T00:09:41.000Z",
@@ -153,14 +161,6 @@
       "pageUrl": "https://www.spreaker.com/episode/29-07-2026-expecto-patronum-10-minutos-con-jesus--73225162",
       "audioUrl": "https://api.spreaker.com/download/episode/73225162/29_07_2026_expecto_patronum_10_minutos_jesus_mf_178085906_feed_1.mp3",
       "duration": "656"
-    },
-    {
-      "title": "28-07-2026 Hombre, no ángel - 10 Minutos con Jesús",
-      "publishedAt": "2026-07-28T18:40:32.000Z",
-      "description": "** Ponte en presencia de Dios. Trata de hablar con Él. ** 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. ** Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándot",
-      "pageUrl": "https://www.spreaker.com/episode/28-07-2026-hombre-no-angel-10-minutos-con-jesus--73220170",
-      "audioUrl": "https://api.spreaker.com/download/episode/73220170/28_07_2026_hombre_no_angel_10_minutos_con_mf_178057346_feed_1.mp3",
-      "duration": "630"
     }
   ]
 }
