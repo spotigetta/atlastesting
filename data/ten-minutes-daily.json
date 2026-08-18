@@ -1,7 +1,15 @@
 {
-  "updatedAt": "2026-08-17T22:25:22.088Z",
+  "updatedAt": "2026-08-18T22:24:28.174Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "18-.08-2026 El Secreto de la Felicidad VI (100 X 1) - 10 Minutos con Jesús",
+      "publishedAt": "2026-08-17T23:16:54.000Z",
+      "description": "** Ponte en presencia de Dios. Trata de hablar con Él. ** 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. ** Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándot",
+      "pageUrl": "https://www.spreaker.com/episode/18-08-2026-el-secreto-de-la-felicidad-vi-100-x-1-10-minutos-con-jesus--74229166",
+      "audioUrl": "https://api.spreaker.com/download/episode/74229166/18_08_2026_el_secreto_felicidad_vi_100_mf_179051248_feed_1.mp3",
+      "duration": "680"
+    },
     {
       "title": "17-08-2026 Chequeo al cumplimiento - 10 Minutos con Jesús",
       "publishedAt": "2026-08-17T00:22:46.000Z",
@@ -153,14 +161,6 @@
       "pageUrl": "https://www.spreaker.com/episode/30-07-2026-llegar-al-aleluya-10-minutos-con-jesus--73252793",
       "audioUrl": "https://api.spreaker.com/download/episode/73252793/30_07_2026_llegar_al_aleluya_10_minutos_con_mf_178156705_feed_1.mp3",
       "duration": "618"
-    },
-    {
-      "title": "29-07-2026 Expecto Patronum! - 10 Minutos con Jesús",
-      "publishedAt": "2026-07-29T00:33:55.000Z",
-      "description": "** Ponte en presencia de Dios. Trata de hablar con Él. ** 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. ** Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándot",
-      "pageUrl": "https://www.spreaker.com/episode/29-07-2026-expecto-patronum-10-minutos-con-jesus--73225162",
-      "audioUrl": "https://api.spreaker.com/download/episode/73225162/29_07_2026_expecto_patronum_10_minutos_jesus_mf_178085906_feed_1.mp3",
-      "duration": "656"
     }
   ]
 }
