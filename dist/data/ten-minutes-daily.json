@@ -1,7 +1,23 @@
 {
-  "updatedAt": "2026-08-18T22:24:28.174Z",
+  "updatedAt": "2026-08-19T22:25:45.676Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "20-08-2026 Te invito a una fiesta - 10 Minutos con Jesús",
+      "publishedAt": "2026-08-19T22:03:30.000Z",
+      "description": "** Ponte en presencia de Dios. Trata de hablar con Él. ** 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. ** Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándot",
+      "pageUrl": "https://www.spreaker.com/episode/20-08-2026-te-invito-a-una-fiesta-10-minutos-con-jesus--74343594",
+      "audioUrl": "https://api.spreaker.com/download/episode/74343594/20_08_2026_te_invito_a_fiesta_10_mf_179217714_feed_1.mp3",
+      "duration": "631"
+    },
+    {
+      "title": "19-08-2026 La historia de Ángel de San José - 10 Minutos con Jesús",
+      "publishedAt": "2026-08-18T22:37:47.000Z",
+      "description": "** Ponte en presencia de Dios. Trata de hablar con Él. ** 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. ** Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándot",
+      "pageUrl": "https://www.spreaker.com/episode/19-08-2026-la-historia-de-angel-de-san-jose-10-minutos-con-jesus--74277502",
+      "audioUrl": "https://api.spreaker.com/download/episode/74277502/19_08_2026_la_historia_angel_san_jose_mf_179144311_feed_1.mp3",
+      "duration": "654"
+    },
     {
       "title": "18-.08-2026 El Secreto de la Felicidad VI (100 X 1) - 10 Minutos con Jesús",
       "publishedAt": "2026-08-17T23:16:54.000Z",
@@ -145,22 +161,6 @@
       "pageUrl": "https://www.spreaker.com/episode/01-08-2026-estrellas-no-lamparas-si-10-minutos-con-jesus--73394001",
       "audioUrl": "https://api.spreaker.com/download/episode/73394001/01_08_2026_estrellas_no_lamparas_si_10_minutos_mf_178337472_feed_1.mp3",
       "duration": "602"
-    },
-    {
-      "title": "31-07-2026 Mi único temor - 10 Minutos con Jesús",
-      "publishedAt": "2026-07-30T22:51:38.000Z",
-      "description": "** Ponte en presencia de Dios. Trata de hablar con Él. ** 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. ** Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándot",
-      "pageUrl": "https://www.spreaker.com/episode/31-07-2026-mi-unico-temor-10-minutos-con-jesus--73267015",
-      "audioUrl": "https://api.spreaker.com/download/episode/73267015/31_07_2026_mi_unico_temor_10_minutos_con_mf_178189415_feed_1.mp3",
-      "duration": "599"
-    },
-    {
-      "title": "30-07-2026 Llegar al Aleluya - 10 Minutos con Jesús",
-      "publishedAt": "2026-07-30T05:43:38.000Z",
-      "description": "** Ponte en presencia de Dios. Trata de hablar con Él. ** 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. ** Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándot",
-      "pageUrl": "https://www.spreaker.com/episode/30-07-2026-llegar-al-aleluya-10-minutos-con-jesus--73252793",
-      "audioUrl": "https://api.spreaker.com/download/episode/73252793/30_07_2026_llegar_al_aleluya_10_minutos_con_mf_178156705_feed_1.mp3",
-      "duration": "618"
     }
   ]
 }
