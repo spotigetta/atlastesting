@@ -1,8 +1,8 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-14T01:41:17.713Z",
+  "generatedAt": "2026-08-19T22:25:53.916Z",
   "source": "https://opusdei.org/es/meditation/",
-  "rightsPolicy": "Atlas almacena fichas editoriales, categorías y enlaces; no replica automáticamente el cuerpo íntegro.",
+  "rightsPolicy": "Reproducción autorizada por el titular para Atlas Mercabá.",
   "records": [
     {
       "date": "2026-01-01",
@@ -3699,13 +3699,14 @@
   ],
   "stats": {
     "total": 365,
-    "imported": 1,
-    "pending": 364
+    "downloaded": 0,
+    "failedThisRun": 1
   },
-  "lastRun": {
-    "from": "2026-08-15",
-    "to": "2026-08-15",
-    "imported": 1,
-    "failures": 0
-  }
+  "failures": [
+    {
+      "date": "2026-08-20",
+      "url": "https://opusdei.org/es/meditation/2026-08-20/",
+      "error": "HTTP 403"
+    }
+  ]
 }

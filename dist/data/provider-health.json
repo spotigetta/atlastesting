@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-08-06T17:20:42.337Z",
+  "updatedAt": "2026-08-19T22:25:53.750Z",
   "providers": [
     {
-      "provider": "youtube",
+      "provider": "video",
       "ok": true,
-      "live": 708,
-      "total": 1932,
-      "failures": 17
+      "live": 756,
+      "total": 2347,
+      "failures": 14
     },
     {
       "provider": "music",
@@ -16,25 +16,11 @@
       "failures": 0
     },
     {
-      "provider": "josemaria",
-      "ok": true,
-      "live": 12,
-      "total": 1,
-      "failures": 0
-    },
-    {
       "provider": "editorial",
       "ok": true,
-      "total": 72,
-      "failures": 0
-    },
-    {
-      "provider": "instagram",
-      "ok": false,
-      "total": 0,
-      "live": 0,
-      "manual": 0,
-      "failures": 0
+      "live": 30,
+      "total": 174,
+      "failures": 1
     }
   ]
 }
