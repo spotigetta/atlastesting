@@ -1,7 +1,18 @@
 {
-  "currentVersion": "6.0.1",
-  "updatedAt": "2026-08-14",
+  "currentVersion": "6.1.0",
+  "updatedAt": "2026-08-20",
   "entries": [
+    {
+      "version": "6.1.0",
+      "date": "2026-08-20",
+      "title": "Inicio diario y enlaces compartibles",
+      "changes": [
+        "Frase diaria configurable mediante notificación local y guía de instalación para iOS, Android y otros navegadores",
+        "10 Minutos con Jesús fijo y reordenable, con portada cuando el proveedor la entrega, audios semanales y actualización nocturna a las 00:10 de Madrid",
+        "Enlace compartible de cada IA con metadatos Open Graph para vista previa en WhatsApp",
+        "Misas.org destacado, acceso a Youth y a los libros electrónicos oficiales del Opus Dei"
+      ]
+    },
     {
       "version": "6.0.1",
       "date": "2026-08-14",

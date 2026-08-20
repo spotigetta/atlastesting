@@ -33,8 +33,8 @@
       shortTextScale: 100, shortContentWidth: 720, shortAlignment: "mixed",
       shortTheme: "auto",
       interfaceScale: 100, cornerRadius: 100, fontStyle: "editorial", headingFont: "literata", bodyFont: "dm-sans", palette: "sage", surfaceStyle: "soft",
-      compactMode: false, showExternalImages: true, showTenMinutesHome: true, showMassFinderHome: true, tenMinutesTime: "08:00",
-      homeOrder: ["exam", "today", "libraries", "reading", "history"], exploreOrder: [], exploreColors: {}, customizeHome: false, customizeExplore: false,
+      compactMode: false, showExternalImages: true, showTenMinutesHome: true, showMassFinderHome: true, tenMinutesTime: "08:00", quoteTime: "09:00",
+      homeOrder: ["exam", "tenminutes", "massfinder", "today", "libraries", "reading", "history"], exploreOrder: [], exploreColors: {}, customizeHome: false, customizeExplore: false,
       libraryOrder: [], pinnedLibraries: [], hiddenLibraries: [], libraryColors: {}, libraryLabels: {}, customizeLibraries: false,
       customChannels: { youtube: [], music: [], instagram: [] }, unlockedFeatures: []
     },
@@ -84,6 +84,11 @@
       value.settings.introSeen ??= false;
       value.settings.installSuggestionDismissed ??= false;
       value.version = 7;
+    }
+    if (value.version < 8) {
+      value.settings ||= {}; value.settings.showTenMinutesHome = true;
+      value.settings.homeOrder = [...new Set([...(value.settings.homeOrder || []), "tenminutes", "massfinder"])];
+      value.version = 8;
     }
     return value;
   }

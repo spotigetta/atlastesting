@@ -2,10 +2,10 @@ name: Actualizar contenido diario
 
 on:
   schedule:
-    # GitHub programa en UTC. Dos candidatas cubren 00:01 de Madrid tanto
+    # GitHub programa en UTC. Dos candidatas cubren 00:10 de Madrid tanto
     # en verano (UTC+2) como en invierno (UTC+1); el paso TZ descarta la otra.
-    - cron: "1 22 * * *"
-    - cron: "1 23 * * *"
+    - cron: "10 22 * * *"
+    - cron: "10 23 * * *"
   workflow_dispatch:
     inputs:
       opusdei_backfill:
@@ -43,7 +43,7 @@ jobs:
           SCHEDULE: ${{ github.event.schedule }}
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then echo "run=true" >> "$GITHUB_OUTPUT"; exit 0; fi
-          run=$(node -e 'const h=Number(process.env.SCHEDULE.split(" ")[1]); const n=new Date(), d=new Date(Date.UTC(n.getUTCFullYear(),n.getUTCMonth(),n.getUTCDate(),h,1)); process.stdout.write(new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Madrid",hour:"2-digit",hourCycle:"h23"}).format(d)==="00"?"true":"false")')
+          run=$(node -e 'const h=Number(process.env.SCHEDULE.split(" ")[1]); const n=new Date(), d=new Date(Date.UTC(n.getUTCFullYear(),n.getUTCMonth(),n.getUTCDate(),h,10)); process.stdout.write(new Intl.DateTimeFormat("en-GB",{timeZone:"Europe/Madrid",hour:"2-digit",hourCycle:"h23",minute:"2-digit"}).format(d)==="00:10"?"true":"false")')
           echo "run=$run" >> "$GITHUB_OUTPUT"
       - name: Actualizar 10 Minutos con Jesús
         if: steps.madrid.outputs.run == 'true'

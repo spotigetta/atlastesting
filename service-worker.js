@@ -1,4 +1,4 @@
-const BUILD_VERSION = "6.0.1-meditaciones-markdown-portadas-movil";
+const BUILD_VERSION = "6.1.0-instalacion-compartir-oracion-diaria";
 const SHELL_CACHE = `atlas-shell-${BUILD_VERSION}`;
 const DATA_CACHE = `atlas-data-${BUILD_VERSION}`;
 const DOCUMENT_CACHE = `atlas-documents-${BUILD_VERSION}`;

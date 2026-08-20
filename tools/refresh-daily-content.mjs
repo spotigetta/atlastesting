@@ -65,6 +65,8 @@ const editorialFeeds = [
   { type: "news", source: "El Debate · Religión", url: "https://www.eldebate.com/rss/religion.xml", take: 10 },
   { type: "reading", source: "Opus Dei", url: "https://opusdei.org/es-es/rss/", take: 8 }
 ];
+const youthItem = { id:"opusdei-youth", type:"reading", source:"Opus Dei · Youth", url:"https://opusdei.org/es/youth/", title:"Youth · Opus Dei", description:"Artículos, vídeos, podcasts y propuestas para vivir la fe en el siglo XXI.", image:"https://images.opusdei.net/?url=https://s3-eu-west-1.amazonaws.com/images-opus-dei/page/2024/6/Tweets-con-Dios-Tu-historia20240605114626427371.png&w=1200&il&output=jpg&q=75", fetched:true, dynamic:true };
+const booksItem = { id:"opusdei-ebooks", type:"reading", source:"Opus Dei · Libros electrónicos", url:"https://opusdei.org/es/page/libros-electronicos/", title:"Libros electrónicos · Opus Dei", description:"Selección oficial de libros sobre vida cristiana, doctrina católica, cartas de san Josemaría, novenas y textos de los Papas.", fetched:true, dynamic:true };
 function rssItems(xml, feed) {
   return [...xml.matchAll(/<item\b[^>]*>([\s\S]*?)<\/item>/gi)].slice(0, feed.take).map(([, block]) => {
     const tag = name => block.match(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${name}>`, "i"))?.[1] || "";
@@ -80,7 +82,8 @@ async function refreshEditorial() {
   const previous = await readJson("external-content.json", { items: [] });
   const responses = await Promise.allSettled(editorialFeeds.map(async feed => rssItems(await get(feed.url), feed)));
   const live = responses.flatMap(result => result.status === "fulfilled" ? result.value : []);
-  const items = [...new Map([...live, ...(previous.items || [])].map(item => [item.url, item])).values()].slice(0, 300);
+  const curated = [youthItem, booksItem];
+  const items = [...new Map([...curated, ...live, ...(previous.items || [])].map(item => [item.url, item])).values()].slice(0, 300);
   if (!items.length) throw new Error("Editorial: no hay resultados ni caché anterior");
   const failures = responses.filter(item => item.status === "rejected").map(item => item.reason?.message || "Proveedor no disponible");
   await writeJson("external-content.json", { generatedAt: new Date().toISOString(), items, failures });

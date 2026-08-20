@@ -16,7 +16,8 @@ async function main() {
     description: field(item, "description").slice(0, 360),
     pageUrl: field(item, "link") || field(item, "guid") || "https://www.10minutosconjesus.org/",
     audioUrl: attr(item, "enclosure", "url"),
-    duration: field(item, "itunes:duration")
+    duration: field(item, "itunes:duration"),
+    imageUrl: attr(item, "itunes:image", "href") || attr(item, "media:content", "url") || attr(item, "media:thumbnail", "url") || ""
   })).filter(item => item.title && item.pageUrl);
   if (!episodes.length) throw new Error("El RSS no devolvió episodios");
   const payload = { updatedAt: new Date().toISOString(), source: FEED, episodes };

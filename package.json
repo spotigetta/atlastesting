@@ -9,7 +9,8 @@
     "update:opusdei-meditation": "node tools/update-opusdei-meditations.mjs --strict",
     "backfill:opusdei-meditations": "node tools/update-opusdei-meditations.mjs --all --strict",
     "audit:markdown": "python tools/normalize_markdown_corpus.py --dry-run",
-    "sync:markdown": "node tools/sync-normalized-markdown.mjs"
+    "sync:markdown": "node tools/sync-normalized-markdown.mjs",
+    "build:share-pages": "node tools/build-share-pages.mjs"
   },
   "devDependencies": {
     "@huggingface/transformers": "^3.7.2",

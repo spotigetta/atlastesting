@@ -279,9 +279,9 @@
 
       ${A.exam.homeCard()}
 
-      ${settings.showTenMinutesHome ? `<section class="section home-daily-audio" data-home-block="tenminutes" style="order:${homeOrder.indexOf("tenminutes") + 1}"><div class="daily-audio-mark">10′</div><div><span class="eyebrow">Oración de hoy · 10 Minutos con Jesús</span><h2>${esc(tenMinutes?.title || "Un rato diario con Jesús")}</h2><p>${esc(tenMinutes?.description || "Una meditación breve para comenzar o sostener el día.")}</p>${tenMinutes?.audioUrl ? `<audio controls preload="metadata" src="${esc(tenMinutes.audioUrl)}"></audio>` : ""}<div class="button-row">${tenMinutes?.pageUrl ? `<a class="primary-button" href="${esc(tenMinutes.pageUrl)}" target="_blank" rel="noopener">Escuchar episodio</a>` : `<a class="primary-button" href="https://www.10minutosconjesus.org/" target="_blank" rel="noopener">Abrir 10 Minutos con Jesús</a>`}<button class="text-button" data-home-hide="showTenMinutesHome">Ocultar de Inicio</button></div></div></section>` : ""}
+      <section class="section home-daily-audio" data-home-block="tenminutes" style="order:${homeOrder.indexOf("tenminutes") + 1}"><div class="daily-audio-mark"${tenMinutes?.imageUrl ? ` style="background-image:url('${esc(tenMinutes.imageUrl)}')"` : ""}>${tenMinutes?.imageUrl ? "" : "10′"}</div><div><span class="eyebrow">Oración de hoy · 10 Minutos con Jesús</span><h2>${esc(tenMinutes?.title || "Un rato diario con Jesús")}</h2><p>${esc(tenMinutes?.description || "Una meditación breve para comenzar o sostener el día.")}</p>${tenMinutes?.audioUrl ? `<audio controls preload="metadata" src="${esc(tenMinutes.audioUrl)}"></audio>` : ""}<div class="button-row">${tenMinutes?.pageUrl ? `<a class="primary-button" href="${esc(tenMinutes.pageUrl)}" target="_blank" rel="noopener">Escuchar episodio</a>` : ""}<a class="secondary-button" href="https://www.10minutosconjesus.org/" target="_blank" rel="noopener">Más en 10 Minutos ↗</a></div>${(window.ATLAS_TEN_MINUTES?.episodes || []).slice(1,7).length ? `<details class="ten-minutes-week"><summary>Audios de esta semana</summary><div>${(window.ATLAS_TEN_MINUTES.episodes || []).slice(1,7).map(item => `<a href="${esc(item.pageUrl)}" target="_blank" rel="noopener">${esc(item.title.replace(/^[0-9-]+\s*/, ""))}</a>`).join("")}</div></details>` : ""}</div></section>
 
-      ${settings.showMassFinderHome ? `<section class="section home-mass-finder" data-home-block="massfinder" style="order:${homeOrder.indexOf("massfinder") + 1}"><span class="mass-finder-mark">✦</span><div><span class="eyebrow">Misas.org</span><h2>Encuentra una Misa cerca de ti</h2><p>Consulta templos, horarios y celebraciones actualizados directamente en Misas.org.</p><div class="button-row"><a class="primary-button" href="https://misas.org/" target="_blank" rel="noopener">Buscar horarios ↗</a><button class="text-button" data-home-hide="showMassFinderHome">Ocultar de Inicio</button></div></div></section>` : ""}
+      ${settings.showMassFinderHome ? `<section class="section home-mass-finder" data-home-block="massfinder" style="order:${homeOrder.indexOf("massfinder") + 1}"><span class="mass-finder-mark" aria-label="Misas.org">✚</span><div><span class="eyebrow">Misas.org</span><h2>Encuentra una Misa cerca de ti</h2><p>Consulta templos, horarios y celebraciones actualizados directamente en Misas.org.</p><div class="button-row"><a class="primary-button" href="https://misas.org/" target="_blank" rel="noopener">Buscar horarios ↗</a><button class="text-button" data-home-hide="showMassFinderHome">Ocultar de Inicio</button></div></div></section>` : ""}
 
       <section class="section" data-home-block="today" style="order:${homeOrder.indexOf("today") + 1}"><div class="section-head"><div><h2>Atlas Hoy</h2><p>Una selección diaria calculada en tu dispositivo.</p></div><a href="#/discover">Ver Shorts</a></div>
         <div class="daily-strip">
@@ -512,7 +512,7 @@
         <label class="setting-select"><span><b>Paleta de acento</b><small>Cambia botones, enlaces, focos y detalles.</small></span><select data-setting-select="palette"><option value="sage" ${settings.palette==="sage"?"selected":""}>Verde Atlas</option><option value="burgundy" ${settings.palette==="burgundy"?"selected":""}>Burdeos clásico</option><option value="ocean" ${settings.palette==="ocean"?"selected":""}>Azul océano</option><option value="indigo" ${settings.palette==="indigo"?"selected":""}>Índigo</option><option value="amber" ${settings.palette==="amber"?"selected":""}>Ámbar</option><option value="rose" ${settings.palette==="rose"?"selected":""}>Rosa viejo</option></select></label>
         <label class="setting-select"><span><b>Acabado de superficies</b><small>Suave, papel editorial o nítido.</small></span><select data-setting-select="surfaceStyle"><option value="soft" ${settings.surfaceStyle==="soft"?"selected":""}>Suave</option><option value="paper" ${settings.surfaceStyle==="paper"?"selected":""}>Papel</option><option value="crisp" ${settings.surfaceStyle==="crisp"?"selected":""}>Nítido</option></select></label>
         ${toggleSetting("compactMode","Modo compacto","Reduce espacios en listados, paneles y cabeceras.")}</section>
-      <section><span class="eyebrow">Inicio diario</span><h3>Oración y Misa</h3>${toggleSetting("showTenMinutesHome","10 Minutos con Jesús","Muestra el episodio diario en Inicio.")}${toggleSetting("showMassFinderHome","Acceso a Misas.org","Muestra el buscador de horarios en Inicio.")}<label class="setting-select"><span><b>Hora del aviso diario</b><small>Se comprobará mientras Atlas esté abierto o activo.</small></span><input type="time" data-setting-select="tenMinutesTime" value="${esc(settings.tenMinutesTime || "08:00")}"></label></section>
+      <section><span class="eyebrow">Inicio diario</span><h3>Oración y Misa</h3><p class="muted small">10 Minutos con Jesús siempre está disponible; puedes cambiar su posición desde «Organiza todos los bloques».</p>${toggleSetting("showMassFinderHome","Acceso a Misas.org","Muestra el buscador de horarios en Inicio.")}<label class="setting-select"><span><b>Hora del aviso de 10 Minutos</b><small>Se comprobará mientras Atlas esté abierto o activo.</small></span><input type="time" data-setting-select="tenMinutesTime" value="${esc(settings.tenMinutesTime || "08:00")}"></label><label class="setting-select"><span><b>Hora de la frase diaria</b><small>Una frase elegida para ese día, si has activado este aviso.</small></span><input type="time" data-setting-select="quoteTime" value="${esc(settings.quoteTime || "09:00")}"></label></section>
     </div>`;
   }
 
@@ -888,13 +888,13 @@
     const now = new Date();
     const day = now.toLocaleDateString("sv-SE");
     if (!("Notification" in window) || Notification.permission !== "granted") return;
-    if (stored.notifications?.daily && stored.settings.lastDailyNotification !== day) {
-      const item = dailyPick(A.data.documents.filter(doc => doc.status !== "incomplete"), 5);
-      sendAtlasNotification("Atlas · Lectura del día", item?.title || "Hay una nueva selección preparada para ti.", item ? `#/reader/${encodeURIComponent(item.id)}` : "#/", "atlas-daily");
+    const current = `${String(now.getHours()).padStart(2,"0")}:${String(now.getMinutes()).padStart(2,"0")}`;
+    if (stored.notifications?.daily && current >= (stored.settings.quoteTime || "09:00") && stored.settings.lastDailyNotification !== day) {
+      const item = dailyPick([...(A.data.catalog.shorts || []).filter(item => item.type === "quote"), ...(window.ATLAS_QUOTES?.items || [])], 19);
+      sendAtlasNotification("Atlas · Frase del día", item?.text || item?.title || "Una frase para acompañarte hoy.", "#/", "atlas-daily-quote");
       A.storage.setSetting("lastDailyNotification", day);
     }
     const preferred = stored.settings.tenMinutesTime || "08:00";
-    const current = `${String(now.getHours()).padStart(2,"0")}:${String(now.getMinutes()).padStart(2,"0")}`;
     if (stored.notifications?.tenMinutes && current >= preferred && stored.settings.lastTenMinutesNotification !== day) {
       const episode = window.ATLAS_TEN_MINUTES?.episodes?.[0];
       sendAtlasNotification("10 Minutos con Jesús", episode?.title || "Tu oración de hoy ya está preparada.", "#/", "atlas-ten-minutes");
@@ -1110,8 +1110,13 @@
         const choice = await installPromptEvent.userChoice;
         if (choice.outcome === "accepted") toast("Atlas se está añadiendo a tu pantalla de inicio.");
         installPromptEvent = null;
-      } else if (/iphone|ipad|ipod/i.test(navigator.userAgent)) toast("En Safari: Compartir → Añadir a pantalla de inicio.");
-      else toast("En el menú del navegador, elige «Instalar aplicación» o «Añadir a inicio».");
+      } else {
+        document.querySelector("#install-help")?.removeAttribute("hidden");
+      }
+    }
+    if (action === "close-install-help") document.querySelector("#install-help")?.setAttribute("hidden", "");
+    if (target.dataset.shareLibrary) {
+      const library=A.data.libraryMap.get(target.dataset.shareLibrary); if (library) openShare({ title:`${library.short} · Atlas`, text:library.purpose, url:`${PUBLIC_APP_URL}share/libraries/${library.id}/` });
     }
     if (action === "dismiss-install") { event.preventDefault(); A.storage.setSetting("installSuggestionDismissed", true); document.querySelector("#install-banner")?.setAttribute("hidden", ""); }
     if (target.dataset.channelGroup) {
