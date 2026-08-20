@@ -1291,6 +1291,13 @@
 
   function registerPwa() {
     if (!("serviceWorker" in navigator) || location.protocol === "file:") return;
+    // En localhost el Service Worker impide ver cambios de HTML/CSS/JS al instante.
+    // Se desregistra de forma explícita para que el entorno de edición siempre lea disco.
+    if (["localhost", "127.0.0.1", "::1"].includes(location.hostname)) {
+      navigator.serviceWorker.getRegistrations().then(registrations => Promise.all(registrations.map(registration => registration.unregister())));
+      caches?.keys?.().then(keys => Promise.all(keys.filter(key => key.startsWith("atlas-")).map(key => caches.delete(key))));
+      return;
+    }
     let reloading = false;
     navigator.serviceWorker.addEventListener("controllerchange", () => { if (!reloading) { reloading = true; location.reload(); } });
     navigator.serviceWorker.register("./service-worker.js").then(registration => {
