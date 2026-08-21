@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-08-20T22:38:42.876Z",
+  "updatedAt": "2026-08-21T22:35:41.816Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "21-08-2026 Lo esencial en la vida - 10 Minutos con Jesús",
+      "publishedAt": "2026-08-21T09:42:13.000Z",
+      "description": "** Ponte en presencia de Dios. Trata de hablar con Él. ** 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. ** Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándot",
+      "pageUrl": "https://www.spreaker.com/episode/21-08-2026-lo-esencial-en-la-vida-10-minutos-con-jesus--74450071",
+      "audioUrl": "https://api.spreaker.com/download/episode/74450071/21_08_2026_lo_esencial_vida_10_mf_179288335_feed_1.mp3",
+      "duration": "706",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "20-08-2026 Te invito a una fiesta - 10 Minutos con Jesús",
       "publishedAt": "2026-08-19T22:03:30.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/02-08-2026-la-maxima-distincion-10-minutos-con-jesus--73394003",
       "audioUrl": "https://api.spreaker.com/download/episode/73394003/02_08_2026_la_maxima_distincion_10_minutos_con_mf_178337544_feed_1.mp3",
       "duration": "758",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "01-08-2026 Estrellas no, lámparas sí - 10 Minutos con Jesús",
-      "publishedAt": "2026-08-03T16:10:30.000Z",
-      "description": "** Ponte en presencia de Dios. Trata de hablar con Él. ** 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. ** Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándot",
-      "pageUrl": "https://www.spreaker.com/episode/01-08-2026-estrellas-no-lamparas-si-10-minutos-con-jesus--73394001",
-      "audioUrl": "https://api.spreaker.com/download/episode/73394001/01_08_2026_estrellas_no_lamparas_si_10_minutos_mf_178337472_feed_1.mp3",
-      "duration": "602",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
