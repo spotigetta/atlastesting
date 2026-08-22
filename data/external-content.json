@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-21T22:35:49.428Z",
+  "generatedAt": "2026-08-22T22:33:43.831Z",
   "items": [
     {
       "id": "opusdei-youth",
@@ -21,6 +21,18 @@
       "description": "Selección oficial de libros sobre vida cristiana, doctrina católica, cartas de san Josemaría, novenas y textos de los Papas.",
       "fetched": true,
       "dynamic": true
+    },
+    {
+      "id": "external-a88d83b18dc5",
+      "type": "news",
+      "source": "Omnes",
+      "url": "https://www.omnesmag.com/actualidad/el-reto-de-la-etica-en-las-grandes-desarrolladoras-de-la-ia/",
+      "title": "¿Qué pasa con el reto de la ética en las grandes desarrolladoras de la IA?",
+      "description": "El mercado de las grandes empresas desarrolladoras de Inteligencia Artificial (IA) se muestra ciertamente convulso en estos meses de 2026, en particular en potentes desarrolladoras que todavía no cotizan en Wall Street, como OpenAI o Anthropic. Compañías que, a juzgar por sus movimientos, quieren tener en cuenta cada una a su modo parámetros éticos, y […] La",
+      "author": "Redacción Omnes",
+      "date": "2026-08-22",
+      "image": "",
+      "fetched": true
     },
     {
       "id": "external-906358f6baaa",
@@ -131,14 +143,62 @@
       "fetched": true
     },
     {
-      "id": "external-c197cedb24a3",
+      "id": "external-55ce4a42889f",
       "type": "news",
-      "source": "Omnes",
-      "url": "https://www.omnesmag.com/foco/padres-diversidad-funcional/",
-      "title": "Paloma y Juan Luis, padres de un hijo con diversidad funcional: “Sergio es nuestro ángel»",
-      "description": "Paloma y Juan Luis son padres de cuatro hijos. Uno de ellos, dicen, es un “ángel». Cuando vienen del Cielo, no vienen con las instrucciones debajo del brazo, hay que irlos conociendo, y se tarda un tiempo, pero al final todos suelen mostrar un gran afecto y se convierten en algo muy especial para la […] La entrada Paloma y Juan Luis, padres de un hijo con di",
-      "author": "Álvaro Gil Ruiz",
-      "date": "2026-08-19",
+      "source": "Alfa y Omega",
+      "url": "https://alfayomega.es/las-vacaciones-no-son-evadirse-como-si-la-vida-cotidiana-fuera-una-prision-advierte-el-papa/",
+      "title": "Las vacaciones no son evadirse, «como si la vida cotidiana fuera una prisión», advierte el Papa",
+      "description": "Antes de celebrar Misa en el puerto de Rímini, León XIV ha acudido a la catedral y ha saludado una por una a decenas de personas discapacitadas, ancianas, enfermas y vulnerables La entrada Las vacaciones no son evadirse, «como si la vida cotidiana fuera una prisión», advierte el Papa se publicó primero en Alfa y Omega .",
+      "author": "Ángeles Conde Mir",
+      "date": "2026-08-22",
+      "image": "",
+      "fetched": true
+    },
+    {
+      "id": "external-970ed98fedad",
+      "type": "news",
+      "source": "Alfa y Omega",
+      "url": "https://alfayomega.es/el-papa-pide-pioneros-que-reaviven-los-suenos-frente-a-los-que-avivan-la-desesperacion/",
+      "title": "El Papa pide «pioneros» que «reaviven los sueños frente a los que avivan la desesperación»",
+      "description": "León XIV se ha dado un auténtico baño de masas en el Meeting de Rímini que llevaba 44 años sin recibir a un Pontífice La entrada El Papa pide «pioneros» que «reaviven los sueños frente a los que avivan la desesperación» se publicó primero en Alfa y Omega .",
+      "author": "Ángeles Conde Mir",
+      "date": "2026-08-22",
+      "image": "",
+      "fetched": true
+    },
+    {
+      "id": "external-b99dfbcbd45a",
+      "type": "news",
+      "source": "Alfa y Omega",
+      "url": "https://alfayomega.es/aurelio-cayon-la-vida-consagrada-es-muy-importante-y-tiene-una-amplia-presencia-en-la-diocesis-de-madrid/",
+      "title": "Aurelio Cayón: «La vida consagrada es muy importante y tiene una amplia presencia en la diócesis de Madrid»",
+      "description": "El Congreso Mundial de la Conferencia Mundial de Institutos Seculares ha reunido en Madrid a cerca de 250 personas de 71 institutos seculares, venidos de 42 países y de 4 continentes La entrada Aurelio Cayón: «La vida consagrada es muy importante y tiene una amplia presencia en la diócesis de Madrid» se publicó primero en Alfa y Omega .",
+      "author": "Begoña Aragoneses",
+      "date": "2026-08-22",
+      "image": "",
+      "fetched": true
+    },
+    {
+      "id": "external-b8e858e4b67b",
+      "type": "news",
+      "source": "Alfa y Omega",
+      "url": "https://alfayomega.es/leon-xiv-en-el-estado-mas-antiguo-del-mundo-no-hay-verdadera-libertad-sin-libertad-de-conciencia/",
+      "title": "León XIV, en el estado más antiguo del mundo: No hay verdadera libertad sin libertad de conciencia",
+      "description": "En San Marino, el Papa clama «frente a la idolatría que desgasta proyectos políticos y económicos que se presentan en nombre de la libertad, pero que son esclavos del poder» La entrada León XIV, en el estado más antiguo del mundo: No hay verdadera libertad sin libertad de conciencia se publicó primero en Alfa y Omega .",
+      "author": "Ángeles Conde Mir",
+      "date": "2026-08-22",
+      "image": "",
+      "fetched": true
+    },
+    {
+      "id": "external-ebb273725aa9",
+      "type": "news",
+      "source": "Alfa y Omega",
+      "url": "https://alfayomega.es/leon-harmel-el-industrial-que-anticipo-la-doctrina-social-de-la-iglesia/",
+      "title": "León Harmel, el industrial que anticipó la doctrina social de la Iglesia",
+      "description": "Mucho antes de la publicación de la encíclia Rerum novarum , este empresario francés ya había procurado a sus obreros beneficios sociales. El Papa conocerá su historia a través de una exposición en el Meeting de Rímini La entrada León Harmel, el industrial que anticipó la doctrina social de la Iglesia se publicó primero en Alfa y Omega .",
+      "author": "Ángeles Conde Mir",
+      "date": "2026-08-22",
       "image": "",
       "fetched": true
     },
@@ -203,6 +263,138 @@
       "fetched": true
     },
     {
+      "id": "external-578b8c14a63a",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/santoral/20260822/santo-celebramos-hoy-22-agosto_450969.html",
+      "title": "¿Qué santo celebramos hoy, 22 de agosto?",
+      "description": "<![CDATA[s cuando la época de los feudales está en franca decadencia y tiende a desaparecer. Comienzan las ciudades libres, se potencia el comercio, salen las agrupaciones artesanales llamadas gremios; nacen las universidades, comienzan las cofradías y cambian las formas de vida ascética, el monasterio solitario del campo se hace convento urbano. Surgen impe",
+      "author": "Redacción El Debate",
+      "date": "2026-08-22",
+      "image": "https://imagenes.eldebate.com/files/og_thumbnail/files/fp/uploads/2022/08/17/62fcd26f740c6.r_d.246-232-0.jpeg",
+      "fetched": true
+    },
+    {
+      "id": "external-df0e2c959647",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/20260822/haced-cumplid-todo-digan-no-hagais-ellos-hacen_443434.html",
+      "title": "«Haced y cumplid todo lo que os digan, pero no hagáis lo que ellos hacen»",
+      "description": "<![CDATA[]]>",
+      "author": "Redacción El Debate",
+      "date": "2026-08-22",
+      "image": "",
+      "fetched": true
+    },
+    {
+      "id": "external-2be6df360f66",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/iglesia/20260822/trece-horas-viaje-tregua-leon-xiv-vuelca-oracion-cultura-vulnerables-san-marino-rimini_450873.html",
+      "title": "Trece horas de viaje sin tregua: León XIV se vuelca en la oración, la cultura y los más vulnerables en San Marino y Rímini",
+      "description": "<![CDATA[Hoy, 22 de agosto, el Papa León XIV emprende una breve pero sumamente intensa visita pastoral a la República de San Marino y a la ciudad italiana de Rímini. El helicóptero papal despegará a las 8:00 horas desde el helipuerto del Vaticano con destino al aeródromo de Torraccia. Tras una hora de vuelo, dará comienzo una jornada cargada de actividad.]]>",
+      "author": "María Rabell García",
+      "date": "2026-08-22",
+      "image": "https://imagenes.eldebate.com/files/og_thumbnail/files/fp/uploads/2026/03/28/69c79d2ce53d8.r_d.2731-1578-0.jpeg",
+      "fetched": true
+    },
+    {
+      "id": "external-0b8caee9e359",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/iglesia/20260822/reina-madre-misericordia_450931.html",
+      "title": "Reina ¡y Madre de misericordia!",
+      "description": "<![CDATA[La Iglesia no comenzó llamando Reina a María tras largas disquisiciones académicas, sino espontáneamente, al descubrir la consecuencia inevitable de lo que ya cree. Si el Hijo que María llevó en sus entrañas es Rey; si el Niño que descansó sobre sus rodillas es el Señor de cielo y tierra; si el Crucificado que Ella vio morir reina precisamente desde",
+      "author": "",
+      "date": "2026-08-22",
+      "image": "https://imagenes.eldebate.com/files/og_thumbnail/files/fp/uploads/2024/08/20/66c4a7bde187f.r_d.742-509-0.jpeg",
+      "fetched": true
+    },
+    {
+      "id": "external-39c3c2deb3c5",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/20260821/dos-tercios-poblacion-mundial-vive-paises-donde-no-respeta-libertad-religiosa-segun-ue_451310.html",
+      "title": "Dos tercios de la población mundial vive en países donde no se respeta la libertad religiosa, según la UE",
+      "description": "<![CDATA[La Alta Representante de la Unión Europea para la Política Exterior, Kaja Kallas, ha advertido sobre la extensión de la violencia que se extiende por motivos religiosos. En concreto, ha señalado que «casi dos tercios de la población mundial vive en países donde existen graves abusos y vulneraciones de este derecho».]]>",
+      "author": "Pablo Ojer",
+      "date": "2026-08-21",
+      "image": "https://imagenes.eldebate.com/files/og_thumbnail/files/fp/uploads/2025/11/03/69087e2a8041f.r_d.614-243-0.webp",
+      "fetched": true
+    },
+    {
+      "id": "external-c2f99d50cd34",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/20260821/jose-mota-habla-primera-vez-fe-jesus-centro-mi-vida_451178.html",
+      "title": "José Mota habla por primera vez de su fe: «Jesús es el centro de mi vida»",
+      "description": "<![CDATA[Pocos rostros hay en España que conciten tanta simpatía y cariño como el del popular cómico y actor manchego José Mota.]]>",
+      "author": "José Antonio Méndez",
+      "date": "2026-08-21",
+      "image": "https://imagenes.eldebate.com/files/og_thumbnail/files/fp/uploads/2025/06/30/68624a77e1230.r_d.2338-1349-0.jpeg",
+      "fetched": true
+    },
+    {
+      "id": "external-19a7bbdfe4a1",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/20260821/seminaristas-tambien-juegan-futbol-todo-listo-granada-copa-nacional-seminarios_451117.html",
+      "title": "Los seminaristas también juegan al fútbol: todo listo en Granada para la Copa Nacional de Seminarios",
+      "description": "<![CDATA[Aunque quien nunca haya conocido a un joven que se prepara para ser sacerdote puede tener una imagen distorsionada de los seminaristas, como si fuesen jóvenes retraídos, mojigatos, abotonados hasta el cuello y encerrados entre libros centenarios y nubes de incienso, la realidad es bastante diferente. Porque, como la mayoría de los jóvenes españoles,",
+      "author": "José Antonio Méndez",
+      "date": "2026-08-21",
+      "image": "https://imagenes.eldebate.com/files/og_thumbnail/files/fp/uploads/2026/08/21/6a880d3e69253.r_d.907-484-0.jpeg",
+      "fetched": true
+    },
+    {
+      "id": "external-27980dc625fc",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/iglesia/20260821/mayor-honra-hijo-martir-rector-barcelona-profetizo-destino-doce-anos_450721.html",
+      "title": "«¿Qué mayor honra que un hijo mártir?»: el rector de Barcelona que profetizó su destino a los doce años",
+      "description": "<![CDATA[Antes de convertirse en rector del Seminario de Barcelona, de formar a cientos de seminaristas y de enfrentarse a la persecución religiosa, José María Peris Polo fue un niño que habló del martirio con una naturalidad desconcertante. Dos décadas después, aquel hombre tendría que afrontar aquello que había contemplado desde la infancia: la posibilidad",
+      "author": "María Rabell García",
+      "date": "2026-08-21",
+      "image": "https://imagenes.eldebate.com/files/og_thumbnail/uploads/2026/08/19/6a85c8c60da3c.jpeg",
+      "fetched": true
+    },
+    {
+      "id": "external-1283b142ef7f",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/20260821/amaras-senor-dios-todo-corazon-toda-alma-toda-mente_443432.html",
+      "title": "«Amarás al Señor tu Dios con todo tu corazón, con toda tu alma, con toda tu mente»",
+      "description": "<![CDATA[]]>",
+      "author": "Redacción El Debate",
+      "date": "2026-08-21",
+      "image": "",
+      "fetched": true
+    },
+    {
+      "id": "external-2cb792b07806",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/iglesia/20260821/arcangel-infierno-cura-aleman-consolo-condenados-paris-salvo-alma-europa_450944.html",
+      "title": "El «arcángel del infierno»: el cura alemán que consoló a los condenados de París y salvó el alma de Europa",
+      "description": "<![CDATA[El 28 de febrero de 1948, en la iglesia de Saint Jacques du Haut-Pas de París, un grupo minúsculo de apenas doce personas acompañaba el féretro de un sacerdote alemán que acababa de fallecer repentinamente a los 43 años de edad. El entierro en el cementerio de Thiais fue miserable, casi clandestino. Sin embargo, entre la modesta comitiva destacaba u",
+      "author": "María Rabell García",
+      "date": "2026-08-21",
+      "image": "https://imagenes.eldebate.com/files/og_thumbnail/uploads/2026/08/20/6a86eae133f2c.jpeg",
+      "fetched": true
+    },
+    {
+      "id": "external-c197cedb24a3",
+      "type": "news",
+      "source": "Omnes",
+      "url": "https://www.omnesmag.com/foco/padres-diversidad-funcional/",
+      "title": "Paloma y Juan Luis, padres de un hijo con diversidad funcional: “Sergio es nuestro ángel»",
+      "description": "Paloma y Juan Luis son padres de cuatro hijos. Uno de ellos, dicen, es un “ángel». Cuando vienen del Cielo, no vienen con las instrucciones debajo del brazo, hay que irlos conociendo, y se tarda un tiempo, pero al final todos suelen mostrar un gran afecto y se convierten en algo muy especial para la […] La entrada Paloma y Juan Luis, padres de un hijo con di",
+      "author": "Álvaro Gil Ruiz",
+      "date": "2026-08-19",
+      "image": "",
+      "fetched": true
+    },
+    {
       "id": "external-3748409d584c",
       "type": "news",
       "source": "Alfa y Omega",
@@ -263,54 +455,6 @@
       "fetched": true
     },
     {
-      "id": "external-39c3c2deb3c5",
-      "type": "news",
-      "source": "El Debate · Religión",
-      "url": "https://www.eldebate.com/religion/20260821/dos-tercios-poblacion-mundial-vive-paises-donde-no-respeta-libertad-religiosa-segun-ue_451310.html",
-      "title": "Dos tercios de la población mundial vive en países donde no se respeta la libertad religiosa, según la UE",
-      "description": "<![CDATA[La Alta Representante de la Unión Europea para la Política Exterior, Kaja Kallas, ha advertido sobre la extensión de la violencia que se extiende por motivos religiosos. En concreto, ha señalado que «casi dos tercios de la población mundial vive en países donde existen graves abusos y vulneraciones de este derecho».]]>",
-      "author": "Pablo Ojer",
-      "date": "2026-08-21",
-      "image": "https://imagenes.eldebate.com/files/og_thumbnail/files/fp/uploads/2025/11/03/69087e2a8041f.r_d.614-243-0.webp",
-      "fetched": true
-    },
-    {
-      "id": "external-c2f99d50cd34",
-      "type": "news",
-      "source": "El Debate · Religión",
-      "url": "https://www.eldebate.com/religion/20260821/jose-mota-habla-primera-vez-fe-jesus-centro-mi-vida_451178.html",
-      "title": "José Mota habla por primera vez de su fe: «Jesús es el centro de mi vida»",
-      "description": "<![CDATA[Pocos rostros hay en España que conciten tanta simpatía y cariño como el del popular cómico y actor manchego José Mota.]]>",
-      "author": "José Antonio Méndez",
-      "date": "2026-08-21",
-      "image": "https://imagenes.eldebate.com/files/og_thumbnail/files/fp/uploads/2025/06/30/68624a77e1230.r_d.2338-1349-0.jpeg",
-      "fetched": true
-    },
-    {
-      "id": "external-19a7bbdfe4a1",
-      "type": "news",
-      "source": "El Debate · Religión",
-      "url": "https://www.eldebate.com/religion/20260821/seminaristas-tambien-juegan-futbol-todo-listo-granada-copa-nacional-seminarios_451117.html",
-      "title": "Los seminaristas también juegan al fútbol: todo listo en Granada para la Copa Nacional de Seminarios",
-      "description": "<![CDATA[Aunque quien nunca haya conocido a un joven que se prepara para ser sacerdote puede tener una imagen distorsionada de los seminaristas, como si fuesen jóvenes retraídos, mojigatos, abotonados hasta el cuello y encerrados entre libros centenarios y nubes de incienso, la realidad es bastante diferente. Porque, como la mayoría de los jóvenes españoles,",
-      "author": "José Antonio Méndez",
-      "date": "2026-08-21",
-      "image": "https://imagenes.eldebate.com/files/og_thumbnail/files/fp/uploads/2026/08/21/6a880d3e69253.r_d.907-484-0.jpeg",
-      "fetched": true
-    },
-    {
-      "id": "external-27980dc625fc",
-      "type": "news",
-      "source": "El Debate · Religión",
-      "url": "https://www.eldebate.com/religion/iglesia/20260821/mayor-honra-hijo-martir-rector-barcelona-profetizo-destino-doce-anos_450721.html",
-      "title": "«¿Qué mayor honra que un hijo mártir?»: el rector de Barcelona que profetizó su destino a los doce años",
-      "description": "<![CDATA[Antes de convertirse en rector del Seminario de Barcelona, de formar a cientos de seminaristas y de enfrentarse a la persecución religiosa, José María Peris Polo fue un niño que habló del martirio con una naturalidad desconcertante. Dos décadas después, aquel hombre tendría que afrontar aquello que había contemplado desde la infancia: la posibilidad",
-      "author": "María Rabell García",
-      "date": "2026-08-21",
-      "image": "https://imagenes.eldebate.com/files/og_thumbnail/uploads/2026/08/19/6a85c8c60da3c.jpeg",
-      "fetched": true
-    },
-    {
       "id": "external-33c96ef6389f",
       "type": "news",
       "source": "El Debate · Religión",
@@ -320,30 +464,6 @@
       "author": "Redacción El Debate",
       "date": "2026-08-21",
       "image": "https://imagenes.eldebate.com/files/og_thumbnail/files/fp/uploads/2023/01/30/63d7e36a0369c.r_d.1405-533-0.jpeg",
-      "fetched": true
-    },
-    {
-      "id": "external-1283b142ef7f",
-      "type": "news",
-      "source": "El Debate · Religión",
-      "url": "https://www.eldebate.com/religion/20260821/amaras-senor-dios-todo-corazon-toda-alma-toda-mente_443432.html",
-      "title": "«Amarás al Señor tu Dios con todo tu corazón, con toda tu alma, con toda tu mente»",
-      "description": "<![CDATA[]]>",
-      "author": "Redacción El Debate",
-      "date": "2026-08-21",
-      "image": "",
-      "fetched": true
-    },
-    {
-      "id": "external-2cb792b07806",
-      "type": "news",
-      "source": "El Debate · Religión",
-      "url": "https://www.eldebate.com/religion/iglesia/20260821/arcangel-infierno-cura-aleman-consolo-condenados-paris-salvo-alma-europa_450944.html",
-      "title": "El «arcángel del infierno»: el cura alemán que consoló a los condenados de París y salvó el alma de Europa",
-      "description": "<![CDATA[El 28 de febrero de 1948, en la iglesia de Saint Jacques du Haut-Pas de París, un grupo minúsculo de apenas doce personas acompañaba el féretro de un sacerdote alemán que acababa de fallecer repentinamente a los 43 años de edad. El entierro en el cementerio de Thiais fue miserable, casi clandestino. Sin embargo, entre la modesta comitiva destacaba u",
-      "author": "María Rabell García",
-      "date": "2026-08-21",
-      "image": "https://imagenes.eldebate.com/files/og_thumbnail/uploads/2026/08/20/6a86eae133f2c.jpeg",
       "fetched": true
     },
     {
