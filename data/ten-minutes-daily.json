@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-08-23T22:32:56.856Z",
+  "updatedAt": "2026-08-24T22:38:04.449Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "25-008-2026 Detalles, no pequeñeces - 10 Minutos con Jesús",
+      "publishedAt": "2026-08-24T21:00:00.000Z",
+      "description": "** Ponte en presencia de Dios. Trata de hablar con Él. ** 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. ** Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándot",
+      "pageUrl": "https://www.spreaker.com/episode/25-008-2026-detalles-no-pequeneces-10-minutos-con-jesus--74663118",
+      "audioUrl": "https://api.spreaker.com/download/episode/74663118/25_008_2026_detalles_no_pequeneces_10_minutos_con_mf_179406410_feed_1.mp3",
+      "duration": "680",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "24-08-2026 Dios no me convence - 10 Minutos con Jesús",
       "publishedAt": "2026-08-23T22:14:55.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/06-08-2026-vivir-encendidos-10-minutos-con-jesus--73518914",
       "audioUrl": "https://api.spreaker.com/download/episode/73518914/06_08_2026_vivir_encendidos_10_minutos_jesus_mf_178505074_feed_1.mp3",
       "duration": "607",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "05-08-2026 El silencio de Dios (y III) - 10 Minutos con Jesús",
-      "publishedAt": "2026-08-04T21:21:39.000Z",
-      "description": "** Ponte en presencia de Dios. Trata de hablar con Él. ** 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. ** Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándot",
-      "pageUrl": "https://www.spreaker.com/episode/05-08-2026-el-silencio-de-dios-y-iii-10-minutos-con-jesus--73461198",
-      "audioUrl": "https://api.spreaker.com/download/episode/73461198/05_08_2026_el_silencio_dios_y_iii_mf_178437695_feed_1.mp3",
-      "duration": "661",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
