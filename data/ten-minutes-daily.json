@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-08-24T22:38:04.449Z",
+  "updatedAt": "2026-08-25T22:38:29.152Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "26-08-2026 Un agujero en la pared (II) - 10 Minutos con Jesús",
+      "publishedAt": "2026-08-25T20:25:06.000Z",
+      "description": "** Ponte en presencia de Dios. Trata de hablar con Él. ** 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. ** Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándot",
+      "pageUrl": "https://www.spreaker.com/episode/26-08-2026-un-agujero-en-la-pared-ii-10-minutos-con-jesus--74688048",
+      "audioUrl": "https://api.spreaker.com/download/episode/74688048/26_08_2026_un_agujero_pared_ii_mf_179500699_feed_1.mp3",
+      "duration": "700",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "25-008-2026 Detalles, no pequeñeces - 10 Minutos con Jesús",
       "publishedAt": "2026-08-24T21:00:00.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/07-08-2026-perder-y-ganar-10-minutos-con-jesus--73639879",
       "audioUrl": "https://api.spreaker.com/download/episode/73639879/07_08_2026_perder_ganar_10_minutos_con_mf_178552423_feed_1.mp3",
       "duration": "603",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "06-08-2026 Vivir encendidos - 10 Minutos con Jesús",
-      "publishedAt": "2026-08-05T21:38:51.000Z",
-      "description": "** Ponte en presencia de Dios. Trata de hablar con Él. ** 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. ** Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándot",
-      "pageUrl": "https://www.spreaker.com/episode/06-08-2026-vivir-encendidos-10-minutos-con-jesus--73518914",
-      "audioUrl": "https://api.spreaker.com/download/episode/73518914/06_08_2026_vivir_encendidos_10_minutos_jesus_mf_178505074_feed_1.mp3",
-      "duration": "607",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
