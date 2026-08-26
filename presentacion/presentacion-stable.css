@@ -1,0 +1,2 @@
+/* En móvil se conserva el paso entre escenas y se evita el temblor de objetos decorativos. */
+.halo,.shelf-pulse i,.consultants span,.tap{animation:none!important}.phone,.reel,.why-orbit,.scene{backface-visibility:hidden;transform:translateZ(0)}.consultants span:nth-child(2n){transform:none}

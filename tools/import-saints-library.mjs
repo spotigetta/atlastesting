@@ -156,7 +156,7 @@ catalog.shorts = catalog.shorts.filter(item => item.id !== "short-saints-pedro-b
 catalog.shorts.push({ id: "short-saints-pedro-ballester", type: "fact", external: true, source: "SoundCloud · Opus Dei", libraryId, title: "Pedro Ballester · escuchar una vida", text: "Un audiolibro en quince capítulos para conocer su alegría, su vocación y su fidelidad en la enfermedad.", reference: "Jorge Boronat, Pedro Ballester. Nunca he sido tan feliz", url: playlist.webpage_url }, { id: "short-saints-vida", type: "fact", libraryId, title: "Una santidad situada en la historia", text: `${saints.length} fuentes recorren desde los apóstoles hasta santos contemporáneos.`, reference: "Vida de los Santos · Atlas" });
 catalog.meta.documents = catalog.libraries.reduce((sum, item) => sum + item.documents.length, 0);
 catalog.meta.words = catalog.libraries.reduce((sum, item) => sum + (item.stats.words || 0), 0);
-catalog.meta.dataVersion = "5.6.0"; catalog.meta.generatedAt = new Date().toISOString();
+catalog.meta.dataVersion ||= "6.4.0"; catalog.meta.generatedAt = new Date().toISOString();
 await writeJson(catalogFile, catalog);
 
 const index = await readJson(indexFile);

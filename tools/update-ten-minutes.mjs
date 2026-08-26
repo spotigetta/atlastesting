@@ -2,7 +2,7 @@ import { readFile, writeFile } from "node:fs/promises";
 
 const FEED = "https://www.spreaker.com/show/3226894/episodes/feed";
 const OUTPUT = new URL("../data/ten-minutes-daily.json", import.meta.url);
-const decode = value => String(value || "").replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1").replace(/<[^>]+>/g, " ").replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/\s+/g, " ").trim();
+const decode = value => String(value || "").replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, "$1").replace(/<[^>]+>/g, " ").replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/\*{1,3}/g, "").replace(/\s+/g, " ").trim();
 const field = (xml, name) => decode(xml.match(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${name}>`, "i"))?.[1]);
 const attr = (xml, tag, name) => xml.match(new RegExp(`<${tag}[^>]*\\s${name}=["']([^"']+)["']`, "i"))?.[1] || "";
 

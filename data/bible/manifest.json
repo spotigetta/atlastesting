@@ -1,0 +1,1356 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-22T08:36:18.788Z",
+  "translation": {
+    "name": "Sagrada Biblia. Versión oficial de la Conferencia Episcopal Española",
+    "abbreviation": "CEE",
+    "edition": "2010",
+    "language": "es",
+    "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/"
+  },
+  "stats": {
+    "books": 73,
+    "chapters": 1326,
+    "verses": 35396,
+    "words": 768487
+  },
+  "books": [
+    {
+      "testament": 1,
+      "order": 1,
+      "slug": "genesis",
+      "name": "Génesis",
+      "category": "Pentatéuco",
+      "aliases": [
+        "gn",
+        "gen",
+        "genesis"
+      ],
+      "chapterCount": 50,
+      "verseCount": 1531,
+      "file": "data/bible/books/genesis.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/genesis/"
+    },
+    {
+      "testament": 1,
+      "order": 2,
+      "slug": "exodo",
+      "name": "Éxodo",
+      "category": "Pentatéuco",
+      "aliases": [
+        "ex",
+        "exodo"
+      ],
+      "chapterCount": 40,
+      "verseCount": 1213,
+      "file": "data/bible/books/exodo.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/exodo/"
+    },
+    {
+      "testament": 1,
+      "order": 3,
+      "slug": "levitico",
+      "name": "Levítico",
+      "category": "Pentatéuco",
+      "aliases": [
+        "lv",
+        "lev",
+        "levitico"
+      ],
+      "chapterCount": 27,
+      "verseCount": 859,
+      "file": "data/bible/books/levitico.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/levitico/"
+    },
+    {
+      "testament": 1,
+      "order": 4,
+      "slug": "numeros",
+      "name": "Números",
+      "category": "Pentatéuco",
+      "aliases": [
+        "nm",
+        "num",
+        "numeros"
+      ],
+      "chapterCount": 36,
+      "verseCount": 1288,
+      "file": "data/bible/books/numeros.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/numeros/"
+    },
+    {
+      "testament": 1,
+      "order": 5,
+      "slug": "deuteronomio",
+      "name": "Deuteronomio",
+      "category": "Pentatéuco",
+      "aliases": [
+        "dt",
+        "deut",
+        "deuteronomio"
+      ],
+      "chapterCount": 34,
+      "verseCount": 959,
+      "file": "data/bible/books/deuteronomio.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/deuteronomio/"
+    },
+    {
+      "testament": 1,
+      "order": 6,
+      "slug": "josue",
+      "name": "Josué",
+      "category": "Libros Históricos",
+      "aliases": [
+        "jos",
+        "josue"
+      ],
+      "chapterCount": 24,
+      "verseCount": 658,
+      "file": "data/bible/books/josue.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/josue/"
+    },
+    {
+      "testament": 1,
+      "order": 7,
+      "slug": "jueces",
+      "name": "Jueces",
+      "category": "Libros Históricos",
+      "aliases": [
+        "jue",
+        "jueces"
+      ],
+      "chapterCount": 21,
+      "verseCount": 618,
+      "file": "data/bible/books/jueces.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/jueces/"
+    },
+    {
+      "testament": 1,
+      "order": 8,
+      "slug": "rut",
+      "name": "Rut",
+      "category": "Libros Históricos",
+      "aliases": [
+        "rt",
+        "rut"
+      ],
+      "chapterCount": 4,
+      "verseCount": 84,
+      "file": "data/bible/books/rut.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/rut/"
+    },
+    {
+      "testament": 1,
+      "order": 9,
+      "slug": "libro-primero-de-samuel",
+      "name": "Libro Primero De Samuel",
+      "category": "Libros Históricos",
+      "aliases": [
+        "1 s",
+        "1 sam",
+        "1 samuel",
+        "i samuel"
+      ],
+      "chapterCount": 31,
+      "verseCount": 811,
+      "file": "data/bible/books/libro-primero-de-samuel.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/1-samuel/"
+    },
+    {
+      "testament": 1,
+      "order": 10,
+      "slug": "libro-segundo-de-samuel",
+      "name": "Libro Segundo De Samuel",
+      "category": "Libros Históricos",
+      "aliases": [
+        "2 s",
+        "2 sam",
+        "2 samuel",
+        "ii samuel"
+      ],
+      "chapterCount": 24,
+      "verseCount": 695,
+      "file": "data/bible/books/libro-segundo-de-samuel.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/2-samuel/"
+    },
+    {
+      "testament": 1,
+      "order": 11,
+      "slug": "libro-primero-de-los-reyes",
+      "name": "Libro Primero De Los Reyes",
+      "category": "Libros Históricos",
+      "aliases": [
+        "1 r",
+        "1 re",
+        "1 rey",
+        "1 reyes",
+        "i reyes"
+      ],
+      "chapterCount": 22,
+      "verseCount": 816,
+      "file": "data/bible/books/libro-primero-de-los-reyes.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/1-reyes/"
+    },
+    {
+      "testament": 1,
+      "order": 12,
+      "slug": "libro-segundo-de-los-reyes",
+      "name": "Libro Segundo De Los Reyes",
+      "category": "Libros Históricos",
+      "aliases": [
+        "2 r",
+        "2 re",
+        "2 rey",
+        "2 reyes",
+        "ii reyes"
+      ],
+      "chapterCount": 25,
+      "verseCount": 719,
+      "file": "data/bible/books/libro-segundo-de-los-reyes.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/2-reyes/"
+    },
+    {
+      "testament": 1,
+      "order": 13,
+      "slug": "libro-primero-de-las-cronicas",
+      "name": "Libro Primero De Las Crónicas",
+      "category": "Libros Históricos",
+      "aliases": [
+        "1 cro",
+        "1 cronicas",
+        "i cronicas"
+      ],
+      "chapterCount": 29,
+      "verseCount": 943,
+      "file": "data/bible/books/libro-primero-de-las-cronicas.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/1-cronicas/"
+    },
+    {
+      "testament": 1,
+      "order": 14,
+      "slug": "libro-segundo-de-las-cronicas",
+      "name": "Libro Segundo De Las Crónicas",
+      "category": "Libros Históricos",
+      "aliases": [
+        "2 cro",
+        "2 cronicas",
+        "ii cronicas"
+      ],
+      "chapterCount": 36,
+      "verseCount": 822,
+      "file": "data/bible/books/libro-segundo-de-las-cronicas.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/2-cronicas/"
+    },
+    {
+      "testament": 1,
+      "order": 15,
+      "slug": "esdras",
+      "name": "Esdras",
+      "category": "Libros Históricos",
+      "aliases": [
+        "esd",
+        "esdras"
+      ],
+      "chapterCount": 10,
+      "verseCount": 280,
+      "file": "data/bible/books/esdras.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/esdras/"
+    },
+    {
+      "testament": 1,
+      "order": 16,
+      "slug": "nehemias",
+      "name": "Nehemías",
+      "category": "Libros Históricos",
+      "aliases": [
+        "neh",
+        "nehemias"
+      ],
+      "chapterCount": 13,
+      "verseCount": 405,
+      "file": "data/bible/books/nehemias.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/nehemias/"
+    },
+    {
+      "testament": 1,
+      "order": 17,
+      "slug": "tobias",
+      "name": "Tobías",
+      "category": "Libros Históricos",
+      "aliases": [
+        "tob",
+        "tobias"
+      ],
+      "chapterCount": 14,
+      "verseCount": 248,
+      "file": "data/bible/books/tobias.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/tobias/"
+    },
+    {
+      "testament": 1,
+      "order": 18,
+      "slug": "judit",
+      "name": "Judit",
+      "category": "Libros Históricos",
+      "aliases": [
+        "jdt",
+        "judit"
+      ],
+      "chapterCount": 16,
+      "verseCount": 340,
+      "file": "data/bible/books/judit.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/judit/"
+    },
+    {
+      "testament": 1,
+      "order": 19,
+      "slug": "ester",
+      "name": "Ester",
+      "category": "Libros Históricos",
+      "aliases": [
+        "est",
+        "ester"
+      ],
+      "chapterCount": 10,
+      "verseCount": 168,
+      "file": "data/bible/books/ester.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/ester/"
+    },
+    {
+      "testament": 1,
+      "order": 20,
+      "slug": "i-macabeos",
+      "name": "I Macabeos",
+      "category": "Libros Históricos",
+      "aliases": [
+        "1 mac",
+        "1 macabeos",
+        "i macabeos"
+      ],
+      "chapterCount": 16,
+      "verseCount": 924,
+      "file": "data/bible/books/i-macabeos.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/1-macabeos/"
+    },
+    {
+      "testament": 1,
+      "order": 21,
+      "slug": "ii-macabeos",
+      "name": "Ii Macabeos",
+      "category": "Libros Históricos",
+      "aliases": [
+        "2 mac",
+        "2 macabeos",
+        "ii macabeos"
+      ],
+      "chapterCount": 15,
+      "verseCount": 556,
+      "file": "data/bible/books/ii-macabeos.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/2-macabeos/"
+    },
+    {
+      "testament": 1,
+      "order": 22,
+      "slug": "job",
+      "name": "Job",
+      "category": "Libros Poéticos o de Sabiduría",
+      "aliases": [
+        "job"
+      ],
+      "chapterCount": 42,
+      "verseCount": 1070,
+      "file": "data/bible/books/job.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/job/"
+    },
+    {
+      "testament": 1,
+      "order": 23,
+      "slug": "los-salmos",
+      "name": "Los Salmos",
+      "category": "Libros Poéticos o de Sabiduría",
+      "aliases": [
+        "sal",
+        "salmo",
+        "salmos"
+      ],
+      "chapterCount": 148,
+      "verseCount": 2482,
+      "file": "data/bible/books/los-salmos.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/salmos/"
+    },
+    {
+      "testament": 1,
+      "order": 24,
+      "slug": "proverbios",
+      "name": "Proverbios",
+      "category": "Libros Poéticos o de Sabiduría",
+      "aliases": [
+        "pr",
+        "prov",
+        "proverbios"
+      ],
+      "chapterCount": 31,
+      "verseCount": 915,
+      "file": "data/bible/books/proverbios.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/proverbios/"
+    },
+    {
+      "testament": 1,
+      "order": 25,
+      "slug": "eclesiastes",
+      "name": "Eclesiastés",
+      "category": "Libros Poéticos o de Sabiduría",
+      "aliases": [
+        "qo",
+        "ecl",
+        "eclesiastes",
+        "qohelet"
+      ],
+      "chapterCount": 12,
+      "verseCount": 222,
+      "file": "data/bible/books/eclesiastes.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/eclesiastes/"
+    },
+    {
+      "testament": 1,
+      "order": 26,
+      "slug": "cantar-de-los-cantares",
+      "name": "Cantar De Los Cantares",
+      "category": "Libros Poéticos o de Sabiduría",
+      "aliases": [
+        "cant",
+        "ct",
+        "cantar",
+        "cantar de los cantares"
+      ],
+      "chapterCount": 8,
+      "verseCount": 117,
+      "file": "data/bible/books/cantar-de-los-cantares.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/cantar-de-los-cantares/"
+    },
+    {
+      "testament": 1,
+      "order": 27,
+      "slug": "sabiduria",
+      "name": "Sabiduría",
+      "category": "Libros Poéticos o de Sabiduría",
+      "aliases": [
+        "sab",
+        "sabiduria"
+      ],
+      "chapterCount": 19,
+      "verseCount": 436,
+      "file": "data/bible/books/sabiduria.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/sabiduria/"
+    },
+    {
+      "testament": 1,
+      "order": 28,
+      "slug": "eclesiastico",
+      "name": "Eclesiástico",
+      "category": "Libros Poéticos o de Sabiduría",
+      "aliases": [
+        "si",
+        "eclo",
+        "eclesiastico",
+        "siracida"
+      ],
+      "chapterCount": 51,
+      "verseCount": 1403,
+      "file": "data/bible/books/eclesiastico.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/eclesiastico/"
+    },
+    {
+      "testament": 1,
+      "order": 29,
+      "slug": "isaias",
+      "name": "Isaías",
+      "category": "Profetas Mayores",
+      "aliases": [
+        "is",
+        "isaias"
+      ],
+      "chapterCount": 66,
+      "verseCount": 1291,
+      "file": "data/bible/books/isaias.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/isaias/"
+    },
+    {
+      "testament": 1,
+      "order": 30,
+      "slug": "jeremias",
+      "name": "Jeremías",
+      "category": "Profetas Mayores",
+      "aliases": [
+        "jr",
+        "jer",
+        "jeremias"
+      ],
+      "chapterCount": 52,
+      "verseCount": 1364,
+      "file": "data/bible/books/jeremias.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/jeremias/"
+    },
+    {
+      "testament": 1,
+      "order": 31,
+      "slug": "lamentaciones",
+      "name": "Lamentaciones",
+      "category": "Profetas Mayores",
+      "aliases": [
+        "lam",
+        "lamentaciones"
+      ],
+      "chapterCount": 5,
+      "verseCount": 154,
+      "file": "data/bible/books/lamentaciones.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/lamentaciones/"
+    },
+    {
+      "testament": 1,
+      "order": 32,
+      "slug": "baruc",
+      "name": "Baruc",
+      "category": "Profetas Menores",
+      "aliases": [
+        "bar",
+        "baruc"
+      ],
+      "chapterCount": 6,
+      "verseCount": 213,
+      "file": "data/bible/books/baruc.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/baruc/"
+    },
+    {
+      "testament": 1,
+      "order": 33,
+      "slug": "ezequiel",
+      "name": "Ezequiel",
+      "category": "Profetas Mayores",
+      "aliases": [
+        "ez",
+        "ezequiel"
+      ],
+      "chapterCount": 48,
+      "verseCount": 1269,
+      "file": "data/bible/books/ezequiel.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/ezequiel/"
+    },
+    {
+      "testament": 1,
+      "order": 34,
+      "slug": "daniel",
+      "name": "Daniel",
+      "category": "Profetas Mayores",
+      "aliases": [
+        "dn",
+        "dan",
+        "daniel"
+      ],
+      "chapterCount": 14,
+      "verseCount": 520,
+      "file": "data/bible/books/daniel.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/daniel/"
+    },
+    {
+      "testament": 1,
+      "order": 35,
+      "slug": "oseas",
+      "name": "Oseas",
+      "category": "Profetas Menores",
+      "aliases": [
+        "os",
+        "oseas"
+      ],
+      "chapterCount": 14,
+      "verseCount": 197,
+      "file": "data/bible/books/oseas.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/oseas/"
+    },
+    {
+      "testament": 1,
+      "order": 36,
+      "slug": "joel",
+      "name": "Joel",
+      "category": "Profetas Menores",
+      "aliases": [
+        "jl",
+        "joel"
+      ],
+      "chapterCount": 4,
+      "verseCount": 73,
+      "file": "data/bible/books/joel.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/joel/"
+    },
+    {
+      "testament": 1,
+      "order": 37,
+      "slug": "amos",
+      "name": "Amós",
+      "category": "Profetas Menores",
+      "aliases": [
+        "am",
+        "amos"
+      ],
+      "chapterCount": 9,
+      "verseCount": 146,
+      "file": "data/bible/books/amos.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/amos/"
+    },
+    {
+      "testament": 1,
+      "order": 38,
+      "slug": "abdias",
+      "name": "Abdías",
+      "category": "Profetas Menores",
+      "aliases": [
+        "abd",
+        "abdias"
+      ],
+      "chapterCount": 1,
+      "verseCount": 21,
+      "file": "data/bible/books/abdias.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/abdias/"
+    },
+    {
+      "testament": 1,
+      "order": 39,
+      "slug": "jonas",
+      "name": "Jonás",
+      "category": "Profetas Menores",
+      "aliases": [
+        "jon",
+        "jonas"
+      ],
+      "chapterCount": 4,
+      "verseCount": 48,
+      "file": "data/bible/books/jonas.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/jonas/"
+    },
+    {
+      "testament": 1,
+      "order": 40,
+      "slug": "miqueas",
+      "name": "Miqueas",
+      "category": "Profetas Menores",
+      "aliases": [
+        "miq",
+        "miqueas"
+      ],
+      "chapterCount": 7,
+      "verseCount": 105,
+      "file": "data/bible/books/miqueas.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/miqueas/"
+    },
+    {
+      "testament": 1,
+      "order": 41,
+      "slug": "nahum",
+      "name": "Nahúm",
+      "category": "Profetas Menores",
+      "aliases": [
+        "nah",
+        "nahum"
+      ],
+      "chapterCount": 3,
+      "verseCount": 47,
+      "file": "data/bible/books/nahum.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/nahun/"
+    },
+    {
+      "testament": 1,
+      "order": 42,
+      "slug": "habacuc",
+      "name": "Habacuc",
+      "category": "Profetas Menores",
+      "aliases": [
+        "hab",
+        "habacuc"
+      ],
+      "chapterCount": 3,
+      "verseCount": 56,
+      "file": "data/bible/books/habacuc.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/habacuc/"
+    },
+    {
+      "testament": 1,
+      "order": 43,
+      "slug": "sofonias",
+      "name": "Sofonías",
+      "category": "Profetas Menores",
+      "aliases": [
+        "sof",
+        "sofonias"
+      ],
+      "chapterCount": 3,
+      "verseCount": 53,
+      "file": "data/bible/books/sofonias.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/sofonias/"
+    },
+    {
+      "testament": 1,
+      "order": 44,
+      "slug": "ageo",
+      "name": "Ageo",
+      "category": "Profetas Menores",
+      "aliases": [
+        "ag",
+        "ageo"
+      ],
+      "chapterCount": 2,
+      "verseCount": 38,
+      "file": "data/bible/books/ageo.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/ageo/"
+    },
+    {
+      "testament": 1,
+      "order": 45,
+      "slug": "zacarias",
+      "name": "Zacarías",
+      "category": "Profetas Menores",
+      "aliases": [
+        "zac",
+        "zacarias"
+      ],
+      "chapterCount": 14,
+      "verseCount": 211,
+      "file": "data/bible/books/zacarias.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/zacarias/"
+    },
+    {
+      "testament": 1,
+      "order": 46,
+      "slug": "malaquias",
+      "name": "Malaquías",
+      "category": "Profetas Menores",
+      "aliases": [
+        "mal",
+        "malaquias"
+      ],
+      "chapterCount": 3,
+      "verseCount": 55,
+      "file": "data/bible/books/malaquias.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/malaquias/"
+    },
+    {
+      "testament": 2,
+      "order": 1,
+      "slug": "evangelio-segun-san-mateo",
+      "name": "Evangelio Según San Mateo",
+      "category": "Los Evangelios",
+      "aliases": [
+        "mt",
+        "mateo",
+        "san mateo"
+      ],
+      "chapterCount": 28,
+      "verseCount": 1071,
+      "file": "data/bible/books/evangelio-segun-san-mateo.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/mateo/"
+    },
+    {
+      "testament": 2,
+      "order": 2,
+      "slug": "evangelio-segun-san-marcos",
+      "name": "Evangelio Según San Marcos",
+      "category": "Los Evangelios",
+      "aliases": [
+        "mc",
+        "marcos",
+        "san marcos"
+      ],
+      "chapterCount": 16,
+      "verseCount": 676,
+      "file": "data/bible/books/evangelio-segun-san-marcos.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/marcos/"
+    },
+    {
+      "testament": 2,
+      "order": 3,
+      "slug": "evangelio-segun-san-lucas",
+      "name": "Evangelio Según San Lucas",
+      "category": "Los Evangelios",
+      "aliases": [
+        "lc",
+        "lucas",
+        "san lucas"
+      ],
+      "chapterCount": 24,
+      "verseCount": 1151,
+      "file": "data/bible/books/evangelio-segun-san-lucas.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/lucas/"
+    },
+    {
+      "testament": 2,
+      "order": 4,
+      "slug": "evangelio-segun-san-juan",
+      "name": "Evangelio Según San Juan",
+      "category": "Los Evangelios",
+      "aliases": [
+        "jn",
+        "juan",
+        "san juan"
+      ],
+      "chapterCount": 21,
+      "verseCount": 879,
+      "file": "data/bible/books/evangelio-segun-san-juan.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/juan/"
+    },
+    {
+      "testament": 2,
+      "order": 5,
+      "slug": "hechos-de-los-apostoles",
+      "name": "Hechos De Los Apóstoles",
+      "category": "Hechos de los Apóstoles",
+      "aliases": [
+        "hch",
+        "hechos",
+        "hechos de los apostoles"
+      ],
+      "chapterCount": 28,
+      "verseCount": 1004,
+      "file": "data/bible/books/hechos-de-los-apostoles.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/hechos-de-los-apostoles/"
+    },
+    {
+      "testament": 2,
+      "order": 6,
+      "slug": "epistola-a-los-romanos",
+      "name": "Epístola A Los Romanos",
+      "category": "Cartas de Pablo",
+      "aliases": [
+        "rom",
+        "rm",
+        "romanos"
+      ],
+      "chapterCount": 16,
+      "verseCount": 433,
+      "file": "data/bible/books/epistola-a-los-romanos.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/romanos/"
+    },
+    {
+      "testament": 2,
+      "order": 7,
+      "slug": "primera-epistola-a-los-corintios",
+      "name": "Primera Epístola A Los Corintios",
+      "category": "Cartas de Pablo",
+      "aliases": [
+        "1 cor",
+        "1 corintios",
+        "i corintios"
+      ],
+      "chapterCount": 16,
+      "verseCount": 437,
+      "file": "data/bible/books/primera-epistola-a-los-corintios.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/1-corintios/"
+    },
+    {
+      "testament": 2,
+      "order": 8,
+      "slug": "segunda-epistola-a-los-corintios",
+      "name": "Segunda Epístola A Los Corintios",
+      "category": "Cartas de Pablo",
+      "aliases": [
+        "2 cor",
+        "2 corintios",
+        "ii corintios"
+      ],
+      "chapterCount": 13,
+      "verseCount": 256,
+      "file": "data/bible/books/segunda-epistola-a-los-corintios.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/2-corintios/"
+    },
+    {
+      "testament": 2,
+      "order": 9,
+      "slug": "epistola-a-los-galatas",
+      "name": "Epístola A Los Gálatas",
+      "category": "Cartas de Pablo",
+      "aliases": [
+        "gal",
+        "galatas"
+      ],
+      "chapterCount": 6,
+      "verseCount": 149,
+      "file": "data/bible/books/epistola-a-los-galatas.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/galatas/"
+    },
+    {
+      "testament": 2,
+      "order": 10,
+      "slug": "epistola-a-los-efesios",
+      "name": "Epístola A Los Efesios",
+      "category": "Cartas de Pablo",
+      "aliases": [
+        "ef",
+        "efesios"
+      ],
+      "chapterCount": 6,
+      "verseCount": 155,
+      "file": "data/bible/books/epistola-a-los-efesios.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/efesios/"
+    },
+    {
+      "testament": 2,
+      "order": 11,
+      "slug": "epistola-a-los-filipenses",
+      "name": "Epístola A Los Filipenses",
+      "category": "Cartas de Pablo",
+      "aliases": [
+        "flp",
+        "fil",
+        "filipenses"
+      ],
+      "chapterCount": 4,
+      "verseCount": 104,
+      "file": "data/bible/books/epistola-a-los-filipenses.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/filipenses/"
+    },
+    {
+      "testament": 2,
+      "order": 12,
+      "slug": "epistola-a-los-colosenses",
+      "name": "Epístola A Los Colosenses",
+      "category": "Cartas de Pablo",
+      "aliases": [
+        "col",
+        "colosenses"
+      ],
+      "chapterCount": 4,
+      "verseCount": 95,
+      "file": "data/bible/books/epistola-a-los-colosenses.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/colosenses/"
+    },
+    {
+      "testament": 2,
+      "order": 13,
+      "slug": "primera-epistola-a-los-tesalonicenses",
+      "name": "Primera Epístola A Los Tesalonicenses",
+      "category": "Cartas de Pablo",
+      "aliases": [
+        "1 tes",
+        "1 tesalonicenses",
+        "i tesalonicenses"
+      ],
+      "chapterCount": 5,
+      "verseCount": 89,
+      "file": "data/bible/books/primera-epistola-a-los-tesalonicenses.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/1-tesalonicenses/"
+    },
+    {
+      "testament": 2,
+      "order": 14,
+      "slug": "segunda-epistola-a-los-tesalonicenses",
+      "name": "Segunda Epístola A Los Tesalonicenses",
+      "category": "Cartas de Pablo",
+      "aliases": [
+        "2 tes",
+        "2 tesalonicenses",
+        "ii tesalonicenses"
+      ],
+      "chapterCount": 3,
+      "verseCount": 47,
+      "file": "data/bible/books/segunda-epistola-a-los-tesalonicenses.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/2-tesalonicenses/"
+    },
+    {
+      "testament": 2,
+      "order": 15,
+      "slug": "primera-epistola-a-timoteo",
+      "name": "Primera Epístola A Timoteo",
+      "category": "Cartas de Pablo",
+      "aliases": [
+        "1 tim",
+        "1 timoteo",
+        "i timoteo"
+      ],
+      "chapterCount": 6,
+      "verseCount": 113,
+      "file": "data/bible/books/primera-epistola-a-timoteo.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/1-timoteo/"
+    },
+    {
+      "testament": 2,
+      "order": 16,
+      "slug": "segunda-epistola-a-timoteo",
+      "name": "Segunda Epístola A Timoteo",
+      "category": "Cartas de Pablo",
+      "aliases": [
+        "2 tim",
+        "2 timoteo",
+        "ii timoteo"
+      ],
+      "chapterCount": 4,
+      "verseCount": 83,
+      "file": "data/bible/books/segunda-epistola-a-timoteo.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/2-timoteo/"
+    },
+    {
+      "testament": 2,
+      "order": 17,
+      "slug": "epistola-a-tito",
+      "name": "Epístola A Tito",
+      "category": "Cartas de Pablo",
+      "aliases": [
+        "tit",
+        "tito"
+      ],
+      "chapterCount": 3,
+      "verseCount": 46,
+      "file": "data/bible/books/epistola-a-tito.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/tito/"
+    },
+    {
+      "testament": 2,
+      "order": 18,
+      "slug": "epistola-a-filemon",
+      "name": "Epístola A Filemón",
+      "category": "Cartas de Pablo",
+      "aliases": [
+        "flm",
+        "filemon"
+      ],
+      "chapterCount": 1,
+      "verseCount": 25,
+      "file": "data/bible/books/epistola-a-filemon.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/filemon/"
+    },
+    {
+      "testament": 2,
+      "order": 19,
+      "slug": "epistola-a-los-hebreos",
+      "name": "Epístola A Los Hebreos",
+      "category": "Cartas de Pablo",
+      "aliases": [
+        "heb",
+        "hebreos"
+      ],
+      "chapterCount": 13,
+      "verseCount": 303,
+      "file": "data/bible/books/epistola-a-los-hebreos.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/hebreos/"
+    },
+    {
+      "testament": 2,
+      "order": 20,
+      "slug": "epistola-de-santiago",
+      "name": "Epístola De Santiago",
+      "category": "Santiago",
+      "aliases": [
+        "st",
+        "sant",
+        "santiago"
+      ],
+      "chapterCount": 5,
+      "verseCount": 108,
+      "file": "data/bible/books/epistola-de-santiago.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/santiago/"
+    },
+    {
+      "testament": 2,
+      "order": 21,
+      "slug": "primera-epistola-de-san-pedro",
+      "name": "Primera Epístola De San Pedro",
+      "category": "Pedro",
+      "aliases": [
+        "1 pe",
+        "1 pedro",
+        "i pedro"
+      ],
+      "chapterCount": 5,
+      "verseCount": 105,
+      "file": "data/bible/books/primera-epistola-de-san-pedro.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/1-pedro/"
+    },
+    {
+      "testament": 2,
+      "order": 22,
+      "slug": "segunda-epistola-de-san-pedro",
+      "name": "Segunda Epístola De San Pedro",
+      "category": "Pedro",
+      "aliases": [
+        "2 pe",
+        "2 pedro",
+        "ii pedro"
+      ],
+      "chapterCount": 3,
+      "verseCount": 61,
+      "file": "data/bible/books/segunda-epistola-de-san-pedro.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/2-pedro/"
+    },
+    {
+      "testament": 2,
+      "order": 23,
+      "slug": "primera-epistola-de-san-juan",
+      "name": "Primera Epístola De San Juan",
+      "category": "Juan",
+      "aliases": [
+        "1 jn",
+        "1 juan",
+        "i juan"
+      ],
+      "chapterCount": 5,
+      "verseCount": 105,
+      "file": "data/bible/books/primera-epistola-de-san-juan.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/juan-cartas-1-3/"
+    },
+    {
+      "testament": 2,
+      "order": 24,
+      "slug": "segunda-epistola-de-san-juan",
+      "name": "Segunda Epístola De San Juan",
+      "category": "Juan",
+      "aliases": [
+        "2 jn",
+        "2 juan",
+        "ii juan"
+      ],
+      "chapterCount": 1,
+      "verseCount": 13,
+      "file": "data/bible/books/segunda-epistola-de-san-juan.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/juan-cartas-1-3/"
+    },
+    {
+      "testament": 2,
+      "order": 25,
+      "slug": "tercera-epistola-de-san-juan",
+      "name": "Tercera Epístola De San Juan",
+      "category": "Juan",
+      "aliases": [
+        "3 jn",
+        "3 juan",
+        "iii juan"
+      ],
+      "chapterCount": 1,
+      "verseCount": 15,
+      "file": "data/bible/books/tercera-epistola-de-san-juan.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/juan-cartas-1-3/"
+    },
+    {
+      "testament": 2,
+      "order": 26,
+      "slug": "epistola-de-san-judas",
+      "name": "Epístola De San Judas",
+      "category": "Judas",
+      "aliases": [
+        "jud",
+        "judas"
+      ],
+      "chapterCount": 1,
+      "verseCount": 25,
+      "file": "data/bible/books/epistola-de-san-judas.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/judas/"
+    },
+    {
+      "testament": 2,
+      "order": 27,
+      "slug": "apocalipsis",
+      "name": "Apocalipsis",
+      "category": "Apocalipsis",
+      "aliases": [
+        "ap",
+        "apoc",
+        "apocalipsis"
+      ],
+      "chapterCount": 22,
+      "verseCount": 405,
+      "file": "data/bible/books/apocalipsis.json",
+      "sourceUrl": "https://www.conferenciaepiscopal.es/biblia/apocalipsis/"
+    }
+  ],
+  "aliasMap": {
+    "gn": 0,
+    "gen": 0,
+    "genesis": 0,
+    "ex": 1,
+    "exodo": 1,
+    "lv": 2,
+    "lev": 2,
+    "levitico": 2,
+    "nm": 3,
+    "num": 3,
+    "numeros": 3,
+    "dt": 4,
+    "deut": 4,
+    "deuteronomio": 4,
+    "jos": 5,
+    "josue": 5,
+    "jue": 6,
+    "jueces": 6,
+    "rt": 7,
+    "rut": 7,
+    "1 s": 8,
+    "1 sam": 8,
+    "1 samuel": 8,
+    "i samuel": 8,
+    "2 s": 9,
+    "2 sam": 9,
+    "2 samuel": 9,
+    "ii samuel": 9,
+    "1 r": 10,
+    "1 re": 10,
+    "1 rey": 10,
+    "1 reyes": 10,
+    "i reyes": 10,
+    "2 r": 11,
+    "2 re": 11,
+    "2 rey": 11,
+    "2 reyes": 11,
+    "ii reyes": 11,
+    "1 cro": 12,
+    "1 cronicas": 12,
+    "i cronicas": 12,
+    "2 cro": 13,
+    "2 cronicas": 13,
+    "ii cronicas": 13,
+    "esd": 14,
+    "esdras": 14,
+    "neh": 15,
+    "nehemias": 15,
+    "tob": 16,
+    "tobias": 16,
+    "jdt": 17,
+    "judit": 17,
+    "est": 18,
+    "ester": 18,
+    "1 mac": 19,
+    "1 macabeos": 19,
+    "i macabeos": 19,
+    "2 mac": 20,
+    "2 macabeos": 20,
+    "ii macabeos": 20,
+    "job": 21,
+    "sal": 22,
+    "salmo": 22,
+    "salmos": 22,
+    "pr": 23,
+    "prov": 23,
+    "proverbios": 23,
+    "qo": 24,
+    "ecl": 24,
+    "eclesiastes": 24,
+    "qohelet": 24,
+    "cant": 25,
+    "ct": 25,
+    "cantar": 25,
+    "cantar de los cantares": 25,
+    "sab": 26,
+    "sabiduria": 26,
+    "si": 27,
+    "eclo": 27,
+    "eclesiastico": 27,
+    "siracida": 27,
+    "is": 28,
+    "isaias": 28,
+    "jr": 29,
+    "jer": 29,
+    "jeremias": 29,
+    "lam": 30,
+    "lamentaciones": 30,
+    "bar": 31,
+    "baruc": 31,
+    "ez": 32,
+    "ezequiel": 32,
+    "dn": 33,
+    "dan": 33,
+    "daniel": 33,
+    "os": 34,
+    "oseas": 34,
+    "jl": 35,
+    "joel": 35,
+    "am": 36,
+    "amos": 36,
+    "abd": 37,
+    "abdias": 37,
+    "jon": 38,
+    "jonas": 38,
+    "miq": 39,
+    "miqueas": 39,
+    "nah": 40,
+    "nahum": 40,
+    "hab": 41,
+    "habacuc": 41,
+    "sof": 42,
+    "sofonias": 42,
+    "ag": 43,
+    "ageo": 43,
+    "zac": 44,
+    "zacarias": 44,
+    "mal": 45,
+    "malaquias": 45,
+    "mt": 46,
+    "mateo": 46,
+    "san mateo": 46,
+    "mc": 47,
+    "marcos": 47,
+    "san marcos": 47,
+    "lc": 48,
+    "lucas": 48,
+    "san lucas": 48,
+    "jn": 49,
+    "juan": 49,
+    "san juan": 49,
+    "hch": 50,
+    "hechos": 50,
+    "hechos de los apostoles": 50,
+    "rom": 51,
+    "rm": 51,
+    "romanos": 51,
+    "1 cor": 52,
+    "1 corintios": 52,
+    "i corintios": 52,
+    "2 cor": 53,
+    "2 corintios": 53,
+    "ii corintios": 53,
+    "gal": 54,
+    "galatas": 54,
+    "ef": 55,
+    "efesios": 55,
+    "flp": 56,
+    "fil": 56,
+    "filipenses": 56,
+    "col": 57,
+    "colosenses": 57,
+    "1 tes": 58,
+    "1 tesalonicenses": 58,
+    "i tesalonicenses": 58,
+    "2 tes": 59,
+    "2 tesalonicenses": 59,
+    "ii tesalonicenses": 59,
+    "1 tim": 60,
+    "1 timoteo": 60,
+    "i timoteo": 60,
+    "2 tim": 61,
+    "2 timoteo": 61,
+    "ii timoteo": 61,
+    "tit": 62,
+    "tito": 62,
+    "flm": 63,
+    "filemon": 63,
+    "heb": 64,
+    "hebreos": 64,
+    "st": 65,
+    "sant": 65,
+    "santiago": 65,
+    "1 pe": 66,
+    "1 pedro": 66,
+    "i pedro": 66,
+    "2 pe": 67,
+    "2 pedro": 67,
+    "ii pedro": 67,
+    "1 jn": 68,
+    "1 juan": 68,
+    "i juan": 68,
+    "2 jn": 69,
+    "2 juan": 69,
+    "ii juan": 69,
+    "3 jn": 70,
+    "3 juan": 70,
+    "iii juan": 70,
+    "jud": 71,
+    "judas": 71,
+    "ap": 72,
+    "apoc": 72,
+    "apocalipsis": 72
+  }
+}

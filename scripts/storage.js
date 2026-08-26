@@ -12,7 +12,7 @@
     readerProgress: {},
     annotations: {},
     study: {},
-    notifications: { daily: false, tenMinutes: false, reading: false, news: false, routes: false, updates: true },
+    notifications: { daily: false, tenMinutes: true, reading: false, news: false, routes: false, updates: true },
     exam: {
       config: {
         middayEnabled: false, middayTime: "14:05", middayDays: [1,2,3,4,5,6,0],
@@ -34,12 +34,12 @@
       shortTheme: "auto",
       interfaceScale: 100, cornerRadius: 100, fontStyle: "editorial", headingFont: "literata", bodyFont: "dm-sans", palette: "sage", surfaceStyle: "soft",
       compactMode: false, showExternalImages: true, showTenMinutesHome: true, showMassFinderHome: true, tenMinutesTime: "08:00", quoteTime: "09:00",
-      homeOrder: ["exam", "tenminutes", "massfinder", "today", "libraries", "reading", "history"], exploreOrder: [], exploreColors: {}, customizeHome: false, customizeExplore: false,
+      homeOrder: ["exam", "tenminutes", "massfinder", "youth", "today", "libraries", "reading", "history"], exploreOrder: [], exploreColors: {}, customizeHome: false, customizeExplore: false,
       libraryOrder: [], pinnedLibraries: [], hiddenLibraries: [], libraryColors: {}, libraryLabels: {}, customizeLibraries: false,
       customChannels: { youtube: [], music: [], instagram: [] }, unlockedFeatures: []
     },
     lastLibrary: null,
-    version: 7
+    version: 9
   };
 
   function migrate(stored) {
@@ -89,6 +89,12 @@
       value.settings ||= {}; value.settings.showTenMinutesHome = true;
       value.settings.homeOrder = [...new Set([...(value.settings.homeOrder || []), "tenminutes", "massfinder"])];
       value.version = 8;
+    }
+    if (value.version < 9) {
+      value.settings ||= {};
+      value.settings.showYouthHome ??= true;
+      value.settings.homeOrder = [...new Set([...(value.settings.homeOrder || []), "youth"])];
+      value.version = 9;
     }
     return value;
   }
@@ -180,6 +186,7 @@
     },
     setSetting(key, value) { state.settings[key] = value; commit(); },
     unlockFeature(id) { state.settings.unlockedFeatures = uniqueFront(state.settings.unlockedFeatures || [], id, 30); commit(); },
+    lockFeature(id) { state.settings.unlockedFeatures = (state.settings.unlockedFeatures || []).filter(item => item !== id); commit(); },
     isFeatureUnlocked(id) { return (state.settings.unlockedFeatures || []).includes(id); },
     setNotification(key, value) { state.notifications[key] = Boolean(value); commit(); },
     updateExamConfig(patch) { state.exam.config = { ...state.exam.config, ...patch }; commit(); },

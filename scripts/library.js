@@ -36,7 +36,7 @@
   function metric(value, label) { return `<div class="metric-card"><b>${value}</b><span>${label}</span></div>`; }
 
   function tabs(library, active) {
-    const items = [["documents", "Documentos"], ["shelf", "Biblioteca visual"], ["topics", "Mapa temático"], ["authors", "Autores"], ["stats", "Estadísticas"], ["questions", "Qué puedo preguntar"]];
+    const items = [["documents", "Documentos"], ["topics", "Mapa temático"], ["authors", "Autores"], ["stats", "Estadísticas"], ["questions", "Qué puedo preguntar"]];
     if (library.audiobooks?.length) items.splice(1, 0, ["audiobooks", "Audiolibro"]);
     if (library.id === "vida-santos") items.splice(1, 0, ["saints-moods", "Cómo vivieron"]);
     return `<nav class="library-tabs tone-${library.tone}"><div class="chip-row">${items.map(([id, label]) => `<a class="chip ${active === id ? "active" : ""}" href="${id === "saints-moods" ? "#/spiritual/saints" : `#/library/${library.id}/${id}`}">${label}</a>`).join("")}</div></nav>`;
@@ -88,6 +88,11 @@
     return `<div class="section-head"><div><h2>Mapa temático</h2><p>Áreas, fuentes principales y complementarias consignadas en el índice.</p></div></div><div class="topic-list">${library.topics.map(topic => `<details class="topic-card"><summary><h3>${esc(topic.name)}</h3><span>＋</span></summary><div class="topic-body"><div class="source-block"><b>Fuentes principales</b><p>${esc(topic.primary)}</p></div><div class="source-block"><b>Complementarias</b><p>${esc(topic.complementary)}</p></div><div class="topic-actions"><button class="secondary-button" data-save-collection="${esc(topic.id)}">Guardar</button>${notebookButton(library, `Consultar en ${library.short}`)}</div></div></details>`).join("")}</div>`;
   }
 
+  function combinedDocumentsView(library, options = {}) {
+    const visual = shelfView(library).replace(/<div class="section"><h2 class="serif">Exploración alternativa[\s\S]*?<\/div>\s*$/, "");
+    return `<section class="library-visual-and-documents"><div class="library-visual-block">${visual}</div><div class="library-documents-block"><div class="section-head"><div><h2>Todos los documentos</h2><p>Busca, filtra y abre cualquier fuente de esta estantería.</p></div></div>${documentView(library, options)}</div></section>`;
+  }
+
   function authorsView(library) {
     return `<div class="section-head"><div><h2>Autores identificados</h2><p>La atribución se basa únicamente en nombres reconocibles dentro del título del archivo.</p></div></div>${library.authors.length ? `<div class="author-grid">${library.authors.map(author => `<button class="author-card" data-search-term="${esc(author.name)}"><span class="author-initial">${esc(author.name.split(" ").filter(Boolean).slice(-1)[0][0])}</span><h3>${esc(author.name)}</h3><p>${author.count} documento${author.count === 1 ? "" : "s"}</p></button>`).join("")}</div>` : empty("Autores no consignados", "El índice no permite identificar autores de forma segura.")}`;
   }
@@ -117,7 +122,7 @@
     else if (active === "stats") content = root.statistics.library(library);
     else if (active === "questions") content = questionsView(library);
     else if (active === "audiobooks") content = audiobookView(library);
-    else content = documentView(library, options);
+    else content = combinedDocumentsView(library, options);
     return `<div class="tone-${library.tone}" data-library="${library.id}">${cover(library)}${tabs(library, active)}<section class="page">${content}</section></div>`;
   }
 
@@ -138,7 +143,7 @@
         <section class="detail-section"><h2>Preguntas sugeridas</h2><div class="question-list">${questions.map(question => `<article class="question-card"><p>${esc(question)}</p><div class="question-actions"><button data-copy-question="${esc(question)}">Copiar</button><a href="${esc(library.notebookUrl)}" target="_blank" rel="noopener">Abrir IA</a></div></article>`).join("")}</div></section>
         <section class="detail-section"><h2>Documentos de la misma categoría</h2><div class="document-list">${related.map(docRow).join("") || `<p class="muted small">No hay otros documentos en esta categoría.</p>`}</div></section>
       </div>
-      <footer class="detail-actions"><a class="primary-button" href="#/reader/${encodeURIComponent(doc.id)}">${icon("books")} Leer</a>${notebookButton(library, "Consultar en la IA")}<button class="icon-button" data-save-document="${esc(doc.id)}" aria-label="Guardar">${icon("bookmark")}</button><button class="icon-button" data-share-document="${esc(doc.id)}" aria-label="Compartir">${icon("share")}</button></footer>
+      <footer class="detail-actions"><a class="primary-button" href="#/reader/${encodeURIComponent(doc.id)}">${icon("books")} Leer</a><a class="notebook-button" href="#/preguntar?q=${encodeURIComponent(`Quiero comprender mejor la obra «${doc.title}», de ${doc.author || "autor no consignado"}. ¿Qué preguntas y fuentes me ayudarían a estudiarla?`)}">Preguntar sobre esta obra</a><button class="icon-button" data-save-document="${esc(doc.id)}" aria-label="Guardar">${icon("bookmark")}</button><button class="icon-button" data-share-document="${esc(doc.id)}" aria-label="Compartir">${icon("share")}</button></footer>
     </div>`;
   }
 

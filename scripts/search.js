@@ -67,10 +67,10 @@
       .sort((a, b) => b.score - a.score || a.title.localeCompare(b.title))
       .slice(0, limit);
 
-    const authors = catalog.libraries.flatMap(lib => lib.authors.map(author => ({ ...author, library: lib })))
+    const authors = catalog.libraries.flatMap(lib => (lib.authors || []).map(author => ({ ...author, library: lib })))
       .filter(item => !parsed.documentId && (!parsed.libraries.size || parsed.libraries.has(item.library.id)) && score(item.name, q, item.name))
       .sort((a, b) => b.count - a.count).slice(0, 20);
-    const categories = catalog.libraries.flatMap(lib => lib.categories.map(category => ({ ...category, library: lib })))
+    const categories = catalog.libraries.flatMap(lib => (lib.categories || []).map(category => ({ ...category, library: lib })))
       .filter(item => !parsed.documentId && (!parsed.libraries.size || parsed.libraries.has(item.library.id)) && score(item.name, q, item.name))
       .sort((a, b) => b.count - a.count).slice(0, 20);
     const collections = catalog.collections.filter(item => !parsed.documentId && (!parsed.libraries.size || item.libraryIds.some(id => parsed.libraries.has(id))) && score(`${item.title} ${item.primary} ${item.complementary}`, q, item.title)).slice(0, 20);

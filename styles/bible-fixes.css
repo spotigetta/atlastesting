@@ -1,0 +1,4 @@
+/* El índice bíblico es una página normal: solo el lector a pantalla completa bloquea el documento. */
+body.bible-active{overflow:auto!important}
+body.bible-reader-active{overflow:hidden!important}
+.bible-reader-scroll{overscroll-behavior:contain;-webkit-overflow-scrolling:touch}

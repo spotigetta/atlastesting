@@ -171,6 +171,7 @@
     </div>`;
     bind();
     applyAnnotations();
+    root.bible?.linkify(document.querySelector("#reader-content"));
     if (state.query) find(state.query, state.matchIndex < 0);
     if (options.restoreSaved && savedProgress?.scrollRatio && !state.query) requestAnimationFrame(() => {
       const scroll = document.querySelector(".reader-scroll");

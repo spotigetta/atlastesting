@@ -63,10 +63,29 @@ const editorialFeeds = [
   { type: "news", source: "Omnes", url: "https://www.omnesmag.com/feed/", take: 10 },
   { type: "news", source: "Alfa y Omega", url: "https://alfayomega.es/feed/", take: 10 },
   { type: "news", source: "El Debate · Religión", url: "https://www.eldebate.com/rss/religion.xml", take: 10 },
-  { type: "reading", source: "Opus Dei", url: "https://opusdei.org/es-es/rss/", take: 8 }
+  { type: "reading", source: "Opus Dei", url: "https://opusdei.org/es/rss/", take: 8 }
 ];
-const youthItem = { id:"opusdei-youth", type:"reading", source:"Opus Dei · Youth", url:"https://opusdei.org/es/youth/", title:"Youth · Opus Dei", description:"Artículos, vídeos, podcasts y propuestas para vivir la fe en el siglo XXI.", image:"https://images.opusdei.net/?url=https://s3-eu-west-1.amazonaws.com/images-opus-dei/page/2024/6/Tweets-con-Dios-Tu-historia20240605114626427371.png&w=1200&il&output=jpg&q=75", fetched:true, dynamic:true };
+const youthItem = { id:"opusdei-youth", type:"youth", source:"Opus Dei · Youth", url:"https://opusdei.org/es/youth/", title:"Youth · Opus Dei", description:"Artículos, vídeos, podcasts y propuestas para vivir la fe en el siglo XXI.", image:"https://images.opusdei.net/?url=https://s3-eu-west-1.amazonaws.com/images-opus-dei/page/2024/6/Tweets-con-Dios-Tu-historia20240605114626427371.png&w=1200&il&output=jpg&q=75", fetched:true, dynamic:true };
 const booksItem = { id:"opusdei-ebooks", type:"reading", source:"Opus Dei · Libros electrónicos", url:"https://opusdei.org/es/page/libros-electronicos/", title:"Libros electrónicos · Opus Dei", description:"Selección oficial de libros sobre vida cristiana, doctrina católica, cartas de san Josemaría, novenas y textos de los Papas.", fetched:true, dynamic:true };
+const youthUrl = "https://opusdei.org/es/youth/";
+function parseYouthCards(html) {
+  const cards = []; const seen = new Set();
+  const cardPattern = /<a\b(?=[^>]*\bhref=["']([^"']*\/es\/article\/[^"']+))[\s\S]*?(?=[^>]*\btitle=["']([^"']+))[\s\S]*?<img\b[^>]*\bsrc=["']([^"']+)["'][\s\S]*?<\/a>/gi;
+  for (const match of html.matchAll(cardPattern)) {
+    const url = new URL(decode(match[1]), youthUrl).href;
+    const title = decode(match[2]); const image = decode(match[3]).replace(/^\/\//, "https://");
+    if (!title || !image || seen.has(url)) continue;
+    seen.add(url);
+    cards.push({ id:`youth-${createHash("sha1").update(url).digest("hex").slice(0,12)}`, type:"youth", source:"Opus Dei · Youth", url, title,
+      description:"Propuesta reciente de Youth: vídeo, artículo, podcast o historia para vivir la fe hoy.", image, fetched:true, dynamic:true });
+  }
+  return cards.slice(0, 24);
+}
+async function refreshYouth() {
+  const cards = parseYouthCards(await get(youthUrl));
+  if (!cards.length) throw new Error("Youth no devolvió tarjetas reconocibles");
+  return cards;
+}
 function rssItems(xml, feed) {
   return [...xml.matchAll(/<item\b[^>]*>([\s\S]*?)<\/item>/gi)].slice(0, feed.take).map(([, block]) => {
     const tag = name => block.match(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${name}>`, "i"))?.[1] || "";
@@ -80,9 +99,10 @@ function rssItems(xml, feed) {
 }
 async function refreshEditorial() {
   const previous = await readJson("external-content.json", { items: [] });
-  const responses = await Promise.allSettled(editorialFeeds.map(async feed => rssItems(await get(feed.url), feed)));
-  const live = responses.flatMap(result => result.status === "fulfilled" ? result.value : []);
-  const curated = [youthItem, booksItem];
+  const responses = await Promise.allSettled([...editorialFeeds.map(async feed => rssItems(await get(feed.url), feed)), refreshYouth()]);
+  const youth = responses.at(-1).status === "fulfilled" ? responses.at(-1).value : [];
+  const live = responses.slice(0,-1).flatMap(result => result.status === "fulfilled" ? result.value : []);
+  const curated = [...youth, youthItem, booksItem];
   const items = [...new Map([...curated, ...live, ...(previous.items || [])].map(item => [item.url, item])).values()].slice(0, 300);
   if (!items.length) throw new Error("Editorial: no hay resultados ni caché anterior");
   const failures = responses.filter(item => item.status === "rejected").map(item => item.reason?.message || "Proveedor no disponible");

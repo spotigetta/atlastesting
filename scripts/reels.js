@@ -6,7 +6,7 @@
     document: "Documento", fact: "Dato del índice", question: "Pregunta",
     quiz: "Quiz", quote: "Cita para explorar", author: "Autor",
     timeline: "Mini cronología", curiosity: "Sabías que", comparison: "Distinción clave",
-    news: "Actualidad", reading: "Nueva lectura", prayer: "Para orar", video: "Vídeo · YouTube", music: "Música · YouTube", instagram: "Instagram",
+    news: "Actualidad", reading: "Nueva lectura", youth: "Youth · Opus Dei", prayer: "Para orar", video: "Vídeo · YouTube", music: "Música · YouTube", instagram: "Instagram",
     "saint-life": "Una vida en 30 segundos", "saint-anecdote": "La anécdota", "saint-quote": "La frase", "saint-decision": "Momento decisivo", "saint-before": "Antes de ser santo", "saint-quiz": "Adivina el santo", "saint-route": "Ruta espiritual"
   };
   let queue = [];
@@ -143,13 +143,13 @@
     });
     const settings=root.storage.get().settings; const hiddenLibraries=new Set(settings.hiddenLibraries||[]);
     const filterLibraries=root.data.catalog.libraries.filter(item=>(!item.unlockFeature||root.storage.isFeatureUnlocked(item.unlockFeature))&&!hiddenLibraries.has(item.id));
-    const filters = [["all","Todos"],["video","Vídeos"],["music","Música"],["instagram","Instagram"],["news","Noticias"],["reading","Lecturas"],["prayer","Oración"],["quote","Frases"],["fact","Hechos"],["curiosity","Anécdotas"],
+    const filters = [["all","Todos"],["video","Vídeos"],["music","Música"],["instagram","Instagram"],["youth","Youth"],["news","Noticias"],["reading","Lecturas"],["prayer","Oración"],["quote","Frases"],["fact","Hechos"],["curiosity","Anécdotas"],
       ["question","Preguntas"],["comparison","Distinciones"],
       ...filterLibraries.map(item => [item.id, settings.libraryLabels?.[item.id]||item.short]), ["document","Documentos"],["quiz","Quiz"],["author","Autores"],["timeline","Cronología"]];
-    const primaryFilters = filters.filter(([id]) => ["all","video","music","instagram","quote"].includes(id));
+    const primaryFilters = filters.filter(([id]) => ["all","video","quote","music","news","reading"].includes(id));
     const secondaryFilters = filters.filter(([id]) => !primaryFilters.some(([primary]) => primary === id));
     return `<div class="discover-page">
-      <div class="short-filters"><div class="chip-row short-filter-desktop">${filters.map(([id,label]) => `<button class="chip ${filter===id?"active":""}" data-short-filter="${id}">${esc(label)}</button>`).join("")}</div><div class="short-filter-mobile"><div>${primaryFilters.map(([id,label]) => `<button class="${filter===id?"active":""}" data-short-filter="${id}">${esc(label)}</button>`).join("")}</div><details class="short-more-menu"><summary class="${secondaryFilters.some(([id])=>id===filter)?"active":""}">Más <span>＋</span></summary><div>${secondaryFilters.map(([id,label])=>`<button class="${filter===id?"active":""}" data-short-filter="${esc(id)}">${esc(label)}</button>`).join("")}</div></details></div>
+      <div class="short-filters"><div class="chip-row short-filter-desktop">${primaryFilters.map(([id,label]) => `<button class="chip ${filter===id?"active":""}" data-short-filter="${id}">${esc(label)}</button>`).join("")}<details class="short-more-menu"><summary class="${secondaryFilters.some(([id])=>id===filter)?"active":""}">Más <span>＋</span></summary><div>${secondaryFilters.map(([id,label])=>`<button class="${filter===id?"active":""}" data-short-filter="${esc(id)}">${esc(label)}</button>`).join("")}</div></details></div><div class="short-filter-mobile"><div>${primaryFilters.map(([id,label]) => `<button class="${filter===id?"active":""}" data-short-filter="${id}">${esc(label)}</button>`).join("")}</div><details class="short-more-menu"><summary class="${secondaryFilters.some(([id])=>id===filter)?"active":""}">Más <span>＋</span></summary><div>${secondaryFilters.map(([id,label])=>`<button class="${filter===id?"active":""}" data-short-filter="${esc(id)}">${esc(label)}</button>`).join("")}</div></details></div>
       ${filter === "video" ? `<div class="short-channel-row">${enabledItems(window.ATLAS_YOUTUBE?.channels, "disabledVideoChannels").filter(channel => channel.tier !== "reserve" || root.storage.get().settings.showReserveVideos).map(channel => `<a href="${esc(channel.url)}" target="_blank" rel="noopener">${esc(channel.name)} ↗</a>`).join("")}</div>` : ""}
       ${filter === "video" ? `<button class="reserve-video-toggle ${root.storage.get().settings.showReserveVideos ? "active" : ""}" data-toggle-reserve-videos>${root.storage.get().settings.showReserveVideos ? "Canales de reserva activados" : "Canales de reserva desactivados"}</button>` : ""}</div>
       ${["all","video","music","instagram"].includes(filter) ? '<span class="youtube-live-status" id="youtube-live-status">Actualizando canales…</span>' : ""}

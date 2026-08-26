@@ -2,15 +2,23 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "build": "node tools/build-share-pages.mjs && node tools/validate-public-build.mjs",
+    "build:bible": "node tools/build-cee-bible-data.mjs",
+    "build:bible-cee": "node tools/build-cee-bible-data.mjs",
+    "build:bible-jerusalem": "node tools/build-bible-data.mjs --output=data/bible-jerusalem",
     "update:ten-minutes": "node tools/update-ten-minutes.mjs",
     "update:daily-content": "node tools/refresh-daily-content.mjs",
     "build:gospel-meditations": "node tools/build-gospel-meditations.mjs",
     "build:saints-timelines": "node tools/generate-saints-timelines.mjs",
+    "build:salvation-history": "node tools/build-salvation-history.mjs",
     "update:opusdei-meditation": "node tools/update-opusdei-meditations.mjs --strict",
     "backfill:opusdei-meditations": "node tools/update-opusdei-meditations.mjs --all --strict",
     "audit:markdown": "python tools/normalize_markdown_corpus.py --dry-run",
     "sync:markdown": "node tools/sync-normalized-markdown.mjs",
     "build:share-pages": "node tools/build-share-pages.mjs"
+    ,"build:faq": "node tools/build-faq-data.mjs"
+    ,"import:meditation-library": "node tools/import-meditation-library.mjs"
+    ,"sync:preparadora-hahn": "node tools/sync-preparadora-and-hahn.mjs"
   },
   "devDependencies": {
     "@huggingface/transformers": "^3.7.2",

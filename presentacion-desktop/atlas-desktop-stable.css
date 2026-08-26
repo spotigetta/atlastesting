@@ -1,0 +1,2 @@
+/* Movimiento estable: las escenas transicionan, pero los objetos no oscilan continuamente. */
+.a,.b,.c,.metric-orbit i,.consultant-map button{animation:none!important}.consultant-map button:nth-child(2n){translate:0}.metric-orbit i{will-change:auto}.slide{backface-visibility:hidden}.desktop-window,.phone,.tile,.opus-board article{backface-visibility:hidden;transform:translateZ(0)}

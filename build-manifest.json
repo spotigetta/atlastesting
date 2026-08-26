@@ -1,8 +1,8 @@
 {
   "app": "ATLAS",
-  "version": "6.1.0",
-  "buildId": "6.1.0-instalacion-compartir-oracion-diaria",
-  "generatedAt": "2026-08-20T12:00:00.000Z",
+  "version": "1.0.0",
+  "buildId": "6.4.12-panel-simple",
+  "generatedAt": "2026-08-26T10:30:00.000Z",
   "basePath": "./",
   "catalog": "data/catalog.json"
 }

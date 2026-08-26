@@ -2,6 +2,28 @@
   "generatedAt": "2026-08-19T22:25:53.746Z",
   "items": [
     {
+      "id": "youth-entrenar-para-el-cielo",
+      "type": "youth",
+      "source": "Opus Dei · Youth",
+      "url": "https://opusdei.org/es/article/entrenar-para-el-cielo/",
+      "title": "Entrenar para el cielo",
+      "description": "Una tarjeta real de Youth: una propuesta para descubrir, meditar y llevar a la vida diaria.",
+      "image": "https://images.opusdei.net/?url=https://s3-eu-west-1.amazonaws.com/images-opus-dei/article/youth/2026/7/Tarjetas-sacramentos-1720260717224604174591.jpg&w=280&h=500&il&output=jpg&q=85&fit=cover&a=entropy",
+      "fetched": true,
+      "dynamic": true
+    },
+    {
+      "id": "opusdei-youth",
+      "type": "youth",
+      "source": "Opus Dei · Youth",
+      "url": "https://opusdei.org/es/youth/",
+      "title": "Youth · Opus Dei",
+      "description": "Vídeos, artículos, podcasts e historias para vivir la fe en el siglo XXI. Entra y descubre las propuestas nuevas.",
+      "image": "https://images.opusdei.net/?url=https://s3-eu-west-1.amazonaws.com/images-opus-dei/page/2024/6/Tweets-con-Dios-Tu-historia20240605114626427371.png&w=1200&il&output=jpg&q=75",
+      "fetched": true,
+      "dynamic": true
+    },
+    {
       "id": "external-3b2cf2f911c0",
       "type": "news",
       "source": "Omnes",

@@ -48,7 +48,7 @@
     canon:"canoniaportada.webp", history:"historiaportada.webp", liturgy:"liturgiaportada.webp",
     ortodoxia:"ortodoxiaportada.webp", cinepilot:"cinepilotportada.webp", bibliotecaria:"bibliotecariaportada.webp",
     clasicos:"clasicosportada.webp", "san-josemaria":"portadaSanJosemarIA.webp",
-    "preparadora-circulos":"preparadordecirculosportada.webp", "vida-santos":"santosportada.png"
+    "preparadora-circulos":"preparadordecirculosportada.webp", "vida-santos":"santosportada.png", "meditacion-diaria":"meditaciondiariaportada.png"
   };
   const libraryCoverUrl = library => libraryCovers[library?.id]
     ? AtlasRuntime.url(`assets/images/libraries/${libraryCovers[library.id]}`)
@@ -60,7 +60,7 @@
     auroraIntensity:88, auroraSize:100, motionLevel:100, josemariaPortraitIntensity:18, shortTextScale:100,
     shortContentWidth:720, shortAlignment:"mixed", shortTheme:"auto", interfaceScale:100,
     cornerRadius:100, fontStyle:"editorial", headingFont:"literata", bodyFont:"dm-sans", palette:"sage", surfaceStyle:"soft", compactMode:false, showExternalImages:true,
-    showTenMinutesHome:true, showMassFinderHome:true, tenMinutesTime:"08:00"
+    showTenMinutesHome:true, showMassFinderHome:true, showYouthHome:true, tenMinutesTime:"08:00"
   };
   const libraryGuides = {
     doctrine: { file: "infodoctrina_textogrande.html", purpose: "Aclara qué enseña la Iglesia y cómo se fundamenta en Escritura, Tradición, Magisterio, teología y moral.", examples: ["¿Qué enseña el Catecismo sobre la conciencia?", "Distingue doctrina definida, opinión teológica y criterio pastoral."] },
@@ -73,8 +73,10 @@
     clasicos: { file: "infografiaLosClasicos_v2.html", purpose: "Explora el canon literario, consulta obras completas y relaciona grandes autores y tradiciones.", examples: ["Compara la tragedia griega y Shakespeare.", "Propón cinco clásicos sobre libertad."] },
     "san-josemaria": { file: "infoSJM.html", purpose: "Profundiza en sus obras y enseñanzas sobre oración, trabajo, libertad y santidad cotidiana.", examples: ["Busca textos sobre santificar el trabajo.", "Relaciona Camino, Surco y Forja sobre la alegría."] },
     "vida-santos": { purpose: "Conoce la vida de los santos desde biografías identificadas, sitúalas en su tiempo y escucha el recorrido completo de Pedro Ballester.", examples: ["¿Qué decisiones concretas marcaron la vida de este santo?", "Compara cómo vivieron la enfermedad Pedro Ballester y otro santo.", "Resume por capítulos el audiolibro Pedro Ballester. Nunca he sido tan feliz."] },
-    "preparadora-circulos": { file: "infoCirculos.html", purpose: "Prepara círculos breves, documentados y pedagógicos a partir de las obras de san Josemaría y textos pontificios.", examples: ["Diseña un círculo de 25 minutos sobre oración mental.", "Propón preguntas, citas y aplicaciones para una sesión sobre trabajo."] }
+    "preparadora-circulos": { file: "infoCirculos.html", purpose: "Prepara círculos breves, documentados y pedagógicos a partir de las obras de san Josemaría y textos pontificios.", examples: ["Diseña un círculo de 25 minutos sobre oración mental.", "Propón preguntas, citas y aplicaciones para una sesión sobre trabajo."] },
+    "meditacion-diaria": { purpose: "Te ayuda a encontrar palabras para hablar con Dios desde lo que estás viviendo: sin discursos, con sinceridad.", examples: ["Ayúdame a hablar contigo desde esta alegría.", "No sé qué decirte ante este dolor.", "Pon palabras a mi miedo y a mi deseo de confiar."] }
   };
+  const plainText = value => String(value || "").replace(/[*_`]/g, "").replace(/\s+/g, " ").trim();
   function libraryDisplay(library) {
     const settings = A.storage.get().settings;
     return { ...library, short: settings.libraryLabels?.[library.id]?.trim() || library.short, tone: settings.libraryColors?.[library.id] || library.tone };
@@ -103,6 +105,8 @@
     { mark: "IA", route: "/", target: '[data-home-block="libraries"]', eyebrow: "Inicio · Bibliotecas", title: "Entra en una IA", text: "Cada tarjeta muestra tamaño, categorías y acceso a sus fuentes o a su cuaderno.", bullets: ["Explorar fuentes abre Atlas.", "Abrir IA lleva al Notebook configurado."] },
     { mark: "B", route: `/library/${A.data.catalog.libraries[0]?.id || "doctrine"}/documents`, target: ".library-tabs", eyebrow: "Biblioteca · secciones", title: "Cambia de vista sin perder la IA", text: "Las pestañas abren documentos, mapa, preguntas, autores y estadísticas de la biblioteca seleccionada.", bullets: ["La barra inferior filtra y ordena fuentes.", "Cada ficha permite leer, guardar, compartir o abrir la IA."] },
     { mark: "L", route: `/reader/${encodeURIComponent(A.data.documents[0]?.id || "")}`, target: ".reader-tools", eyebrow: "Lector · herramientas", title: "Lee como en un libro de estudio", text: "El pequeño botón flotante despliega guardar, subrayar, anotar y marcar sin tapar el documento.", bullets: ["El esquema muestra hasta cuatro niveles.", "Los ajustes cambian letra, tamaño y anchura de columna."] },
+    { mark: "B", route: "/bible", target: ".bible-search-box", eyebrow: "Sagradas Escrituras", title: "Cada versículo tiene una dirección estable", text: "La Biblia carga por libros, busca frases literales y reconoce referencias como Jn 3,16 o Mt 5,1–12.", bullets: ["Abre un número para enlazar, guardar o anotar el pasaje.", "Los documentos convierten automáticamente las referencias reconocibles en vínculos.", "Los temas ofrecen itinerarios y conservan siempre el contexto del capítulo."] },
+    { mark: "∞", route: "/salvation", target: ".salvation-zoom", eyebrow: "Historia de la Salvación", title: "Acércate para descubrir una sola gran historia", text: "La cronología cambia de profundidad: panorama, alianzas, acontecimientos y lectura completa, sin abandonar la misma superficie.", bullets: ["Desliza verticalmente y pellizca para acercarte o alejarte.", "Activa Cordero, Templo, Reino u otro hilo para ver sus conexiones.", "Cada referencia abre el pasaje exacto en la Biblia CEE."] },
     { mark: "◇", route: "/explore", target: ".explore-grid", eyebrow: "Explorar", title: "Doce formas de entrar en el conocimiento", text: "Colecciones, rutas, mapas, comparación, cronología y noticias ofrecen perspectivas distintas.", bullets: ["Pulsa «Personalizar botones» para reordenarlos.", "Cada botón puede tener su propio color."] },
     { mark: "◎", route: "/graph", target: ".graph-workspace", eyebrow: "Grafos", title: "Mira la estructura y las conexiones", text: "Un grafo muestra IA, categorías y fuentes por niveles; el otro cruza documentos relacionados.", bullets: ["Pulsa cualquier nodo para abrirlo.", "Usa +, − y centrar para inspeccionar nombres largos."] },
     { mark: "✦", route: "/discover", target: ".short-filters", eyebrow: "Descubrir", title: "Filtra el feed vivo", text: "Los filtros separan frases, hechos, anécdotas, oración, noticias, IA y formatos.", bullets: ["Las frases de san Josemaría llegan aleatoriamente de escriva.org.", "Guarda, comparte o abre la fuente original."] },
@@ -142,6 +146,16 @@
     { mark: "◒", route: "/examen", target: ".exam-period-grid", eyebrow: "Examen diario", title: "Breve o completo, siempre sereno", text: "Elige lo esencial para una pausa rápida o recorre el plan completo. Atlas no utiliza puntos, rachas ni porcentajes: solo guarda lo que tú marcas en este dispositivo.", bullets: ["Breve selecciona ocho normas esenciales.", "Completo recorre todas las normas activas.", "Omitir el examen de mediodía nunca se interpreta como incumplimiento."] },
     { mark: "↔", route: "/examen/run?period=night&mode=quick&scope=brief&tutorial=1", target: ".exam-answer-buttons", eyebrow: "Examen · gestos", title: "Sí a la izquierda; No a la derecha", text: "La norma ocupa la pantalla y basta un gesto: desliza hacia la izquierda para Sí y hacia la derecha para No.", bullets: ["También puedes tocar los dos botones inferiores.", "Parcial y No aplica quedan en opciones secundarias.", "El modo Reflexionar añade ayuda y nota privada."] },
     { mark: "⌂", route: "/examen/norms", target: ".exam-manager-layout", eyebrow: "Examen · personalización", title: "Tu plan permanece tuyo", text: "Añade normas personales, pausa, reordena o archiva. Las actualizaciones del catálogo no borran tu configuración ni alteran el histórico.", bullets: ["Semana y mes describen registros, pero no puntúan la vida espiritual.", "Puedes preparar de forma privada asuntos para una conversación.", "Todo se incluye en la exportación local de Atlas."] }
+  );
+
+  /* La visita inicial tiene seis escenas. Las guías extensas siguen en cada IA. */
+  tutorialSteps.splice(0, tutorialSteps.length,
+    { mark: "Le", route: "/biblioteca", target: ".v7-global-search", eyebrow: "1 · Encuentra y lee", title: "Una gran biblioteca, sin perderte", text: "Busca o explora por estanterías, temas, autores y colecciones; abre cualquier fuente como un libro.", bullets: ["La Biblia CEE es la edición principal.", "Puedes guardar, subrayar, anotar y compartir."] },
+    { mark: "?", route: "/preguntar", target: "#v7-ask-form", eyebrow: "2 · Pregunta", title: "Encuentra al especialista adecuado", text: "Escribe una duda y Atlas recomienda qué cuaderno NotebookLM consultar, prepara la pregunta y muestra fuentes relacionadas.", bullets: ["Atlas orienta: no improvisa una respuesta doctrinal.", "La consulta queda lista para copiar y abrir."] },
+    { mark: "↗", route: "/formarse", target: ".v7-learning-routes", eyebrow: "3 · Aprende", title: "El conocimiento se convierte en camino", text: "Comienza una ruta sencilla. Cronologías, mapas, relaciones y estadísticas aparecen después, en Estudio avanzado.", bullets: ["Historia de la Salvación está integrada aquí.", "Puedes retomar las rutas desde Inicio."] },
+    { mark: "✦", route: "/rezar", target: ".v7-prayer-hero", eyebrow: "4 · Reza", title: "Empieza desde lo que estás viviendo", text: "Cuenta tu situación con palabras normales o entra en Evangelio, santos, audios, examen, confesión y Misa.", bullets: ["Las sugerencias concretas cambian cada día.", "Palabras para orar te ayuda a dirigirte a Dios con sinceridad."] },
+    { mark: "◇", route: "/discover", target: ".short-filters", eyebrow: "5 · Descubre", title: "Una puerta viva hacia todo Atlas", text: "Vídeos, música, noticias, lecturas, frases y preguntas conducen siempre a una fuente, una ruta o una biblioteca.", bullets: ["Guarda y comparte lo que merezca volver a verse.", "El menú Más conserva todas las categorías específicas."] },
+    { mark: "A", route: "/", target: ".v7-intents", eyebrow: "6 · Todo reunido", title: "Todo esto vive en la misma aplicación", text: "Biblioteca, especialistas, formación, oración, Descubrir, Opus Dei y tu espacio personal forman una sola experiencia.", bullets: ["Elige Leer, Preguntar, Rezar o Aprender para empezar.", "Puedes repetir esta visita desde el botón de ayuda."] }
   );
 
   function esc(value) { return A.library.esc(value); }
@@ -246,10 +260,11 @@
     const catalog = A.data.catalog;
     const settings = A.storage.get().settings;
     const libraries = visibleLibraries(Boolean(settings.customizeLibraries));
-    const homeBlocks = ["exam", "tenminutes", "massfinder", "today", "libraries", "reading", "history"];
+    const homeBlocks = ["exam", "tenminutes", "massfinder", "youth", "today", "libraries", "reading", "history"];
     const homeOrder = [...new Set([...(settings.homeOrder || []), ...homeBlocks])].filter(id => homeBlocks.includes(id));
-    const homeLabels = { exam: "Examen diario", tenminutes: "10 Minutos con Jesús", massfinder: "Buscar una Misa", today: "Atlas Hoy", libraries: "Explora las IA", reading: "Continúa leyendo", history: "Continúa explorando" };
+    const homeLabels = { exam: "Examen diario", tenminutes: "10 Minutos con Jesús", massfinder: "Buscar una Misa", youth: "Opus Dei Youth", today: "Atlas Hoy", libraries: "Explora las IA", reading: "Continúa leyendo", history: "Continúa explorando" };
     const tenMinutes = window.ATLAS_TEN_MINUTES?.episodes?.[0];
+    if (tenMinutes?.description) tenMinutes.description = plainText(tenMinutes.description);
     const todayDoc = dailyPick(A.data.documents.filter(doc => doc.status !== "incomplete"), 3);
     const todayShort = dailyPick(catalog.shorts.filter(item => item.verified), 7);
     const todayQuote = dailyPick([
@@ -271,7 +286,9 @@
         <div><span class="eyebrow">Atlas · Mercabá</span><h1>${libraries.length} bibliotecas.<br>Miles de fuentes.</h1></div>
         <p>Descubre qué sabe cada IA, qué documentos contiene y qué puedes preguntarle.</p>
         <div class="hero-search"><button data-action="search">${A.library.icon("search")}<span id="hero-placeholder">Busca “${placeholders[daySeed() % placeholders.length]}”</span><kbd>Ctrl K</kbd></button></div>
-        <a class="home-saints-entry" href="#/spiritual/saints"><span>✦</span><span><b>¿Qué necesito hoy?</b><small>Descubre cómo vivieron los santos la desolación, el miedo, la cruz, la paz o la confianza.</small></span><i>Explorar 50 experiencias →</i></a>
+        <div class="home-knowledge-entries"><a class="home-bible-entry" href="#/bible"><span>B</span><span><b>La Biblia, verso a verso</b><small>Lee a pantalla completa, busca palabras o referencias y enlaza cada pasaje.</small></span><i>Abrir las Escrituras →</i></a><a class="home-saints-entry" href="#/spiritual/saints"><span>✦</span><span><b>¿Qué necesito hoy?</b><small>Descubre cómo vivieron los santos la desolación, el miedo, la cruz, la paz o la confianza.</small></span><i>Explorar 50 experiencias →</i></a></div>
+        <a class="home-youth-link" href="#/questions"><b>Preguntas de fe</b><span>Respuestas claras para las dudas más habituales →</span></a>
+        ${settings.showYouthHome ? `<a class="home-youth-link" href="#/youth"><b>Opus Dei Youth</b><span>Historias, vídeos y preguntas para vivir la fe hoy →</span></a>` : ""}
         <button class="customize-trigger subtle" data-action="customize-home" title="Cambiar el orden de Inicio">↕ Personalizar</button>
       </div>
 
@@ -279,7 +296,7 @@
 
       ${A.exam.homeCard()}
 
-      <section class="section home-daily-audio" data-home-block="tenminutes" style="order:${homeOrder.indexOf("tenminutes") + 1}"><div class="daily-audio-mark"${tenMinutes?.imageUrl ? ` style="background-image:url('${esc(tenMinutes.imageUrl)}')"` : ""}>${tenMinutes?.imageUrl ? "" : "10′"}</div><div><span class="eyebrow">Oración de hoy · 10 Minutos con Jesús</span><h2>${esc(tenMinutes?.title || "Un rato diario con Jesús")}</h2><p>${esc(tenMinutes?.description || "Una meditación breve para comenzar o sostener el día.")}</p>${tenMinutes?.audioUrl ? `<audio controls preload="metadata" src="${esc(tenMinutes.audioUrl)}"></audio>` : ""}<div class="button-row">${tenMinutes?.pageUrl ? `<a class="primary-button" href="${esc(tenMinutes.pageUrl)}" target="_blank" rel="noopener">Escuchar episodio</a>` : ""}<a class="secondary-button" href="https://www.10minutosconjesus.org/" target="_blank" rel="noopener">Más en 10 Minutos ↗</a></div>${(window.ATLAS_TEN_MINUTES?.episodes || []).slice(1,7).length ? `<details class="ten-minutes-week"><summary>Audios de esta semana</summary><div>${(window.ATLAS_TEN_MINUTES.episodes || []).slice(1,7).map(item => `<a href="${esc(item.pageUrl)}" target="_blank" rel="noopener">${esc(item.title.replace(/^[0-9-]+\s*/, ""))}</a>`).join("")}</div></details>` : ""}</div></section>
+      <section class="section home-daily-audio" data-home-block="tenminutes" style="order:${homeOrder.indexOf("tenminutes") + 1}"><div class="daily-audio-mark"${tenMinutes?.imageUrl ? ` style="background-image:url('${esc(tenMinutes.imageUrl)}')"` : ""}>${tenMinutes?.imageUrl ? "" : "10′"}</div><div><span class="eyebrow">Oración de hoy · 10 Minutos con Jesús</span><h2>${esc(tenMinutes?.title || "Un rato diario con Jesús")}</h2><p>${esc(plainText(tenMinutes?.description || "Una meditación breve para comenzar o sostener el día."))}</p>${tenMinutes?.audioUrl ? `<audio controls preload="metadata" src="${esc(tenMinutes.audioUrl)}"></audio>` : ""}<div class="button-row">${tenMinutes?.pageUrl ? `<a class="primary-button" href="${esc(tenMinutes.pageUrl)}" target="_blank" rel="noopener">Escuchar episodio</a>` : ""}<a class="secondary-button" href="https://www.10minutosconjesus.org/" target="_blank" rel="noopener">Más en 10 Minutos ↗</a></div>${(window.ATLAS_TEN_MINUTES?.episodes || []).slice(1,7).length ? `<details class="ten-minutes-week"><summary>Audios de esta semana</summary><div>${(window.ATLAS_TEN_MINUTES.episodes || []).slice(1,7).map(item => `<a href="${esc(item.pageUrl)}" target="_blank" rel="noopener">${esc(item.title.replace(/^[0-9-]+\s*/, ""))}</a>`).join("")}</div></details>` : ""}</div></section>
 
       ${settings.showMassFinderHome ? `<section class="section home-mass-finder" data-home-block="massfinder" style="order:${homeOrder.indexOf("massfinder") + 1}"><span class="mass-finder-mark" aria-label="Misas.org">✚</span><div><span class="eyebrow">Misas.org</span><h2>Encuentra una Misa cerca de ti</h2><p>Consulta templos, horarios y celebraciones actualizados directamente en Misas.org.</p><div class="button-row"><a class="primary-button" href="https://misas.org/" target="_blank" rel="noopener">Buscar horarios ↗</a><button class="text-button" data-home-hide="showMassFinderHome">Ocultar de Inicio</button></div></div></section>` : ""}
 
@@ -418,6 +435,8 @@
     const tiles = [
       ["libraries","books", "Bibliotecas", `${catalog.libraries.length} IA y todos sus documentos`, "#/explore?section=libraries"],
       ["infographics","books", "Guía visual de las IA", "Resúmenes e infografías completas", "#/infographics"],
+      ["bible","books", "Sagradas Escrituras", "Biblia completa, búsqueda, temas, notas y enlaces", "#/bible"],
+      ["salvation","clock", "Historia de la Salvación", "Una gran historia familiar navegable por alianzas y profundidad", "#/salvation"],
       ["collections","grid", "Colecciones", `${catalog.collections.length} colecciones desde mapas temáticos`, "#/collections"],
       ["routes","compass", "Rutas", `${catalog.routes.length} recorridos verificables`, "#/routes"],
       ["discover","spark", "Descubrir", "Shorts documentados y contenido diario", "#/discover"],
@@ -433,10 +452,10 @@
       ["notifications","bookmark", "Notificaciones", "Avisos configurables y guardados localmente", "#/notifications"]
     ];
     const order = settings.exploreOrder?.length ? settings.exploreOrder : tiles.map(item => item[0]);
-    const ordered = [...tiles].sort((a,b) => order.indexOf(a[0]) - order.indexOf(b[0]));
+    const ordered = [...tiles].sort((a,b) => (order.indexOf(a[0]) < 0 ? 999 : order.indexOf(a[0])) - (order.indexOf(b[0]) < 0 ? 999 : order.indexOf(b[0])));
     const tones = ["amber","blue","clay","violet","emerald","rose","indigo","gold","cyan","olive","burgundy","slate"];
     const groups = [
-      ["Bibliotecas y estudio", "Elige un corpus o sigue un recorrido.", ["libraries","infographics","collections","routes","guide","spiritual"]],
+      ["Bibliotecas y estudio", "Elige un corpus o sigue un recorrido.", ["libraries","infographics","bible","salvation","collections","routes","guide","spiritual"]],
       ["Descubrir y actualidad", "Contenido vivo, lecturas y propuestas para volver cada día.", ["discover","sources","music","notifications"]],
       ["Mapas y análisis", "Compara, sitúa y visualiza las conexiones.", ["stats","compare","timeline","map","graph"]]
     ];
@@ -555,7 +574,7 @@
   function renderSaved() {
     const stored = A.storage.get();
     const today = stored.study?.[new Date().toISOString().slice(0, 10)] || { milliseconds: 0, documents: [], collections: [] };
-    const tabs = [["documents","Documentos"],["shorts","Shorts"],["collections","Colecciones"],["routes","Rutas"],["history","Historial"],["libraries","Mis IA"],["channels","Canales"]];
+    const tabs = [["documents","Documentos"],["shorts","Shorts"],["collections","Colecciones"],["routes","Rutas"],["history","Historial"],["bible","Biblia"],["questions","Oraciones y preguntas"],["libraries","Mis IA"],["channels","Canales"]];
     let content = "";
     if (state.savedTab === "documents") {
       const docs = stored.favorites.documents.map(id => A.data.documentMap.get(id)).filter(Boolean);
@@ -574,6 +593,12 @@
     } else if (state.savedTab === "history") {
       const docs = stored.history.map(id => A.data.documentMap.get(id)).filter(Boolean);
       content = docs.length ? `<div class="document-list">${docs.map(A.library.docRow).join("")}</div>` : A.library.empty("Historial vacío", "Los documentos que abras aparecerán aquí.");
+    } else if (state.savedTab === "bible") {
+      const saved = A.bible?.savedItems?.() || { notes: [], bookmarks: [] };
+      content = `<section class="section"><div class="section-head"><div><h2>Notas y marcadores bíblicos</h2><p>Se guardan localmente en este dispositivo. Puedes volver a cada pasaje desde aquí.</p></div></div>${saved.notes.length ? `<div class="collection-grid">${saved.notes.map(item => `<article class="collection-card"><span class="eyebrow">Nota personal · ${esc(A.bible.formatReference(item.ref))}</span><p>${esc(item.text)}</p><a class="secondary-button" href="${A.bible.referenceUrl(item.ref)}">Abrir pasaje</a></article>`).join("")}</div>` : ""}${saved.bookmarks.length ? `<div class="document-list">${saved.bookmarks.slice().reverse().map(item => `<a class="document-row" href="${A.bible.referenceUrl(item.ref)}"><span>★</span><div><b>${esc(A.bible.formatReference(item.ref))}</b><small>Marcador bíblico</small></div></a>`).join("")}</div>` : ""}${!saved.notes.length && !saved.bookmarks.length ? A.library.empty("Aún no hay notas bíblicas", "Dentro de un capítulo toca el número de un versículo y abre el botón de notas para guardar una reflexión o un marcador.") : ""}</section>`;
+    } else if (state.savedTab === "questions") {
+      const savedQuestions = stored.favorites.questions || [];
+      content = savedQuestions.includes("devocionario") ? `<div class="collection-grid"><article class="collection-card devocionario-saved-card"><span class="eyebrow">Oración guardada</span><h3>Devocionario · Opus Dei</h3><p>Acceso guardado a las oraciones en español y latín.</p><a class="primary-button" href="https://opusdei.org/es/prayers/?pb1=es&pb2=latin" target="_blank" rel="noopener">Abrir devocionario ↗</a><button class="text-button" data-save-question="devocionario">Quitar de guardados</button></article></div>` : A.library.empty("No hay accesos de oración guardados", "Guarda el Devocionario desde la sección Rezar.");
     } else if (state.savedTab === "libraries") {
       const settings = stored.settings; const order = settings.libraryOrder?.length ? settings.libraryOrder : A.data.catalog.libraries.map(lib=>lib.id);
       const libraries = A.data.catalog.libraries.filter(lib => !lib.unlockFeature || A.storage.isFeatureUnlocked(lib.unlockFeature)).sort((a,b)=>(order.indexOf(a.id)<0?999:order.indexOf(a.id))-(order.indexOf(b.id)<0?999:order.indexOf(b.id)));
@@ -593,7 +618,7 @@
       <div class="chip-row saved-tabs">${tabs.map(([id,label]) => `<button class="chip ${state.savedTab===id?"active":""}" data-saved-tab="${id}">${label}</button>`).join("")}</div>${content}
       <section class="section feature-unlocks"><div class="section-head"><div><h2>Funciones adicionales</h2><p>Un sistema extensible de activaciones locales.</p></div></div>${A.storage.isFeatureUnlocked("preparadora-circulos")?`<article class="feature-unlock active"><span>✓</span><div><b>Preparadora de círculos activa</b><small>Quedará disponible tras cerrar y volver a abrir Atlas.</small></div><a class="secondary-button" href="#/library/preparadora-circulos/documents">Abrir guía</a></article>`:`<form id="feature-unlock-form" class="feature-unlock"><span>PC</span><div><b>Desbloquear una funcionalidad</b><small>Introduce el código que has recibido.</small></div><input name="code" autocomplete="off" required placeholder="Código"><button class="primary-button">Activar</button></form>`}</section>
       <section class="section"><div class="section-head"><div><h2>Preferencias</h2><p>Adapta lectura, movimiento, iluminación y apariencia.</p></div></div><div class="button-row"><button class="primary-button" data-action="settings">Personalizar Atlas</button><button class="secondary-button" data-action="refresh-atlas">↻ Actualizar Atlas</button><button class="secondary-button" data-action="intro-replay">Ver presentación</button><button class="secondary-button" data-action="toggle-contrast">${stored.settings.contrast ? "Desactivar" : "Activar"} alto contraste</button><button class="secondary-button" data-action="toggle-random">${stored.settings.randomShorts ? "Orden diario" : "Orden aleatorio"}</button><button class="secondary-button" data-action="toggle-only-new">${stored.settings.onlyNewShorts ? "Mostrar todos" : "Solo contenido nuevo"}</button></div></section>
-      <section class="section atlas-share-card"><button class="atlas-qr-trigger" data-action="open-qr" aria-label="Ampliar el código QR a pantalla completa"><img src="assets/images/atlas-public-qr.svg" alt=""></button><div><span class="eyebrow">Lleva Atlas contigo</span><h2>Compartir e instalar</h2><p>Toca el QR para verlo a pantalla completa, escanéalo o comparte la dirección pública. En móvil puedes instalar Atlas en la pantalla de inicio como una aplicación.</p><code>${PUBLIC_APP_URL}</code><div class="button-row"><button class="primary-button" data-action="install-atlas">Añadir a inicio</button><button class="secondary-button" data-action="share-public-app">Compartir Atlas</button><button class="secondary-button" data-action="copy-public-link">Copiar enlace</button></div></div></section>
+      <section class="section atlas-share-card"><button class="atlas-qr-trigger" data-action="open-qr" aria-label="Ampliar el código QR a pantalla completa"><img src="assets/images/atlas-public-qr.svg" alt=""></button><div><span class="eyebrow">Lleva Atlas contigo</span><h2>Compartir e instalar</h2><p>Toca el QR para verlo a pantalla completa, escanéalo o comparte la dirección pública. En móvil puedes instalar Atlas en la pantalla de inicio como una aplicación.</p><code>${PUBLIC_APP_URL.split("#")[0]}share/</code><div class="button-row"><button class="primary-button" data-action="install-atlas">Añadir a inicio</button><button class="secondary-button" data-action="share-public-app">Compartir Atlas</button><button class="secondary-button" data-action="copy-public-link">Copiar enlace</button></div></div></section>
       <section class="section atlas-contact-card"><span>?</span><div><h2>Sugerencias y ayuda</h2><p>Cuéntanos un error, una fuente que falta o una idea para mejorar Atlas.</p><div class="button-row"><a class="secondary-button" href="mailto:pablonrg03@gmail.com?subject=Sugerencia%20para%20Atlas">pablonrg03@gmail.com</a><a class="secondary-button" href="tel:+34674979827">674 979 827</a></div></div></section>
       <section class="section"><div class="section-head"><div><h2>Datos locales</h2><p>Exporta una copia, impórtala o borra todo.</p></div></div><div class="button-row"><button class="secondary-button" data-action="export-data">Exportar</button><button class="secondary-button" data-action="import-data">Importar</button><button class="secondary-button" data-action="clear-data">Borrar</button><input id="import-file" type="file" accept=".json,application/json" hidden></div></section></section>`;
   }
@@ -616,6 +641,7 @@
         return 0;
       };
       if (compare(manifest.version, current) > 0) {
+        if (A.storage.get().notifications?.updates) sendAtlasNotification("Atlas ha llegado ✦", manifest.version === "1.0.0" ? "Ahora sí: Atlas 1.0.0 ya está aquí. Ábrela y pruébala: merece mucho la pena." : `Ya está disponible la versión ${manifest.version}.`, "#/updates", "atlas-update");
         toast(`Versión ${manifest.version} encontrada. Preparando la actualización…`);
         await Promise.all((await caches.keys()).filter(key => key.startsWith("atlas-shell-") || key.startsWith("atlas-data-")).map(key => caches.delete(key)));
         if (registration?.waiting) registration.waiting.postMessage("SKIP_WAITING");
@@ -643,6 +669,23 @@
 
   function notFound() { return `<section class="page">${A.library.empty("No encontramos esa página", "Vuelve a Explorar o utiliza la búsqueda global.")}<a class="primary-button" href="#/explore">Ir a Explorar</a></section>`; }
 
+  function renderFaq(current) {
+    const query = String(current.query.get("q") || "").trim().toLocaleLowerCase("es");
+    const items = (window.ATLAS_FAQ?.items || []).filter(item => !query || `${item.section} ${item.question} ${item.answer}`.toLocaleLowerCase("es").includes(query));
+    const sections = [...new Set(items.map(item => item.section))];
+    return `<section class="page faq-page"><header class="explore-hero"><span class="eyebrow">Preguntas y respuestas</span><h1>Dudas frecuentes, respuestas claras.</h1><p>Respuestas preparadas para leer con calma, agrupadas por temas. Puedes buscar una palabra o abrir cada respuesta.</p><form class="bible-search-box compact" data-faq-search><div><input type="search" name="q" value="${esc(query)}" placeholder="Ej. sufrimiento, Iglesia, conciencia"><button class="primary-button">Buscar</button></div></form></header><div class="faq-sections">${sections.map(section => `<section><h2>${esc(section)}</h2><div>${items.filter(item => item.section === section).map(item => `<details><summary>${esc(item.question)}</summary><div>${esc(item.answer).replace(/\n\n/g, "</p><p>").replace(/^/, "<p>").replace(/$/, "</p>")}</div></details>`).join("")}</div></section>`).join("") || A.library.empty("No encontramos esa pregunta", "Prueba con otra palabra.")}</div></section>`;
+  }
+
+  function meditationIntro(lib) {
+    const guide = libraryGuides[lib.id]; const questions = lib.questions || guide.examples || [];
+    return `<section class="page preparadora-intro tone-${lib.tone}" data-library="${lib.id}"><header><span class="library-mark">${esc(lib.mark)}</span><div><span class="eyebrow">Oración personal</span><h1>Habla con Dios desde lo que vives.</h1><p>${esc(guide.purpose)}</p></div></header><div class="preparadora-steps"><article><b>1</b><h3>Trae tu verdad</h3><p>Pega una alegría, una herida, una duda o una situación concreta.</p></article><article><b>2</b><h3>Ponle palabras</h3><p>Pide ayuda para hablar a Dios sin fórmulas vacías ni miedo.</p></article><article><b>3</b><h3>Quédate con Él</h3><p>Termina con una conversación personal y un paso pequeño y libre.</p></article></div><section class="section"><span class="eyebrow">Puedes empezar por aquí</span><div class="chip-row">${questions.map(question => `<a class="chip" href="${esc(lib.notebookUrl)}" target="_blank" rel="noopener" title="Abrir el cuaderno y formular esta pregunta">${esc(question)}</a>`).join("")}</div><div class="button-row"><a class="primary-button" href="${esc(lib.notebookUrl)}" target="_blank" rel="noopener">Abrir Palabras para orar</a><a class="secondary-button" href="#/library/${lib.id}/documents?ready=1">Ver los contenidos</a></div></section></section>`;
+  }
+
+  function renderYouth() {
+    const entries = (window.ATLAS_EXTERNAL?.items || []).filter(item => item.type === "youth");
+    return `<section class="page youth-page"><header class="youth-hero"><span class="eyebrow">Opus Dei · Youth</span><h1>Una fe que se vive hoy.</h1><p>Selección visual de las tarjetas reales de Youth: vídeos, artículos, podcasts e historias. Se actualiza con el contenido diario de Atlas.</p><div class="button-row"><a class="primary-button" href="https://opusdei.org/es/youth/" target="_blank" rel="noopener">Abrir Youth ↗</a><a class="secondary-button" href="#/discover?filter=youth">Verlas en Shorts</a></div></header><section class="youth-wall">${entries.map(item => `<article class="youth-feature"><a href="${esc(item.url)}" target="_blank" rel="noopener"><img src="${esc(item.image || "")}" alt="" loading="lazy"><div><span class="eyebrow">${esc(item.source)}</span><h2>${esc(item.title)}</h2><p>${esc(item.description || "")}</p><b>Ver contenido ↗</b></div></a></article>`).join("") || A.library.empty("Youth se está actualizando", "Vuelve a intentarlo en unos segundos.")}</section></section>`;
+  }
+
   function renderRouteView() {
     if (!routeTransitioning && document.startViewTransition) {
       routeTransitioning = true;
@@ -652,9 +695,19 @@
     const current = route();
     document.body.classList.toggle("discover-active", current.name === "discover" || current.name === "short");
     if (current.name !== "reader") A.reader?.stop();
+    if (current.name !== "bible") A.bible?.stop(current.raw);
+    if (current.name !== "salvation") A.salvation?.stop();
     closeDetail(false);
     setActiveNav(current.name);
-    if (current.name === "home") app.innerHTML = renderHome();
+    if (current.name === "home") app.innerHTML = A.architecture.renderHome();
+    else if (current.name === "biblioteca") app.innerHTML = A.architecture.renderLibrary(current);
+    else if (current.name === "preguntar") app.innerHTML = A.architecture.renderAsk(current);
+    else if (current.name === "rezar") { app.innerHTML = A.architecture.renderPrayer(current); const devoc = app.querySelector('a[href*="opusdei.org/es/prayers/"]'); if (devoc && !devoc.nextElementSibling?.matches("[data-save-question]")) devoc.insertAdjacentHTML("afterend", `<button class="devocionario-save" data-save-question="devocionario">☆ Guardar acceso</button>`); }
+    else if (current.name === "formarse") app.innerHTML = A.architecture.renderLearning(current);
+    else if (current.name === "opus-dei") app.innerHTML = A.architecture.renderOpusDei(current);
+    else if (current.name === "mi-atlas") app.innerHTML = A.architecture.renderMyAtlas(current);
+    else if (current.name === "more") app.innerHTML = A.architecture.renderMore(current);
+    else if (current.name === "descubre-atlas") app.innerHTML = A.architecture.renderDiscoverAtlas(current);
     else if (current.name === "explore") app.innerHTML = renderExplore();
     else if (current.name === "infographics") app.innerHTML = renderInfographics();
     else if (current.name === "discover") {
@@ -665,6 +718,10 @@
       app.innerHTML = A.reels.render(state.shortFilter);
       requestAnimationFrame(() => document.getElementById(current.segments[1])?.scrollIntoView());
     }
+    else if (current.name === "youth") app.innerHTML = renderYouth();
+    else if (current.name === "questions") app.innerHTML = renderFaq(current);
+    else if (current.name === "bible") A.bible.render(current, app);
+    else if (current.name === "salvation") app.innerHTML = A.salvation.render(current);
     else if (current.name === "compare") app.innerHTML = renderCapabilities();
     else if (current.name === "collections") app.innerHTML = renderCollections();
     else if (current.name === "collection") app.innerHTML = renderCollection(current.segments[1]);
@@ -683,7 +740,11 @@
     else if (current.name === "spiritual") app.innerHTML = A.spiritual.render(current);
     else if (current.name === "guide") app.innerHTML = A.extras.renderGuide(current.query.get("q") || "");
     else if (current.name === "notifications") app.innerHTML = A.extras.renderNotifications();
-    else if (current.name === "examen") app.innerHTML = A.exam.render(current);
+    else if (current.name === "examen") {
+      const odUnlocked = A.storage.isFeatureUnlocked("preparadora-circulos");
+      const publicGuide = current.segments[1] === "guide";
+      app.innerHTML = odUnlocked || publicGuide ? A.exam.render(current) : A.architecture.renderGeneralExam(current);
+    }
     else if (current.name === "reader") {
       const doc = A.data.documentMap.get(decodeURIComponent(current.segments.slice(1).join("/")));
       if (!doc) app.innerHTML = notFound();
@@ -696,7 +757,11 @@
       const lib = A.data.libraryMap.get(current.segments[1]);
       if (!lib) app.innerHTML = notFound();
       else if (lib.unlockFeature && !A.storage.isFeatureUnlocked(lib.unlockFeature)) app.innerHTML = lockedFeature();
-      else if (lib.id === "preparadora-circulos" && current.query.get("ready") !== "1") app.innerHTML = preparadoraIntro(libraryDisplay(lib));
+      else if (lib.id === "preparadora-circulos") {
+        app.innerHTML = `<section class="page"><div class="empty-state"><span class="empty-glyph">PC</span><h2>Abriendo Preparador de Círculos…</h2><p>Te llevamos directamente a su cuaderno de NotebookLM.</p></div></section>`;
+        location.href = lib.notebookUrl;
+      }
+      else if (lib.id === "meditacion-diaria" && current.query.get("ready") !== "1") app.innerHTML = meditationIntro(libraryDisplay(lib));
       else {
         A.storage.setLastLibrary(lib.id);
         const tab = current.segments[2] || "documents";
@@ -718,17 +783,31 @@
   }
 
   function titleFor(current) {
+    const architectureTitles = {
+      biblioteca: "Biblioteca · Atlas", preguntar: "Preguntar · Atlas", rezar: "Rezar · Atlas",
+      formarse: "Formarse · Atlas", "opus-dei": "Opus Dei · Atlas", "mi-atlas": "Mi Atlas",
+      more: "Más · Atlas", "descubre-atlas": "Descubre Atlas"
+    };
+    if (architectureTitles[current.name]) return architectureTitles[current.name];
     if (current.name === "library") return `${A.data.libraryMap.get(current.segments[1])?.short || "Biblioteca"} · Atlas`;
     if (current.name === "discover") return "Descubrir · Atlas";
     if (current.name === "compare") return "Capacidades de las IA · Atlas";
     if (current.name === "saved") return "Guardados · Atlas";
     if (current.name === "examen") return "Examen diario · Atlas";
     if (current.name === "spiritual") return "Vida espiritual · Atlas";
+    if (current.name === "salvation") return "Historia de la Salvación · Atlas";
+    if (current.name === "bible") return current.segments[1] === "jerusalem" ? "Biblia de Jerusalén · Atlas" : "Biblia CEE · Atlas";
     return "Atlas · Mercabá";
   }
 
   function setActiveNav(name) {
-    const mapped = name === "library" || name === "collections" || name === "routes" || name === "compare" || name === "spiritual" ? (name === "compare" ? "compare" : "explore") : name === "short" ? "discover" : name;
+    const legacyMap = {
+      library: "biblioteca", collections: "biblioteca", reader: "biblioteca", document: "biblioteca", author: "biblioteca", bible: "biblioteca",
+      spiritual: "rezar", examen: "rezar", music: "rezar",
+      routes: "formarse", route: "formarse", compare: "formarse", timeline: "formarse", map: "formarse", graph: "formarse", salvation: "formarse",
+      short: "discover", saved: "mi-atlas", updates: "mi-atlas", notifications: "mi-atlas"
+    };
+    const mapped = legacyMap[name] || name;
     document.querySelectorAll("[data-nav]").forEach(item => item.classList.toggle("active", item.dataset.nav === mapped));
   }
 
@@ -770,6 +849,8 @@
     sharePayload = payload;
     document.querySelector("#share-title").textContent = payload.title;
     document.querySelector("#share-preview").textContent = payload.text;
+    const previewImage = document.querySelector("#share-preview-image");
+    if (previewImage) { previewImage.src = payload.image || "assets/images/atlas-share-card.png"; previewImage.alt = `Vista previa de ${payload.title}`; }
     shareLayer.hidden = false;
     document.body.classList.add("modal-open");
     shareLayer.querySelector("[data-share-choice]")?.focus();
@@ -923,6 +1004,17 @@
   }
   A.requestNotificationPermission = requestNotificationPermission;
   A.sendAtlasNotification = sendAtlasNotification;
+
+  function announceAtlasOneZero() {
+    const stored=A.storage.get();
+    if (A.data.catalog.meta.dataVersion !== "1.0.0" || stored.settings.atlasOneZeroAnnounced) return;
+    A.storage.setSetting("atlasOneZeroAnnounced", true);
+    const banner=document.querySelector("#update-banner"), message=banner?.querySelector("span");
+    if (message) message.innerHTML="<b>Ahora sí: Atlas ha llegado ✦</b><small>La versión 1.0.0 está lista para descubrir.</small>";
+    banner?.removeAttribute("hidden");
+    setTimeout(()=>document.querySelector("#atlas-update-showcase")?.removeAttribute("hidden"),700);
+    if (stored.notifications?.updates && "Notification" in window && Notification.permission === "granted") sendAtlasNotification("Ahora sí: Atlas ha llegado ✦", "Atlas 1.0.0, completo. Ábrela y pruébala: merece mucho la pena.", "#/", "atlas-1-0-launch");
+  }
 
   function toast(message) {
     const node = document.createElement("div"); node.className = "toast"; node.textContent = message;
@@ -1093,13 +1185,14 @@
     if (action === "customize-home") { A.storage.setSetting("customizeHome", !A.storage.get().settings.customizeHome); renderRouteView(); }
     if (action === "customize-explore") { A.storage.setSetting("customizeExplore", !A.storage.get().settings.customizeExplore); renderRouteView(); }
     if (action === "customize-libraries") { A.storage.setSetting("customizeLibraries", !A.storage.get().settings.customizeLibraries); renderRouteView(); }
-    if (action === "apply-update") { const registration = await navigator.serviceWorker?.getRegistration(); if (registration?.waiting) registration.waiting.postMessage("SKIP_WAITING"); else { await caches?.keys?.().then(keys => Promise.all(keys.filter(key => key.startsWith("atlas-shell-") || key.startsWith("atlas-data-")).map(key => caches.delete(key)))); location.reload(); } }
+    if (action === "apply-update") { document.querySelector("#atlas-update-showcase")?.removeAttribute("hidden"); setTimeout(async () => { const registration = await navigator.serviceWorker?.getRegistration(); if (registration?.waiting) registration.waiting.postMessage("SKIP_WAITING"); else { await caches?.keys?.().then(keys => Promise.all(keys.filter(key => key.startsWith("atlas-shell-") || key.startsWith("atlas-data-")).map(key => caches.delete(key)))); location.reload(); } }, 850); }
+    if (action === "close-update-showcase") { document.querySelector("#atlas-update-showcase")?.setAttribute("hidden", ""); }
     if (action === "refresh-atlas") { event.preventDefault(); refreshAtlas(target); }
     if (target.dataset.homeHide) { A.storage.setSetting(target.dataset.homeHide, false); renderRouteView(); toast("Bloque ocultado. Puedes recuperarlo en Personalización."); }
-    if (action === "copy-public-link") { event.preventDefault(); await A.share.copy(PUBLIC_APP_URL); toast("Enlace público copiado."); }
+    if (action === "copy-public-link") { event.preventDefault(); await A.share.copy(`${PUBLIC_APP_URL.split("#")[0]}share/`); toast("Enlace público copiado."); }
     if (action === "share-public-app") {
       event.preventDefault();
-      const payload = { title:"Atlas · Mercabá", text:"Atlas reúne bibliotecas, documentos, IA y recursos para estudiar y descubrir.", url:PUBLIC_APP_URL };
+      const payload = { title:"Atlas · Mercabá", text:"Todo reunido. Todo aquí. Una biblioteca católica viva para leer, comprender, rezar y descubrir.", url:`${PUBLIC_APP_URL.split("#")[0]}share/`, image:`${PUBLIC_APP_URL.split("#")[0]}assets/images/atlas-share-card.png` };
       if (qrLayer && !qrLayer.hidden) { closeQr(); setTimeout(() => openShare(payload), 160); }
       else openShare(payload);
     }
@@ -1116,7 +1209,7 @@
     }
     if (action === "close-install-help") document.querySelector("#install-help")?.setAttribute("hidden", "");
     if (target.dataset.shareLibrary) {
-      const library=A.data.libraryMap.get(target.dataset.shareLibrary); if (library) openShare({ title:`${library.short} · Atlas`, text:library.purpose, url:`${PUBLIC_APP_URL}share/libraries/${library.id}/` });
+      const library=A.data.libraryMap.get(target.dataset.shareLibrary); if (library) openShare({ title:`${library.short} · Atlas`, text:library.purpose, url:`${PUBLIC_APP_URL.split("#")[0]}share/libraries/${library.id}/`, image:libraryCoverUrl(library) || "assets/images/atlas-share-card.png" });
     }
     if (action === "dismiss-install") { event.preventDefault(); A.storage.setSetting("installSuggestionDismissed", true); document.querySelector("#install-banner")?.setAttribute("hidden", ""); }
     if (target.dataset.channelGroup) {
@@ -1154,7 +1247,7 @@
     if (target.dataset.shareDocument) {
       const doc = A.data.documentMap.get(target.dataset.shareDocument);
       const url = `${location.href.split("#")[0]}#/document/${encodeURIComponent(doc.id)}`;
-      openShare({ title: `${doc.title} · Atlas`, text: `${doc.title} — ${doc.library.short}`, url });
+      openShare({ title: `${doc.title} · Atlas`, text: `${doc.title} — ${doc.library.short}`, url, image: libraryCoverUrl(doc.library) || "assets/images/atlas-share-card.png" });
     }
     if (target.dataset.shareShort) {
       const item = A.data.catalog.shorts.find(short => short.id === target.dataset.shareShort)
@@ -1204,7 +1297,7 @@
     if (target.dataset.routeStep) { A.storage.toggleRouteStep(target.dataset.routeStep, target.dataset.documentId); renderRouteView(); }
     if (target.dataset.quizAnswer) { const correct = target.dataset.quizAnswer === target.dataset.quizCorrect; A.storage.recordQuiz(correct); toast(correct ? "Correcto. Esa fuente aparece en esa biblioteca." : "No es esa biblioteca. Puedes abrir la ficha para comprobarlo."); }
     if (target.dataset.homeMove) moveSetting("homeOrder", target.dataset.homeMove, target.dataset.direction, ["exam","tenminutes","massfinder","today","libraries","reading","history"]);
-    if (target.dataset.exploreMove) moveSetting("exploreOrder", target.dataset.exploreMove, target.dataset.direction, ["libraries","infographics","collections","routes","spiritual","discover","stats","compare","timeline","map","graph","guide","sources","music","notifications"]);
+    if (target.dataset.exploreMove) moveSetting("exploreOrder", target.dataset.exploreMove, target.dataset.direction, ["libraries","infographics","bible","salvation","collections","routes","spiritual","discover","stats","compare","timeline","map","graph","guide","sources","music","notifications"]);
   });
 
   document.addEventListener("input", event => {
@@ -1261,6 +1354,9 @@
   });
 
   document.addEventListener("submit", event => {
+    if (event.target.matches("[data-faq-search]")) {
+      event.preventDefault(); const query = String(new FormData(event.target).get("q") || "").trim(); A.router.go(`/questions${query ? `?q=${encodeURIComponent(query)}` : ""}`); return;
+    }
     if (event.target.id === "feature-unlock-form") {
       event.preventDefault(); const code=String(new FormData(event.target).get("code")||"").trim().toUpperCase();
       if (code !== "OD") { toast("Código no reconocido."); return; }
@@ -1323,7 +1419,13 @@
 
   window.addEventListener("appinstalled", () => { installPromptEvent = null; document.querySelector("#install-banner")?.setAttribute("hidden", ""); });
 
-  window.addEventListener("hashchange", renderRouteView);
+  window.addEventListener("hashchange", () => {
+    window.scrollTo({ top:0, left:0, behavior:"auto" });
+    renderRouteView();
+  });
+  window.addEventListener("atlas:data-ready", () => {
+    if (["discover", "short", "spiritual", "examen", "questions"].includes(route().name)) renderRouteView();
+  });
   window.addEventListener("atlas:refresh-discover", () => renderRouteView());
   window.addEventListener("atlas:exam-changed", () => renderRouteView());
   window.addEventListener("resize", () => {
@@ -1331,11 +1433,15 @@
     if (frame?.src && !document.querySelector("#infographic-layer")?.hidden) fitInfographic(frame);
   }, { passive: true });
   matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", applyTheme);
-  applyTheme(); applyPersonalization(); registerPwa(); renderRouteView(); checkNotifications(); setInterval(checkNotifications, 30000); A.exam.checkReminders();
-  if (/iphone|ipad|ipod/i.test(navigator.userAgent) && !navigator.standalone && !A.storage.get().settings.installSuggestionDismissed) setTimeout(() => document.querySelector("#install-banner")?.removeAttribute("hidden"), 1800);
-  const introOpened = openIntro();
+  applyTheme(); applyPersonalization(); registerPwa(); renderRouteView(); announceAtlasOneZero(); checkNotifications(); setInterval(checkNotifications, 30000); A.exam.checkReminders();
+  const mobileInstall=/android|iphone|ipad|ipod/i.test(navigator.userAgent) && !navigator.standalone && !window.matchMedia("(display-mode: standalone)").matches;
+  if (mobileInstall && !A.storage.get().settings.installSuggestionDismissed) {
+    const banner=document.querySelector("#install-banner"), copy=banner?.querySelector("span");
+    if (copy) copy.innerHTML=/iphone|ipad|ipod/i.test(navigator.userAgent)?"<b>Añade Atlas a tu inicio</b><small>En Safari: Compartir → Añadir a pantalla de inicio.</small>":"<b>Instala Atlas como aplicación</b><small>Ábrelo siempre desde tu pantalla de inicio.</small>";
+    setTimeout(() => banner?.removeAttribute("hidden"), 1100);
+  }
   if (!A.storage.get().settings.tutorialSeen) {
-    if (introOpened) introPendingTutorial = true;
-    else setTimeout(() => openTutorial(), 350);
+    A.storage.setSetting("introSeen", true);
+    setTimeout(() => openTutorial(), 220);
   }
 })();

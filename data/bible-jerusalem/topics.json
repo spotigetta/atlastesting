@@ -1,0 +1,1246 @@
+{
+  "version": 1,
+  "topics": [
+    {
+      "id": "confianza",
+      "title": "Confianza en Dios",
+      "description": "Cuando cuesta abandonarse y volver a poner la vida en manos de Dios.",
+      "passages": [
+        {
+          "book": "los-salmos",
+          "chapter": 23,
+          "start": 1,
+          "end": 6
+        },
+        {
+          "book": "los-salmos",
+          "chapter": 27,
+          "start": 1,
+          "end": 5
+        },
+        {
+          "book": "proverbios",
+          "chapter": 3,
+          "start": 5,
+          "end": 6
+        },
+        {
+          "book": "isaias",
+          "chapter": 41,
+          "start": 10,
+          "end": 10
+        },
+        {
+          "book": "evangelio-segun-san-mateo",
+          "chapter": 6,
+          "start": 25,
+          "end": 34
+        },
+        {
+          "book": "epistola-a-los-romanos",
+          "chapter": 8,
+          "start": 28,
+          "end": 39
+        }
+      ]
+    },
+    {
+      "id": "miedo",
+      "title": "Miedo",
+      "description": "Palabras para atravesar el temor sin negar su realidad.",
+      "passages": [
+        {
+          "book": "los-salmos",
+          "chapter": 56,
+          "start": 4,
+          "end": 5
+        },
+        {
+          "book": "isaias",
+          "chapter": 43,
+          "start": 1,
+          "end": 3
+        },
+        {
+          "book": "evangelio-segun-san-mateo",
+          "chapter": 10,
+          "start": 26,
+          "end": 31
+        },
+        {
+          "book": "evangelio-segun-san-marcos",
+          "chapter": 4,
+          "start": 35,
+          "end": 41
+        },
+        {
+          "book": "evangelio-segun-san-juan",
+          "chapter": 14,
+          "start": 1,
+          "end": 3
+        },
+        {
+          "book": "segunda-epistola-a-timoteo",
+          "chapter": 1,
+          "start": 7,
+          "end": 7
+        }
+      ]
+    },
+    {
+      "id": "desolacion",
+      "title": "Desolación",
+      "description": "Orar cuando Dios parece lejano y el corazón pierde consuelo.",
+      "passages": [
+        {
+          "book": "los-salmos",
+          "chapter": 22,
+          "start": 2,
+          "end": 12
+        },
+        {
+          "book": "los-salmos",
+          "chapter": 42,
+          "start": 2,
+          "end": 11
+        },
+        {
+          "book": "lamentaciones",
+          "chapter": 3,
+          "start": 17,
+          "end": 26
+        },
+        {
+          "book": "evangelio-segun-san-mateo",
+          "chapter": 26,
+          "start": 36,
+          "end": 46
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 24,
+          "start": 13,
+          "end": 35
+        },
+        {
+          "book": "segunda-epistola-a-los-corintios",
+          "chapter": 4,
+          "start": 7,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "id": "ansiedad",
+      "title": "Ansiedad y preocupación",
+      "description": "Textos para llevar las preocupaciones a la oración y recuperar perspectiva.",
+      "passages": [
+        {
+          "book": "los-salmos",
+          "chapter": 55,
+          "start": 23,
+          "end": 23
+        },
+        {
+          "book": "evangelio-segun-san-mateo",
+          "chapter": 6,
+          "start": 25,
+          "end": 34
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 12,
+          "start": 22,
+          "end": 32
+        },
+        {
+          "book": "epistola-a-los-filipenses",
+          "chapter": 4,
+          "start": 4,
+          "end": 9
+        },
+        {
+          "book": "primera-epistola-de-san-pedro",
+          "chapter": 5,
+          "start": 6,
+          "end": 10
+        }
+      ]
+    },
+    {
+      "id": "paz",
+      "title": "Paz interior",
+      "description": "La paz bíblica que permanece aun dentro de la dificultad.",
+      "passages": [
+        {
+          "book": "los-salmos",
+          "chapter": 131,
+          "start": 1,
+          "end": 3
+        },
+        {
+          "book": "isaias",
+          "chapter": 26,
+          "start": 3,
+          "end": 4
+        },
+        {
+          "book": "evangelio-segun-san-juan",
+          "chapter": 14,
+          "start": 27,
+          "end": 27
+        },
+        {
+          "book": "evangelio-segun-san-juan",
+          "chapter": 16,
+          "start": 33,
+          "end": 33
+        },
+        {
+          "book": "epistola-a-los-filipenses",
+          "chapter": 4,
+          "start": 4,
+          "end": 9
+        },
+        {
+          "book": "epistola-a-los-colosenses",
+          "chapter": 3,
+          "start": 12,
+          "end": 17
+        }
+      ]
+    },
+    {
+      "id": "alegria",
+      "title": "Alegría",
+      "description": "La alegría recibida, compartida y probada en la vida cotidiana.",
+      "passages": [
+        {
+          "book": "los-salmos",
+          "chapter": 126,
+          "start": 1,
+          "end": 6
+        },
+        {
+          "book": "nehemias",
+          "chapter": 8,
+          "start": 10,
+          "end": 10
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 1,
+          "start": 46,
+          "end": 55
+        },
+        {
+          "book": "evangelio-segun-san-juan",
+          "chapter": 15,
+          "start": 9,
+          "end": 17
+        },
+        {
+          "book": "epistola-a-los-filipenses",
+          "chapter": 4,
+          "start": 4,
+          "end": 7
+        },
+        {
+          "book": "primera-epistola-a-los-tesalonicenses",
+          "chapter": 5,
+          "start": 16,
+          "end": 24
+        }
+      ]
+    },
+    {
+      "id": "esperanza",
+      "title": "Esperanza",
+      "description": "Esperar cuando todavía no se ve el desenlace.",
+      "passages": [
+        {
+          "book": "isaias",
+          "chapter": 40,
+          "start": 28,
+          "end": 31
+        },
+        {
+          "book": "lamentaciones",
+          "chapter": 3,
+          "start": 21,
+          "end": 26
+        },
+        {
+          "book": "epistola-a-los-romanos",
+          "chapter": 5,
+          "start": 1,
+          "end": 5
+        },
+        {
+          "book": "epistola-a-los-romanos",
+          "chapter": 8,
+          "start": 18,
+          "end": 25
+        },
+        {
+          "book": "epistola-a-los-hebreos",
+          "chapter": 6,
+          "start": 13,
+          "end": 20
+        },
+        {
+          "book": "apocalipsis",
+          "chapter": 21,
+          "start": 1,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "oracion",
+      "title": "Oración",
+      "description": "Aprender a estar, pedir, escuchar y perseverar delante de Dios.",
+      "passages": [
+        {
+          "book": "los-salmos",
+          "chapter": 63,
+          "start": 2,
+          "end": 9
+        },
+        {
+          "book": "evangelio-segun-san-mateo",
+          "chapter": 6,
+          "start": 5,
+          "end": 13
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 11,
+          "start": 1,
+          "end": 13
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 18,
+          "start": 1,
+          "end": 8
+        },
+        {
+          "book": "epistola-a-los-romanos",
+          "chapter": 8,
+          "start": 26,
+          "end": 27
+        },
+        {
+          "book": "primera-epistola-a-los-tesalonicenses",
+          "chapter": 5,
+          "start": 16,
+          "end": 22
+        }
+      ]
+    },
+    {
+      "id": "fe",
+      "title": "Fe",
+      "description": "Creer, pedir una fe mayor y caminar sin tenerlo todo resuelto.",
+      "passages": [
+        {
+          "book": "genesis",
+          "chapter": 12,
+          "start": 1,
+          "end": 9
+        },
+        {
+          "book": "evangelio-segun-san-marcos",
+          "chapter": 9,
+          "start": 14,
+          "end": 29
+        },
+        {
+          "book": "evangelio-segun-san-juan",
+          "chapter": 20,
+          "start": 24,
+          "end": 31
+        },
+        {
+          "book": "epistola-a-los-romanos",
+          "chapter": 4,
+          "start": 18,
+          "end": 25
+        },
+        {
+          "book": "epistola-a-los-hebreos",
+          "chapter": 11,
+          "start": 1,
+          "end": 16
+        },
+        {
+          "book": "epistola-de-santiago",
+          "chapter": 2,
+          "start": 14,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "id": "conversion",
+      "title": "Conversión",
+      "description": "Volver a Dios con verdad, libertad y un comienzo concreto.",
+      "passages": [
+        {
+          "book": "los-salmos",
+          "chapter": 51,
+          "start": 3,
+          "end": 19
+        },
+        {
+          "book": "ezequiel",
+          "chapter": 36,
+          "start": 24,
+          "end": 28
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 15,
+          "start": 11,
+          "end": 32
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 19,
+          "start": 1,
+          "end": 10
+        },
+        {
+          "book": "hechos-de-los-apostoles",
+          "chapter": 9,
+          "start": 1,
+          "end": 19
+        },
+        {
+          "book": "segunda-epistola-a-los-corintios",
+          "chapter": 5,
+          "start": 17,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "id": "perdon",
+      "title": "Perdón",
+      "description": "Recibir misericordia y aprender a perdonar de corazón.",
+      "passages": [
+        {
+          "book": "eclesiastico",
+          "chapter": 28,
+          "start": 1,
+          "end": 7
+        },
+        {
+          "book": "evangelio-segun-san-mateo",
+          "chapter": 5,
+          "start": 21,
+          "end": 26
+        },
+        {
+          "book": "evangelio-segun-san-mateo",
+          "chapter": 18,
+          "start": 21,
+          "end": 34
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 23,
+          "start": 33,
+          "end": 43
+        },
+        {
+          "book": "epistola-a-los-efesios",
+          "chapter": 4,
+          "start": 25,
+          "end": 32
+        },
+        {
+          "book": "epistola-a-los-colosenses",
+          "chapter": 3,
+          "start": 12,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "misericordia",
+      "title": "Misericordia",
+      "description": "El modo en que Dios mira la fragilidad y enseña a mirar a otros.",
+      "passages": [
+        {
+          "book": "exodo",
+          "chapter": 34,
+          "start": 5,
+          "end": 9
+        },
+        {
+          "book": "los-salmos",
+          "chapter": 103,
+          "start": 8,
+          "end": 14
+        },
+        {
+          "book": "oseas",
+          "chapter": 11,
+          "start": 1,
+          "end": 9
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 10,
+          "start": 25,
+          "end": 37
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 15,
+          "start": 1,
+          "end": 10
+        },
+        {
+          "book": "evangelio-segun-san-juan",
+          "chapter": 8,
+          "start": 1,
+          "end": 11
+        }
+      ]
+    },
+    {
+      "id": "caridad",
+      "title": "Amor y caridad",
+      "description": "La medida concreta del amor cristiano.",
+      "passages": [
+        {
+          "book": "levitico",
+          "chapter": 19,
+          "start": 9,
+          "end": 18
+        },
+        {
+          "book": "evangelio-segun-san-mateo",
+          "chapter": 22,
+          "start": 34,
+          "end": 40
+        },
+        {
+          "book": "evangelio-segun-san-juan",
+          "chapter": 13,
+          "start": 1,
+          "end": 17
+        },
+        {
+          "book": "evangelio-segun-san-juan",
+          "chapter": 13,
+          "start": 34,
+          "end": 35
+        },
+        {
+          "book": "primera-epistola-a-los-corintios",
+          "chapter": 13,
+          "start": 1,
+          "end": 13
+        },
+        {
+          "book": "primera-epistola-de-san-juan",
+          "chapter": 4,
+          "start": 7,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "id": "vocacion",
+      "title": "Vocación",
+      "description": "Llamadas de Dios y respuestas humanas que abren un camino.",
+      "passages": [
+        {
+          "book": "genesis",
+          "chapter": 12,
+          "start": 1,
+          "end": 9
+        },
+        {
+          "book": "exodo",
+          "chapter": 3,
+          "start": 1,
+          "end": 15
+        },
+        {
+          "book": "libro-primero-de-samuel",
+          "chapter": 3,
+          "start": 1,
+          "end": 10
+        },
+        {
+          "book": "isaias",
+          "chapter": 6,
+          "start": 1,
+          "end": 9
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 5,
+          "start": 1,
+          "end": 11
+        },
+        {
+          "book": "evangelio-segun-san-juan",
+          "chapter": 1,
+          "start": 35,
+          "end": 51
+        }
+      ]
+    },
+    {
+      "id": "voluntad-de-dios",
+      "title": "Voluntad de Dios",
+      "description": "Discernir, aceptar y realizar el querer de Dios.",
+      "passages": [
+        {
+          "book": "los-salmos",
+          "chapter": 40,
+          "start": 7,
+          "end": 12
+        },
+        {
+          "book": "evangelio-segun-san-mateo",
+          "chapter": 7,
+          "start": 21,
+          "end": 27
+        },
+        {
+          "book": "evangelio-segun-san-mateo",
+          "chapter": 26,
+          "start": 36,
+          "end": 46
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 1,
+          "start": 26,
+          "end": 38
+        },
+        {
+          "book": "epistola-a-los-romanos",
+          "chapter": 12,
+          "start": 1,
+          "end": 2
+        },
+        {
+          "book": "epistola-a-los-efesios",
+          "chapter": 5,
+          "start": 15,
+          "end": 20
+        }
+      ]
+    },
+    {
+      "id": "cruz",
+      "title": "Cruz y sufrimiento",
+      "description": "El dolor llevado con Cristo, sin banalizarlo ni buscarlo.",
+      "passages": [
+        {
+          "book": "job",
+          "chapter": 1,
+          "start": 13,
+          "end": 22
+        },
+        {
+          "book": "isaias",
+          "chapter": 53,
+          "start": 1,
+          "end": 12
+        },
+        {
+          "book": "evangelio-segun-san-marcos",
+          "chapter": 8,
+          "start": 31,
+          "end": 38
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 23,
+          "start": 33,
+          "end": 49
+        },
+        {
+          "book": "epistola-a-los-romanos",
+          "chapter": 8,
+          "start": 18,
+          "end": 27
+        },
+        {
+          "book": "primera-epistola-de-san-pedro",
+          "chapter": 2,
+          "start": 19,
+          "end": 25
+        }
+      ]
+    },
+    {
+      "id": "enfermedad",
+      "title": "Enfermedad",
+      "description": "Súplica, compañía y esperanza en la fragilidad corporal.",
+      "passages": [
+        {
+          "book": "los-salmos",
+          "chapter": 41,
+          "start": 2,
+          "end": 5
+        },
+        {
+          "book": "los-salmos",
+          "chapter": 103,
+          "start": 1,
+          "end": 5
+        },
+        {
+          "book": "evangelio-segun-san-marcos",
+          "chapter": 2,
+          "start": 1,
+          "end": 12
+        },
+        {
+          "book": "evangelio-segun-san-marcos",
+          "chapter": 5,
+          "start": 21,
+          "end": 43
+        },
+        {
+          "book": "evangelio-segun-san-juan",
+          "chapter": 9,
+          "start": 1,
+          "end": 12
+        },
+        {
+          "book": "epistola-de-santiago",
+          "chapter": 5,
+          "start": 13,
+          "end": 16
+        }
+      ]
+    },
+    {
+      "id": "soledad",
+      "title": "Soledad",
+      "description": "Pasajes para sentirse acompañado en el aislamiento y la ausencia.",
+      "passages": [
+        {
+          "book": "genesis",
+          "chapter": 28,
+          "start": 10,
+          "end": 17
+        },
+        {
+          "book": "los-salmos",
+          "chapter": 27,
+          "start": 7,
+          "end": 14
+        },
+        {
+          "book": "los-salmos",
+          "chapter": 139,
+          "start": 1,
+          "end": 12
+        },
+        {
+          "book": "libro-primero-de-los-reyes",
+          "chapter": 19,
+          "start": 1,
+          "end": 18
+        },
+        {
+          "book": "evangelio-segun-san-mateo",
+          "chapter": 28,
+          "start": 16,
+          "end": 20
+        },
+        {
+          "book": "segunda-epistola-a-timoteo",
+          "chapter": 4,
+          "start": 16,
+          "end": 18
+        }
+      ]
+    },
+    {
+      "id": "amistad",
+      "title": "Amistad",
+      "description": "La fidelidad, la corrección y el cuidado propios de una amistad verdadera.",
+      "passages": [
+        {
+          "book": "libro-primero-de-samuel",
+          "chapter": 18,
+          "start": 1,
+          "end": 5
+        },
+        {
+          "book": "proverbios",
+          "chapter": 17,
+          "start": 17,
+          "end": 17
+        },
+        {
+          "book": "eclesiastico",
+          "chapter": 6,
+          "start": 5,
+          "end": 15
+        },
+        {
+          "book": "evangelio-segun-san-juan",
+          "chapter": 15,
+          "start": 12,
+          "end": 17
+        },
+        {
+          "book": "hechos-de-los-apostoles",
+          "chapter": 9,
+          "start": 26,
+          "end": 30
+        },
+        {
+          "book": "epistola-a-los-filipenses",
+          "chapter": 2,
+          "start": 19,
+          "end": 30
+        }
+      ]
+    },
+    {
+      "id": "familia",
+      "title": "Familia",
+      "description": "Alianza, cuidado, educación y vida compartida en el hogar.",
+      "passages": [
+        {
+          "book": "genesis",
+          "chapter": 2,
+          "start": 18,
+          "end": 24
+        },
+        {
+          "book": "tobias",
+          "chapter": 8,
+          "start": 4,
+          "end": 9
+        },
+        {
+          "book": "los-salmos",
+          "chapter": 128,
+          "start": 1,
+          "end": 6
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 2,
+          "start": 41,
+          "end": 52
+        },
+        {
+          "book": "epistola-a-los-efesios",
+          "chapter": 5,
+          "start": 21,
+          "end": 33
+        },
+        {
+          "book": "epistola-a-los-colosenses",
+          "chapter": 3,
+          "start": 18,
+          "end": 21
+        }
+      ]
+    },
+    {
+      "id": "trabajo",
+      "title": "Trabajo",
+      "description": "Trabajar, servir y cuidar la creación con sentido.",
+      "passages": [
+        {
+          "book": "genesis",
+          "chapter": 2,
+          "start": 4,
+          "end": 15
+        },
+        {
+          "book": "proverbios",
+          "chapter": 31,
+          "start": 10,
+          "end": 31
+        },
+        {
+          "book": "evangelio-segun-san-mateo",
+          "chapter": 25,
+          "start": 14,
+          "end": 30
+        },
+        {
+          "book": "evangelio-segun-san-marcos",
+          "chapter": 6,
+          "start": 1,
+          "end": 6
+        },
+        {
+          "book": "epistola-a-los-colosenses",
+          "chapter": 3,
+          "start": 22,
+          "end": 24
+        },
+        {
+          "book": "segunda-epistola-a-los-tesalonicenses",
+          "chapter": 3,
+          "start": 6,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "justicia",
+      "title": "Justicia",
+      "description": "La defensa del débil, la verdad y el juicio recto.",
+      "passages": [
+        {
+          "book": "isaias",
+          "chapter": 1,
+          "start": 10,
+          "end": 20
+        },
+        {
+          "book": "amos",
+          "chapter": 5,
+          "start": 21,
+          "end": 24
+        },
+        {
+          "book": "miqueas",
+          "chapter": 6,
+          "start": 6,
+          "end": 8
+        },
+        {
+          "book": "evangelio-segun-san-mateo",
+          "chapter": 5,
+          "start": 1,
+          "end": 12
+        },
+        {
+          "book": "evangelio-segun-san-mateo",
+          "chapter": 25,
+          "start": 31,
+          "end": 46
+        },
+        {
+          "book": "epistola-de-santiago",
+          "chapter": 2,
+          "start": 1,
+          "end": 13
+        }
+      ]
+    },
+    {
+      "id": "pobreza",
+      "title": "Pobreza y desprendimiento",
+      "description": "Libertad frente a los bienes y cercanía real a quien necesita.",
+      "passages": [
+        {
+          "book": "deuteronomio",
+          "chapter": 15,
+          "start": 7,
+          "end": 11
+        },
+        {
+          "book": "proverbios",
+          "chapter": 30,
+          "start": 7,
+          "end": 9
+        },
+        {
+          "book": "evangelio-segun-san-mateo",
+          "chapter": 6,
+          "start": 19,
+          "end": 24
+        },
+        {
+          "book": "evangelio-segun-san-marcos",
+          "chapter": 10,
+          "start": 17,
+          "end": 31
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 21,
+          "start": 1,
+          "end": 4
+        },
+        {
+          "book": "segunda-epistola-a-los-corintios",
+          "chapter": 8,
+          "start": 1,
+          "end": 15
+        }
+      ]
+    },
+    {
+      "id": "eucaristia",
+      "title": "Eucaristía",
+      "description": "Promesa, institución y vida eucarística de la Iglesia.",
+      "passages": [
+        {
+          "book": "exodo",
+          "chapter": 12,
+          "start": 1,
+          "end": 14
+        },
+        {
+          "book": "evangelio-segun-san-juan",
+          "chapter": 6,
+          "start": 22,
+          "end": 59
+        },
+        {
+          "book": "evangelio-segun-san-mateo",
+          "chapter": 26,
+          "start": 26,
+          "end": 30
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 24,
+          "start": 28,
+          "end": 35
+        },
+        {
+          "book": "primera-epistola-a-los-corintios",
+          "chapter": 10,
+          "start": 14,
+          "end": 22
+        },
+        {
+          "book": "primera-epistola-a-los-corintios",
+          "chapter": 11,
+          "start": 17,
+          "end": 34
+        }
+      ]
+    },
+    {
+      "id": "espiritu-santo",
+      "title": "Espíritu Santo",
+      "description": "Su promesa, sus dones y su acción en la Iglesia y en cada persona.",
+      "passages": [
+        {
+          "book": "ezequiel",
+          "chapter": 37,
+          "start": 1,
+          "end": 14
+        },
+        {
+          "book": "evangelio-segun-san-juan",
+          "chapter": 14,
+          "start": 15,
+          "end": 26
+        },
+        {
+          "book": "evangelio-segun-san-juan",
+          "chapter": 16,
+          "start": 5,
+          "end": 15
+        },
+        {
+          "book": "hechos-de-los-apostoles",
+          "chapter": 2,
+          "start": 1,
+          "end": 13
+        },
+        {
+          "book": "epistola-a-los-romanos",
+          "chapter": 8,
+          "start": 1,
+          "end": 17
+        },
+        {
+          "book": "epistola-a-los-galatas",
+          "chapter": 5,
+          "start": 16,
+          "end": 26
+        }
+      ]
+    },
+    {
+      "id": "maria",
+      "title": "Virgen María",
+      "description": "La respuesta de María y su lugar junto a Cristo y la Iglesia.",
+      "passages": [
+        {
+          "book": "genesis",
+          "chapter": 3,
+          "start": 14,
+          "end": 15
+        },
+        {
+          "book": "isaias",
+          "chapter": 7,
+          "start": 10,
+          "end": 16
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 1,
+          "start": 26,
+          "end": 56
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 2,
+          "start": 1,
+          "end": 20
+        },
+        {
+          "book": "evangelio-segun-san-juan",
+          "chapter": 2,
+          "start": 1,
+          "end": 12
+        },
+        {
+          "book": "evangelio-segun-san-juan",
+          "chapter": 19,
+          "start": 25,
+          "end": 27
+        }
+      ]
+    },
+    {
+      "id": "resurreccion",
+      "title": "Muerte y resurrección",
+      "description": "La esperanza cristiana ante la muerte y la vida nueva en Cristo.",
+      "passages": [
+        {
+          "book": "ezequiel",
+          "chapter": 37,
+          "start": 1,
+          "end": 14
+        },
+        {
+          "book": "daniel",
+          "chapter": 12,
+          "start": 1,
+          "end": 3
+        },
+        {
+          "book": "evangelio-segun-san-juan",
+          "chapter": 11,
+          "start": 17,
+          "end": 44
+        },
+        {
+          "book": "evangelio-segun-san-juan",
+          "chapter": 20,
+          "start": 1,
+          "end": 18
+        },
+        {
+          "book": "primera-epistola-a-los-corintios",
+          "chapter": 15,
+          "start": 1,
+          "end": 28
+        },
+        {
+          "book": "apocalipsis",
+          "chapter": 21,
+          "start": 1,
+          "end": 5
+        }
+      ]
+    },
+    {
+      "id": "sabiduria",
+      "title": "Decisiones y sabiduría",
+      "description": "Pedir luz, deliberar y elegir el camino bueno.",
+      "passages": [
+        {
+          "book": "libro-primero-de-los-reyes",
+          "chapter": 3,
+          "start": 5,
+          "end": 14
+        },
+        {
+          "book": "proverbios",
+          "chapter": 2,
+          "start": 1,
+          "end": 15
+        },
+        {
+          "book": "sabiduria",
+          "chapter": 7,
+          "start": 7,
+          "end": 14
+        },
+        {
+          "book": "eclesiastico",
+          "chapter": 37,
+          "start": 13,
+          "end": 18
+        },
+        {
+          "book": "evangelio-segun-san-mateo",
+          "chapter": 7,
+          "start": 7,
+          "end": 14
+        },
+        {
+          "book": "epistola-de-santiago",
+          "chapter": 1,
+          "start": 5,
+          "end": 8
+        }
+      ]
+    },
+    {
+      "id": "accion-de-gracias",
+      "title": "Acción de gracias",
+      "description": "Reconocer el don recibido y convertirlo en alabanza y vida.",
+      "passages": [
+        {
+          "book": "los-salmos",
+          "chapter": 92,
+          "start": 2,
+          "end": 6
+        },
+        {
+          "book": "los-salmos",
+          "chapter": 116,
+          "start": 1,
+          "end": 14
+        },
+        {
+          "book": "evangelio-segun-san-lucas",
+          "chapter": 17,
+          "start": 11,
+          "end": 19
+        },
+        {
+          "book": "epistola-a-los-efesios",
+          "chapter": 5,
+          "start": 15,
+          "end": 20
+        },
+        {
+          "book": "epistola-a-los-filipenses",
+          "chapter": 4,
+          "start": 4,
+          "end": 7
+        },
+        {
+          "book": "primera-epistola-a-los-tesalonicenses",
+          "chapter": 5,
+          "start": 16,
+          "end": 24
+        }
+      ]
+    }
+  ]
+}

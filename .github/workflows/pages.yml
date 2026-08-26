@@ -1,0 +1,44 @@
+name: Publicar Atlas en GitHub Pages
+
+on:
+  push:
+    branches: [gh-pages]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Construir y validar
+        run: npm run build
+      - name: Preparar la raíz pública
+        shell: bash
+        run: |
+          mkdir -p _site
+          cp index.html offline.html manifest.webmanifest service-worker.js build-manifest.json .nojekyll _site/
+          cp -r assets content data scripts share styles _site/
+          if [ -f sjm_transparente.png ]; then cp sjm_transparente.png _site/; fi
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Publicar
+        id: deployment
+        uses: actions/deploy-pages@v5

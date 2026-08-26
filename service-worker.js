@@ -1,4 +1,4 @@
-const BUILD_VERSION = "6.1.0-instalacion-compartir-oracion-diaria";
+const BUILD_VERSION = "1.0.0-release";
 const SHELL_CACHE = `atlas-shell-${BUILD_VERSION}`;
 const DATA_CACHE = `atlas-data-${BUILD_VERSION}`;
 const DOCUMENT_CACHE = `atlas-documents-${BUILD_VERSION}`;
@@ -6,17 +6,18 @@ const DOCUMENT_CACHE = `atlas-documents-${BUILD_VERSION}`;
 const SHELL = [
   "./", "./index.html", "./offline.html", "./manifest.webmanifest",
   "./styles/tokens.css", "./styles/base.css", "./styles/components.css",
-  "./styles/themes.css", "./styles/responsive.css", "./styles/features-5.4.css", "./styles/features-5.6.css", "./styles/reader-5.6.css", "./styles/saints-5.6.css", "./styles/features-5.7.css",
+  "./styles/themes.css", "./styles/responsive.css", "./styles/features-5.4.css", "./styles/features-5.6.css", "./styles/reader-5.6.css", "./styles/saints-5.6.css", "./styles/features-5.7.css", "./styles/bible-6.2.css",
+  "./styles/salvation.css", "./styles/salvation-cinematic.css", "./styles/architecture-6.4.css", "./styles/opus-resources.css", "./styles/experience-6.5.css",
   "./scripts/database.js", "./scripts/runtime.js", "./scripts/bootstrap.js", "./scripts/storage.js",
   "./scripts/search.js", "./scripts/repository.js", "./scripts/share.js", "./scripts/statistics.js",
   "./scripts/library.js", "./scripts/reader.js", "./scripts/extras.js",
   "./scripts/spiritual.js",
   "./scripts/examen.js",
   "./scripts/compare.js", "./scripts/feed-mixer.js", "./scripts/reels.js",
-  "./scripts/router.js", "./scripts/app.js",
-  "./data/saints-moods.json", "./data/saints-shorts.json", "./data/saints-routes.json", "./data/saints-timelines.json",
-  "./data/spiritual-guides.json", "./data/songbook.json", "./data/josemaria-experiences.json", "./data/exam-guides.json", "./data/ten-minutes-daily.json", "./data/gospel-meditations.json", "./data/opusdei-meditations.json",
-  "./assets/images/atlas-public-qr.svg",
+  "./scripts/router.js", "./scripts/bible.js", "./scripts/salvation.js", "./scripts/architecture.js", "./scripts/app.js",
+  "./data/ten-minutes-daily.json", "./data/gospel-meditations.json", "./data/opusdei-meditations.json",
+  "./data/bible/manifest.json", "./data/bible/topics.json", "./data/bible-jerusalem/manifest.json",
+  "./assets/images/atlas-public-qr.svg", "./assets/images/atlas-share-card.png", "./assets/images/atlas-library-fallback.svg",
   "./assets/images/libraries/bibliotecariaportada.webp", "./assets/images/libraries/canoniaportada.webp", "./assets/images/libraries/cinepilotportada.webp",
   "./assets/images/libraries/clasicosportada.webp", "./assets/images/libraries/historiaportada.webp", "./assets/images/libraries/liturgiaportada.webp",
   "./assets/images/libraries/ortodoxiaportada.webp", "./assets/images/libraries/portadaSanJosemarIA.webp", "./assets/images/libraries/preparadordecirculosportada.webp",
@@ -57,7 +58,7 @@ self.addEventListener("fetch", event => {
     return;
   }
 
-  if (/\/data\/(?:documents|search)\//.test(pathname) || /\/content\/opusdei-meditations\//.test(pathname)) {
+  if (/\/data\/(?:documents|search)\//.test(pathname) || /\/data\/(?:saints-moods|saints-shorts|saints-routes|saints-timelines|spiritual-guides|songbook|josemaria-experiences|exam-guides|examen|quotes|preguntas-frecuentes)\.json$/.test(pathname) || /\/data\/salvation-history\.json$/.test(pathname) || /\/data\/bible(?:-jerusalem)?\/(?:books\/|search-index\.json\.gz$)/.test(pathname) || /\/content\/(?:opusdei-meditations|salvation)\//.test(pathname)) {
     event.respondWith(caches.open(DOCUMENT_CACHE).then(async cache => {
       const cached = await cache.match(event.request);
       if (cached) return cached;

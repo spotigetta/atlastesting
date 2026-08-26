@@ -7,7 +7,9 @@
   <meta property="og:site_name" content="Atlas · Mercabá">
   <meta property="og:title" content="Atlas · Mercabá">
   <meta property="og:description" content="Bibliotecas, documentos, IA y recursos para estudiar, rezar y descubrir.">
-  <meta property="og:image" content="https://spotigetta.github.io/atlastesting/assets/icons/icon-512.png">
+  <meta property="og:image" content="https://spotigetta.github.io/atlastesting/assets/images/atlas-share-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#f4f0e7">
   <meta name="description" content="Atlas: portal documental de las inteligencias artificiales especializadas de Mercabá">
@@ -39,6 +41,17 @@
   <link rel="stylesheet" href="styles/reader-5.6.css">
   <link rel="stylesheet" href="styles/saints-5.6.css">
   <link rel="stylesheet" href="styles/features-5.7.css">
+  <link rel="stylesheet" href="styles/bible-6.2.css">
+  <link rel="stylesheet" href="styles/bible-fixes.css">
+  <link rel="stylesheet" href="styles/faq.css">
+  <link rel="stylesheet" href="styles/home-additions.css">
+  <link rel="stylesheet" href="styles/salvation.css">
+  <link rel="stylesheet" href="styles/salvation-cinematic.css">
+  <link rel="stylesheet" href="styles/architecture-6.4.css">
+  <link rel="stylesheet" href="styles/opus-resources.css">
+    <link rel="stylesheet" href="styles/experience-6.5.css">
+    <link rel="stylesheet" href="styles/today-cards.css">
+    <link rel="stylesheet" href="styles/brand-refresh.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Saltar al contenido</a>
@@ -64,17 +77,20 @@
     </a>
     <nav class="desktop-nav" aria-label="Navegación principal">
       <a href="#/" data-nav="home">Inicio</a>
-      <a href="#/explore" data-nav="explore">Explorar</a>
+      <a href="#/biblioteca" data-nav="biblioteca">Biblioteca</a>
+      <a href="#/preguntar" data-nav="preguntar">Preguntar</a>
+      <a href="#/rezar" data-nav="rezar">Rezar</a>
+      <a href="#/formarse" data-nav="formarse">Formarse</a>
       <a href="#/discover" data-nav="discover">Descubrir</a>
-      <a href="#/examen" data-nav="examen">Examen</a>
-      <a href="#/compare" data-nav="compare">Capacidades</a>
-      <a href="#/saved" data-nav="saved">Guardados</a>
+      <a href="#/opus-dei" data-nav="opus-dei">Opus Dei</a>
+      <a href="#/mi-atlas" data-nav="mi-atlas">Mi Atlas</a>
     </nav>
     <div class="header-tools">
       <button class="desktop-refresh-button" data-action="refresh-atlas" title="Reconstruir el catálogo y consultar fuentes recientes">↻ <span>Actualizar Atlas</span></button>
       <button class="round-button mobile-refresh-button" data-action="refresh-atlas" aria-label="Actualizar Atlas" title="Actualizar Atlas">↻</button>
       <button class="round-button settings-button" data-action="settings" aria-label="Personalizar Atlas" title="Personalizar Atlas">⚙</button>
       <button class="round-button help-button" data-action="tutorial" aria-label="Cómo usar Atlas" title="Cómo usar Atlas">?</button>
+      <a class="round-button presentation-button" href="presentacion-desktop/" target="_blank" rel="noopener" aria-label="Conoce Atlas" title="Conoce Atlas">✦</a>
       <button class="round-button" data-action="search" aria-label="Buscar" title="Buscar (Ctrl K)">
         <svg aria-hidden="true"><use href="#icon-search"></use></svg>
       </button>
@@ -84,14 +100,15 @@
     </div>
   </header>
 
+  <a class="presentation-fab" href="presentacion/" target="_blank" rel="noopener"><span>✦</span> Conoce Atlas</a>
   <main id="main" tabindex="-1"></main>
 
   <nav class="bottom-nav" aria-label="Navegación móvil">
     <a href="#/" data-nav="home"><svg><use href="#icon-home"></use></svg><span>Inicio</span></a>
-    <a href="#/explore" data-nav="explore"><svg><use href="#icon-compass"></use></svg><span>Explorar</span></a>
-    <a href="#/discover" data-nav="discover"><svg><use href="#icon-spark"></use></svg><span>Descubrir</span></a>
-    <a href="#/examen" data-nav="examen"><svg><use href="#icon-check"></use></svg><span>Examen</span></a>
-    <a href="#/saved" data-nav="saved"><svg><use href="#icon-bookmark"></use></svg><span>Guardados</span></a>
+    <a href="#/biblioteca" data-nav="biblioteca"><svg><use href="#icon-books"></use></svg><span>Biblioteca</span></a>
+    <a class="bottom-nav-primary" href="#/preguntar" data-nav="preguntar"><svg><use href="#icon-search"></use></svg><span>Preguntar</span></a>
+    <a href="#/rezar" data-nav="rezar"><svg><use href="#icon-spark"></use></svg><span>Rezar</span></a>
+    <a href="#/more" data-nav="more"><svg><use href="#icon-grid"></use></svg><span>MÃ¡s</span></a>
   </nav>
 
   <section class="search-sheet" id="search-sheet" hidden aria-label="Búsqueda global">
@@ -146,7 +163,8 @@
         <div><span class="eyebrow">Compartir desde Atlas</span><h2 id="share-title">Elige una opción</h2></div>
         <button class="icon-button" data-action="close-share" aria-label="Cerrar"><svg><use href="#icon-close"></use></svg></button>
       </div>
-      <p id="share-preview" class="muted small"></p>
+      <div class="share-preview-card"><img id="share-preview-image" src="assets/images/atlas-share-card.png" alt="Vista previa de Atlas"><p id="share-preview" class="muted small"></p></div>
+      <a class="share-discover-atlas" href="#/descubre-atlas" data-action="close-share"><span>Ver antes de enviar</span><b>Descubre Atlas en seis escenas →</b></a>
       <div class="share-options">
         <button data-share-choice="native"><svg><use href="#icon-share"></use></svg><span><b>Compartir</b><small>Usar el menú del dispositivo</small></span></button>
         <button data-share-choice="whatsapp"><span class="share-letter">W</span><span><b>WhatsApp</b><small>Abrir un mensaje preparado</small></span></button>
@@ -225,6 +243,7 @@
     <span>Hay una nueva versión de Atlas disponible.</span>
     <button data-action="apply-update">Actualizar ahora</button>
   </div>
+  <section class="atlas-update-showcase" id="atlas-update-showcase" hidden aria-label="Novedades de Atlas"><div class="update-orbit update-orbit-a"></div><div class="update-orbit update-orbit-b"></div><div class="update-spark">✦</div><p>Atlas se está renovando</p><strong>Una nueva versión<br>para seguir descubriendo</strong><button data-action="close-update-showcase">Continuar</button></section>
   <div class="install-banner" id="install-banner" hidden>
     <span><b>Instala Atlas</b><small>Ábrelo como una app desde tu pantalla de inicio.</small></span>
     <button data-action="install-atlas">Añadir a inicio</button>

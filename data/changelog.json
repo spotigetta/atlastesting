@@ -1,7 +1,96 @@
 {
-  "currentVersion": "6.1.0",
-  "updatedAt": "2026-08-20",
+  "currentVersion": "6.4.4",
+  "updatedAt": "2026-08-26",
   "entries": [
+    {
+      "version": "6.4.4",
+      "date": "2026-08-26",
+      "title": "Logo de 10 Minutos y navegación de escritorio",
+      "changes": [
+        "El distintivo de 10 Minutos con Jesús aparece también sobre las tarjetas con imagen",
+        "Guardados y Mi Atlas quedan visibles como botones en el menú de ordenador"
+      ]
+    },
+    {
+      "version": "6.4.3",
+      "date": "2026-08-26",
+      "title": "Orar con palabras propias y bibliotecas con identidad",
+      "changes": [
+        "No sé rezar abre Palabras para orar con la situación copiada para pegarla de inmediato",
+        "La IA de oración se ha redefinido como Palabras para orar, centrada en hablar a Dios desde la vida real",
+        "Las tarjetas de IA, las estanterías y Formarse tienen ahora una identidad visual más reconocible y desplazamiento lateral",
+        "Opus Dei muestra tres contenidos recientes actualizados y el proceso diario queda programado a las 00:30 de Madrid"
+      ]
+    },
+    {
+      "version": "6.4.2",
+      "date": "2026-08-25",
+      "title": "Preparador, recursos del Opus Dei y Scott Hahn",
+      "changes": [
+        "El Preparador de Círculos abre directamente su cuaderno de NotebookLM",
+        "Los vídeos del área Opus Dei conducen al canal oficial",
+        "Los 38 Markdown del Preparador aparecen como recursos legibles en Atlas",
+        "Un padre fiel a sus promesas se incorpora al lector y queda enlazado a Historia de la Salvación"
+      ]
+    },
+    {
+      "version": "6.4.1",
+      "date": "2026-08-25",
+      "title": "Escuchar, preguntar y recorrer con más naturalidad",
+      "changes": [
+        "10 Minutos con Jesús reproducible directamente desde Inicio y Rezar",
+        "Biblioteca visual y listado documental reunidos en una sola vista",
+        "Especialistas visibles por defecto y acceso directo a sus IA de NotebookLM",
+        "Escritura de oración más visual, ejemplos para comenzar y acceso a misas.org",
+        "Modo cinemático en la Historia de la Salvación"
+      ]
+    },
+    {
+      "version": "6.4.0",
+      "date": "2026-08-25",
+      "title": "Todo reunido. Todo aquí.",
+      "changes": [
+        "Nueva arquitectura: Inicio, Biblioteca, Preguntar, Rezar, Formarse, Descubrir, Opus Dei y Mi Atlas",
+        "Biblioteca como corazón documental, con estantería bíblica y exploración por temas, autores y colecciones",
+        "Puerta única para recomendar las IA de NotebookLM y preparar consultas sin generar respuestas doctrinales",
+        "Oración desde situaciones humanas, examen general público y examen específico conservado tras desbloqueo OD",
+        "Descubre Atlas en seis escenas y tarjeta visual 1200 × 630 optimizada para WhatsApp",
+        "Navegación móvil simplificada y carga diferida de los corpus secundarios pesados"
+      ]
+    },
+    {
+      "version": "6.3.2",
+      "date": "2026-08-25",
+      "title": "Compartir, lectura porcentual y slider táctil",
+      "changes": [
+        "Vista previa visual de Atlas al compartir y enlace limpio con miniatura compatible con WhatsApp",
+        "Preparador de Círculos como nombre visible de la IA",
+        "Tamaño de texto y ancho de columna de la Biblia expresados en porcentajes",
+        "Thumb nativo estilizado para que la bola del zoom siga siempre al slider"
+      ]
+    },
+    {
+      "version": "6.3.1",
+      "date": "2026-08-25",
+      "title": "Gran mapa visual de la Salvación",
+      "changes": [
+        "Panorama completo con Abraham, David y Jesucristo visibles simultáneamente",
+        "Seis escalas semánticas fluidas: mapa, alianzas, hitos, relato, archivo y lectura",
+        "Fechas sobre la línea, títulos condensados e identidad gráfica propia para cada alianza",
+        "Controles táctiles inferiores y modos claro y oscuro independientes"
+      ]
+    },
+    {
+      "version": "6.3.0",
+      "date": "2026-08-25",
+      "title": "Historia de la Salvación navegable",
+      "changes": [
+        "Línea temporal continua con cuatro niveles de profundidad y control por gesto",
+        "892 hitos generados desde el Markdown, organizados alrededor de las alianzas",
+        "Referencias enlazadas a la Biblia CEE y nueve hilos temáticos entre épocas",
+        "Lectura completa en la propia superficie y acceso al libro de Scott Hahn"
+      ]
+    },
     {
       "version": "6.1.0",
       "date": "2026-08-20",

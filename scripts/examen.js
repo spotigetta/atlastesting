@@ -1,7 +1,8 @@
 (function () {
   "use strict";
   const root = window.Atlas = window.Atlas || {};
-  const source = window.ATLAS_EXAM || { norms: [], helps: [], notifications: {}, sources: [] };
+  const emptySource = { norms: [], helps: [], notifications: {}, sources: [] };
+  const source = new Proxy(emptySource, { get(target, property) { return (window.ATLAS_EXAM || target)[property] ?? target[property]; } });
   const examGuides = () => window.ATLAS_EXAM_GUIDES?.guides || [];
   const esc = value => String(value ?? "").replace(/[&<>"']/g, character => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[character]));
   const answerLabels = { yes: "Sí", partial: "Parcialmente", no: "No", na: "No aplica" };
