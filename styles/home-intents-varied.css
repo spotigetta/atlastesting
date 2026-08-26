@@ -1,0 +1,18 @@
+/* Cuatro puertas, cuatro lenguajes visuales. */
+.v7-intents>div>a{position:relative;isolation:isolate;overflow:hidden;min-height:232px;padding:26px 21px;border:0;box-shadow:0 12px 28px rgba(39,53,46,.06)}
+.v7-intents>div>a:after{content:"";position:absolute;z-index:-1;right:-38px;bottom:-58px;width:170px;height:170px;border-radius:50%;border:1px solid currentColor;opacity:.15;box-shadow:0 0 0 18px currentColor,0 0 0 38px currentColor;}
+.v7-intents>div>a:nth-child(1){background:linear-gradient(145deg,#eaf3ef,#cfe3d8);color:#183d33;border-radius:28px 28px 8px 28px}
+.v7-intents>div>a:nth-child(1) i{background:#1b594a;color:#fff;font-family:var(--mono);border-radius:12px}
+.v7-intents>div>a:nth-child(2){background:#242137;color:#fff;border-radius:8px 30px 30px 30px;transform:translateY(7px)}
+.v7-intents>div>a:nth-child(2):after{opacity:.1}
+.v7-intents>div>a:nth-child(2) i{background:#e5d6fb;color:#34254c;border-radius:50%;font-size:1.3rem}
+.v7-intents>div>a:nth-child(2) span{color:#dfd7edc7}
+.v7-intents>div>a:nth-child(3){background:linear-gradient(145deg,#fff7e8,#efd9ad);color:#3e2c19;border-radius:40px 12px 40px 12px}
+.v7-intents>div>a:nth-child(3):after{width:120px;height:120px;border-radius:50%;border-style:dashed;opacity:.2}
+.v7-intents>div>a:nth-child(3) i{background:#b78338;color:#fff;border-radius:8px 50% 50% 50%;transform:rotate(-8deg)}
+.v7-intents>div>a:nth-child(4){background:linear-gradient(145deg,#e9e3f4,#d4c7eb);color:#332744;border-radius:26px 8px 26px 8px}
+.v7-intents>div>a:nth-child(4):after{right:-18px;bottom:-74px;width:210px;height:210px;border-radius:42% 58% 50% 50%;transform:rotate(25deg);opacity:.12}
+.v7-intents>div>a:nth-child(4) i{background:#6d558f;color:#fff;border-radius:8px;transform:rotate(45deg)}
+.v7-intents>div>a:nth-child(4) i::first-letter{display:inline-block;transform:rotate(-45deg)}
+.v7-intents>div>a:nth-child(1):hover,.v7-intents>div>a:nth-child(2):hover,.v7-intents>div>a:nth-child(3):hover,.v7-intents>div>a:nth-child(4):hover{transform:translateY(-5px) rotate(0deg);box-shadow:0 20px 38px rgba(39,53,46,.14)}
+@media(max-width:899px){.v7-intents>div>a:nth-child(2){transform:none}}

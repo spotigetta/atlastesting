@@ -101,6 +101,7 @@
     let shorts = [
       ...root.data.catalog.shorts.filter(item => item.verified),
       ...(window.ATLAS_QUOTES?.items || []),
+      ...(window.ATLAS_TEN_MINUTES_PROMPTS?.items || []),
       ...(window.ATLAS_SAINTS_SHORTS?.items || []).map(saintEditorialItem)
     ];
     const external = (window.ATLAS_EXTERNAL?.items || []).map(item => ({

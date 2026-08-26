@@ -56,7 +56,7 @@
     const parsed = parseFilter(filter);
 
     const docResults = documents
-      .filter(doc => allowed(doc, parsed)
+      .filter(doc => (!doc.unlockFeature || root.storage.isFeatureUnlocked(doc.unlockFeature)) && allowed(doc, parsed)
         && (!parsed.status || doc.status === parsed.status)
         && (!parsed.foreign || Boolean(doc.language)))
       .map(doc => ({
@@ -151,7 +151,7 @@
         const document = documentMap.get(reference.id);
         return document ? { ...document, occurrences } : null;
       })
-      .filter(document => document && allowed(document, parsed))
+      .filter(document => document && (!document.unlockFeature || root.storage.isFeatureUnlocked(document.unlockFeature)) && allowed(document, parsed))
       .sort((a, b) => b.occurrences - a.occurrences || a.title.localeCompare(b.title))
       .slice(0, limit);
   }

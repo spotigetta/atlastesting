@@ -1,0 +1,21 @@
+/* Tipografía editorial del Preparador: cada modo se lee con un ritmo distinto. */
+.opus-prep-guide header span{font-family:var(--sans);font-size:.68rem;letter-spacing:.19em}
+.opus-prep-guide header h2{font-family:"Cormorant Garamond",Georgia,var(--serif);font-weight:700;font-style:normal;letter-spacing:-.055em}
+.prep-mode-grid article{position:relative;align-items:flex-start;overflow:hidden}
+.prep-mode-grid article:first-child{border-color:#b8d6c8;background:linear-gradient(135deg,#ffffff14,#6fa48b18)}
+.prep-mode-grid article:first-child:after{content:"temas";position:absolute;right:18px;top:12px;color:#d9eee2a8;font:italic 600 1.1rem "Cormorant Garamond",serif;transform:rotate(-8deg)}
+.prep-mode-grid article:first-child b{font-family:"Literata",Georgia,serif;font-weight:700;letter-spacing:-.02em}
+.prep-mode-grid article:first-child p{font-family:"Cormorant Garamond",Georgia,serif;font-size:1.1rem;font-style:italic}
+.prep-mode-grid article:first-child ol{font-family:"DM Sans",sans-serif;font-weight:600;letter-spacing:.01em}
+.prep-mode-grid article:nth-child(2){border-color:#d4c791;background:linear-gradient(135deg,#d9b86518,#ffffff0b)}
+.prep-mode-grid article:nth-child(2):after{content:"Evangelio";position:absolute;right:14px;bottom:8px;color:#f1d98b26;font:italic 700 2.1rem "Cormorant Garamond",serif;transform:rotate(-7deg)}
+.prep-mode-grid article:nth-child(2) b{font-family:"Cormorant Garamond",Georgia,var(--serif);font-size:1.48rem;font-weight:700}
+.prep-mode-grid article:nth-child(2) p,.prep-mode-grid article:nth-child(2) small{font-family:"Literata",Georgia,serif}
+.prep-mode-grid article:nth-child(2) strong{color:#f0d58a;font-weight:800}
+.prep-mode-grid article i{box-shadow:0 0 0 5px #ffffff0a;font-family:"DM Sans",sans-serif;font-size:.95rem;letter-spacing:-.04em}
+.prep-mode-grid ol{line-height:1.55}
+.prep-mode-grid small{font-family:"DM Sans",sans-serif;line-height:1.5}
+.prep-purpose{font-family:"Literata",Georgia,serif;font-size:.96rem;line-height:1.65}
+.prep-purpose strong{color:#f0d58a;font-weight:800}
+.prep-purpose em{color:#e5c97c;font-family:"Cormorant Garamond",Georgia,serif;font-size:1.14em}
+@media(max-width:700px){.prep-mode-grid article:first-child:after,.prep-mode-grid article:nth-child(2):after{opacity:.55}.prep-mode-grid article:nth-child(2) b{font-size:1.27rem}}

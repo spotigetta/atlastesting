@@ -1,0 +1,3 @@
+/* La pantalla de novedades debe responder siempre al toque, incluso en la primera visita. */
+.atlas-update-showcase button{position:relative;z-index:20;pointer-events:auto;touch-action:manipulation}
+.atlas-update-showcase .update-orbit{pointer-events:none}

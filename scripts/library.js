@@ -62,6 +62,7 @@
     const view = options.view || "cards";
     const term = root.data.expanded(query);
     const docs = library.documents.filter(doc => {
+      if (doc.unlockFeature && !root.storage.isFeatureUnlocked(doc.unlockFeature)) return false;
       const matchesTerm = !term || root.data.expanded(`${doc.title} ${doc.file} ${doc.category} ${doc.author || ""} ${doc.originals}`).includes(term);
       return matchesTerm && (category === "all" || doc.category === category) && (status === "all" || doc.status === status);
     });

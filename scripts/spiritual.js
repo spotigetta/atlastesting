@@ -39,8 +39,18 @@
   }
 
   function shell(active, body) {
-    const items = [["","Inicio"],["saints","Cómo vivieron"],["timeline","Cronología"],["routes","Rutas de santos"],["gospel","Evangelio"],["confession","Confesión"],["mass","La Misa"],["songbook","Cancionero"],["escriva","escriva.org"]];
-    return `<div class="spiritual-space"><header class="spiritual-header"><a href="#/spiritual" class="spiritual-mark">✦</a><div><span class="eyebrow">Atlas · vida espiritual</span><h1>Aprender desde vidas y fuentes.</h1></div></header><nav class="spiritual-nav">${items.map(([id,label]) => `<a class="${active === id ? "active" : ""}" href="#/spiritual${id ? `/${id}` : ""}">${esc(label)}</a>`).join("")}</nav>${body}</div>`;
+    const contexts = {
+      saints: ["Santos", "Experiencias y vidas reales"],
+      timeline: ["Santos", "Vidas en el tiempo"],
+      routes: ["Santos", "Rutas espirituales"],
+      gospel: ["Evangelio", "Medita el Evangelio"],
+      confession: ["Examen", "Preparar la confesión"],
+      mass: ["Celebrar", "Comprender la Misa"],
+      songbook: ["Escuchar", "Cancionero católico"],
+      escriva: ["San Josemaría", "escriva.org"],
+    };
+    const [section, title] = contexts[active] || ["Rezar", "Un espacio para volver a lo esencial"];
+    return `<div class="spiritual-space spiritual-space-${esc(active || "detail")}"><header class="spiritual-context"><a href="#/rezar" class="spiritual-back" aria-label="Volver a Rezar">←</a><div><span class="eyebrow">${esc(section)} · Atlas</span><h1>${esc(title)}</h1></div><a class="spiritual-context-home" href="#/rezar">Rezar</a></header>${body}</div>`;
   }
 
   function home() {
@@ -175,7 +185,14 @@
 
   function render(route) {
     const section = route.segments[1] || "";
-    if (!section) return home();
+    // La antigua portada espiritual se integra en la puerta principal de Rezar.
+    // Conservamos las rutas internas para enlaces antiguos, favoritos y lecturas compartidas.
+    if (!section) {
+      requestAnimationFrame(() => {
+        if ((location.hash || "#/spiritual").replace(/^#/, "") === "/spiritual") location.hash = "/rezar";
+      });
+      return `<main class="spiritual-forward"><span>Atlas · Rezar</span><h1>Abriendo tus recursos de oración…</h1></main>`;
+    }
     if (section === "saints" && route.segments[2]) return moodDetail(decodeURIComponent(route.segments.slice(2).join("/")));
     if (section === "saints") return saintsIndex();
     if (section === "timeline" && route.segments[2]) return timelineDetail(decodeURIComponent(route.segments[2]));

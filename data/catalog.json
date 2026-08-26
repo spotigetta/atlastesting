@@ -10139,9 +10139,10 @@
           "year": null,
           "language": "es",
           "status": "not-stated",
-          "authority": "Estudio bíblico y teológico",
-          "libraryId": "history",
-          "source": "Markdown local autorizado"
+      "authority": "Estudio bíblico y teológico",
+      "libraryId": "history",
+      "unlockFeature": "scott-hahn-private",
+      "source": "Markdown local autorizado"
         }
       ],
       "categories": [
@@ -28812,7 +28813,7 @@
       "tone": "violet",
       "notebookUrl": "https://notebook.google.com/notebook/01074bc9-b6bd-4f84-80dc-2275f5286983",
       "name": "Oración DiarIA",
-      "description": "Una IA para encontrar palabras sinceras con las que hablar a Dios desde lo que estás viviendo.",
+      "description": "IA para ayudarte a hacer oración.",
       "purpose": "Te ayuda a convertir una alegría, una herida, una duda o un silencio en oración personal dirigida a Dios.",
       "organization": "Meditaciones, escenas del Evangelio y audios para sostener una conversación real con Dios.",
       "topics": [],

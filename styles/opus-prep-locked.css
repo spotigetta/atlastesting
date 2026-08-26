@@ -1,0 +1,7 @@
+/* El recurso protegido conserva una tarjeta breve hasta que se desbloquea. */
+.opus-prep-locked-card{position:relative;display:flex;min-height:178px;flex-direction:column;justify-content:flex-end;overflow:hidden;margin-top:18px;padding:22px;border:1px solid #476b5b;border-radius:24px;background:linear-gradient(135deg,#1e4035,#10251f);color:#fff;text-decoration:none;box-shadow:0 18px 45px #18372b22}
+.opus-prep-locked-card:before{content:"○";position:absolute;right:20px;top:12px;color:#e5c66eaa;font:500 62px/1 var(--serif)}
+.opus-prep-locked-card span{color:#e5c66e;font:800 9px var(--sans);letter-spacing:.16em;text-transform:uppercase}
+.opus-prep-locked-card h3{position:relative;margin:10px 0 5px;font:700 clamp(24px,3vw,34px)/1 var(--serif)}
+.opus-prep-locked-card p{position:relative;margin:0;color:#dce8dfc9;font-size:12px}
+.opus-prep-locked-card b{position:relative;margin-top:17px;color:#f0d88a;font-size:10px}

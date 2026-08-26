@@ -1,0 +1,64 @@
+/* Los recursos espirituales ya no forman una subapp: son destinos de Rezar. */
+.spiritual-space{
+  max-width:1160px;
+  min-height:100%;
+  margin:0 auto;
+  padding:clamp(20px,4vw,52px) clamp(16px,4vw,48px) 96px;
+  background:
+    radial-gradient(circle at 92% 7%,color-mix(in srgb,#e7cc7d 20%,transparent),transparent 24%),
+    radial-gradient(circle at 8% 2%,color-mix(in srgb,#789e90 14%,transparent),transparent 25%),
+    var(--paper);
+}
+.spiritual-context{
+  display:grid;
+  grid-template-columns:auto minmax(0,1fr) auto;
+  align-items:center;
+  gap:13px;
+  margin:0 0 clamp(26px,5vw,54px);
+}
+.spiritual-back,.spiritual-context-home{
+  display:grid;
+  place-items:center;
+  min-height:42px;
+  border:1px solid color-mix(in srgb,var(--ink) 13%,transparent);
+  color:var(--ink);
+  text-decoration:none;
+}
+.spiritual-back{width:42px;border-radius:50%;font:600 20px/1 var(--serif)}
+.spiritual-context-home{padding:0 14px;border-radius:999px;font:750 10px var(--sans);letter-spacing:.04em;text-transform:uppercase}
+.spiritual-context>div{min-width:0}
+.spiritual-context .eyebrow{display:block;margin-bottom:4px;color:#637f76;font-size:9px;letter-spacing:.14em}
+.spiritual-context h1{margin:0;font-size:clamp(21px,3vw,36px);line-height:1.02}
+.spiritual-forward{min-height:55vh;display:grid;place-content:center;gap:9px;padding:30px;text-align:center;background:var(--paper)}
+.spiritual-forward span{color:#637f76;font-size:10px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+.spiritual-forward h1{margin:0;font-size:clamp(25px,4vw,48px)}
+
+/* Da a cada acceso de Rezar una presencia propia, en lugar de una cuadrícula uniforme. */
+.v7-prayer-grid .prayer-songbook-link{background:linear-gradient(135deg,#fff9ee,#efe1bf);color:#342a1d}
+.v7-prayer-grid .prayer-songbook-link i{color:#aa7241}
+.v7-prayer-grid .prayer-songbook-link:after{content:"♪";position:absolute;right:18px;bottom:-20px;color:rgba(155,101,49,.15);font:900 110px/1 var(--serif)}
+.v7-prayer-grid .prayer-songbook-link>*{position:relative;z-index:1}
+.spiritual-space .page{padding-left:0;padding-right:0}
+
+/* El mapa de Rezar funciona por atmósferas, no por botones idénticos. */
+.v7-prayer-grid>a:nth-child(2){background:linear-gradient(145deg,#edf4ec,#d5e8db);border-color:#bdd6c4}
+.v7-prayer-grid>a:nth-child(2) i{background:#376653;color:#fff}
+.v7-prayer-grid>a:nth-child(3){background:linear-gradient(145deg,#20262c,#3c4751);color:#fff;border:0}
+.v7-prayer-grid>a:nth-child(3) p{color:#eef3f5b8}
+.v7-prayer-grid>a:nth-child(3) i{background:#ffffff18;color:#f2d58c}
+.v7-prayer-grid>a:nth-child(4){background:linear-gradient(145deg,#f2eafa,#ded0ed);border-color:#d3c0e0}
+.v7-prayer-grid>a:nth-child(4) i{background:#765187;color:#fff}
+.v7-prayer-grid>a:nth-child(5){background:linear-gradient(145deg,#fffdf9,#eee4d1);border-color:#dfd0b6}
+.v7-prayer-grid>a:nth-child(5) i{background:#bd9150;color:#fff}
+.v7-prayer-grid .devocionario-card{position:relative;overflow:hidden;background:linear-gradient(145deg,#eaf2f7,#d6e7f2);border-color:#c2d9e8}
+.v7-prayer-grid .devocionario-card:after{content:"✧";position:absolute;right:-5px;top:-35px;color:#ffffff91;font:900 142px/1 var(--serif)}
+.v7-prayer-grid .devocionario-card>*{position:relative;z-index:1}
+.v7-prayer-grid>a:nth-child(8){background:linear-gradient(145deg,#fff6f0,#f3d7ca);border-color:#e4c5b8}
+.v7-prayer-grid>a:nth-child(8) i{background:#b66a51;color:#fff}
+
+@media (max-width:700px){
+  .spiritual-space{padding:18px 15px 92px}
+  .spiritual-context{margin-bottom:30px}
+  .spiritual-context h1{font-size:23px}
+  .spiritual-context-home{min-height:38px;padding:0 11px;font-size:9px}
+}

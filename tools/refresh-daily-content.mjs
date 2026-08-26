@@ -63,11 +63,22 @@ const editorialFeeds = [
   { type: "news", source: "Omnes", url: "https://www.omnesmag.com/feed/", take: 10 },
   { type: "news", source: "Alfa y Omega", url: "https://alfayomega.es/feed/", take: 10 },
   { type: "news", source: "El Debate · Religión", url: "https://www.eldebate.com/rss/religion.xml", take: 10 },
-  { type: "reading", source: "Opus Dei", url: "https://opusdei.org/es/rss/", take: 8 }
+  { type: "reading", source: "Opus Dei", url: "https://opusdei.org/es/", take: 8, parser: "opus-home" }
 ];
 const youthItem = { id:"opusdei-youth", type:"youth", source:"Opus Dei · Youth", url:"https://opusdei.org/es/youth/", title:"Youth · Opus Dei", description:"Artículos, vídeos, podcasts y propuestas para vivir la fe en el siglo XXI.", image:"https://images.opusdei.net/?url=https://s3-eu-west-1.amazonaws.com/images-opus-dei/page/2024/6/Tweets-con-Dios-Tu-historia20240605114626427371.png&w=1200&il&output=jpg&q=75", fetched:true, dynamic:true };
 const booksItem = { id:"opusdei-ebooks", type:"reading", source:"Opus Dei · Libros electrónicos", url:"https://opusdei.org/es/page/libros-electronicos/", title:"Libros electrónicos · Opus Dei", description:"Selección oficial de libros sobre vida cristiana, doctrina católica, cartas de san Josemaría, novenas y textos de los Papas.", fetched:true, dynamic:true };
 const youthUrl = "https://opusdei.org/es/youth/";
+const madridToday = () => new Intl.DateTimeFormat("en-CA", { timeZone: "Europe/Madrid" }).format(new Date());
+function parseOpusGospel(html, date) {
+  const title = decode(html.match(/<h1\b[^>]*>([\s\S]*?)<\/h1>/i)?.[1] || html.match(/<title\b[^>]*>([\s\S]*?)<\/title>/i)?.[1] || "");
+  const description = decode(html.match(/<meta\b[^>]*name=["']description["'][^>]*content=["']([^"']+)/i)?.[1] || html.match(/<p\b[^>]*class=["'][^"']*(?:entradilla|summary|lead)[^"']*["'][^>]*>([\s\S]*?)<\/p>/i)?.[1] || "");
+  if (!title) throw new Error("Evangelio de Opus Dei sin título");
+  return { id: `opus-gospel-${date}`, type: "gospel", source: "Opus Dei", url: `https://opusdei.org/es/gospel/${date}/`, title, description: description.slice(0, 360), date, fetched: true, dynamic: true };
+}
+async function refreshOpusGospel() {
+  const date = madridToday();
+  return parseOpusGospel(await get(`https://opusdei.org/es/gospel/${date}/`), date);
+}
 function parseYouthCards(html) {
   const cards = []; const seen = new Set();
   const cardPattern = /<a\b(?=[^>]*\bhref=["']([^"']*\/es\/article\/[^"']+))[\s\S]*?(?=[^>]*\btitle=["']([^"']+))[\s\S]*?<img\b[^>]*\bsrc=["']([^"']+)["'][\s\S]*?<\/a>/gi;
@@ -97,12 +108,48 @@ function rssItems(xml, feed) {
       date: tag("pubDate") ? new Date(decode(tag("pubDate"))).toISOString().slice(0, 10) : "", image, fetched: true };
   }).filter(Boolean);
 }
+function opusHomeItems(html, feed) {
+  const cards = [], seen = new Set();
+  const headings = [...html.matchAll(/<h2\b[^>]*>\s*<a\b[^>]*\bhref=["']([^"']+)["'][^>]*>([\s\S]*?)<\/a>\s*<\/h2>/gi)];
+  for (let index = 0; index < headings.length && cards.length < feed.take; index += 1) {
+    const match = headings[index];
+    const snippet = html.slice(match.index, headings[index + 1]?.index || match.index + 9000);
+    const url = new URL(decode(match[1]), feed.url).href;
+    const title = decode(match[2]);
+    if (!title || !url || seen.has(url) || !/\/es\/article\//.test(url)) continue;
+    seen.add(url);
+    const image = decode(snippet.match(/<img\b[^>]*\bsrc=["']([^"']+)["']/i)?.[1] || "").replace(/^\/\//, "https://");
+    const date = snippet.match(/<time\b[^>]*\bdatetime=["']([^"']+)["']/i)?.[1] || "";
+    const description = decode(snippet.match(/<p\b[^>]*\bclass=["'][^"']*\bclamp\b[^"']*["'][^>]*>([\s\S]*?)<\/p>/i)?.[1] || "").slice(0, 360);
+    cards.push({
+      id: `external-${createHash("sha1").update(url).digest("hex").slice(0, 12)}`,
+      type: feed.type, source: feed.source, url, title, description, image,
+      date: /^\d{4}-\d{2}-\d{2}$/.test(date) ? date : "", fetched: true, dynamic: true
+    });
+  }
+  return cards;
+}
+function feedItems(xml, feed) {
+  if (feed.parser === "opus-home") return opusHomeItems(xml, feed);
+  const rss=rssItems(xml, feed); if (rss.length) return rss;
+  return [...xml.matchAll(/<entry\b[^>]*>([\s\S]*?)<\/entry>/gi)].slice(0,feed.take).map(([,block]) => {
+    const tag=name=>block.match(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${name}>`,"i"))?.[1]||"";
+    const url=block.match(/<link\b[^>]*\bhref=["']([^"']+)/i)?.[1]||decode(tag("link"));
+    const title=decode(tag("title")); if(!url||!title)return null;
+    const summary=tag("summary")||tag("content");
+    const image=block.match(/<media:(?:content|thumbnail)[^>]+url=["']([^"']+)/i)?.[1]||summary.match(/<img[^>]+src=["']([^"']+)/i)?.[1]||"";
+    const date=decode(tag("updated")||tag("published"));
+    return {id:`external-${createHash("sha1").update(url).digest("hex").slice(0,12)}`,type:feed.type,source:feed.source,url,title,description:decode(summary).slice(0,360),author:decode(tag("author")||tag("name")),date:date?new Date(date).toISOString().slice(0,10):"",image,fetched:true};
+  }).filter(Boolean);
+}
 async function refreshEditorial() {
   const previous = await readJson("external-content.json", { items: [] });
-  const responses = await Promise.allSettled([...editorialFeeds.map(async feed => rssItems(await get(feed.url), feed)), refreshYouth()]);
-  const youth = responses.at(-1).status === "fulfilled" ? responses.at(-1).value : [];
-  const live = responses.slice(0,-1).flatMap(result => result.status === "fulfilled" ? result.value : []);
-  const curated = [...youth, youthItem, booksItem];
+  const responses = await Promise.allSettled([...editorialFeeds.map(async feed => feedItems(await get(feed.url), feed)), refreshYouth(), refreshOpusGospel()]);
+  const gospelResult = responses.at(-1), youthResult = responses.at(-2);
+  const gospel = gospelResult.status === "fulfilled" ? gospelResult.value : null;
+  const youth = youthResult.status === "fulfilled" ? youthResult.value : [];
+  const live = responses.slice(0,-2).flatMap(result => result.status === "fulfilled" ? result.value : []);
+  const curated = [...youth, youthItem, booksItem, ...(gospel ? [gospel] : [])];
   const items = [...new Map([...curated, ...live, ...(previous.items || [])].map(item => [item.url, item])).values()].slice(0, 300);
   if (!items.length) throw new Error("Editorial: no hay resultados ni caché anterior");
   const failures = responses.filter(item => item.status === "rejected").map(item => item.reason?.message || "Proveedor no disponible");

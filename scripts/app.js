@@ -159,6 +159,15 @@
   );
 
   function esc(value) { return A.library.esc(value); }
+  function renderAuthorWorks(authorName) {
+    const author = String(authorName || "").trim();
+    const documents = A.data.documents
+      .filter(doc => String(doc.author || "").trim() === author)
+      .sort((left, right) => left.title.localeCompare(right.title, "es"));
+    if (!documents.length) return notFound();
+    const libraries = [...new Set(documents.map(doc => doc.library.short))];
+    return `<section class="page atlas-v7 author-works-page"><a class="author-works-back" href="#/biblioteca?view=authors">← Todos los autores</a><header><span>Autor</span><h1>${esc(author)}</h1><p>${documents.length} obra${documents.length === 1 ? "" : "s"} disponibles${libraries.length > 1 ? ` · ${libraries.map(esc).join(" · ")}` : ""}.</p></header><section class="author-works-list">${documents.map((doc, index) => `<a href="#/reader/${encodeURIComponent(doc.id)}"><i>${String(index + 1).padStart(2, "0")}</i><div><span>${esc(doc.library.short)}</span><b>${esc(doc.title)}</b><small>${esc(doc.category || "Documento")}</small></div><em>Leer →</em></a>`).join("")}</section></section>`;
+  }
   const infographicUrl = file => window.AtlasRuntime.url(`assets/infografias/${encodeURIComponent(file)}`);
   function tutorialMiniInfographic(step) {
     const lib = A.data.libraryMap.get(step.libraryId);
@@ -406,6 +415,10 @@
     return `<section class="page"><div class="feature-lock"><span>PC</span><h1>Preparadora de círculos</h1><p>Esta función necesita activarse en Guardados con el código correspondiente.</p><a class="primary-button" href="#/saved">Ir a Guardados</a></div></section>`;
   }
 
+  function privateBookPreview() {
+    return `<section class="page"><div class="feature-lock private-book-lock"><span>SH</span><h1>Un padre fiel a sus promesas</h1><p>El texto completo no está disponible en esta instalación. Puedes adquirir la obra de Scott Hahn para leerla y estudiarla.</p><div class="button-row"><a class="primary-button" href="https://www.amazon.es/s?k=Scott+Hahn+Un+padre+fiel+a+sus+promesas" target="_blank" rel="noopener">Buscar el libro →</a><a class="secondary-button" href="#/salvation">Volver a Historia de la Salvación</a></div></div></section>`;
+  }
+
   function renderInfographics() {
     return `<section class="page infographic-library"><header class="explore-hero"><span class="eyebrow">Guía visual</span><h1>Qué puede hacer cada IA.</h1><p>Una presentación gráfica y animada de capacidades, preguntas y fuentes. Las piezas se sincronizan automáticamente desde <code>infografiasfinal</code>.</p></header><div class="ia-guide-grid capabilities-showcase">${visibleLibraries().map(lib => guideCard(lib, true)).join("")}</div></section>`;
   }
@@ -616,7 +629,7 @@
     return `<section class="page"><header class="explore-hero"><span class="eyebrow">Tu Atlas · versión ${esc(A.data.catalog.meta.dataVersion)}</span><h1>Guardados e historial.</h1><p>Todo permanece en este dispositivo. No necesitas una cuenta.</p><span class="app-version-badge">Atlas ${esc(A.data.catalog.meta.dataVersion)}</span></header>
       <section class="study-summary"><div><strong>${Math.round((today.milliseconds || 0) / 60000)}</strong><span>minutos hoy</span></div><div><strong>${today.documents?.length || 0}</strong><span>documentos</span></div><div><strong>${today.collections?.length || 0}</strong><span>colecciones</span></div></section>
       <div class="chip-row saved-tabs">${tabs.map(([id,label]) => `<button class="chip ${state.savedTab===id?"active":""}" data-saved-tab="${id}">${label}</button>`).join("")}</div>${content}
-      <section class="section feature-unlocks"><div class="section-head"><div><h2>Funciones adicionales</h2><p>Un sistema extensible de activaciones locales.</p></div></div>${A.storage.isFeatureUnlocked("preparadora-circulos")?`<article class="feature-unlock active"><span>✓</span><div><b>Preparadora de círculos activa</b><small>Quedará disponible tras cerrar y volver a abrir Atlas.</small></div><a class="secondary-button" href="#/library/preparadora-circulos/documents">Abrir guía</a></article>`:`<form id="feature-unlock-form" class="feature-unlock"><span>PC</span><div><b>Desbloquear una funcionalidad</b><small>Introduce el código que has recibido.</small></div><input name="code" autocomplete="off" required placeholder="Código"><button class="primary-button">Activar</button></form>`}</section>
+      <section class="section feature-unlocks"><div class="section-head"><div><h2>Funciones adicionales</h2><p>Un sistema extensible de activaciones locales.</p></div></div>${A.storage.isFeatureUnlocked("preparadora-circulos")?`<article class="feature-unlock active"><span>✓</span><div><b>Preparadora de círculos activa</b><small>Quedará disponible tras cerrar y volver a abrir Atlas.</small></div><a class="secondary-button" href="#/library/preparadora-circulos/documents">Abrir guía</a></article>`:`<form id="feature-unlock-form" class="feature-unlock"><span>PC</span><div><b>Desbloquear una funcionalidad</b><small>Introduce el código que has recibido.</small></div><input name="code" autocomplete="off" required placeholder="Código"><button class="primary-button">Activar</button></form>`}${A.storage.isFeatureUnlocked("scott-hahn-private")?"":`<form id="feature-unlock-odr-form" class="feature-unlock"><span>SH</span><div><b>Recurso de lectura</b><small>Introduce el código de acceso si lo tienes.</small></div><input name="code" autocomplete="off" required placeholder="Código"><button class="primary-button">Activar</button></form>`}</section>
       <section class="section"><div class="section-head"><div><h2>Preferencias</h2><p>Adapta lectura, movimiento, iluminación y apariencia.</p></div></div><div class="button-row"><button class="primary-button" data-action="settings">Personalizar Atlas</button><button class="secondary-button" data-action="refresh-atlas">↻ Actualizar Atlas</button><button class="secondary-button" data-action="intro-replay">Ver presentación</button><button class="secondary-button" data-action="toggle-contrast">${stored.settings.contrast ? "Desactivar" : "Activar"} alto contraste</button><button class="secondary-button" data-action="toggle-random">${stored.settings.randomShorts ? "Orden diario" : "Orden aleatorio"}</button><button class="secondary-button" data-action="toggle-only-new">${stored.settings.onlyNewShorts ? "Mostrar todos" : "Solo contenido nuevo"}</button></div></section>
       <section class="section atlas-share-card"><button class="atlas-qr-trigger" data-action="open-qr" aria-label="Ampliar el código QR a pantalla completa"><img src="assets/images/atlas-public-qr.svg" alt=""></button><div><span class="eyebrow">Lleva Atlas contigo</span><h2>Compartir e instalar</h2><p>Toca el QR para verlo a pantalla completa, escanéalo o comparte la dirección pública. En móvil puedes instalar Atlas en la pantalla de inicio como una aplicación.</p><code>${PUBLIC_APP_URL.split("#")[0]}share/</code><div class="button-row"><button class="primary-button" data-action="install-atlas">Añadir a inicio</button><button class="secondary-button" data-action="share-public-app">Compartir Atlas</button><button class="secondary-button" data-action="copy-public-link">Copiar enlace</button></div></div></section>
       <section class="section atlas-contact-card"><span>?</span><div><h2>Sugerencias y ayuda</h2><p>Cuéntanos un error, una fuente que falta o una idea para mejorar Atlas.</p><div class="button-row"><a class="secondary-button" href="mailto:pablonrg03@gmail.com?subject=Sugerencia%20para%20Atlas">pablonrg03@gmail.com</a><a class="secondary-button" href="tel:+34674979827">674 979 827</a></div></div></section>
@@ -676,6 +689,18 @@
     return `<section class="page faq-page"><header class="explore-hero"><span class="eyebrow">Preguntas y respuestas</span><h1>Dudas frecuentes, respuestas claras.</h1><p>Respuestas preparadas para leer con calma, agrupadas por temas. Puedes buscar una palabra o abrir cada respuesta.</p><form class="bible-search-box compact" data-faq-search><div><input type="search" name="q" value="${esc(query)}" placeholder="Ej. sufrimiento, Iglesia, conciencia"><button class="primary-button">Buscar</button></div></form></header><div class="faq-sections">${sections.map(section => `<section><h2>${esc(section)}</h2><div>${items.filter(item => item.section === section).map(item => `<details><summary>${esc(item.question)}</summary><div>${esc(item.answer).replace(/\n\n/g, "</p><p>").replace(/^/, "<p>").replace(/$/, "</p>")}</div></details>`).join("")}</div></section>`).join("") || A.library.empty("No encontramos esa pregunta", "Prueba con otra palabra.")}</div></section>`;
   }
 
+  function renderDoctrineFocus(kind) {
+    const doctrine = A.data.libraryMap.get("doctrine");
+    const catechism = kind === "catecismo";
+    const documents = (doctrine?.documents || []).filter(doc => catechism
+      ? /Catecismo|Compendio/i.test(`${doc.title} ${doc.category}`)
+      : /^doctrine-00(?:7[4-9]|8[0-9])_/.test(doc.id));
+    const title = catechism ? "Catecismo" : "Concilio Vaticano II";
+    const subtitle = catechism ? "La fe explicada para leer, consultar y llevar a la vida." : "Las constituciones, decretos y declaraciones del Concilio, reunidos para leerlos directamente.";
+    const themes = catechism ? ["Credo", "Sacramentos", "Vida en Cristo", "Oración", "Iglesia", "Moral"] : [];
+    return `<section class="page atlas-v7 doctrine-focus ${catechism ? "catechism-focus" : "council-focus"}"><a class="author-works-back" href="#/biblioteca">← Biblioteca</a><header><span>${catechism ? "Fe explicada" : "Documentos fundamentales"}</span><h1>${title}</h1><p>${subtitle}</p></header>${themes.length ? `<nav class="doctrine-theme-row">${themes.map(theme => `<a href="#/reader/${encodeURIComponent(documents[0]?.id || "")}?q=${encodeURIComponent(theme)}">${esc(theme)}</a>`).join("")}</nav>` : ""}<section class="doctrine-doc-grid">${documents.map((doc, index) => `<a href="#/reader/${encodeURIComponent(doc.id)}"><i>${catechism ? "✦" : String(index + 1).padStart(2, "0")}</i><div><span>${esc(doc.category || "Documento")}</span><b>${esc(doc.title)}</b><small>${catechism ? "Abrir y buscar dentro →" : "Leer documento →"}</small></div></a>`).join("") || A.library.empty("No hay documentos disponibles", "El índice doctrinal se actualizará de nuevo.")}</section></section>`;
+  }
+
   function meditationIntro(lib) {
     const guide = libraryGuides[lib.id]; const questions = lib.questions || guide.examples || [];
     return `<section class="page preparadora-intro tone-${lib.tone}" data-library="${lib.id}"><header><span class="library-mark">${esc(lib.mark)}</span><div><span class="eyebrow">Oración personal</span><h1>Habla con Dios desde lo que vives.</h1><p>${esc(guide.purpose)}</p></div></header><div class="preparadora-steps"><article><b>1</b><h3>Trae tu verdad</h3><p>Pega una alegría, una herida, una duda o una situación concreta.</p></article><article><b>2</b><h3>Ponle palabras</h3><p>Pide ayuda para hablar a Dios sin fórmulas vacías ni miedo.</p></article><article><b>3</b><h3>Quédate con Él</h3><p>Termina con una conversación personal y un paso pequeño y libre.</p></article></div><section class="section"><span class="eyebrow">Puedes empezar por aquí</span><div class="chip-row">${questions.map(question => `<a class="chip" href="${esc(lib.notebookUrl)}" target="_blank" rel="noopener" title="Abrir el cuaderno y formular esta pregunta">${esc(question)}</a>`).join("")}</div><div class="button-row"><a class="primary-button" href="${esc(lib.notebookUrl)}" target="_blank" rel="noopener">Abrir Palabras para orar</a><a class="secondary-button" href="#/library/${lib.id}/documents?ready=1">Ver los contenidos</a></div></section></section>`;
@@ -719,7 +744,9 @@
       requestAnimationFrame(() => document.getElementById(current.segments[1])?.scrollIntoView());
     }
     else if (current.name === "youth") app.innerHTML = renderYouth();
-    else if (current.name === "questions") app.innerHTML = renderFaq(current);
+    else if (current.name === "questions" || current.name === "faq") app.innerHTML = renderFaq(current);
+    else if (current.name === "catecismo") app.innerHTML = renderDoctrineFocus("catecismo");
+    else if (current.name === "vaticano-ii") app.innerHTML = renderDoctrineFocus("vaticano-ii");
     else if (current.name === "bible") A.bible.render(current, app);
     else if (current.name === "salvation") app.innerHTML = A.salvation.render(current);
     else if (current.name === "compare") app.innerHTML = renderCapabilities();
@@ -748,6 +775,7 @@
     else if (current.name === "reader") {
       const doc = A.data.documentMap.get(decodeURIComponent(current.segments.slice(1).join("/")));
       if (!doc) app.innerHTML = notFound();
+      else if (doc.unlockFeature && !A.storage.isFeatureUnlocked(doc.unlockFeature)) app.innerHTML = privateBookPreview();
       else {
         app.innerHTML = `<section class="page"><div class="empty-state"><span class="empty-glyph">${A.library.icon("books")}</span><h2>Abriendo el documento…</h2></div></section>`;
         A.reader.open(doc, current.query.get("q") || "");
@@ -757,10 +785,6 @@
       const lib = A.data.libraryMap.get(current.segments[1]);
       if (!lib) app.innerHTML = notFound();
       else if (lib.unlockFeature && !A.storage.isFeatureUnlocked(lib.unlockFeature)) app.innerHTML = lockedFeature();
-      else if (lib.id === "preparadora-circulos") {
-        app.innerHTML = `<section class="page"><div class="empty-state"><span class="empty-glyph">PC</span><h2>Abriendo Preparador de Círculos…</h2><p>Te llevamos directamente a su cuaderno de NotebookLM.</p></div></section>`;
-        location.href = lib.notebookUrl;
-      }
       else if (lib.id === "meditacion-diaria" && current.query.get("ready") !== "1") app.innerHTML = meditationIntro(libraryDisplay(lib));
       else {
         A.storage.setLastLibrary(lib.id);
@@ -769,11 +793,11 @@
         app.innerHTML = A.library.render(libraryDisplay(lib), tab, state.library);
       }
     } else if (current.name === "document") {
-      app.innerHTML = renderExplore();
       const doc = A.data.documentMap.get(decodeURIComponent(current.segments.slice(1).join("/")));
-      if (doc) openDetail(doc, false); else app.innerHTML = notFound();
+      if (doc?.unlockFeature && !A.storage.isFeatureUnlocked(doc.unlockFeature)) app.innerHTML = privateBookPreview();
+      else { app.innerHTML = renderExplore(); if (doc) openDetail(doc, false); else app.innerHTML = notFound(); }
     } else if (current.name === "author") {
-      app.innerHTML = renderExplore(); openSearch(decodeURIComponent(current.segments.slice(1).join("/")));
+      app.innerHTML = renderAuthorWorks(decodeURIComponent(current.segments.slice(1).join("/")));
     } else app.innerHTML = notFound();
     document.title = titleFor(current);
     app.focus({ preventScroll: true });
@@ -1186,7 +1210,7 @@
     if (action === "customize-explore") { A.storage.setSetting("customizeExplore", !A.storage.get().settings.customizeExplore); renderRouteView(); }
     if (action === "customize-libraries") { A.storage.setSetting("customizeLibraries", !A.storage.get().settings.customizeLibraries); renderRouteView(); }
     if (action === "apply-update") { document.querySelector("#atlas-update-showcase")?.removeAttribute("hidden"); setTimeout(async () => { const registration = await navigator.serviceWorker?.getRegistration(); if (registration?.waiting) registration.waiting.postMessage("SKIP_WAITING"); else { await caches?.keys?.().then(keys => Promise.all(keys.filter(key => key.startsWith("atlas-shell-") || key.startsWith("atlas-data-")).map(key => caches.delete(key)))); location.reload(); } }, 850); }
-    if (action === "close-update-showcase") { document.querySelector("#atlas-update-showcase")?.setAttribute("hidden", ""); }
+    if (action === "close-update-showcase") { document.querySelector("#atlas-update-showcase")?.setAttribute("hidden", ""); document.body.classList.remove("modal-open"); }
     if (action === "refresh-atlas") { event.preventDefault(); refreshAtlas(target); }
     if (target.dataset.homeHide) { A.storage.setSetting(target.dataset.homeHide, false); renderRouteView(); toast("Bloque ocultado. Puedes recuperarlo en Personalización."); }
     if (action === "copy-public-link") { event.preventDefault(); await A.share.copy(`${PUBLIC_APP_URL.split("#")[0]}share/`); toast("Enlace público copiado."); }
@@ -1357,10 +1381,12 @@
     if (event.target.matches("[data-faq-search]")) {
       event.preventDefault(); const query = String(new FormData(event.target).get("q") || "").trim(); A.router.go(`/questions${query ? `?q=${encodeURIComponent(query)}` : ""}`); return;
     }
-    if (event.target.id === "feature-unlock-form") {
+    if (event.target.id === "feature-unlock-form" || event.target.id === "feature-unlock-odr-form") {
       event.preventDefault(); const code=String(new FormData(event.target).get("code")||"").trim().toUpperCase();
-      if (code !== "OD") { toast("Código no reconocido."); return; }
-      A.storage.unlockFeature("preparadora-circulos"); renderRouteView(); toast("Preparadora de círculos activada en este dispositivo."); return;
+      if (event.target.id === "feature-unlock-odr-form" && code !== "ODR") { toast("Código no reconocido."); return; }
+      if (code === "ODR") { A.storage.unlockFeature("preparadora-circulos"); A.storage.unlockFeature("scott-hahn-private"); renderRouteView(); toast("Recursos ODR activados en este dispositivo."); return; }
+      if (code === "OD") { A.storage.unlockFeature("preparadora-circulos"); renderRouteView(); toast("Preparadora de círculos activada en este dispositivo."); return; }
+      toast("Código no reconocido."); return;
     }
     if (event.target.id === "custom-channel-form") {
       event.preventDefault(); const form=new FormData(event.target); const kind=String(form.get("kind")); const name=String(form.get("name")||"").trim(); const url=String(form.get("url")||"").trim();
