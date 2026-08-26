@@ -11,11 +11,12 @@ const required = [
 for (const relative of required) await access(join(root, relative));
 
 const readJson = async relative => JSON.parse(await readFile(join(root, relative), "utf8"));
-const [manifest, version, catalog, webmanifest] = await Promise.all([
-  readJson("build-manifest.json"), readJson("data/version.json"), readJson("data/catalog.json"), readJson("manifest.webmanifest")
+const [manifest, version, documentsManifest, catalog, webmanifest, serviceWorker] = await Promise.all([
+  readJson("build-manifest.json"), readJson("data/version.json"), readJson("data/documents/manifest.json"), readJson("data/catalog.json"), readJson("manifest.webmanifest"), readFile(join(root, "service-worker.js"), "utf8")
 ]);
-const versions = new Set([manifest.version, version.version, catalog.meta?.dataVersion]);
+const versions = new Set([manifest.version, version.version, documentsManifest.version, catalog.meta?.dataVersion]);
 if (versions.size !== 1) throw new Error(`Versiones desincronizadas: ${[...versions].join(", ")}`);
+if (!serviceWorker.includes(`BUILD_VERSION = "${manifest.version}-release"`)) throw new Error("El Service Worker no coincide con la versión pública de Atlas");
 if (webmanifest.start_url !== "./#/") throw new Error("manifest.webmanifest debe conservar start_url ./#/");
 const documentCount = (catalog.libraries || []).reduce((total, library) => total + (library.documents?.length || 0), 0);
 if (!catalog.libraries?.length || !documentCount) throw new Error("El catálogo público no contiene bibliotecas o documentos");

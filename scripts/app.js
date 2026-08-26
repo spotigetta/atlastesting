@@ -656,7 +656,7 @@
       if (compare(manifest.version, current) > 0) {
         if (A.storage.get().notifications?.updates) sendAtlasNotification("Atlas ha llegado ✦", manifest.version === "1.0.0" ? "Ahora sí: Atlas 1.0.0 ya está aquí. Ábrela y pruébala: merece mucho la pena." : `Ya está disponible la versión ${manifest.version}.`, "#/updates", "atlas-update");
         toast(`Versión ${manifest.version} encontrada. Preparando la actualización…`);
-        await Promise.all((await caches.keys()).filter(key => key.startsWith("atlas-shell-") || key.startsWith("atlas-data-")).map(key => caches.delete(key)));
+        await Promise.all((await caches.keys()).filter(key => key.startsWith("atlas-")).map(key => caches.delete(key)));
         if (registration?.waiting) registration.waiting.postMessage("SKIP_WAITING");
         else setTimeout(() => location.reload(), 500);
       } else if (compare(manifest.version, current) < 0) {
@@ -1209,7 +1209,7 @@
     if (action === "customize-home") { A.storage.setSetting("customizeHome", !A.storage.get().settings.customizeHome); renderRouteView(); }
     if (action === "customize-explore") { A.storage.setSetting("customizeExplore", !A.storage.get().settings.customizeExplore); renderRouteView(); }
     if (action === "customize-libraries") { A.storage.setSetting("customizeLibraries", !A.storage.get().settings.customizeLibraries); renderRouteView(); }
-    if (action === "apply-update") { document.querySelector("#atlas-update-showcase")?.removeAttribute("hidden"); setTimeout(async () => { const registration = await navigator.serviceWorker?.getRegistration(); if (registration?.waiting) registration.waiting.postMessage("SKIP_WAITING"); else { await caches?.keys?.().then(keys => Promise.all(keys.filter(key => key.startsWith("atlas-shell-") || key.startsWith("atlas-data-")).map(key => caches.delete(key)))); location.reload(); } }, 850); }
+    if (action === "apply-update") { document.querySelector("#atlas-update-showcase")?.removeAttribute("hidden"); setTimeout(async () => { const registration = await navigator.serviceWorker?.getRegistration(); if (registration?.waiting) registration.waiting.postMessage("SKIP_WAITING"); else { await caches?.keys?.().then(keys => Promise.all(keys.filter(key => key.startsWith("atlas-")).map(key => caches.delete(key)))); location.reload(); } }, 850); }
     if (action === "close-update-showcase") { document.querySelector("#atlas-update-showcase")?.setAttribute("hidden", ""); document.body.classList.remove("modal-open"); }
     if (action === "refresh-atlas") { event.preventDefault(); refreshAtlas(target); }
     if (target.dataset.homeHide) { A.storage.setSetting(target.dataset.homeHide, false); renderRouteView(); toast("Bloque ocultado. Puedes recuperarlo en Personalización."); }

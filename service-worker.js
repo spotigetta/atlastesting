@@ -1,4 +1,4 @@
-const BUILD_VERSION = "1.0.0-release";
+const BUILD_VERSION = "1.0.2-release";
 const SHELL_CACHE = `atlas-shell-${BUILD_VERSION}`;
 const DATA_CACHE = `atlas-data-${BUILD_VERSION}`;
 const DOCUMENT_CACHE = `atlas-documents-${BUILD_VERSION}`;
@@ -82,13 +82,15 @@ self.addEventListener("fetch", event => {
     return;
   }
 
-  if (/\/(?:scripts|styles|assets)\//.test(pathname) || /\.(?:png|jpg|jpeg|svg|webmanifest)$/.test(pathname)) {
+  if (/\/(?:scripts|styles|assets)\//.test(pathname) || /\.(?:png|jpg|jpeg|webp|svg|webmanifest)$/.test(pathname)) {
     event.respondWith(caches.open(SHELL_CACHE).then(async cache => {
-      const cached = await cache.match(event.request);
-      if (cached) return cached;
-      const response = await fetch(event.request);
-      if (response.ok) cache.put(event.request, response.clone());
-      return response;
+      try {
+        const response = await timeoutFetch(event.request, 6000);
+        if (response.ok) cache.put(event.request, response.clone());
+        return response;
+      } catch {
+        return await cache.match(event.request) || Response.error();
+      }
     }));
     return;
   }
