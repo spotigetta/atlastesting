@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-06T17:20:15.526Z",
+  "updatedAt": "2026-08-27T03:25:00.569Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -2453,5 +2453,38 @@
       "publishedAt": ""
     }
   ],
-  "failures": []
+  "failures": [
+    {
+      "source": "Hakuna Group Music",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Inazio",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Nico Montero",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Kairoi",
+      "error": "500 www.youtube.com"
+    },
+    {
+      "source": "Gen Rosso",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Ain Karem",
+      "error": "500 www.youtube.com"
+    },
+    {
+      "source": "tuyo",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Gen Verde",
+      "error": "404 www.youtube.com"
+    }
+  ]
 }

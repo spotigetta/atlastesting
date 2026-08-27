@@ -1,368 +1,68 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-08-25T22:38:37.462Z",
+  "generatedAt": "2026-08-27T03:25:02.485Z",
   "editorialNote": "Selección temática de metadatos y enlaces oficiales. Atlas no reproduce el artículo completo.",
   "themes": [
     {
       "id": "tristeza",
       "label": "la tristeza",
       "icon": "◐",
-      "count": 3
+      "count": 0
     },
     {
       "id": "oracion",
       "label": "la oración",
       "icon": "✦",
-      "count": 9
+      "count": 0
     },
     {
       "id": "amargura",
       "label": "la amargura",
       "icon": "◇",
-      "count": 3
+      "count": 0
     },
     {
       "id": "voluntad",
       "label": "seguir la voluntad de Dios",
       "icon": "↗",
-      "count": 8
+      "count": 0
     },
     {
       "id": "fiat",
       "label": "decir «sí» — fiat",
       "icon": "M",
-      "count": 4
+      "count": 0
     },
     {
       "id": "confianza",
       "label": "volver a confiar",
       "icon": "≈",
-      "count": 6
+      "count": 0
     },
     {
       "id": "alegria",
       "label": "recuperar la alegría",
       "icon": "☀",
-      "count": 4
+      "count": 0
     },
     {
       "id": "conversion",
       "label": "recomenzar y convertirse",
       "icon": "↺",
-      "count": 6
+      "count": 0
     },
     {
       "id": "prueba",
       "label": "atravesar la prueba",
       "icon": "△",
-      "count": 3
+      "count": 0
     },
     {
       "id": "caridad",
       "label": "amar y servir",
       "icon": "♡",
-      "count": 3
+      "count": 0
     }
   ],
-  "meditations": [
-    {
-      "id": "external-6d01af386466",
-      "title": "La vocación de María: la Anunciación",
-      "description": "Contemplar la llamada de María y su respuesta libre al anuncio del ángel.",
-      "url": "https://opusdei.org/es/article/vocacion-virgen-maria-como-en-una-pelicula/",
-      "image": "",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "oracion",
-        "voluntad",
-        "fiat"
-      ]
-    },
-    {
-      "id": "external-ffa9e44a966e",
-      "title": "Hacer desbordar la alegría: la Visitación",
-      "description": "María lleva a Cristo y la alegría a la casa de Isabel.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-visitacion-maria-isabel/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/article/2025/5/visitacionisabelopusdei20250530172904938812.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "fiat",
-        "alegria"
-      ]
-    },
-    {
-      "id": "external-2b0d38b200af",
-      "title": "Protagonistas por sorpresa: los pastores de Belén",
-      "description": "Una escena para contemplar la sencillez de los primeros testigos del nacimiento.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-pastores-nacimiento-navidad/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/image/Pelicula-7--Dan-Kiefer-Unsplash_20210311150706309174.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "oracion"
-      ]
-    },
-    {
-      "id": "external-a03518d88fd5",
-      "title": "Buscadores de Dios: los Reyes Magos",
-      "description": "El camino de quienes reconocen una llamada y se ponen en marcha.",
-      "url": "https://opusdei.org/es/article/buscadores-de-Dios-reyes-magos-epifania-navidad-pelicula/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/article/2023/2/Como-en-una-pelicula-Buscadores-de-Dios20230206120317917889.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "voluntad"
-      ]
-    },
-    {
-      "id": "external-69b13e682d34",
-      "title": "El carpintero de Nazaret: años de cotidianidad",
-      "description": "La vida corriente de Jesús en Nazaret como lugar de encuentro con Dios.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-el-carpintero-de-nazaret/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/image/Pelicula5-Benjamin-ThomasUnsplash_20201214173214203315.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "oracion"
-      ]
-    },
-    {
-      "id": "external-297bf4678edd",
-      "title": "Un viaje a la voluntad del Padre",
-      "description": "La Sagrada Familia en Jerusalén y la búsqueda confiada de la voluntad de Dios.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-un-viaje-a-la-voluntad-del-Padre/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/article/2021/11/620211119113325552957.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "voluntad",
-        "confianza"
-      ]
-    },
-    {
-      "id": "external-a542292f0446",
-      "title": "Retrospectiva de una vida: la muerte de san José",
-      "description": "Una contemplación de la fidelidad silenciosa de san José.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-retrospectiva-de-una-vida/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/article/2021/11/720211119113341744038.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "oracion"
-      ]
-    },
-    {
-      "id": "external-df827a0402cd",
-      "title": "Como en una película: «Mi Hijo amado»",
-      "description": "Con su bautismo en el Jordán, Jesús sale al encuentro de todos los hombres y les abre el camino hacia su Padre. En su primer día de ministerio el Señor desvela el estilo con que viene a redimirnos: tomando nuestros pecados y compartiendo el amor de Dios por cada uno.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-mi-hijo-amado/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/article/2022/6/Varios-ES20220607112652825753.png",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "voluntad",
-        "confianza"
-      ]
-    },
-    {
-      "id": "external-deb9d7196e4e",
-      "title": "Como en una película: «La experiencia del desierto»",
-      "description": "La vida de Jesús no estuvo libre de dificultades. Antes de comenzar su ministerio público pasó cuarenta días de ayuno y de penitencia en el desierto, donde sufrió las tentaciones del demonio. Aquella experiencia nos puede mostrar un camino para ver las dificultades como oportunidades para madurar nuestra vocación cristiana.",
-      "url": "https://opusdei.org/es/article/experiencia-desierto-como-en-una-pelicula-tentaciones-idolos/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/article/2024/2/Desierto20240205101216960579.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "oracion",
-        "amargura",
-        "voluntad",
-        "prueba"
-      ]
-    },
-    {
-      "id": "external-99184479d5cd",
-      "title": "Como en una película: Las bodas de Caná. Comienza la cuenta atrás",
-      "description": "Nos adentramos en el primer milagro de Jesús. La alegría de los esposos. El drama cuando empieza a escasear el vino. La intervención de María. El trabajo de los sirvientes. El asombro del maestresala. San Juan nos muestra cómo fue el primero de los signos con el que Cristo manifestó su gloria.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-las-bodas-de-cana-comienza-la-cuenta-atras",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/article/2024/7/Cana20240717222555501455.jpeg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "fiat",
-        "alegria"
-      ]
-    },
-    {
-      "id": "external-37b6d6729002",
-      "title": "Como en una película: Confiar en la palabra que salva",
-      "description": "Pedro jamás olvidaría aquel encuentro con Jesús. Después de una noche de fracaso, se fía de su invitación a echar las redes y descubre un océano insospechado. Tiempo después, cuando algunos discípulos se alejaron del Maestro, volvería a reafirmar su decisión de confiar en su palabra.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-confiar-palabra-salva-san-pedro/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/article/2022/10/Como-en-una-peli-y-varios-ES20221010091846386883.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "tristeza",
-        "amargura",
-        "voluntad",
-        "confianza",
-        "prueba"
-      ]
-    },
-    {
-      "id": "external-6d7ec6bbf04a",
-      "title": "Como en una película: La felicidad que nada puede quitar",
-      "description": "Dios no solo quiere que tengamos un final feliz, si no que además quiere que seamos felices durante el camino. Con su gracia podemos acoger un estilo de vida que radica en la presencia de Cristo en nosotros.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-felicidad-nadie-puede-quitar/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/image/Pelicula-10--Francisco-T-Santos-Unsplash_20210312105504094280.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "voluntad",
-        "alegria"
-      ]
-    },
-    {
-      "id": "external-e76e319d30f2",
-      "title": "Como en una película: «Vivir de fe»",
-      "description": "En la multiplicación de los panes y los peces, Jesús invita a los apóstoles a no vivir según sus propios cálculos humanos, sino confiando en el don divino.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-vivir-de-fe/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/article/2022/10/Como-en-una-pelicula20221030143119746744.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "confianza"
-      ]
-    },
-    {
-      "id": "external-416dcc9fad4d",
-      "title": "¿Todavía no comprendéis?",
-      "description": "Aprender a reconocer la acción de Dios sin quedar encerrados en la preocupación.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-todavia-no-comprendeis/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/image/Pelicula-9--Chinh-Le-Duc-Unsplash_20210311153301280591.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "confianza"
-      ]
-    },
-    {
-      "id": "external-354e4abb6dbb",
-      "title": "La confesión en Cesarea y la Transfiguración",
-      "description": "Pedro confiesa a Cristo y contempla anticipadamente su gloria.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-transfiguracion-jesus/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/article/2025/3/Transfiguracion20250306115803573772.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "oracion",
-        "confianza"
-      ]
-    },
-    {
-      "id": "external-a970a421bf12",
-      "title": "Hacer del mundo un hogar: el buen samaritano",
-      "description": "La compasión transforma al desconocido en prójimo.",
-      "url": "https://opusdei.org/es/article/parabola-buen-samaritano-hacer-mundo-hogar-como-en-una-pelicula/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/article/2022/2/samaritano20220226094220614989.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "caridad"
-      ]
-    },
-    {
-      "id": "external-56ad4a77c384",
-      "title": "En el cobijo de Jesús",
-      "description": "Betania era un lugar especial para Jesús: un hogar en el que descansar, conversar y sentirse querido.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-betania-cobijo-de-jesus/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/image/Pelicula-6--Timothy-Eberly-Unplash_20210310183647195860.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "oracion",
-        "conversion"
-      ]
-    },
-    {
-      "id": "external-d15cf28a1544",
-      "title": "Abrazar la condición de hijos: el hijo pródigo",
-      "description": "Volver al Padre y redescubrir la propia condición filial.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-filiacion-divina-abrazar-la-condicion-de-hijos/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/article/2023/3/Como-en-una-pelicula-Buscadores-de-Dios20230318111842787625.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "conversion"
-      ]
-    },
-    {
-      "id": "external-64f2e4e8f36a",
-      "title": "Más allá de la trama: el fariseo y el publicano",
-      "description": "Dos modos de ponerse ante Dios y una invitación a la humildad.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-mas-alla-de-la-trama/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/image/Pelicula4-Ben-White-Unsplash_20201214173513439149.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "oracion",
-        "conversion"
-      ]
-    },
-    {
-      "id": "external-e42869b13003",
-      "title": "Como en una película con el joven rico: «Entrar en la Vida»",
-      "description": "En el Evangelio tienen lugar sucesos que desconciertan. Aparecen personajes con historias que no son precisamente redondas, sino que acaban con un poso de amargura. Uno de ellos es el joven rico. Sin embargo, es precisamente a través de la tristeza del relato lo que permite a Dios ofrecer motivos para la esperanza.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-joven-rico-entrar-vida-eterna/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/article/2023/4/Como-en-una-pelicula-El-joven-rico20230413171500153085.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "tristeza",
-        "amargura"
-      ]
-    },
-    {
-      "id": "external-607ebb494ef4",
-      "title": "Como en una película: Desear ver a Dios. El encuentro con Zaqueo",
-      "description": "Zaqueo se habría conformado con poder ver a Jesús. Pero sus expectativas quedaron superadas cuando el Maestro le pidió alojamiento. ¿Hay mayor alegría que tener al mismo Dios en tu casa?",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-en-casa-de-zaqueo/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/image/Pelicula3-Luke-Porter-unsplash_20201214173525838207.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "alegria",
-        "conversion"
-      ]
-    },
-    {
-      "id": "external-af14687a89af",
-      "title": "Como en una película: Al borde del camino",
-      "description": "Nos metemos en la piel del ciego Bartimeo en el día que supuso un antes y un después en su vida.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-al-borde-del-camino/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/image/Pelicula-2-Egor-Myznik-Unsplash_20201214173539103872.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "tristeza",
-        "voluntad",
-        "conversion",
-        "prueba"
-      ]
-    },
-    {
-      "id": "external-c90b6083685c",
-      "title": "Como en una película: «Un perfume con valor de eternidad»",
-      "description": "En la unción en Betania María quiso despedir a Jesús y manifestarle su cariño de un modo que perduraría con el paso de los siglos.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-perfume-con-valor-eternidad-betania-uncion-maria/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/article/2023/10/Betania20231020111545423156.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "oracion",
-        "fiat",
-        "caridad"
-      ]
-    },
-    {
-      "id": "external-440d67d5d079",
-      "title": "Como en una película: La nueva fuerza de Pedro",
-      "description": "Después de la resurrección, Pedro se dio cuenta de cuál era la clave de su grandeza. En este primer texto de la serie “Como en una película”, nos metemos en su conversación con el Señor que le hizo descubrir esta realidad.",
-      "url": "https://opusdei.org/es/article/la-nueva-fuerza-de-pedro/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/image/Pelicula-1_20201214173945759507.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "conversion"
-      ]
-    },
-    {
-      "id": "external-d491bd827f94",
-      "title": "Como en una película: Corazones de fuego",
-      "description": "La espectacular escena de Pentecostés da inicio a la vida pública de la Iglesia. Y, con ella, nos muestra a su Cabeza, Pedro, en un discurso que refleja el amor que siente por Jesucristo y por las almas.",
-      "url": "https://opusdei.org/es/article/como-en-una-pelicula-corazones-fuego-pentecostes/",
-      "image": "https://s3-eu-west-1.amazonaws.com/images-opus-dei/image/Pelicula-8--Rhand-McCoy-Unsplash_20210311152149692275.jpg",
-      "source": "Opus Dei · Como en una película",
-      "categoryIds": [
-        "caridad"
-      ]
-    }
-  ]
+  "meditations": []
 }

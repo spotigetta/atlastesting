@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-25T22:38:35.014Z",
+  "updatedAt": "2026-08-27T03:24:59.676Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -334,6 +334,23 @@
     }
   ],
   "items": [
+    {
+      "id": "youtube-i96wUI0dcoE",
+      "videoId": "i96wUI0dcoE",
+      "type": "video",
+      "source": "The Rest Is History",
+      "author": "The Rest Is History",
+      "title": "The people who wanted to destroy history",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=i96wUI0dcoE",
+      "image": "https://i.ytimg.com/vi/i96wUI0dcoE/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-08-26T15:29:29+00:00"
+    },
     {
       "id": "youtube-koFirxAf5wo",
       "videoId": "koFirxAf5wo",
@@ -41411,27 +41428,19 @@
       "verified": true,
       "dynamic": true,
       "publishedAt": ""
-    },
-    {
-      "id": "youtube-IPSNAMEWg2s",
-      "videoId": "IPSNAMEWg2s",
-      "type": "video",
-      "source": "Rafa Guerrero",
-      "author": "Rafa Guerrero",
-      "title": "Short reciente de Rafa Guerrero",
-      "description": "VÃ­deo publicado por Rafa Guerrero. Se reproduce dentro de Atlas mediante el reproductor oficial de YouTube.",
-      "url": "https://www.youtube.com/shorts/IPSNAMEWg2s",
-      "image": "https://i.ytimg.com/vi/IPSNAMEWg2s/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": ""
     }
   ],
   "failures": [
     {
+      "source": "Opus Dei",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "Ecclesia COPE",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Se Buscan Rebeldes",
       "error": "404 www.youtube.com"
     },
     {
@@ -41439,28 +41448,136 @@
       "error": "fetch failed"
     },
     {
+      "source": "Bishop Robert Barron",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Hallow: Prayer & Meditation",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Catholic Stuff",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Fundación CARF",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Bosco Films",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "QNTLC",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "ACI Prensa",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Jordan B. Peterson",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Luis Gutiérrez Rojas",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Marian Rojas-Estapé",
+      "error": "500 www.youtube.com"
+    },
+    {
+      "source": "Víctor Küppers",
+      "error": "500 www.youtube.com"
+    },
+    {
+      "source": "It's Time To Think",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Dr. Arthur Brooks",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "María Calvo",
       "error": "No se encontró el identificador del canal"
+    },
+    {
+      "source": "Rafa Lafuente",
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Pep Borrell",
       "error": "No se encontró el identificador del canal"
     },
     {
+      "source": "Ricardo Piñero",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Ricardo Calleja",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "Ana Iris Simón",
       "error": "No se encontró el identificador del canal"
+    },
+    {
+      "source": "Leopoldo Abadía",
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Gregorio Luri",
       "error": "No se encontró el identificador del canal"
     },
     {
+      "source": "Alejandro Villena",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Álvaro González-Alorda",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Mario Alonso Puig",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "AUTE",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Sin Medias Tintas",
+      "error": "500 www.youtube.com"
+    },
+    {
+      "source": "EWTN España",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Álex Rovira",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "Nuccio Ordine",
       "error": "No se encontró el identificador del canal"
     },
     {
+      "source": "Álvaro Bilbao",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "María Álvarez de las Asturias",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Pablo Blanco Sarto",
+      "error": "500 www.youtube.com"
+    },
+    {
       "source": "Scott Hahn",
-      "error": "No se encontró el identificador del canal"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Peter Kreeft",
@@ -41471,24 +41588,104 @@
       "error": "No se encontró el identificador del canal"
     },
     {
+      "source": "Marcelo Gullo Omodeo",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Jesús Silva Castignani",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Cura de Toledo",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Simon Sinek",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "Juan Arana",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Aquilino Polaino",
       "error": "No se encontró el identificador del canal"
+    },
+    {
+      "source": "Catherine L'Ecuyer",
+      "error": "404 www.youtube.com"
     },
     {
       "source": "José Ramón Ayllón",
       "error": "No se encontró el identificador del canal"
     },
     {
+      "source": "EWTN Español",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Vatican News Español",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Hakuna Group Music",
+      "error": "500 www.youtube.com"
+    },
+    {
+      "source": "10 minutos con Jesús",
+      "error": "500 www.youtube.com"
+    },
+    {
       "source": "Meditaciones en español",
       "error": "No se encontró el identificador del canal"
+    },
+    {
+      "source": "ISCR Universidad de Navarra",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "The Catholic Talk Show",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Facultad de Teología UNAV",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Francisco Ugarte",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Francisco Insa",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Alfonso Aguiló",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Emilio Duró",
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Fernando García de Cortázar",
       "error": "No se encontró el identificador del canal"
     },
     {
+      "source": "Rafa Guerrero",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Rafael Santandreu",
+      "error": "500 www.youtube.com"
+    },
+    {
       "source": "Higinio Marín",
       "error": "No se encontró el identificador del canal"
+    },
+    {
+      "source": "Andrew Huberman",
+      "error": "404 www.youtube.com"
     }
   ]
 }
