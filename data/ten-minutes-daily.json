@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-08-27T03:24:52.527Z",
+  "updatedAt": "2026-08-28T06:12:19.884Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "28-08-2026 San Agustín: el camino del corazón inquieto - 10 Minutos con Jesús",
+      "publishedAt": "2026-08-27T21:00:00.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/28-08-2026-san-agustin-el-camino-del-corazon-inquieto-10-minutos-con-jesus--74725574",
+      "audioUrl": "https://api.spreaker.com/download/episode/74725574/28_08_2026_san_agustin_camino_del_corazon_inquieto_mf_179406517_feed_1.mp3",
+      "duration": "624",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "27-08-2026 Lágrimas por quienes no lloran - 10 Minutos con Jesús",
       "publishedAt": "2026-08-26T21:00:00.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/09-08-2026-surf-con-fe-pero-sin-tabla-10-minutos-con-jesus--73683266",
       "audioUrl": "https://api.spreaker.com/download/episode/73683266/09_08_2026_surf_fe_pero_sin_tabla_mf_178625995_feed_1.mp3",
       "duration": "825",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "08-08-2026 El lenguaje del contacto físico - 10 Minutos con Jesús",
-      "publishedAt": "2026-08-07T22:01:25.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/08-08-2026-el-lenguaje-del-contacto-fisico-10-minutos-con-jesus--73639880",
-      "audioUrl": "https://api.spreaker.com/download/episode/73639880/08_08_2026_el_lenguaje_del_contacto_fisico_10_mf_178598204_feed_1.mp3",
-      "duration": "650",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]

@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-27T03:24:59.676Z",
-  "source": "youtube-rss",
+  "updatedAt": "2026-08-28T06:12:26.200Z",
+  "source": "previous-snapshot",
   "channels": [
     {
       "name": "Opus Dei",
@@ -41485,11 +41485,11 @@
     },
     {
       "source": "Marian Rojas-Estapé",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Víctor Küppers",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "It's Time To Think",
@@ -41533,7 +41533,7 @@
     },
     {
       "source": "Alejandro Villena",
-      "error": "404 www.youtube.com"
+      "error": "No se encontró el identificador del canal"
     },
     {
       "source": "Álvaro González-Alorda",
@@ -41549,7 +41549,7 @@
     },
     {
       "source": "Sin Medias Tintas",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "EWTN España",
@@ -41573,7 +41573,7 @@
     },
     {
       "source": "Pablo Blanco Sarto",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Scott Hahn",
@@ -41597,6 +41597,10 @@
     },
     {
       "source": "Cura de Toledo",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Stephen Covey Principles HQ",
       "error": "404 www.youtube.com"
     },
     {
@@ -41629,15 +41633,19 @@
     },
     {
       "source": "Hakuna Group Music",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "10 minutos con Jesús",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Meditaciones en español",
       "error": "No se encontró el identificador del canal"
+    },
+    {
+      "source": "The Rest Is History",
+      "error": "404 www.youtube.com"
     },
     {
       "source": "ISCR Universidad de Navarra",
@@ -41677,7 +41685,7 @@
     },
     {
       "source": "Rafael Santandreu",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Higinio Marín",

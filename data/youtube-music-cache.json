@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-27T03:25:00.569Z",
-  "source": "youtube-rss",
+  "updatedAt": "2026-08-28T06:12:27.067Z",
+  "source": "previous-snapshot",
   "channels": [
     {
       "name": "Hakuna Group Music",
@@ -2468,7 +2468,7 @@
     },
     {
       "source": "Kairoi",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Gen Rosso",
@@ -2476,10 +2476,14 @@
     },
     {
       "source": "Ain Karem",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "tuyo",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Coro de Monjes de Solesmes",
       "error": "404 www.youtube.com"
     },
     {
