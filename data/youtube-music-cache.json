@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-28T06:12:27.067Z",
+  "updatedAt": "2026-08-29T03:46:41.642Z",
   "source": "previous-snapshot",
   "channels": [
     {
@@ -2460,7 +2460,7 @@
     },
     {
       "source": "Inazio",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Nico Montero",
@@ -2484,7 +2484,7 @@
     },
     {
       "source": "Coro de Monjes de Solesmes",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Gen Verde",

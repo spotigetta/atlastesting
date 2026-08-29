@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-28T06:12:26.200Z",
-  "source": "previous-snapshot",
+  "updatedAt": "2026-08-29T03:46:40.754Z",
+  "source": "youtube-rss",
   "channels": [
     {
       "name": "Opus Dei",
@@ -334,6 +334,40 @@
     }
   ],
   "items": [
+    {
+      "id": "youtube-UbOj7gxrouA",
+      "videoId": "UbOj7gxrouA",
+      "type": "video",
+      "source": "Jesús Silva Castignani",
+      "author": "Jesús Silva Castignani",
+      "title": "Aura... #aura",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=UbOj7gxrouA",
+      "image": "https://i.ytimg.com/vi/UbOj7gxrouA/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-08-28T19:38:43+00:00"
+    },
+    {
+      "id": "youtube-q68OneX6qqs",
+      "videoId": "q68OneX6qqs",
+      "type": "video",
+      "source": "Jesús Silva Castignani",
+      "author": "Jesús Silva Castignani",
+      "title": "El infierno no existe?",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=q68OneX6qqs",
+      "image": "https://i.ytimg.com/vi/q68OneX6qqs/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-08-27T09:35:12+00:00"
+    },
     {
       "id": "youtube-i96wUI0dcoE",
       "videoId": "i96wUI0dcoE",
@@ -41396,38 +41430,6 @@
       "verified": true,
       "dynamic": true,
       "publishedAt": ""
-    },
-    {
-      "id": "youtube-vMPmkgJnlM8",
-      "videoId": "vMPmkgJnlM8",
-      "type": "video",
-      "source": "Rafa Guerrero",
-      "author": "Rafa Guerrero",
-      "title": "Short reciente de Rafa Guerrero",
-      "description": "VÃ­deo publicado por Rafa Guerrero. Se reproduce dentro de Atlas mediante el reproductor oficial de YouTube.",
-      "url": "https://www.youtube.com/shorts/vMPmkgJnlM8",
-      "image": "https://i.ytimg.com/vi/vMPmkgJnlM8/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": ""
-    },
-    {
-      "id": "youtube-f0GMDpc-l0w",
-      "videoId": "f0GMDpc-l0w",
-      "type": "video",
-      "source": "Rafa Guerrero",
-      "author": "Rafa Guerrero",
-      "title": "Short reciente de Rafa Guerrero",
-      "description": "VÃ­deo publicado por Rafa Guerrero. Se reproduce dentro de Atlas mediante el reproductor oficial de YouTube.",
-      "url": "https://www.youtube.com/shorts/f0GMDpc-l0w",
-      "image": "https://i.ytimg.com/vi/f0GMDpc-l0w/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": ""
     }
   ],
   "failures": [
@@ -41489,7 +41491,7 @@
     },
     {
       "source": "Víctor Küppers",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "It's Time To Think",
@@ -41501,11 +41503,7 @@
     },
     {
       "source": "María Calvo",
-      "error": "No se encontró el identificador del canal"
-    },
-    {
-      "source": "Rafa Lafuente",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Pep Borrell",
@@ -41533,7 +41531,7 @@
     },
     {
       "source": "Alejandro Villena",
-      "error": "No se encontró el identificador del canal"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Álvaro González-Alorda",
@@ -41592,10 +41590,6 @@
       "error": "404 www.youtube.com"
     },
     {
-      "source": "Jesús Silva Castignani",
-      "error": "404 www.youtube.com"
-    },
-    {
       "source": "Cura de Toledo",
       "error": "404 www.youtube.com"
     },
@@ -41629,11 +41623,11 @@
     },
     {
       "source": "Vatican News Español",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Hakuna Group Music",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "10 minutos con Jesús",
@@ -41657,11 +41651,11 @@
     },
     {
       "source": "Facultad de Teología UNAV",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Francisco Ugarte",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Francisco Insa",
