@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-08-29T03:46:41.642Z",
-  "source": "previous-snapshot",
+  "updatedAt": "2026-08-30T00:29:33.083Z",
+  "source": "youtube-rss",
   "channels": [
     {
       "name": "Hakuna Group Music",
@@ -40,6 +40,23 @@
     }
   ],
   "items": [
+    {
+      "id": "youtube-oEAjOt3lYQw",
+      "videoId": "oEAjOt3lYQw",
+      "type": "music",
+      "source": "Gen Verde",
+      "author": "Gen Verde",
+      "title": "Chiamati per nome",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=oEAjOt3lYQw",
+      "image": "https://i.ytimg.com/vi/oEAjOt3lYQw/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-08-26T14:01:16+00:00"
+    },
     {
       "id": "youtube-y8hEClq9oX4",
       "videoId": "y8hEClq9oX4",
@@ -2453,42 +2470,5 @@
       "publishedAt": ""
     }
   ],
-  "failures": [
-    {
-      "source": "Hakuna Group Music",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Inazio",
-      "error": "500 www.youtube.com"
-    },
-    {
-      "source": "Nico Montero",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Kairoi",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Gen Rosso",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Ain Karem",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "tuyo",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Coro de Monjes de Solesmes",
-      "error": "500 www.youtube.com"
-    },
-    {
-      "source": "Gen Verde",
-      "error": "404 www.youtube.com"
-    }
-  ]
+  "failures": []
 }

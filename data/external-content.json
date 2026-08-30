@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T03:46:43.207Z",
+  "generatedAt": "2026-08-30T00:29:34.718Z",
   "items": [
     {
       "id": "opusdei-youth",
@@ -143,6 +143,42 @@
       "fetched": true
     },
     {
+      "id": "external-ebb072e22bc4",
+      "type": "news",
+      "source": "Alfa y Omega",
+      "url": "https://alfayomega.es/no-permitamos-que-el-mal-corrompa-nuestro-corazon/",
+      "title": "«No permitamos que el mal corrompa nuestro corazón»",
+      "description": "El Papa ha presidido la Misa y la procesión en honor a Santa María del Lago. Después, ha encabezado la procesión de la Virgen montado en una embarcación La entrada «No permitamos que el mal corrompa nuestro corazón» se publicó primero en Alfa y Omega .",
+      "author": "Ángeles Conde Mir",
+      "date": "2026-08-29",
+      "image": "",
+      "fetched": true
+    },
+    {
+      "id": "external-bb157b3a536a",
+      "type": "news",
+      "source": "Alfa y Omega",
+      "url": "https://alfayomega.es/la-vuelta-al-cole-94-euros-mas-por-hijo-que-el-ano-pasado/",
+      "title": "La vuelta al cole, 94 euros más por hijo que el año pasado",
+      "description": "Según la Organización de Consumidores y Usuarios, el gasto escolar medio por hijo ascenderá durante este año a 2.484 euros de media La entrada La vuelta al cole, 94 euros más por hijo que el año pasado se publicó primero en Alfa y Omega .",
+      "author": "Redacción",
+      "date": "2026-08-29",
+      "image": "",
+      "fetched": true
+    },
+    {
+      "id": "external-bc977a7b5219",
+      "type": "news",
+      "source": "Alfa y Omega",
+      "url": "https://alfayomega.es/leon-xiv-envia-ayuda-a-nepal/",
+      "title": "León XIV envía ayuda a Nepal",
+      "description": "El Vaticano no especifica la cantidad, pero asegura que se trata de una primera dotación. «Es un signo rápido y concreto para transmitir, sobre todo a los más vulnerables, la cercanía y la ternura del Santo Padre», explica el Limosnero, Luis Marín de San Martín La entrada León XIV envía ayuda a Nepal se publicó primero en Alfa y Omega .",
+      "author": "Ángeles Conde Mir",
+      "date": "2026-08-29",
+      "image": "",
+      "fetched": true
+    },
+    {
       "id": "external-ada8417bb9c5",
       "type": "news",
       "source": "Alfa y Omega",
@@ -227,6 +263,126 @@
       "fetched": true
     },
     {
+      "id": "external-3ccf9ee387f1",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/20260829/leon-xiv-primer-papa-realizar-procesion-lago-albano_453419.html",
+      "title": "León XIV, el primer Papa en realizar una procesión en el lago Albano",
+      "description": "<![CDATA[]]>",
+      "author": "Agencia EFE",
+      "date": "2026-08-29",
+      "image": "https://imagenes.eldebate.com/files/og_thumbnail/files/fp/uploads/2026/08/29/6a931e7676a2d.r_d.703-211-0.jpeg",
+      "fetched": true
+    },
+    {
+      "id": "external-ed7411b73e70",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/20260829/explanada-asis-convierte-gigantesca-pinacoteca-conmemorar-san-francisco_453381.html",
+      "title": "La explanada de Asís se convierte en una gigantesca pinacoteca a cielo abierto para honrar a San Francisco",
+      "description": "<![CDATA[]]>",
+      "author": "Álex Navajas",
+      "date": "2026-08-29",
+      "image": "https://imagenes.eldebate.com/files/og_thumbnail/uploads/2026/08/29/6a92f16c85db1.jpeg",
+      "fetched": true
+    },
+    {
+      "id": "external-b233c41bd295",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/20260829/tendremos-esperar-39-anos-dos-perritos-vuelvan-encontrarse-liturgia_453324.html",
+      "title": "Tendremos que esperar 39 años para que dos perritos vuelvan a encontrarse en la liturgia",
+      "description": "<![CDATA[A mediados de agosto ocurrió algo curioso. El día 16, mientras la Iglesia celebraba el XX domingo del tiempo ordinario, el Martirologio recordaba también a san Roque. Por una singular coincidencia, dos perritos se encontraron así ante nosotros: el del Evangelio de la mujer cananea y el que acompaña a san Roque en sus imágenes.]]>",
+      "author": "",
+      "date": "2026-08-29",
+      "image": "https://imagenes.eldebate.com/files/og_thumbnail/files/fp/uploads/2026/08/29/6a92adf50601a.r_d.1033-834-0.jpeg",
+      "fetched": true
+    },
+    {
+      "id": "external-e8d61acc71b7",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/santoral/20260829/santo-celebramos-hoy-29-agosto_453062.html",
+      "title": "¿Qué santo celebramos hoy, 29 de agosto?",
+      "description": "<![CDATA[el nombre de Herodes ha quedado como sinónimo de horror. Y no es para menos. Hubo un Herodes, llamado el Grande, que mandó nada menos que degollar a todos los niños menores de dos años que vivieran en la región de Belén, cuando tuvo noticias del nacimiento de Jesús; pasados unos años, vino otro Herodes, su hijo, conocido por Herodes Antipas, que man",
+      "author": "Redacción El Debate",
+      "date": "2026-08-29",
+      "image": "https://imagenes.eldebate.com/files/og_thumbnail/uploads/2024/08/26/66cc4f895a9c7.jpeg",
+      "fetched": true
+    },
+    {
+      "id": "external-9d6a6a5d9daa",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/iglesia/20260829/12-hijos-seis-sacerdotes-dos-religiosas-tres-casados-cielo-estan-conquistando-mundo-senor_452762.html",
+      "title": "12 hijos, seis sacerdotes, dos religiosas, tres casados y uno en el cielo: «Están conquistando el mundo para el Señor»",
+      "description": "<![CDATA[Sonia Ibarra se define a sí misma, con la humildad propia de las almas grandes, como una «simple madre de familia» argentina. Sin embargo, su realidad biográfica es un prodigio que desafía la lógica secular. Madre de doce hijos, Sonia y su marido Diego han sido testigos de cómo la gracia ha fecundado su hogar de manera sobreabundante: seis de sus hi",
+      "author": "María Rabell García",
+      "date": "2026-08-29",
+      "image": "https://imagenes.eldebate.com/files/og_thumbnail/uploads/2026/08/27/6a9023b474ba1.jpeg",
+      "fetched": true
+    },
+    {
+      "id": "external-cbb5f1516510",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/20260829/juan-le-decia-no-le-licito-tener-mujer-hermano_443448.html",
+      "title": "«Juan le decía que no le era lícito tener a la mujer de su hermano»",
+      "description": "<![CDATA[]]>",
+      "author": "Redacción El Debate",
+      "date": "2026-08-29",
+      "image": "",
+      "fetched": true
+    },
+    {
+      "id": "external-55b6f1d60c33",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/iglesia/20260829/robert-goessens-misionero-belga-levanto-nada-iglesia-mongolia-comunismo_452825.html",
+      "title": "Robert Goessens, el misionero belga que levantó de la nada la Iglesia en Mongolia tras el comunismo",
+      "description": "<![CDATA[El pasado 15 de agosto falleció en Japón, a los 97 años de edad, el padre Robert Goessens, misionero belga de la Congregación del Corazón Inmaculado de María (CICM) y una de las figuras más providenciales para el renacimiento de la Iglesia católica en Mongolia. Según ha informado la Agencia Fides, el religioso fue una pieza fundamental en los primer",
+      "author": "Redacción El Debate",
+      "date": "2026-08-29",
+      "image": "https://imagenes.eldebate.com/files/og_thumbnail/files/fp/uploads/2026/08/27/6a904c8110bdf.r_d.444-119-0.jpeg",
+      "fetched": true
+    },
+    {
+      "id": "external-87867a57cf18",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/economia/20260828/papa-leon-xiv-recibe-audiencia-presidente-iberdrola_453178.html",
+      "title": "El Papa León XIV recibe en audiencia al presidente de Iberdrola",
+      "description": "<![CDATA[El papa León XIV recibió este viernes en audiencia en el Vaticano al presidente de Iberdrola, Ignacio Sánchez Galán, y a su consejero delegado, Pedro Azagra, según consta en el boletín informativo diario de la Santa Sede.]]>",
+      "author": "Redacción El Debate",
+      "date": "2026-08-28",
+      "image": "https://imagenes.eldebate.com/files/og_thumbnail/files/fp/uploads/2026/08/29/6a930f78f0d1a.r_d.779-403-0.jpeg",
+      "fetched": true
+    },
+    {
+      "id": "external-4169aa9e09c8",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/vaticano/20260828/papa-expresa-pesar-muerte-harald-v-noruega-ofrece-oraciones-eterno-descanso_453079.html",
+      "title": "El Papa expresa su pesar por la muerte de Harald V de Noruega y ofrece oraciones por su eterno descanso",
+      "description": "<![CDATA[el Papa León XIV ha enviado un telegrama a Su Majestad el Rey Haakon VIII de Noruega, con motivo del fallecimiento de su padre, el rey Harald V.]]>",
+      "author": "María Rabell García",
+      "date": "2026-08-28",
+      "image": "https://imagenes.eldebate.com/files/og_thumbnail/files/fp/uploads/2026/08/28/6a9148921013a.r_d.561-250-0.jpeg",
+      "fetched": true
+    },
+    {
+      "id": "external-732d225358f0",
+      "type": "news",
+      "source": "El Debate · Religión",
+      "url": "https://www.eldebate.com/religion/vaticano/20260828/particular-vuelta-cole-leon-xiv-papa-calienta-motores-otono-repleto-grandes-citas_453033.html",
+      "title": "La particular 'vuelta al cole' de León XIV: el Papa calienta motores para un otoño repleto de grandes citas",
+      "description": "<![CDATA[El ritmo de la actividad papal se intensifica de nuevo en la colina vaticana. La Oficina de Prensa de la Santa Sede ha hecho público este viernes el calendario oficial de las celebraciones litúrgicas que serán presididas por el Santo Padre durante los próximos meses de septiembre y octubre.]]>",
+      "author": "María Rabell García",
+      "date": "2026-08-28",
+      "image": "https://imagenes.eldebate.com/files/og_thumbnail/uploads/2026/08/28/6a91639441fc0.jpeg",
+      "fetched": true
+    },
+    {
       "id": "external-759ef2733d14",
       "type": "news",
       "source": "Alfa y Omega",
@@ -260,78 +416,6 @@
       "author": "Redacción",
       "date": "2026-08-27",
       "image": "",
-      "fetched": true
-    },
-    {
-      "id": "external-cbb5f1516510",
-      "type": "news",
-      "source": "El Debate · Religión",
-      "url": "https://www.eldebate.com/religion/20260829/juan-le-decia-no-le-licito-tener-mujer-hermano_443448.html",
-      "title": "«Juan le decía que no le era lícito tener a la mujer de su hermano»",
-      "description": "<![CDATA[]]>",
-      "author": "Redacción El Debate",
-      "date": "2026-08-29",
-      "image": "",
-      "fetched": true
-    },
-    {
-      "id": "external-9d6a6a5d9daa",
-      "type": "news",
-      "source": "El Debate · Religión",
-      "url": "https://www.eldebate.com/religion/iglesia/20260829/12-hijos-seis-sacerdotes-dos-religiosas-tres-casados-cielo-estan-conquistando-mundo-senor_452762.html",
-      "title": "12 hijos, seis sacerdotes, dos religiosas, tres casados y uno en el cielo: «Están conquistando el mundo para el Señor»",
-      "description": "<![CDATA[Sonia Ibarra se define a sí misma, con la humildad propia de las almas grandes, como una «simple madre de familia» argentina. Sin embargo, su realidad biográfica es un prodigio que desafía la lógica secular. Madre de doce hijos, Sonia y su marido Diego han sido testigos de cómo la gracia ha fecundado su hogar de manera sobreabundante: seis de sus hi",
-      "author": "María Rabell García",
-      "date": "2026-08-29",
-      "image": "https://imagenes.eldebate.com/files/og_thumbnail/uploads/2026/08/27/6a9023b474ba1.jpeg",
-      "fetched": true
-    },
-    {
-      "id": "external-55b6f1d60c33",
-      "type": "news",
-      "source": "El Debate · Religión",
-      "url": "https://www.eldebate.com/religion/iglesia/20260829/robert-goessens-misionero-belga-levanto-nada-iglesia-mongolia-comunismo_452825.html",
-      "title": "Robert Goessens, el misionero belga que levantó de la nada la Iglesia en Mongolia tras el comunismo",
-      "description": "<![CDATA[El pasado 15 de agosto falleció en Japón, a los 97 años de edad, el padre Robert Goessens, misionero belga de la Congregación del Corazón Inmaculado de María (CICM) y una de las figuras más providenciales para el renacimiento de la Iglesia católica en Mongolia. Según ha informado la Agencia Fides, el religioso fue una pieza fundamental en los primer",
-      "author": "Redacción El Debate",
-      "date": "2026-08-29",
-      "image": "https://imagenes.eldebate.com/files/og_thumbnail/files/fp/uploads/2026/08/27/6a904c8110bdf.r_d.444-119-0.jpeg",
-      "fetched": true
-    },
-    {
-      "id": "external-e8d61acc71b7",
-      "type": "news",
-      "source": "El Debate · Religión",
-      "url": "https://www.eldebate.com/religion/santoral/20260829/santo-celebramos-hoy-29-agosto_453062.html",
-      "title": "¿Qué santo celebramos hoy, 29 de agosto?",
-      "description": "<![CDATA[el nombre de Herodes ha quedado como sinónimo de horror. Y no es para menos. Hubo un Herodes, llamado el Grande, que mandó nada menos que degollar a todos los niños menores de dos años que vivieran en la región de Belén, cuando tuvo noticias del nacimiento de Jesús; pasados unos años, vino otro Herodes, su hijo, conocido por Herodes Antipas, que man",
-      "author": "Redacción El Debate",
-      "date": "2026-08-29",
-      "image": "https://imagenes.eldebate.com/files/og_thumbnail/uploads/2024/08/26/66cc4f895a9c7.jpeg",
-      "fetched": true
-    },
-    {
-      "id": "external-4169aa9e09c8",
-      "type": "news",
-      "source": "El Debate · Religión",
-      "url": "https://www.eldebate.com/religion/vaticano/20260828/papa-expresa-pesar-muerte-harald-v-noruega-ofrece-oraciones-eterno-descanso_453079.html",
-      "title": "El Papa expresa su pesar por la muerte de Harald V de Noruega y ofrece oraciones por su eterno descanso",
-      "description": "<![CDATA[el Papa León XIV ha enviado un telegrama a Su Majestad el Rey Haakon VIII de Noruega, con motivo del fallecimiento de su padre, el rey Harald V.]]>",
-      "author": "María Rabell García",
-      "date": "2026-08-28",
-      "image": "https://imagenes.eldebate.com/files/og_thumbnail/files/fp/uploads/2026/08/28/6a9148921013a.r_d.561-250-0.jpeg",
-      "fetched": true
-    },
-    {
-      "id": "external-732d225358f0",
-      "type": "news",
-      "source": "El Debate · Religión",
-      "url": "https://www.eldebate.com/religion/vaticano/20260828/particular-vuelta-cole-leon-xiv-papa-calienta-motores-otono-repleto-grandes-citas_453033.html",
-      "title": "La particular 'vuelta al cole' de León XIV: el Papa calienta motores para un otoño repleto de grandes citas",
-      "description": "<![CDATA[El ritmo de la actividad papal se intensifica de nuevo en la colina vaticana. La Oficina de Prensa de la Santa Sede ha hecho público este viernes el calendario oficial de las celebraciones litúrgicas que serán presididas por el Santo Padre durante los próximos meses de septiembre y octubre.]]>",
-      "author": "María Rabell García",
-      "date": "2026-08-28",
-      "image": "https://imagenes.eldebate.com/files/og_thumbnail/uploads/2026/08/28/6a91639441fc0.jpeg",
       "fetched": true
     },
     {

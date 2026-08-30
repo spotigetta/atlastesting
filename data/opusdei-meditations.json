@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-08-29T03:46:43.457Z",
+  "generatedAt": "2026-08-30T00:29:35.136Z",
   "source": "https://opusdei.org/es/meditation/",
   "rightsPolicy": "Reproducción autorizada por el titular para Atlas Mercabá.",
   "records": [
@@ -3704,8 +3704,8 @@
   },
   "failures": [
     {
-      "date": "2026-08-29",
-      "url": "https://opusdei.org/es/meditation/2026-08-29/",
+      "date": "2026-08-30",
+      "url": "https://opusdei.org/es/meditation/2026-08-30/",
       "error": "HTTP 403"
     }
   ]
