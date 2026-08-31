@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-08-29T03:46:33.602Z",
+  "updatedAt": "2026-08-31T00:41:26.885Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "31-08-2026 Él me trae libertad - 10 Minutos con Jesús",
+      "publishedAt": "2026-08-30T22:18:36.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/31-08-2026-el-me-trae-libertad-10-minutos-con-jesus--74759669",
+      "audioUrl": "https://api.spreaker.com/download/episode/74759669/31_08_2026_el_me_trae_libertad_10_minutos_mf_179726401_feed_1.mp3",
+      "duration": "597",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
+    {
+      "title": "30-08-2026 Algo nuevo puede nacer - 10 Minutos con Jesús",
+      "publishedAt": "2026-08-30T01:47:12.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/30-08-2026-algo-nuevo-puede-nacer-10-minutos-con-jesus--74751283",
+      "audioUrl": "https://api.spreaker.com/download/episode/74751283/30_08_2026_algo_nuevo_puede_nacer_10_minutos_mf_179700471_feed_1.mp3",
+      "duration": "625",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "29-08-2026 Mañana no existe - 10 Minutos con Jesús",
       "publishedAt": "2026-08-28T22:04:58.000Z",
@@ -162,24 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/12-08-2026-ramilletes-10-minutos-con-jesus--73829539",
       "audioUrl": "https://api.spreaker.com/download/episode/73829539/12_08_2026_ramilletes_10_minutos_jesus_mf_178789519_feed_1.mp3",
       "duration": "647",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "11-08-2026 ¿Eres tú más que tu Señor? - 10 Minutos con Jesús",
-      "publishedAt": "2026-08-10T22:35:35.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/11-08-2026-eres-tu-mas-que-tu-senor-10-minutos-con-jesus--73783983",
-      "audioUrl": "https://api.spreaker.com/download/episode/73783983/11_08_2026_eres_tu_mas_tu_senor_mf_178704590_feed_1.mp3",
-      "duration": "601",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "10-08-2026¿Es una obligación o es una alegría? - 10 Minutos con Jesús",
-      "publishedAt": "2026-08-09T22:54:49.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/10-08-2026-es-una-obligacion-o-es-una-alegria-10-minutos-con-jesus--73727743",
-      "audioUrl": "https://api.spreaker.com/download/episode/73727743/10_08_2026_es_obligacion_o_es_alegria_mf_178654776_feed_1.mp3",
-      "duration": "624",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
