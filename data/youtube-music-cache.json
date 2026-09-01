@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-30T00:29:33.083Z",
+  "updatedAt": "2026-09-01T01:20:33.014Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -40,6 +40,23 @@
     }
   ],
   "items": [
+    {
+      "id": "youtube-jvE2GsDzLP8",
+      "videoId": "jvE2GsDzLP8",
+      "type": "music",
+      "source": "Gen Verde",
+      "author": "Gen Verde",
+      "title": "Girl on a Mission",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=jvE2GsDzLP8",
+      "image": "https://i.ytimg.com/vi/jvE2GsDzLP8/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-08-31T08:12:17+00:00"
+    },
     {
       "id": "youtube-oEAjOt3lYQw",
       "videoId": "oEAjOt3lYQw",
