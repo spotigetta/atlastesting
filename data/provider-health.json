@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-09-01T01:20:34.648Z",
+  "updatedAt": "2026-09-02T00:22:15.116Z",
   "providers": [
     {
       "provider": "video",
       "ok": true,
-      "live": 772,
+      "live": 713,
       "total": 2500,
-      "failures": 12
+      "failures": 15
     },
     {
       "provider": "music",
@@ -19,7 +19,7 @@
       "provider": "editorial",
       "ok": true,
       "live": 30,
-      "total": 111,
+      "total": 128,
       "failures": 3
     }
   ]

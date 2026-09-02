@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-01T01:20:23.943Z",
+  "updatedAt": "2026-09-02T00:22:04.395Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "02-09-2026 La buena soledad - 10 Minutos con Jesús",
+      "publishedAt": "2026-09-01T21:10:40.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/02-09-2026-la-buena-soledad-10-minutos-con-jesus--74794431",
+      "audioUrl": "https://api.spreaker.com/download/episode/74794431/02_09_2026_la_buena_soledad_10_minutos_con_mf_179867846_feed_1.mp3",
+      "duration": "612",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "01-09-2026 Viva y eficaz - 10 Minutos con Jesús",
       "publishedAt": "2026-08-31T22:31:19.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/14-08-2026-decision-de-amar-10-minutos-con-jesus--73942451",
       "audioUrl": "https://api.spreaker.com/download/episode/73942451/14_08_2026_decision_amar_10_minutos_con_mf_178902831_feed_1.mp3",
       "duration": "627",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "13-08-2026 Un agujero en la pared (I) - 10 Minutos con Jesús",
-      "publishedAt": "2026-08-12T21:16:58.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/13-08-2026-un-agujero-en-la-pared-i-10-minutos-con-jesus--73868195",
-      "audioUrl": "https://api.spreaker.com/download/episode/73868195/13_08_2026_un_agujero_pared_i_mf_178857144_feed_1.mp3",
-      "duration": "755",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
