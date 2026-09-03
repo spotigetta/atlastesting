@@ -144,7 +144,14 @@
   }
 
   function gospelPage(route) {
-    const data = gospelMeditations();
+    const source = gospelMeditations();
+    const records = window.ATLAS_OPUSDEI_MEDITATIONS?.records || [];
+    const recovered = records.filter(item => item.contentFile || item.excerpt || !/^Meditación del \d{2}\/\d{2}\/\d{4}$/.test(item.title || "")).map(item => {
+      const searchable = `${item.title || ""} ${(item.themes || []).join(" ")} ${item.excerpt || ""}`.toLocaleLowerCase("es");
+      const categoryIds = (source.themes || []).filter(theme => searchable.includes(theme.id) || searchable.includes(String(theme.label || "").replace(/^(?:la|el|los|las)\s+/i, "").toLocaleLowerCase("es"))).map(theme => theme.id);
+      return { id:`opus-${item.date}`, title:item.title, description:item.excerpt || `Meditación del Evangelio correspondiente al ${item.date}.`, url:item.officialUrl, image:item.image || "", categoryIds:categoryIds.length ? categoryIds : ["oracion"] };
+    });
+    const data = { ...source, meditations:(source.meditations || []).length ? source.meditations : recovered };
     const selected = route.query.get("theme") || "all";
     const query = (route.query.get("q") || "").trim().toLocaleLowerCase("es");
     const items = (data.meditations || []).filter(item =>

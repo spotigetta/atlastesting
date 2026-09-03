@@ -294,6 +294,8 @@
         <button class="customize-trigger subtle" data-action="customize-home" title="Cambiar el orden de Inicio">↕ Personalizar</button>
       </div>
 
+      <section class="home-start-map" aria-label="Qué puedes hacer en Atlas"><div class="home-start-intro"><span class="eyebrow">EMPIEZA AQUÍ</span><h2>Una app, tres puertas.</h2><p>La biblioteca es el centro; desde ella puedes consultar y rezar.</p></div><div class="home-start-cards"><a class="home-start-card start-read" href="#/biblioteca"><i>01</i><span>Biblioteca</span><b>Lee textos completos.</b><small>Biblia, Catecismo, santos, historia y literatura universal.</small></a><a class="home-start-card start-ask" href="#/preguntar"><i>02</i><span>IA sobre fuentes</span><b>Pregunta con contexto.</b><small>Especialistas que trabajan sobre las obras de Atlas.</small></a><a class="home-start-card start-pray" href="#/rezar"><i>03</i><span>Recursos para rezar</span><b>Vuelve a lo esencial.</b><small>Evangelio, oración, examen, santos y audios.</small></a></div><button class="home-start-about" data-action="intro-replay">✦ Conoce Atlas en 30 segundos</button></section>
+
       ${settings.customizeHome ? `<section class="customize-panel" style="order:.5"><span class="eyebrow">Orden de Inicio</span><h2>Organiza todos los bloques</h2>${homeOrder.map((id,index) => `<div class="customize-row"><b>${homeLabels[id]}</b><span><button data-home-move="${id}" data-direction="-1" ${index===0?"disabled":""}>↑</button><button data-home-move="${id}" data-direction="1" ${index===homeOrder.length-1?"disabled":""}>↓</button></span></div>`).join("")}</section>` : ""}
 
       ${A.exam.homeCard()}
@@ -311,7 +313,7 @@
         </div>
       </section>
 
-      <section class="section" data-home-block="libraries" style="order:${homeOrder.indexOf("libraries") + 1}"><div class="section-head"><div><h2>Explora las IA</h2><p>Ordénalas, fíjalas y dales un nombre propio.</p></div><div class="button-row"><button class="secondary-button" data-action="ia-film">▶ Cómo usar las IA</button><button class="${settings.customizeLibraries ? "primary-button" : "secondary-button"}" data-action="customize-libraries">${settings.customizeLibraries ? "Terminar" : "Personalizar"}</button></div></div>${settings.customizeLibraries ? `<div class="library-customize-notice"><b>Tu biblioteca, a tu manera</b><span>Arrastra el orden con las flechas, fija tus favoritas, oculta las que no uses y añade etiquetas personales. Todo queda solo en este dispositivo.</span></div>` : ""}<div class="library-deck ${settings.customizeLibraries ? "is-customizing" : ""}">${libraries.map((lib,index) => libraryCard(lib,index,libraries.length)).join("")}</div><div class="section-head ia-guide-heading"><div><h2>Guía visual de cada IA</h2><p>Resumen práctico e infografía completa siempre disponibles.</p></div><a href="#/infographics">Ver todas</a></div><div class="ia-guide-strip">${libraries.filter(lib => !(settings.hiddenLibraries || []).includes(lib.id)).map(lib => guideCard(lib)).join("")}</div></section>
+      <section class="section" data-home-block="libraries" style="order:${homeOrder.indexOf("libraries") + 1}"><div class="section-head"><div><h2>Explora las IA</h2><p>Elige un especialista según lo que quieras comprender.</p></div><div class="button-row"><button class="${settings.customizeLibraries ? "primary-button" : "secondary-button"}" data-action="customize-libraries">${settings.customizeLibraries ? "Terminar" : "Personalizar"}</button></div></div>${settings.customizeLibraries ? `<div class="library-customize-notice"><b>Tu biblioteca, a tu manera</b><span>Arrastra el orden con las flechas, fija tus favoritas, oculta las que no uses y añade etiquetas personales. Todo queda solo en este dispositivo.</span></div>` : ""}<div class="library-deck ${settings.customizeLibraries ? "is-customizing" : ""}">${libraries.map((lib,index) => libraryCard(lib,index,libraries.length)).join("")}</div></section>
 
       ${reading.length ? `<section class="section" data-home-block="reading" style="order:${homeOrder.indexOf("reading") + 1}"><div class="section-head"><div><h2>Continúa leyendo</h2><p>Retoma cada fuente exactamente donde la dejaste.</p></div><a href="#/saved">Ver actividad</a></div><div class="continue-reading-grid">${reading.map(item => readingItem(item.doc, item.progress)).join("")}</div></section>` : ""}
 
@@ -1180,7 +1182,7 @@
       settingsLayer.querySelector("#settings-content").innerHTML = renderSettings();
       toast("Tema, colores y apariencia restablecidos a fábrica.");
     }
-    if (action === "tutorial") { event.preventDefault(); closeSearch(); openTutorial(); }
+    if (action === "tutorial") { event.preventDefault(); closeSearch(); openIntro(true); }
     if (action === "tutorial-close") closeTutorial();
     if (action === "tutorial-previous") { tutorialIndex = Math.max(0, tutorialIndex - 1); renderTutorialStep(); }
     if (action === "tutorial-next") {

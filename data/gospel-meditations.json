@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-03T00:24:55.865Z",
+  "generatedAt": "2026-09-03T11:34:10.149Z",
   "editorialNote": "Selección temática de metadatos y enlaces oficiales. Atlas no reproduce el artículo completo.",
   "themes": [
     {
@@ -13,7 +13,7 @@
       "id": "oracion",
       "label": "la oración",
       "icon": "✦",
-      "count": 0
+      "count": 2
     },
     {
       "id": "amargura",
@@ -25,13 +25,13 @@
       "id": "voluntad",
       "label": "seguir la voluntad de Dios",
       "icon": "↗",
-      "count": 0
+      "count": 1
     },
     {
       "id": "fiat",
       "label": "decir «sí» — fiat",
       "icon": "M",
-      "count": 0
+      "count": 1
     },
     {
       "id": "confianza",
@@ -43,7 +43,7 @@
       "id": "alegria",
       "label": "recuperar la alegría",
       "icon": "☀",
-      "count": 0
+      "count": 1
     },
     {
       "id": "conversion",
@@ -64,5 +64,41 @@
       "count": 0
     }
   ],
-  "meditations": []
+  "meditations": [
+    {
+      "id": "opus-2026-06-03",
+      "title": "Meditaciones: miércoles de la 9.ª semana del Tiempo Ordinario",
+      "description": "Una reflexión sobre la sinceridad para buscar la verdad de Dios, los horizontes de eternidad y amar con todo el corazón y toda la mente.",
+      "url": "https://opusdei.org/es/meditation/2026-06-03/",
+      "image": "",
+      "source": "Opus Dei · Meditaciones",
+      "categoryIds": [
+        "oracion"
+      ]
+    },
+    {
+      "id": "opus-2026-06-10",
+      "title": "Meditaciones: miércoles de la 10.ª semana del Tiempo Ordinario",
+      "description": "Jesús revela la plenitud de la ley; la libertad se presenta como camino hacia el cielo y el Reino se descubre en las cosas pequeñas.",
+      "url": "https://opusdei.org/es/meditation/2026-06-10/",
+      "image": "",
+      "source": "Opus Dei · Meditaciones",
+      "categoryIds": [
+        "voluntad"
+      ]
+    },
+    {
+      "id": "opus-2026-08-15",
+      "title": "Meditaciones: la Asunción de la Virgen María",
+      "description": "Meditación del Evangelio correspondiente al 2026-08-15.",
+      "url": "https://opusdei.org/es/meditation/2026-08-15/",
+      "image": "",
+      "source": "Opus Dei · Meditaciones",
+      "categoryIds": [
+        "oracion",
+        "fiat",
+        "alegria"
+      ]
+    }
+  ]
 }

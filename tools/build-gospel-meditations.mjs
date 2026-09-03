@@ -3,6 +3,7 @@ import path from "node:path";
 
 const root = path.resolve(import.meta.dirname, "..");
 const external = JSON.parse(await fs.readFile(path.join(root, "data/external-content.json"), "utf8"));
+const opus = JSON.parse(await fs.readFile(path.join(root, "data/opusdei-meditations.json"), "utf8").catch(() => '{"records":[]}'));
 
 const themes = [
   { id: "tristeza", label: "la tristeza", icon: "◐", test: /triste|dolor|llanto|fracaso|desconciert|al borde/i },
@@ -27,7 +28,7 @@ function repair(value = "") {
   return text.replace(/\s+/g, " ").trim();
 }
 
-const meditations = (external.items || [])
+let meditations = (external.items || [])
   .filter(item => item.type === "prayer" && /^https:\/\/(?:www\.)?opusdei\.org\//i.test(item.url || ""))
   .map(item => {
     const title = repair(item.title);
@@ -45,6 +46,19 @@ const meditations = (external.items || [])
       categoryIds
     };
   });
+
+if (!meditations.length) {
+  meditations = (opus.records || [])
+    .filter(item => item.contentFile || item.excerpt || !/^Meditación del \d{2}\/\d{2}\/\d{4}$/.test(item.title || ""))
+    .map(item => {
+      const title = repair(item.title);
+      const description = repair(item.excerpt || `Meditación del Evangelio correspondiente al ${item.date}.`);
+      const searchable = `${title} ${(item.themes || []).join(" ")} ${description}`;
+      let categoryIds = themes.filter(theme => theme.test.test(searchable)).map(theme => theme.id);
+      if (!categoryIds.length) categoryIds = ["oracion"];
+      return { id:`opus-${item.date}`, title, description, url:item.officialUrl, image:item.image || "", source:"Opus Dei · Meditaciones", categoryIds };
+    });
+}
 
 const counts = Object.fromEntries(themes.map(theme => [theme.id, meditations.filter(item => item.categoryIds.includes(theme.id)).length]));
 const payload = `${JSON.stringify({
