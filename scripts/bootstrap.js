@@ -70,7 +70,7 @@
       "scripts/statistics.js", "scripts/library.js", "scripts/reader.js", "scripts/extras.js",
       "scripts/spiritual.js", "scripts/examen.js", "scripts/compare.js", "scripts/feed-mixer.js",
       "scripts/reels.js", "scripts/router.js", "scripts/bible.js", "scripts/salvation.js",
-      "scripts/architecture.js", "scripts/architecture-polish.js", "scripts/learning-rotate.js", "scripts/opus-simple.js", "scripts/app.js"
+      "scripts/architecture.js", "scripts/architecture-polish.js", "scripts/learning-rotate.js", "scripts/opus-simple.js", "scripts/learning-reorder.js", "scripts/app.js"
     ];
     for (const module of modules) await runtime.loadScript(module);
     loadDeferredData().catch(error => console.warn("Atlas: contenido secundario no disponible", error));

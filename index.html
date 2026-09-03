@@ -68,22 +68,26 @@
     <link rel="stylesheet" href="styles/topic-drill.css">
     <link rel="stylesheet" href="styles/spiritual-reframed.css">
     <link rel="stylesheet" href="styles/mobile-more-distinct.css">
+    <link rel="stylesheet" href="styles/contrast-onboarding.css">
 </head>
 <body>
   <a class="skip-link" href="#main">Saltar al contenido</a>
   <div class="paper-grain" aria-hidden="true"></div>
 
-  <section class="atlas-intro" id="atlas-intro" hidden aria-label="Presentación de Atlas">
-    <div class="intro-light" aria-hidden="true"></div>
-    <button class="intro-skip" data-action="intro-close">Saltar</button>
-    <div class="intro-stage">
-      <span class="intro-monogram">A</span>
-      <div class="intro-scene" data-intro-scene="0"><small>Una biblioteca que piensa en relaciones</small><h1>Todo tu Atlas.<br>En un solo lugar.</h1></div>
-      <div class="intro-scene" data-intro-scene="1"><small>Más de 1.300 fuentes documentales</small><h1>Busca. Lee.<br>Conecta.</h1><div class="intro-orbit"><i></i><i></i><i></i><i></i></div></div>
-      <div class="intro-scene" data-intro-scene="2"><small>Contenido vivo</small><h1>Descubre cada día.</h1><p>Vídeos · música · lecturas · oración · historia</p></div>
-      <div class="intro-scene" data-intro-scene="3"><small>Mercabá presenta</small><h1>Atlas</h1><p>Tu mapa para saber dónde buscar.</p><button class="intro-enter" data-action="intro-close">Entrar en Atlas →</button></div>
+  <section class="atlas-intro atlas-store-intro" id="atlas-intro" hidden aria-label="Bienvenida a Atlas">
+    <button class="intro-skip" data-action="intro-close">Ahora no</button>
+    <div class="store-sheet">
+      <header class="store-app-head"><img src="assets/icons/icon-192.png" alt=""><div><small>ATLAS · MERCABÁ</small><h1>Atlas</h1><p>Biblioteca, IA y vida cristiana.</p></div><span class="store-free">Gratis</span></header>
+      <div class="store-score" aria-label="Información de la aplicación"><span><b>✦</b><small>Biblioteca viva</small></span><span><b>12</b><small>IA especializadas</small></span><span><b>⌁</b><small>Para leer y rezar</small></span></div>
+      <div class="store-showcase" aria-label="Un vistazo a Atlas">
+        <article class="store-phone store-home"><small>HOY</small><b>Una pausa en<br>lo importante</b><span>Evangelio · santo · 10 minutos</span></article>
+        <article class="store-phone store-library"><small>BIBLIOTECA</small><b>Todo reunido.<br>Todo legible.</b><span>Biblia · clásicos · documentos</span></article>
+        <article class="store-phone store-ask"><small>PREGUNTAR</small><b>Pregunta.<br>Vuelve a las fuentes.</b><span>IA sobre tu biblioteca</span></article>
+      </div>
+      <div class="store-dots" aria-hidden="true"><i></i><i></i><i></i></div>
+      <section class="store-about"><small>HECHA PARA VOLVER</small><h2>Una biblioteca que puedes habitar.</h2><p>Lee, pregunta y reza sin perderte entre páginas, aplicaciones y enlaces.</p><div><span>◈ Fuentes completas</span><span>✦ IA con contexto</span><span>◌ Cada día contigo</span></div></section>
+      <button class="intro-enter" data-action="intro-close">Abrir Atlas <span>→</span></button>
     </div>
-    <div class="intro-progress"><i></i><i></i><i></i><i></i></div>
   </section>
 
   <header class="app-header">
@@ -106,7 +110,7 @@
       <button class="round-button mobile-refresh-button" data-action="refresh-atlas" aria-label="Actualizar Atlas" title="Actualizar Atlas">↻</button>
       <button class="round-button settings-button" data-action="settings" aria-label="Personalizar Atlas" title="Personalizar Atlas">⚙</button>
       <button class="round-button help-button" data-action="tutorial" aria-label="Cómo usar Atlas" title="Cómo usar Atlas">?</button>
-      <a class="round-button presentation-button" href="presentacion-desktop/" target="_blank" rel="noopener" aria-label="Conoce Atlas" title="Conoce Atlas">✦</a>
+      <a class="round-button presentation-button" href="presentacion-desktop/index.html" target="_blank" rel="noopener" aria-label="Conoce Atlas" title="Conoce Atlas">✦</a>
       <button class="round-button" data-action="search" aria-label="Buscar" title="Buscar (Ctrl K)">
         <svg aria-hidden="true"><use href="#icon-search"></use></svg>
       </button>

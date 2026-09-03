@@ -237,19 +237,12 @@
 
   function openIntro(force = false) {
     if (!atlasIntro) return false;
-    const alreadyShown = Boolean(A.storage.get().settings.introSeen);
+    const alreadyShown = Boolean(A.storage.get().settings.introMockupSeen);
     if (!force && alreadyShown) return false;
-    A.storage.setSetting("introSeen", true);
+    A.storage.setSetting("introMockupSeen", true);
     clearInterval(introTimer);
     atlasIntro.hidden = false;
-    atlasIntro.dataset.scene = "0";
     document.body.classList.add("modal-open");
-    let scene = 0;
-    introTimer = setInterval(() => {
-      scene += 1;
-      if (scene > 3) { clearInterval(introTimer); return; }
-      atlasIntro.dataset.scene = String(scene);
-    }, 1150);
     return true;
   }
 
@@ -799,6 +792,12 @@
     } else if (current.name === "author") {
       app.innerHTML = renderAuthorWorks(decodeURIComponent(current.segments.slice(1).join("/")));
     } else app.innerHTML = notFound();
+    // Nombre editorial de la tarjeta especialista: se aplica también a las variantes visuales antiguas.
+    app.querySelectorAll("b,h1,h2,h3,p,span").forEach(node => {
+      if (node.childElementCount === 0 && node.textContent.includes("Preguntar a San Josemaría")) {
+        node.textContent = node.textContent.replaceAll("Preguntar a San Josemaría", "Preguntar a San JosemarIA");
+      }
+    });
     document.title = titleFor(current);
     app.focus({ preventScroll: true });
     if (current.name === "explore" && current.query.get("section") === "libraries") {
@@ -1466,8 +1465,9 @@
     if (copy) copy.innerHTML=/iphone|ipad|ipod/i.test(navigator.userAgent)?"<b>Añade Atlas a tu inicio</b><small>En Safari: Compartir → Añadir a pantalla de inicio.</small>":"<b>Instala Atlas como aplicación</b><small>Ábrelo siempre desde tu pantalla de inicio.</small>";
     setTimeout(() => banner?.removeAttribute("hidden"), 1100);
   }
-  if (!A.storage.get().settings.tutorialSeen) {
-    A.storage.setSetting("introSeen", true);
-    setTimeout(() => openTutorial(), 220);
+  // La primera visita ahora es una presentación breve con mockups flotantes; la guía larga queda disponible desde Ayuda.
+  if (!A.storage.get().settings.introMockupSeen) {
+    A.storage.setSetting("tutorialSeen", true);
+    setTimeout(() => openIntro(), 220);
   }
 })();

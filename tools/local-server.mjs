@@ -9,7 +9,8 @@ const types = { ".html":"text/html; charset=utf-8", ".js":"text/javascript; char
 createServer((req, res) => {
   const pathname = decodeURIComponent(new URL(req.url || "/", `http://127.0.0.1:${port}`).pathname);
   const requested = pathname === "/" ? "index.html" : pathname.replace(/^\/+/, "");
-  const file = normalize(join(root, requested));
+  let file = normalize(join(root, requested));
+  if (file.startsWith(root) && existsSync(file) && statSync(file).isDirectory()) file = join(file, "index.html");
   if (!file.startsWith(root) || !existsSync(file) || statSync(file).isDirectory()) { res.writeHead(404); return res.end("No encontrado"); }
   res.writeHead(200, { "content-type": types[extname(file).toLowerCase()] || "application/octet-stream", "cache-control":"no-store" });
   createReadStream(file).pipe(res);

@@ -3,7 +3,7 @@
   const A = window.Atlas = window.Atlas || {};
   const esc = value => A.library.esc(String(value || ""));
   const covers = { canon:"canoniaportada.webp",history:"historiaportada.webp",liturgy:"liturgiaportada.webp",ortodoxia:"ortodoxiaportada.webp",cinepilot:"cinepilotportada.webp",bibliotecaria:"bibliotecariaportada.webp",clasicos:"clasicosportada.webp","san-josemaria":"portadaSanJosemarIA.webp","preparadora-circulos":"preparadordecirculosportada.webp","vida-santos":"santosportada.png","meditacion-diaria":"meditaciondiariaportada.png" };
-  const libraryLines = {doctrine:"Doctrina, teología y moral católica.",canon:"Normas y fuentes del Derecho Canónico.",history:"Historia de la Iglesia y Padres en contexto.",liturgy:"Comprende y celebra la liturgia.",ortodoxia:"Doctrina y moral en el debate público.",cinepilot:"Cine con criterio artístico y moral.",bibliotecaria:"Encuentra tu próxima lectura.",clasicos:"Grandes obras para leer con orden.","san-josemaria":"Obras y vida de san Josemaría.","preparadora-circulos":"Prepara círculos con fuentes fiables.","vida-santos":"Aprende de vidas reales de santos.","meditacion-diaria":"Una IA para ayudarte a rezar"};
+  const libraryLines = {doctrine:"Doctrina, teología y moral católica.",canon:"Normas y fuentes del Derecho Canónico.",history:"Historia de la Iglesia y Padres en contexto.",liturgy:"Comprende y celebra la liturgia.",ortodoxia:"IA orientada a explicar doctrina y moral para el debate público.",cinepilot:"Cine con criterio artístico y moral.",bibliotecaria:"Encuentra tu próxima lectura.",clasicos:"Grandes obras para leer con orden.","san-josemaria":"Obras y vida de san Josemaría.","preparadora-circulos":"Prepara círculos con fuentes fiables.","vida-santos":"Aprende de vidas reales de santos.","meditacion-diaria":"Una IA para ayudarte a rezar"};
   const prayerSituations = [
     "No tengo ganas de rezar y me cuesta incluso empezar. Ayúdame a ponerme con sinceridad delante de Dios sin fingir sentimientos que ahora no tengo.",
     "Acabo de comulgar. Ayúdame a dar gracias despacio, a mirar a Jesús y a pedir una fe mucho mayor y más concreta.",
@@ -19,6 +19,18 @@
     "Necesito pedir perdón, pero me justifico y temo quedar mal. Ayúdame a llamar a las cosas por su nombre y a reparar el daño.",
     "Quiero dar gracias y no sé cómo. Recorre conmigo el día y ayúdame a reconocer dones concretos, personas y pequeñas misericordias.",
     "Estoy enfadado con Dios. Ayúdame a no esconderlo, a rezar desde esta verdad y a permanecer en la conversación aunque no entienda."
+    ,"Estoy agradecido por una persona concreta. Enséñame a dar gracias sin prisa y a quererla mejor hoy."
+    ,"Tengo que tomar una decisión importante. Dame libertad interior, consejo oportuno y valentía para elegir el bien."
+    ,"Me cuesta estudiar o trabajar con orden. Ayúdame a empezar, a terminar lo que debo y a ofrecértelo."
+    ,"He cometido el mismo error otra vez. Dame humildad para confesarlo, paciencia para recomenzar y esperanza."
+    ,"Estoy preocupado por alguien que sufre. Pon su nombre en mi oración y enséñame qué ayuda concreta puedo darle."
+    ,"No sé qué hacer con mi vocación y mi futuro. Ayúdame a escuchar, a no adelantarme y a ser generoso."
+    ,"Voy a ver a mi familia y hay tensión. Dame palabras limpias, capacidad de escuchar y deseo de servir."
+    ,"Me he distraído mucho y he desperdiciado el día. Ayúdame a cerrar la jornada con verdad y sin desesperarme."
+    ,"Siento vergüenza de acercarme a Ti. Recuérdame que tu misericordia llega antes que mi miedo."
+    ,"Quiero rezar por la Iglesia y por el Papa. Enséñame a hacerlo con fe, unidad y sentido sobrenatural."
+    ,"Estoy viviendo una alegría grande. Ayúdame a reconocer que viene de Ti y a compartirla sin presumir."
+    ,"No encuentro silencio dentro de mí. Quédate conmigo en medio del ruido y enséñame a escuchar."
   ];
   const groups = [
     { id:"fe", title:"Fe e Iglesia", subtitle:"Escritura, doctrina, normas y celebración", libraries:["doctrine","canon","liturgy","ortodoxia"] },
@@ -75,6 +87,7 @@
     const ongoing=continueData();
     return `<section class="page atlas-v7 v7-home">
       <header class="v7-home-hero"><span>Atlas · Mercabá</span><h1>Todo reunido.<br><em>Todo aquí.</em></h1><p>Una biblioteca católica viva para leer, comprender, rezar y descubrir. <strong>Con ayuda de las IA para preguntar, encontrar respuestas en las fuentes y rezar.</strong></p>${searchButton()}<div class="v7-home-share"><button class="primary-button" data-action="share-public-app">Compartir Atlas ↗</button><button class="secondary-button" data-action="open-qr">Ver QR</button></div><a class="v7-discover-atlas-link" href="#/descubre-atlas">Descubre todo lo que contiene Atlas →</a></header>
+      <section class="v7-home-three">${sectionHeader("Atlas en tres gestos","Una biblioteca. IA sobre sus fuentes. Recursos para vivir.","Todo empieza en los textos y termina en una ayuda concreta para tu día.")}<div><a href="#/biblioteca" class="home-three-library"><i>01</i><b>Biblioteca</b><span>Doctrina, Biblia, santos, literatura y documentos que puedes leer.</span></a><a href="#/preguntar" class="home-three-ai"><i>02</i><b>IA sobre la biblioteca</b><span>Especialistas para preguntar usando las fuentes de cada cuaderno.</span></a><a href="#/rezar" class="home-three-life"><i>03</i><b>Rezar, formarse y leer</b><span>Evangelio, examen, rutas, Misa y propuestas para vivir hoy.</span></a></div></section>
       <section class="v7-today">${sectionHeader("Hoy","Una pausa en lo importante","Tres puertas para este día.")}<div class="v7-today-grid">
         <a href="${esc(gospelUrl)}" target="_blank" rel="noopener" class="v7-today-card gospel"><i>☼</i><small>Evangelio y oración · hoy</small><h3>${esc(gospel?.title||"Rezar el Evangelio de hoy")}</h3><p>${esc(gospel?.description||"Entra en la escena y mira especialmente a Cristo.")}</p></a>
         <a href="${saint?`#/reader/${encodeURIComponent(saint.id)}`:"#/spiritual/saints"}" class="v7-today-card saint"><i>✦</i><small>Un santo para hoy</small><h3>${esc(saint?.title||"Una vida que acompaña")}</h3><p>Lee una escena real y descubre cómo vivió la fe.</p></a>
