@@ -36,6 +36,9 @@
   let sharePayload = null;
   let tutorialIndex = 0;
   let introTimer = 0;
+  let introSwipeStart = null;
+  let lastIntroSwipeAt = 0;
+  let introMouseStart = null;
   let introPendingTutorial = false;
   let routeTransitioning = false;
   let iaFilmIndex = 0;
@@ -244,6 +247,9 @@
     atlasIntro.dataset.step = "0";
     atlasIntro.hidden = false;
     document.body.classList.add("modal-open");
+    introTimer = setInterval(() => {
+      if (!atlasIntro.hidden) setIntroStep(Number(atlasIntro.dataset.step || 0) + 1);
+    }, 5200);
     return true;
   }
 
@@ -330,6 +336,65 @@
     const tones=["amber","blue","clay","violet","emerald","rose","indigo","gold","cyan","olive","burgundy","slate"];
     return `<div class="library-quick-customize"><label><span>Etiqueta personal</span><input data-library-label="${esc(lib.id)}" value="${esc(settings.libraryLabels?.[lib.id] || "")}" placeholder="Ej. Mi IA de historia"></label><div class="library-tone-swatches" aria-label="Color de ${esc(lib.short)}">${tones.map(tone=>`<button class="tone-${tone} ${(settings.libraryColors?.[lib.id]||lib.tone)===tone?"active":""}" data-library-tone="${esc(lib.id)}" data-tone="${tone}" aria-label="Color ${tone}"><i></i></button>`).join("")}</div><div class="library-quick-actions"><button data-library-move="${esc(lib.id)}" data-direction="-1" ${index===0?"disabled":""}>← Mover</button><button data-library-move="${esc(lib.id)}" data-direction="1" ${index===total-1?"disabled":""}>Mover →</button><button class="${pinned?"active":""}" data-library-pin="${esc(lib.id)}">${pinned?"★ Fijada":"☆ Fijar"}</button><button data-library-hide="${esc(lib.id)}">${hidden?"Mostrar":"Ocultar"}</button></div></div>`;
   }
+
+  function setIntroStep(step) {
+    if (!atlasIntro) return;
+    const numericStep = Number(step);
+    const nextStep = ((Number.isFinite(numericStep) ? numericStep : 0) + 6) % 6;
+    atlasIntro.dataset.step = String(nextStep);
+    const radio = atlasIntro.querySelector(`#tour-step-${nextStep}`);
+    if (radio) radio.checked = true;
+  }
+
+  atlasIntro?.addEventListener("pointerdown", event => {
+    if (event.target.closest("button")) return;
+    introSwipeStart = { x: event.clientX, y: event.clientY };
+  });
+  atlasIntro?.addEventListener("pointerup", event => {
+    if (!introSwipeStart) return;
+    const deltaX = event.clientX - introSwipeStart.x;
+    const deltaY = event.clientY - introSwipeStart.y;
+    introSwipeStart = null;
+    if (Math.abs(deltaX) < 36 || Math.abs(deltaX) <= Math.abs(deltaY)) return;
+    const current = Number(atlasIntro.dataset.step || 0);
+    setIntroStep(current + (deltaX < 0 ? 1 : -1));
+    lastIntroSwipeAt = Date.now();
+  });
+  atlasIntro?.addEventListener("pointercancel", () => { introSwipeStart = null; });
+  atlasIntro?.addEventListener("touchstart", event => {
+    const touch = event.touches[0];
+    if (touch) introSwipeStart = { x: touch.clientX, y: touch.clientY };
+  }, { passive: true });
+  atlasIntro?.addEventListener("touchend", event => {
+    if (Date.now() - lastIntroSwipeAt < 650) return;
+    const touch = event.changedTouches[0];
+    if (!touch || !introSwipeStart) return;
+    const deltaX = touch.clientX - introSwipeStart.x;
+    const deltaY = touch.clientY - introSwipeStart.y;
+    introSwipeStart = null;
+    if (Math.abs(deltaX) < 28 || Math.abs(deltaX) <= Math.abs(deltaY)) return;
+    setIntroStep(Number(atlasIntro.dataset.step || 0) + (deltaX < 0 ? 1 : -1));
+  }, { passive: true });
+  const introDevice = atlasIntro?.querySelector(".tour-device");
+  introDevice?.addEventListener("mousedown", event => {
+    if (event.button !== 0 || event.target.closest("button")) return;
+    introMouseStart = { x: event.clientX, y: event.clientY };
+    event.preventDefault();
+  });
+  window.addEventListener("mouseup", event => {
+    if (!introMouseStart) return;
+    const deltaX = event.clientX - introMouseStart.x;
+    const deltaY = event.clientY - introMouseStart.y;
+    introMouseStart = null;
+    if (Math.abs(deltaX) < 18 || Math.abs(deltaX) <= Math.abs(deltaY)) return;
+    setIntroStep(Number(atlasIntro?.dataset.step || 0) + (deltaX < 0 ? 1 : -1));
+    lastIntroSwipeAt = Date.now();
+  });
+  atlasIntro?.querySelectorAll("[data-intro-direction]").forEach(button => button.addEventListener("click", event => {
+    event.preventDefault();
+    event.stopPropagation();
+    setIntroStep(Number(atlasIntro.dataset.step || 0) + Number(button.dataset.introDirection));
+  }));
 
   function iaFilmScenes() {
     const libraries = visibleLibraries();
@@ -1174,7 +1239,12 @@
     }
     if (target.dataset.introStep !== undefined) {
       event.preventDefault();
-      atlasIntro.dataset.step = target.dataset.introStep;
+      setIntroStep(target.dataset.introStep);
+      return;
+    }
+    if (target.dataset.introDirection !== undefined) {
+      event.preventDefault();
+      setIntroStep(Number(atlasIntro?.dataset.step || 0) + Number(target.dataset.introDirection));
       return;
     }
     if (action === "intro-close") { closeIntro(); return; }

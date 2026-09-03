@@ -1,4 +1,4 @@
-const BUILD_VERSION = "1.0.2-release";
+const BUILD_VERSION = "1.0.3-release";
 const SHELL_CACHE = `atlas-shell-${BUILD_VERSION}`;
 const DATA_CACHE = `atlas-data-${BUILD_VERSION}`;
 const DOCUMENT_CACHE = `atlas-documents-${BUILD_VERSION}`;
