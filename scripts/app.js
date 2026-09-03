@@ -241,6 +241,7 @@
     if (!force && alreadyShown) return false;
     A.storage.setSetting("introMockupSeen", true);
     clearInterval(introTimer);
+    atlasIntro.dataset.step = "0";
     atlasIntro.hidden = false;
     document.body.classList.add("modal-open");
     return true;
@@ -1169,6 +1170,11 @@
     if (target.dataset.nav === "discover" && ["discover", "short"].includes(route().name)) {
       event.preventDefault();
       A.reels.refresh();
+      return;
+    }
+    if (target.dataset.introStep !== undefined) {
+      event.preventDefault();
+      atlasIntro.dataset.step = target.dataset.introStep;
       return;
     }
     if (action === "intro-close") { closeIntro(); return; }

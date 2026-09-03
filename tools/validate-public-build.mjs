@@ -20,6 +20,15 @@ if (!serviceWorker.includes(`BUILD_VERSION = "${manifest.version}-release"`)) th
 if (webmanifest.start_url !== "./#/") throw new Error("manifest.webmanifest debe conservar start_url ./#/");
 const documentCount = (catalog.libraries || []).reduce((total, library) => total + (library.documents?.length || 0), 0);
 if (!catalog.libraries?.length || !documentCount) throw new Error("El catálogo público no contiene bibliotecas o documentos");
+const genericCategory = value => !value || /^(nuevos documentos|sin categor[ií]a|sin clasificar|otros|general|documento)$/i.test(String(value).trim());
+for (const library of catalog.libraries) {
+  const pending = (library.documents || []).filter(doc => genericCategory(doc.category));
+  if (pending.length) throw new Error(`${library.id} conserva ${pending.length} documento(s) sin categoría útil`);
+  const expected = new Map();
+  for (const doc of library.documents || []) expected.set(doc.category, (expected.get(doc.category) || 0) + 1);
+  const indexed = new Map((library.categories || []).map(item => [item.name, item.count]));
+  if (expected.size !== indexed.size || [...expected].some(([name, count]) => indexed.get(name) !== count)) throw new Error(`El índice de categorías de ${library.id} no coincide con sus documentos`);
+}
 const hidden = catalog.libraries.find(item => item.id === "preparadora-circulos");
 if (!hidden || hidden.unlockFeature !== "preparadora-circulos") throw new Error("El Preparador de Círculos debe permanecer protegido por desbloqueo local");
 if (hidden.documents?.length !== 38 || !hidden.notebookUrl?.includes("notebooklm.google.com")) throw new Error("El Preparador debe conservar sus 38 Markdown y el enlace directo a NotebookLM");
