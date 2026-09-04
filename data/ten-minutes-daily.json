@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-03T00:24:44.774Z",
+  "updatedAt": "2026-09-04T00:12:54.491Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "04-09-2026 Odres premium - 10 Minutos con Jesús",
+      "publishedAt": "2026-09-03T23:07:25.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/04-09-2026-odres-premium-10-minutos-con-jesus--74880954",
+      "audioUrl": "https://api.spreaker.com/download/episode/74880954/04_09_2026_odres_premium_10_minutos_jesus_mf_179996467_feed_1.mp3",
+      "duration": "651",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "03-09-2026 Jesús y la playa - 10 Minutos con Jesús",
       "publishedAt": "2026-09-02T22:28:06.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/16-08-2026-casi-todos-somos-perros-10-minutos-con-jesus--74091831",
       "audioUrl": "https://api.spreaker.com/download/episode/74091831/16_08_2026_casi_todos_somos_perros_10_minutos_mf_178974097_feed_1.mp3",
       "duration": "676",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "15-08-2026 El álbum de la Virgen - 10 Minutos con Jesús",
-      "publishedAt": "2026-08-14T21:13:28.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/15-08-2026-el-album-de-la-virgen-10-minutos-con-jesus--74010766",
-      "audioUrl": "https://api.spreaker.com/download/episode/74010766/15_08_2026_el_album_virgen_10_mf_178944621_feed_1.mp3",
-      "duration": "600",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
