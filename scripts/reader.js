@@ -230,7 +230,7 @@
         blocks.push(`<h${level} id="${esc(entry?.anchor || "")}">${inline(rawLine.trim())}</h${level}>`);
         lineIndex += 1; continue;
       }
-      const heading = rawLine.match(/^(#{1,4})\s+(.+?)\s*#*\s*$/);
+      const heading = rawLine.match(/^(#{1,6})\s+(.+?)\s*#*\s*$/);
       if (heading) {
         flushParagraph(); flushList();
         const entry = toc[headingIndex++];

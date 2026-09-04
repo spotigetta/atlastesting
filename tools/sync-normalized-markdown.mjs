@@ -22,7 +22,7 @@ function splitDocument(markdown, targetSize = 90000) {
   let current = [], size = 0, chunkIndex = 0;
   const flush = () => { if (!current.length) return; chunks.push({ index: chunks.length, markdown: current.join("\n") }); current=[]; size=0; chunkIndex=chunks.length; };
   for (const line of lines) {
-    const heading=line.match(/^(#{1,4})\s+(.+?)\s*#*\s*$/);
+    const heading=line.match(/^(#{1,6})\s+(.+?)\s*#*\s*$/);
     if (heading) {
       if (size >= targetSize * .55) flush();
       const base=slug(heading[2]), count=used.get(base)||0; used.set(base,count+1);

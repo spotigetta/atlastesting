@@ -1,4 +1,4 @@
-const BUILD_VERSION = "1.0.3-release";
+const BUILD_VERSION = "1.0.12-release";
 const SHELL_CACHE = `atlas-shell-${BUILD_VERSION}`;
 const DATA_CACHE = `atlas-data-${BUILD_VERSION}`;
 const DOCUMENT_CACHE = `atlas-documents-${BUILD_VERSION}`;
@@ -6,6 +6,8 @@ const DOCUMENT_CACHE = `atlas-documents-${BUILD_VERSION}`;
 const SHELL = [
   "./", "./index.html", "./offline.html", "./manifest.webmanifest",
   "./styles/tokens.css", "./styles/base.css", "./styles/components.css",
+  "./styles/formarse-format.css",
+  "./styles/product-clarity.css",
   "./styles/themes.css", "./styles/responsive.css", "./styles/features-5.4.css", "./styles/features-5.6.css", "./styles/reader-5.6.css", "./styles/saints-5.6.css", "./styles/features-5.7.css", "./styles/bible-6.2.css",
   "./styles/salvation.css", "./styles/salvation-cinematic.css", "./styles/architecture-6.4.css", "./styles/opus-resources.css", "./styles/experience-6.5.css",
   "./scripts/database.js", "./scripts/runtime.js", "./scripts/bootstrap.js", "./scripts/storage.js",

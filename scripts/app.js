@@ -291,25 +291,18 @@
       .sort((a, b) => Date.parse(b.progress.updatedAt || 0) - Date.parse(a.progress.updatedAt || 0))
       .slice(0, 3);
     return `<section class="page home-page">
-      <div class="home-hero">
-        <div><span class="eyebrow">Atlas · Mercabá</span><h1>${libraries.length} bibliotecas.<br>Miles de fuentes.</h1></div>
-        <p>Descubre qué sabe cada IA, qué documentos contiene y qué puedes preguntarle.</p>
+      <div class="home-hero home-product-hero">
+        <div><span class="eyebrow">Atlas · en tres partes</span><h1>Lee. Pregunta.<br>Vive.</h1></div>
+        <p>Una <b>biblioteca</b>. Varias <b>IA que leen esa biblioteca</b>. Recursos para <b>rezar y formarte</b>.</p>
         <div class="hero-search"><button data-action="search">${A.library.icon("search")}<span id="hero-placeholder">Busca “${placeholders[daySeed() % placeholders.length]}”</span><kbd>Ctrl K</kbd></button></div>
-        <div class="home-knowledge-entries"><a class="home-bible-entry" href="#/bible"><span>B</span><span><b>La Biblia, verso a verso</b><small>Lee a pantalla completa, busca palabras o referencias y enlaza cada pasaje.</small></span><i>Abrir las Escrituras →</i></a><a class="home-saints-entry" href="#/spiritual/saints"><span>✦</span><span><b>¿Qué necesito hoy?</b><small>Descubre cómo vivieron los santos la desolación, el miedo, la cruz, la paz o la confianza.</small></span><i>Explorar 50 experiencias →</i></a></div>
-        <a class="home-youth-link" href="#/questions"><b>Preguntas de fe</b><span>Respuestas claras para las dudas más habituales →</span></a>
-        ${settings.showYouthHome ? `<a class="home-youth-link" href="#/youth"><b>Opus Dei Youth</b><span>Historias, vídeos y preguntas para vivir la fe hoy →</span></a>` : ""}
         <button class="customize-trigger subtle" data-action="customize-home" title="Cambiar el orden de Inicio">↕ Personalizar</button>
       </div>
 
-      <section class="home-start-map" aria-label="Qué puedes hacer en Atlas"><div class="home-start-intro"><span class="eyebrow">EMPIEZA AQUÍ</span><h2>Una app, tres puertas.</h2><p>La biblioteca es el centro; desde ella puedes consultar y rezar.</p></div><div class="home-start-cards"><a class="home-start-card start-read" href="#/biblioteca"><i>01</i><span>Biblioteca</span><b>Lee textos completos.</b><small>Biblia, Catecismo, santos, historia y literatura universal.</small></a><a class="home-start-card start-ask" href="#/preguntar"><i>02</i><span>IA sobre fuentes</span><b>Pregunta con contexto.</b><small>Especialistas que trabajan sobre las obras de Atlas.</small></a><a class="home-start-card start-pray" href="#/rezar"><i>03</i><span>Recursos para rezar</span><b>Vuelve a lo esencial.</b><small>Evangelio, oración, examen, santos y audios.</small></a></div><button class="home-start-about" data-action="intro-replay">✦ Conoce Atlas en 30 segundos</button></section>
+      <section class="home-start-map" aria-label="Qué es Atlas"><div class="home-start-cards"><a class="home-start-card start-read" href="#/biblioteca"><i>01</i><span>Biblioteca</span><b>Lee.</b><small>Los textos, juntos.</small></a><a class="home-start-card start-ask" href="#/preguntar"><i>02</i><span>IA + Biblioteca</span><b>Pregunta.</b><small>Elige quién los consulta.</small></a><article class="home-start-card start-pray start-resources"><i>03</i><span>Recursos</span><b>Vive.</b><small>Reza y fórmate.</small><div><a href="#/rezar">Rezar</a><a href="#/formarse">Formarte</a></div></article></div><button class="home-start-about" data-action="intro-replay">Ver en 20 segundos →</button></section>
 
       ${settings.customizeHome ? `<section class="customize-panel" style="order:.5"><span class="eyebrow">Orden de Inicio</span><h2>Organiza todos los bloques</h2>${homeOrder.map((id,index) => `<div class="customize-row"><b>${homeLabels[id]}</b><span><button data-home-move="${id}" data-direction="-1" ${index===0?"disabled":""}>↑</button><button data-home-move="${id}" data-direction="1" ${index===homeOrder.length-1?"disabled":""}>↓</button></span></div>`).join("")}</section>` : ""}
 
-      ${A.exam.homeCard()}
-
       <section class="section home-daily-audio" data-home-block="tenminutes" style="order:${homeOrder.indexOf("tenminutes") + 1}"><div class="daily-audio-mark"${tenMinutes?.imageUrl ? ` style="background-image:url('${esc(tenMinutes.imageUrl)}')"` : ""}>${tenMinutes?.imageUrl ? "" : "10′"}</div><div><span class="eyebrow">Oración de hoy · 10 Minutos con Jesús</span><h2>${esc(tenMinutes?.title || "Un rato diario con Jesús")}</h2><p>${esc(plainText(tenMinutes?.description || "Una meditación breve para comenzar o sostener el día."))}</p>${tenMinutes?.audioUrl ? `<audio controls preload="metadata" src="${esc(tenMinutes.audioUrl)}"></audio>` : ""}<div class="button-row">${tenMinutes?.pageUrl ? `<a class="primary-button" href="${esc(tenMinutes.pageUrl)}" target="_blank" rel="noopener">Escuchar episodio</a>` : ""}<a class="secondary-button" href="https://www.10minutosconjesus.org/" target="_blank" rel="noopener">Más en 10 Minutos ↗</a></div>${(window.ATLAS_TEN_MINUTES?.episodes || []).slice(1,7).length ? `<details class="ten-minutes-week"><summary>Audios de esta semana</summary><div>${(window.ATLAS_TEN_MINUTES.episodes || []).slice(1,7).map(item => `<a href="${esc(item.pageUrl)}" target="_blank" rel="noopener">${esc(item.title.replace(/^[0-9-]+\s*/, ""))}</a>`).join("")}</div></details>` : ""}</div></section>
-
-      ${settings.showMassFinderHome ? `<section class="section home-mass-finder" data-home-block="massfinder" style="order:${homeOrder.indexOf("massfinder") + 1}"><span class="mass-finder-mark" aria-label="Misas.org">✚</span><div><span class="eyebrow">Misas.org</span><h2>Encuentra una Misa cerca de ti</h2><p>Consulta templos, horarios y celebraciones actualizados directamente en Misas.org.</p><div class="button-row"><a class="primary-button" href="https://misas.org/" target="_blank" rel="noopener">Buscar horarios ↗</a><button class="text-button" data-home-hide="showMassFinderHome">Ocultar de Inicio</button></div></div></section>` : ""}
 
       <section class="section" data-home-block="today" style="order:${homeOrder.indexOf("today") + 1}"><div class="section-head"><div><h2>Atlas Hoy</h2><p>Una selección diaria calculada en tu dispositivo.</p></div><a href="#/discover">Ver Shorts</a></div>
         <div class="daily-strip">
@@ -319,8 +312,6 @@
           ${quizDoc ? `<article class="daily-card tone-${quizDoc.library.tone}" data-library="${quizDoc.libraryId}"><span class="eyebrow">Pregunta del día</span><h3>¿En qué biblioteca aparece «${esc(quizDoc.title)}»?</h3><div class="button-row">${catalog.libraries.map(lib => `<button class="ghost-button" data-quiz-answer="${lib.id}" data-quiz-correct="${quizDoc.libraryId}">${esc(lib.short)}</button>`).join("")}</div></article>` : ""}
         </div>
       </section>
-
-      <section class="section" data-home-block="libraries" style="order:${homeOrder.indexOf("libraries") + 1}"><div class="section-head"><div><h2>Explora las IA</h2><p>Elige un especialista según lo que quieras comprender.</p></div><div class="button-row"><button class="${settings.customizeLibraries ? "primary-button" : "secondary-button"}" data-action="customize-libraries">${settings.customizeLibraries ? "Terminar" : "Personalizar"}</button></div></div>${settings.customizeLibraries ? `<div class="library-customize-notice"><b>Tu biblioteca, a tu manera</b><span>Arrastra el orden con las flechas, fija tus favoritas, oculta las que no uses y añade etiquetas personales. Todo queda solo en este dispositivo.</span></div>` : ""}<div class="library-deck ${settings.customizeLibraries ? "is-customizing" : ""}">${libraries.map((lib,index) => libraryCard(lib,index,libraries.length)).join("")}</div></section>
 
       ${reading.length ? `<section class="section" data-home-block="reading" style="order:${homeOrder.indexOf("reading") + 1}"><div class="section-head"><div><h2>Continúa leyendo</h2><p>Retoma cada fuente exactamente donde la dejaste.</p></div><a href="#/saved">Ver actividad</a></div><div class="continue-reading-grid">${reading.map(item => readingItem(item.doc, item.progress)).join("")}</div></section>` : ""}
 
@@ -714,8 +705,12 @@
         for(let i=0;i<3;i++){ if((a[i]||0)!==(b[i]||0)) return (a[i]||0)-(b[i]||0); }
         return 0;
       };
+      const isMajorAtlasUpdate = (next, previous) => {
+        const a=String(next).split(".").map(Number), b=String(previous).split(".").map(Number);
+        return (a[0]||0) !== (b[0]||0) || (a[1]||0) !== (b[1]||0);
+      };
       if (compare(manifest.version, current) > 0) {
-        if (A.storage.get().notifications?.updates) sendAtlasNotification("Atlas ha llegado ✦", manifest.version === "1.0.0" ? "Ahora sí: Atlas 1.0.0 ya está aquí. Ábrela y pruébala: merece mucho la pena." : `Ya está disponible la versión ${manifest.version}.`, "#/updates", "atlas-update");
+        if (isMajorAtlasUpdate(manifest.version, current) && A.storage.get().notifications?.updates) sendAtlasNotification("Atlas se renueva ✦", `Atlas ${manifest.version} ya está disponible. Ábrela para descubrir lo nuevo.`, "#/updates", `atlas-update-${manifest.version}`);
         toast(`Versión ${manifest.version} encontrada. Preparando la actualización…`);
         await Promise.all((await caches.keys()).filter(key => key.startsWith("atlas-")).map(key => caches.delete(key)));
         if (registration?.waiting) registration.waiting.postMessage("SKIP_WAITING");
@@ -759,7 +754,7 @@
     const title = catechism ? "Catecismo" : "Concilio Vaticano II";
     const subtitle = catechism ? "La fe explicada para leer, consultar y llevar a la vida." : "Las constituciones, decretos y declaraciones del Concilio, reunidos para leerlos directamente.";
     const themes = catechism ? ["Credo", "Sacramentos", "Vida en Cristo", "Oración", "Iglesia", "Moral"] : [];
-    return `<section class="page atlas-v7 doctrine-focus ${catechism ? "catechism-focus" : "council-focus"}"><a class="author-works-back" href="#/biblioteca">← Biblioteca</a><header><span>${catechism ? "Fe explicada" : "Documentos fundamentales"}</span><h1>${title}</h1><p>${subtitle}</p></header>${themes.length ? `<nav class="doctrine-theme-row">${themes.map(theme => `<a href="#/reader/${encodeURIComponent(documents[0]?.id || "")}?q=${encodeURIComponent(theme)}">${esc(theme)}</a>`).join("")}</nav>` : ""}<section class="doctrine-doc-grid">${documents.map((doc, index) => `<a href="#/reader/${encodeURIComponent(doc.id)}"><i>${catechism ? "✦" : String(index + 1).padStart(2, "0")}</i><div><span>${esc(doc.category || "Documento")}</span><b>${esc(doc.title)}</b><small>${catechism ? "Abrir y buscar dentro →" : "Leer documento →"}</small></div></a>`).join("") || A.library.empty("No hay documentos disponibles", "El índice doctrinal se actualizará de nuevo.")}</section></section>`;
+    return `<section class="page atlas-v7 doctrine-focus ${catechism ? "catechism-focus" : "council-focus"}"><a class="author-works-back" href="#/biblioteca">← Biblioteca</a><header><span>${catechism ? "Fe explicada" : "Documentos fundamentales"}</span><h1>${title}</h1><p>${subtitle}</p></header>${themes.length ? `<nav class="doctrine-theme-row">${themes.map(theme => `<a href="#/reader/${encodeURIComponent(documents[0]?.id || "")}?q=${encodeURIComponent(theme)}">${esc(theme)}</a>`).join("")}</nav>` : ""}<section class="doctrine-doc-grid">${documents.map((doc, index) => `<a href="#/reader/${encodeURIComponent(doc.id)}"><i>${catechism ? "✦" : String(index + 1).padStart(2, "0")}</i><div><span>${esc(doc.category || "Documento")}</span><b>${esc(catechism && /Catecismo_Iglesia_Catol|Catecismo Iglesia Catol/i.test(`${doc.id} ${doc.title}`) ? "Catecismo de la Iglesia Católica" : doc.title)}</b><small>${catechism ? "Abrir y buscar dentro →" : "Leer documento →"}</small></div></a>`).join("") || A.library.empty("No hay documentos disponibles", "El índice doctrinal se actualizará de nuevo.")}</section></section>`;
   }
 
   function meditationIntro(lib) {
@@ -1308,11 +1303,23 @@
         document.querySelector("#install-help")?.removeAttribute("hidden");
       }
     }
+    if (target.dataset.installMode) {
+      const mode=target.dataset.installMode;
+      document.querySelectorAll("[data-install-mode]").forEach(button=>button.classList.toggle("active",button.dataset.installMode===mode));
+      const visual=document.querySelector("[data-install-visual]");
+      if (visual) {
+        const copy={iphone:["↗","Compartir","Añadir a pantalla de inicio"],android:["⋮","Menú","Instalar aplicación"],other:["☰","Menú","Añadir a pantalla de inicio"]}[mode];
+        visual.dataset.installVisual=mode;
+        visual.querySelector("i").textContent=copy[0];
+        visual.querySelector("b").textContent=copy[1];
+        visual.querySelector("strong").textContent=copy[2];
+      }
+    }
     if (action === "close-install-help") document.querySelector("#install-help")?.setAttribute("hidden", "");
     if (target.dataset.shareLibrary) {
       const library=A.data.libraryMap.get(target.dataset.shareLibrary); if (library) openShare({ title:`${library.short} · Atlas`, text:library.purpose, url:`${PUBLIC_APP_URL.split("#")[0]}share/libraries/${library.id}/`, image:libraryCoverUrl(library) || "assets/images/atlas-share-card.png" });
     }
-    if (action === "dismiss-install") { event.preventDefault(); A.storage.setSetting("installSuggestionDismissed", true); document.querySelector("#install-banner")?.setAttribute("hidden", ""); }
+    if (action === "dismiss-install") { event.preventDefault(); document.querySelector("#install-banner")?.setAttribute("hidden", ""); }
     if (target.dataset.channelGroup) {
       const map = { youtube: "disabledVideoChannels", music: "disabledMusicChannels", instagram: "disabledInstagramChannels" };
       const channels = [...(window.ATLAS_CHANNELS?.[target.dataset.channelGroup] || []), ...(A.storage.get().settings.customChannels?.[target.dataset.channelGroup] || [])];
@@ -1517,7 +1524,7 @@
   window.addEventListener("beforeinstallprompt", event => {
     event.preventDefault();
     installPromptEvent = event;
-    if (!A.storage.get().settings.installSuggestionDismissed) document.querySelector("#install-banner")?.removeAttribute("hidden");
+    document.querySelector("#install-banner")?.removeAttribute("hidden");
   });
 
   window.addEventListener("appinstalled", () => { installPromptEvent = null; document.querySelector("#install-banner")?.setAttribute("hidden", ""); });
@@ -1538,7 +1545,7 @@
   matchMedia("(prefers-color-scheme: dark)").addEventListener?.("change", applyTheme);
   applyTheme(); applyPersonalization(); registerPwa(); renderRouteView(); announceAtlasOneZero(); checkNotifications(); setInterval(checkNotifications, 30000); A.exam.checkReminders();
   const mobileInstall=/android|iphone|ipad|ipod/i.test(navigator.userAgent) && !navigator.standalone && !window.matchMedia("(display-mode: standalone)").matches;
-  if (mobileInstall && !A.storage.get().settings.installSuggestionDismissed) {
+  if (mobileInstall) {
     const banner=document.querySelector("#install-banner"), copy=banner?.querySelector("span");
     if (copy) copy.innerHTML=/iphone|ipad|ipod/i.test(navigator.userAgent)?"<b>Añade Atlas a tu inicio</b><small>En Safari: Compartir → Añadir a pantalla de inicio.</small>":"<b>Instala Atlas como aplicación</b><small>Ábrelo siempre desde tu pantalla de inicio.</small>";
     setTimeout(() => banner?.removeAttribute("hidden"), 1100);

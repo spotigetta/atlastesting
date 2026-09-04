@@ -1,0 +1,23 @@
+.learning-question-answer {
+  padding: 4px 18px 18px;
+  color: var(--muted);
+  font: 500 .9rem/1.68 var(--sans);
+}
+
+.learning-question-answer p { margin: 10px 0; }
+.learning-question-answer strong { color: var(--ink); font-weight: 800; }
+.learning-question-answer .learning-answer-lead {
+  font-family: var(--serif);
+  font-size: 1.08em;
+  line-height: 1.45;
+}
+.learning-question-answer em {
+  color: var(--atlas);
+  font-family: var(--serif);
+  font-size: 1.03em;
+}
+
+.learning-questions details[open] {
+  background: color-mix(in srgb, var(--surface) 88%, var(--tone-soft));
+  box-shadow: 0 12px 28px rgba(25, 47, 38, .08);
+}

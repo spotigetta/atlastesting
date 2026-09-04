@@ -1,7 +1,7 @@
 {
   "meta": {
     "app": "ATLAS",
-    "dataVersion": "1.0.3",
+    "dataVersion": "1.0.12",
     "generatedAt": "2026-08-25T22:28:16.679Z",
     "source": "Doce bibliotecas documentales y Sagradas Escrituras enlazables",
     "documents": 1385,
@@ -672,7 +672,7 @@
           "contentFile": "data/documents/d84c87c6b96f9696ab.json.gz",
           "catalogId": "0091",
           "file": "0091_Catecismo_Iglesia_Catol.md",
-          "title": "Catecismo Iglesia Catol",
+          "title": "Catecismo de la Iglesia Católica",
           "originals": "0091",
           "originalNumbers": [
             "0091"
@@ -10772,7 +10772,7 @@
           "contentFile": "data/documents/82f2b231f3731feeea.json.gz",
           "catalogId": "0091",
           "file": "0091_Catecismo_Iglesia_Catol.md",
-          "title": "Catecismo Iglesia Catol",
+          "title": "Catecismo de la Iglesia Católica",
           "originals": "0091",
           "originalNumbers": [
             "0091"
@@ -12704,7 +12704,7 @@
           "contentFile": "data/documents/66f274a4cb0345ea6c.json.gz",
           "catalogId": "0091",
           "file": "0091_Catecismo_Iglesia_Catol.md",
-          "title": "Catecismo Iglesia Catól.",
+          "title": "Catecismo de la Iglesia Católica",
           "originals": "0091",
           "originalNumbers": [
             "0091"
@@ -32444,7 +32444,7 @@
     {
       "id": "short-doctrine-document-23",
       "type": "curiosity",
-      "title": "Catecismo Iglesia Catol",
+      "title": "Catecismo de la Iglesia Católica",
       "text": "Una fuente de catecismo vigente / síntesis autorizada con 251.507 palabras: aproximadamente 1143 minutos de lectura.",
       "libraryId": "doctrine",
       "sourceDocumentId": "doctrine-0091_Catecismo_Iglesia_Catol",
@@ -37691,7 +37691,7 @@
     {
       "id": "short-liturgy-document-12",
       "type": "timeline",
-      "title": "Catecismo Iglesia Catol",
+      "title": "Catecismo de la Iglesia Católica",
       "text": "Catecismo vigente / síntesis autorizada · 251.507 palabras.",
       "libraryId": "liturgy",
       "sourceDocumentId": "liturgy-0091_Catecismo_Iglesia_Catol",
@@ -38769,7 +38769,7 @@
     {
       "id": "short-ortodoxia-document-4",
       "type": "document",
-      "title": "Catecismo Iglesia Catól.",
+      "title": "Catecismo de la Iglesia Católica",
       "text": "Nuevos documentos · 249.744 palabras.",
       "libraryId": "ortodoxia",
       "sourceDocumentId": "ortodoxia-0091_Catecismo_Iglesia_Catol",
