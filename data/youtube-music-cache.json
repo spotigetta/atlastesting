@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-01T01:20:33.014Z",
+  "updatedAt": "2026-09-05T00:13:32.919Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -40,6 +40,23 @@
     }
   ],
   "items": [
+    {
+      "id": "youtube-vPLRPXFavbQ",
+      "videoId": "vPLRPXFavbQ",
+      "type": "music",
+      "source": "Gen Verde",
+      "author": "Gen Verde",
+      "title": "젠베르데 - 용기를 내! 내가 세상을 이겼으니 | Gen Verde - Be Not Afraid Trust in Me (Lyric Video)",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=vPLRPXFavbQ",
+      "image": "https://i.ytimg.com/vi/vPLRPXFavbQ/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-09-04T15:03:02+00:00"
+    },
     {
       "id": "youtube-jvE2GsDzLP8",
       "videoId": "jvE2GsDzLP8",
