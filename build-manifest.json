@@ -1,8 +1,8 @@
 {
   "app": "ATLAS",
-  "version": "1.0.13",
-  "buildId": "6.4.22-mobile-logo-hero",
-  "generatedAt": "2026-09-07T08:30:00.000Z",
+  "version": "1.0.14",
+  "buildId": "6.4.23-home-actions-art",
+  "generatedAt": "2026-09-07T09:00:00.000Z",
   "basePath": "./",
   "catalog": "data/catalog.json"
 }
