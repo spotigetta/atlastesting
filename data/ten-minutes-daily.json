@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-09-05T00:13:24.262Z",
+  "updatedAt": "2026-09-07T00:06:50.877Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "07-09-2026 Imparable - 10 Minutos con Jesús",
+      "publishedAt": "2026-09-06T22:44:31.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/07-09-2026-imparable-10-minutos-con-jesus--74945901",
+      "audioUrl": "https://api.spreaker.com/download/episode/74945901/07_09_2026_imparable_10_minutos_jesus_mf_180103784_feed_1.mp3",
+      "duration": "720",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
+    {
+      "title": "06-09-2026 No seas tonto - 10 Minutos con Jesús",
+      "publishedAt": "2026-09-06T22:39:53.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/06-09-2026-no-seas-tonto-10-minutos-con-jesus--74945900",
+      "audioUrl": "https://api.spreaker.com/download/episode/74945900/06_09_2026_no_seas_tonto_10_minutos_con_mf_180103778_feed_1.mp3",
+      "duration": "684",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "04-09-2026 Hasta que duela - 10 Minutos con Jesús",
       "publishedAt": "2026-09-04T22:06:00.000Z",
@@ -162,24 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/19-08-2026-la-historia-de-angel-de-san-jose-10-minutos-con-jesus--74277502",
       "audioUrl": "https://api.spreaker.com/download/episode/74277502/19_08_2026_la_historia_angel_san_jose_mf_179144311_feed_1.mp3",
       "duration": "654",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "18-.08-2026 El Secreto de la Felicidad VI (100 X 1) - 10 Minutos con Jesús",
-      "publishedAt": "2026-08-17T23:16:54.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/18-08-2026-el-secreto-de-la-felicidad-vi-100-x-1-10-minutos-con-jesus--74229166",
-      "audioUrl": "https://api.spreaker.com/download/episode/74229166/18_08_2026_el_secreto_felicidad_vi_100_mf_179051248_feed_1.mp3",
-      "duration": "680",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "17-08-2026 Chequeo al cumplimiento - 10 Minutos con Jesús",
-      "publishedAt": "2026-08-17T00:22:46.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/17-08-2026-chequeo-al-cumplimiento-10-minutos-con-jesus--74164025",
-      "audioUrl": "https://api.spreaker.com/download/episode/74164025/17_08_2026_chequeo_al_cumplimiento_10_minutos_con_mf_179003755_feed_1.mp3",
-      "duration": "631",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
