@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-07T00:06:50.877Z",
+  "updatedAt": "2026-09-08T00:34:10.662Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "08-09-2026 La Aurora que el mundo no vio - 10 Minutos con Jesús",
+      "publishedAt": "2026-09-07T23:57:57.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/08-09-2026-la-aurora-que-el-mundo-no-vio-10-minutos-con-jesus--74986318",
+      "audioUrl": "https://api.spreaker.com/download/episode/74986318/08_09_2026_la_aurora_mundo_no_vio_mf_180153644_feed_1.mp3",
+      "duration": "617",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "07-09-2026 Imparable - 10 Minutos con Jesús",
       "publishedAt": "2026-09-06T22:44:31.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/20-08-2026-te-invito-a-una-fiesta-10-minutos-con-jesus--74343594",
       "audioUrl": "https://api.spreaker.com/download/episode/74343594/20_08_2026_te_invito_a_fiesta_10_mf_179217714_feed_1.mp3",
       "duration": "631",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "19-08-2026 La historia de Ángel de San José - 10 Minutos con Jesús",
-      "publishedAt": "2026-08-18T22:37:47.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/19-08-2026-la-historia-de-angel-de-san-jose-10-minutos-con-jesus--74277502",
-      "audioUrl": "https://api.spreaker.com/download/episode/74277502/19_08_2026_la_historia_angel_san_jose_mf_179144311_feed_1.mp3",
-      "duration": "654",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
