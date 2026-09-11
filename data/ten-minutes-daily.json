@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-10T00:22:38.487Z",
+  "updatedAt": "2026-09-11T00:18:01.176Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "11-09-2026 Dios exagera (I) - 10 Minutos con Jesùs",
+      "publishedAt": "2026-09-10T23:36:49.000Z",
+      "description": "Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compartir tu intimidad con Dios. Busca tu momento, piensa que estás con Él y dale al play. Para recibir cada día tu meditación por Whatsapp pulsa aquí: http://dozz.es/nu36t Toda la info en nuestra web: www.10m",
+      "pageUrl": "https://www.spreaker.com/episode/11-09-2026-dios-exagera-i-10-minutos-con-jesus--75060510",
+      "audioUrl": "https://api.spreaker.com/download/episode/75060510/11_09_2026_dios_exagera_i_10_minutos_con_mf_180389277_feed_1.mp3",
+      "duration": "647",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "10-09-2026 Un buen recuerdo - 10 Minutos con Jesús",
       "publishedAt": "2026-09-09T21:17:21.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/23-08-2026-y-tu-quien-dices-que-soy-yo-10-minutos-con-jesus--74572877",
       "audioUrl": "https://api.spreaker.com/download/episode/74572877/23_08_2026_y_tu_quien_dices_soy_yo_mf_179355112_feed_1.mp3",
       "duration": "663",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "22-08-2026 La corona somos nosotros - 10 Minutos con Jesús",
-      "publishedAt": "2026-08-21T23:02:57.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/22-08-2026-la-corona-somos-nosotros-10-minutos-con-jesus--74490197",
-      "audioUrl": "https://api.spreaker.com/download/episode/74490197/22_08_2026_la_corona_somos_nosotros_10_minutos_mf_179312679_feed_1.mp3",
-      "duration": "607",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
