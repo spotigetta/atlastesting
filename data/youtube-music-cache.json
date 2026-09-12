@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-11T00:18:08.392Z",
+  "updatedAt": "2026-09-12T00:25:51.673Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -40,6 +40,23 @@
     }
   ],
   "items": [
+    {
+      "id": "youtube-w5rfj3vfS9w",
+      "videoId": "w5rfj3vfS9w",
+      "type": "music",
+      "source": "Gen Verde",
+      "author": "Gen Verde",
+      "title": "Be Not Afraid Trust In Me",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=w5rfj3vfS9w",
+      "image": "https://i.ytimg.com/vi/w5rfj3vfS9w/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-09-11T16:26:33+00:00"
+    },
     {
       "id": "youtube-1uhfU157KJk",
       "videoId": "1uhfU157KJk",
