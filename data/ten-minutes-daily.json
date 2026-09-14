@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-09-12T00:25:43.805Z",
+  "updatedAt": "2026-09-14T00:18:25.964Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "14-09-2026 ¿Festejar a un agonizante? - 10 Minutos con Jesús",
+      "publishedAt": "2026-09-13T22:21:31.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/14-09-2026-festejar-a-un-agonizante-10-minutos-con-jesus--75108358",
+      "audioUrl": "https://api.spreaker.com/download/episode/75108358/14_09_2026_festejar_a_agonizante_10_minutos_mf_180500702_feed_1.mp3",
+      "duration": "754",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
+    {
+      "title": "13-09-2026 Tres razones para perdonar - 10 Minutos con Jesús",
+      "publishedAt": "2026-09-12T22:43:04.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/13-09-2026-tres-razones-para-perdonar-10-minutos-con-jesus--75101899",
+      "audioUrl": "https://api.spreaker.com/download/episode/75101899/13_09_2026_tres_razones_para_perdonar_10_minutos_mf_180468705_feed_1.mp3",
+      "duration": "677",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "12-09-2026 El nombre de la virgen era María - 10 M9iutos con Jesús",
       "publishedAt": "2026-09-11T21:31:55.000Z",
@@ -162,24 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/26-08-2026-un-agujero-en-la-pared-ii-10-minutos-con-jesus--74688048",
       "audioUrl": "https://api.spreaker.com/download/episode/74688048/26_08_2026_un_agujero_pared_ii_mf_179500699_feed_1.mp3",
       "duration": "700",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "25-008-2026 Detalles, no pequeñeces - 10 Minutos con Jesús",
-      "publishedAt": "2026-08-24T21:00:00.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/25-008-2026-detalles-no-pequeneces-10-minutos-con-jesus--74663118",
-      "audioUrl": "https://api.spreaker.com/download/episode/74663118/25_008_2026_detalles_no_pequeneces_10_minutos_con_mf_179406410_feed_1.mp3",
-      "duration": "680",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "24-08-2026 Dios no me convence - 10 Minutos con Jesús",
-      "publishedAt": "2026-08-23T22:14:55.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/24-08-2026-dios-no-me-convence-10-minutos-con-jesus--74602899",
-      "audioUrl": "https://api.spreaker.com/download/episode/74602899/24_08_2026_dios_no_me_convence_10_minutos_mf_179372557_feed_1.mp3",
-      "duration": "760",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
