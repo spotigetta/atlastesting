@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-09-17T00:43:48.554Z",
+  "updatedAt": "2026-09-19T00:27:32.160Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "19-09-2026 Cerebritis mal - 10 Minutos con Jesús",
+      "publishedAt": "2026-09-18T21:09:26.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/19-09-2026-cerebritis-mal-10-minutos-con-jesus--75218469",
+      "audioUrl": "https://api.spreaker.com/download/episode/75218469/19_09_2026_cerebritis_mal_10_minutos_jesus_mf_180837937_feed_1.mp3",
+      "duration": "656",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
+    {
+      "title": "18-09-2026 Un corazón donde todos caben - 10 Minutos con Jesús",
+      "publishedAt": "2026-09-18T07:21:08.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/18-09-2026-un-corazon-donde-todos-caben-10-minutos-con-jesus--75202335",
+      "audioUrl": "https://api.spreaker.com/download/episode/75202335/18_09_2026_un_corazon_donde_todos_caben_10_mf_180806124_feed_1.mp3",
+      "duration": "596",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "17-09-2026 Detalles de amor - 10 Minutos con Jesús",
       "publishedAt": "2026-09-16T22:40:54.000Z",
@@ -162,24 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/31-08-2026-el-me-trae-libertad-10-minutos-con-jesus--74759669",
       "audioUrl": "https://api.spreaker.com/download/episode/74759669/31_08_2026_el_me_trae_libertad_10_minutos_mf_179726401_feed_1.mp3",
       "duration": "597",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "30-08-2026 Algo nuevo puede nacer - 10 Minutos con Jesús",
-      "publishedAt": "2026-08-30T01:47:12.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/30-08-2026-algo-nuevo-puede-nacer-10-minutos-con-jesus--74751283",
-      "audioUrl": "https://api.spreaker.com/download/episode/74751283/30_08_2026_algo_nuevo_puede_nacer_10_minutos_mf_179700471_feed_1.mp3",
-      "duration": "625",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "29-08-2026 Mañana no existe - 10 Minutos con Jesús",
-      "publishedAt": "2026-08-28T22:04:58.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/29-08-2026-manana-no-existe-10-minutos-con-jesus--74740307",
-      "audioUrl": "https://api.spreaker.com/download/episode/74740307/29_08_2026_manana_no_existe_10_minutos_con_mf_179668541_feed_1.mp3",
-      "duration": "620",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
