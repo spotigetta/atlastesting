@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-19T00:27:32.160Z",
+  "updatedAt": "2026-09-21T00:20:51.515Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "20-09-2026 Un \"burn rate\" por las nubes - 10 Minutos con Jesús",
+      "publishedAt": "2026-09-19T23:28:46.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/20-09-2026-un-burn-rate-por-las-nubes-10-minutos-con-jesus--75246649",
+      "audioUrl": "https://api.spreaker.com/download/episode/75246649/20_09_2026_un_burn_rate_nubes_mf_180866789_feed_1.mp3",
+      "duration": "616",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "19-09-2026 Cerebritis mal - 10 Minutos con Jesús",
       "publishedAt": "2026-09-18T21:09:26.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/01-09-2026-viva-y-eficaz-10-minutos-con-jesus--74774468",
       "audioUrl": "https://api.spreaker.com/download/episode/74774468/01_09_2026_viva_eficaz_10_minutos_con_mf_179777712_feed_1.mp3",
       "duration": "650",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "31-08-2026 Él me trae libertad - 10 Minutos con Jesús",
-      "publishedAt": "2026-08-30T22:18:36.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/31-08-2026-el-me-trae-libertad-10-minutos-con-jesus--74759669",
-      "audioUrl": "https://api.spreaker.com/download/episode/74759669/31_08_2026_el_me_trae_libertad_10_minutos_mf_179726401_feed_1.mp3",
-      "duration": "597",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
