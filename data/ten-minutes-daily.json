@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-09-22T00:58:18.453Z",
+  "updatedAt": "2026-09-23T00:47:06.109Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "23-09-2026 El ghosting de Jesús a María - 10 Minutos con Jesús",
+      "publishedAt": "2026-09-22T22:04:30.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/23-09-2026-el-ghosting-de-jesus-a-maria-10-minutos-con-jesus--75305653",
+      "audioUrl": "https://api.spreaker.com/download/episode/75305653/23_09_2026_el_ghosting_jesus_a_maria_mf_181027051_feed_1.mp3",
+      "duration": "608",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
+    {
+      "title": "22-09-2026 Atravesar el gentío - 10 Minutos con Jesús",
+      "publishedAt": "2026-09-22T07:24:02.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/22-09-2026-atravesar-el-gentio-10-minutos-con-jesus--75292724",
+      "audioUrl": "https://api.spreaker.com/download/episode/75292724/22_09_2026_atravesar_gentio_10_minutos_con_mf_180966822_feed_1.mp3",
+      "duration": "635",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "21-09-2026 Jesús y Momo - 10 Minutos con Jesús",
       "publishedAt": "2026-09-22T00:02:17.000Z",
@@ -162,24 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/04-09-2026-odres-premium-10-minutos-con-jesus--74880954",
       "audioUrl": "https://api.spreaker.com/download/episode/74880954/04_09_2026_odres_premium_10_minutos_jesus_mf_179996467_feed_1.mp3",
       "duration": "651",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "03-09-2026 Jesús y la playa - 10 Minutos con Jesús",
-      "publishedAt": "2026-09-02T22:28:06.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/03-09-2026-jesus-y-la-playa-10-minutos-con-jesus--74839582",
-      "audioUrl": "https://api.spreaker.com/download/episode/74839582/03_09_2026_jesus_playa_10_minutos_mf_179945877_feed_1.mp3",
-      "duration": "548",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "02-09-2026 La buena soledad - 10 Minutos con Jesús",
-      "publishedAt": "2026-09-01T21:10:40.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/02-09-2026-la-buena-soledad-10-minutos-con-jesus--74794431",
-      "audioUrl": "https://api.spreaker.com/download/episode/74794431/02_09_2026_la_buena_soledad_10_minutos_con_mf_179867846_feed_1.mp3",
-      "duration": "612",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
