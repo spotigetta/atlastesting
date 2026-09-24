@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-23T00:47:13.910Z",
+  "updatedAt": "2026-09-24T00:38:46.034Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -40,6 +40,40 @@
     }
   ],
   "items": [
+    {
+      "id": "youtube-tcDZ3WqB4-A",
+      "videoId": "tcDZ3WqB4-A",
+      "type": "music",
+      "source": "Gen Verde",
+      "author": "Gen Verde",
+      "title": "Abbiamo delle novità sul nostro tour in Africa!",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=tcDZ3WqB4-A",
+      "image": "https://i.ytimg.com/vi/tcDZ3WqB4-A/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-09-22T14:03:36+00:00"
+    },
+    {
+      "id": "youtube-MxRT2nEKA2g",
+      "videoId": "MxRT2nEKA2g",
+      "type": "music",
+      "source": "Gen Verde",
+      "author": "Gen Verde",
+      "title": "La Cittadella di Loppiano ha accolto il Ritiro per Cori con il Gen Verde! 🎶",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=MxRT2nEKA2g",
+      "image": "https://i.ytimg.com/vi/MxRT2nEKA2g/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-09-15T09:07:09+00:00"
+    },
     {
       "id": "youtube-w5rfj3vfS9w",
       "videoId": "w5rfj3vfS9w",
