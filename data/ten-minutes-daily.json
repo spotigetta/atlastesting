@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-25T00:38:46.469Z",
+  "updatedAt": "2026-09-26T00:43:45.818Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "26-09-2026 Pasmados -10 Minutos con Jesús",
+      "publishedAt": "2026-09-25T22:32:01.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/26-09-2026-pasmados-10-minutos-con-jesus--75365857",
+      "audioUrl": "https://api.spreaker.com/download/episode/75365857/26_09_2026_pasmados_10_minutos_jesus_mf_181204867_feed_1.mp3",
+      "duration": "597",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "25-09-2026 Fe sin complejos - 10 Minutos con Jesús",
       "publishedAt": "2026-09-24T20:11:52.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/07-09-2026-imparable-10-minutos-con-jesus--74945901",
       "audioUrl": "https://api.spreaker.com/download/episode/74945901/07_09_2026_imparable_10_minutos_jesus_mf_180103784_feed_1.mp3",
       "duration": "720",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "06-09-2026 No seas tonto - 10 Minutos con Jesús",
-      "publishedAt": "2026-09-06T22:39:53.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/06-09-2026-no-seas-tonto-10-minutos-con-jesus--74945900",
-      "audioUrl": "https://api.spreaker.com/download/episode/74945900/06_09_2026_no_seas_tonto_10_minutos_con_mf_180103778_feed_1.mp3",
-      "duration": "684",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
