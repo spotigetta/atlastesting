@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-28T00:58:40.521Z",
+  "updatedAt": "2026-09-29T02:07:35.829Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "29-09-2026 Tres grandes amigos - 10 Minutos con Jesús",
+      "publishedAt": "2026-09-28T23:02:43.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/29-09-2026-tres-grandes-amigos-10-minutos-con-jesus--75419527",
+      "audioUrl": "https://api.spreaker.com/download/episode/75419527/29_09_2026_tres_grandes_amigos_10_minutos_con_mf_181314153_feed_1.mp3",
+      "duration": "623",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "28-09-2026 Bendito sea el nombre del Señor - 10 Minutos con Jesús",
       "publishedAt": "2026-09-27T21:28:38.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/10-09-2026-un-buen-recuerdo-10-minutos-con-jesus--75032837",
       "audioUrl": "https://api.spreaker.com/download/episode/75032837/10_09_2026_un_buen_recuerdo_10_minutos_con_mf_180332819_feed_1.mp3",
       "duration": "642",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "09-09-2026 Vivir sin prisas - 10 Minutos con Jesús",
-      "publishedAt": "2026-09-08T22:12:34.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/09-09-2026-vivir-sin-prisas-10-minutos-con-jesus--75010583",
-      "audioUrl": "https://api.spreaker.com/download/episode/75010583/09_09_2026_vivir_sin_prisas_10_minutos_con_mf_180249133_feed_1.mp3",
-      "duration": "596",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
