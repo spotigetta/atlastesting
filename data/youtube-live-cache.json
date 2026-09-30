@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-29T02:07:43.024Z",
+  "updatedAt": "2026-09-30T01:22:46.108Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -335,6 +335,23 @@
   ],
   "items": [
     {
+      "id": "youtube-v2Zl_x7LQ7k",
+      "videoId": "v2Zl_x7LQ7k",
+      "type": "video",
+      "source": "Dr. Arthur Brooks",
+      "author": "Dr. Arthur Brooks",
+      "title": "When Success Becomes a Burden",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=v2Zl_x7LQ7k",
+      "image": "https://i.ytimg.com/vi/v2Zl_x7LQ7k/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-09-29T22:16:15+00:00"
+    },
+    {
       "id": "youtube-ehVnU5sy_1s",
       "videoId": "ehVnU5sy_1s",
       "type": "video",
@@ -350,6 +367,23 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-09-28T14:30:08+00:00"
+    },
+    {
+      "id": "youtube-m_D5HMrWg9g",
+      "videoId": "m_D5HMrWg9g",
+      "type": "video",
+      "source": "Dr. Arthur Brooks",
+      "author": "Dr. Arthur Brooks",
+      "title": "4 Ways to Avoid Your Professional Decline",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=m_D5HMrWg9g",
+      "image": "https://i.ytimg.com/vi/m_D5HMrWg9g/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-09-28T11:00:07+00:00"
     },
     {
       "id": "youtube-kMU1JFCWSJM",
@@ -42518,40 +42552,6 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-01-22T11:01:05+00:00"
-    },
-    {
-      "id": "youtube-0KPyBG9LyjE",
-      "videoId": "0KPyBG9LyjE",
-      "type": "video",
-      "source": "Francisco Ugarte",
-      "author": "Francisco Ugarte",
-      "title": "Entrevista - Resentimiento y perdón",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=0KPyBG9LyjE",
-      "image": "https://i.ytimg.com/vi/0KPyBG9LyjE/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-01-16T23:03:34+00:00"
-    },
-    {
-      "id": "youtube-A65BMG3JvBc",
-      "videoId": "A65BMG3JvBc",
-      "type": "video",
-      "source": "Hakuna Group Music",
-      "author": "Hakuna Group Music",
-      "title": "Track 7: Los coros del universo",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=A65BMG3JvBc",
-      "image": "https://i.ytimg.com/vi/A65BMG3JvBc/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-01-16T21:17:37+00:00"
     }
   ],
   "failures": [
@@ -42577,11 +42577,11 @@
     },
     {
       "source": "Hallow: Prayer & Meditation",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Catholic Stuff",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Fundación CARF",
@@ -42597,11 +42597,11 @@
     },
     {
       "source": "ACI Prensa",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Jordan B. Peterson",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Luis Gutiérrez Rojas",
@@ -42613,15 +42613,11 @@
     },
     {
       "source": "Víctor Küppers",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "It's Time To Think",
       "error": "500 www.youtube.com"
-    },
-    {
-      "source": "Dr. Arthur Brooks",
-      "error": "404 www.youtube.com"
     },
     {
       "source": "María Calvo",
@@ -42673,15 +42669,15 @@
     },
     {
       "source": "Sin Medias Tintas",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "EWTN España",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Álex Rovira",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Nuccio Ordine",
@@ -42689,7 +42685,7 @@
     },
     {
       "source": "Álvaro Bilbao",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "María Álvarez de las Asturias",
@@ -42697,7 +42693,7 @@
     },
     {
       "source": "Pablo Blanco Sarto",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Scott Hahn",
@@ -42749,7 +42745,7 @@
     },
     {
       "source": "EWTN Español",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Vatican News Español",
@@ -42768,11 +42764,19 @@
       "error": "No se encontró el identificador del canal"
     },
     {
+      "source": "The Rest Is History",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "ISCR Universidad de Navarra",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "The Catholic Talk Show",
+      "error": "500 www.youtube.com"
+    },
+    {
+      "source": "Facultad de Teología UNAV",
       "error": "404 www.youtube.com"
     },
     {

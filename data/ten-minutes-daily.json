@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-29T02:07:35.829Z",
+  "updatedAt": "2026-09-30T01:22:38.841Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "30-09-2026 San Jerónimo - 10 Minutos con Jesús",
+      "publishedAt": "2026-09-29T23:08:18.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/30-09-2026-san-jeronimo-10-minutos-con-jesus--75444339",
+      "audioUrl": "https://api.spreaker.com/download/episode/75444339/30_09_2026_san_jeronimo_10_minutos_jesus_mf_181396013_feed_1.mp3",
+      "duration": "650",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "29-09-2026 Tres grandes amigos - 10 Minutos con Jesús",
       "publishedAt": "2026-09-28T23:02:43.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/11-09-2026-dios-exagera-i-10-minutos-con-jesus--75060510",
       "audioUrl": "https://api.spreaker.com/download/episode/75060510/11_09_2026_dios_exagera_i_10_minutos_con_mf_180389277_feed_1.mp3",
       "duration": "647",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "10-09-2026 Un buen recuerdo - 10 Minutos con Jesús",
-      "publishedAt": "2026-09-09T21:17:21.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/10-09-2026-un-buen-recuerdo-10-minutos-con-jesus--75032837",
-      "audioUrl": "https://api.spreaker.com/download/episode/75032837/10_09_2026_un_buen_recuerdo_10_minutos_con_mf_180332819_feed_1.mp3",
-      "duration": "642",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
