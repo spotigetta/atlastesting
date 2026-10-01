@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-09-30T01:22:46.108Z",
+  "updatedAt": "2026-10-01T01:23:49.576Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -335,6 +335,57 @@
   ],
   "items": [
     {
+      "id": "youtube-xqkAaJ4Yd6M",
+      "videoId": "xqkAaJ4Yd6M",
+      "type": "video",
+      "source": "Dr. Arthur Brooks",
+      "author": "Dr. Arthur Brooks",
+      "title": "3 Simple Rules to Change Your Relationship With Your Phone",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=xqkAaJ4Yd6M",
+      "image": "https://i.ytimg.com/vi/xqkAaJ4Yd6M/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-09-30T23:04:42+00:00"
+    },
+    {
+      "id": "youtube-I64x8tQoys8",
+      "videoId": "I64x8tQoys8",
+      "type": "video",
+      "source": "Bishop Robert Barron",
+      "author": "Bishop Robert Barron",
+      "title": "The Restored Caravaggios at San Luigi dei Francesi in Rome",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=I64x8tQoys8",
+      "image": "https://i.ytimg.com/vi/I64x8tQoys8/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-09-30T20:30:25+00:00"
+    },
+    {
+      "id": "youtube-lVazV8kELJU",
+      "videoId": "lVazV8kELJU",
+      "type": "video",
+      "source": "Bishop Robert Barron",
+      "author": "Bishop Robert Barron",
+      "title": "Speaking at the U.S. Embassy to the Holy See in Rome",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=lVazV8kELJU",
+      "image": "https://i.ytimg.com/vi/lVazV8kELJU/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-09-30T15:57:50+00:00"
+    },
+    {
       "id": "youtube-v2Zl_x7LQ7k",
       "videoId": "v2Zl_x7LQ7k",
       "type": "video",
@@ -384,6 +435,23 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-09-28T11:00:07+00:00"
+    },
+    {
+      "id": "youtube-y4NNuy50J5I",
+      "videoId": "y4NNuy50J5I",
+      "type": "video",
+      "source": "Bishop Robert Barron",
+      "author": "Bishop Robert Barron",
+      "title": "Modern Christian Martyrdom | Pt. 2",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=y4NNuy50J5I",
+      "image": "https://i.ytimg.com/vi/y4NNuy50J5I/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-09-28T11:00:02+00:00"
     },
     {
       "id": "youtube-kMU1JFCWSJM",
@@ -42485,73 +42553,6 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-02-01T11:19:36+00:00"
-    },
-    {
-      "id": "youtube-mNYOkDtlqKA",
-      "videoId": "mNYOkDtlqKA",
-      "type": "video",
-      "source": "Francisco Ugarte",
-      "author": "Francisco Ugarte",
-      "title": "Entrevista - Autenticidad 02",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=mNYOkDtlqKA",
-      "image": "https://i.ytimg.com/vi/mNYOkDtlqKA/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-01-30T23:01:11+00:00"
-    },
-    {
-      "id": "youtube-M3XcMrM_OUA",
-      "videoId": "M3XcMrM_OUA",
-      "type": "video",
-      "source": "Luis Gutiérrez Rojas",
-      "author": "Luis Gutiérrez Rojas",
-      "title": "El dolor también te enseña a valorar la vida. Agradecer cambia la forma de vivirla.",
-      "description": "Vivimos rodeados de cosas que damos por hechas. Seguridad, educación, sanidad, estabilidad. Y muchas veces no somos conscientes de lo extraordinario que es todo eso. No porque la vida sea perfecta. No lo es. El dolor, la pérdida, la frustración y el enfado forman parte de vivir. Pero incluso ahí, el dolor no es absurdo. A veces es justo lo que da profundidad",
-      "url": "https://www.youtube.com/shorts/M3XcMrM_OUA",
-      "image": "https://i.ytimg.com/vi/M3XcMrM_OUA/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-01-30T13:19:34+00:00"
-    },
-    {
-      "id": "youtube-Qe_nEjibPLA",
-      "videoId": "Qe_nEjibPLA",
-      "type": "video",
-      "source": "Francisco Ugarte",
-      "author": "Francisco Ugarte",
-      "title": "Entrevista - Autenticidad 01",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=Qe_nEjibPLA",
-      "image": "https://i.ytimg.com/vi/Qe_nEjibPLA/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-01-23T23:00:25+00:00"
-    },
-    {
-      "id": "youtube-GENvazoZY6s",
-      "videoId": "GENvazoZY6s",
-      "type": "video",
-      "source": "Bosco Films",
-      "author": "Bosco Films",
-      "title": "🙏 \"INMACULADA\" | TRAILER OFICIAL ESPAÑOL",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=GENvazoZY6s",
-      "image": "https://i.ytimg.com/vi/GENvazoZY6s/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-01-22T11:01:05+00:00"
     }
   ],
   "failures": [
@@ -42572,12 +42573,8 @@
       "error": "fetch failed"
     },
     {
-      "source": "Bishop Robert Barron",
-      "error": "404 www.youtube.com"
-    },
-    {
       "source": "Hallow: Prayer & Meditation",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Catholic Stuff",
@@ -42589,7 +42586,7 @@
     },
     {
       "source": "Bosco Films",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "QNTLC",
@@ -42601,7 +42598,7 @@
     },
     {
       "source": "Jordan B. Peterson",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Luis Gutiérrez Rojas",
@@ -42617,7 +42614,7 @@
     },
     {
       "source": "It's Time To Think",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "María Calvo",
@@ -42657,7 +42654,7 @@
     },
     {
       "source": "Álvaro González-Alorda",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Mario Alonso Puig",
@@ -42669,15 +42666,15 @@
     },
     {
       "source": "Sin Medias Tintas",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "EWTN España",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Álex Rovira",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Nuccio Ordine",
@@ -42749,7 +42746,7 @@
     },
     {
       "source": "Vatican News Español",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Hakuna Group Music",
@@ -42765,7 +42762,7 @@
     },
     {
       "source": "The Rest Is History",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "ISCR Universidad de Navarra",
@@ -42773,7 +42770,7 @@
     },
     {
       "source": "The Catholic Talk Show",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Facultad de Teología UNAV",
@@ -42785,7 +42782,7 @@
     },
     {
       "source": "Francisco Insa",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Alfonso Aguiló",

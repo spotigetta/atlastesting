@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-09-30T01:22:38.841Z",
+  "updatedAt": "2026-10-01T01:23:43.941Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "01-10-2026 Teresita, Teresita... - 10 Minutos con Jesús",
+      "publishedAt": "2026-09-30T21:57:36.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/01-10-2026-teresita-teresita-10-minutos-con-jesus--75466777",
+      "audioUrl": "https://api.spreaker.com/download/episode/75466777/01_10_2026_teresita_teresita_10_minutos_jesus_mf_181481800_feed_1.mp3",
+      "duration": "642",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "30-09-2026 San Jerónimo - 10 Minutos con Jesús",
       "publishedAt": "2026-09-29T23:08:18.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/12-09-2026-el-nombre-de-la-virgen-era-maria-10-m9iutos-con-jesus--75078624",
       "audioUrl": "https://api.spreaker.com/download/episode/75078624/12_09_2026_el_nombre_virgen_era_maria_mf_180437508_feed_1.mp3",
       "duration": "619",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "11-09-2026 Dios exagera (I) - 10 Minutos con Jesùs",
-      "publishedAt": "2026-09-10T23:36:49.000Z",
-      "description": "Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compartir tu intimidad con Dios. Busca tu momento, piensa que estás con Él y dale al play. Para recibir cada día tu meditación por Whatsapp pulsa aquí: http://dozz.es/nu36t Toda la info en nuestra web: www.10m",
-      "pageUrl": "https://www.spreaker.com/episode/11-09-2026-dios-exagera-i-10-minutos-con-jesus--75060510",
-      "audioUrl": "https://api.spreaker.com/download/episode/75060510/11_09_2026_dios_exagera_i_10_minutos_con_mf_180389277_feed_1.mp3",
-      "duration": "647",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
