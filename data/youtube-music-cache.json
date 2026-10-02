@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-01T01:23:50.147Z",
-  "source": "previous-snapshot",
+  "updatedAt": "2026-10-02T01:44:40.557Z",
+  "source": "youtube-rss",
   "channels": [
     {
       "name": "Hakuna Group Music",
@@ -2574,10 +2574,6 @@
   ],
   "failures": [
     {
-      "source": "Hakuna Group Music",
-      "error": "404 www.youtube.com"
-    },
-    {
       "source": "Inazio",
       "error": "404 www.youtube.com"
     },
@@ -2607,7 +2603,7 @@
     },
     {
       "source": "Gen Verde",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     }
   ]
 }

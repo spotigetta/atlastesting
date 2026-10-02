@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-10-01T01:23:43.941Z",
+  "updatedAt": "2026-10-02T01:44:33.618Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "02-10-2026 Jesús, los ángeles y... yo - 10 Minutos con Jesús",
+      "publishedAt": "2026-10-01T22:41:45.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/02-10-2026-jesus-los-angeles-y-yo-10-minutos-con-jesus--75505618",
+      "audioUrl": "https://api.spreaker.com/download/episode/75505618/02_10_2026_jesus_angeles_y_yo_10_mf_181535972_feed_1.mp3",
+      "duration": "718",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "01-10-2026 Teresita, Teresita... - 10 Minutos con Jesús",
       "publishedAt": "2026-09-30T21:57:36.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/13-09-2026-tres-razones-para-perdonar-10-minutos-con-jesus--75101899",
       "audioUrl": "https://api.spreaker.com/download/episode/75101899/13_09_2026_tres_razones_para_perdonar_10_minutos_mf_180468705_feed_1.mp3",
       "duration": "677",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "12-09-2026 El nombre de la virgen era María - 10 M9iutos con Jesús",
-      "publishedAt": "2026-09-11T21:31:55.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/12-09-2026-el-nombre-de-la-virgen-era-maria-10-m9iutos-con-jesus--75078624",
-      "audioUrl": "https://api.spreaker.com/download/episode/75078624/12_09_2026_el_nombre_virgen_era_maria_mf_180437508_feed_1.mp3",
-      "duration": "619",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
