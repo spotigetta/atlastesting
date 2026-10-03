@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T01:44:39.561Z",
+  "updatedAt": "2026-10-03T01:16:12.457Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -335,6 +335,57 @@
   ],
   "items": [
     {
+      "id": "youtube-Mb9MS6bKmvU",
+      "videoId": "Mb9MS6bKmvU",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "León XIV une en el Vaticano a un millón de niños en un Rosario por la paz",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=Mb9MS6bKmvU",
+      "image": "https://i.ytimg.com/vi/Mb9MS6bKmvU/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-02T12:30:52+00:00"
+    },
+    {
+      "id": "youtube-3CBtQVuZZxc",
+      "videoId": "3CBtQVuZZxc",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "ESTUDIO 9: El Árbol de la Paz: las huellas de los niños guatemaltecos que llegaron al Papa León XIV",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=3CBtQVuZZxc",
+      "image": "https://i.ytimg.com/vi/3CBtQVuZZxc/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-02T11:14:28+00:00"
+    },
+    {
+      "id": "youtube-_MEe3sA98n0",
+      "videoId": "_MEe3sA98n0",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "Conferencia de prensa, 2 de octubre de 2026",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=_MEe3sA98n0",
+      "image": "https://i.ytimg.com/vi/_MEe3sA98n0/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-02T10:36:01+00:00"
+    },
+    {
       "id": "youtube-Dp5R4lHLleo",
       "videoId": "Dp5R4lHLleo",
       "type": "video",
@@ -505,6 +556,40 @@
       "publishedAt": "2026-10-01T18:00:27+00:00"
     },
     {
+      "id": "youtube-AZiM3wz8Qbw",
+      "videoId": "AZiM3wz8Qbw",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "Rosario por la Paz con los niños, 1 de octubre de 2026 – Papa León XIV LSE",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=AZiM3wz8Qbw",
+      "image": "https://i.ytimg.com/vi/AZiM3wz8Qbw/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-01T17:24:43+00:00"
+    },
+    {
+      "id": "youtube-I8W869YuwP4",
+      "videoId": "I8W869YuwP4",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "Rosario por la Paz con los niños, 1 de octubre de 2026 – Papa León XIV",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=I8W869YuwP4",
+      "image": "https://i.ytimg.com/vi/I8W869YuwP4/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-01T17:22:51+00:00"
+    },
+    {
       "id": "youtube-X9BGrN6GgUM",
       "videoId": "X9BGrN6GgUM",
       "type": "video",
@@ -605,6 +690,23 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-10-01T10:03:47+00:00"
+    },
+    {
+      "id": "youtube-ECisM6ESoC4",
+      "videoId": "ECisM6ESoC4",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "La Semana del Papa León XIV",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=ECisM6ESoC4",
+      "image": "https://i.ytimg.com/vi/ECisM6ESoC4/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-01T09:02:25+00:00"
     },
     {
       "id": "youtube-TGuzUtioZ_Y",
@@ -811,6 +913,40 @@
       "publishedAt": "2026-09-30T14:21:07+00:00"
     },
     {
+      "id": "youtube-WCa_svOXhbA",
+      "videoId": "WCa_svOXhbA",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "León XIV hace balance de su viaje a Francia y pone a Notre-Dame como símbolo de renacimiento",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=WCa_svOXhbA",
+      "image": "https://i.ytimg.com/vi/WCa_svOXhbA/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-09-30T12:06:20+00:00"
+    },
+    {
+      "id": "youtube-Rh3weyAP6Gs",
+      "videoId": "Rh3weyAP6Gs",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "Audiencia General, 30 de septiembre de 2026- Papa León XIV",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=Rh3weyAP6Gs",
+      "image": "https://i.ytimg.com/vi/Rh3weyAP6Gs/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-09-30T09:34:05+00:00"
+    },
+    {
       "id": "youtube-v2Zl_x7LQ7k",
       "videoId": "v2Zl_x7LQ7k",
       "type": "video",
@@ -911,6 +1047,23 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-09-29T14:39:50+00:00"
+    },
+    {
+      "id": "youtube-Nh7fG62-vzw",
+      "videoId": "Nh7fG62-vzw",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "León XIV: Algunos se enriquecen promoviendo la guerra",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=Nh7fG62-vzw",
+      "image": "https://i.ytimg.com/vi/Nh7fG62-vzw/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-09-29T14:33:55+00:00"
     },
     {
       "id": "youtube-9vsJ2lpvEOo",
@@ -1151,6 +1304,23 @@
       "publishedAt": "2026-09-28T18:00:37+00:00"
     },
     {
+      "id": "youtube-qS98CLNxkks",
+      "videoId": "qS98CLNxkks",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "Metz: Santa Misa, 28 de septiembre de 2026 — Papa León XIV",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=qS98CLNxkks",
+      "image": "https://i.ytimg.com/vi/qS98CLNxkks/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-09-28T16:09:09+00:00"
+    },
+    {
       "id": "youtube-ehVnU5sy_1s",
       "videoId": "ehVnU5sy_1s",
       "type": "video",
@@ -1185,6 +1355,23 @@
       "publishedAt": "2026-09-28T14:13:13+00:00"
     },
     {
+      "id": "youtube-VjnS3LBWOGw",
+      "videoId": "VjnS3LBWOGw",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "Encuentro interreligioso en Francia: León XIV apuesta por el diálogo entre religiones",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=VjnS3LBWOGw",
+      "image": "https://i.ytimg.com/vi/VjnS3LBWOGw/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-09-28T12:26:19+00:00"
+    },
+    {
       "id": "youtube-m_D5HMrWg9g",
       "videoId": "m_D5HMrWg9g",
       "type": "video",
@@ -1217,6 +1404,40 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-09-28T11:00:02+00:00"
+    },
+    {
+      "id": "youtube--SJMj794b3Q",
+      "videoId": "-SJMj794b3Q",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "Metz - «A las raíces de Europa por la Paz y la Unidad», 28 de septiembre de 2026 - Papa León XIV",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=-SJMj794b3Q",
+      "image": "https://i.ytimg.com/vi/-SJMj794b3Q/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-09-28T10:44:49+00:00"
+    },
+    {
+      "id": "youtube-jy5CPYync1k",
+      "videoId": "jy5CPYync1k",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "Metz: Encuentro interreligioso, 28 de septiembre de 2026 — Papa León XIV",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=jy5CPYync1k",
+      "image": "https://i.ytimg.com/vi/jy5CPYync1k/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-09-28T10:38:13+00:00"
     },
     {
       "id": "youtube-MZRVO6nHsqA",
@@ -42367,221 +42588,6 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-04-23T18:27:40+00:00"
-    },
-    {
-      "id": "youtube-rtYqBYsSj-k",
-      "videoId": "rtYqBYsSj-k",
-      "type": "video",
-      "source": "Catholic Stuff",
-      "author": "Catholic Stuff",
-      "title": "Los diez mandamientos",
-      "description": "WHATS APP CHANNEL: https://whatsapp.com/channel/0029VbBn9sOG3R3phfpbvC41 Subscríbete : http://www.youtube.com/subscription_center?add_user=cosascatolicas Si Dios quiere, síguenos en Instagram : https://instagram.com/catholicstuff Facebook : https://www.facebook.com/pages/Catholic-Stuff/502535253215853?fref=ts Twitter : https://twitter.com/evangelizarles Conv",
-      "url": "https://www.youtube.com/shorts/rtYqBYsSj-k",
-      "image": "https://i.ytimg.com/vi/rtYqBYsSj-k/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-04-23T16:01:33+00:00"
-    },
-    {
-      "id": "youtube-EWz5hDyyPNg",
-      "videoId": "EWz5hDyyPNg",
-      "type": "video",
-      "source": "Rafael Santandreu",
-      "author": "Rafael Santandreu",
-      "title": "Esther de Málaga. Ataques de pánico. Testimonio de superación.",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=EWz5hDyyPNg",
-      "image": "https://i.ytimg.com/vi/EWz5hDyyPNg/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "reserve",
-      "publishedAt": "2026-04-22T15:21:29+00:00"
-    },
-    {
-      "id": "youtube-x67I_6s-PzI",
-      "videoId": "x67I_6s-PzI",
-      "type": "video",
-      "source": "Fernando García de Cortázar",
-      "author": "Fernando García de Cortázar",
-      "title": "Modo Borrador - Cuaderno de Viaje para la Vida",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=x67I_6s-PzI",
-      "image": "https://i.ytimg.com/vi/x67I_6s-PzI/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "reserve",
-      "publishedAt": "2026-04-21T10:01:26+00:00"
-    },
-    {
-      "id": "youtube-i8ssAkeb884",
-      "videoId": "i8ssAkeb884",
-      "type": "video",
-      "source": "Álex Rovira",
-      "author": "Álex Rovira",
-      "title": "¿Qué hace que la vida valga la pena vivir? #meaning #love #life",
-      "description": "🔹 Más de Álex Rovira: 📘 Consigue tu ejemplar del último libro de Álex Rovira, Ecos del Olimpo: https://www.planetadelibros.com/libro-ecos-del-olimpo/422209 📸 Instagram: http://www.instagram.com/alexroviracelma 🌿 Explora la Escuela de Transformación Vital: https://escueladetransformacionvital.com 🌐 Web oficial: http://www.alexrovira.com ---",
-      "url": "https://www.youtube.com/shorts/i8ssAkeb884",
-      "image": "https://i.ytimg.com/vi/i8ssAkeb884/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-04-17T10:01:17+00:00"
-    },
-    {
-      "id": "youtube-dS0IMheNrPs",
-      "videoId": "dS0IMheNrPs",
-      "type": "video",
-      "source": "Hakuna Group Music",
-      "author": "Hakuna Group Music",
-      "title": "Track 10: Sanas",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=dS0IMheNrPs",
-      "image": "https://i.ytimg.com/vi/dS0IMheNrPs/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-04-16T20:02:25+00:00"
-    },
-    {
-      "id": "youtube-gRFewOFdNxo",
-      "videoId": "gRFewOFdNxo",
-      "type": "video",
-      "source": "Fernando García de Cortázar",
-      "author": "Fernando García de Cortázar",
-      "title": "Diálogo entre una Cuidadora, su Neceser de la Dignidad y su Conciencia Pirata (charla-taller)",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=gRFewOFdNxo",
-      "image": "https://i.ytimg.com/vi/gRFewOFdNxo/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "reserve",
-      "publishedAt": "2026-04-12T09:58:06+00:00"
-    },
-    {
-      "id": "youtube-QMtO9eGpK-g",
-      "videoId": "QMtO9eGpK-g",
-      "type": "video",
-      "source": "Bosco Films",
-      "author": "Bosco Films",
-      "title": "Rodaje ELLA-Fallas en Valencia Día 2",
-      "description": "▶SUSCRÍBETE👉https://www.youtube.com/c/BoscoFilms?sub_confirmation=1 ▶NUESTRA WEB👉https://www.boscofilms.es/ ▶INSTAGRAM👉https://www.instagram.com/boscofilms_sp/",
-      "url": "https://www.youtube.com/shorts/QMtO9eGpK-g",
-      "image": "https://i.ytimg.com/vi/QMtO9eGpK-g/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-04-11T08:00:33+00:00"
-    },
-    {
-      "id": "youtube-KBt-x6iSiyo",
-      "videoId": "KBt-x6iSiyo",
-      "type": "video",
-      "source": "Rafa Guerrero",
-      "author": "Rafa Guerrero",
-      "title": "Me Decían El Tonto - Rafa Guerrero Y Sus Huastecos (Video Oficial)",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=KBt-x6iSiyo",
-      "image": "https://i.ytimg.com/vi/KBt-x6iSiyo/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "reserve",
-      "publishedAt": "2026-04-10T22:57:37+00:00"
-    },
-    {
-      "id": "youtube-I2d33Zu1CHM",
-      "videoId": "I2d33Zu1CHM",
-      "type": "video",
-      "source": "Bosco Films",
-      "author": "Bosco Films",
-      "title": "Rodaje ELLA-Fallas en Valencia",
-      "description": "▶SUSCRÍBETE👉https://www.youtube.com/c/BoscoFilms?sub_confirmation=1 ▶NUESTRA WEB👉https://www.boscofilms.es/ ▶INSTAGRAM👉https://www.instagram.com/boscofilms_sp/",
-      "url": "https://www.youtube.com/shorts/I2d33Zu1CHM",
-      "image": "https://i.ytimg.com/vi/I2d33Zu1CHM/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-04-10T08:00:17+00:00"
-    },
-    {
-      "id": "youtube--0Flg6KnjRE",
-      "videoId": "-0Flg6KnjRE",
-      "type": "video",
-      "source": "Catholic Stuff",
-      "author": "Catholic Stuff",
-      "title": "¿Cómo puedo ser feliz? Primer PODCAST CS",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=-0Flg6KnjRE",
-      "image": "https://i.ytimg.com/vi/-0Flg6KnjRE/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-04-09T17:00:06+00:00"
-    },
-    {
-      "id": "youtube-y38rVN0koag",
-      "videoId": "y38rVN0koag",
-      "type": "video",
-      "source": "Rafael Santandreu",
-      "author": "Rafael Santandreu",
-      "title": "Claudia de Colombia. Ataques de pánico. Testimonio de superación",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=y38rVN0koag",
-      "image": "https://i.ytimg.com/vi/y38rVN0koag/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "reserve",
-      "publishedAt": "2026-04-09T16:52:27+00:00"
-    },
-    {
-      "id": "youtube-f_s2dJEVEXQ",
-      "videoId": "f_s2dJEVEXQ",
-      "type": "video",
-      "source": "Bosco Films",
-      "author": "Bosco Films",
-      "title": "Rodaje ELLA-Semana Santa Malaga Día 2",
-      "description": "▶SUSCRÍBETE👉https://www.youtube.com/c/BoscoFilms?sub_confirmation=1 ▶NUESTRA WEB👉https://www.boscofilms.es/ ▶INSTAGRAM👉https://www.instagram.com/boscofilms_sp/",
-      "url": "https://www.youtube.com/shorts/f_s2dJEVEXQ",
-      "image": "https://i.ytimg.com/vi/f_s2dJEVEXQ/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-04-09T14:01:10+00:00"
-    },
-    {
-      "id": "youtube-gDcR_rlSpms",
-      "videoId": "gDcR_rlSpms",
-      "type": "video",
-      "source": "Bosco Films",
-      "author": "Bosco Films",
-      "title": "Rodaje ELLA-Semana Santa Malaga",
-      "description": "▶SUSCRÍBETE👉https://www.youtube.com/c/BoscoFilms?sub_confirmation=1 ▶NUESTRA WEB👉https://www.boscofilms.es/ ▶INSTAGRAM👉https://www.instagram.com/boscofilms_sp/",
-      "url": "https://www.youtube.com/shorts/gDcR_rlSpms",
-      "image": "https://i.ytimg.com/vi/gDcR_rlSpms/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-04-08T10:59:16+00:00"
     }
   ],
   "failures": [
@@ -42594,12 +42600,16 @@
       "error": "404 www.youtube.com"
     },
     {
+      "source": "Se Buscan Rebeldes",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "ROME REPORTS en Español",
       "error": "fetch failed"
     },
     {
       "source": "Bishop Robert Barron",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Hallow: Prayer & Meditation",
@@ -42639,14 +42649,18 @@
     },
     {
       "source": "Víctor Küppers",
-      "error": "No se encontró el identificador del canal"
-    },
-    {
-      "source": "It's Time To Think",
       "error": "404 www.youtube.com"
     },
     {
+      "source": "It's Time To Think",
+      "error": "500 www.youtube.com"
+    },
+    {
       "source": "Dr. Arthur Brooks",
+      "error": "500 www.youtube.com"
+    },
+    {
+      "source": "María Calvo",
       "error": "404 www.youtube.com"
     },
     {
@@ -42663,7 +42677,7 @@
     },
     {
       "source": "Ricardo Calleja",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Ana Iris Simón",
@@ -42679,11 +42693,11 @@
     },
     {
       "source": "Alejandro Villena",
-      "error": "No se encontró el identificador del canal"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Álvaro González-Alorda",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Mario Alonso Puig",
@@ -42698,6 +42712,10 @@
       "error": "404 www.youtube.com"
     },
     {
+      "source": "EWTN España",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "Álex Rovira",
       "error": "404 www.youtube.com"
     },
@@ -42707,7 +42725,7 @@
     },
     {
       "source": "Álvaro Bilbao",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "María Álvarez de las Asturias",
@@ -42715,15 +42733,15 @@
     },
     {
       "source": "Pablo Blanco Sarto",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Scott Hahn",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Peter Kreeft",
-      "error": "No se encontró el identificador del canal"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Javier G. Recuenco",
@@ -42731,7 +42749,11 @@
     },
     {
       "source": "Marcelo Gullo Omodeo",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Jesús Silva Castignani",
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Cura de Toledo",
@@ -42743,6 +42765,10 @@
     },
     {
       "source": "Simon Sinek",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Juan Arana",
       "error": "404 www.youtube.com"
     },
     {
@@ -42758,8 +42784,8 @@
       "error": "No se encontró el identificador del canal"
     },
     {
-      "source": "Vatican News Español",
-      "error": "500 www.youtube.com"
+      "source": "EWTN Español",
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Hakuna Group Music",
@@ -42782,6 +42808,14 @@
       "error": "404 www.youtube.com"
     },
     {
+      "source": "The Catholic Talk Show",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Facultad de Teología UNAV",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "Francisco Ugarte",
       "error": "404 www.youtube.com"
     },
@@ -42794,12 +42828,16 @@
       "error": "404 www.youtube.com"
     },
     {
+      "source": "Emilio Duró",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "Fernando García de Cortázar",
       "error": "No se encontró el identificador del canal"
     },
     {
       "source": "Rafa Guerrero",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Rafael Santandreu",

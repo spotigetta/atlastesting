@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-02T01:44:40.557Z",
+  "updatedAt": "2026-10-03T01:16:13.147Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -2574,7 +2574,7 @@
   ],
   "failures": [
     {
-      "source": "Inazio",
+      "source": "Hakuna Group Music",
       "error": "404 www.youtube.com"
     },
     {
@@ -2591,7 +2591,7 @@
     },
     {
       "source": "Ain Karem",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "tuyo",
@@ -2603,7 +2603,7 @@
     },
     {
       "source": "Gen Verde",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     }
   ]
 }
