@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-03T01:16:13.147Z",
-  "source": "youtube-rss",
+  "updatedAt": "2026-10-04T01:45:04.045Z",
+  "source": "previous-snapshot",
   "channels": [
     {
       "name": "Hakuna Group Music",
@@ -2578,6 +2578,10 @@
       "error": "404 www.youtube.com"
     },
     {
+      "source": "Inazio",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "Nico Montero",
       "error": "404 www.youtube.com"
     },
@@ -2591,7 +2595,7 @@
     },
     {
       "source": "Ain Karem",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "tuyo",

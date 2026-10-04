@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-03T01:16:12.457Z",
-  "source": "youtube-rss",
+  "updatedAt": "2026-10-04T01:45:03.427Z",
+  "source": "previous-snapshot",
   "channels": [
     {
       "name": "Opus Dei",
@@ -42633,7 +42633,7 @@
     },
     {
       "source": "ACI Prensa",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Jordan B. Peterson",
@@ -42653,11 +42653,11 @@
     },
     {
       "source": "It's Time To Think",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Dr. Arthur Brooks",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "María Calvo",
@@ -42677,7 +42677,7 @@
     },
     {
       "source": "Ricardo Calleja",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Ana Iris Simón",
@@ -42741,7 +42741,7 @@
     },
     {
       "source": "Peter Kreeft",
-      "error": "404 www.youtube.com"
+      "error": "No se encontró el identificador del canal"
     },
     {
       "source": "Javier G. Recuenco",
@@ -42788,6 +42788,10 @@
       "error": "404 www.youtube.com"
     },
     {
+      "source": "Vatican News Español",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "Hakuna Group Music",
       "error": "404 www.youtube.com"
     },
@@ -42801,7 +42805,7 @@
     },
     {
       "source": "The Rest Is History",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "ISCR Universidad de Navarra",
