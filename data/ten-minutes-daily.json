@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-10-04T01:44:56.998Z",
+  "updatedAt": "2026-10-05T01:04:39.431Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "05-10-2026 Gracias, perdón, ayúdame+- 10 Minutos con Jesús",
+      "publishedAt": "2026-10-04T22:42:38.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/05-10-2026-gracias-perdon-ayudame-10-minutos-con-jesus--75572117",
+      "audioUrl": "https://api.spreaker.com/download/episode/75572117/05_10_2026_gracias_perdon_ayudame_10_minutos_jesus_mf_181644834_feed_1.mp3",
+      "duration": "592",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "04-10-2026 Cuidar sin apropiarme - 10 Minutos con Jesús",
       "publishedAt": "2026-10-03T22:25:46.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/16-09-2026-listo-p-al-cambio-10-minutos-con-jesus--75175439",
       "audioUrl": "https://api.spreaker.com/download/episode/75175439/16_09_2026_listo_p_al_cambio_10_minutos_con_mf_180730368_feed_1.mp3",
       "duration": "665",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "15-09-2026 Stabat Mater: aprender a estar - 10 Minutos con Jesús",
-      "publishedAt": "2026-09-14T20:50:01.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/15-09-2026-stabat-mater-aprender-a-estar-10-minutos-con-jesus--75124976",
-      "audioUrl": "https://api.spreaker.com/download/episode/75124976/15_09_2026_stabat_mater_aprender_a_estar_10_mf_180559606_feed_1.mp3",
-      "duration": "651",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
