@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-10-05T01:04:39.431Z",
+  "updatedAt": "2026-10-06T02:22:08.756Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "06-10-2026 Siempre contigo - 10 Minutos con Jesús",
+      "publishedAt": "2026-10-05T22:51:47.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/06-10-2026-siempre-contigo-10-minutos-con-jesus--75587407",
+      "audioUrl": "https://api.spreaker.com/download/episode/75587407/06_10_2026_siempre_contigo_10_minutos_jesus_mf_181699887_feed_1.mp3",
+      "duration": "620",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "05-10-2026 Gracias, perdón, ayúdame+- 10 Minutos con Jesús",
       "publishedAt": "2026-10-04T22:42:38.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/17-09-2026-detalles-de-amor-10-minutos-con-jesus--75175440",
       "audioUrl": "https://api.spreaker.com/download/episode/75175440/17_09_2026_detalles_amor_10_minutos_con_mf_180730374_feed_1.mp3",
       "duration": "619",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "16-09-2026 ¿Listo p'al cambio? - 10 Minutos con Jesús",
-      "publishedAt": "2026-09-16T22:38:30.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/16-09-2026-listo-p-al-cambio-10-minutos-con-jesus--75175439",
-      "audioUrl": "https://api.spreaker.com/download/episode/75175439/16_09_2026_listo_p_al_cambio_10_minutos_con_mf_180730368_feed_1.mp3",
-      "duration": "665",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
