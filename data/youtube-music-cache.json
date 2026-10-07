@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-06T02:22:15.369Z",
-  "source": "previous-snapshot",
+  "updatedAt": "2026-10-07T01:41:40.810Z",
+  "source": "youtube-rss",
   "channels": [
     {
       "name": "Hakuna Group Music",
@@ -40,6 +40,23 @@
     }
   ],
   "items": [
+    {
+      "id": "youtube-Lb38_ioqo1g",
+      "videoId": "Lb38_ioqo1g",
+      "type": "music",
+      "source": "Gen Verde",
+      "author": "Gen Verde",
+      "title": "🇰🇷 Cosa vorremmo che i ragazzi coreani scoprissero attraverso la nostra musica e i nostri workshop?",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=Lb38_ioqo1g",
+      "image": "https://i.ytimg.com/vi/Lb38_ioqo1g/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-03T08:27:26+00:00"
+    },
     {
       "id": "youtube-tcDZ3WqB4-A",
       "videoId": "tcDZ3WqB4-A",
@@ -158,6 +175,23 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-08-26T14:01:16+00:00"
+    },
+    {
+      "id": "youtube-MJfr4gXpKDA",
+      "videoId": "MJfr4gXpKDA",
+      "type": "music",
+      "source": "Gen Verde",
+      "author": "Gen Verde",
+      "title": "Sul palco Christina è la nostra batterista… 🥁",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=MJfr4gXpKDA",
+      "image": "https://i.ytimg.com/vi/MJfr4gXpKDA/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-07-29T09:40:11+00:00"
     },
     {
       "id": "youtube-y8hEClq9oX4",
@@ -2574,39 +2608,15 @@
   ],
   "failures": [
     {
-      "source": "Hakuna Group Music",
-      "error": "404 www.youtube.com"
-    },
-    {
       "source": "Inazio",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Nico Montero",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Kairoi",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Gen Rosso",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Ain Karem",
       "error": "404 www.youtube.com"
     },
     {
-      "source": "tuyo",
-      "error": "404 www.youtube.com"
-    },
-    {
       "source": "Coro de Monjes de Solesmes",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Gen Verde",
       "error": "404 www.youtube.com"
     }
   ]

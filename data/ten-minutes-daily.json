@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-10-06T02:22:08.756Z",
+  "updatedAt": "2026-10-07T01:41:33.444Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "07-10-2026 Subidos al carro del Padrenuestro - 10 Minutos con Jesús",
+      "publishedAt": "2026-10-06T21:28:47.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/07-10-2026-subidos-al-carro-del-padrenuestro-10-minutos-con-jesus--75603048",
+      "audioUrl": "https://api.spreaker.com/download/episode/75603048/07_10_2026_subidos_al_carro_del_padrenuestro_10_mf_181776727_feed_1.mp3",
+      "duration": "650",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "06-10-2026 Siempre contigo - 10 Minutos con Jesús",
       "publishedAt": "2026-10-05T22:51:47.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/18-09-2026-un-corazon-donde-todos-caben-10-minutos-con-jesus--75202335",
       "audioUrl": "https://api.spreaker.com/download/episode/75202335/18_09_2026_un_corazon_donde_todos_caben_10_mf_180806124_feed_1.mp3",
       "duration": "596",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "17-09-2026 Detalles de amor - 10 Minutos con Jesús",
-      "publishedAt": "2026-09-16T22:40:54.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/17-09-2026-detalles-de-amor-10-minutos-con-jesus--75175440",
-      "audioUrl": "https://api.spreaker.com/download/episode/75175440/17_09_2026_detalles_amor_10_minutos_con_mf_180730374_feed_1.mp3",
-      "duration": "619",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
