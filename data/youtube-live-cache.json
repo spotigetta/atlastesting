@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-07T01:41:39.972Z",
+  "updatedAt": "2026-10-08T02:07:39.708Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -335,6 +335,261 @@
   ],
   "items": [
     {
+      "id": "youtube-hTANGw9PNpc",
+      "videoId": "hTANGw9PNpc",
+      "type": "video",
+      "source": "EWTN Español",
+      "author": "EWTN Español",
+      "title": "¿Se acerca fin del mundo?",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=hTANGw9PNpc",
+      "image": "https://i.ytimg.com/vi/hTANGw9PNpc/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-08T01:00:14+00:00"
+    },
+    {
+      "id": "youtube-52yPYNJX6-w",
+      "videoId": "52yPYNJX6-w",
+      "type": "video",
+      "source": "EWTN Español",
+      "author": "EWTN Español",
+      "title": "Todo listo para Lost and Found",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=52yPYNJX6-w",
+      "image": "https://i.ytimg.com/vi/52yPYNJX6-w/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-08T00:00:31+00:00"
+    },
+    {
+      "id": "youtube-3bVAzGkQbMI",
+      "videoId": "3bVAzGkQbMI",
+      "type": "video",
+      "source": "Andrew Huberman",
+      "author": "Andrew Huberman",
+      "title": "LIVE EVENT AT THE DOLBY THEATRE IN LOS ANGELES THIS THURSDAY OCTOBER 8th",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=3bVAzGkQbMI",
+      "image": "https://i.ytimg.com/vi/3bVAzGkQbMI/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "reserve",
+      "publishedAt": "2026-10-07T23:01:55+00:00"
+    },
+    {
+      "id": "youtube-R_F1tTzLV6s",
+      "videoId": "R_F1tTzLV6s",
+      "type": "video",
+      "source": "EWTN Español",
+      "author": "EWTN Español",
+      "title": "EN VIVO | Audiencia General del Papa León XIV desde el Vaticano | 7 de Octubre de 2026",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=R_F1tTzLV6s",
+      "image": "https://i.ytimg.com/vi/R_F1tTzLV6s/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-07T20:59:00+00:00"
+    },
+    {
+      "id": "youtube-tzEJfB5bY7o",
+      "videoId": "tzEJfB5bY7o",
+      "type": "video",
+      "source": "EWTN Español",
+      "author": "EWTN Español",
+      "title": "octubre 6, 2026",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=tzEJfB5bY7o",
+      "image": "https://i.ytimg.com/vi/tzEJfB5bY7o/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-07T20:00:35+00:00"
+    },
+    {
+      "id": "youtube-pkgfG5g6za0",
+      "videoId": "pkgfG5g6za0",
+      "type": "video",
+      "source": "EWTN Español",
+      "author": "EWTN Español",
+      "title": "Rosario desde Lourdes: Misterios Gloriosos | 13 de septiembre de 2026",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=pkgfG5g6za0",
+      "image": "https://i.ytimg.com/vi/pkgfG5g6za0/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-07T20:00:22+00:00"
+    },
+    {
+      "id": "youtube-XzDTTdz8AwE",
+      "videoId": "XzDTTdz8AwE",
+      "type": "video",
+      "source": "EWTN Español",
+      "author": "EWTN Español",
+      "title": "Café con Cristo Radio Show - ¿Por qué Pablo reprendió a Pedro?",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=XzDTTdz8AwE",
+      "image": "https://i.ytimg.com/vi/XzDTTdz8AwE/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-07T18:22:24+00:00"
+    },
+    {
+      "id": "youtube--ARi-_9fdss",
+      "videoId": "-ARi-_9fdss",
+      "type": "video",
+      "source": "Se Buscan Rebeldes",
+      "author": "Se Buscan Rebeldes",
+      "title": "EL REGRESO DE MI HIJO PRÓDIGO 💔➡️🎉 | Berta Lamas (@12encasa) #Shorts",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=-ARi-_9fdss",
+      "image": "https://i.ytimg.com/vi/-ARi-_9fdss/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-07T18:00:26+00:00"
+    },
+    {
+      "id": "youtube-cVufc4UpK7w",
+      "videoId": "cVufc4UpK7w",
+      "type": "video",
+      "source": "EWTN Español",
+      "author": "EWTN Español",
+      "title": "Conectados en Familia: El milagro de cada misa",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=cVufc4UpK7w",
+      "image": "https://i.ytimg.com/vi/cVufc4UpK7w/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-07T16:58:32+00:00"
+    },
+    {
+      "id": "youtube-LaXHPSk0Nck",
+      "videoId": "LaXHPSk0Nck",
+      "type": "video",
+      "source": "EWTN Español",
+      "author": "EWTN Español",
+      "title": "El Sí de María y el Santo Rosario: una arma de victoria que vence el mal",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=LaXHPSk0Nck",
+      "image": "https://i.ytimg.com/vi/LaXHPSk0Nck/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-07T15:30:41+00:00"
+    },
+    {
+      "id": "youtube-GxOsTCvEgoY",
+      "videoId": "GxOsTCvEgoY",
+      "type": "video",
+      "source": "EWTN Español",
+      "author": "EWTN Español",
+      "title": "Misa diaria de EWTN – 7 de octubre de 2026",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=GxOsTCvEgoY",
+      "image": "https://i.ytimg.com/vi/GxOsTCvEgoY/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-07T15:22:29+00:00"
+    },
+    {
+      "id": "youtube-1aU7L-xQWWQ",
+      "videoId": "1aU7L-xQWWQ",
+      "type": "video",
+      "source": "EWTN Español",
+      "author": "EWTN Español",
+      "title": "ACTUALIDAD POLÍTICA Y RELIGIOSA DE AMÉRICA LATINA DESDE LA PERSPECTIVA DE LA FE",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=1aU7L-xQWWQ",
+      "image": "https://i.ytimg.com/vi/1aU7L-xQWWQ/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-07T13:07:32+00:00"
+    },
+    {
+      "id": "youtube-ZTURkFQDV78",
+      "videoId": "ZTURkFQDV78",
+      "type": "video",
+      "source": "EWTN Español",
+      "author": "EWTN Español",
+      "title": "octubre 6, 2026",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=ZTURkFQDV78",
+      "image": "https://i.ytimg.com/vi/ZTURkFQDV78/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-07T12:46:03+00:00"
+    },
+    {
+      "id": "youtube-aQZSfSE3j7M",
+      "videoId": "aQZSfSE3j7M",
+      "type": "video",
+      "source": "EWTN Español",
+      "author": "EWTN Español",
+      "title": "Café con Cristo Radio Show - Estás haciendo demasiado",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=aQZSfSE3j7M",
+      "image": "https://i.ytimg.com/vi/aQZSfSE3j7M/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-07T10:01:36+00:00"
+    },
+    {
+      "id": "youtube-20oXW3G5EBE",
+      "videoId": "20oXW3G5EBE",
+      "type": "video",
+      "source": "EWTN Español",
+      "author": "EWTN Español",
+      "title": "Conectados en Familia: José y María adoradores de Dios",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=20oXW3G5EBE",
+      "image": "https://i.ytimg.com/vi/20oXW3G5EBE/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-07T05:57:36+00:00"
+    },
+    {
       "id": "youtube-M8w2KUAOdAM",
       "videoId": "M8w2KUAOdAM",
       "type": "video",
@@ -418,6 +673,23 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-10-06T20:03:34+00:00"
+    },
+    {
+      "id": "youtube-qeg2VytgO0Q",
+      "videoId": "qeg2VytgO0Q",
+      "type": "video",
+      "source": "EWTN Español",
+      "author": "EWTN Español",
+      "title": "Rosario desde Lourdes: Misterios Dolorosos | 6 de octubre, 2026",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=qeg2VytgO0Q",
+      "image": "https://i.ytimg.com/vi/qeg2VytgO0Q/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-06T20:00:08+00:00"
     },
     {
       "id": "youtube-hVw3Yyy9jFs",
@@ -571,6 +843,23 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-10-06T17:30:20+00:00"
+    },
+    {
+      "id": "youtube-po4QgaM1wk4",
+      "videoId": "po4QgaM1wk4",
+      "type": "video",
+      "source": "EWTN Español",
+      "author": "EWTN Español",
+      "title": "EN VIVO | Encuentro con el Papa León XIV en el Vaticano |10 años de Amoris laetitia | 7 octubre 2026",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=po4QgaM1wk4",
+      "image": "https://i.ytimg.com/vi/po4QgaM1wk4/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-06T17:04:02+00:00"
     },
     {
       "id": "youtube-13ztmuYzDnE",
@@ -1183,6 +1472,23 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-10-05T12:35:04+00:00"
+    },
+    {
+      "id": "youtube-SFX8FIHFLE4",
+      "videoId": "SFX8FIHFLE4",
+      "type": "video",
+      "source": "Andrew Huberman",
+      "author": "Andrew Huberman",
+      "title": "Bringing Extinct Species Back to Life | Dr. Beth Shapiro",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=SFX8FIHFLE4",
+      "image": "https://i.ytimg.com/vi/SFX8FIHFLE4/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "reserve",
+      "publishedAt": "2026-10-05T12:00:01+00:00"
     },
     {
       "id": "youtube-lHw7taYCglM",
@@ -42403,304 +42709,12 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-07-17T11:48:10+00:00"
-    },
-    {
-      "id": "youtube-UMXfh7UkR_s",
-      "videoId": "UMXfh7UkR_s",
-      "type": "video",
-      "source": "Álvaro Bilbao",
-      "author": "Álvaro Bilbao",
-      "title": "👇 CONFERENCIAS 2026-2027 👇",
-      "description": "👇 CONFERENCIAS 2026-2027 👇 (Entradas para todas las conferencias en el enlace de la BIO y en alvarobilbao.com/conferencias) 📍 Málaga – 3 de octubre 📍 Ciudad de México – 10 de octubre 📍 Burgos – 22 de octubre 📍 Vitoria – 24 de octubre 📍 Madrid – 7 de noviembre 📍 Sevilla – 23 de enero 📍 Valencia – 6 de febrero 📍 Alicante – 7 de febrero 📍 Vigo – 6 de",
-      "url": "https://www.youtube.com/shorts/UMXfh7UkR_s",
-      "image": "https://i.ytimg.com/vi/UMXfh7UkR_s/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-17T06:49:07+00:00"
-    },
-    {
-      "id": "youtube-UPM7BiDMEoI",
-      "videoId": "UPM7BiDMEoI",
-      "type": "video",
-      "source": "Jesús Silva Castignani",
-      "author": "Jesús Silva Castignani",
-      "title": "¿Por qué Haaland?",
-      "description": "VÃ­deo publicado por Jesús Silva Castignani. Se reproduce dentro de Atlas mediante el reproductor oficial de YouTube.",
-      "url": "https://www.youtube.com/shorts/UPM7BiDMEoI",
-      "image": "https://i.ytimg.com/vi/UPM7BiDMEoI/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-16T19:39:06+00:00"
-    },
-    {
-      "id": "youtube-u46JZSmlKQc",
-      "videoId": "u46JZSmlKQc",
-      "type": "video",
-      "source": "Jordan B. Peterson",
-      "author": "Jordan B. Peterson",
-      "title": "04/22/25",
-      "description": "VÃ­deo publicado por Jordan B. Peterson. Se reproduce dentro de Atlas mediante el reproductor oficial de YouTube.",
-      "url": "https://www.youtube.com/shorts/u46JZSmlKQc",
-      "image": "https://i.ytimg.com/vi/u46JZSmlKQc/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-16T19:21:34+00:00"
-    },
-    {
-      "id": "youtube-tDOO6r9tjdk",
-      "videoId": "tDOO6r9tjdk",
-      "type": "video",
-      "source": "Jordan B. Peterson",
-      "author": "Jordan B. Peterson",
-      "title": "You Live Through Stories",
-      "description": "Unlock the ad-free experience of The Jordan B. Peterson Podcast and dive into exclusive bonus content on DailyWire+. Start watching now: http://dwpluspeterson.com/yt ALL LINKS: https://feedlink.io/jordanbpeterson // LINKS // Peterson Academy https://petersonacademy.com ARC https://www.arcforum.com Books - https://www.jordanbpeterson.com/books/ #JordanPeterso",
-      "url": "https://www.youtube.com/shorts/tDOO6r9tjdk",
-      "image": "https://i.ytimg.com/vi/tDOO6r9tjdk/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-16T17:00:32+00:00"
-    },
-    {
-      "id": "youtube-6PuChO9bR14",
-      "videoId": "6PuChO9bR14",
-      "type": "video",
-      "source": "The Rest Is History",
-      "author": "The Rest Is History",
-      "title": "Would you get on this ship?",
-      "description": "Join this channel to get early access to episodes, ad-free watching, and priority access to our live events: https://www.youtube.com/channel/UCUYK0BJZF3yNb2fw1EdAXUQ/join Twitter: @TheRestHistory @holland_tom @dcsandbrook Social channels: https://www.instagram.com/theresthistory/ https://www.tiktok.com/@theresthistory https://x.com/TheRestHistory https://bsk",
-      "url": "https://www.youtube.com/shorts/6PuChO9bR14",
-      "image": "https://i.ytimg.com/vi/6PuChO9bR14/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-16T17:00:12+00:00"
-    },
-    {
-      "id": "youtube-xLX3MTo07uA",
-      "videoId": "xLX3MTo07uA",
-      "type": "video",
-      "source": "Hallow: Prayer & Meditation",
-      "author": "Hallow: Prayer & Meditation",
-      "title": "What I look forward to after death",
-      "description": "Is eternity just more time with better stuff in it? Dr. Peter Kreeft, professor of philosophy, describes a different kind of time, one in which the whole of your past becomes present, and points to near-death experiences as a glimpse of it.",
-      "url": "https://www.youtube.com/shorts/xLX3MTo07uA",
-      "image": "https://i.ytimg.com/vi/xLX3MTo07uA/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-16T14:45:02+00:00"
-    },
-    {
-      "id": "youtube-NQHKA2agh9E",
-      "videoId": "NQHKA2agh9E",
-      "type": "video",
-      "source": "Mario Alonso Puig",
-      "author": "Mario Alonso Puig",
-      "title": "La distracción está robando tu inteligencia | Mario Alonso Puig",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=NQHKA2agh9E",
-      "image": "https://i.ytimg.com/vi/NQHKA2agh9E/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-07-16T14:30:06+00:00"
-    },
-    {
-      "id": "youtube-I3St5GUrdhQ",
-      "videoId": "I3St5GUrdhQ",
-      "type": "video",
-      "source": "The Rest Is History",
-      "author": "The Rest Is History",
-      "title": "Odysseus didn't want to fight",
-      "description": "Join this channel to get early access to episodes, ad-free watching, and priority access to our live events: https://www.youtube.com/channel/UCUYK0BJZF3yNb2fw1EdAXUQ/join Twitter: @TheRestHistory @holland_tom @dcsandbrook Social channels: https://www.instagram.com/theresthistory/ https://www.tiktok.com/@theresthistory https://x.com/TheRestHistory https://bsk",
-      "url": "https://www.youtube.com/shorts/I3St5GUrdhQ",
-      "image": "https://i.ytimg.com/vi/I3St5GUrdhQ/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-16T13:30:16+00:00"
-    },
-    {
-      "id": "youtube-37KtnvycfjE",
-      "videoId": "37KtnvycfjE",
-      "type": "video",
-      "source": "Marian Rojas-Estapé",
-      "author": "Marian Rojas-Estapé",
-      "title": "Somos pesismistas por nuestra imaginación",
-      "description": "VÃ­deo publicado por Marian Rojas-Estapé. Se reproduce dentro de Atlas mediante el reproductor oficial de YouTube.",
-      "url": "https://www.youtube.com/shorts/37KtnvycfjE",
-      "image": "https://i.ytimg.com/vi/37KtnvycfjE/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-16T12:17:11+00:00"
-    },
-    {
-      "id": "youtube-UTB5gAkjevk",
-      "videoId": "UTB5gAkjevk",
-      "type": "video",
-      "source": "Andrew Huberman",
-      "author": "Andrew Huberman",
-      "title": "The Science & Treatment of Bipolar Disorder | Huberman Lab Essentials",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=UTB5gAkjevk",
-      "image": "https://i.ytimg.com/vi/UTB5gAkjevk/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "reserve",
-      "publishedAt": "2026-07-16T12:00:15+00:00"
-    },
-    {
-      "id": "youtube-pRf54q2gkl8",
-      "videoId": "pRf54q2gkl8",
-      "type": "video",
-      "source": "Jesús Silva Castignani",
-      "author": "Jesús Silva Castignani",
-      "title": "Himno a la Virgen del Carmen",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=pRf54q2gkl8",
-      "image": "https://i.ytimg.com/vi/pRf54q2gkl8/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-07-16T10:09:36+00:00"
-    },
-    {
-      "id": "youtube-vYO8pv5_EyU",
-      "videoId": "vYO8pv5_EyU",
-      "type": "video",
-      "source": "Opus Dei",
-      "author": "Opus Dei",
-      "title": "San Josemaria y Ernestina de Champourcin: una historia de reencuentros",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=vYO8pv5_EyU",
-      "image": "https://i.ytimg.com/vi/vYO8pv5_EyU/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-07-16T10:05:35+00:00"
-    },
-    {
-      "id": "youtube-4WD0gdHTXOQ",
-      "videoId": "4WD0gdHTXOQ",
-      "type": "video",
-      "source": "It's Time To Think",
-      "author": "It's Time To Think",
-      "title": "¿Tienes amigos o solo notificaciones?",
-      "description": "Igual no te falta gente. Igual te faltan **vínculos de verdad**. 📱🫠 Mirar a alguien a los ojos sigue siendo bastante más revolucionario que mirar otra pantalla. 👀💡 #Shorts #ItsTimeToThink #RelacionesReales #MenosPantalla",
-      "url": "https://www.youtube.com/shorts/4WD0gdHTXOQ",
-      "image": "https://i.ytimg.com/vi/4WD0gdHTXOQ/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-16T08:04:29+00:00"
-    },
-    {
-      "id": "youtube-MoK1v3KHQi4",
-      "videoId": "MoK1v3KHQi4",
-      "type": "video",
-      "source": "Álvaro Bilbao",
-      "author": "Álvaro Bilbao",
-      "title": "CONFERENCIAS 2026-2027 👇",
-      "description": "CONFERENCIAS 2026-2027 👇 (Entradas para todas las conferencias en el enlace de la BIO y en alvarobilbao.com/conferencias) 📍 Málaga – 3 de octubre 📍 Ciudad de México – 10 de octubre 📍 Burgos – 22 de octubre 📍 Vitoria – 24 de octubre 📍 Madrid – 7 de noviembre 📍 Sevilla – 23 de enero 📍 Valencia – 6 de febrero 📍 Alicante – 7 de febrero 📍 Vigo – 6 de ma",
-      "url": "https://www.youtube.com/shorts/MoK1v3KHQi4",
-      "image": "https://i.ytimg.com/vi/MoK1v3KHQi4/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-16T05:30:07+00:00"
-    },
-    {
-      "id": "youtube-ML-eI-mju60",
-      "videoId": "ML-eI-mju60",
-      "type": "video",
-      "source": "QNTLC",
-      "author": "QNTLC",
-      "title": "¿Cuándo fue la última vez que fuiste a misa… y de verdad estuviste presente?",
-      "description": "¿Cuándo fue la última vez que fuiste a misa… y de verdad estuviste presente? 🤔 El Padre Ravasi nos comparte algo que se ve en muchas sacristías: un letrero que le recuerda al sacerdote que celebre cada misa como si fuera la primera, la única y la última de su vida. Y esa idea no es solo para quien celebra la misa, también es para nosotros. Nos explica que e",
-      "url": "https://www.youtube.com/shorts/ML-eI-mju60",
-      "image": "https://i.ytimg.com/vi/ML-eI-mju60/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-16T02:40:52+00:00"
-    },
-    {
-      "id": "youtube-FncQhrEnTEU",
-      "videoId": "FncQhrEnTEU",
-      "type": "video",
-      "source": "Andrew Huberman",
-      "author": "Andrew Huberman",
-      "title": "Errors Are Necessary for Learning",
-      "description": "My guest on the Huberman Lab podcast out now is Dr. Alan Castel, PhD, professor of psychology at the University of California, Los Angeles (UCLA) and one of the world's foremost experts on human memory and cognitive aging. We discuss what science actually tells us about how to improve our learning ability and memory at any age. We also discuss how memory wor",
-      "url": "https://www.youtube.com/shorts/FncQhrEnTEU",
-      "image": "https://i.ytimg.com/vi/FncQhrEnTEU/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-15T23:38:22+00:00"
-    },
-    {
-      "id": "youtube-VkptHKtFkjE",
-      "videoId": "VkptHKtFkjE",
-      "type": "video",
-      "source": "Jordan B. Peterson",
-      "author": "Jordan B. Peterson",
-      "title": "\"90 minutes with your wife or 90 minutes with your divorce lawyer.\"",
-      "description": "Unlock the ad-free experience of The Jordan B. Peterson Podcast and dive into exclusive bonus content on DailyWire+. Start watching now: http://dwpluspeterson.com/yt ALL LINKS: https://feedlink.io/jordanbpeterson // LINKS // Peterson Academy https://petersonacademy.com ARC https://www.arcforum.com Books - https://www.jordanbpeterson.com/books/ #JordanPeterso",
-      "url": "https://www.youtube.com/shorts/VkptHKtFkjE",
-      "image": "https://i.ytimg.com/vi/VkptHKtFkjE/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-15T17:00:19+00:00"
-    },
-    {
-      "id": "youtube-hox4QFK1-qQ",
-      "videoId": "hox4QFK1-qQ",
-      "type": "video",
-      "source": "It's Time To Think",
-      "author": "It's Time To Think",
-      "title": "Alicante, que no te lo cuenten 👀",
-      "description": "Alicante, este viernes hay lío. 🌊🔥 No del de “vamos a ver qué sale”, sino del bueno: gente, cerveza, ambiente y buenas preguntas. 🍻🧠 17 de julio. 19:30. Luego no vengas con el clásico: “uy, me lo perdí”. 👀💡 #ItsTimeToThink #Thinkglao #Alicante",
-      "url": "https://www.youtube.com/shorts/hox4QFK1-qQ",
-      "image": "https://i.ytimg.com/vi/hox4QFK1-qQ/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-15T16:06:33+00:00"
     }
   ],
   "failures": [
     {
       "source": "Opus Dei",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Ecclesia COPE",
@@ -42712,10 +42726,18 @@
     },
     {
       "source": "Bishop Robert Barron",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Hallow: Prayer & Meditation",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Catholic Stuff",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Fundación CARF",
       "error": "404 www.youtube.com"
     },
     {
@@ -42723,16 +42745,40 @@
       "error": "404 www.youtube.com"
     },
     {
+      "source": "QNTLC",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "ACI Prensa",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Jordan B. Peterson",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Luis Gutiérrez Rojas",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Marian Rojas-Estapé",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "Víctor Küppers",
-      "error": "No se encontró el identificador del canal"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "It's Time To Think",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
-      "source": "Rafa Lafuente",
-      "error": "500 www.youtube.com"
+      "source": "Dr. Arthur Brooks",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "María Calvo",
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Pep Borrell",
@@ -42743,19 +42789,47 @@
       "error": "500 www.youtube.com"
     },
     {
+      "source": "Ricardo Calleja",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "Ana Iris Simón",
       "error": "No se encontró el identificador del canal"
     },
     {
+      "source": "Leopoldo Abadía",
+      "error": "500 www.youtube.com"
+    },
+    {
       "source": "Gregorio Luri",
-      "error": "No se encontró el identificador del canal"
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Alejandro Villena",
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Álvaro González-Alorda",
+      "error": "500 www.youtube.com"
+    },
+    {
+      "source": "Mario Alonso Puig",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "AUTE",
       "error": "404 www.youtube.com"
     },
     {
       "source": "Sin Medias Tintas",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "EWTN España",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Álex Rovira",
       "error": "404 www.youtube.com"
     },
     {
@@ -42767,16 +42841,44 @@
       "error": "404 www.youtube.com"
     },
     {
+      "source": "María Álvarez de las Asturias",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Pablo Blanco Sarto",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Scott Hahn",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "Peter Kreeft",
       "error": "No se encontró el identificador del canal"
     },
     {
-      "source": "Cura de Toledo",
+      "source": "Javier G. Recuenco",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Marcelo Gullo Omodeo",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Jesús Silva Castignani",
       "error": "500 www.youtube.com"
     },
     {
-      "source": "Simon Sinek",
+      "source": "Cura de Toledo",
       "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Stephen Covey Principles HQ",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Simon Sinek",
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Juan Arana",
@@ -42788,38 +42890,54 @@
     },
     {
       "source": "Catherine L'Ecuyer",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "José Ramón Ayllón",
       "error": "No se encontró el identificador del canal"
     },
     {
-      "source": "EWTN Español",
-      "error": "404 www.youtube.com"
-    },
-    {
       "source": "Vatican News Español",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Hakuna Group Music",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "10 minutos con Jesús",
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Meditaciones en español",
       "error": "No se encontró el identificador del canal"
     },
     {
-      "source": "Facultad de Teología UNAV",
+      "source": "The Rest Is History",
       "error": "500 www.youtube.com"
+    },
+    {
+      "source": "ISCR Universidad de Navarra",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "The Catholic Talk Show",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Facultad de Teología UNAV",
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Francisco Ugarte",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Francisco Insa",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Alfonso Aguiló",
       "error": "500 www.youtube.com"
     },
     {
@@ -42831,12 +42949,16 @@
       "error": "No se encontró el identificador del canal"
     },
     {
-      "source": "Higinio Marín",
-      "error": "No se encontró el identificador del canal"
+      "source": "Rafa Guerrero",
+      "error": "404 www.youtube.com"
     },
     {
-      "source": "Andrew Huberman",
+      "source": "Rafael Santandreu",
       "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Higinio Marín",
+      "error": "No se encontró el identificador del canal"
     }
   ]
 }
