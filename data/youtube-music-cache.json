@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-08T02:07:40.420Z",
+  "updatedAt": "2026-10-09T02:21:05.876Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -40,6 +40,142 @@
     }
   ],
   "items": [
+    {
+      "id": "youtube-N-iD7RerccQ",
+      "videoId": "N-iD7RerccQ",
+      "type": "music",
+      "source": "Inazio",
+      "author": "Inazio",
+      "title": "Inazio - Qué nos ha pasado",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=N-iD7RerccQ",
+      "image": "https://i.ytimg.com/vi/N-iD7RerccQ/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-08T22:00:35+00:00"
+    },
+    {
+      "id": "youtube-Vs4H2dhPrf8",
+      "videoId": "Vs4H2dhPrf8",
+      "type": "music",
+      "source": "Inazio",
+      "author": "Inazio",
+      "title": "Inazio - Lo mejor para ti",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=Vs4H2dhPrf8",
+      "image": "https://i.ytimg.com/vi/Vs4H2dhPrf8/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-08T22:00:33+00:00"
+    },
+    {
+      "id": "youtube-tu9pxPUbHQA",
+      "videoId": "tu9pxPUbHQA",
+      "type": "music",
+      "source": "Inazio",
+      "author": "Inazio",
+      "title": "Inazio - El velo",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=tu9pxPUbHQA",
+      "image": "https://i.ytimg.com/vi/tu9pxPUbHQA/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-08T22:00:33+00:00"
+    },
+    {
+      "id": "youtube-pYUF3OY_ow8",
+      "videoId": "pYUF3OY_ow8",
+      "type": "music",
+      "source": "Inazio",
+      "author": "Inazio",
+      "title": "Inazio - Todo lo que tengo",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=pYUF3OY_ow8",
+      "image": "https://i.ytimg.com/vi/pYUF3OY_ow8/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-08T22:00:15+00:00"
+    },
+    {
+      "id": "youtube-AEFAxiM4LsI",
+      "videoId": "AEFAxiM4LsI",
+      "type": "music",
+      "source": "Inazio",
+      "author": "Inazio",
+      "title": "Inazio - Bestia BB (Video Oficial) ft. Niña Polaca",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=AEFAxiM4LsI",
+      "image": "https://i.ytimg.com/vi/AEFAxiM4LsI/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-08T22:00:07+00:00"
+    },
+    {
+      "id": "youtube-NwkHNRgdwzk",
+      "videoId": "NwkHNRgdwzk",
+      "type": "music",
+      "source": "Inazio",
+      "author": "Inazio",
+      "title": "Inazio - Tan solo un segundo",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=NwkHNRgdwzk",
+      "image": "https://i.ytimg.com/vi/NwkHNRgdwzk/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-08T22:00:01+00:00"
+    },
+    {
+      "id": "youtube-y1fYV2sK5p8",
+      "videoId": "y1fYV2sK5p8",
+      "type": "music",
+      "source": "Gen Verde",
+      "author": "Gen Verde",
+      "title": "Siamo già in Corea del Sud!",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=y1fYV2sK5p8",
+      "image": "https://i.ytimg.com/vi/y1fYV2sK5p8/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-08T08:53:54+00:00"
+    },
+    {
+      "id": "youtube-RXjDKvDW4pU",
+      "videoId": "RXjDKvDW4pU",
+      "type": "music",
+      "source": "Nico Montero",
+      "author": "Nico Montero",
+      "title": "NICO MONTERO CANTA su tema \"Nada nuevo tras de ti\" en la Boda de SALVI Y MIRIAM",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=RXjDKvDW4pU",
+      "image": "https://i.ytimg.com/vi/RXjDKvDW4pU/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-07T16:37:06+00:00"
+    },
     {
       "id": "youtube-Lb38_ioqo1g",
       "videoId": "Lb38_ioqo1g",
@@ -2606,38 +2742,5 @@
       "publishedAt": ""
     }
   ],
-  "failures": [
-    {
-      "source": "Hakuna Group Music",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Inazio",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Nico Montero",
-      "error": "500 www.youtube.com"
-    },
-    {
-      "source": "Kairoi",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Ain Karem",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "tuyo",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Coro de Monjes de Solesmes",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Gen Verde",
-      "error": "500 www.youtube.com"
-    }
-  ]
+  "failures": []
 }

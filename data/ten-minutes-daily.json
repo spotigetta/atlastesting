@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-10-07T01:41:33.444Z",
+  "updatedAt": "2026-10-09T02:20:56.995Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "09-10-2026 Querer querer para querer creer - 10 Minutos con Jesús",
+      "publishedAt": "2026-10-08T23:31:04.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/09-10-2026-querer-querer-para-querer-creer-10-minutos-con-jesus--75658384",
+      "audioUrl": "https://api.spreaker.com/download/episode/75658384/09_10_2026_querer_querer_para_querer_creer_10_mf_181906735_feed_1.mp3",
+      "duration": "659",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
+    {
+      "title": "08-10-2026 Las puertas de la felicidad (I) - 10 Minutos con Jesús",
+      "publishedAt": "2026-10-08T08:40:57.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/08-10-2026-las-puertas-de-la-felicidad-i-10-minutos-con-jesus--75636323",
+      "audioUrl": "https://api.spreaker.com/download/episode/75636323/08_10_2026_las_puertas_felicidad_i_mf_181877046_feed_1.mp3",
+      "duration": "663",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "07-10-2026 Subidos al carro del Padrenuestro - 10 Minutos con Jesús",
       "publishedAt": "2026-10-06T21:28:47.000Z",
@@ -162,24 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/20-09-2026-un-burn-rate-por-las-nubes-10-minutos-con-jesus--75246649",
       "audioUrl": "https://api.spreaker.com/download/episode/75246649/20_09_2026_un_burn_rate_nubes_mf_180866789_feed_1.mp3",
       "duration": "616",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "19-09-2026 Cerebritis mal - 10 Minutos con Jesús",
-      "publishedAt": "2026-09-18T21:09:26.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/19-09-2026-cerebritis-mal-10-minutos-con-jesus--75218469",
-      "audioUrl": "https://api.spreaker.com/download/episode/75218469/19_09_2026_cerebritis_mal_10_minutos_jesus_mf_180837937_feed_1.mp3",
-      "duration": "656",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "18-09-2026 Un corazón donde todos caben - 10 Minutos con Jesús",
-      "publishedAt": "2026-09-18T07:21:08.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/18-09-2026-un-corazon-donde-todos-caben-10-minutos-con-jesus--75202335",
-      "audioUrl": "https://api.spreaker.com/download/episode/75202335/18_09_2026_un_corazon_donde_todos_caben_10_mf_180806124_feed_1.mp3",
-      "duration": "596",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
