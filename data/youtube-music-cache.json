@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T01:50:32.570Z",
+  "updatedAt": "2026-10-11T01:06:06.291Z",
   "source": "previous-snapshot",
   "channels": [
     {
@@ -2757,15 +2757,15 @@
     },
     {
       "source": "Kairoi",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Gen Rosso",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Ain Karem",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "tuyo",

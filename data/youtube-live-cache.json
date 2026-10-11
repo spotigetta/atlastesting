@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-10T01:50:31.649Z",
+  "updatedAt": "2026-10-11T01:06:05.467Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -334,6 +334,23 @@
     }
   ],
   "items": [
+    {
+      "id": "youtube-nMA7SjouOwU",
+      "videoId": "nMA7SjouOwU",
+      "type": "video",
+      "source": "It's Time To Think",
+      "author": "It's Time To Think",
+      "title": "¡Nueva York, hemos vuelto! 🇺🇸🍕",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=nMA7SjouOwU",
+      "image": "https://i.ytimg.com/vi/nMA7SjouOwU/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-09T16:07:16+00:00"
+    },
     {
       "id": "youtube-D08FmWdt3_g",
       "videoId": "D08FmWdt3_g",
@@ -42750,22 +42767,6 @@
       "verified": true,
       "dynamic": true,
       "publishedAt": "2026-07-25T12:46:24+00:00"
-    },
-    {
-      "id": "youtube-nxvmIr2FAic",
-      "videoId": "nxvmIr2FAic",
-      "type": "video",
-      "source": "Jesús Silva Castignani",
-      "author": "Jesús Silva Castignani",
-      "title": "Todo lo que tienes que saber sobre Santiago",
-      "description": "VÃ­deo publicado por Jesús Silva Castignani. Se reproduce dentro de Atlas mediante el reproductor oficial de YouTube.",
-      "url": "https://www.youtube.com/shorts/nxvmIr2FAic",
-      "image": "https://i.ytimg.com/vi/nxvmIr2FAic/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-25T07:56:59+00:00"
     }
   ],
   "failures": [
@@ -42779,7 +42780,7 @@
     },
     {
       "source": "Se Buscan Rebeldes",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "ROME REPORTS en Español",
@@ -42807,7 +42808,7 @@
     },
     {
       "source": "QNTLC",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "ACI Prensa",
@@ -42815,7 +42816,7 @@
     },
     {
       "source": "Jordan B. Peterson",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Luis Gutiérrez Rojas",
@@ -42830,16 +42831,12 @@
       "error": "No se encontró el identificador del canal"
     },
     {
-      "source": "It's Time To Think",
-      "error": "404 www.youtube.com"
-    },
-    {
       "source": "Dr. Arthur Brooks",
       "error": "404 www.youtube.com"
     },
     {
       "source": "María Calvo",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Rafa Lafuente",
@@ -42851,7 +42848,7 @@
     },
     {
       "source": "Ricardo Piñero",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Ricardo Calleja",
@@ -42871,7 +42868,7 @@
     },
     {
       "source": "Alejandro Villena",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Álvaro González-Alorda",
@@ -42895,7 +42892,7 @@
     },
     {
       "source": "Álex Rovira",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Nuccio Ordine",
@@ -42919,11 +42916,11 @@
     },
     {
       "source": "Peter Kreeft",
-      "error": "No se encontró el identificador del canal"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Javier G. Recuenco",
-      "error": "404 www.youtube.com"
+      "error": "No se encontró el identificador del canal"
     },
     {
       "source": "Marcelo Gullo Omodeo",
@@ -42971,7 +42968,7 @@
     },
     {
       "source": "Hakuna Group Music",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "10 minutos con Jesús",
@@ -42983,11 +42980,11 @@
     },
     {
       "source": "The Rest Is History",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "ISCR Universidad de Navarra",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "The Catholic Talk Show",
@@ -43007,7 +43004,7 @@
     },
     {
       "source": "Alfonso Aguiló",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Emilio Duró",
@@ -43022,12 +43019,12 @@
       "error": "404 www.youtube.com"
     },
     {
-      "source": "Rafael Santandreu",
-      "error": "404 www.youtube.com"
-    },
-    {
       "source": "Higinio Marín",
       "error": "No se encontró el identificador del canal"
+    },
+    {
+      "source": "Andrew Huberman",
+      "error": "404 www.youtube.com"
     }
   ]
 }
