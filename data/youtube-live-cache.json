@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-11T01:06:05.467Z",
+  "updatedAt": "2026-10-12T01:27:22.720Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -335,6 +335,91 @@
   ],
   "items": [
     {
+      "id": "youtube-04vtrqXnmWc",
+      "videoId": "04vtrqXnmWc",
+      "type": "video",
+      "source": "María Calvo",
+      "author": "María Calvo",
+      "title": "🚨 EN VIVO NOTICIAS: ATAQUE HIPERSÓNICO TOTAL! IRÁN DA ULTIMÁTUM! TRUMP LLORA! UCRANIA RUSIA EEUU",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=04vtrqXnmWc",
+      "image": "https://i.ytimg.com/vi/04vtrqXnmWc/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-11T21:35:18+00:00"
+    },
+    {
+      "id": "youtube-h2gMOR9gP14",
+      "videoId": "h2gMOR9gP14",
+      "type": "video",
+      "source": "María Calvo",
+      "author": "María Calvo",
+      "title": "🚨 EN VIVO NOTICIAS: BRUTAL ULTIMÁTUM: TRUMP NO LO PUEDE CREER! IRÁN SE PREPARA! UCRANIA RUSIA OTAN",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=h2gMOR9gP14",
+      "image": "https://i.ytimg.com/vi/h2gMOR9gP14/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-11T15:03:55+00:00"
+    },
+    {
+      "id": "youtube-cWjHj78896A",
+      "videoId": "cWjHj78896A",
+      "type": "video",
+      "source": "María Calvo",
+      "author": "María Calvo",
+      "title": "🚨 EN VIVO NOTICIAS: EXCLUSIVA! ATAQUE DE IRÁN REVIENTA A TRUMP! EEUU UCRANIA YEMEN ARABIA RUSIA",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=cWjHj78896A",
+      "image": "https://i.ytimg.com/vi/cWjHj78896A/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-10T21:17:51+00:00"
+    },
+    {
+      "id": "youtube-z7dwqDEiMY0",
+      "videoId": "z7dwqDEiMY0",
+      "type": "video",
+      "source": "María Calvo",
+      "author": "María Calvo",
+      "title": "🚨 EN VIVO NOTICIAS: ATAQUE HIPERSÓNICO: GOLPE MORTAL A ARABIA SAUDI! TRUMP IRÁN UCRANIA RUSIA EEUU",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=z7dwqDEiMY0",
+      "image": "https://i.ytimg.com/vi/z7dwqDEiMY0/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-10T14:37:47+00:00"
+    },
+    {
+      "id": "youtube-iOYihIAPLAM",
+      "videoId": "iOYihIAPLAM",
+      "type": "video",
+      "source": "María Calvo",
+      "author": "María Calvo",
+      "title": "🚨 EN VIVO NOTICIAS: BRUTAL RIDÍCULO DE TRUMP ANTE IRÁN Y RUSIA! ORMUZ UCRANIA EEUU YEMEN PUTIN",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=iOYihIAPLAM",
+      "image": "https://i.ytimg.com/vi/iOYihIAPLAM/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-09T21:22:59+00:00"
+    },
+    {
       "id": "youtube-nMA7SjouOwU",
       "videoId": "nMA7SjouOwU",
       "type": "video",
@@ -350,6 +435,23 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-10-09T16:07:16+00:00"
+    },
+    {
+      "id": "youtube-vB-ZWmaIyWM",
+      "videoId": "vB-ZWmaIyWM",
+      "type": "video",
+      "source": "María Calvo",
+      "author": "María Calvo",
+      "title": "🚨 EN VIVO NOTICIAS: ATAQUE HIPERSÓNICOS DE IRÁN EN ORMUZ! TRUMP LLORA! EEUU RUSIA UCRANIA",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=vB-ZWmaIyWM",
+      "image": "https://i.ytimg.com/vi/vB-ZWmaIyWM/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-09T15:14:12+00:00"
     },
     {
       "id": "youtube-D08FmWdt3_g",
@@ -42667,106 +42769,6 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-07-25T18:00:16+00:00"
-    },
-    {
-      "id": "youtube-1vjojF4IUL0",
-      "videoId": "1vjojF4IUL0",
-      "type": "video",
-      "source": "Juan Arana",
-      "author": "Juan Arana",
-      "title": "25 de julio de 2026",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=1vjojF4IUL0",
-      "image": "https://i.ytimg.com/vi/1vjojF4IUL0/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-07-25T17:23:45+00:00"
-    },
-    {
-      "id": "youtube-prhThT-Kri4",
-      "videoId": "prhThT-Kri4",
-      "type": "video",
-      "source": "Scott Hahn",
-      "author": "Scott Hahn",
-      "title": "Evolution and the Meaning of Everything | John Bergsma w/ Dr. Daniel Kuebler",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=prhThT-Kri4",
-      "image": "https://i.ytimg.com/vi/prhThT-Kri4/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-07-25T17:00:39+00:00"
-    },
-    {
-      "id": "youtube-aySvfYwsIaA",
-      "videoId": "aySvfYwsIaA",
-      "type": "video",
-      "source": "Francisco Ugarte",
-      "author": "Francisco Ugarte",
-      "title": "El miedo como motor del líder",
-      "description": "El miedo no es freno, es impulso. Con humildad, propósito y disciplina, se convierte en energía para emprender, aprender del ensayo y error, delegar con confianza y tomar decisiones estratégicas que generan crecimiento.",
-      "url": "https://www.youtube.com/shorts/aySvfYwsIaA",
-      "image": "https://i.ytimg.com/vi/aySvfYwsIaA/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-25T17:00:18+00:00"
-    },
-    {
-      "id": "youtube-XFVxaSrVQK8",
-      "videoId": "XFVxaSrVQK8",
-      "type": "video",
-      "source": "The Rest Is History",
-      "author": "The Rest Is History",
-      "title": "Conan O'Brien: Was America a Mistake?",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=XFVxaSrVQK8",
-      "image": "https://i.ytimg.com/vi/XFVxaSrVQK8/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-07-25T17:00:06+00:00"
-    },
-    {
-      "id": "youtube-5GHyYKizSic",
-      "videoId": "5GHyYKizSic",
-      "type": "video",
-      "source": "Bishop Robert Barron",
-      "author": "Bishop Robert Barron",
-      "title": "What Life Is All About - Bishop Barron's Sunday Sermon",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=5GHyYKizSic",
-      "image": "https://i.ytimg.com/vi/5GHyYKizSic/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-07-25T15:00:06+00:00"
-    },
-    {
-      "id": "youtube-XwQ8lscTmUI",
-      "videoId": "XwQ8lscTmUI",
-      "type": "video",
-      "source": "Simon Sinek",
-      "author": "Simon Sinek",
-      "title": "The One Person Every Leader Needs",
-      "description": "Courage grows when we know someone is there for us. Video from Amsterdam Business Forum 2025, in conversation with Ikenna Azuike",
-      "url": "https://www.youtube.com/shorts/XwQ8lscTmUI",
-      "image": "https://i.ytimg.com/vi/XwQ8lscTmUI/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-25T12:46:24+00:00"
     }
   ],
   "failures": [
@@ -42812,7 +42814,7 @@
     },
     {
       "source": "ACI Prensa",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Jordan B. Peterson",
@@ -42831,16 +42833,16 @@
       "error": "No se encontró el identificador del canal"
     },
     {
+      "source": "It's Time To Think",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "Dr. Arthur Brooks",
       "error": "404 www.youtube.com"
     },
     {
-      "source": "María Calvo",
-      "error": "500 www.youtube.com"
-    },
-    {
       "source": "Rafa Lafuente",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Pep Borrell",
@@ -42848,7 +42850,7 @@
     },
     {
       "source": "Ricardo Piñero",
-      "error": "404 www.youtube.com"
+      "error": "No se encontró el identificador del canal"
     },
     {
       "source": "Ricardo Calleja",
@@ -42892,7 +42894,7 @@
     },
     {
       "source": "Álex Rovira",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Nuccio Ordine",
@@ -42916,7 +42918,7 @@
     },
     {
       "source": "Peter Kreeft",
-      "error": "404 www.youtube.com"
+      "error": "No se encontró el identificador del canal"
     },
     {
       "source": "Javier G. Recuenco",
@@ -42952,7 +42954,7 @@
     },
     {
       "source": "Catherine L'Ecuyer",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "José Ramón Ayllón",
@@ -42964,11 +42966,11 @@
     },
     {
       "source": "Vatican News Español",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Hakuna Group Music",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "10 minutos con Jesús",
@@ -42980,7 +42982,7 @@
     },
     {
       "source": "The Rest Is History",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "ISCR Universidad de Navarra",
@@ -43000,11 +43002,11 @@
     },
     {
       "source": "Francisco Insa",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Alfonso Aguiló",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Emilio Duró",
@@ -43016,6 +43018,10 @@
     },
     {
       "source": "Rafa Guerrero",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Rafael Santandreu",
       "error": "404 www.youtube.com"
     },
     {
