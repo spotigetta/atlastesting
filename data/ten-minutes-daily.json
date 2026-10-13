@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-10-12T01:27:17.171Z",
+  "updatedAt": "2026-10-13T03:05:50.097Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "13-10-2026 Veo, veo... cómo ves - 10 Minutos con Jesús",
+      "publishedAt": "2026-10-12T21:00:00.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/13-10-2026-veo-veo-como-ves-10-minutos-con-jesus--75734681",
+      "audioUrl": "https://api.spreaker.com/download/episode/75734681/13_10_2026_veo_veo_como_ves_10_minutos_mf_182054687_feed_1.mp3",
+      "duration": "730",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
+    {
+      "title": "12-10-2026 Descalza tu corazón - 10 Minutos con Jesús",
+      "publishedAt": "2026-10-12T16:18:43.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/12-10-2026-descalza-tu-corazon-10-minutos-con-jesus--75731701",
+      "audioUrl": "https://api.spreaker.com/download/episode/75731701/12_10_2026_descalza_tu_corazon_10_minutos_con_mf_182054529_feed_1.mp3",
+      "duration": "657",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "11-10-2026 El banquete de bodas - 10 Minutos con Jesús",
       "publishedAt": "2026-10-11T16:39:04.000Z",
@@ -162,24 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/24-09-2026-te-veo-o-no-te-veo-10-minutos-con-jesus--75323206",
       "audioUrl": "https://api.spreaker.com/download/episode/75323206/24_09_2026_te_veo_o_no_te_veo_mf_181106974_feed_1.mp3",
       "duration": "667",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "23-09-2026 El ghosting de Jesús a María - 10 Minutos con Jesús",
-      "publishedAt": "2026-09-22T22:04:30.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/23-09-2026-el-ghosting-de-jesus-a-maria-10-minutos-con-jesus--75305653",
-      "audioUrl": "https://api.spreaker.com/download/episode/75305653/23_09_2026_el_ghosting_jesus_a_maria_mf_181027051_feed_1.mp3",
-      "duration": "608",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "22-09-2026 Atravesar el gentío - 10 Minutos con Jesús",
-      "publishedAt": "2026-09-22T07:24:02.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/22-09-2026-atravesar-el-gentio-10-minutos-con-jesus--75292724",
-      "audioUrl": "https://api.spreaker.com/download/episode/75292724/22_09_2026_atravesar_gentio_10_minutos_con_mf_180966822_feed_1.mp3",
-      "duration": "635",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]

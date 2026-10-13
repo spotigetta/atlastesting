@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-12T01:27:22.720Z",
+  "updatedAt": "2026-10-13T03:05:56.582Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -335,6 +335,91 @@
   ],
   "items": [
     {
+      "id": "youtube-qpeLBGeTqoE",
+      "videoId": "qpeLBGeTqoE",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "León XIV anuncia que será operado en los próximos días de un nódulo en el pulmón",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=qpeLBGeTqoE",
+      "image": "https://i.ytimg.com/vi/qpeLBGeTqoE/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-12T12:58:27+00:00"
+    },
+    {
+      "id": "youtube-bRSyN7eTBIc",
+      "videoId": "bRSyN7eTBIc",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "Briefing, 12 de octubre de 2026",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=bRSyN7eTBIc",
+      "image": "https://i.ytimg.com/vi/bRSyN7eTBIc/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-12T12:24:57+00:00"
+    },
+    {
+      "id": "youtube-GWeErkYNhNM",
+      "videoId": "GWeErkYNhNM",
+      "type": "video",
+      "source": "It's Time To Think",
+      "author": "It's Time To Think",
+      "title": "Hay cosas que no elegimos y, aun así, forman parte de nosotros. 🇪🇸",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=GWeErkYNhNM",
+      "image": "https://i.ytimg.com/vi/GWeErkYNhNM/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-12T11:02:34+00:00"
+    },
+    {
+      "id": "youtube-HSpbfC5DnCU",
+      "videoId": "HSpbfC5DnCU",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "Madre de Carlo Acutis: \"Su amor por Cristo hizo de su vida algo extraordinario\"",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=HSpbfC5DnCU",
+      "image": "https://i.ytimg.com/vi/HSpbfC5DnCU/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-12T10:24:00+00:00"
+    },
+    {
+      "id": "youtube-509AYT9X_9A",
+      "videoId": "509AYT9X_9A",
+      "type": "video",
+      "source": "Cura de Toledo",
+      "author": "Cura de Toledo",
+      "title": "VIRGEN DEL PILAR #meditación al #Evangelio de hoy (Lunes, 12 octubre 2026)",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=509AYT9X_9A",
+      "image": "https://i.ytimg.com/vi/509AYT9X_9A/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-12T04:55:52+00:00"
+    },
+    {
       "id": "youtube-04vtrqXnmWc",
       "videoId": "04vtrqXnmWc",
       "type": "video",
@@ -369,6 +454,74 @@
       "publishedAt": "2026-10-11T15:03:55+00:00"
     },
     {
+      "id": "youtube-57pBps82oJo",
+      "videoId": "57pBps82oJo",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "Procesión del Señor de los Milagros en Roma",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=57pBps82oJo",
+      "image": "https://i.ytimg.com/vi/57pBps82oJo/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-11T12:17:25+00:00"
+    },
+    {
+      "id": "youtube-y4MPwDdWWOA",
+      "videoId": "y4MPwDdWWOA",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "Ángelus 11 de octubre de 2026 - Papa León XIV",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=y4MPwDdWWOA",
+      "image": "https://i.ytimg.com/vi/y4MPwDdWWOA/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-11T10:52:02+00:00"
+    },
+    {
+      "id": "youtube-cfEMZ1VY2Qo",
+      "videoId": "cfEMZ1VY2Qo",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "León XIV se someterá en unos días a una intervención quirúrgica para extirpar un nódulo en el pulmón",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=cfEMZ1VY2Qo",
+      "image": "https://i.ytimg.com/vi/cfEMZ1VY2Qo/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-11T10:51:02+00:00"
+    },
+    {
+      "id": "youtube-kxQTbDj6NNg",
+      "videoId": "kxQTbDj6NNg",
+      "type": "video",
+      "source": "Cura de Toledo",
+      "author": "Cura de Toledo",
+      "title": "BANQUETE Y BODA #meditación al #Evangelio de hoy (domingo, 11 octubre 2025)",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=kxQTbDj6NNg",
+      "image": "https://i.ytimg.com/vi/kxQTbDj6NNg/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-11T05:20:53+00:00"
+    },
+    {
       "id": "youtube-cWjHj78896A",
       "videoId": "cWjHj78896A",
       "type": "video",
@@ -401,6 +554,23 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-10-10T14:37:47+00:00"
+    },
+    {
+      "id": "youtube-xuiXELQM088",
+      "videoId": "xuiXELQM088",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "La Iglesia en Medio Oriente, testigo de reconciliación y paz",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=xuiXELQM088",
+      "image": "https://i.ytimg.com/vi/xuiXELQM088/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-10T12:35:31+00:00"
     },
     {
       "id": "youtube-iOYihIAPLAM",
@@ -452,6 +622,74 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-10-09T15:14:12+00:00"
+    },
+    {
+      "id": "youtube-yuheNTkmjk8",
+      "videoId": "yuheNTkmjk8",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "León XIV inaugura el curso universitario: «Lleven la vida al estudio y el estudio a la vida»",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=yuheNTkmjk8",
+      "image": "https://i.ytimg.com/vi/yuheNTkmjk8/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-09T12:47:10+00:00"
+    },
+    {
+      "id": "youtube-3iUnnLlxfck",
+      "videoId": "3iUnnLlxfck",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "Briefing, 9 de octubre de 2026",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=3iUnnLlxfck",
+      "image": "https://i.ytimg.com/vi/3iUnnLlxfck/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-09T12:17:04+00:00"
+    },
+    {
+      "id": "youtube-PWJpFz3kyMM",
+      "videoId": "PWJpFz3kyMM",
+      "type": "video",
+      "source": "Vatican News Español",
+      "author": "Vatican News Español",
+      "title": "León XIV pide a la Iglesia hondureña educar para la paz y defender la dignidad humana",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=PWJpFz3kyMM",
+      "image": "https://i.ytimg.com/vi/PWJpFz3kyMM/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-09T12:10:12+00:00"
+    },
+    {
+      "id": "youtube-Sy4uJL9DApw",
+      "videoId": "Sy4uJL9DApw",
+      "type": "video",
+      "source": "Cura de Toledo",
+      "author": "Cura de Toledo",
+      "title": "RECAÍDAS #meditación al #Evangelio de hoy (Viernes, 9 octubre 2026)",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=Sy4uJL9DApw",
+      "image": "https://i.ytimg.com/vi/Sy4uJL9DApw/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-09T04:31:56+00:00"
     },
     {
       "id": "youtube-D08FmWdt3_g",
@@ -42538,237 +42776,6 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-07-27T00:27:14+00:00"
-    },
-    {
-      "id": "youtube-oFKNbg5rnTk",
-      "videoId": "oFKNbg5rnTk",
-      "type": "video",
-      "source": "Se Buscan Rebeldes",
-      "author": "Se Buscan Rebeldes",
-      "title": "¿Por qué la Teología del Cuerpo cambia vidas? ✨ | Álvaro Quesada #Shorts",
-      "description": "Cuando a una persona le hablan de belleza, bondad y misericordia, algo en su corazón hace clic. Álvaro Quesada nos cuenta cómo la Teología del Cuerpo superó sus prejuicios y le mostró una Verdad infinitamente más grande. 🎬 Mira el episodio #28 completo en nuestro canal de YouTube. 🎧 Escúchalo en Spotify, Apple Podcast e iVoox. ¡Suscríbete y comparte para s",
-      "url": "https://www.youtube.com/shorts/oFKNbg5rnTk",
-      "image": "https://i.ytimg.com/vi/oFKNbg5rnTk/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-26T18:00:23+00:00"
-    },
-    {
-      "id": "youtube-I_qirYNLgaY",
-      "videoId": "I_qirYNLgaY",
-      "type": "video",
-      "source": "Jordan B. Peterson",
-      "author": "Jordan B. Peterson",
-      "title": "Why Short-Term Pleasure is Ruining Your Life",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=I_qirYNLgaY",
-      "image": "https://i.ytimg.com/vi/I_qirYNLgaY/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-07-26T18:00:10+00:00"
-    },
-    {
-      "id": "youtube-KaOSySD4mDQ",
-      "videoId": "KaOSySD4mDQ",
-      "type": "video",
-      "source": "Marcelo Gullo Omodeo",
-      "author": "Marcelo Gullo Omodeo",
-      "title": "Bartolomé de las Casas armó a Inglaterra contra Hispanoamérica",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=KaOSySD4mDQ",
-      "image": "https://i.ytimg.com/vi/KaOSySD4mDQ/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-07-26T16:45:37+00:00"
-    },
-    {
-      "id": "youtube-AuNKRme8g50",
-      "videoId": "AuNKRme8g50",
-      "type": "video",
-      "source": "The Rest Is History",
-      "author": "The Rest Is History",
-      "title": "How would Trump handle a duel?",
-      "description": "Join this channel to get early access to episodes, ad-free watching, and priority access to our live events: https://www.youtube.com/channel/UCUYK0BJZF3yNb2fw1EdAXUQ/join Twitter: @TheRestHistory @holland_tom @dcsandbrook Social channels: https://www.instagram.com/theresthistory/ https://www.tiktok.com/@theresthistory https://x.com/TheRestHistory https://bsk",
-      "url": "https://www.youtube.com/shorts/AuNKRme8g50",
-      "image": "https://i.ytimg.com/vi/AuNKRme8g50/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-26T16:30:02+00:00"
-    },
-    {
-      "id": "youtube-nBmFL-gROmg",
-      "videoId": "nBmFL-gROmg",
-      "type": "video",
-      "source": "Pablo Blanco Sarto",
-      "author": "Pablo Blanco Sarto",
-      "title": "El sacerdote según Benedicto XVI",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=nBmFL-gROmg",
-      "image": "https://i.ytimg.com/vi/nBmFL-gROmg/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-07-26T16:06:36+00:00"
-    },
-    {
-      "id": "youtube-gJfGycmNQvM",
-      "videoId": "gJfGycmNQvM",
-      "type": "video",
-      "source": "Simon Sinek",
-      "author": "Simon Sinek",
-      "title": "\"I Want Your Worst Ideas\"",
-      "description": "The responsibility of leadership is not to come up with all the ideas. The responsibility of leadership is to create an environment in which great ideas can thrive. Video from ServiceTitan’s North Star Summit",
-      "url": "https://www.youtube.com/shorts/gJfGycmNQvM",
-      "image": "https://i.ytimg.com/vi/gJfGycmNQvM/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-26T13:02:36+00:00"
-    },
-    {
-      "id": "youtube-dkZZE5EffSQ",
-      "videoId": "dkZZE5EffSQ",
-      "type": "video",
-      "source": "Dr. Arthur Brooks",
-      "author": "Dr. Arthur Brooks",
-      "title": "The Problem With Always Wanting More",
-      "description": "Satisfaction that lasts doesn't come from having more. It comes from wanting less.",
-      "url": "https://www.youtube.com/shorts/dkZZE5EffSQ",
-      "image": "https://i.ytimg.com/vi/dkZZE5EffSQ/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-25T22:16:46+00:00"
-    },
-    {
-      "id": "youtube-cwLqZSa-mOg",
-      "videoId": "cwLqZSa-mOg",
-      "type": "video",
-      "source": "Cura de Toledo",
-      "author": "Cura de Toledo",
-      "title": "ESCONDIDO #meditación al #evangelio del #domingo (26 de julio de 2026)",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=cwLqZSa-mOg",
-      "image": "https://i.ytimg.com/vi/cwLqZSa-mOg/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-07-25T21:56:31+00:00"
-    },
-    {
-      "id": "youtube-D55qVyz4_Cs",
-      "videoId": "D55qVyz4_Cs",
-      "type": "video",
-      "source": "The Rest Is History",
-      "author": "The Rest Is History",
-      "title": "Is Conan O'Brien inbred?",
-      "description": "Join this channel to get early access to episodes, ad-free watching, and priority access to our live events: https://www.youtube.com/channel/UCUYK0BJZF3yNb2fw1EdAXUQ/join Twitter: @TheRestHistory @holland_tom @dcsandbrook Social channels: https://www.instagram.com/theresthistory/ https://www.tiktok.com/@theresthistory https://x.com/TheRestHistory https://bsk",
-      "url": "https://www.youtube.com/shorts/D55qVyz4_Cs",
-      "image": "https://i.ytimg.com/vi/D55qVyz4_Cs/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-25T20:00:04+00:00"
-    },
-    {
-      "id": "youtube-7rCMqy6_9aU",
-      "videoId": "7rCMqy6_9aU",
-      "type": "video",
-      "source": "QNTLC",
-      "author": "QNTLC",
-      "title": "Educación Católica Clásica | Academia San Elías | Homeschool Católico",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=7rCMqy6_9aU",
-      "image": "https://i.ytimg.com/vi/7rCMqy6_9aU/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-07-25T19:45:06+00:00"
-    },
-    {
-      "id": "youtube-td9KYlAf5zM",
-      "videoId": "td9KYlAf5zM",
-      "type": "video",
-      "source": "Stephen Covey Principles HQ",
-      "author": "Stephen Covey Principles HQ",
-      "title": "Stephen Covey: Why Success Stops Feeling the Same After 40",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=td9KYlAf5zM",
-      "image": "https://i.ytimg.com/vi/td9KYlAf5zM/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-07-25T18:58:31+00:00"
-    },
-    {
-      "id": "youtube-49pqM-HNThw",
-      "videoId": "49pqM-HNThw",
-      "type": "video",
-      "source": "The Rest Is History",
-      "author": "The Rest Is History",
-      "title": "What if Mount Rushmore is naturally occurring?",
-      "description": "Join this channel to get early access to episodes, ad-free watching, and priority access to our live events: https://www.youtube.com/channel/UCUYK0BJZF3yNb2fw1EdAXUQ/join Twitter: @TheRestHistory @holland_tom @dcsandbrook Social channels: https://www.instagram.com/theresthistory/ https://www.tiktok.com/@theresthistory https://x.com/TheRestHistory https://bsk",
-      "url": "https://www.youtube.com/shorts/49pqM-HNThw",
-      "image": "https://i.ytimg.com/vi/49pqM-HNThw/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-25T18:00:36+00:00"
-    },
-    {
-      "id": "youtube-_ET8upK_kxM",
-      "videoId": "_ET8upK_kxM",
-      "type": "video",
-      "source": "Se Buscan Rebeldes",
-      "author": "Se Buscan Rebeldes",
-      "title": "Los 4 PILARES para cuidar tu vida cristiana ⚓️ | Rebeldes #Shorts",
-      "description": "¿Cómo cuidar tu vida cristiana y crecer en santidad? El Padre Ignacio nos resume los 4 pilares fundamentales basados en el Catecismo de la Iglesia Católica: Formación, Sacramentos, Moral y Oración. 🎬 Disfruta del episodio #28 completo con Álvaro Quesada en nuestro canal de YouTube. 🎧 Disponible también en Spotify, Apple Podcast e iVoox. ¡Suscríbete y compa",
-      "url": "https://www.youtube.com/shorts/_ET8upK_kxM",
-      "image": "https://i.ytimg.com/vi/_ET8upK_kxM/hq720_2.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "publishedAt": "2026-07-25T18:00:23+00:00"
-    },
-    {
-      "id": "youtube-buaakUDCmy8",
-      "videoId": "buaakUDCmy8",
-      "type": "video",
-      "source": "Marcelo Gullo Omodeo",
-      "author": "Marcelo Gullo Omodeo",
-      "title": "El muerto está vivo: los indios lucharon por España, no contra ella",
-      "description": "Vídeo reciente obtenido del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=buaakUDCmy8",
-      "image": "https://i.ytimg.com/vi/buaakUDCmy8/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-07-25T18:00:16+00:00"
     }
   ],
   "failures": [
@@ -42810,7 +42817,7 @@
     },
     {
       "source": "QNTLC",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "ACI Prensa",
@@ -42826,18 +42833,18 @@
     },
     {
       "source": "Marian Rojas-Estapé",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Víctor Küppers",
       "error": "No se encontró el identificador del canal"
     },
     {
-      "source": "It's Time To Think",
+      "source": "Dr. Arthur Brooks",
       "error": "404 www.youtube.com"
     },
     {
-      "source": "Dr. Arthur Brooks",
+      "source": "María Calvo",
       "error": "404 www.youtube.com"
     },
     {
@@ -42850,11 +42857,11 @@
     },
     {
       "source": "Ricardo Piñero",
-      "error": "No se encontró el identificador del canal"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Ricardo Calleja",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Ana Iris Simón",
@@ -42862,7 +42869,7 @@
     },
     {
       "source": "Leopoldo Abadía",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Gregorio Luri",
@@ -42870,7 +42877,7 @@
     },
     {
       "source": "Alejandro Villena",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Álvaro González-Alorda",
@@ -42902,7 +42909,7 @@
     },
     {
       "source": "Álvaro Bilbao",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "María Álvarez de las Asturias",
@@ -42930,11 +42937,7 @@
     },
     {
       "source": "Jesús Silva Castignani",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Cura de Toledo",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Stephen Covey Principles HQ",
@@ -42946,7 +42949,7 @@
     },
     {
       "source": "Juan Arana",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Aquilino Polaino",
@@ -42954,7 +42957,7 @@
     },
     {
       "source": "Catherine L'Ecuyer",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "José Ramón Ayllón",
@@ -42963,10 +42966,6 @@
     {
       "source": "EWTN Español",
       "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Vatican News Español",
-      "error": "500 www.youtube.com"
     },
     {
       "source": "Hakuna Group Music",
@@ -42986,11 +42985,11 @@
     },
     {
       "source": "ISCR Universidad de Navarra",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "The Catholic Talk Show",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Facultad de Teología UNAV",
@@ -43002,7 +43001,7 @@
     },
     {
       "source": "Francisco Insa",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Alfonso Aguiló",
