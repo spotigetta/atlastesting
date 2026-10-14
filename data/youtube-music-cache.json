@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-13T03:05:57.379Z",
+  "updatedAt": "2026-10-14T01:18:06.739Z",
   "source": "previous-snapshot",
   "channels": [
     {
@@ -2753,7 +2753,7 @@
     },
     {
       "source": "Nico Montero",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Kairoi",
@@ -2769,7 +2769,7 @@
     },
     {
       "source": "tuyo",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Coro de Monjes de Solesmes",
@@ -2777,7 +2777,7 @@
     },
     {
       "source": "Gen Verde",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     }
   ]
 }

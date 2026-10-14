@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-13T03:05:56.582Z",
-  "source": "youtube-rss",
+  "updatedAt": "2026-10-14T01:18:06.052Z",
+  "source": "previous-snapshot",
   "channels": [
     {
       "name": "Opus Dei",
@@ -42821,7 +42821,7 @@
     },
     {
       "source": "ACI Prensa",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Jordan B. Peterson",
@@ -42833,11 +42833,15 @@
     },
     {
       "source": "Marian Rojas-Estapé",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Víctor Küppers",
       "error": "No se encontró el identificador del canal"
+    },
+    {
+      "source": "It's Time To Think",
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Dr. Arthur Brooks",
@@ -42857,11 +42861,11 @@
     },
     {
       "source": "Ricardo Piñero",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Ricardo Calleja",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Ana Iris Simón",
@@ -42869,7 +42873,7 @@
     },
     {
       "source": "Leopoldo Abadía",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Gregorio Luri",
@@ -42897,7 +42901,7 @@
     },
     {
       "source": "EWTN España",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Álex Rovira",
@@ -42909,7 +42913,7 @@
     },
     {
       "source": "Álvaro Bilbao",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "María Álvarez de las Asturias",
@@ -42921,7 +42925,7 @@
     },
     {
       "source": "Scott Hahn",
-      "error": "404 www.youtube.com"
+      "error": "No se encontró el identificador del canal"
     },
     {
       "source": "Peter Kreeft",
@@ -42929,7 +42933,7 @@
     },
     {
       "source": "Javier G. Recuenco",
-      "error": "No se encontró el identificador del canal"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Marcelo Gullo Omodeo",
@@ -42937,6 +42941,10 @@
     },
     {
       "source": "Jesús Silva Castignani",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Cura de Toledo",
       "error": "500 www.youtube.com"
     },
     {
@@ -42949,7 +42957,7 @@
     },
     {
       "source": "Juan Arana",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Aquilino Polaino",
@@ -42965,6 +42973,10 @@
     },
     {
       "source": "EWTN Español",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Vatican News Español",
       "error": "404 www.youtube.com"
     },
     {
@@ -42989,7 +43001,7 @@
     },
     {
       "source": "The Catholic Talk Show",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Facultad de Teología UNAV",
