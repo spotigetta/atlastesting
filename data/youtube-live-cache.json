@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-14T01:18:06.052Z",
+  "updatedAt": "2026-10-15T00:39:45.063Z",
   "source": "previous-snapshot",
   "channels": [
     {
@@ -42817,7 +42817,7 @@
     },
     {
       "source": "QNTLC",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "ACI Prensa",
@@ -42861,7 +42861,7 @@
     },
     {
       "source": "Ricardo Piñero",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Ricardo Calleja",
@@ -42901,7 +42901,7 @@
     },
     {
       "source": "EWTN España",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Álex Rovira",
@@ -42925,7 +42925,7 @@
     },
     {
       "source": "Scott Hahn",
-      "error": "No se encontró el identificador del canal"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Peter Kreeft",
@@ -42945,7 +42945,7 @@
     },
     {
       "source": "Cura de Toledo",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Stephen Covey Principles HQ",

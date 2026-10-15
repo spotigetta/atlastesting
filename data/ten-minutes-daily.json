@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-10-14T01:18:00.029Z",
+  "updatedAt": "2026-10-15T00:39:38.403Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "15-10-2026 Cuatro remedios para el rencor - 10 Minutos con Jesús",
+      "publishedAt": "2026-10-14T23:19:35.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/15-10-2026-cuatro-remedios-para-el-rencor-10-minutos-con-jesus--75797290",
+      "audioUrl": "https://api.spreaker.com/download/episode/75797290/15_10_2026_cuatro_remedios_para_rencor_10_mf_182219161_feed_1.mp3",
+      "duration": "650",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "14-10-2026 Tres nódulos - 10Minutos con Jesús",
       "publishedAt": "2026-10-13T22:55:00.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/26-09-2026-pasmados-10-minutos-con-jesus--75365857",
       "audioUrl": "https://api.spreaker.com/download/episode/75365857/26_09_2026_pasmados_10_minutos_jesus_mf_181204867_feed_1.mp3",
       "duration": "597",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "25-09-2026 Fe sin complejos - 10 Minutos con Jesús",
-      "publishedAt": "2026-09-24T20:11:52.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/25-09-2026-fe-sin-complejos-10-minutos-con-jesus--75337645",
-      "audioUrl": "https://api.spreaker.com/download/episode/75337645/25_09_2026_fe_sin_complejos_10_minutos_con_mf_181156727_feed_1.mp3",
-      "duration": "658",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
