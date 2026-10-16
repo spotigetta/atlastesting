@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-14T01:18:06.739Z",
-  "source": "previous-snapshot",
+  "updatedAt": "2026-10-16T00:31:27.286Z",
+  "source": "youtube-rss",
   "channels": [
     {
       "name": "Hakuna Group Music",
@@ -40,6 +40,23 @@
     }
   ],
   "items": [
+    {
+      "id": "youtube-2fs5JCIqzus",
+      "videoId": "2fs5JCIqzus",
+      "type": "music",
+      "source": "Gen Verde",
+      "author": "Gen Verde",
+      "title": "🇰🇷 Cosa sta dietro ad una delle nostre nuove canzoni in coreano? 🎶",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=2fs5JCIqzus",
+      "image": "https://i.ytimg.com/vi/2fs5JCIqzus/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-10T10:00:37+00:00"
+    },
     {
       "id": "youtube-N-iD7RerccQ",
       "videoId": "N-iD7RerccQ",
@@ -2744,39 +2761,7 @@
   ],
   "failures": [
     {
-      "source": "Hakuna Group Music",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Inazio",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Nico Montero",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Kairoi",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Gen Rosso",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Ain Karem",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "tuyo",
-      "error": "404 www.youtube.com"
-    },
-    {
       "source": "Coro de Monjes de Solesmes",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Gen Verde",
       "error": "404 www.youtube.com"
     }
   ]
