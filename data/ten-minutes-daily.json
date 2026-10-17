@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-10-16T00:31:18.859Z",
+  "updatedAt": "2026-10-17T00:38:23.657Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "16-10-2026 Una contemplación de los misterios del Rosario - 10 Minutos con Jesús",
+      "publishedAt": "2026-10-16T21:38:47.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/16-10-2026-una-contemplacion-de-los-misterios-del-rosario-10-minutos-con-jesus--75831216",
+      "audioUrl": "https://api.spreaker.com/download/episode/75831216/16_10_2026_una_contemplacion_misterios_del_rosario_mf_182321776_feed_1.mp3",
+      "duration": "621",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "16-10-2026 La levadura de los cristianos - 10 Minutos con Jesús",
       "publishedAt": "2026-10-15T21:33:38.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/28-09-2026-bendito-sea-el-nombre-del-senor-10-minutos-con-jesus--75402244",
       "audioUrl": "https://api.spreaker.com/download/episode/75402244/28_09_2026_bendito_sea_nombre_del_senor_mf_181261347_feed_1.mp3",
       "duration": "700",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "27-09-2026 Dios exagera II - 10 Minutos con Jesús",
-      "publishedAt": "2026-09-26T23:21:19.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/27-09-2026-dios-exagera-ii-10-minutos-con-jesus--75388006",
-      "audioUrl": "https://api.spreaker.com/download/episode/75388006/27_09_2026_dios_exagera_ii_10_minutos_con_mf_181232178_feed_1.mp3",
-      "duration": "600",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
