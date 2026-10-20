@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-10-19T00:18:09.697Z",
+  "updatedAt": "2026-10-20T01:08:09.533Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "20-10-2026 Es pera o no es pera - 10 Minutos con Jesús",
+      "publishedAt": "2026-10-19T20:08:28.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/20-10-2026-es-pera-o-no-es-pera-10-minutos-con-jesus--75864051",
+      "audioUrl": "https://api.spreaker.com/download/episode/75864051/20_10_2026_es_pera_o_no_es_pera_mf_182437657_feed_1.mp3",
+      "duration": "676",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
+    {
+      "title": "19-10-2026 ¡Ahora! - 10 Minutos con Jesús",
+      "publishedAt": "2026-10-19T20:07:00.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/19-10-2026-ahora-10-minutos-con-jesus--75864052",
+      "audioUrl": "https://api.spreaker.com/download/episode/75864052/19_10_2026_ahora_10_minutos_jesus_mf_182437594_feed_1.mp3",
+      "duration": "649",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "18-10-2026 Dios, el César, ambos o ninguno - 10 Minutos con Jesús",
       "publishedAt": "2026-10-18T01:46:34.000Z",
@@ -162,24 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/01-10-2026-teresita-teresita-10-minutos-con-jesus--75466777",
       "audioUrl": "https://api.spreaker.com/download/episode/75466777/01_10_2026_teresita_teresita_10_minutos_jesus_mf_181481800_feed_1.mp3",
       "duration": "642",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "30-09-2026 San Jerónimo - 10 Minutos con Jesús",
-      "publishedAt": "2026-09-29T23:08:18.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/30-09-2026-san-jeronimo-10-minutos-con-jesus--75444339",
-      "audioUrl": "https://api.spreaker.com/download/episode/75444339/30_09_2026_san_jeronimo_10_minutos_jesus_mf_181396013_feed_1.mp3",
-      "duration": "650",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "29-09-2026 Tres grandes amigos - 10 Minutos con Jesús",
-      "publishedAt": "2026-09-28T23:02:43.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/29-09-2026-tres-grandes-amigos-10-minutos-con-jesus--75419527",
-      "audioUrl": "https://api.spreaker.com/download/episode/75419527/29_09_2026_tres_grandes_amigos_10_minutos_con_mf_181314153_feed_1.mp3",
-      "duration": "623",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]

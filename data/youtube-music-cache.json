@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-18T00:07:51.610Z",
+  "updatedAt": "2026-10-20T01:08:19.103Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -40,6 +40,23 @@
     }
   ],
   "items": [
+    {
+      "id": "youtube-SwslN22n5qM",
+      "videoId": "SwslN22n5qM",
+      "type": "music",
+      "source": "Gen Verde",
+      "author": "Gen Verde",
+      "title": "🇰🇷 A Seul abbiamo cantato “Be Not Afraid, Trust in Me” insieme a un pubblico fantastico!",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=SwslN22n5qM",
+      "image": "https://i.ytimg.com/vi/SwslN22n5qM/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-19T08:28:08+00:00"
+    },
     {
       "id": "youtube-2fs5JCIqzus",
       "videoId": "2fs5JCIqzus",
