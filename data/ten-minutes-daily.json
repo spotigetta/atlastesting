@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-10-21T00:42:54.596Z",
+  "updatedAt": "2026-10-22T00:46:25.927Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "22-10-2026 Una llama que se propaga - 10 Minutos con Jesús",
+      "publishedAt": "2026-10-21T21:36:43.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/22-10-2026-una-llama-que-se-propaga-10-minutos-con-jesus--75906126",
+      "audioUrl": "https://api.spreaker.com/download/episode/75906126/22_10_2026_una_llama_se_propaga_10_mf_182597500_feed_1.mp3",
+      "duration": "604",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "21-10-2026 No intentes vivir mañana con la gracia de hoy - 10 Minutos con Jesús",
       "publishedAt": "2026-10-20T21:55:18.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/03-10-2026-aprender-a-mirar-con-maria-10-minutos-con-jesus--75535541",
       "audioUrl": "https://api.spreaker.com/download/episode/75535541/03_10_2026_aprender_a_mirar_maria_10_mf_181583290_feed_1.mp3",
       "duration": "582",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "02-10-2026 Jesús, los ángeles y... yo - 10 Minutos con Jesús",
-      "publishedAt": "2026-10-01T22:41:45.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/02-10-2026-jesus-los-angeles-y-yo-10-minutos-con-jesus--75505618",
-      "audioUrl": "https://api.spreaker.com/download/episode/75505618/02_10_2026_jesus_angeles_y_yo_10_mf_181535972_feed_1.mp3",
-      "duration": "718",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
