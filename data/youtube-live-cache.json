@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-22T00:46:31.709Z",
-  "source": "youtube-rss",
+  "updatedAt": "2026-10-23T00:46:22.709Z",
+  "source": "previous-snapshot",
   "channels": [
     {
       "name": "Opus Dei",
@@ -42862,7 +42862,7 @@
     },
     {
       "source": "Catholic Stuff",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Fundación CARF",
@@ -42882,7 +42882,7 @@
     },
     {
       "source": "Jordan B. Peterson",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Luis Gutiérrez Rojas",
@@ -42910,7 +42910,7 @@
     },
     {
       "source": "Rafa Lafuente",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Pep Borrell",
@@ -42938,7 +42938,7 @@
     },
     {
       "source": "Alejandro Villena",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Álvaro González-Alorda",
@@ -42986,7 +42986,7 @@
     },
     {
       "source": "Peter Kreeft",
-      "error": "No se encontró el identificador del canal"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Javier G. Recuenco",
@@ -43002,7 +43002,7 @@
     },
     {
       "source": "Cura de Toledo",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Stephen Covey Principles HQ",
@@ -43018,7 +43018,7 @@
     },
     {
       "source": "Aquilino Polaino",
-      "error": "404 www.youtube.com"
+      "error": "No se encontró el identificador del canal"
     },
     {
       "source": "Catherine L'Ecuyer",
@@ -43034,6 +43034,10 @@
     },
     {
       "source": "Vatican News Español",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Hakuna Group Music",
       "error": "404 www.youtube.com"
     },
     {
@@ -43054,7 +43058,7 @@
     },
     {
       "source": "The Catholic Talk Show",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Facultad de Teología UNAV",
@@ -43070,7 +43074,7 @@
     },
     {
       "source": "Alfonso Aguiló",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Emilio Duró",
@@ -43086,7 +43090,7 @@
     },
     {
       "source": "Rafael Santandreu",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Higinio Marín",

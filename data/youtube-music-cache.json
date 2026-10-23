@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-22T00:46:32.341Z",
+  "updatedAt": "2026-10-23T00:46:23.417Z",
   "source": "previous-snapshot",
   "channels": [
     {
@@ -2807,7 +2807,7 @@
     },
     {
       "source": "Coro de Monjes de Solesmes",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Gen Verde",
