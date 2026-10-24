@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-23T00:46:22.709Z",
-  "source": "previous-snapshot",
+  "updatedAt": "2026-10-24T00:52:36.859Z",
+  "source": "youtube-rss",
   "channels": [
     {
       "name": "Opus Dei",
@@ -334,6 +334,40 @@
     }
   ],
   "items": [
+    {
+      "id": "youtube-mQSG-j7Oq-Q",
+      "videoId": "mQSG-j7Oq-Q",
+      "type": "video",
+      "source": "Stephen Covey Principles HQ",
+      "author": "Stephen Covey Principles HQ",
+      "title": "The Psychology of Adults Who Hate Being Beginners",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=mQSG-j7Oq-Q",
+      "image": "https://i.ytimg.com/vi/mQSG-j7Oq-Q/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-23T15:16:36+00:00"
+    },
+    {
+      "id": "youtube-9HbP-GPgwiA",
+      "videoId": "9HbP-GPgwiA",
+      "type": "video",
+      "source": "Stephen Covey Principles HQ",
+      "author": "Stephen Covey Principles HQ",
+      "title": "If You Feel Lost After 60, Begin Here | Stephen Covey",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=9HbP-GPgwiA",
+      "image": "https://i.ytimg.com/vi/9HbP-GPgwiA/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-21T18:48:04+00:00"
+    },
     {
       "id": "youtube-5hA-FrUhhnw",
       "videoId": "5hA-FrUhhnw",
@@ -42799,40 +42833,6 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-08-12T19:32:41+00:00"
-    },
-    {
-      "id": "youtube-SnOtfZUCNuM",
-      "videoId": "SnOtfZUCNuM",
-      "type": "video",
-      "source": "EWTN Español",
-      "author": "EWTN Español",
-      "title": "EN VIVO | Santa Misa del Papa Leon XIV por la Fiesta de la Asunción | 15 de agosto de 2026",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=SnOtfZUCNuM",
-      "image": "https://i.ytimg.com/vi/SnOtfZUCNuM/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-12T18:52:35+00:00"
-    },
-    {
-      "id": "youtube-x3Bq2UYKdTU",
-      "videoId": "x3Bq2UYKdTU",
-      "type": "video",
-      "source": "Scott Hahn",
-      "author": "Scott Hahn",
-      "title": "How to Understand Salvation History #kingdomcome",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=x3Bq2UYKdTU",
-      "image": "https://i.ytimg.com/vi/x3Bq2UYKdTU/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-12T18:07:28+00:00"
     }
   ],
   "failures": [
@@ -42854,7 +42854,7 @@
     },
     {
       "source": "Bishop Robert Barron",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Hallow: Prayer & Meditation",
@@ -42930,7 +42930,7 @@
     },
     {
       "source": "Leopoldo Abadía",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Gregorio Luri",
@@ -42938,7 +42938,7 @@
     },
     {
       "source": "Alejandro Villena",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Álvaro González-Alorda",
@@ -42954,7 +42954,7 @@
     },
     {
       "source": "Sin Medias Tintas",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "EWTN España",
@@ -42986,7 +42986,7 @@
     },
     {
       "source": "Peter Kreeft",
-      "error": "404 www.youtube.com"
+      "error": "No se encontró el identificador del canal"
     },
     {
       "source": "Javier G. Recuenco",
@@ -42998,14 +42998,10 @@
     },
     {
       "source": "Jesús Silva Castignani",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Cura de Toledo",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Stephen Covey Principles HQ",
       "error": "404 www.youtube.com"
     },
     {
