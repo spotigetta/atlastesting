@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-24T00:52:36.859Z",
+  "updatedAt": "2026-10-25T01:20:11.230Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -335,6 +335,40 @@
   ],
   "items": [
     {
+      "id": "youtube-u6Cqlpslo38",
+      "videoId": "u6Cqlpslo38",
+      "type": "video",
+      "source": "Bishop Robert Barron",
+      "author": "Bishop Robert Barron",
+      "title": "With All You Heart, Soul, and Mind – Bishop Barron's Sunday Sermon",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=u6Cqlpslo38",
+      "image": "https://i.ytimg.com/vi/u6Cqlpslo38/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-24T15:00:14+00:00"
+    },
+    {
+      "id": "youtube-gWtB3pmEkag",
+      "videoId": "gWtB3pmEkag",
+      "type": "video",
+      "source": "Andrew Huberman",
+      "author": "Andrew Huberman",
+      "title": "ENTRAINMENT GOVERNS YOUR ENERGY & FOCUS",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=gWtB3pmEkag",
+      "image": "https://i.ytimg.com/vi/gWtB3pmEkag/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "reserve",
+      "publishedAt": "2026-10-23T22:58:06+00:00"
+    },
+    {
       "id": "youtube-mQSG-j7Oq-Q",
       "videoId": "mQSG-j7Oq-Q",
       "type": "video",
@@ -352,6 +386,57 @@
       "publishedAt": "2026-10-23T15:16:36+00:00"
     },
     {
+      "id": "youtube-DS6W1Ok6TsU",
+      "videoId": "DS6W1Ok6TsU",
+      "type": "video",
+      "source": "Andrew Huberman",
+      "author": "Andrew Huberman",
+      "title": "Do What You Enjoy | Dr. Jared Diamond",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=DS6W1Ok6TsU",
+      "image": "https://i.ytimg.com/vi/DS6W1Ok6TsU/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "reserve",
+      "publishedAt": "2026-10-23T13:22:45+00:00"
+    },
+    {
+      "id": "youtube-eYSOabR3YP0",
+      "videoId": "eYSOabR3YP0",
+      "type": "video",
+      "source": "Andrew Huberman",
+      "author": "Andrew Huberman",
+      "title": "Essentials: Developing a Rational Approach to Supplementation for Health & Performance",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=eYSOabR3YP0",
+      "image": "https://i.ytimg.com/vi/eYSOabR3YP0/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "reserve",
+      "publishedAt": "2026-10-22T12:00:33+00:00"
+    },
+    {
+      "id": "youtube-qhY2i3Hzkwo",
+      "videoId": "qhY2i3Hzkwo",
+      "type": "video",
+      "source": "Rafael Santandreu",
+      "author": "Rafael Santandreu",
+      "title": "Miguel de Madrid. Ansiedad e hipocondría. Testimonio de superación",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=qhY2i3Hzkwo",
+      "image": "https://i.ytimg.com/vi/qhY2i3Hzkwo/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "reserve",
+      "publishedAt": "2026-10-22T09:35:24+00:00"
+    },
+    {
       "id": "youtube-9HbP-GPgwiA",
       "videoId": "9HbP-GPgwiA",
       "type": "video",
@@ -367,6 +452,23 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-10-21T18:48:04+00:00"
+    },
+    {
+      "id": "youtube-lZQKli8wu7A",
+      "videoId": "lZQKli8wu7A",
+      "type": "video",
+      "source": "Bishop Robert Barron",
+      "author": "Bishop Robert Barron",
+      "title": "40 Days for Live Prayer at Planned Parenthood",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=lZQKli8wu7A",
+      "image": "https://i.ytimg.com/vi/lZQKli8wu7A/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-21T00:41:28+00:00"
     },
     {
       "id": "youtube-5hA-FrUhhnw",
@@ -42731,114 +42833,12 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-08-12T21:26:41+00:00"
-    },
-    {
-      "id": "youtube-_N-sB9eE9Y0",
-      "videoId": "_N-sB9eE9Y0",
-      "type": "video",
-      "source": "Jordan B. Peterson",
-      "author": "Jordan B. Peterson",
-      "title": "Why Narcissists Look Confident",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=_N-sB9eE9Y0",
-      "image": "https://i.ytimg.com/vi/_N-sB9eE9Y0/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-12T21:21:23+00:00"
-    },
-    {
-      "id": "youtube-Nw3lTpD3nrQ",
-      "videoId": "Nw3lTpD3nrQ",
-      "type": "video",
-      "source": "ACI Prensa",
-      "author": "ACI Prensa",
-      "title": "EN VIVO | Audiencia General del Papa León XIV desde el Vaticano | 12 de Agosto de 2026",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=Nw3lTpD3nrQ",
-      "image": "https://i.ytimg.com/vi/Nw3lTpD3nrQ/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-12T20:56:40+00:00"
-    },
-    {
-      "id": "youtube-2-r7WMBmvlM",
-      "videoId": "2-r7WMBmvlM",
-      "type": "video",
-      "source": "EWTN España",
-      "author": "EWTN España",
-      "title": "EN DIRECTO| Audiencia General del Papa León XIV desde el Vaticano | 12 de Agosto de 2026",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=2-r7WMBmvlM",
-      "image": "https://i.ytimg.com/vi/2-r7WMBmvlM/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-12T20:54:52+00:00"
-    },
-    {
-      "id": "youtube-6T0rxRgcC04",
-      "videoId": "6T0rxRgcC04",
-      "type": "video",
-      "source": "EWTN Español",
-      "author": "EWTN Español",
-      "title": "EN VIVO | Audiencia General del Papa León XIV desde el Vaticano | 12 de Agosto de 2026",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=6T0rxRgcC04",
-      "image": "https://i.ytimg.com/vi/6T0rxRgcC04/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-12T20:53:56+00:00"
-    },
-    {
-      "id": "youtube-d4FInjOE2do",
-      "videoId": "d4FInjOE2do",
-      "type": "video",
-      "source": "Scott Hahn",
-      "author": "Scott Hahn",
-      "title": "St. Augustine & Living in the City of God | Scott Hahn w/ Rob Corzine",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=d4FInjOE2do",
-      "image": "https://i.ytimg.com/vi/d4FInjOE2do/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-12T19:59:24+00:00"
-    },
-    {
-      "id": "youtube-8N0bjsGfEu4",
-      "videoId": "8N0bjsGfEu4",
-      "type": "video",
-      "source": "Stephen Covey Principles HQ",
-      "author": "Stephen Covey Principles HQ",
-      "title": "THE 1% WHO PUT FIRST THINGS FIRST | Stephen Covey",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=8N0bjsGfEu4",
-      "image": "https://i.ytimg.com/vi/8N0bjsGfEu4/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-12T19:32:41+00:00"
     }
   ],
   "failures": [
     {
       "source": "Opus Dei",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Ecclesia COPE",
@@ -42853,23 +42853,11 @@
       "error": "fetch failed"
     },
     {
-      "source": "Bishop Robert Barron",
+      "source": "Catholic Stuff",
       "error": "500 www.youtube.com"
     },
     {
-      "source": "Hallow: Prayer & Meditation",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Catholic Stuff",
-      "error": "404 www.youtube.com"
-    },
-    {
       "source": "Fundación CARF",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Bosco Films",
       "error": "404 www.youtube.com"
     },
     {
@@ -42882,7 +42870,7 @@
     },
     {
       "source": "Jordan B. Peterson",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Luis Gutiérrez Rojas",
@@ -42898,7 +42886,7 @@
     },
     {
       "source": "It's Time To Think",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Dr. Arthur Brooks",
@@ -42910,15 +42898,11 @@
     },
     {
       "source": "Rafa Lafuente",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Pep Borrell",
       "error": "No se encontró el identificador del canal"
-    },
-    {
-      "source": "Ricardo Piñero",
-      "error": "404 www.youtube.com"
     },
     {
       "source": "Ricardo Calleja",
@@ -42930,7 +42914,7 @@
     },
     {
       "source": "Leopoldo Abadía",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Gregorio Luri",
@@ -42938,7 +42922,7 @@
     },
     {
       "source": "Alejandro Villena",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Álvaro González-Alorda",
@@ -42954,7 +42938,7 @@
     },
     {
       "source": "Sin Medias Tintas",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "EWTN España",
@@ -42974,7 +42958,7 @@
     },
     {
       "source": "María Álvarez de las Asturias",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Pablo Blanco Sarto",
@@ -42994,14 +42978,18 @@
     },
     {
       "source": "Marcelo Gullo Omodeo",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Jesús Silva Castignani",
       "error": "500 www.youtube.com"
     },
     {
+      "source": "Jesús Silva Castignani",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "Cura de Toledo",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Stephen Covey Principles HQ",
       "error": "404 www.youtube.com"
     },
     {
@@ -43033,10 +43021,6 @@
       "error": "404 www.youtube.com"
     },
     {
-      "source": "Hakuna Group Music",
-      "error": "404 www.youtube.com"
-    },
-    {
       "source": "10 minutos con Jesús",
       "error": "404 www.youtube.com"
     },
@@ -43046,7 +43030,7 @@
     },
     {
       "source": "The Rest Is History",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "ISCR Universidad de Navarra",
@@ -43058,10 +43042,6 @@
     },
     {
       "source": "Facultad de Teología UNAV",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Francisco Ugarte",
       "error": "404 www.youtube.com"
     },
     {
@@ -43082,19 +43062,11 @@
     },
     {
       "source": "Rafa Guerrero",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Rafael Santandreu",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Higinio Marín",
       "error": "No se encontró el identificador del canal"
-    },
-    {
-      "source": "Andrew Huberman",
-      "error": "404 www.youtube.com"
     }
   ]
 }
