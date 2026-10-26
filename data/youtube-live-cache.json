@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-25T01:20:11.230Z",
+  "updatedAt": "2026-10-26T01:23:34.231Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -335,6 +335,40 @@
   ],
   "items": [
     {
+      "id": "youtube-r096kcB2Pjs",
+      "videoId": "r096kcB2Pjs",
+      "type": "video",
+      "source": "Marcelo Gullo Omodeo",
+      "author": "Marcelo Gullo Omodeo",
+      "title": "La trampa de MALVINAS, cómo Londres PREPARÓ la guerra de 1982",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=r096kcB2Pjs",
+      "image": "https://i.ytimg.com/vi/r096kcB2Pjs/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-25T19:00:19+00:00"
+    },
+    {
+      "id": "youtube-8H-o6cBWxSo",
+      "videoId": "8H-o6cBWxSo",
+      "type": "video",
+      "source": "Marcelo Gullo Omodeo",
+      "author": "Marcelo Gullo Omodeo",
+      "title": "El golpe de 1976 en Argentina fue un golpe BRITÁNICO",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=8H-o6cBWxSo",
+      "image": "https://i.ytimg.com/vi/8H-o6cBWxSo/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-24T18:00:37+00:00"
+    },
+    {
       "id": "youtube-u6Cqlpslo38",
       "videoId": "u6Cqlpslo38",
       "type": "video",
@@ -367,6 +401,23 @@
       "dynamic": true,
       "tier": "reserve",
       "publishedAt": "2026-10-23T22:58:06+00:00"
+    },
+    {
+      "id": "youtube-rdRbjU1dA7g",
+      "videoId": "rdRbjU1dA7g",
+      "type": "video",
+      "source": "Marcelo Gullo Omodeo",
+      "author": "Marcelo Gullo Omodeo",
+      "title": "Malvinas, la INVASIÓN de 1833 y el PETRÓLEO que lo cambió todo",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=rdRbjU1dA7g",
+      "image": "https://i.ytimg.com/vi/rdRbjU1dA7g/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-23T18:00:17+00:00"
     },
     {
       "id": "youtube-mQSG-j7Oq-Q",
@@ -403,6 +454,23 @@
       "publishedAt": "2026-10-23T13:22:45+00:00"
     },
     {
+      "id": "youtube-uj7g7bk9xyw",
+      "videoId": "uj7g7bk9xyw",
+      "type": "video",
+      "source": "Marcelo Gullo Omodeo",
+      "author": "Marcelo Gullo Omodeo",
+      "title": "El poder lo tiene el que fabrica las armas",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=uj7g7bk9xyw",
+      "image": "https://i.ytimg.com/vi/uj7g7bk9xyw/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-22T14:06:04+00:00"
+    },
+    {
       "id": "youtube-eYSOabR3YP0",
       "videoId": "eYSOabR3YP0",
       "type": "video",
@@ -418,6 +486,23 @@
       "dynamic": true,
       "tier": "reserve",
       "publishedAt": "2026-10-22T12:00:33+00:00"
+    },
+    {
+      "id": "youtube-r21ydOuItsU",
+      "videoId": "r21ydOuItsU",
+      "type": "video",
+      "source": "Marcelo Gullo Omodeo",
+      "author": "Marcelo Gullo Omodeo",
+      "title": "Los okupas de Malvinas",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=r21ydOuItsU",
+      "image": "https://i.ytimg.com/vi/r21ydOuItsU/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-22T11:31:22+00:00"
     },
     {
       "id": "youtube-qhY2i3Hzkwo",
@@ -452,6 +537,23 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-10-21T18:48:04+00:00"
+    },
+    {
+      "id": "youtube-apz7zycYq5o",
+      "videoId": "apz7zycYq5o",
+      "type": "video",
+      "source": "Marcelo Gullo Omodeo",
+      "author": "Marcelo Gullo Omodeo",
+      "title": "Argentina es el próximo objetivo del poder anglosajón",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=apz7zycYq5o",
+      "image": "https://i.ytimg.com/vi/apz7zycYq5o/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-21T18:00:10+00:00"
     },
     {
       "id": "youtube-lZQKli8wu7A",
@@ -42731,114 +42833,12 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-08-13T01:00:33+00:00"
-    },
-    {
-      "id": "youtube-xOvsMLrKYLs",
-      "videoId": "xOvsMLrKYLs",
-      "type": "video",
-      "source": "ACI Prensa",
-      "author": "ACI Prensa",
-      "title": "¿Por qué Nicaragua no es una prioridad geopolítica para Estados Unidos?",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=xOvsMLrKYLs",
-      "image": "https://i.ytimg.com/vi/xOvsMLrKYLs/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T00:30:17+00:00"
-    },
-    {
-      "id": "youtube-PZ7zEE6uK8k",
-      "videoId": "PZ7zEE6uK8k",
-      "type": "video",
-      "source": "ACI Prensa",
-      "author": "ACI Prensa",
-      "title": "Impresionante: Así se vio el eclipse solar en el Vaticano",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=PZ7zEE6uK8k",
-      "image": "https://i.ytimg.com/vi/PZ7zEE6uK8k/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-12T23:50:24+00:00"
-    },
-    {
-      "id": "youtube-H2XR9GwCvjU",
-      "videoId": "H2XR9GwCvjU",
-      "type": "video",
-      "source": "Cura de Toledo",
-      "author": "Cura de Toledo",
-      "title": "BRILLANDO EN MEDIO SE UN ECLIPSE DE DIOS #meditación al #evangelio (Jueves, 13 agosto 2026)",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=H2XR9GwCvjU",
-      "image": "https://i.ytimg.com/vi/H2XR9GwCvjU/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-12T23:47:18+00:00"
-    },
-    {
-      "id": "youtube-5nAYD8xXGyE",
-      "videoId": "5nAYD8xXGyE",
-      "type": "video",
-      "source": "EWTN Español",
-      "author": "EWTN Español",
-      "title": "EWTN Noticias | Miércoles 12 de agosto 2026 | Programa completo",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=5nAYD8xXGyE",
-      "image": "https://i.ytimg.com/vi/5nAYD8xXGyE/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-12T23:30:28+00:00"
-    },
-    {
-      "id": "youtube-wdKAU6RLVpU",
-      "videoId": "wdKAU6RLVpU",
-      "type": "video",
-      "source": "10 minutos con Jesús",
-      "author": "10 minutos con Jesús",
-      "title": "10 Minutos com Jesus. Restaura a Aliança: Nada está perdido (13-08-26)",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=wdKAU6RLVpU",
-      "image": "https://i.ytimg.com/vi/wdKAU6RLVpU/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-12T23:13:43+00:00"
-    },
-    {
-      "id": "youtube-eoRJIQGyYSE",
-      "videoId": "eoRJIQGyYSE",
-      "type": "video",
-      "source": "María Calvo",
-      "author": "María Calvo",
-      "title": "🚨 EN VIVO NOTICIAS: TRUMP NO ESPERABA ESO! SORPRESA FRENTE A IRÁN! UCRANIA RUSIA ORMUZ EEUU",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=eoRJIQGyYSE",
-      "image": "https://i.ytimg.com/vi/eoRJIQGyYSE/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-12T21:26:41+00:00"
     }
   ],
   "failures": [
     {
       "source": "Opus Dei",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Ecclesia COPE",
@@ -42846,19 +42846,31 @@
     },
     {
       "source": "Se Buscan Rebeldes",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "ROME REPORTS en Español",
       "error": "fetch failed"
     },
     {
+      "source": "Bishop Robert Barron",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Hallow: Prayer & Meditation",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "Catholic Stuff",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Fundación CARF",
       "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Bosco Films",
+      "error": "500 www.youtube.com"
     },
     {
       "source": "QNTLC",
@@ -42870,7 +42882,7 @@
     },
     {
       "source": "Jordan B. Peterson",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Luis Gutiérrez Rojas",
@@ -42886,7 +42898,7 @@
     },
     {
       "source": "It's Time To Think",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Dr. Arthur Brooks",
@@ -42898,7 +42910,7 @@
     },
     {
       "source": "Rafa Lafuente",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Pep Borrell",
@@ -42914,7 +42926,7 @@
     },
     {
       "source": "Leopoldo Abadía",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Gregorio Luri",
@@ -42922,11 +42934,11 @@
     },
     {
       "source": "Alejandro Villena",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Álvaro González-Alorda",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Mario Alonso Puig",
@@ -42938,7 +42950,7 @@
     },
     {
       "source": "Sin Medias Tintas",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "EWTN España",
@@ -42958,7 +42970,7 @@
     },
     {
       "source": "María Álvarez de las Asturias",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Pablo Blanco Sarto",
@@ -42975,10 +42987,6 @@
     {
       "source": "Javier G. Recuenco",
       "error": "No se encontró el identificador del canal"
-    },
-    {
-      "source": "Marcelo Gullo Omodeo",
-      "error": "500 www.youtube.com"
     },
     {
       "source": "Jesús Silva Castignani",
@@ -43018,6 +43026,10 @@
     },
     {
       "source": "Vatican News Español",
+      "error": "500 www.youtube.com"
+    },
+    {
+      "source": "Hakuna Group Music",
       "error": "404 www.youtube.com"
     },
     {
@@ -43045,6 +43057,10 @@
       "error": "404 www.youtube.com"
     },
     {
+      "source": "Francisco Ugarte",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "Francisco Insa",
       "error": "404 www.youtube.com"
     },
@@ -43062,11 +43078,19 @@
     },
     {
       "source": "Rafa Guerrero",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Rafael Santandreu",
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Higinio Marín",
       "error": "No se encontró el identificador del canal"
+    },
+    {
+      "source": "Andrew Huberman",
+      "error": "404 www.youtube.com"
     }
   ]
 }

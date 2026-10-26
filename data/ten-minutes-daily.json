@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-10-24T00:52:30.470Z",
+  "updatedAt": "2026-10-26T01:23:28.367Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "26-10-2026 Las puertas de la felicidad (II) - 10 Minutos con Jesús",
+      "publishedAt": "2026-10-25T21:15:03.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/26-10-2026-las-puertas-de-la-felicidad-ii-10-minutos-con-jesus--75983164",
+      "audioUrl": "https://api.spreaker.com/download/episode/75983164/26_10_2026_las_puertas_felicidad_ii_mf_182757632_feed_1.mp3",
+      "duration": "647",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
+    {
+      "title": "25-10-2026 Amarás a Dios con toda... ¿la mente? - 10 Minutos con Jesús",
+      "publishedAt": "2026-10-25T19:52:29.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/25-10-2026-amaras-a-dios-con-toda-la-mente-10-minutos-con-jesus--75982194",
+      "audioUrl": "https://api.spreaker.com/download/episode/75982194/25_10_2026_amaras_a_dios_toda_la_mente_mf_182756191_feed_1.mp3",
+      "duration": "611",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "24-10-2026 Adoro te devote Siglo XXI - 10 Minutos con Jesús",
       "publishedAt": "2026-10-23T22:53:46.000Z",
@@ -162,24 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/07-10-2026-subidos-al-carro-del-padrenuestro-10-minutos-con-jesus--75603048",
       "audioUrl": "https://api.spreaker.com/download/episode/75603048/07_10_2026_subidos_al_carro_del_padrenuestro_10_mf_181776727_feed_1.mp3",
       "duration": "650",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "06-10-2026 Siempre contigo - 10 Minutos con Jesús",
-      "publishedAt": "2026-10-05T22:51:47.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/06-10-2026-siempre-contigo-10-minutos-con-jesus--75587407",
-      "audioUrl": "https://api.spreaker.com/download/episode/75587407/06_10_2026_siempre_contigo_10_minutos_jesus_mf_181699887_feed_1.mp3",
-      "duration": "620",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "05-10-2026 Gracias, perdón, ayúdame+- 10 Minutos con Jesús",
-      "publishedAt": "2026-10-04T22:42:38.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/05-10-2026-gracias-perdon-ayudame-10-minutos-con-jesus--75572117",
-      "audioUrl": "https://api.spreaker.com/download/episode/75572117/05_10_2026_gracias_perdon_ayudame_10_minutos_jesus_mf_181644834_feed_1.mp3",
-      "duration": "592",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
