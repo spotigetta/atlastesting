@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T01:23:34.231Z",
+  "updatedAt": "2026-10-27T02:11:19.088Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -42870,7 +42870,7 @@
     },
     {
       "source": "Bosco Films",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "QNTLC",
@@ -42878,7 +42878,7 @@
     },
     {
       "source": "ACI Prensa",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Jordan B. Peterson",
@@ -42898,7 +42898,7 @@
     },
     {
       "source": "It's Time To Think",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Dr. Arthur Brooks",
@@ -42910,15 +42910,19 @@
     },
     {
       "source": "Rafa Lafuente",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Pep Borrell",
       "error": "No se encontró el identificador del canal"
     },
     {
-      "source": "Ricardo Calleja",
+      "source": "Ricardo Piñero",
       "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Ricardo Calleja",
+      "error": "No se encontró el identificador del canal"
     },
     {
       "source": "Ana Iris Simón",
@@ -42926,7 +42930,7 @@
     },
     {
       "source": "Leopoldo Abadía",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Gregorio Luri",
@@ -42934,15 +42938,11 @@
     },
     {
       "source": "Alejandro Villena",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Álvaro González-Alorda",
       "error": "500 www.youtube.com"
-    },
-    {
-      "source": "Mario Alonso Puig",
-      "error": "404 www.youtube.com"
     },
     {
       "source": "AUTE",
@@ -42966,7 +42966,7 @@
     },
     {
       "source": "Álvaro Bilbao",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "María Álvarez de las Asturias",
@@ -42989,6 +42989,10 @@
       "error": "No se encontró el identificador del canal"
     },
     {
+      "source": "Marcelo Gullo Omodeo",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "Jesús Silva Castignani",
       "error": "404 www.youtube.com"
     },
@@ -42998,15 +43002,15 @@
     },
     {
       "source": "Stephen Covey Principles HQ",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Simon Sinek",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Juan Arana",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Aquilino Polaino",
@@ -43014,7 +43018,7 @@
     },
     {
       "source": "Catherine L'Ecuyer",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "José Ramón Ayllón",
@@ -43042,7 +43046,7 @@
     },
     {
       "source": "The Rest Is History",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "ISCR Universidad de Navarra",
@@ -43058,14 +43062,10 @@
     },
     {
       "source": "Francisco Ugarte",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Francisco Insa",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Alfonso Aguiló",
       "error": "404 www.youtube.com"
     },
     {
@@ -43081,16 +43081,12 @@
       "error": "404 www.youtube.com"
     },
     {
-      "source": "Rafael Santandreu",
-      "error": "404 www.youtube.com"
-    },
-    {
       "source": "Higinio Marín",
       "error": "No se encontró el identificador del canal"
     },
     {
       "source": "Andrew Huberman",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     }
   ]
 }

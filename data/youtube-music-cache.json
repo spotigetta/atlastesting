@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-26T01:23:34.880Z",
+  "updatedAt": "2026-10-27T02:11:19.776Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -2787,10 +2787,10 @@
     },
     {
       "source": "Nico Montero",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
-      "source": "Kairoi",
+      "source": "Gen Rosso",
       "error": "404 www.youtube.com"
     },
     {
@@ -2807,7 +2807,7 @@
     },
     {
       "source": "Gen Verde",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     }
   ]
 }
