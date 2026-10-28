@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-27T02:11:19.088Z",
+  "updatedAt": "2026-10-28T02:26:31.874Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -334,6 +334,40 @@
     }
   ],
   "items": [
+    {
+      "id": "youtube-EM0PDXPC4dc",
+      "videoId": "EM0PDXPC4dc",
+      "type": "video",
+      "source": "Andrew Huberman",
+      "author": "Andrew Huberman",
+      "title": "How Smiling Can Increase Endurance | Ross Edgley",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=EM0PDXPC4dc",
+      "image": "https://i.ytimg.com/vi/EM0PDXPC4dc/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "reserve",
+      "publishedAt": "2026-10-27T22:01:13+00:00"
+    },
+    {
+      "id": "youtube-NlVu0P1RdHs",
+      "videoId": "NlVu0P1RdHs",
+      "type": "video",
+      "source": "Andrew Huberman",
+      "author": "Andrew Huberman",
+      "title": "Unlocking Persistent Motivation & Extreme Resilience | Ross Edgley",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=NlVu0P1RdHs",
+      "image": "https://i.ytimg.com/vi/NlVu0P1RdHs/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "reserve",
+      "publishedAt": "2026-10-26T12:00:00+00:00"
+    },
     {
       "id": "youtube-r096kcB2Pjs",
       "videoId": "r096kcB2Pjs",
@@ -42799,40 +42833,6 @@
       "dynamic": true,
       "tier": "reserve",
       "publishedAt": "2026-08-13T06:08:31+00:00"
-    },
-    {
-      "id": "youtube-ayBW0qWed7Y",
-      "videoId": "ayBW0qWed7Y",
-      "type": "video",
-      "source": "EWTN España",
-      "author": "EWTN España",
-      "title": "La Ciencia Exige la Existencia de Dios: ¡Evidencias Claras! #shorts",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=ayBW0qWed7Y",
-      "image": "https://i.ytimg.com/vi/ayBW0qWed7Y/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T06:01:30+00:00"
-    },
-    {
-      "id": "youtube-dRu6g2FTYyI",
-      "videoId": "dRu6g2FTYyI",
-      "type": "video",
-      "source": "ACI Prensa",
-      "author": "ACI Prensa",
-      "title": "Así está Cuba a 100 años del nacimiento de Fidel",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=dRu6g2FTYyI",
-      "image": "https://i.ytimg.com/vi/dRu6g2FTYyI/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T01:00:33+00:00"
     }
   ],
   "failures": [
@@ -42846,7 +42846,7 @@
     },
     {
       "source": "Se Buscan Rebeldes",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "ROME REPORTS en Español",
@@ -42878,7 +42878,7 @@
     },
     {
       "source": "ACI Prensa",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Jordan B. Peterson",
@@ -42898,7 +42898,7 @@
     },
     {
       "source": "It's Time To Think",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Dr. Arthur Brooks",
@@ -42910,7 +42910,7 @@
     },
     {
       "source": "Rafa Lafuente",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Pep Borrell",
@@ -42918,11 +42918,11 @@
     },
     {
       "source": "Ricardo Piñero",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Ricardo Calleja",
-      "error": "No se encontró el identificador del canal"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Ana Iris Simón",
@@ -42938,11 +42938,15 @@
     },
     {
       "source": "Alejandro Villena",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Álvaro González-Alorda",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Mario Alonso Puig",
+      "error": "404 www.youtube.com"
     },
     {
       "source": "AUTE",
@@ -42950,7 +42954,7 @@
     },
     {
       "source": "Sin Medias Tintas",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "EWTN España",
@@ -42966,7 +42970,7 @@
     },
     {
       "source": "Álvaro Bilbao",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "María Álvarez de las Asturias",
@@ -43002,15 +43006,15 @@
     },
     {
       "source": "Stephen Covey Principles HQ",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Simon Sinek",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Juan Arana",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Aquilino Polaino",
@@ -43018,7 +43022,7 @@
     },
     {
       "source": "Catherine L'Ecuyer",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "José Ramón Ayllón",
@@ -43026,11 +43030,11 @@
     },
     {
       "source": "EWTN Español",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Vatican News Español",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Hakuna Group Music",
@@ -43062,10 +43066,14 @@
     },
     {
       "source": "Francisco Ugarte",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Francisco Insa",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Alfonso Aguiló",
       "error": "404 www.youtube.com"
     },
     {
@@ -43081,12 +43089,12 @@
       "error": "404 www.youtube.com"
     },
     {
-      "source": "Higinio Marín",
-      "error": "No se encontró el identificador del canal"
+      "source": "Rafael Santandreu",
+      "error": "404 www.youtube.com"
     },
     {
-      "source": "Andrew Huberman",
-      "error": "500 www.youtube.com"
+      "source": "Higinio Marín",
+      "error": "No se encontró el identificador del canal"
     }
   ]
 }

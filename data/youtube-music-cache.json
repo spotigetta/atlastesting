@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-27T02:11:19.776Z",
-  "source": "youtube-rss",
+  "updatedAt": "2026-10-28T02:26:32.538Z",
+  "source": "previous-snapshot",
   "channels": [
     {
       "name": "Hakuna Group Music",
@@ -2779,15 +2779,19 @@
   "failures": [
     {
       "source": "Hakuna Group Music",
-      "error": "500 www.youtube.com"
-    },
-    {
-      "source": "Inazio",
       "error": "404 www.youtube.com"
     },
     {
-      "source": "Nico Montero",
+      "source": "Inazio",
       "error": "500 www.youtube.com"
+    },
+    {
+      "source": "Nico Montero",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Kairoi",
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Gen Rosso",
@@ -2795,11 +2799,11 @@
     },
     {
       "source": "Ain Karem",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "tuyo",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Coro de Monjes de Solesmes",
@@ -2807,7 +2811,7 @@
     },
     {
       "source": "Gen Verde",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     }
   ]
 }

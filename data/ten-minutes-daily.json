@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-10-27T02:11:12.970Z",
+  "updatedAt": "2026-10-28T02:26:25.671Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "28-10-2026 Hágase tu voluntad - 10 Minutos con Jesús",
+      "publishedAt": "2026-10-27T22:22:24.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/28-10-2026-hagase-tu-voluntad-10-minutos-con-jesus--76040842",
+      "audioUrl": "https://api.spreaker.com/download/episode/76040842/28_10_2026_hagase_tu_voluntad_10_minutos_con_mf_182885778_feed_1.mp3",
+      "duration": "650",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "26-10-2026 La semilla no hace ruido mientras crece - 10 Minutos con Jesús",
       "publishedAt": "2026-10-26T21:53:55.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/09-10-2026-querer-querer-para-querer-creer-10-minutos-con-jesus--75658384",
       "audioUrl": "https://api.spreaker.com/download/episode/75658384/09_10_2026_querer_querer_para_querer_creer_10_mf_181906735_feed_1.mp3",
       "duration": "659",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "08-10-2026 Las puertas de la felicidad (I) - 10 Minutos con Jesús",
-      "publishedAt": "2026-10-08T08:40:57.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/08-10-2026-las-puertas-de-la-felicidad-i-10-minutos-con-jesus--75636323",
-      "audioUrl": "https://api.spreaker.com/download/episode/75636323/08_10_2026_las_puertas_felicidad_i_mf_181877046_feed_1.mp3",
-      "duration": "663",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
