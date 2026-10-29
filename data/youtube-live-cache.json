@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-28T02:26:31.874Z",
-  "source": "youtube-rss",
+  "updatedAt": "2026-10-29T02:34:06.724Z",
+  "source": "previous-snapshot",
   "channels": [
     {
       "name": "Opus Dei",
@@ -42898,7 +42898,7 @@
     },
     {
       "source": "It's Time To Think",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Dr. Arthur Brooks",
@@ -42918,7 +42918,7 @@
     },
     {
       "source": "Ricardo Piñero",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Ricardo Calleja",
@@ -42938,7 +42938,7 @@
     },
     {
       "source": "Alejandro Villena",
-      "error": "404 www.youtube.com"
+      "error": "No se encontró el identificador del canal"
     },
     {
       "source": "Álvaro González-Alorda",
@@ -43030,7 +43030,7 @@
     },
     {
       "source": "EWTN Español",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Vatican News Español",
@@ -43038,7 +43038,7 @@
     },
     {
       "source": "Hakuna Group Music",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "10 minutos con Jesús",
@@ -43070,7 +43070,7 @@
     },
     {
       "source": "Francisco Insa",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Alfonso Aguiló",
@@ -43086,7 +43086,7 @@
     },
     {
       "source": "Rafa Guerrero",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Rafael Santandreu",
@@ -43095,6 +43095,10 @@
     {
       "source": "Higinio Marín",
       "error": "No se encontró el identificador del canal"
+    },
+    {
+      "source": "Andrew Huberman",
+      "error": "404 www.youtube.com"
     }
   ]
 }
