@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-29T02:34:06.724Z",
-  "source": "previous-snapshot",
+  "updatedAt": "2026-10-30T02:43:24.869Z",
+  "source": "youtube-rss",
   "channels": [
     {
       "name": "Opus Dei",
@@ -42898,7 +42898,7 @@
     },
     {
       "source": "It's Time To Think",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Dr. Arthur Brooks",
@@ -42938,7 +42938,7 @@
     },
     {
       "source": "Alejandro Villena",
-      "error": "No se encontró el identificador del canal"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Álvaro González-Alorda",
@@ -42954,7 +42954,7 @@
     },
     {
       "source": "Sin Medias Tintas",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "EWTN España",
@@ -43038,7 +43038,7 @@
     },
     {
       "source": "Hakuna Group Music",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "10 minutos con Jesús",
@@ -43050,11 +43050,11 @@
     },
     {
       "source": "The Rest Is History",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "ISCR Universidad de Navarra",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "The Catholic Talk Show",
@@ -43070,15 +43070,11 @@
     },
     {
       "source": "Francisco Insa",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Alfonso Aguiló",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Emilio Duró",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Fernando García de Cortázar",
@@ -43086,7 +43082,7 @@
     },
     {
       "source": "Rafa Guerrero",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Rafael Santandreu",
