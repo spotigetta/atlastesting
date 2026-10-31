@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-30T02:43:24.869Z",
+  "updatedAt": "2026-10-31T02:33:18.406Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -335,6 +335,108 @@
   ],
   "items": [
     {
+      "id": "youtube-Ffol03bmxjY",
+      "videoId": "Ffol03bmxjY",
+      "type": "video",
+      "source": "Se Buscan Rebeldes",
+      "author": "Se Buscan Rebeldes",
+      "title": "\"La mujer no puede ser solo madre\": El peligro de anularte como esposa | Rebeldes Clips",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=Ffol03bmxjY",
+      "image": "https://i.ytimg.com/vi/Ffol03bmxjY/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-30T19:00:34+00:00"
+    },
+    {
+      "id": "youtube-qf6Xd-HPl00",
+      "videoId": "qf6Xd-HPl00",
+      "type": "video",
+      "source": "Se Buscan Rebeldes",
+      "author": "Se Buscan Rebeldes",
+      "title": "María era mujer y esposa antes que «solo madre» | María Calvo (Ep. 41)",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=qf6Xd-HPl00",
+      "image": "https://i.ytimg.com/vi/qf6Xd-HPl00/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-30T19:00:28+00:00"
+    },
+    {
+      "id": "youtube-dKadUflvqzw",
+      "videoId": "dKadUflvqzw",
+      "type": "video",
+      "source": "Se Buscan Rebeldes",
+      "author": "Se Buscan Rebeldes",
+      "title": "Nos vendieron que ser iguales es ser idénticos | María Calvo | Rebeldes Podcast #41",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=dKadUflvqzw",
+      "image": "https://i.ytimg.com/vi/dKadUflvqzw/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-29T19:00:40+00:00"
+    },
+    {
+      "id": "youtube-Kcg0g7LtME8",
+      "videoId": "Kcg0g7LtME8",
+      "type": "video",
+      "source": "Se Buscan Rebeldes",
+      "author": "Se Buscan Rebeldes",
+      "title": "«Nada te prepara para ser madre, pero ser madre te prepara para todo» | María Calvo (Ep. 41)",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=Kcg0g7LtME8",
+      "image": "https://i.ytimg.com/vi/Kcg0g7LtME8/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-29T19:00:27+00:00"
+    },
+    {
+      "id": "youtube-vN8sv8PZLvc",
+      "videoId": "vN8sv8PZLvc",
+      "type": "video",
+      "source": "Se Buscan Rebeldes",
+      "author": "Se Buscan Rebeldes",
+      "title": "¿Es PECADO celebrar Halloween? (Lo que debes hacer) 🎃 vs 😇",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=vN8sv8PZLvc",
+      "image": "https://i.ytimg.com/vi/vN8sv8PZLvc/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-29T17:00:26+00:00"
+    },
+    {
+      "id": "youtube-0EEkVy3RySs",
+      "videoId": "0EEkVy3RySs",
+      "type": "video",
+      "source": "Se Buscan Rebeldes",
+      "author": "Se Buscan Rebeldes",
+      "title": "¿Qué es el DON DE LÁGRIMAS? | Mons. Elizalde #Shorts",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=0EEkVy3RySs",
+      "image": "https://i.ytimg.com/vi/0EEkVy3RySs/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-28T19:00:18+00:00"
+    },
+    {
       "id": "youtube-EM0PDXPC4dc",
       "videoId": "EM0PDXPC4dc",
       "type": "video",
@@ -350,6 +452,125 @@
       "dynamic": true,
       "tier": "reserve",
       "publishedAt": "2026-10-27T22:01:13+00:00"
+    },
+    {
+      "id": "youtube-fM-_gYhk4mI",
+      "videoId": "fM-_gYhk4mI",
+      "type": "video",
+      "source": "It's Time To Think",
+      "author": "It's Time To Think",
+      "title": "TOLEDO, ¿Y SI NOS SALIMOS UN POCO DEL GUIÓN? 👀💡",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=fM-_gYhk4mI",
+      "image": "https://i.ytimg.com/vi/fM-_gYhk4mI/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-27T19:05:12+00:00"
+    },
+    {
+      "id": "youtube-3FOXqnBzjjg",
+      "videoId": "3FOXqnBzjjg",
+      "type": "video",
+      "source": "Se Buscan Rebeldes",
+      "author": "Se Buscan Rebeldes",
+      "title": "Las 3 razones por las que Dios se \"calla\" (y cómo orar en la desolación) | Rebeldes Clips",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=3FOXqnBzjjg",
+      "image": "https://i.ytimg.com/vi/3FOXqnBzjjg/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-27T19:00:17+00:00"
+    },
+    {
+      "id": "youtube--9djOuLySI4",
+      "videoId": "-9djOuLySI4",
+      "type": "video",
+      "source": "Se Buscan Rebeldes",
+      "author": "Se Buscan Rebeldes",
+      "title": "¿Te cuesta REZAR? Descubre TU propio estilo de oración | Mons. Elizalde #Shorts",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=-9djOuLySI4",
+      "image": "https://i.ytimg.com/vi/-9djOuLySI4/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-27T19:00:08+00:00"
+    },
+    {
+      "id": "youtube-fT0QXcLWR38",
+      "videoId": "fT0QXcLWR38",
+      "type": "video",
+      "source": "It's Time To Think",
+      "author": "It's Time To Think",
+      "title": "LOGROÑO, TENEMOS UNA CONVERSACIÓN PENDIENTE. 🍷💡",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=fT0QXcLWR38",
+      "image": "https://i.ytimg.com/vi/fT0QXcLWR38/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-27T17:04:39+00:00"
+    },
+    {
+      "id": "youtube-X1aQh0axmlA",
+      "videoId": "X1aQh0axmlA",
+      "type": "video",
+      "source": "Se Buscan Rebeldes",
+      "author": "Se Buscan Rebeldes",
+      "title": "¿Por qué estás triste si naciste para ser feliz? | Mons. Elizalde #40",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=X1aQh0axmlA",
+      "image": "https://i.ytimg.com/vi/X1aQh0axmlA/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-26T19:00:33+00:00"
+    },
+    {
+      "id": "youtube-dIVh5V5cgZs",
+      "videoId": "dIVh5V5cgZs",
+      "type": "video",
+      "source": "Se Buscan Rebeldes",
+      "author": "Se Buscan Rebeldes",
+      "title": "Cómo superar el dolor más desgarrador y el miedo: Madre Olga | Rebeldes Clips",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=dIVh5V5cgZs",
+      "image": "https://i.ytimg.com/vi/dIVh5V5cgZs/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-26T19:00:33+00:00"
+    },
+    {
+      "id": "youtube-fiFiunpz57s",
+      "videoId": "fiFiunpz57s",
+      "type": "video",
+      "source": "It's Time To Think",
+      "author": "It's Time To Think",
+      "title": "¿Y SI CADA VEZ NOS COSTARA MÁS DECIR LO QUE PENSAMOS? 💡",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=fiFiunpz57s",
+      "image": "https://i.ytimg.com/vi/fiFiunpz57s/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-26T17:04:53+00:00"
     },
     {
       "id": "youtube-NlVu0P1RdHs",
@@ -386,6 +607,40 @@
       "publishedAt": "2026-10-25T19:00:19+00:00"
     },
     {
+      "id": "youtube-q_a7Ee2xGBo",
+      "videoId": "q_a7Ee2xGBo",
+      "type": "video",
+      "source": "Se Buscan Rebeldes",
+      "author": "Se Buscan Rebeldes",
+      "title": "¿Qué hacer si ya no \"sientes\" a Dios como antes? | Mons. Elizalde #40",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=q_a7Ee2xGBo",
+      "image": "https://i.ytimg.com/vi/q_a7Ee2xGBo/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-25T19:00:18+00:00"
+    },
+    {
+      "id": "youtube-FqquiySSgxY",
+      "videoId": "FqquiySSgxY",
+      "type": "video",
+      "source": "It's Time To Think",
+      "author": "It's Time To Think",
+      "title": "Primer thinkglao electoral con Feijóo",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=FqquiySSgxY",
+      "image": "https://i.ytimg.com/vi/FqquiySSgxY/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-25T10:36:03+00:00"
+    },
+    {
       "id": "youtube-8H-o6cBWxSo",
       "videoId": "8H-o6cBWxSo",
       "type": "video",
@@ -401,6 +656,23 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-10-24T18:00:37+00:00"
+    },
+    {
+      "id": "youtube-ZTtZVzg2Ah4",
+      "videoId": "ZTtZVzg2Ah4",
+      "type": "video",
+      "source": "Se Buscan Rebeldes",
+      "author": "Se Buscan Rebeldes",
+      "title": "\"Hice Emaús y volví a sentir que Dios me ama\" | Mons. Elizalde #40",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=ZTtZVzg2Ah4",
+      "image": "https://i.ytimg.com/vi/ZTtZVzg2Ah4/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-24T18:00:08+00:00"
     },
     {
       "id": "youtube-u6Cqlpslo38",
@@ -437,6 +709,40 @@
       "publishedAt": "2026-10-23T22:58:06+00:00"
     },
     {
+      "id": "youtube-3gU6lz4gcTo",
+      "videoId": "3gU6lz4gcTo",
+      "type": "video",
+      "source": "Se Buscan Rebeldes",
+      "author": "Se Buscan Rebeldes",
+      "title": "¿Cómo pasar del \"subidón\" de los retiros a la FE MADURA? | Rebeldes Clips",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=3gU6lz4gcTo",
+      "image": "https://i.ytimg.com/vi/3gU6lz4gcTo/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-23T18:00:33+00:00"
+    },
+    {
+      "id": "youtube-4d_4SP1ZLkE",
+      "videoId": "4d_4SP1ZLkE",
+      "type": "video",
+      "source": "Se Buscan Rebeldes",
+      "author": "Se Buscan Rebeldes",
+      "title": "Con 9 años supo que sería cura: La historia de un Obispo | Mons. Elizalde #40",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=4d_4SP1ZLkE",
+      "image": "https://i.ytimg.com/vi/4d_4SP1ZLkE/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-23T18:00:30+00:00"
+    },
+    {
       "id": "youtube-rdRbjU1dA7g",
       "videoId": "rdRbjU1dA7g",
       "type": "video",
@@ -452,6 +758,23 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-10-23T18:00:17+00:00"
+    },
+    {
+      "id": "youtube-ETfaBBPxOlc",
+      "videoId": "ETfaBBPxOlc",
+      "type": "video",
+      "source": "It's Time To Think",
+      "author": "It's Time To Think",
+      "title": "Thinkglaos electorales de cara al 29N",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=ETfaBBPxOlc",
+      "image": "https://i.ytimg.com/vi/ETfaBBPxOlc/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-23T17:09:18+00:00"
     },
     {
       "id": "youtube-mQSG-j7Oq-Q",
@@ -486,6 +809,57 @@
       "dynamic": true,
       "tier": "reserve",
       "publishedAt": "2026-10-23T13:22:45+00:00"
+    },
+    {
+      "id": "youtube-0KuQzBlaDpI",
+      "videoId": "0KuQzBlaDpI",
+      "type": "video",
+      "source": "It's Time To Think",
+      "author": "It's Time To Think",
+      "title": "TU DESTINO ES TU RESPONSABILIDAD. 💡",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=0KuQzBlaDpI",
+      "image": "https://i.ytimg.com/vi/0KuQzBlaDpI/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-22T18:03:32+00:00"
+    },
+    {
+      "id": "youtube-CvSm9LXiLZk",
+      "videoId": "CvSm9LXiLZk",
+      "type": "video",
+      "source": "Se Buscan Rebeldes",
+      "author": "Se Buscan Rebeldes",
+      "title": "¿Un Obispo haciendo Emaús como caminante? Rebeldes Podcast #40",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=CvSm9LXiLZk",
+      "image": "https://i.ytimg.com/vi/CvSm9LXiLZk/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-22T18:00:18+00:00"
+    },
+    {
+      "id": "youtube-7nIOR-j7lvM",
+      "videoId": "7nIOR-j7lvM",
+      "type": "video",
+      "source": "It's Time To Think",
+      "author": "It's Time To Think",
+      "title": "¿Y SI EL PROBLEMA NO FUERA PENSAR DIFERENTE, SINO HABER DEJADO DE ESCUCHARNOS? 💡",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=7nIOR-j7lvM",
+      "image": "https://i.ytimg.com/vi/7nIOR-j7lvM/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-22T16:08:47+00:00"
     },
     {
       "id": "youtube-uj7g7bk9xyw",
@@ -571,6 +945,23 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-10-21T18:48:04+00:00"
+    },
+    {
+      "id": "youtube-UUxS2f4FoaM",
+      "videoId": "UUxS2f4FoaM",
+      "type": "video",
+      "source": "It's Time To Think",
+      "author": "It's Time To Think",
+      "title": "CIUDAD DE MÉXICO, MAÑANA TENEMOS UNA CITA. 🇲🇽💡",
+      "description": "Vídeo reciente del canal configurado en Atlas.",
+      "url": "https://www.youtube.com/watch?v=UUxS2f4FoaM",
+      "image": "https://i.ytimg.com/vi/UUxS2f4FoaM/hqdefault.jpg",
+      "libraryId": "doctrine",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-10-21T18:03:42+00:00"
     },
     {
       "id": "youtube-apz7zycYq5o",
@@ -42442,397 +42833,6 @@
       "dynamic": true,
       "tier": "main",
       "publishedAt": "2026-08-13T17:55:12+00:00"
-    },
-    {
-      "id": "youtube-pVKlOC0NwCU",
-      "videoId": "pVKlOC0NwCU",
-      "type": "video",
-      "source": "10 minutos con Jesús",
-      "author": "10 minutos con Jesús",
-      "title": "Evangelio y oración de hoy, 14-08-26. \"Decisión de amar\". 10 minutos con Jesús.",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=pVKlOC0NwCU",
-      "image": "https://i.ytimg.com/vi/pVKlOC0NwCU/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T17:42:12+00:00"
-    },
-    {
-      "id": "youtube-FwgE9spvIeo",
-      "videoId": "FwgE9spvIeo",
-      "type": "video",
-      "source": "Jordan B. Peterson",
-      "author": "Jordan B. Peterson",
-      "title": "Anxiety Is Self Focus",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=FwgE9spvIeo",
-      "image": "https://i.ytimg.com/vi/FwgE9spvIeo/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T17:00:22+00:00"
-    },
-    {
-      "id": "youtube-prp90CsT93A",
-      "videoId": "prp90CsT93A",
-      "type": "video",
-      "source": "EWTN Español",
-      "author": "EWTN Español",
-      "title": "Renovemos nuestra fe en la presencia de Cristo",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=prp90CsT93A",
-      "image": "https://i.ytimg.com/vi/prp90CsT93A/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T16:00:35+00:00"
-    },
-    {
-      "id": "youtube-biS4sdmbY18",
-      "videoId": "biS4sdmbY18",
-      "type": "video",
-      "source": "10 minutos con Jesús",
-      "author": "10 minutos con Jesús",
-      "title": "10 minutes avec Jésus. Les murs autour du cœur. (14-08-2026)",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=biS4sdmbY18",
-      "image": "https://i.ytimg.com/vi/biS4sdmbY18/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T16:00:19+00:00"
-    },
-    {
-      "id": "youtube-u8hQDEFuh9A",
-      "videoId": "u8hQDEFuh9A",
-      "type": "video",
-      "source": "The Rest Is History",
-      "author": "The Rest Is History",
-      "title": "San Francisco's not so woke after all",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=u8hQDEFuh9A",
-      "image": "https://i.ytimg.com/vi/u8hQDEFuh9A/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T15:42:55+00:00"
-    },
-    {
-      "id": "youtube-PGbhDj-3Ebc",
-      "videoId": "PGbhDj-3Ebc",
-      "type": "video",
-      "source": "Dr. Arthur Brooks",
-      "author": "Dr. Arthur Brooks",
-      "title": "Stop Eliminating Boredom",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=PGbhDj-3Ebc",
-      "image": "https://i.ytimg.com/vi/PGbhDj-3Ebc/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T15:30:13+00:00"
-    },
-    {
-      "id": "youtube-a4v6uW0i0r0",
-      "videoId": "a4v6uW0i0r0",
-      "type": "video",
-      "source": "Mario Alonso Puig",
-      "author": "Mario Alonso Puig",
-      "title": "Lo que crees cambia la realidad que ves | Mario Alonso Puig",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=a4v6uW0i0r0",
-      "image": "https://i.ytimg.com/vi/a4v6uW0i0r0/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T15:00:25+00:00"
-    },
-    {
-      "id": "youtube-CBYVimncKiU",
-      "videoId": "CBYVimncKiU",
-      "type": "video",
-      "source": "Hallow: Prayer & Meditation",
-      "author": "Hallow: Prayer & Meditation",
-      "title": "You called, shouted, broke through my deafness.",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=CBYVimncKiU",
-      "image": "https://i.ytimg.com/vi/CBYVimncKiU/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T14:30:31+00:00"
-    },
-    {
-      "id": "youtube-BUoTdTm6MSg",
-      "videoId": "BUoTdTm6MSg",
-      "type": "video",
-      "source": "EWTN Español",
-      "author": "EWTN Español",
-      "title": "Hasta 70 veces 7: La parábola del siervo sin misericordia",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=BUoTdTm6MSg",
-      "image": "https://i.ytimg.com/vi/BUoTdTm6MSg/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T14:23:11+00:00"
-    },
-    {
-      "id": "youtube-PFkk0zk8bjo",
-      "videoId": "PFkk0zk8bjo",
-      "type": "video",
-      "source": "María Calvo",
-      "author": "María Calvo",
-      "title": "🚨 EN VIVO NOTICIAS: EXCLUSIVA! BRUTAL ULTIMÁTUM A TRUMP! IRÁN VA CON TODO! ORMUZ RUSIA EEUU UCRANIA",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=PFkk0zk8bjo",
-      "image": "https://i.ytimg.com/vi/PFkk0zk8bjo/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T14:21:48+00:00"
-    },
-    {
-      "id": "youtube-bKr5pP9mQZo",
-      "videoId": "bKr5pP9mQZo",
-      "type": "video",
-      "source": "Simon Sinek",
-      "author": "Simon Sinek",
-      "title": "How to Start the Hard Conversation | A Bit of Optimism",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=bKr5pP9mQZo",
-      "image": "https://i.ytimg.com/vi/bKr5pP9mQZo/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T14:04:14+00:00"
-    },
-    {
-      "id": "youtube-J-D8cghuKHA",
-      "videoId": "J-D8cghuKHA",
-      "type": "video",
-      "source": "10 minutos con Jesús",
-      "author": "10 minutos con Jesús",
-      "title": "Celibacy for the Sake of the Kingdom - August 14th 2026",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=J-D8cghuKHA",
-      "image": "https://i.ytimg.com/vi/J-D8cghuKHA/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T14:00:16+00:00"
-    },
-    {
-      "id": "youtube-5s8DTfreNMs",
-      "videoId": "5s8DTfreNMs",
-      "type": "video",
-      "source": "EWTN Español",
-      "author": "EWTN Español",
-      "title": "Misa diaria de EWTN - 13 de agosto de 2026",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=5s8DTfreNMs",
-      "image": "https://i.ytimg.com/vi/5s8DTfreNMs/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T13:49:14+00:00"
-    },
-    {
-      "id": "youtube-Hczc8Fk75aY",
-      "videoId": "Hczc8Fk75aY",
-      "type": "video",
-      "source": "Vatican News Español",
-      "author": "Vatican News Español",
-      "title": "Asís: en el Cortile di Francesco la vida es «una buena noticia»",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=Hczc8Fk75aY",
-      "image": "https://i.ytimg.com/vi/Hczc8Fk75aY/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T13:45:09+00:00"
-    },
-    {
-      "id": "youtube-B16HuyYUCbM",
-      "videoId": "B16HuyYUCbM",
-      "type": "video",
-      "source": "EWTN Español",
-      "author": "EWTN Español",
-      "title": "Rosario desde Lourdes: Misterios Gloriosos | 13 de agosto 2026",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=B16HuyYUCbM",
-      "image": "https://i.ytimg.com/vi/B16HuyYUCbM/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T13:43:38+00:00"
-    },
-    {
-      "id": "youtube-spjbS-N4Khc",
-      "videoId": "spjbS-N4Khc",
-      "type": "video",
-      "source": "The Rest Is History",
-      "author": "The Rest Is History",
-      "title": "Did Mary Queen of Scots Really Have To Die?",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=spjbS-N4Khc",
-      "image": "https://i.ytimg.com/vi/spjbS-N4Khc/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T12:05:46+00:00"
-    },
-    {
-      "id": "youtube-wbuPQPu-03Y",
-      "videoId": "wbuPQPu-03Y",
-      "type": "video",
-      "source": "Andrew Huberman",
-      "author": "Andrew Huberman",
-      "title": "Essentials: How to Optimize Female Hormone Health for Vitality & Longevity | Dr. Sara Gottfried",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=wbuPQPu-03Y",
-      "image": "https://i.ytimg.com/vi/wbuPQPu-03Y/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "reserve",
-      "publishedAt": "2026-08-13T12:00:10+00:00"
-    },
-    {
-      "id": "youtube-VvlhqN0wyB4",
-      "videoId": "VvlhqN0wyB4",
-      "type": "video",
-      "source": "Víctor Küppers",
-      "author": "Víctor Küppers",
-      "title": "5 COSAS QUE JAMÁS DEBES PERMITIR, NI POR AMOR",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=VvlhqN0wyB4",
-      "image": "https://i.ytimg.com/vi/VvlhqN0wyB4/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T11:46:24+00:00"
-    },
-    {
-      "id": "youtube-vSPp02wVIKA",
-      "videoId": "vSPp02wVIKA",
-      "type": "video",
-      "source": "Hallow: Prayer & Meditation",
-      "author": "Hallow: Prayer & Meditation",
-      "title": "Aug 13: The Privilege of Forgiving!",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=vSPp02wVIKA",
-      "image": "https://i.ytimg.com/vi/vSPp02wVIKA/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T11:00:39+00:00"
-    },
-    {
-      "id": "youtube-vhrtKMTsrkQ",
-      "videoId": "vhrtKMTsrkQ",
-      "type": "video",
-      "source": "Vatican News Español",
-      "author": "Vatican News Español",
-      "title": "La semana del Papa León XIV",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=vhrtKMTsrkQ",
-      "image": "https://i.ytimg.com/vi/vhrtKMTsrkQ/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T10:57:31+00:00"
-    },
-    {
-      "id": "youtube-TsR4sIQrmoM",
-      "videoId": "TsR4sIQrmoM",
-      "type": "video",
-      "source": "EWTN Español",
-      "author": "EWTN Español",
-      "title": "Café con Cristo Radio Show - Ya nadie llora",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=TsR4sIQrmoM",
-      "image": "https://i.ytimg.com/vi/TsR4sIQrmoM/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T10:01:01+00:00"
-    },
-    {
-      "id": "youtube-Oae2YUs6fNA",
-      "videoId": "Oae2YUs6fNA",
-      "type": "video",
-      "source": "EWTN España",
-      "author": "EWTN España",
-      "title": "Consejos para católicos en el siglo XXI",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=Oae2YUs6fNA",
-      "image": "https://i.ytimg.com/vi/Oae2YUs6fNA/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "main",
-      "publishedAt": "2026-08-13T07:00:20+00:00"
-    },
-    {
-      "id": "youtube-Tjzn3EkRFS4",
-      "videoId": "Tjzn3EkRFS4",
-      "type": "video",
-      "source": "Higinio Marín",
-      "author": "Higinio Marín",
-      "title": "13 de agosto de 2026",
-      "description": "Vídeo reciente del canal configurado en Atlas.",
-      "url": "https://www.youtube.com/watch?v=Tjzn3EkRFS4",
-      "image": "https://i.ytimg.com/vi/Tjzn3EkRFS4/hqdefault.jpg",
-      "libraryId": "doctrine",
-      "external": true,
-      "verified": true,
-      "dynamic": true,
-      "tier": "reserve",
-      "publishedAt": "2026-08-13T06:08:31+00:00"
     }
   ],
   "failures": [
@@ -42845,16 +42845,12 @@
       "error": "404 www.youtube.com"
     },
     {
-      "source": "Se Buscan Rebeldes",
-      "error": "404 www.youtube.com"
-    },
-    {
       "source": "ROME REPORTS en Español",
       "error": "fetch failed"
     },
     {
       "source": "Bishop Robert Barron",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Hallow: Prayer & Meditation",
@@ -42866,7 +42862,7 @@
     },
     {
       "source": "Fundación CARF",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Bosco Films",
@@ -42874,7 +42870,7 @@
     },
     {
       "source": "QNTLC",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "ACI Prensa",
@@ -42895,10 +42891,6 @@
     {
       "source": "Víctor Küppers",
       "error": "No se encontró el identificador del canal"
-    },
-    {
-      "source": "It's Time To Think",
-      "error": "404 www.youtube.com"
     },
     {
       "source": "Dr. Arthur Brooks",
@@ -42938,11 +42930,7 @@
     },
     {
       "source": "Alejandro Villena",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Álvaro González-Alorda",
-      "error": "404 www.youtube.com"
+      "error": "No se encontró el identificador del canal"
     },
     {
       "source": "Mario Alonso Puig",
@@ -42954,7 +42942,7 @@
     },
     {
       "source": "Sin Medias Tintas",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "EWTN España",
@@ -42977,10 +42965,6 @@
       "error": "404 www.youtube.com"
     },
     {
-      "source": "Pablo Blanco Sarto",
-      "error": "404 www.youtube.com"
-    },
-    {
       "source": "Scott Hahn",
       "error": "404 www.youtube.com"
     },
@@ -42998,7 +42982,7 @@
     },
     {
       "source": "Jesús Silva Castignani",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Cura de Toledo",
@@ -43010,7 +42994,7 @@
     },
     {
       "source": "Simon Sinek",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Juan Arana",
@@ -43038,7 +43022,7 @@
     },
     {
       "source": "Hakuna Group Music",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "10 minutos con Jesús",
@@ -43050,11 +43034,7 @@
     },
     {
       "source": "The Rest Is History",
-      "error": "500 www.youtube.com"
-    },
-    {
-      "source": "ISCR Universidad de Navarra",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "The Catholic Talk Show",
@@ -43075,6 +43055,10 @@
     {
       "source": "Alfonso Aguiló",
       "error": "500 www.youtube.com"
+    },
+    {
+      "source": "Emilio Duró",
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Fernando García de Cortázar",

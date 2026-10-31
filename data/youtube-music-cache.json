@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-10-29T02:34:07.390Z",
+  "updatedAt": "2026-10-31T02:33:19.044Z",
   "source": "previous-snapshot",
   "channels": [
     {
@@ -2783,7 +2783,7 @@
     },
     {
       "source": "Inazio",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Nico Montero",
@@ -2791,7 +2791,7 @@
     },
     {
       "source": "Kairoi",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Gen Rosso",
