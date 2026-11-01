@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-10-31T02:33:18.406Z",
-  "source": "youtube-rss",
+  "updatedAt": "2026-11-01T02:22:27.531Z",
+  "source": "previous-snapshot",
   "channels": [
     {
       "name": "Opus Dei",
@@ -42845,12 +42845,16 @@
       "error": "404 www.youtube.com"
     },
     {
+      "source": "Se Buscan Rebeldes",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "ROME REPORTS en Español",
       "error": "fetch failed"
     },
     {
       "source": "Bishop Robert Barron",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Hallow: Prayer & Meditation",
@@ -42858,11 +42862,11 @@
     },
     {
       "source": "Catholic Stuff",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Fundación CARF",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Bosco Films",
@@ -42870,7 +42874,7 @@
     },
     {
       "source": "QNTLC",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "ACI Prensa",
@@ -42893,8 +42897,12 @@
       "error": "No se encontró el identificador del canal"
     },
     {
-      "source": "Dr. Arthur Brooks",
+      "source": "It's Time To Think",
       "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Dr. Arthur Brooks",
+      "error": "500 www.youtube.com"
     },
     {
       "source": "María Calvo",
@@ -42933,6 +42941,10 @@
       "error": "No se encontró el identificador del canal"
     },
     {
+      "source": "Álvaro González-Alorda",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "Mario Alonso Puig",
       "error": "404 www.youtube.com"
     },
@@ -42965,8 +42977,12 @@
       "error": "404 www.youtube.com"
     },
     {
-      "source": "Scott Hahn",
+      "source": "Pablo Blanco Sarto",
       "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Scott Hahn",
+      "error": "No se encontró el identificador del canal"
     },
     {
       "source": "Peter Kreeft",
@@ -42982,7 +42998,7 @@
     },
     {
       "source": "Jesús Silva Castignani",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Cura de Toledo",
@@ -42994,7 +43010,7 @@
     },
     {
       "source": "Simon Sinek",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Juan Arana",
@@ -43022,7 +43038,7 @@
     },
     {
       "source": "Hakuna Group Music",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "10 minutos con Jesús",
@@ -43037,12 +43053,16 @@
       "error": "404 www.youtube.com"
     },
     {
+      "source": "ISCR Universidad de Navarra",
+      "error": "404 www.youtube.com"
+    },
+    {
       "source": "The Catholic Talk Show",
       "error": "404 www.youtube.com"
     },
     {
       "source": "Facultad de Teología UNAV",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Francisco Ugarte",
@@ -43054,7 +43074,7 @@
     },
     {
       "source": "Alfonso Aguiló",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Emilio Duró",
