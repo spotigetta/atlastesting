@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-01T02:22:27.531Z",
+  "updatedAt": "2026-11-02T02:37:27.300Z",
   "source": "previous-snapshot",
   "channels": [
     {
@@ -42862,7 +42862,7 @@
     },
     {
       "source": "Catholic Stuff",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Fundación CARF",
@@ -42898,11 +42898,11 @@
     },
     {
       "source": "It's Time To Think",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Dr. Arthur Brooks",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "María Calvo",
@@ -42982,7 +42982,7 @@
     },
     {
       "source": "Scott Hahn",
-      "error": "No se encontró el identificador del canal"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Peter Kreeft",
@@ -43062,7 +43062,7 @@
     },
     {
       "source": "Facultad de Teología UNAV",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Francisco Ugarte",
