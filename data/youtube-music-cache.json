@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-03T03:58:07.606Z",
+  "updatedAt": "2026-11-04T03:04:08.533Z",
   "source": "previous-snapshot",
   "channels": [
     {
@@ -2787,7 +2787,7 @@
     },
     {
       "source": "Nico Montero",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Kairoi",
