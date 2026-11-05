@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-04T03:04:07.955Z",
+  "updatedAt": "2026-11-05T03:34:59.613Z",
   "source": "previous-snapshot",
   "channels": [
     {
@@ -42838,7 +42838,7 @@
   "failures": [
     {
       "source": "Opus Dei",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Ecclesia COPE",
@@ -42846,7 +42846,7 @@
     },
     {
       "source": "Se Buscan Rebeldes",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "ROME REPORTS en Español",
@@ -42890,7 +42890,7 @@
     },
     {
       "source": "Marian Rojas-Estapé",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Víctor Küppers",
@@ -42938,7 +42938,7 @@
     },
     {
       "source": "Alejandro Villena",
-      "error": "No se encontró el identificador del canal"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Álvaro González-Alorda",
