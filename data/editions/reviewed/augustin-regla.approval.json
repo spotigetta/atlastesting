@@ -1,0 +1,28 @@
+{
+  "documentId": "history-0166_Regle_de_Saint_Augustin_pour_les_serviteurs_de_Dieu",
+  "status": "approved",
+  "targetHash": "dd946f960d4c2dc060f77e03dc9046ff387100931a7e2a9a1f81673d7fda921c",
+  "sourceHash": "e364d07f9eaae21f1dfdf7084c9e59e3089f5d9768950993c3b8449f6d20116a",
+  "sourceHashAtReview": "94388b2f38e2749ef1881567c5dd84dd7cb919135a11b27bb67cd94495fda412",
+  "reviewer": "/root/quality",
+  "translator": "/root/translation",
+  "scope": "entire catalogued payload",
+  "reviewedAt": "2026-11-05T21:21:59.000Z",
+  "humanReviewed": false,
+  "method": "ai-editorial",
+  "notes": [
+    "Revisor independiente leyó íntegros el original francés catalogado y el castellano: doce secciones, notas y procedencia. No detectó omisiones sustantivas.",
+    "Aplicadas y verificadas las correcciones de salut como salvación en el apartado 7 y de de vous-mêmes como de vosotros mismos en el apartado 6; restituida la interjección del apartado 2.",
+    "Se conserva la anomalía de la versión francesa en el apartado 7 sobre la corrección demasiado reservada; no se ha sustituido por una formulación latina no cotejada.",
+    "Referencias bíblicas conservadas como figuran en la fuente. Las notas se enlazan con identificadores únicos; se retiran las páginas de impresión intercaladas sin cambiar el texto.",
+    "La atribución a Raulx corresponde a la traducción francesa, no a esta versión castellana.",
+    "Revisión editorial con IA independiente, sin revisión humana ni carácter oficial; no se ha cotejado con el latín."
+  ],
+  "sourceTextHash": "009a949594b73745c14dabfa0f472e289f10b87fbde534e39d335648cc30e75c",
+  "sourceNormalization": {
+    "method": "Exact body comparison after stripping leading YAML and collapsing whitespace; exact TOC and chunk indexes unchanged",
+    "snapshotFile": "data/editions/checkpoints/source-3e34e46c43d6a60c83ef.json",
+    "bodyFingerprint": "e6a4645def2fc87544a7986731344efdb1d90cc74b7dfe1eebccd98752437ae8",
+    "checkedAt": "2026-11-05T21:22:52.057Z"
+  }
+}

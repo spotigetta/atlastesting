@@ -1,0 +1,29 @@
+{
+  "documentId": "history-0178_Augustin_de_l_utilite_du_jeune",
+  "status": "approved",
+  "targetHash": "2548d777d976e2831a8bacdfb2b703e69516d3cfb54da2a67b9c1deea1ebcfcc",
+  "sourceHash": "7512e779f5d5e6d7419f8ebebbe5b5fd7a85fcbee1b828de4ecdcbc5b860726d",
+  "sourceHashAtReview": "12372ef88d4ca3074b37127dbfc0ff149a137cca2c763e5715a8352f1b0aed5d",
+  "reviewer": "/root/translation",
+  "translator": "/root/reader",
+  "scope": "entire catalogued payload",
+  "reviewedAt": "2026-11-05T21:21:59.000Z",
+  "humanReviewed": false,
+  "method": "ai-editorial",
+  "notes": [
+    "Revisor distinto del traductor leyó y cotejó íntegros los once capítulos y los trece apartados con el francés, incluidas las notas y la procedencia.",
+    "La creación de la carne y del espíritu, la crítica antimaniquea y los argumentos sobre la gracia se conservan sin añadidos doctrinales.",
+    "Se conservan las comparaciones históricas sobre disciplina doméstica y coerción sin convertirlas en recomendaciones actuales.",
+    "Se conservan literalmente las anomalías de la fuente en V sobre alimento y privación y en el capítulo 11 sobre el sujeto hijos. Se explican en una nota editorial visible.",
+    "La referencia Mt 9,19 impresa junto a pescadores de hombres se conserva con advertencia visible, sin corregirla silenciosamente.",
+    "Verificado el formato final: diecisiete notas únicas enlazadas, frases partidas reunidas y páginas de impresión retiradas; catorce encabezados conservados en su orden y nivel.",
+    "Traducción desde el francés de Burleraux, no cotejada con latín; revisión editorial con IA, sin revisión humana ni carácter oficial."
+  ],
+  "sourceTextHash": "18d7680cfe6451e6555aa86cd3319d47c80ae84ce921ac88f3e412b1b2c0987d",
+  "sourceNormalization": {
+    "method": "Exact body comparison after stripping leading YAML and collapsing whitespace; exact TOC and chunk indexes unchanged",
+    "snapshotFile": "data/editions/checkpoints/source-6fd40f971482e7d9cc4d.json",
+    "bodyFingerprint": "7c2c2f56d59400bd050e81ffcea4dd8acfa819c4ea5ddd49dcb871fa20f2bb51",
+    "checkedAt": "2026-11-05T21:22:52.016Z"
+  }
+}

@@ -1,0 +1,2649 @@
+{
+  "schemaVersion": 1,
+  "reason": "Preserve historical chunks/toc and persisted chunkIndex/offset references. No normalization may replace payload text until state migration is verified.",
+  "restored": 248,
+  "preservedMappings": 309,
+  "preservedSchemaRepairs": 5,
+  "sourceBackup": "reports/corpus-backup-123e33df2c3dba6f",
+  "contentRevision": "fa560014fcc2cb8d62666089c817eb40eb5429103bc2764d299c59ca39461bb9",
+  "documents": [
+    {
+      "id": "doctrine-0308_Suma_Teologica_II_II_parte_02",
+      "path": "data/documents/b68980a3ae9b34dc9c.json.gz",
+      "normalizedSha256": "3d97d2c8b872923b90d78a863b20bba75892511086b8345efd0fcda0761c4da4",
+      "restoredSha256": "c677339e4cc64df79abd1e3c8b36ea9144109c97bb1abc8ad8988cfc8819ae21",
+      "source": "01_IA_Doctrina_Teologia_Moral/0308_Suma_Teologica_II_II_parte_02.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0332_Denzinger_parte_02",
+      "path": "data/documents/62b5bd038b2c5da641.json.gz",
+      "normalizedSha256": "f476b5b77b14cb989ff44952a2177492473c2646de1b52bf25ebd2fc24084175",
+      "restoredSha256": "f40b8d702b4e091793e73acc6df4fe157f2cedad73a338b96561adb99be70bc9",
+      "source": "01_IA_Doctrina_Teologia_Moral/0332_Denzinger_parte_02.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0332_Denzinger_parte_03",
+      "path": "data/documents/4c883a3d2205456a84.json.gz",
+      "normalizedSha256": "b124ab57f9f641cf05a1b2c8ee182de938b3eda150b909f0deff5b81d30c4c24",
+      "restoredSha256": "9fdf70498638e38284763d13d63aadf9c9e5020cf893b7c56c314458a0254c56",
+      "source": "01_IA_Doctrina_Teologia_Moral/0332_Denzinger_parte_03.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0583_dignitas_infinita_es",
+      "path": "data/documents/6b86b4127385c5211b.json.gz",
+      "normalizedSha256": "bcf3900a573cab97f719b1b2eab56bda40a4d163aa7df80c00bb5927e7f6acc0",
+      "restoredSha256": "ec4518ed77654a36dc1065a5a3d6aa01409c88d9817b9dddd7423cb923063aee",
+      "source": "01_IA_Doctrina_Teologia_Moral/0583_dignitas_infinita_es.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0584_dignitas_infinita_es",
+      "path": "data/documents/0437592dc039d0397f.json.gz",
+      "normalizedSha256": "47545f85977379bbc606cac845b6e1067d9c653a15884bb1b15f9b2a1906a49a",
+      "restoredSha256": "b9294472944a88625ac60bc90abf1205da23f84734ab5f6dfe0b89f8d0c94914",
+      "source": "01_IA_Doctrina_Teologia_Moral/0584_dignitas_infinita_es.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0585_dignitas_infinita_es",
+      "path": "data/documents/3ee0b8109c34c5c6c1.json.gz",
+      "normalizedSha256": "30c0017099154ac06a0578a09d0cdc4aab6aba5e4f4aa8dd26f4066c680a7ff4",
+      "restoredSha256": "3df83a324fb939ce54e44706165b6469ebcac9befea0684cc548c7313d35dea0",
+      "source": "01_IA_Doctrina_Teologia_Moral/0585_dignitas_infinita_es.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0587_gestis_verbisque_es",
+      "path": "data/documents/0f40cb27420a0bcbaf.json.gz",
+      "normalizedSha256": "82d10cfaa6b81a21e820eec6b1bb7cbf66e60126154fd931027a9867eec0f715",
+      "restoredSha256": "e1cc6a366e03a643a848c0bb1cb62894870de737f56d9d49143534a9c99dc12f",
+      "source": "01_IA_Doctrina_Teologia_Moral/0702_Gestis_verbisque_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "doctrine-0588_samaritanus_bonus_es",
+      "path": "data/documents/9028943f2d6198b543.json.gz",
+      "normalizedSha256": "4d7aa274fda7f605f9f3b43fa69be3e612ebea209ca2f4ff2b073f5945649e29",
+      "restoredSha256": "9206345732c32ded754bf0e50a310a6c8fccd4513223c0d7b7948620fe14f2ef",
+      "source": "01_IA_Doctrina_Teologia_Moral/0703_Samaritanus_bonus_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0591_iuvenescit_ecclesia_es",
+      "path": "data/documents/5ac09d3be96f8496ab.json.gz",
+      "normalizedSha256": "ac37875f46f725940f9e32d0d316313bbf7f503792af09f6e06da64ffbdb19e1",
+      "restoredSha256": "8a9b77fa5c6336eb0bb16f514b0c681fa57b2424d1658af5ed8a6d260c7ab1c6",
+      "source": "01_IA_Doctrina_Teologia_Moral/0707_Iuvenescit_Ecclesia_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0592_fratelli_tutti_es",
+      "path": "data/documents/d7347e9f148f9c9e16.json.gz",
+      "normalizedSha256": "24abb92e3a9e1d37471bdfde8750f47bdd05e68a9a8e18ca03bbfa2a7fe82153",
+      "restoredSha256": "1603b5caf6e4955d4a142cf73555ce0ee006a66822fef600bcf4515cb3ed6ee6",
+      "source": "01_IA_Doctrina_Teologia_Moral/0708_Fratelli_tutti_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0594_christus_vivit_es",
+      "path": "data/documents/e071aed84ef61f3fdb.json.gz",
+      "normalizedSha256": "76870ea1e9e2427f2c3e61ed6499d7e3f01113e9fc21f8e0e47bb250e172a6e0",
+      "restoredSha256": "4dff77e81b48ecfd80ee0efccc60506358f0a2a1443a4521df489da759e570da",
+      "source": "01_IA_Doctrina_Teologia_Moral/0711_Christus_vivit_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0595_querida_amazonia_es",
+      "path": "data/documents/6ae0d48168135aef3f.json.gz",
+      "normalizedSha256": "f2e2e77912dbff8a91989e48f2a440d7dc6f610db0146ea8c1d6e2cc41b180f1",
+      "restoredSha256": "7b74dbd8f254b80695a32d489de62ddb3daeeb7519579475aea8d56a460d70a3",
+      "source": "01_IA_Doctrina_Teologia_Moral/0712_Querida_Amazonia_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0596_patris_corde_es",
+      "path": "data/documents/caa8f3f66a5433982d.json.gz",
+      "normalizedSha256": "3c32aef37a376f4b81206ac6853cd2b45c6be12876b8c6a63b3243b35b8c4429",
+      "restoredSha256": "3b001c5222458131b366ad1d8cf9cf7b4437108cf59142d1e74514ac97176c34",
+      "source": "01_IA_Doctrina_Teologia_Moral/0713_Patris_corde_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0597_misericordia_et_misera_es",
+      "path": "data/documents/b8a9d5a50f07834417.json.gz",
+      "normalizedSha256": "ccae89d4f5866fb8ac9a6e0aa3b0ca4a418db78a07d2da4eef4a76ad2b3085d2",
+      "restoredSha256": "5301cf8a7355ef4098c1d63448ef883ce01ff85b6955cfd2df9d8cf417e02b2e",
+      "source": "01_IA_Doctrina_Teologia_Moral/0714_Misericordia_et_misera_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0598_ad_theologiam_promovendam_it",
+      "path": "data/documents/736ce5f2a20f3450c8.json.gz",
+      "normalizedSha256": "e6ffc12b2b58760d0b9ab0e05c84c42737433be5e68c0f700a9ec793771971ea",
+      "restoredSha256": "e9ffbadd2a754b8a9f3523b1fb91fa5fea0ab5d0da76d9e6dd98bfb6c56aa8fd",
+      "source": "01_IA_Doctrina_Teologia_Moral/0715_Ad_theologiam_promovendam_IT.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0599_desiderio_desideravi_es",
+      "path": "data/documents/b7a13268bd641295d5.json.gz",
+      "normalizedSha256": "e064ff5da0e7ec3c0611bc874bede51a25e876c92bccbb5df353f1ad1dbafd64",
+      "restoredSha256": "1cddfa636a8f1269d0b74c10f408526924c0b2819837be2e630bde779dd38b23",
+      "source": "01_IA_Doctrina_Teologia_Moral/0716_Desiderio_desideravi_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0600_fiducia_supplicans_es",
+      "path": "data/documents/15b59757949b8621d6.json.gz",
+      "normalizedSha256": "d89a516a61c8dbf6b16e3d71ad74357d6d87f250407587a1a76a15cb40357325",
+      "restoredSha256": "ff2ff8b1caf3aa5644cf033f94f4319bbdd00044a7afd0eac2fee9f41dd07088",
+      "source": "01_IA_Doctrina_Teologia_Moral/0717_Fiducia_supplicans_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0603_la_reciprocidad_entre_fe_y_sacramentos_en_la_economia_sacramental_es",
+      "path": "data/documents/5e3d5a5c98baa38195.json.gz",
+      "normalizedSha256": "24d9686b476771c62b7903605616af2ccc4a4f57b360a81050c22b2d51ccfe07",
+      "restoredSha256": "f2e823d745f84c0bb3ead80687b7141f1d31f84d8af7cdfad4bc9852c6b848cd",
+      "source": "01_IA_Doctrina_Teologia_Moral/0724_La_reciprocidad_entre_fe_y_sacramentos_en_la_economia_sacramental_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0606_que_es_el_hombre_es",
+      "path": "data/documents/80df3bd7b6fa81afd4.json.gz",
+      "normalizedSha256": "ec55adedfcdab0835be8aa38c4bfbf946713755de28bd111b02203c98ed207c0",
+      "restoredSha256": "9a0de53843ffc7a5edc7e245fda73a45a9a28170147660742b0814b843359a0e",
+      "source": "01_IA_Doctrina_Teologia_Moral/0734_Que_es_el_hombre_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-095928.json"
+      ]
+    },
+    {
+      "id": "doctrine-0607_comunion_y_servicio_la_persona_humana_creada_a_imagen_de_dios_es",
+      "path": "data/documents/acc41aaecf5cd4ba24.json.gz",
+      "normalizedSha256": "472f23a1ab602d0833d12baccee888d5e9c2592e7de5a960e48342928ed208cf",
+      "restoredSha256": "6ae0277c0120814f9284276ce5262312b987d7dcc8f076c8ddee63dc03a9a1b2",
+      "source": "01_IA_Doctrina_Teologia_Moral/0735_Comunion_y_servicio_la_persona_humana_creada_a_imagen_de_Dios_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0609_el_cristianismo_y_las_religiones_es",
+      "path": "data/documents/6789c2459589c4b418.json.gz",
+      "normalizedSha256": "52e93f2f6e0d5dc8d025b538e09a333e684f6eab82db65f451beeb24f8572b75",
+      "restoredSha256": "c1046e767e67712a6a101fd88a01173eee8c16b89932240a08206b115bcb75d6",
+      "source": "01_IA_Doctrina_Teologia_Moral/0737_El_cristianismo_y_las_religiones_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0615_la_historicidad_de_los_evangelios_es",
+      "path": "data/documents/3ca870bb8fbc8224ef.json.gz",
+      "normalizedSha256": "8226494e5fa95514e37d9f6e2ff6a4301c6c3ea5503a5775bf2887811746545b",
+      "restoredSha256": "18a5a444f3c54ef45b7d9343bf6bb62d656a1f7407ddee7507db820cf70a38f3",
+      "source": "01_IA_Doctrina_Teologia_Moral/0744_La_historicidad_de_los_Evangelios_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0618_gestis_verbisque_es",
+      "path": "data/documents/3204777ab4409d0882.json.gz",
+      "normalizedSha256": "fe271f5b9cb80ac5bfe24c71a61c72ac92a46592cda20575986fb19e4640fd4b",
+      "restoredSha256": "2700910a2596f2ec70c59b8ff28521113591226b3397d88624adeed5d0c512a0",
+      "source": "01_IA_Doctrina_Teologia_Moral/0702_Gestis_verbisque_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "doctrine-0619_samaritanus_bonus_es",
+      "path": "data/documents/286375b30f5fddca4c.json.gz",
+      "normalizedSha256": "2fff2f3aba3502f061c2c0bb9481719d4464b698912880da2fa61fe96f828604",
+      "restoredSha256": "0322087432bf85ba4558965b100625e2c698eab7ddddd60d15cf4422de85afda",
+      "source": "01_IA_Doctrina_Teologia_Moral/0703_Samaritanus_bonus_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0620_dignitas_personae_es",
+      "path": "data/documents/f7e52817d629954dcf.json.gz",
+      "normalizedSha256": "d71e82448b65703d4647d97ad56dc3415a1db4164a1606491ab239b9db37daea",
+      "restoredSha256": "07917b7eac026f29a4211ed80a569860ffe35c19470ff3b8affdc5e9cb8b821a",
+      "source": "01_IA_Doctrina_Teologia_Moral/0704_Dignitas_personae_ES.md",
+      "normalizationReports": [
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "doctrine-0623_iuvenescit_ecclesia_es",
+      "path": "data/documents/83385c982f0b90d601.json.gz",
+      "normalizedSha256": "48556bafa8d52dc40afb6231a7b6ff08c40bda9debcf204f5403d80de5729ddf",
+      "restoredSha256": "7956875cbd51fc04146f389b3eb431dca3bbc830b9709cbcdbce90eddf14ea2d",
+      "source": "01_IA_Doctrina_Teologia_Moral/0707_Iuvenescit_Ecclesia_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0624_fratelli_tutti_es",
+      "path": "data/documents/3d0809a1466ffa7b96.json.gz",
+      "normalizedSha256": "1d1abdfa48d14d718b3d183eb50a129b3aca3dbc94a889cc49c6b936ff946293",
+      "restoredSha256": "34e128e91db7746aec1681108d46b3df821f8736d340004bb60512aa16924b66",
+      "source": "01_IA_Doctrina_Teologia_Moral/0708_Fratelli_tutti_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0627_christus_vivit_es",
+      "path": "data/documents/1cf9977bbc6deeb628.json.gz",
+      "normalizedSha256": "55527db975a807e693eac3cc7cd191ed99ce74bc44dac08a4fa32ce85b554b9f",
+      "restoredSha256": "6f41b4f23741280b21d95d8082ef706c7f8eedbc583ce1ed71f38ac4b87be9b7",
+      "source": "01_IA_Doctrina_Teologia_Moral/0711_Christus_vivit_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0628_querida_amazonia_es",
+      "path": "data/documents/ea94f5432ccf2ddcde.json.gz",
+      "normalizedSha256": "186a2e0c5f5be803a07a1008b3f2e3c4f3c2984555a95be28e45e6682a6294b7",
+      "restoredSha256": "d85a81c84849122ec93b4161fc688b749d14ec8501c5d3b20073074f9b84a298",
+      "source": "01_IA_Doctrina_Teologia_Moral/0712_Querida_Amazonia_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0629_patris_corde_es",
+      "path": "data/documents/939fd0bf9213178203.json.gz",
+      "normalizedSha256": "e89da2ed5e2e4b9bc7f8bda89ca281fbc1334edadf3c55119917b012a21287a7",
+      "restoredSha256": "35571babcd43b2f4074780d50a504dc06a859a7913bb83c15d286382fd290dfb",
+      "source": "01_IA_Doctrina_Teologia_Moral/0713_Patris_corde_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0630_misericordia_et_misera_es",
+      "path": "data/documents/acfbb4af8bd0d903bc.json.gz",
+      "normalizedSha256": "4cead9e6a7e702e9dd0007a04aa3bf36d44b4daa70dbf533aa52d7fe4ec1af75",
+      "restoredSha256": "6eb270c33c9e44f6f283dc251d3b0f0e9ea76997894035560fb04730c810c3ce",
+      "source": "01_IA_Doctrina_Teologia_Moral/0714_Misericordia_et_misera_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0631_ad_theologiam_promovendam_it",
+      "path": "data/documents/ec4f50814310a0d285.json.gz",
+      "normalizedSha256": "60fa93909d96a234f46996afdd4ff70cf720dab14c761fefe0b2eb558f535856",
+      "restoredSha256": "03b52df247adf810191891f3e7b05d298dc1f0cf99628b3a8e8409b2d17cc38a",
+      "source": "01_IA_Doctrina_Teologia_Moral/0715_Ad_theologiam_promovendam_IT.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0632_desiderio_desideravi_es",
+      "path": "data/documents/72b5c89550e7e33ffa.json.gz",
+      "normalizedSha256": "e9468ea41ba6e685d280e56b549ff2b362aa25a5d009817bd240ecf070e3c688",
+      "restoredSha256": "905fd9e944b82d1bdbf8724667a182c8b96d3ca5ea30c2032b78cb19c31c2510",
+      "source": "01_IA_Doctrina_Teologia_Moral/0716_Desiderio_desideravi_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0633_fiducia_supplicans_es",
+      "path": "data/documents/baa878e185d092223c.json.gz",
+      "normalizedSha256": "21f015ea954ae2ce8d1107e5f7d3342b0ed8bac3101acc86b867c94e47780f15",
+      "restoredSha256": "ddf961c42e233df564f8d4b7001f35800d0b12aac03cf467cbd27e8d7e5da354",
+      "source": "01_IA_Doctrina_Teologia_Moral/0717_Fiducia_supplicans_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0636_en_busca_de_una_etica_universal_es",
+      "path": "data/documents/9d9605d48d3f3e9aad.json.gz",
+      "normalizedSha256": "0f37d4b15d3ff761c4f6883bc5810807ec10aa7dea4b1411a7b9c03e98e62186",
+      "restoredSha256": "29803f9a27ad2df1d431ef41ada67de50a8ea46810d15b9d3de5f92d6107807c",
+      "source": "01_IA_Doctrina_Teologia_Moral/0723_En_busca_de_una_etica_universal_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0637_la_reciprocidad_entre_fe_y_sacramentos_en_la_economia_sacramental_es",
+      "path": "data/documents/4821a37cdba8b1e19a.json.gz",
+      "normalizedSha256": "0f62658f48af675c183c40a00d6d24deb6380e5ce13e471640e9ee9a2885bfcc",
+      "restoredSha256": "496a379820bf3f2b7e731d861ba00c5071b57d8a16dfd2d75648830a9b5bdecc",
+      "source": "01_IA_Doctrina_Teologia_Moral/0724_La_reciprocidad_entre_fe_y_sacramentos_en_la_economia_sacramental_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0641_que_es_el_hombre_es",
+      "path": "data/documents/515261bb95d8c78bd1.json.gz",
+      "normalizedSha256": "d514ad5afb46f86566eb0d7cac48aee55ff0467a0187336d746da94757ae5adf",
+      "restoredSha256": "7e609da4b537e354b333401b450a14a364e086120b9c7f208008c51a921030d5",
+      "source": "01_IA_Doctrina_Teologia_Moral/0734_Que_es_el_hombre_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-095928.json"
+      ]
+    },
+    {
+      "id": "doctrine-0642_comunion_y_servicio_la_persona_humana_creada_a_imagen_de_dios_es",
+      "path": "data/documents/f1890a2106b02ff63a.json.gz",
+      "normalizedSha256": "bcc97dd98656021eb8ccbab71d2e8f506a7a7cc7d1454649d72e5716b7481b02",
+      "restoredSha256": "f2b0d596ecc31207b298e8bb1d1aaeb4b92a774b6a54c6242139031067c9d7ec",
+      "source": "01_IA_Doctrina_Teologia_Moral/0735_Comunion_y_servicio_la_persona_humana_creada_a_imagen_de_Dios_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0644_el_cristianismo_y_las_religiones_es",
+      "path": "data/documents/9111f5bc50f82bb4b4.json.gz",
+      "normalizedSha256": "7ab914f7f90bcdb88171b699b108752e337a4addd5abe196cd5d73a20df0535a",
+      "restoredSha256": "dfe51b717493f30095e073cdf4c67a515bcf28ec5ce61d8170baa29d504d2618",
+      "source": "01_IA_Doctrina_Teologia_Moral/0737_El_cristianismo_y_las_religiones_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0650_la_historicidad_de_los_evangelios_es",
+      "path": "data/documents/5bcad0594a41c3d9d0.json.gz",
+      "normalizedSha256": "7a1716fae0a104e8c1828843b30e5fb94fbf28ba32441dd750db6c3994b70d7c",
+      "restoredSha256": "43e2304468b7d039647e27452ecf34d7b0d5c55974ae18eb3cee539eab558e45",
+      "source": "01_IA_Doctrina_Teologia_Moral/0744_La_historicidad_de_los_Evangelios_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "history-0094_Augustin_Sermons_parte_02",
+      "path": "data/documents/e22efd3649a22d292f.json.gz",
+      "normalizedSha256": "391ebabc185e26819e63f71b4f5fb02ce3eaaaada7029d6932fe864fe181576d",
+      "restoredSha256": "8ba64ceb76c9afdff6bbe7a154533056e7e02e96c3704651822c91db5d87504f",
+      "source": "03_IA_Historia_Iglesia_Padres/0094_Augustin_Sermons_parte_02.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "history-0094_Augustin_Sermons_parte_03",
+      "path": "data/documents/b1a2434d7acca9c7b0.json.gz",
+      "normalizedSha256": "f837a2495a3905d1169341b174bee5f7976a859102cc7b445ce4f4602995c97d",
+      "restoredSha256": "a031c3a2e2e45a4503f4da09f90b074ebcbef35b0a59b09393d4359993c954ab",
+      "source": "03_IA_Historia_Iglesia_Padres/0094_Augustin_Sermons_parte_03.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "history-0094_Augustin_Sermons_parte_04",
+      "path": "data/documents/7b5eedc3da075ee8d7.json.gz",
+      "normalizedSha256": "725621e9b95e188609eb11089a194003118fa3891f52149b0e331e1dba9b0ba0",
+      "restoredSha256": "dd640c1c26a5877cde80d2f92174a69ae94778932a824ad945aea40c147f780d",
+      "source": "03_IA_Historia_Iglesia_Padres/0094_Augustin_Sermons_parte_04.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-095928.json"
+      ]
+    },
+    {
+      "id": "history-0097_Bernard_sermons_parte_02",
+      "path": "data/documents/8a63c60065891f09f3.json.gz",
+      "normalizedSha256": "bec7bf20b2f8b02cfbfdded742a420a5e12cabe530ce5779d1b05278144ffdce",
+      "restoredSha256": "233af65c2d7c1b9b0f2fc328d5c606cf342cf20b3595777e495b0074bfd0ce1d",
+      "source": "03_IA_Historia_Iglesia_Padres/0097_Bernard_sermons_parte_02.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "history-0142_Augustin_les_Psaumes_parte_02",
+      "path": "data/documents/3395faa000e6b4e6f6.json.gz",
+      "normalizedSha256": "28b2734020bd6a17df61920cd0c3f063bea8e1e27f5e69ee47f5650c3fba5f5c",
+      "restoredSha256": "17432103235779b1f0490d202e8e9e147be14c7e7cfc0a80083d241d90646401",
+      "source": "03_IA_Historia_Iglesia_Padres/0142_Augustin_les_Psaumes_parte_02.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "history-0142_Augustin_les_Psaumes_parte_03",
+      "path": "data/documents/d9c1505a234ce69f00.json.gz",
+      "normalizedSha256": "e1a572d70e4a042b1418d16896de9c4a5a2cd56d2702014bee56f3ed0c368598",
+      "restoredSha256": "597849364ca25175a30b921f6c05fb5558081764734255b63f00aa4115c2ac63",
+      "source": "03_IA_Historia_Iglesia_Padres/0142_Augustin_les_Psaumes_parte_03.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-095928.json"
+      ]
+    },
+    {
+      "id": "history-0142_Augustin_les_Psaumes_parte_04",
+      "path": "data/documents/4234c762f54408b95d.json.gz",
+      "normalizedSha256": "c55233dd3fc9b6021134e9f0b759b953c4902ee2c365b92606ff6ff32562d34e",
+      "restoredSha256": "979f4c00fb3a860318b219baab6ceb8c101db4c8fbc2735345768f5b5379547a",
+      "source": "03_IA_Historia_Iglesia_Padres/0142_Augustin_les_Psaumes_parte_04.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "history-0162_Augustin_lettres_parte_02",
+      "path": "data/documents/b9912cf65f99404fc2.json.gz",
+      "normalizedSha256": "348c647ae8189b231b7031cf4e9212b402dfb5ad49fee3dd6a53b3c7e80d3ee1",
+      "restoredSha256": "97ad4872fd6fa83295b3e0a312c31c57775ef0fd9e239340d7885bb268b1665c",
+      "source": "03_IA_Historia_Iglesia_Padres/0162_Augustin_lettres_parte_02.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "history-0253_F_de_Sales_Lettres_parte_02",
+      "path": "data/documents/c618762c492044d1da.json.gz",
+      "normalizedSha256": "d6b4520de207bdf6ba5cde30688be300d65f740df2242b92ae7e9c32f4fff347",
+      "restoredSha256": "e39bfedf40d196d8b95622b07beff3a2a8e1b707234142603fda2e0e8df9b080",
+      "source": "03_IA_Historia_Iglesia_Padres/0253_F_de_Sales_Lettres_parte_02.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "history-0332_Denzinger_parte_02",
+      "path": "data/documents/e5c0220a905f5842df.json.gz",
+      "normalizedSha256": "57db8f624d10092748698b2fa5d837d558587964bc8301d4dda91723a70bd5ed",
+      "restoredSha256": "d5fcccf5874e997f993350104d9f23961e7032f6344472f4994efec06b78f7e8",
+      "source": "03_IA_Historia_Iglesia_Padres/0332_Denzinger_parte_02.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "history-0332_Denzinger_parte_03",
+      "path": "data/documents/8376fa9871fa3764cf.json.gz",
+      "normalizedSha256": "8d0d77aa99e49f8c58449dae5b32246b0eb1505ca292a57b67e0b7d29a8424a3",
+      "restoredSha256": "3d856c98decee2211fd955d34eb43dc209561f006e809c3f1b5c6142f99ea0c7",
+      "source": "03_IA_Historia_Iglesia_Padres/0332_Denzinger_parte_03.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "liturgy-0094_Augustin_Sermons_parte_02",
+      "path": "data/documents/9f960b031177d3fbeb.json.gz",
+      "normalizedSha256": "7a4b6a8d0f7f1f0a455394c6aa5a0f9328fd30b816abe4a7505b509977ae4a99",
+      "restoredSha256": "305083fdf97e268e491d6cd2940ef78622554122a69366f2240c0dc329203d2b",
+      "source": "04_IA_Liturgia/0094_Augustin_Sermons_parte_02.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "liturgy-0094_Augustin_Sermons_parte_03",
+      "path": "data/documents/5531642bf5819d1288.json.gz",
+      "normalizedSha256": "fbb76053e60495cb5673cdd821c1fe2f77ce8053c9c0b28fda6d8b5a4e846ae0",
+      "restoredSha256": "e75118638f8e2a1d9602add555ab4941bdba4f79e837d246b41cead5f469432f",
+      "source": "04_IA_Liturgia/0094_Augustin_Sermons_parte_03.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "liturgy-0094_Augustin_Sermons_parte_04",
+      "path": "data/documents/4b578343096d73a911.json.gz",
+      "normalizedSha256": "09c00312a4f1611880584940b316f9fccedfc426f8363719b6778e3394fdc274",
+      "restoredSha256": "13616c93a9babc7868d135122afe538958bfedcdc5a198c719e6e4d79297bf7a",
+      "source": "04_IA_Liturgia/0094_Augustin_Sermons_parte_04.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-095928.json"
+      ]
+    },
+    {
+      "id": "liturgy-0142_Augustin_les_Psaumes_parte_02",
+      "path": "data/documents/178b3d743b953e1b10.json.gz",
+      "normalizedSha256": "6035a4a0e8ffe4363af5b326519fc2ba4a113c622aa9d97552ba68e946c4d3bb",
+      "restoredSha256": "1fd091045ff14f0bc59d36839189e7402fbde42028f079be038e0500d7331aa1",
+      "source": "04_IA_Liturgia/0142_Augustin_les_Psaumes_parte_02.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "liturgy-0142_Augustin_les_Psaumes_parte_03",
+      "path": "data/documents/33385eff22e6b6761a.json.gz",
+      "normalizedSha256": "d3a79b8e90b13e7d5a41103ffb57e20304a1aa23d7c138df2677ccf575087d68",
+      "restoredSha256": "531bb5fb051b9dff543e83616ebd6f60eb01893840e9dbf1ae0dd72047333749",
+      "source": "04_IA_Liturgia/0142_Augustin_les_Psaumes_parte_03.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-095928.json"
+      ]
+    },
+    {
+      "id": "liturgy-0142_Augustin_les_Psaumes_parte_04",
+      "path": "data/documents/1726e035dd113d8ce8.json.gz",
+      "normalizedSha256": "e7dcdf4f9c4b92266f7746b5a1d92b1c40a64f6e8a0ace21f6d60e91ce931acd",
+      "restoredSha256": "83d681ac168762877f4b5a4e28d6447a8ce0ce0ada44a6ac3e48bbffb17a3844",
+      "source": "04_IA_Liturgia/0142_Augustin_les_Psaumes_parte_04.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "liturgy-0332_Denzinger_parte_02",
+      "path": "data/documents/4d2f78e230b8926114.json.gz",
+      "normalizedSha256": "e366c47361b0505924c2c2e2613d7b0232bdbdce8a35afd520728b025ff1d4bd",
+      "restoredSha256": "256fb2fed22ec0dbb67f36693fa1ef5feadad0bbb218334e1aaf14f0475d2c77",
+      "source": "04_IA_Liturgia/0332_Denzinger_parte_02.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "liturgy-0332_Denzinger_parte_03",
+      "path": "data/documents/7a134bc51f7818828e.json.gz",
+      "normalizedSha256": "52955b7f58d11a35f83a9df2af67a8fd74c60bf9dee762f9da7d8c8e0b8e1560",
+      "restoredSha256": "920b43ecf9d71adf7fe851623c89b7a112d2f3dac07061ffe6fbe4fd6502dc51",
+      "source": "04_IA_Liturgia/0332_Denzinger_parte_03.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "ortodoxia-0308_Suma_Teologica_II_II_parte_02",
+      "path": "data/documents/153bb57833fbb0362a.json.gz",
+      "normalizedSha256": "1bc72c2f8371595cf996a31b49e2df6b21073c1cf7a3fc2d639fd63df8917404",
+      "restoredSha256": "af645dee745379ccd7791f1dc1a6e44fde298606be9cc5ce6c844a8752694386",
+      "source": "05_IA_OrtodoxIA/0308_Suma_Teologica_II_II_parte_02.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "ortodoxia-0700_Dignitas_infinita_ES",
+      "path": "data/documents/e24bef70463a52eac9.json.gz",
+      "normalizedSha256": "d49baa96868e1c0e3a4cb214419a4a1dc8a80a0e8d5cc0ece84beb206addfc05",
+      "restoredSha256": "5b226d183c3d06ad12282b8446044a50869a8058b9f2ac7901bff5dfd66be7fb",
+      "source": "05_IA_OrtodoxIA/0700_Dignitas_infinita_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "ortodoxia-0723_En_busca_de_una_etica_universal_ES",
+      "path": "data/documents/1195643e217a58d527.json.gz",
+      "normalizedSha256": "35e5de70dd8515f7b891e413fc196013fedf015a0955ccec8902d80b6ffb10e7",
+      "restoredSha256": "d45dae0726cc3a747d859308d0f10f69ef541e8b74db1e37318940c9acdea66f",
+      "source": "05_IA_OrtodoxIA/0723_En_busca_de_una_etica_universal_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "ortodoxia-1102_Consideraciones_uniones_homosexuales_ES",
+      "path": "data/documents/b8c65ad0faec3d94ee.json.gz",
+      "normalizedSha256": "20f0807c8d4560fc755c9c91178faf9a33dc91505192668834587ca20730564a",
+      "restoredSha256": "a311935a9f74f53d8a2d3607657df37fd7fc48eb65a56c5432609351cbfe4aba",
+      "source": "05_IA_OrtodoxIA/1102_Consideraciones_uniones_homosexuales_ES.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "ortodoxia-1122_Chesterton_St_Thomas_Aquinas_EN",
+      "path": "data/documents/fa82e1f3cacdeffc1d.json.gz",
+      "normalizedSha256": "ee1cafb1e1ff962b7bc75fbc8209e200f357a3eac7898c26871be578eee15ba0",
+      "restoredSha256": "ddfebfc4a72a1e30c05200c29f605bca505c7fae1959d3303929fd2ecc38d584",
+      "source": "05_IA_OrtodoxIA/1122_Chesterton_St_Thomas_Aquinas_EN.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "ortodoxia-1222_de_Irala_Relationships_love_and_sexuality_Filipino_teens_EN",
+      "path": "data/documents/1cac475f4365ce6327.json.gz",
+      "normalizedSha256": "ef8b83b93ab8d90bd89f2ee70fcde058f371811652e524c4287b7a80e76fabf0",
+      "restoredSha256": "48fc6df51a63769d6ef2bf395e332013dce49dc626ddd03bab8c281d942d19f2",
+      "source": "05_IA_OrtodoxIA/1222_de_Irala_Relationships_love_and_sexuality_Filipino_teens_EN.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json"
+      ]
+    },
+    {
+      "id": "ortodoxia-1229_Robert_P_George_ley_natural_y_etica_publica_EN",
+      "path": "data/documents/ae36db9514ac84c67f.json.gz",
+      "normalizedSha256": "32429d80efc2084b3f7f0f36281f19727a191a73e8bf8059e1f85697bcf04425",
+      "restoredSha256": "83a78bb902cc9361c68ffc8ec32bc7ff4e912fd3be9c910c8a25c3c1551e2e23",
+      "source": "05_IA_OrtodoxIA/1229_Robert_P_George_ley_natural_y_etica_publica_EN.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-100650.json"
+      ]
+    },
+    {
+      "id": "ortodoxia-1253_Sherif_Girgis_matrimonio_y_razonamiento_EN",
+      "path": "data/documents/bf33cc78d0663a037a.json.gz",
+      "normalizedSha256": "eeed4917dca2158dd8304c2adddb62cdaa7f2f77cd0aaa68e3db79542b863e59",
+      "restoredSha256": "0cd2181bf999285372697f6cfa3b55316bca34fc6f31a887bf5a0607b1f8c749",
+      "source": "05_IA_OrtodoxIA/1253_Sherif_Girgis_matrimonio_y_razonamiento_EN.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-100650.json"
+      ]
+    },
+    {
+      "id": "vida-santos-0002-fuentes-y-alternativas",
+      "path": "data/documents/d97b3a8d54f07a62.json.gz",
+      "normalizedSha256": "71df0017dd65ec1c51f8f7a16d15d67b5c3bb86b8f96b7283aa7513c22b7a7f7",
+      "restoredSha256": "a93e96de8a62bbf71c87a7655d3ab6d3da441f395860de2a513a8bbf5a3f6e55",
+      "source": "11_IA_Vida_de_los_Santos/0002_FUENTES_Y_ALTERNATIVAS.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1038-san-jose",
+      "path": "data/documents/11751140e1ad790c.json.gz",
+      "normalizedSha256": "3570498daada45ab1b0f3340cc0d1760bd4beb1cb4ac7a1089155aec90111ece",
+      "restoredSha256": "b035e6f6d99f4d59c9ef09c31c5b4155253f96a9a87dd1bfe49a23b5eca13dc4",
+      "source": "11_IA_Vida_de_los_Santos/1038_San_Jose.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1040-san-pedro",
+      "path": "data/documents/1552c25a781905c4.json.gz",
+      "normalizedSha256": "186053c28e4154bbdaec090bd8e0ff387b7fe9ea6a54dae692e2d68b0dd98019",
+      "restoredSha256": "b608007412acd484e71204ab91cf602579b9dcd04de07f1fa28997741d64483c",
+      "source": "11_IA_Vida_de_los_Santos/1040_San_Pedro.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1041-san-pablo",
+      "path": "data/documents/1c468c6e155bcd56.json.gz",
+      "normalizedSha256": "8e5d41c807c402ec0dd6ff4126b0837e840893237181547323764a7b3e619854",
+      "restoredSha256": "82844d4e2989d9d4a6746a602aac096cbc8cd33ba7dc929d1804a4bdc6b7b54f",
+      "source": "11_IA_Vida_de_los_Santos/1041_San_Pablo.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1042-san-juan-evangelista",
+      "path": "data/documents/417f0de4554369ab.json.gz",
+      "normalizedSha256": "c26e05e3a72c9529b0de3569b2f47d1e07797a792a03cf9d66f7bf27bf31d9b4",
+      "restoredSha256": "738e61d22de9b67f1e2719526a5afbab9bd88396cefe77533bcf13c23ebd2efc",
+      "source": "11_IA_Vida_de_los_Santos/1042_San_Juan_Evangelista.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1043-santiago-el-mayor",
+      "path": "data/documents/cf279ed30ea77cba.json.gz",
+      "normalizedSha256": "8caa01fbf9520522143adc3ade22b2dbd01cf0faf1f1cee8ee2c81b2c4fa2d45",
+      "restoredSha256": "dfb6aa524869a607f91c7ae43cc79223c4c93c42ad2d8585f576c113d1d1fc14",
+      "source": "11_IA_Vida_de_los_Santos/1043_Santiago_el_Mayor.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1044-santiago-el-menor",
+      "path": "data/documents/783be0628e7fef60.json.gz",
+      "normalizedSha256": "8d491a3758d7045e99ba0980df3c3d404885257f6c5984e11f822a1854076c5a",
+      "restoredSha256": "3b26a91987bcab918cb3195b70a1899214a177a302391d9c5ba361d3cc7b4c0d",
+      "source": "11_IA_Vida_de_los_Santos/1044_Santiago_el_Menor.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1045-san-andres",
+      "path": "data/documents/32ab987aea567dba.json.gz",
+      "normalizedSha256": "37e22477d87d68ffa5a9dc9e5462fdac0bb7a97083aa2198c68038bc1e15069f",
+      "restoredSha256": "e70ce975c5a9df3df3a1246aac912e9f21576cf90de72ffb45d6c56730bab408",
+      "source": "11_IA_Vida_de_los_Santos/1045_San_Andres.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1046-santo-tomas-apostol",
+      "path": "data/documents/5d621f2e33009d66.json.gz",
+      "normalizedSha256": "c5f57e350bf3554b6fe13358070303149074fb3ed0a257f8e140ea67250b65ee",
+      "restoredSha256": "0abc9d99085a85e28e64528a7e593e6a7e2b1e20e3d9701c58302e46026eaeba",
+      "source": "11_IA_Vida_de_los_Santos/1046_Santo_Tomas_Apostol.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1047-san-felipe-apostol",
+      "path": "data/documents/cfcdfb1288fafa91.json.gz",
+      "normalizedSha256": "a6a30dd58e6670e3145e75f406bae040772cd8d87e4b7752dc37ca2a94a53d84",
+      "restoredSha256": "fa0a2deeb869e1be1da9bf9d6c4bb7ab6e1fcc7028ce50864a050b079d0de3b1",
+      "source": "11_IA_Vida_de_los_Santos/1047_San_Felipe_Apostol.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1048-san-bartolome",
+      "path": "data/documents/4d367c67a920c59f.json.gz",
+      "normalizedSha256": "2e7e95aab9dbe91eb7615abf1b34a84ebd3ba9a0c5deee6989aed5d3b2ca0e36",
+      "restoredSha256": "4c6516c8c8a6225ecf7884cabd4407b1fa9961e75661ac8048d930c9255f4cc1",
+      "source": "11_IA_Vida_de_los_Santos/1048_San_Bartolome.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1049-san-mateo",
+      "path": "data/documents/459bd83eff1171ea.json.gz",
+      "normalizedSha256": "85c8f89e58ee1be8211d9dc8bc8fef8b27971aaa693069362b3807e3b0f33459",
+      "restoredSha256": "6633c766d52e820c9c771af03550f8fbe774a01e9e7ac907a8508b47e34eb036",
+      "source": "11_IA_Vida_de_los_Santos/1049_San_Mateo.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1050-san-marcos-evangelista",
+      "path": "data/documents/a1ea4665985c03f8.json.gz",
+      "normalizedSha256": "5b96c31206ca7d6fe1c23276a80bc8e35d9015d33f3ece9cb3070790521c7611",
+      "restoredSha256": "f74dd340274455ae6da7c9f36b4ea9f891c22b03dec0bbbb7d3b2db02d575bfb",
+      "source": "11_IA_Vida_de_los_Santos/1050_San_Marcos_Evangelista.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1051-san-lucas-evangelista",
+      "path": "data/documents/0192af9f974809d1.json.gz",
+      "normalizedSha256": "3941c3b55944acc96653513ed1cd83b16d117d82a3e4debcb5f6076424038534",
+      "restoredSha256": "b5c2b780449cb960d0898a0f647d9bdb667629e228f1745f593aacf66f58a062",
+      "source": "11_IA_Vida_de_los_Santos/1051_San_Lucas_Evangelista.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1052-santa-maria-magdalena",
+      "path": "data/documents/60ceba6653aa621d.json.gz",
+      "normalizedSha256": "99e7964716ea2225643a90945adfe61d705f97bd46e21c7503302df92672e5ef",
+      "restoredSha256": "df08d281490ec53f15ac50eadcca93d09a5cacb5e3a25a5ce7f39c1c7cf29910",
+      "source": "11_IA_Vida_de_los_Santos/1052_Santa_Maria_Magdalena.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1053-santa-marta-de-betania",
+      "path": "data/documents/8f8882431a8ae8d8.json.gz",
+      "normalizedSha256": "9029f8351b11181c159456de6b6845e93b9cf876bd22144413169defad58d120",
+      "restoredSha256": "e513ad9eb98daa3125dbca5d79eda6b1d33266a093ddf9e0bf684700b202d7dc",
+      "source": "11_IA_Vida_de_los_Santos/1053_Santa_Marta_de_Betania.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1054-san-esteban-protomartir",
+      "path": "data/documents/cb0f9a991c502024.json.gz",
+      "normalizedSha256": "ac7f5f8bc0ae18c0b14fd2827c27ecdaf706ec83fcd318ea8eb3027f99beb159",
+      "restoredSha256": "1e16d5bf0daa3279b0b9005572b127dcfd7840110875a28973f90dca3b8993ed",
+      "source": "11_IA_Vida_de_los_Santos/1054_San_Esteban_Protomartir.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1055-san-bernabe",
+      "path": "data/documents/af4b753512e84a8b.json.gz",
+      "normalizedSha256": "50e8d676768ef444d8dba5f986e4379401ed7d8bf73a65657d95a48d07792ac2",
+      "restoredSha256": "7a20885dd0e6d9aa2bab0c4a0a6f1973bcc97ff6112e7565c2556a3e85c38578",
+      "source": "11_IA_Vida_de_los_Santos/1055_San_Bernabe.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1057-san-clemente-romano",
+      "path": "data/documents/46dcf0a2f714d2b7.json.gz",
+      "normalizedSha256": "eecb3da6ae9550cb4ab76f375dee6f637dac0ed570ea7effc548637b2dd144a3",
+      "restoredSha256": "39b53808e208cc765a80c9f2f9fc81e30524790a381dc1d7c8f1de9d545c604d",
+      "source": "11_IA_Vida_de_los_Santos/1057_San_Clemente_Romano.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1058-san-policarpo-de-esmirna",
+      "path": "data/documents/3d263894cd59c0e3.json.gz",
+      "normalizedSha256": "c11342cfb66966285e676472ef8e3153c32bb0f34a30a4d209975ad47c0558f3",
+      "restoredSha256": "b48e372ef39f3956a293fa5828726204b145a5991b336d0c2d29e5723c223806",
+      "source": "11_IA_Vida_de_los_Santos/1058_San_Policarpo_de_Esmirna.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1059-san-papias-de-hierapolis",
+      "path": "data/documents/d282ee0d8604f0c4.json.gz",
+      "normalizedSha256": "a53e68c350759d31a64f9a3e9ca9db7753b98bd414b83c8b1847c921203d4773",
+      "restoredSha256": "8240f85712dfc51eb0118a604021c280131a75a790e54c581cfc13c406eb0f96",
+      "source": "11_IA_Vida_de_los_Santos/1059_San_Papias_de_Hierapolis.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1060-san-justino-martir",
+      "path": "data/documents/bf0f1c28754c64db.json.gz",
+      "normalizedSha256": "8b7ad6303e770e4ad98c5183309fc931c0e214ab234ffe34670ce39666e829cd",
+      "restoredSha256": "036083e5fe638ab2987bdd380fb706c0c607d16a01c89dd4c751d3dcce0c0d0a",
+      "source": "11_IA_Vida_de_los_Santos/1060_San_Justino_Martir.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1061-san-ireneo-de-lyon",
+      "path": "data/documents/be66569ec9a9e75a.json.gz",
+      "normalizedSha256": "3c641fcecc75e7e0884e39d5484036c0a232da144bc6856e688efb58da088606",
+      "restoredSha256": "10f832e78ecd73e1d03744a4e1b69d8d6c720c0655aecfbf097ed11688fe010a",
+      "source": "11_IA_Vida_de_los_Santos/1061_San_Ireneo_de_Lyon.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1062-santa-perpetua",
+      "path": "data/documents/75edf943eaba323c.json.gz",
+      "normalizedSha256": "fbb23f8610b565cfffbf81b6d99dd64b110e5ac89f18d211cd53e55840a49a26",
+      "restoredSha256": "711ff07265edfeac0322c0e938eb838a1254d3eff896063e03737c8c8fec9c45",
+      "source": "11_IA_Vida_de_los_Santos/1062_Santa_Perpetua.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1063-santa-felicidad",
+      "path": "data/documents/0e72df6c2cc775e3.json.gz",
+      "normalizedSha256": "a9f0dd4bcab9f606e18e5f7a6b99a9ed73b6ff3147749bd08eb95694ee572ef0",
+      "restoredSha256": "28716c8a65dce6ccea95ccdcc08f9c523e055c04e936a2047e80f9b3e9672868",
+      "source": "11_IA_Vida_de_los_Santos/1063_Santa_Felicidad.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1065-san-lorenzo",
+      "path": "data/documents/b440b3168025c229.json.gz",
+      "normalizedSha256": "e0e01fb0ee8c2b872b213c76d822edb1bcfc0ce3f5cf8aef3df6bedc17e2fd6a",
+      "restoredSha256": "d543be50be18f291db28afef7c15529c90170980a8e14212dbd85bbc5a6ec268",
+      "source": "11_IA_Vida_de_los_Santos/1065_San_Lorenzo.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1066-san-sebastian",
+      "path": "data/documents/51511800f5390abf.json.gz",
+      "normalizedSha256": "353ec8a8ea290c5df3327b6559b8dc6695d38780000bd0676725f210137a68ce",
+      "restoredSha256": "3b897b7ba17f7fff712be23409ff27b0bf103c98d29b58d90d80e2f78e085447",
+      "source": "11_IA_Vida_de_los_Santos/1066_San_Sebastian.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1067-santa-ines",
+      "path": "data/documents/e692ba7f4065b955.json.gz",
+      "normalizedSha256": "bc9ddfc1ec2633471fe4ba99b408c852f2ed6799cc3b3c4dbc601cecf27b6ad0",
+      "restoredSha256": "b8854420dd8ed3e7773741f4bcad9882a079c5d8f16da43f9b9d197e2b06c53f",
+      "source": "11_IA_Vida_de_los_Santos/1067_Santa_Ines.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1068-santa-cecilia",
+      "path": "data/documents/1e6aea920cce0aeb.json.gz",
+      "normalizedSha256": "e4f3b5c92be0a39cbf17bed4f90a7aa0cfc1e1b9263c1f7c2f689ca96aa4813e",
+      "restoredSha256": "2437b53bce2192969b17a659fae3653f75d4d6d384ec0ff724268fc42b75dc0e",
+      "source": "11_IA_Vida_de_los_Santos/1068_Santa_Cecilia.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1069-san-antonio-abad",
+      "path": "data/documents/3cfa74b13f69d122.json.gz",
+      "normalizedSha256": "2a48b22a3a473b06e92f3b11be7bd834491f62993cf841f34bbd837989a0edd2",
+      "restoredSha256": "c048dca7bf9cfaed5fd681cc217943e700ff8c0eca13d8b5adc7f5902c1ce62d",
+      "source": "11_IA_Vida_de_los_Santos/1069_San_Antonio_Abad.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1070-san-pacomio",
+      "path": "data/documents/6d7b3f6aa9fec329.json.gz",
+      "normalizedSha256": "d6cb2e2524cca3707eca52300860d21f3eed0b733d41eb0c39dae20dd6a94bcc",
+      "restoredSha256": "c1621b9bdbbfef68c5ed2c301335f2dac133bd47ea835f701a71bd86ba76b27e",
+      "source": "11_IA_Vida_de_los_Santos/1070_San_Pacomio.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-095928.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1071-san-atanasio-de-alejandria",
+      "path": "data/documents/6a8fed70b6c46c26.json.gz",
+      "normalizedSha256": "48d92b95a50ae32277649e050542a68011978c42aae928301f5c3335271f6b72",
+      "restoredSha256": "4837093ceb6448624e4f9e4b701715f2ffd39f6f79fc6a19475fc78810076c36",
+      "source": "11_IA_Vida_de_los_Santos/1071_San_Atanasio_de_Alejandria.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1072-san-hilario-de-poitiers",
+      "path": "data/documents/5db9ae2deaaac4b0.json.gz",
+      "normalizedSha256": "3376d65fefeb6edb158a9b7640315c9e57274b2e9aa7f192aa7d711095cf6c9f",
+      "restoredSha256": "50bfb2b27fc6b868f0ae3ddfeed004094cedef9d65984bc672c06d457f347997",
+      "source": "11_IA_Vida_de_los_Santos/1072_San_Hilario_de_Poitiers.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1074-san-basilio-magno",
+      "path": "data/documents/5cf8259dd5503e81.json.gz",
+      "normalizedSha256": "4466a623eafc63bdc7c23783316c5323cfe64c56124328f099df71f9e8b02346",
+      "restoredSha256": "8af44b44965f96b0d102d534c4715a1e0d95109fe603cf3c2c50f785f59d68c0",
+      "source": "11_IA_Vida_de_los_Santos/1074_San_Basilio_Magno.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1075-san-gregorio-nacianceno",
+      "path": "data/documents/ad153b539a45cc54.json.gz",
+      "normalizedSha256": "5427182af7c59e2152585f23d81e4d32299ef429b2ed45e7cb4bba293ed8351f",
+      "restoredSha256": "8c75079f6cd003e8529da61409a7049e4659665ff8b3bfa0048f17f25eab5a50",
+      "source": "11_IA_Vida_de_los_Santos/1075_San_Gregorio_Nacianceno.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1076-san-gregorio-de-nisa",
+      "path": "data/documents/950e63d6eb069873.json.gz",
+      "normalizedSha256": "0b9dd6d1ca2b8808e81f9a1209b7211e8be3dc92d09dc29ea44c9bcc0d56f733",
+      "restoredSha256": "5cbf3e0f1737e5a8de861e40b439d42e27a4857dbe4a3556bb61e0b685335327",
+      "source": "11_IA_Vida_de_los_Santos/1076_San_Gregorio_de_Nisa.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1078-san-jeronimo",
+      "path": "data/documents/1f10b29f98cbb8b2.json.gz",
+      "normalizedSha256": "ce2fe10220a31aa93db838aaa0b271aaf5fa40e3d5ad6e2d4e21e3307a322876",
+      "restoredSha256": "ee5ffe5020f29c6c1ab8373dd21e9b6da78990b51a3f391504f85d5c7494b0f9",
+      "source": "11_IA_Vida_de_los_Santos/1078_San_Jeronimo.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1079-san-juan-crisostomo",
+      "path": "data/documents/459175ea7ca10191.json.gz",
+      "normalizedSha256": "a538593545ac8199d5e80ff92011282afa5e94dfb4549901be9d5868e5a28fd9",
+      "restoredSha256": "213add8b172b66e87f6f55f2765884477c681bc3a0d226389105ca6bf61a9a11",
+      "source": "11_IA_Vida_de_los_Santos/1079_San_Juan_Crisostomo.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1080-san-martin-de-tours",
+      "path": "data/documents/396e7994cbf520e5.json.gz",
+      "normalizedSha256": "032050beef71bb071a25aae280d9562fa997b0aac9262b9718f2302cb44afe1a",
+      "restoredSha256": "8c6d17751bb23d1d0e6b8cafd5f5b49e4d495c497199aa99ff3839aa35a92130",
+      "source": "11_IA_Vida_de_los_Santos/1080_San_Martin_de_Tours.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1081-san-agustin-de-hipona",
+      "path": "data/documents/f4f8537fd51fc3b1.json.gz",
+      "normalizedSha256": "f12f57e5c2feb6b0a069df97f4500a1c14850a3ecb928f2989e3a6e6706b0382",
+      "restoredSha256": "295eb7598ff8e88a5c2e4b6058484ef1469a476df789c37aca4a8d03fc6dd863",
+      "source": "11_IA_Vida_de_los_Santos/1081_San_Agustin_de_Hipona.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1082-santa-monica",
+      "path": "data/documents/6949310092767639.json.gz",
+      "normalizedSha256": "b7f2e9ece6d17ba1e3ee315d074dcfcee59b788bc29652f64e3f522b4c39721b",
+      "restoredSha256": "b0202963ab1fa408043db99461b5333a5bb6046ca61cdce0f94ed0fd2b831d0b",
+      "source": "11_IA_Vida_de_los_Santos/1082_Santa_Monica.md",
+      "normalizationReports": [
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1083-san-cirilo-de-alejandria",
+      "path": "data/documents/c0f1b161c9d2a164.json.gz",
+      "normalizedSha256": "0d0484ed52630f76f6bea2ac87f893fd74ab005e4c8e8a7a45906c10c20ddee6",
+      "restoredSha256": "106ba6ad60ef6e030bb5f586f39eea86abff042585485de5d1d50248d1d0081d",
+      "source": "11_IA_Vida_de_los_Santos/1083_San_Cirilo_de_Alejandria.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1085-san-leon-magno",
+      "path": "data/documents/78860609936caa23.json.gz",
+      "normalizedSha256": "2d75a4f145f4db1efa372e9267d3306125001f90bf19190b66b98ed2ca40b6f5",
+      "restoredSha256": "a037db8ee28ee42c9cac0aad5cf5b022f9d5d3139799b52f22739aeeeff41a3b",
+      "source": "11_IA_Vida_de_los_Santos/1085_San_Leon_Magno.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1086-san-patricio",
+      "path": "data/documents/bf8e1248bd942c58.json.gz",
+      "normalizedSha256": "98dd770367b38df51f925c9a46a4b73a9f0bfe095653c15adee253148060abe7",
+      "restoredSha256": "d14589a17cd8faf8e5e8ced7b1437c2dc677b0382c46b8c8e868a70c60977700",
+      "source": "11_IA_Vida_de_los_Santos/1086_San_Patricio.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1088-santa-escolastica",
+      "path": "data/documents/2d7e6f54157418a7.json.gz",
+      "normalizedSha256": "7c9c561dff74d40f73544f92aa83bcb84a9b0262af30f4661a233041b6f6d363",
+      "restoredSha256": "6b232ae383866675e81a57426088437d10dbc8b99811221b6d717d8d02641336",
+      "source": "11_IA_Vida_de_los_Santos/1088_Santa_Escolastica.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1089-san-gregorio-magno",
+      "path": "data/documents/ed3a64c8e8bbe939.json.gz",
+      "normalizedSha256": "e2e04fe4fddf4f374b390b0a62cb200028da54e09d69867a2ad15c8b36cd1159",
+      "restoredSha256": "5e42166ec79577f07866ad81b208795e394593e161b8618ff83330a5810e9436",
+      "source": "11_IA_Vida_de_los_Santos/1089_San_Gregorio_Magno.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1093-san-beda-el-venerable",
+      "path": "data/documents/3f07d1a65fa5b734.json.gz",
+      "normalizedSha256": "06dd11597cfb0247dfbf9b51c76f9e6668d9fbad2ba42594e42376c83d8c9df8",
+      "restoredSha256": "ad049ff557ec68d2aedca1bc3b1662ed2371ae7764e9930b63f38fa6beaed801",
+      "source": "11_IA_Vida_de_los_Santos/1093_San_Beda_el_Venerable.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1095-san-juan-damasceno",
+      "path": "data/documents/b9e8a3561bce3f8c.json.gz",
+      "normalizedSha256": "e0f5fabdb69d399d28d4371cdf5596fc33d3d4291cfa16ac357ecea422c28d94",
+      "restoredSha256": "807a565648cc20d2a0ccc3e441d78a2f576ad17361bba6835ea40d725440f647",
+      "source": "11_IA_Vida_de_los_Santos/1095_San_Juan_Damasceno.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1096-san-cirilo",
+      "path": "data/documents/489ca68bfa2d1917.json.gz",
+      "normalizedSha256": "c5b7af0455dcdfd6dd841744b6357c464a72c5038215f01d8538b966f5036c82",
+      "restoredSha256": "7f8c5520f8e6a49cb3a4544818dbef0dab46d8a67516916718b5e6246348f767",
+      "source": "11_IA_Vida_de_los_Santos/1096_San_Cirilo.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1097-san-metodio",
+      "path": "data/documents/6aed4e5783062def.json.gz",
+      "normalizedSha256": "00463cbd08f17cc8615cc104a867203074230f19ba16d8880402aa977ba2b9b0",
+      "restoredSha256": "9917e877e37e56396c8794500143478617539b45b0acc59994638a3fc21f5372",
+      "source": "11_IA_Vida_de_los_Santos/1097_San_Metodio.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1099-san-anselmo-de-canterbury",
+      "path": "data/documents/9074755d694e955d.json.gz",
+      "normalizedSha256": "7741d3ed6ba1a72b8d685807e9d705924aa0ce1418845476fc28300e81404d94",
+      "restoredSha256": "47c18c073309106900826962ba467a7d77a763ca6548160e85df030e2d1623e5",
+      "source": "11_IA_Vida_de_los_Santos/1099_San_Anselmo_de_Canterbury.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1100-san-bernardo-de-claraval",
+      "path": "data/documents/c2980f204defe73d.json.gz",
+      "normalizedSha256": "bd5ef243cab784715baa7c815e819e457ada050553b7c900b83503cbf37b8ef8",
+      "restoredSha256": "15097706ec2672d535f2e74fee6fb6275d9e9d546c9979341db4e8e1644fb2f7",
+      "source": "11_IA_Vida_de_los_Santos/1100_San_Bernardo_de_Claraval.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1101-san-norberto",
+      "path": "data/documents/31f0a93f89443a95.json.gz",
+      "normalizedSha256": "eab1f1814af3c175ac8bb10bbaab180ec3d3e7642eca2f739ad576e4e16dd5f9",
+      "restoredSha256": "dd890fe0fe28de5cf785dc78d139527d87831a1309a3933dc2aa14fe8251b4c2",
+      "source": "11_IA_Vida_de_los_Santos/1101_San_Norberto.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1102-san-francisco-de-asis",
+      "path": "data/documents/ad2da85c6f6dbc3c.json.gz",
+      "normalizedSha256": "f90cc859a1827152df61d65fbddcdb0f24924d170d1c099f8bdca6560e90187c",
+      "restoredSha256": "bf69de7253db60b4c23a122cf395fde9493254d1788655c2808a2886074ac0e0",
+      "source": "11_IA_Vida_de_los_Santos/1102_San_Francisco_de_Asis.md",
+      "normalizationReports": [
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1103-santa-clara-de-asis",
+      "path": "data/documents/43d69db8a7af0d3d.json.gz",
+      "normalizedSha256": "d9efb2cb9b71c4eaef1af23e9f59c134b920bddc383a2be8534fef549d4a2f61",
+      "restoredSha256": "da6727c43494b548a96072e61209ef43b42a5428940270b3bb03bd21cc7cb4eb",
+      "source": "11_IA_Vida_de_los_Santos/1103_Santa_Clara_de_Asis.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1104-santo-domingo-de-guzman",
+      "path": "data/documents/976b951e80ed4942.json.gz",
+      "normalizedSha256": "77b789f918ff4d8ce76ea3ade9c5558e2fc2130e0e4bab32c393a140d1840c91",
+      "restoredSha256": "23da45dcfb2864245aa2345f3f2213f9430e7236e83770c53c515d76ad95b946",
+      "source": "11_IA_Vida_de_los_Santos/1104_Santo_Domingo_de_Guzman.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1105-san-antonio-de-padua",
+      "path": "data/documents/61585d57d59f548b.json.gz",
+      "normalizedSha256": "30517f4a8d66ab4a388823c54846d1815926c5afdd8b9a3bbe59e00433988e1e",
+      "restoredSha256": "4ba98f3976f0af39048ef5b6a03fa93e226ea526d761c7a83334dad909c9a871",
+      "source": "11_IA_Vida_de_los_Santos/1105_San_Antonio_de_Padua.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1106-san-alberto-magno",
+      "path": "data/documents/2935d83020814ba9.json.gz",
+      "normalizedSha256": "25d465ff6b3d5c0e5597a9caedf3e9721b2ef8be1aa2c8997fc91fd412824bee",
+      "restoredSha256": "cd59861ce0bd4bcc805f9b8126d9161e0cd1a1698573d7667c0daaad14eda85d",
+      "source": "11_IA_Vida_de_los_Santos/1106_San_Alberto_Magno.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1107-santo-tomas-de-aquino",
+      "path": "data/documents/190d11da8142ea30.json.gz",
+      "normalizedSha256": "854639cb81296f48118a4ad26849042c644c1cb9752a651810da93835acff518",
+      "restoredSha256": "d29caa74ce548792ae310dfd8f57182114d15c789104bcbb0083d717a70d8409",
+      "source": "11_IA_Vida_de_los_Santos/1107_Santo_Tomas_de_Aquino.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1108-san-buenaventura",
+      "path": "data/documents/4c848459a18e5bce.json.gz",
+      "normalizedSha256": "03ce958f889b87b4f80df3e04f02001900e7fd9213cd7f9f0be1d71329fd84f7",
+      "restoredSha256": "146c51347de86caee48cc2c0fa1510bbe47544f3f557e3aa51a8701f9b26fc1d",
+      "source": "11_IA_Vida_de_los_Santos/1108_San_Buenaventura.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1110-santa-isabel-de-hungria",
+      "path": "data/documents/f8220d893268b2de.json.gz",
+      "normalizedSha256": "10d82c2bebc914387e2bbef56f38cb5729fea8a77ac0f1dd08e993281da8734a",
+      "restoredSha256": "6b362dbd7c2003558dd66dc0525503be1b58daffaf0f0e67e4574529c64475e2",
+      "source": "11_IA_Vida_de_los_Santos/1110_Santa_Isabel_de_Hungria.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1111-san-raimundo-de-penafort",
+      "path": "data/documents/ed9c4c1ebf3a5d5e.json.gz",
+      "normalizedSha256": "36b6ea2fc748d29e47a06b022f426f37d7b8aafa13bc58380033cc4650510baf",
+      "restoredSha256": "bae1d8145cfb48a57e33c74a1aeb29a6fd2e9701ab3262a388c50b3615115c36",
+      "source": "11_IA_Vida_de_los_Santos/1111_San_Raimundo_de_Penafort.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1112-santa-gertrudis-la-grande",
+      "path": "data/documents/ad93f7282181ac75.json.gz",
+      "normalizedSha256": "195fe58434c652823ca950c8609a093e98dbe051f4a7a0331a788092b2bf3977",
+      "restoredSha256": "21bbfb7e04d2abfda5c18e4bbd4edc81a1af9bda5f2a35560a868c39af08da24",
+      "source": "11_IA_Vida_de_los_Santos/1112_Santa_Gertrudis_la_Grande.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1113-santa-brigida-de-suecia",
+      "path": "data/documents/da876bc6f9309e13.json.gz",
+      "normalizedSha256": "f4aa57c1b0d40789faf307e99f6a41d60e154d714f292650ddfaa21d45e3379b",
+      "restoredSha256": "390e072f9306c1bb6be31c2c9279bb8d6d065fbe4f6100524c105709a3b1387b",
+      "source": "11_IA_Vida_de_los_Santos/1113_Santa_Brigida_de_Suecia.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1114-santa-catalina-de-siena",
+      "path": "data/documents/dc8950b5437995fc.json.gz",
+      "normalizedSha256": "040b7b5e0f912f331bb7d67fb1ce0752d1ee64c447bc5be9060124af1f15244a",
+      "restoredSha256": "792c1590988acb10811da84ee0d18a0c7bc4bf55e4ac3b2753014bd0e4a01384",
+      "source": "11_IA_Vida_de_los_Santos/1114_Santa_Catalina_de_Siena.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1115-san-vicente-ferrer",
+      "path": "data/documents/f4373222bbe4e078.json.gz",
+      "normalizedSha256": "d06b0f1813d89725449ead4e18e43c227ae6c003809c96ffb1687e98bf74989e",
+      "restoredSha256": "687bcb80d0b760855bbad664c2e7c82596ead757735bc1de971eaea2d6a80991",
+      "source": "11_IA_Vida_de_los_Santos/1115_San_Vicente_Ferrer.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1116-san-bernardino-de-siena",
+      "path": "data/documents/bae6636d020cc4ad.json.gz",
+      "normalizedSha256": "150568d0ed587055e7e8e25dda1fff75a57aea4392f1130db21f2a4316f85be7",
+      "restoredSha256": "5b03026cdf1d0b82c804f7f91fb9850e52d4bc8ba644f4a5bbc27084da8e626b",
+      "source": "11_IA_Vida_de_los_Santos/1116_San_Bernardino_de_Siena.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1117-santa-juana-de-arco",
+      "path": "data/documents/ee109dc59b6f67be.json.gz",
+      "normalizedSha256": "c5328cfb6cc4260f67d169fd30707d61cb1b9922d3c6b9dcef49c35b097f1df7",
+      "restoredSha256": "381773a83201483c0754162250087cb3f649c684681f85ad8986461d3d7f8e6b",
+      "source": "11_IA_Vida_de_los_Santos/1117_Santa_Juana_de_Arco.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1119-san-ignacio-de-loyola",
+      "path": "data/documents/9addc5bc343b900d.json.gz",
+      "normalizedSha256": "fc398e112583ec1beb8658d4565d76f015bee3eb7ca2f058c46a73ed954af3e8",
+      "restoredSha256": "61c1f9eb91569e7cc43cbf8794aa28cf97cdb83821da00abfc87a49552485b1c",
+      "source": "11_IA_Vida_de_los_Santos/1119_San_Ignacio_de_Loyola.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1120-san-francisco-javier",
+      "path": "data/documents/ca93f5f321622650.json.gz",
+      "normalizedSha256": "6f828c787caca25747f0e0b9b21b5db71e929b0be3bda59f82f02fe5fe1258dc",
+      "restoredSha256": "3efe83d4d9ba910f16b25fb7b61860b56ae58960cf2b616b9b3ef715b4221d25",
+      "source": "11_IA_Vida_de_los_Santos/1120_San_Francisco_Javier.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1122-san-francisco-de-borja",
+      "path": "data/documents/b21f3dddbdeb641f.json.gz",
+      "normalizedSha256": "0dc0c8eb4dbf5b7d9f3bc8652c6b6821beedd470ab26dc4a3af661567907f005",
+      "restoredSha256": "7bf3ebae59983e2f509103c40bb9bb4ca1aaf09e51208be8f5d8706729e33e1f",
+      "source": "11_IA_Vida_de_los_Santos/1122_San_Francisco_de_Borja.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1123-santa-teresa-de-jesus",
+      "path": "data/documents/8ea62f473c104f17.json.gz",
+      "normalizedSha256": "451c18275ea9b36e1984e6e712a51f8b6b353c78800fc11d369cc491b06672a2",
+      "restoredSha256": "6a855c95162723057a5dab5c72349716a987277ef753758f119f107b1b776b26",
+      "source": "11_IA_Vida_de_los_Santos/1123_Santa_Teresa_de_Jesus.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1124-san-juan-de-la-cruz",
+      "path": "data/documents/e54389f14a8a38d2.json.gz",
+      "normalizedSha256": "7ebc6b5f224f4e0b4e7b5ce781452298d80289adef6f3543c91618bd99cc50f1",
+      "restoredSha256": "512311d1bc39a4385fe1c48d0a6aed665d8e78067cd9e92cffa3b9e3ae274cf5",
+      "source": "11_IA_Vida_de_los_Santos/1124_San_Juan_de_la_Cruz.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1125-san-felipe-neri",
+      "path": "data/documents/96e6dc948d385f8d.json.gz",
+      "normalizedSha256": "47131d9c21c6163e69a11dc70fc62f603a586028ba0f067104dfba9925a4686e",
+      "restoredSha256": "c92e3743e220ebac2388607c2561cc7018e621c134be04c3fdd7abfb4f93ea14",
+      "source": "11_IA_Vida_de_los_Santos/1125_San_Felipe_Neri.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1126-san-carlos-borromeo",
+      "path": "data/documents/aba423f3b8c70132.json.gz",
+      "normalizedSha256": "f9ff10ff9de756bc8ae9b4d4083fd07eec94edc58bd52db1c93568705939269a",
+      "restoredSha256": "c7c5caf2875dbb1eee990ab24e5e58fe72a8652ee2891c1fbd6ed4209d157d5f",
+      "source": "11_IA_Vida_de_los_Santos/1126_San_Carlos_Borromeo.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1128-san-juan-de-avila",
+      "path": "data/documents/f264dd29158490d0.json.gz",
+      "normalizedSha256": "d230793029844b513acdfdd26ac2a31fbfb2298180807389566deb9afc48fd8a",
+      "restoredSha256": "164655dc470b579c6730113001c1fe54e5a47acd3a5cede1f1428dc945ed7653",
+      "source": "11_IA_Vida_de_los_Santos/1128_San_Juan_de_Avila.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1130-san-juan-de-dios",
+      "path": "data/documents/33618253e1b9872e.json.gz",
+      "normalizedSha256": "5830b42cbf804d0f407594b3f52e9db79fdda451fbc30a85fbff8ad83a0f7f05",
+      "restoredSha256": "2a750856ef096fe05d095e83f064b24144cc686c62b9448a1e384615dd9cafe5",
+      "source": "11_IA_Vida_de_los_Santos/1130_San_Juan_de_Dios.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-095928.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1131-santo-tomas-moro",
+      "path": "data/documents/56aa39f19347195e.json.gz",
+      "normalizedSha256": "018f0f270640ffba264dbc957637e1fc47e5438b7d053c512d1ac0f83969d1b1",
+      "restoredSha256": "3216d712fca8241136651df19b301e8a9f90db1646a0a1ee17166b391129ff68",
+      "source": "11_IA_Vida_de_los_Santos/1131_Santo_Tomas_Moro.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1133-san-luis-gonzaga",
+      "path": "data/documents/a9e7812786072af9.json.gz",
+      "normalizedSha256": "0282a612297f529fe6178a9e1bd75c41aa7751b1b2fa13ade9f06c4224e2410d",
+      "restoredSha256": "1a1acc86fd75ae3266f30297016a7bdc093f4d399af4409415bc42cb9113c16e",
+      "source": "11_IA_Vida_de_los_Santos/1133_San_Luis_Gonzaga.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1134-san-roberto-belarmino",
+      "path": "data/documents/7beb9e43a77e8b0f.json.gz",
+      "normalizedSha256": "e32ea1cf9920b8f509687e4d299942d2e8383c8e9124af40eee28a0bc33c739b",
+      "restoredSha256": "c8ff5a66f52cc6d77ad88e0729485e18cb0d291b09e6d7d4aea8db5f8796364e",
+      "source": "11_IA_Vida_de_los_Santos/1134_San_Roberto_Belarmino.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1135-san-camilo-de-lelis",
+      "path": "data/documents/d811b4453a614a62.json.gz",
+      "normalizedSha256": "0471d2eaa4b183d265a2955249dc7e423d91a80ef1ef77f230a6d2360a6f7c4d",
+      "restoredSha256": "096bb7648fda40fcb3e398f7a8440b3316302136b589991b59c4001b54cad5ce",
+      "source": "11_IA_Vida_de_los_Santos/1135_San_Camilo_de_Lelis.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1136-san-jose-de-calasanz",
+      "path": "data/documents/309d2e29799d2865.json.gz",
+      "normalizedSha256": "51528191a42bb3717c266faad4b8f519ba086701eb5da4741dc67f001c3d5579",
+      "restoredSha256": "77bce712bbfc80498f2f20f8908a85298fcd8ab92c07b27eaeab239c13501686",
+      "source": "11_IA_Vida_de_los_Santos/1136_San_Jose_de_Calasanz.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1137-san-vicente-de-paul",
+      "path": "data/documents/e1f8101a6d7bbfd8.json.gz",
+      "normalizedSha256": "916ebc7aeaafcb627061a5382e0ed918772ce051f7816684b0b465221805c769",
+      "restoredSha256": "f52a1db256816bcfd2866e81ba3c9a9b975de25638e54938375012bc3c8cbd2c",
+      "source": "11_IA_Vida_de_los_Santos/1137_San_Vicente_de_Paul.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1138-santa-luisa-de-marillac",
+      "path": "data/documents/47a171aabfc6f96c.json.gz",
+      "normalizedSha256": "7cce2677c20f0bbdd7ddadfd15377368ce71129133905e82953456e41fc45b5c",
+      "restoredSha256": "72cff976ac19f5fbf3ea23e05b516fe71ecad725e70faf21948dca8dc92291c6",
+      "source": "11_IA_Vida_de_los_Santos/1138_Santa_Luisa_de_Marillac.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1139-san-francisco-de-sales",
+      "path": "data/documents/81b75ba90d2a24e6.json.gz",
+      "normalizedSha256": "f4aaa0421c3f118426204a0897a27b13658bb576b28877bdb978fc0256af15ea",
+      "restoredSha256": "4ed1bde25ebdbe21060fa63e79bf3f7087b49785d9d7624a2ec569750963e664",
+      "source": "11_IA_Vida_de_los_Santos/1139_San_Francisco_de_Sales.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1140-santa-juana-francisca-de-chantal",
+      "path": "data/documents/caa4d23468e58f29.json.gz",
+      "normalizedSha256": "3fbbe7a1f70da95256da51d04648bfd4c4a5e72c25caa945ad282f00273bc72c",
+      "restoredSha256": "754fa0a981dc7ac85787a2e335e9cf7a7604dc2f52986738aff3de4d7140e5fe",
+      "source": "11_IA_Vida_de_los_Santos/1140_Santa_Juana_Francisca_de_Chantal.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1141-san-martin-de-porres",
+      "path": "data/documents/8184cd8cbd26c2dd.json.gz",
+      "normalizedSha256": "d660c74019403a25253f9f8e4156b02b22aa7969154d147e1ba8fde3eb87940b",
+      "restoredSha256": "9e76564010c11dd4807a7bd8e3f08464de25a7060faa663b49b5387107aa265e",
+      "source": "11_IA_Vida_de_los_Santos/1141_San_Martin_de_Porres.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1142-santa-rosa-de-lima",
+      "path": "data/documents/61aa835c2679daa2.json.gz",
+      "normalizedSha256": "29ea8978c7dbcd9a209ef2d17d9ed5e5be3627d5f385e5bf08e3e8759ef0f9d4",
+      "restoredSha256": "3774449fb884573e0ddc3efb73f3dff845681ce128794af92811cc82114cdee7",
+      "source": "11_IA_Vida_de_los_Santos/1142_Santa_Rosa_de_Lima.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1143-san-pedro-claver",
+      "path": "data/documents/edb8403400efc4d0.json.gz",
+      "normalizedSha256": "5a354cbc31f70ebb492a205dea0868277d7edb3b0ca04eb388638b525008778a",
+      "restoredSha256": "7e2837fed60ce10c930fd08187dab505985dcef6eb8f66902254353fd348616a",
+      "source": "11_IA_Vida_de_los_Santos/1143_San_Pedro_Claver.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1145-san-pablo-de-la-cruz",
+      "path": "data/documents/871fd12340e25299.json.gz",
+      "normalizedSha256": "2b49ffc680e187dac0c8a6214802dc293af102ff1642764f14071f6134bedd2b",
+      "restoredSha256": "4f5c6ad3c7460aa20b78bcbf2f91609d4067b682bf1a3b08c20683b0a6696237",
+      "source": "11_IA_Vida_de_los_Santos/1145_San_Pablo_de_la_Cruz.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1146-san-alfonso-maria-de-ligorio",
+      "path": "data/documents/e7af5003fc3bd5c5.json.gz",
+      "normalizedSha256": "8ee06b2870e7acd6bf06211f878ab4aa694a6ac3f7d1fdabc378aa27540b6c24",
+      "restoredSha256": "38d0327ebfe22759de49068f50bc7a0d30a7453b4b948a1528b1e7c11cc76be4",
+      "source": "11_IA_Vida_de_los_Santos/1146_San_Alfonso_Maria_de_Ligorio.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1147-san-leonardo-de-porto-maurizio",
+      "path": "data/documents/970ad29fcbedfb54.json.gz",
+      "normalizedSha256": "dc0c43c53e424b82003604767225e3ea3f9e1c28694ddc2a63e3f2d989676d54",
+      "restoredSha256": "f164940bd1bb8fda95254d5c2d49882ae4d4a03a36b382091d4c596912110133",
+      "source": "11_IA_Vida_de_los_Santos/1147_San_Leonardo_de_Porto_Maurizio.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1148-san-juan-bautista-de-la-salle",
+      "path": "data/documents/653c7ff04391cf8e.json.gz",
+      "normalizedSha256": "1aad5128726cfbf69e7247114003c7649cb1a847ded9af61a2e9e3895c3e9581",
+      "restoredSha256": "6cb876a361f81318c07a4f2c1142fa364a3ec41defdee777aff7e7bc23b36465",
+      "source": "11_IA_Vida_de_los_Santos/1148_San_Juan_Bautista_de_La_Salle.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1149-san-benito-jose-labre",
+      "path": "data/documents/3e4ebe6334efd47b.json.gz",
+      "normalizedSha256": "17f92b8359abb6603b4e05232fb92f73c36aa6f3e7566bf3f6c0db9c481adfdc",
+      "restoredSha256": "4d2d6388f57aaf665761c48bb740411ce1084785f10a67b4fe06b9267c24aa59",
+      "source": "11_IA_Vida_de_los_Santos/1149_San_Benito_Jose_Labre.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1151-san-juan-maria-vianney",
+      "path": "data/documents/846b46fdb1ac71c3.json.gz",
+      "normalizedSha256": "b87a0194f83f2d16b7a37eb7b68eacca29d878b9a79f4d778b29bd2f76d45e28",
+      "restoredSha256": "bca1be4964e719b88edd5f60d1486458b9e4ed4f07cfaeeeb8b41dad61628b69",
+      "source": "11_IA_Vida_de_los_Santos/1151_San_Juan_Maria_Vianney.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1152-san-marcelino-champagnat",
+      "path": "data/documents/0aa3ab801a544e2b.json.gz",
+      "normalizedSha256": "b837904dfe4c150f6a52a2663ace7dd2edda2f22273fe552d0c9cdbc8d68b189",
+      "restoredSha256": "435028138ff627d6fb6877f5581731c7405e8f18f3c155f734a93b5562e4fb9f",
+      "source": "11_IA_Vida_de_los_Santos/1152_San_Marcelino_Champagnat.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1153-san-pedro-chanel",
+      "path": "data/documents/2796828e95b9ccf8.json.gz",
+      "normalizedSha256": "d2c9fb538ca3156eac67b9b29e3b48ea0e37ed7d36c7e8f64b059698f30a35ad",
+      "restoredSha256": "d780ca7fbf59fb747c83a6f04d56ffebf50f40b4b7c58a1e9f32d4798409ade5",
+      "source": "11_IA_Vida_de_los_Santos/1153_San_Pedro_Chanel.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1154-san-antonio-maria-claret",
+      "path": "data/documents/6dfc4b20889c4a4c.json.gz",
+      "normalizedSha256": "a3c8f9d64174aad389d320efd88fce7ea3191225cd1381be555974f98e0d366e",
+      "restoredSha256": "5d2621b2fbf59bda5b549614570f343a50a39f9414de910c2bb3968cab57ea74",
+      "source": "11_IA_Vida_de_los_Santos/1154_San_Antonio_Maria_Claret.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1155-san-juan-bosco",
+      "path": "data/documents/442e53fad0840f59.json.gz",
+      "normalizedSha256": "d88ad11fca49a532d861ffa7ec644b18f9a81b85b55226098db9c401c47562f0",
+      "restoredSha256": "5466ba32cd2bbe22d2acbd0b2f1cc501a9fe61a39036bc8c5a7348566e39eafe",
+      "source": "11_IA_Vida_de_los_Santos/1155_San_Juan_Bosco.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1156-santo-domingo-savio",
+      "path": "data/documents/3a4699dc94a2f14c.json.gz",
+      "normalizedSha256": "9e08b477231401816ff609659a0c62c1cf2fe3b43c6b2c14384f5998823d8102",
+      "restoredSha256": "fc3f77e6085a48b52d41d0e66f27fc891e9a35b62375c87f7d7fcf5fa540c01d",
+      "source": "11_IA_Vida_de_los_Santos/1156_Santo_Domingo_Savio.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1158-santa-bernardita-soubirous",
+      "path": "data/documents/26c5a3a0745d766c.json.gz",
+      "normalizedSha256": "743269ae5b1cbfebd3bdf4064c6c6633f695c98407c8acc099ab80fa76e5536b",
+      "restoredSha256": "98217a2f06ecdfbcba247772ded557dca554d33bd1ad49d7e4228f989e5bc693",
+      "source": "11_IA_Vida_de_los_Santos/1158_Santa_Bernardita_Soubirous.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1159-santa-teresa-de-lisieux",
+      "path": "data/documents/cec57d0f75ae8739.json.gz",
+      "normalizedSha256": "4672c1152809d1bf171b612d995efdae02cdab920c08decfde9ceac86fba9541",
+      "restoredSha256": "3b1fe73c6f2140db181b365bb40f8e4e7452c2484fb00de9d2ca4a53642468d2",
+      "source": "11_IA_Vida_de_los_Santos/1159_Santa_Teresa_de_Lisieux.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1160-santa-gemma-galgani",
+      "path": "data/documents/05fcc9534a8c93e1.json.gz",
+      "normalizedSha256": "c569cbc31cee58fd9af182896ca7a3c0d28b0a90331597746f307997a1708f2f",
+      "restoredSha256": "ea15639e74a7ed2e536c942e88970c6138bd478465b82a6105fea36038bf3cb1",
+      "source": "11_IA_Vida_de_los_Santos/1160_Santa_Gemma_Galgani.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1161-san-pio-x",
+      "path": "data/documents/08ae664dd89bbc32.json.gz",
+      "normalizedSha256": "dd64d662dd6ec1afe7068057f81162eeb4bb6c143553b74d612da54a65057b09",
+      "restoredSha256": "48a2f6b57fbc52893e70c6b632f0da5ea7940fc004277973df7e131a84ad6c84",
+      "source": "11_IA_Vida_de_los_Santos/1161_San_Pio_X.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1162-san-damian-de-molokai",
+      "path": "data/documents/ab50419013c8be9c.json.gz",
+      "normalizedSha256": "6c3d4aa54d5efdc972a49a8ea5696d3ac9b6098f401e0aec4c66a09d0765ca62",
+      "restoredSha256": "dea4d9b0ffcb8fc0d791cd5a7f9a837d06010ef5223939c830821dae8a8410df",
+      "source": "11_IA_Vida_de_los_Santos/1162_San_Damian_de_Molokai.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1164-san-carlos-de-foucauld",
+      "path": "data/documents/8589642e1a739902.json.gz",
+      "normalizedSha256": "2c3bdaaec4e7e49ca1ef6e9e14f2d15b99c84ed515cfbc45309f97c60d08f475",
+      "restoredSha256": "231ab0f90c6beafa4d63192b3b2e59fabbd5b63d15b3cf8405ae24f29efef37f",
+      "source": "11_IA_Vida_de_los_Santos/1164_San_Carlos_de_Foucauld.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1165-santa-teresa-de-los-andes",
+      "path": "data/documents/a45a21b11d2d1379.json.gz",
+      "normalizedSha256": "331add76fa4a31dfd402910b4c4a758309a85ded83f0eae3ebd232eff0644614",
+      "restoredSha256": "58ca955255ca085538519a352d0e81a27194fd3b9df155dc242857c36275195d",
+      "source": "11_IA_Vida_de_los_Santos/1165_Santa_Teresa_de_los_Andes.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1166-santa-teresa-benedicta-de-la-cruz",
+      "path": "data/documents/e9003e1b258a7e10.json.gz",
+      "normalizedSha256": "c05674c152c6271ec8862e636599076ccb15c723810992d94e00e88847a77cca",
+      "restoredSha256": "481c1f43357940369ce626eb0279ec32567aa7e19cf7367e67e6e3546a4419bb",
+      "source": "11_IA_Vida_de_los_Santos/1166_Santa_Teresa_Benedicta_de_la_Cruz.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1167-san-maximiliano-kolbe",
+      "path": "data/documents/6ca002d12d1acb24.json.gz",
+      "normalizedSha256": "3c1fff2570380f0c51be64326c1969e881519244bdad539347912bc3c293198a",
+      "restoredSha256": "6265e8f27aaf66c36894990de5db7ed9548c4912b4dce82cfbfe349a95a604ae",
+      "source": "11_IA_Vida_de_los_Santos/1167_San_Maximiliano_Kolbe.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1169-san-josemaria-escriva",
+      "path": "data/documents/602da41f1584caff.json.gz",
+      "normalizedSha256": "cad410498b7d2517394531c20063455d6dc26a85a05b62ee6f6f3d5a4e51d223",
+      "restoredSha256": "39eb9637408fd7b773f6c9ce2f9cd224331bb40f6c775e873674fe901d803362",
+      "source": "11_IA_Vida_de_los_Santos/1169_San_Josemaria_Escriva.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1170-san-pio-de-pietrelcina",
+      "path": "data/documents/f5905701de57fda1.json.gz",
+      "normalizedSha256": "244ff9e3d85e96a52bcd561ea9a33d4239349dfe9105f3098a970ffb4e83882d",
+      "restoredSha256": "399eddeb2a6d4044a10b0f59149cf4659346e97cf3ad0d1dee5fc0dcbdd2e8a9",
+      "source": "11_IA_Vida_de_los_Santos/1170_San_Pio_de_Pietrelcina.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1171-san-juan-xxiii",
+      "path": "data/documents/e56087c81122dded.json.gz",
+      "normalizedSha256": "bb5568c1f897d11116e4a7450693dd49794401c635541548e4af0a34ca0a2720",
+      "restoredSha256": "8dc68b40cb1e5516927a67fa0da392cf4b9f7412ce1de9dd2ea130ed0539adf8",
+      "source": "11_IA_Vida_de_los_Santos/1171_San_Juan_XXIII.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1175-santa-faustina-kowalska",
+      "path": "data/documents/6fdf26ed3d11a9da.json.gz",
+      "normalizedSha256": "94ecdf19ff9ed2867c9d6aa15b0684bff24a81d7f66c67a54f852ccbcd8e53a4",
+      "restoredSha256": "5941a43cef96d5ce37f9d7440d65bf43b767c60362b1d0c79e31e26e2eaa5168",
+      "source": "11_IA_Vida_de_los_Santos/1175_Santa_Faustina_Kowalska.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1176-santa-teresa-de-calcuta",
+      "path": "data/documents/fb6479cc0094fb70.json.gz",
+      "normalizedSha256": "f469b03e9210d045235fe5114a6df98350c371732f8b506abaecc46ddd9f0438",
+      "restoredSha256": "fa65a2ecc4e7e9987de5e0c31b94b3139588a260c5ac798b478527f63b9d748e",
+      "source": "11_IA_Vida_de_los_Santos/1176_Santa_Teresa_de_Calcuta.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1177-santa-gianna-beretta-molla",
+      "path": "data/documents/b4d8922cb5ae3b27.json.gz",
+      "normalizedSha256": "e85461db1c0d498da6f26b96b6808e0a422182f34f091b623b9e1807b404a1d0",
+      "restoredSha256": "099ab3b64a129fcb43a13c2620ee32a3e9a50d9ba343b5d1a38bfe71bb7c3f2d",
+      "source": "11_IA_Vida_de_los_Santos/1177_Santa_Gianna_Beretta_Molla.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1179-san-cristobal-magallanes",
+      "path": "data/documents/23f47a45dc4363a6.json.gz",
+      "normalizedSha256": "c81d0c7160c125046ef77fafa03bda30e6cc3448ff61c3f4a5b3a5a6f462d2fb",
+      "restoredSha256": "23ee5e4449adb36230e805b444928b9371f0c2335f49e7917f733b9bfa664059",
+      "source": "11_IA_Vida_de_los_Santos/1179_San_Cristobal_Magallanes.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1183-santa-maravillas-de-jesus",
+      "path": "data/documents/fd60be10c3e67697.json.gz",
+      "normalizedSha256": "a4dba91ea22652dae2e50d404bb76cdc1c7a13ad05d70b440696d2ec396a411e",
+      "restoredSha256": "83f255b6e1ece976278346d3f7d9310edd773ad4f99a873fc1fb2545f972ee88",
+      "source": "11_IA_Vida_de_los_Santos/1183_Santa_Maravillas_de_Jesus.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1185-san-carlo-acutis",
+      "path": "data/documents/49b3e8d454cba5d4.json.gz",
+      "normalizedSha256": "c623ff39da1dc7f3972e39b44c6777d0a3fd9ed5e994fabb399b33cbd49574c1",
+      "restoredSha256": "570e105dde9670666930c0bb45b96b11ce176c4d9ba04d551124b6686a64095f",
+      "source": "11_IA_Vida_de_los_Santos/1185_San_Carlo_Acutis.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1187-santa-josefina-bakhita",
+      "path": "data/documents/53a08719cac8304a.json.gz",
+      "normalizedSha256": "0eac5fd503a59b380fc5512a92510123431bdd72613a909e1b4f4cdcfc1eaa07",
+      "restoredSha256": "a399c14a9bd78f2a7cc99611a3d0d9a42acd5850d10c4fee87b8e4327cb169de",
+      "source": "11_IA_Vida_de_los_Santos/1187_Santa_Josefina_Bakhita.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1188-pedro-ballester",
+      "path": "data/documents/4242ce985c469c2b.json.gz",
+      "normalizedSha256": "af2e6f048df1f1c88059fd7491b206715d1925908f44250a4d4aff6316567bbd",
+      "restoredSha256": "c08c02e768c72b80b3993592c8d2f7c79841a27f3b8589dc25166c7fb1699d06",
+      "source": "11_IA_Vida_de_los_Santos/1188_Pedro_Ballester.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1189-chiara-luce-badano",
+      "path": "data/documents/b1f34d58df1c4bff.json.gz",
+      "normalizedSha256": "e3382adcbe84a3103d07ef38b37b94b84e3e9495312dbf09e8c8a2fd5803d059",
+      "restoredSha256": "1674832a79d01df969552d09f1b17ec1a3ff3ef60001f352472b36ac4d5586ec",
+      "source": "11_IA_Vida_de_los_Santos/1189_Chiara_Luce_Badano.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1190-matteo-farina",
+      "path": "data/documents/38eb316773f1950d.json.gz",
+      "normalizedSha256": "c3520d691a5c8847e38e97dcc80a5eb23ea6e76bee856253cf8e84a77f9b12de",
+      "restoredSha256": "ec248464ef06b62b4304898c8e859521760f31a5d5bce708e5a9ef4b42710194",
+      "source": "11_IA_Vida_de_los_Santos/1190_Matteo_Farina.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1193-chiara-corbella-petrillo",
+      "path": "data/documents/2d84801b8462986a.json.gz",
+      "normalizedSha256": "e57b1ec4773263178c5452bab111aad5f1f68f4a2658a80e1da60ce37660ce6e",
+      "restoredSha256": "c5ec25ee075c1111a0a18bc778b37d8a3f384e66054aa0e0e067a96e9022172f",
+      "source": "11_IA_Vida_de_los_Santos/1193_Chiara_Corbella_Petrillo.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1194-guido-schaffer",
+      "path": "data/documents/2d7e41b234278ca9.json.gz",
+      "normalizedSha256": "77b5b06bfe01b5bb0ac990c9f33a9885f0af202ac28f9463520cdc8412d8b2f7",
+      "restoredSha256": "8cd673ae51c2ff2f36c1ac3f189b85597bbc00c333a4f29eb7b1a8c97378502d",
+      "source": "11_IA_Vida_de_los_Santos/1194_Guido_Schaffer.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1196-santa-scorese",
+      "path": "data/documents/d8822c21883b2479.json.gz",
+      "normalizedSha256": "6d504d2a218668b1b489c49a9c6e70b3008d1ca07d16bd03f540f6f11e82d583",
+      "restoredSha256": "3bdb51418ca9bfb3ac26f825d813a03b4deabbb478277a76be4c3f8a986bff7a",
+      "source": "11_IA_Vida_de_los_Santos/1196_Santa_Scorese.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1198-manuel-fodera",
+      "path": "data/documents/00bfe78f3323951e.json.gz",
+      "normalizedSha256": "4b8e6dff95a38a7e01eed47c9d23eefb3970c859cdfcd04ff22c999c3c17f94f",
+      "restoredSha256": "f2d782fb1860b17db551225874d58ccf26922bd7a9a1236f0a3b04321771cf99",
+      "source": "11_IA_Vida_de_los_Santos/1198_Manuel_Fodera.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1200-toni-zweifel",
+      "path": "data/documents/e81b9cc071e0e9ff.json.gz",
+      "normalizedSha256": "0c36af83b6da3ce361dc44c8ffca84e3c7d59258a342f51290c0dea1668fa83d",
+      "restoredSha256": "afd27535d97f1d350436a9fb450d4e9120430b338c95e60dee22574815ce9771",
+      "source": "11_IA_Vida_de_los_Santos/1200_Toni_Zweifel.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-pedro-ballester-audiolibro-04-3-estrenando-vocacin-pedro-ballester-nunca-he-sido-tan-feliz",
+      "path": "data/documents/382e1bc3368b0143.json.gz",
+      "normalizedSha256": "9a38fe0b6e0ca20ebb29f9b029bac7723be2a6a1913b995a410ab524b4526f5b",
+      "restoredSha256": "407cc91f9b5630dd36cfcc1e5f256031e444748468b9918e5c2174c0715cc38f",
+      "source": "11_IA_Vida_de_los_Santos/Pedro Ballester - Audiolibro/04_3_Estrenando_vocacin_Pedro_Ballester_Nunca_he_sido_tan_feliz.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-pedro-ballester-audiolibro-05-4-la-cruz-pedro-ballester-nunca-he-sido-tan-feliz",
+      "path": "data/documents/992c389c6c61dbfe.json.gz",
+      "normalizedSha256": "1b5c547efa9be8c2b45c24fef6c677049b4716e3898bd3af4b5ed076f1301af8",
+      "restoredSha256": "b49ad275173740863782658a314434ec5b02706ada0126ec3bae5aad7464c6e3",
+      "source": "11_IA_Vida_de_los_Santos/Pedro Ballester - Audiolibro/05_4_La_Cruz_Pedro_Ballester_Nunca_he_sido_tan_feliz.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1042-san-juan-evangelista",
+      "path": "data/documents/21dac6f944d58efc.json.gz",
+      "normalizedSha256": "ff9c162019f0188d2f6a8ad6e4a294857a27ac2f031c84e4d8e55065181b23e0",
+      "restoredSha256": "94237d51195f81558c7a3818bf1472d888cfe1c54be563e7f3a13706a2091b6c",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1042_San_Juan_Evangelista.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1043-santiago-el-mayor",
+      "path": "data/documents/d872d5ccbed0fb01.json.gz",
+      "normalizedSha256": "619479a5a66533267b119e9897726584480005e436f2b34bb8f216127a09e9f2",
+      "restoredSha256": "1150d106686b30113d3fd093b6722afda4382c3f2f305bea671cb8853ac310ab",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1043_Santiago_el_Mayor.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1044-santiago-el-menor",
+      "path": "data/documents/c9307a55fa3b33c6.json.gz",
+      "normalizedSha256": "e4a37a08b3bb1201a6323e9c2bbd49c545f5ffe033d51f9dc7f698792ce55b14",
+      "restoredSha256": "0d2511ff3bb2446df7146711c89616151d074ceaf0caf0776134700be8ee85f3",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1044_Santiago_el_Menor.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1045-san-andres",
+      "path": "data/documents/843c0dbdf195e24d.json.gz",
+      "normalizedSha256": "2ffcb7e943ddbf820bfe3d3e4ab126eaba592f23427e047c7f6388c21378374d",
+      "restoredSha256": "1c2ee18c736651f7f8a75fed155ced7c58d4ed6f654d2a8815d1119cd40a45dd",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1045_San_Andres.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1046-santo-tomas-apostol",
+      "path": "data/documents/2484316fb75d316d.json.gz",
+      "normalizedSha256": "8d9ab448ba0068d2431532a7fa909f65b8b60f1435413d68197455a662ae14be",
+      "restoredSha256": "64b7f74ece098bd914f0adf3d78480bd483e61e8c6dd6c8e494a12ab5e380668",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1046_Santo_Tomas_Apostol.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1047-san-felipe-apostol",
+      "path": "data/documents/c0efd43f6b7be732.json.gz",
+      "normalizedSha256": "1858b362840df35a87783643a8c91959e6c1fe86045f2beb242d38bb02b160f0",
+      "restoredSha256": "54fc64d06dea8aa4fb7b0ec5a3a42b02cd32cf039a18bcc816d4553a35c82e65",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1047_San_Felipe_Apostol.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1049-san-mateo",
+      "path": "data/documents/cb5df1ccf85f1799.json.gz",
+      "normalizedSha256": "28b6e0992af729bb807ee29d42c0d133f736757cf855e7026a365b981365d33e",
+      "restoredSha256": "1536b773a3c954b24ae8bc218b3b270b4a5dec33f6d9646006be77ea87b877e6",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1049_San_Mateo.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1050-san-marcos-evangelista",
+      "path": "data/documents/1f92be4b5e4383be.json.gz",
+      "normalizedSha256": "f7a356b8044ca241154b9ae74e49d4841530de628b3e95cd4870df4bc5a99809",
+      "restoredSha256": "1a2071bd2525c240b8d858120e0f86e6556108e0117d29ecc8ae21402be69b40",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1050_San_Marcos_Evangelista.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1051-san-lucas-evangelista",
+      "path": "data/documents/944f45580bb9e30f.json.gz",
+      "normalizedSha256": "6fc118402804ecc710203b088f4f5561a5e08604d259dd6e71f8b3fb9707cdd3",
+      "restoredSha256": "98d02412777e21abef101db09a057ae37bdd26e2100e0dba4be77abbb845483e",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1051_San_Lucas_Evangelista.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1052-santa-maria-magdalena",
+      "path": "data/documents/e1c5af93e29c630a.json.gz",
+      "normalizedSha256": "acf25156f473bb239f2f047045992c73d544dbc770d354edf9c2318e04f143be",
+      "restoredSha256": "b90ea3ca1a79913627bebfa4f75c396fa8086ce2c5133c3ec8d876e886140745",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1052_Santa_Maria_Magdalena.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1053-santa-marta-de-betania",
+      "path": "data/documents/b3030b6bfd7fb44c.json.gz",
+      "normalizedSha256": "e9e607f4889f158ae5458f62096a51e78ce48ddd88f1d5e0950ddf9ecfca9b1f",
+      "restoredSha256": "2e87bf50a134331a44980de48fab7297ae40be6a3ed1f9cac7e4500b9b6c045f",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1053_Santa_Marta_de_Betania.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1054-san-esteban-protomartir",
+      "path": "data/documents/db9275f8395d1c18.json.gz",
+      "normalizedSha256": "7aba67547cfd17b2e33cc7184cbf7c9abfc91e85a1ca095c4473df1f4b8d9e16",
+      "restoredSha256": "0eac0e1b03e70571d7a0986dc4da67a5576103335805939ee0fcd0e407a806e6",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1054_San_Esteban_Protomartir.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1057-san-clemente-romano",
+      "path": "data/documents/98d7659dea6c71fd.json.gz",
+      "normalizedSha256": "a7d75731d417472ebf93de90abe5180e3dba92f06162df0d9df51996a4745087",
+      "restoredSha256": "324970d27616f0d732e9efbeecaa91374d6b268b5b22ad7f46f6ba56ce770968",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1057_San_Clemente_Romano.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1058-san-policarpo-de-esmirna",
+      "path": "data/documents/858a92e38c981605.json.gz",
+      "normalizedSha256": "dbe7df5512df8b199f3a2f1ff939d501693a60383704840d1cef6ecdd9842aed",
+      "restoredSha256": "0c6d0e4cdb076cfd86fb80422af9c7925a533c161cbf06f949f8ab9038d5ecaf",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1058_San_Policarpo_de_Esmirna.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1062-santa-perpetua",
+      "path": "data/documents/333de939e89b3f91.json.gz",
+      "normalizedSha256": "f95c1e2cd2d4273a2520283a041afe0edff2675fa2f5d4d52c909daf76379269",
+      "restoredSha256": "b1f1be7fee59437b0097ad7ab8ab2c3b191f5e226293b82662361df87f14a10b",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1062_Santa_Perpetua.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1063-santa-felicidad",
+      "path": "data/documents/802583fb699d1b61.json.gz",
+      "normalizedSha256": "980406c49c513f0fdc083de0302fe3794a5adc8828f2c614bbf34c936b1916f7",
+      "restoredSha256": "2d2f1cbdece7968e0daf95fc9890ac5735353bbc24762c4910af06b4f114ca34",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1063_Santa_Felicidad.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1065-san-lorenzo",
+      "path": "data/documents/a50655d0ac182c96.json.gz",
+      "normalizedSha256": "2850a01b7b697e7d410ee23c014b5a3845e0accd0b0959d5900aea7c7b61d14c",
+      "restoredSha256": "ed340ad5c259e5fe564dbbaa37667f0142c7d7e718da5b9f17ce2050f1d17531",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1065_San_Lorenzo.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1066-san-sebastian",
+      "path": "data/documents/8ab07f6f36be5b84.json.gz",
+      "normalizedSha256": "18641b396675d24b4bd1cf4ba423cbf5b91e4783103d3ec7bb09879c28787995",
+      "restoredSha256": "b449ce1dfe7fb5f7ddd03132f2c1462192c46273f7138611e0deda33c4b0f949",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1066_San_Sebastian.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1067-santa-ines",
+      "path": "data/documents/7616896f5f73c804.json.gz",
+      "normalizedSha256": "545f0904220429bd1a15f076dc40751d6111f53483190a0ba08f6f2376d884f9",
+      "restoredSha256": "39504a9cf8045023cb4ea0dfd9fe2e534134f36e0b9bfb014f0aaa5a76d9066e",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1067_Santa_Ines.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1076-san-gregorio-de-nisa",
+      "path": "data/documents/b15bba70f6a3315b.json.gz",
+      "normalizedSha256": "6df784123b9272fbbdee5a73e7b0d24b6b199e2acd261c2e6c91b105a6abeda8",
+      "restoredSha256": "0ee2abd8aca40f40c18b124ca7667d6c64157cec01202f58b326883654b4f3fc",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1076_San_Gregorio_de_Nisa.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1083-san-cirilo-de-alejandria",
+      "path": "data/documents/36104c11c1370cf0.json.gz",
+      "normalizedSha256": "2b1a3ac5399219ad70b32dfb61663092f65f22e9360ba8bcf75abecc18880b2e",
+      "restoredSha256": "001557c231f35d04df33c0af90a4ad27c7ad7857e02f8f081d2a82a7944a4d86",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1083_San_Cirilo_de_Alejandria.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1085-san-leon-magno",
+      "path": "data/documents/7d74776f4db3615d.json.gz",
+      "normalizedSha256": "a2b58713e2a02836d5fbb4bda8e194ff4524786128ca3979f6d3f06c8a8ef264",
+      "restoredSha256": "44096df3f7942c0fb1967c2e7d39d114c6c7bd9ac3a077221c3169244be570e5",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1085_San_Leon_Magno.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1088-santa-escolastica",
+      "path": "data/documents/bdc679edcc2adc0e.json.gz",
+      "normalizedSha256": "00830b359920974808e6dc5ffa4bd8601938f646a5ee2c5fd82f51d839a9b850",
+      "restoredSha256": "44be95a2e8318425b6d274465ca7aef5fdf200c4a930a5c4b2c2ded6bef390dd",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1088_Santa_Escolastica.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1093-san-beda-el-venerable",
+      "path": "data/documents/949016a8445e3368.json.gz",
+      "normalizedSha256": "0b281c52ed8cd49630879481031ccff12ea082298bdfa4eb949df9d482d54d92",
+      "restoredSha256": "f23963f5a4d569a08dc41881363da66261522d844219b7a36fee8247ce1f2fd5",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1093_San_Beda_el_Venerable.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1095-san-juan-damasceno",
+      "path": "data/documents/8dbbfeebd785f8a2.json.gz",
+      "normalizedSha256": "3ac0cbe2b26c4ddb8c8a81027ba8e954b01f24364e31443902dbf08106e7e750",
+      "restoredSha256": "327b1e4f22d9f9d582ce1aa2cbf3f1bc1c1957fbd0c71c6cb83a79bf5ff43cef",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1095_San_Juan_Damasceno.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1096-san-cirilo",
+      "path": "data/documents/f7b3c4d60e04e644.json.gz",
+      "normalizedSha256": "a47cbddd9dcf74b6026db4d952ea605399f1b5b4607fab4e46d236c838c8b93a",
+      "restoredSha256": "0b0c5f4944ad163e5f3229b8ed3f5b5d10623ec322fa0cb6cb895afd19992ff2",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1096_San_Cirilo.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1097-san-metodio",
+      "path": "data/documents/d455395a49a70c16.json.gz",
+      "normalizedSha256": "ebade98b291fbc47fb88cc16bbcb7675a1ca99bbeff68ed61ff08624295021c9",
+      "restoredSha256": "02ba685935258bcb494189a0a9d43af7061f8d1a7f3e429aafdbee2ba92bf5cf",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1097_San_Metodio.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1103-santa-clara-de-asis",
+      "path": "data/documents/5ce66a924107f51f.json.gz",
+      "normalizedSha256": "bd91662c9d44f4dbce82d53a8635ea308a2864162417dd6e1c74be43bb5ec1c2",
+      "restoredSha256": "601e611230139617087d1043474f174e3cba85cbfaaa05b185ff2663f5f1b927",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1103_Santa_Clara_de_Asis.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1105-san-antonio-de-padua",
+      "path": "data/documents/9743a3deace046fd.json.gz",
+      "normalizedSha256": "fd34048f18bd80674424c5492ab5807f78ae324af2d189e0f18193badfb76b69",
+      "restoredSha256": "7200e99e3d52a923062c13acbad83e16687eac222306ed5dd3785730ed95c5af",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1105_San_Antonio_de_Padua.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1111-san-raimundo-de-penafort",
+      "path": "data/documents/bfc3abc4f8844c9f.json.gz",
+      "normalizedSha256": "e3c43e5310d9efdea816c3d4344d7563ebafd7792195b9cb8032aea14e6f9c64",
+      "restoredSha256": "b462ff4a62dc253913ad661c13324ca871f2a6e13cb1b956f232875a57668d88",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1111_San_Raimundo_de_Penafort.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1116-san-bernardino-de-siena",
+      "path": "data/documents/1a351fdb9c553639.json.gz",
+      "normalizedSha256": "a13ebaac59122b51333fe612f19b02394da55d30a8c0509dccc6560ebbf1a8a3",
+      "restoredSha256": "075e07525a0f466461e90244e021911d2fc120cb80063f3a5ec1d9852abf1510",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1116_San_Bernardino_de_Siena.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1124-san-juan-de-la-cruz",
+      "path": "data/documents/aedd8bea9afa88dd.json.gz",
+      "normalizedSha256": "ad2ca1b36133274a42d01826118c9480405eaa6f9fe7f6b1ff7c8b26bad6c366",
+      "restoredSha256": "2df142c9972661bf7f3eb986c0cb96748a24f5bceb91c6cb04d998d10329300e",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1124_San_Juan_de_la_Cruz.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1125-san-felipe-neri",
+      "path": "data/documents/8f6395b05e01d025.json.gz",
+      "normalizedSha256": "3e26870f08fe5b30c86cdbfe809a98f7129930501054a497f55ef765c7ba127e",
+      "restoredSha256": "51a00ebeade393177bec87834024a52bb41b1ba4fa695ddabd863b19420b0d16",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1125_San_Felipe_Neri.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1128-san-juan-de-avila",
+      "path": "data/documents/cddfb0dc67fa6fe2.json.gz",
+      "normalizedSha256": "4c9f9bc59b0a5e0ec74c822e0b78b7f6b9c4a10339854873fc56027dfafe469d",
+      "restoredSha256": "34870fb078f9de858acfea3a2f916df0082bfc2e403c23585c2aacf65f99c34b",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1128_San_Juan_de_Avila.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1130-san-juan-de-dios",
+      "path": "data/documents/e3bc782392acb3d0.json.gz",
+      "normalizedSha256": "d996cc2f67506d933df76cb0832df95842599b0d00b56182a1e13b624e0273db",
+      "restoredSha256": "1ecf57cd2a12ab5ee195946bb5fb78879cafea617f0e34a530844bb096b18794",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1130_San_Juan_de_Dios.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1139-san-francisco-de-sales",
+      "path": "data/documents/dc5d3cb24c7fd2fe.json.gz",
+      "normalizedSha256": "cff963c6f03f53522f4af94a73b77dec43952521d6d4342ad6e323e05dd92141",
+      "restoredSha256": "9d805fa7d86ba4fd0443486562cafe1b09960571fd5252ffec90ecb38f66c658",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1139_San_Francisco_de_Sales.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1141-san-martin-de-porres",
+      "path": "data/documents/813c2479d0d91dfb.json.gz",
+      "normalizedSha256": "72b9a31bfa31f21fdc14df2cdfa92960ad9789e4174020050b076ee8aafe6f70",
+      "restoredSha256": "d4f9f4359aa6ea92783098426f8c098d3140673df77a5362cba00945b952da6c",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1141_San_Martin_de_Porres.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1146-san-alfonso-maria-de-ligorio",
+      "path": "data/documents/d6db6dabf288dd24.json.gz",
+      "normalizedSha256": "88dfef12573c4a63e27d80306b851843bfd5cf7360288205010b004613d1fb9e",
+      "restoredSha256": "bc4cc866689eca829edb29cf6cb5a1cef62639286c9423482f62ab45f4c7cb57",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1146_San_Alfonso_Maria_de_Ligorio.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1154-san-antonio-maria-claret",
+      "path": "data/documents/a05111ac154201ee.json.gz",
+      "normalizedSha256": "492f0bc4119fea4f7b215c01595488d663b130e7ae60c1e8bc25e57af20f1bdb",
+      "restoredSha256": "bc28a371a88082841440db7ad30530431d7d9146c5f2628297329da0b4dccd35",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1154_San_Antonio_Maria_Claret.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1155-san-juan-bosco",
+      "path": "data/documents/9ab9a3beb0e07c1f.json.gz",
+      "normalizedSha256": "ebe250765cd0feb9e71f80669aedd8460afdf0c4b31679ea7e171d8028d89673",
+      "restoredSha256": "2e618edae7cf9fef9042d6ce8582daed6d93706071f7afb267f1567aac17a39e",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1155_San_Juan_Bosco.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1158-santa-bernardita-soubirous",
+      "path": "data/documents/a8b284af4ccbeb31.json.gz",
+      "normalizedSha256": "40941afffc0d27ac2a08ef985849f7da8626de9e941e46bbef052fed9964ca5a",
+      "restoredSha256": "42a7ba397b20ce2be67bb7b3fcf679c9d2c30b0cd8673662dfe41932d71f6056",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1158_Santa_Bernardita_Soubirous.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1165-santa-teresa-de-los-andes",
+      "path": "data/documents/8658c151a094fec9.json.gz",
+      "normalizedSha256": "698d34acf17dde0ea5489e3fb445ffb1fce5f1348d15849e4fc7f82ac48aa6a1",
+      "restoredSha256": "89405b0e3f340e884ee86805783d1e85a30feebefb6e4405b58c73142e7d1128",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1165_Santa_Teresa_de_los_Andes.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1166-santa-teresa-benedicta-de-la-cruz",
+      "path": "data/documents/f5f326167654954f.json.gz",
+      "normalizedSha256": "3a66788e079bf098024319aedc2d026be531b95be3d67423238bdaefd40a7a4d",
+      "restoredSha256": "4479257d062165b16ec2ad8b28bc874502595fcaa8508c46f4c1114a9091c079",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1166_Santa_Teresa_Benedicta_de_la_Cruz.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1167-san-maximiliano-kolbe",
+      "path": "data/documents/b48d41545b92b3ea.json.gz",
+      "normalizedSha256": "f5edb07b4a04fa91d3d162c634e891a0bf9e90862b9b3068fd8f5ffaec98fa73",
+      "restoredSha256": "59a37a140ec540d43d72b562f2d2100d0db903a7bfd26f3c73f806e6b3d68239",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1167_San_Maximiliano_Kolbe.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1169-san-josemaria-escriva",
+      "path": "data/documents/87097b1a19b87da2.json.gz",
+      "normalizedSha256": "a1f5834b895a01ab43342362f6ae392c1604368aa97201fe7e69280f54671812",
+      "restoredSha256": "54838cf9ba17abaad3a6b8536418ba3afd703f5526b16ac87e7ff09239576826",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1169_San_Josemaria_Escriva.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1170-san-pio-de-pietrelcina",
+      "path": "data/documents/7b2965bd7339b034.json.gz",
+      "normalizedSha256": "c80131efb404e7ab0653fd7e4dac3c09f3825cb463262b1f1c213a01f6434c8b",
+      "restoredSha256": "1270f459c1d59c2cf198b1415656764ea43f05e119b5d155a9cfe9a60b9e20b0",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1170_San_Pio_de_Pietrelcina.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1171-san-juan-xxiii",
+      "path": "data/documents/d26da31e4bf700c5.json.gz",
+      "normalizedSha256": "f32a16ee2215c4e43ba3efcf0ec0ab998bb3cfd3b280f2b061a5741bdb6b5611",
+      "restoredSha256": "eb4a3e20fd68184b141e16b52d30984b3ba12565f83772238a35bc24a1d2d132",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1171_San_Juan_XXIII.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1175-santa-faustina-kowalska",
+      "path": "data/documents/f75c471271de9de1.json.gz",
+      "normalizedSha256": "f2b44ed7fbd3ac8477432d2a8ba109ac8c6bd7402de326fc3faca41bf24c9565",
+      "restoredSha256": "40e627aefd4af75cf3cb2a6adf3a08d1fbc506ae60f5f47ccc1d74f450ba0f04",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1175_Santa_Faustina_Kowalska.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1176-santa-teresa-de-calcuta",
+      "path": "data/documents/33f4c52c58ad1b89.json.gz",
+      "normalizedSha256": "519b92545de73d3dc54123aa288865812087c43328b687c327128eaffd74a000",
+      "restoredSha256": "2b728b3551692fd71f5d79b7ca7a90ebe65414979d284fdcdb599a78f12b1304",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1176_Santa_Teresa_de_Calcuta.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1177-santa-gianna-beretta-molla",
+      "path": "data/documents/a0d2be384e54eeb7.json.gz",
+      "normalizedSha256": "9191e1a48ffc6b749b660d31136ec99edebb51db4a0a19e59721e38bec085606",
+      "restoredSha256": "5f76ac993dc737004e7441d8043284e86df50d95c0a1762defadde8f3aeacde3",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1177_Santa_Gianna_Beretta_Molla.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1183-santa-maravillas-de-jesus",
+      "path": "data/documents/a58191222a289ecf.json.gz",
+      "normalizedSha256": "054a1a46700d71dd0debd182ed6d56ab75e56f2dda2ef3fe8bd7d10a5bd6fcd3",
+      "restoredSha256": "939d117b5dbbd49e5c0790907df0e8425be84e2c8e9a296482b976260fc960b1",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1183_Santa_Maravillas_de_Jesus.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1187-santa-josefina-bakhita",
+      "path": "data/documents/7583c4a1d6b37121.json.gz",
+      "normalizedSha256": "2371bf5282598ea5807bb67514bb1e83f3416c7b96760b95d865910f86b25deb",
+      "restoredSha256": "60d4ef999ecece66777be8c0a600694226736ecf3febf5696662627c483ec877",
+      "source": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1187_Santa_Josefina_Bakhita.md",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    }
+  ]
+}

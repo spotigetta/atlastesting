@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "startedAt": "2026-11-05T21:15:50.979Z",
+  "start": "2026-11-05",
+  "days": 4,
+  "dates": [
+    {
+      "date": "2026-11-05",
+      "sections": 9,
+      "hoursComplete": true,
+      "errors": [
+        {
+          "id": "prefacio-dia",
+          "title": "Prefacio del día",
+          "error": "El proveedor no ofrece texto completo para esta sección (vacía o menú)"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-06",
+      "sections": 7,
+      "hoursComplete": true,
+      "errors": [
+        {
+          "id": "ofrendas",
+          "title": "Oración sobre las ofrendas",
+          "error": "El proveedor no ofrece texto completo para esta sección (vacía o menú)"
+        },
+        {
+          "id": "prefacio-dia",
+          "title": "Prefacio del día",
+          "error": "El proveedor no ofrece texto completo para esta sección (vacía o menú)"
+        },
+        {
+          "id": "comunion",
+          "title": "Comunión y oración final",
+          "error": "El proveedor no ofrece texto completo para esta sección (vacía o menú)"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-07",
+      "sections": 9,
+      "hoursComplete": true,
+      "errors": [
+        {
+          "id": "prefacio-dia",
+          "title": "Prefacio del día",
+          "error": "El proveedor no ofrece texto completo para esta sección (vacía o menú)"
+        }
+      ]
+    },
+    {
+      "date": "2026-11-08",
+      "sections": 9,
+      "hoursComplete": true,
+      "errors": [
+        {
+          "id": "prefacio-dia",
+          "title": "Prefacio del día",
+          "error": "El proveedor no ofrece texto completo para esta sección (vacía o menú)"
+        }
+      ]
+    }
+  ],
+  "commonErrors": [],
+  "requestsPolicy": "Sequential requests, 120 ms minimum between successful requests, 3 attempts, maximum 14 dates",
+  "finishedAt": "2026-11-05T21:16:10.936Z",
+  "commonSections": 83,
+  "failure": false
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "passed": true,
+  "dates": [
+    {
+      "date": "2026-11-05",
+      "hours": 5,
+      "sections": 9,
+      "calendarStatus": "unverified"
+    },
+    {
+      "date": "2026-11-06",
+      "hours": 5,
+      "sections": 7,
+      "calendarStatus": "mismatch"
+    },
+    {
+      "date": "2026-11-07",
+      "hours": 5,
+      "sections": 9,
+      "calendarStatus": "unverified"
+    },
+    {
+      "date": "2026-11-08",
+      "hours": 5,
+      "sections": 9,
+      "calendarStatus": "matched"
+    }
+  ],
+  "hours": 20,
+  "commonSections": 83,
+  "sectionReferences": 117,
+  "uniqueObjects": 115,
+  "tests": [
+    "Strict sanitizer rejects executable tags, event attributes and javascript links",
+    "Nested content extraction excludes surrounding scripts",
+    "Date parser and impossible-date rejection",
+    "All stored objects hash-verified and sanitizer-idempotent",
+    "Five real Hours and Mass readings per imported date",
+    "Common texts are real Ordinary, Prefaces and Eucharistic Prayers"
+  ],
+  "testedAt": "2026-11-05T21:34:05.814Z"
+}

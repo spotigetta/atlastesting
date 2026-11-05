@@ -27,6 +27,7 @@
 
   function allowed(doc, parsed) {
     return (!parsed.libraries.size || parsed.libraries.has(doc.libraryId))
+      && (!parsed.foreign || (Boolean(doc.language) && !/^(?:es(?:[-_]\w+)?|espanol|castellano|spanish)$/i.test(normalize(doc.language).trim())))
       && (!parsed.documentId || parsed.documentId === doc.id);
   }
 
@@ -58,7 +59,7 @@
     const docResults = documents
       .filter(doc => (!doc.unlockFeature || root.storage.isFeatureUnlocked(doc.unlockFeature)) && allowed(doc, parsed)
         && (!parsed.status || doc.status === parsed.status)
-        && (!parsed.foreign || Boolean(doc.language)))
+        )
       .map(doc => ({
         ...doc,
         score: score(`${doc.title} ${doc.file} ${doc.originals} ${doc.category} ${doc.author || ""} ${doc.language || ""} ${doc.year || ""} ${doc.status} ${doc.library.name} ${doc.library.short}`, q, doc.title)
@@ -91,6 +92,9 @@
     fullTextPromise = window.AtlasRuntime.fetchJson("data/search/manifest.json").then(manifest => {
       window.ATLAS_FULLTEXT = manifest;
       return manifest;
+    }).catch(error => {
+      fullTextPromise = null;
+      throw error;
     });
     return fullTextPromise;
   }
@@ -100,7 +104,12 @@
   async function loadShard(index, key) {
     if (!index.shards[key]) return {};
     if (!shardPromises.has(key)) {
-      shardPromises.set(key, window.AtlasRuntime.fetchJson(index.shards[key].file).then(payload => payload.terms || {}));
+      shardPromises.set(key, window.AtlasRuntime.fetchJson(index.shards[key].file)
+        .then(payload => payload.terms || {})
+        .catch(error => {
+          shardPromises.delete(key);
+          throw error;
+        }));
     }
     return shardPromises.get(key);
   }

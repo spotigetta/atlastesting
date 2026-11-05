@@ -1,3 +1,9 @@
 node_modules/
 .translation-models/
 generated/qa-*/
+reports/corpus-backup-*/
+reports/search-backup-*/
+reports/editorial-backup-*/
+reports/editorial-markdown/
+reports/editorial-staging-*/
+data/editions/drafts/

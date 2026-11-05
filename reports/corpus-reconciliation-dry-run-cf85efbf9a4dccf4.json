@@ -1,0 +1,2856 @@
+{
+  "schemaVersion": 1,
+  "mode": "dry-run",
+  "catalogBeforeSha256": "cf85efbf9a4dccf481bf23ade60c5e9a493f59621c00df024c0b99126cfcfbdb",
+  "catalogAfterSha256": "cf85efbf9a4dccf481bf23ade60c5e9a493f59621c00df024c0b99126cfcfbdb",
+  "auditSummary": {
+    "sources": 1453,
+    "uniqueSourceTexts": 1175,
+    "duplicateSourceCopies": 278,
+    "documents": 1385,
+    "status": {
+      "exact-path-content": 1076,
+      "exact-path-content-differs": 21,
+      "exact-path-normalization-proven": 248,
+      "missing-path-ambiguous": 2,
+      "missing-path-unresolved": 38
+    },
+    "missingPaths": 40,
+    "payloadFiles": 1385,
+    "payloadBytes": 268313578,
+    "contentDigest": "fa560014fcc2cb8d62666089c817eb40eb5429103bc2764d299c59ca39461bb9",
+    "revisionMatches": true,
+    "manifestDocuments": 1385,
+    "manifestBytes": 268313578,
+    "manifestMatches": true,
+    "searchDocuments": 1385,
+    "missingSearch": 0,
+    "staleSearch": 0,
+    "terms": 601353,
+    "postings": 8928972,
+    "shardErrors": 0,
+    "errors": 0
+  },
+  "changedDocuments": 0,
+  "payloads": 0,
+  "changes": [],
+  "pending": [
+    {
+      "id": "doctrine-0308_Suma_Teologica_II_II_parte_02",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0308_Suma_Teologica_II_II_parte_02.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0332_Denzinger_parte_02",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0332_Denzinger_parte_02.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0332_Denzinger_parte_03",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0332_Denzinger_parte_03.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0583_dignitas_infinita_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0583_dignitas_infinita_es.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0584_dignitas_infinita_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0584_dignitas_infinita_es.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0585_dignitas_infinita_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0585_dignitas_infinita_es.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0587_gestis_verbisque_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0702_Gestis_verbisque_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "doctrine-0588_samaritanus_bonus_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0703_Samaritanus_bonus_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0590_oeconomicae_et_pecuniariae_quaestiones_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0590_oeconomicae_et_pecuniariae_quaestiones_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0591_iuvenescit_ecclesia_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0707_Iuvenescit_Ecclesia_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0592_fratelli_tutti_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0708_Fratelli_tutti_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0593_gaudete_et_exsultate_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0593_gaudete_et_exsultate_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0594_christus_vivit_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0711_Christus_vivit_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0595_querida_amazonia_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0712_Querida_Amazonia_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0596_patris_corde_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0713_Patris_corde_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0597_misericordia_et_misera_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0714_Misericordia_et_misera_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0598_ad_theologiam_promovendam_it",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0715_Ad_theologiam_promovendam_IT.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0599_desiderio_desideravi_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0716_Desiderio_desideravi_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0600_fiducia_supplicans_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0717_Fiducia_supplicans_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0601_teologia_hoy_perspectivas_principios_y_criterios_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0601_teologia_hoy_perspectivas_principios_y_criterios_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0603_la_reciprocidad_entre_fe_y_sacramentos_en_la_economia_sacramental_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0724_La_reciprocidad_entre_fe_y_sacramentos_en_la_economia_sacramental_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0604_el_pueblo_judio_y_sus_sagradas_escrituras_en_la_biblia_cristiana_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0604_el_pueblo_judio_y_sus_sagradas_escrituras_en_la_biblia_cristiana_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0606_que_es_el_hombre_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0734_Que_es_el_hombre_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-095928.json"
+      ]
+    },
+    {
+      "id": "doctrine-0607_comunion_y_servicio_la_persona_humana_creada_a_imagen_de_dios_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0735_Comunion_y_servicio_la_persona_humana_creada_a_imagen_de_Dios_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0608_memoria_y_reconciliacion_la_iglesia_y_las_culpas_del_pasado_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0608_memoria_y_reconciliacion_la_iglesia_y_las_culpas_del_pasado_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0609_el_cristianismo_y_las_religiones_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0737_El_cristianismo_y_las_religiones_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0611_la_libertad_religiosa_para_el_bien_de_todos_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0611_la_libertad_religiosa_para_el_bien_de_todos_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0612_el_diaconado_evolucion_y_perspectivas_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0612_el_diaconado_evolucion_y_perspectivas_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0613_jesucristo_hijo_de_dios_salvador_aniversario_de_nicea_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0613_jesucristo_hijo_de_dios_salvador_aniversario_de_nicea_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0614_quo_vadis_humanitas_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0614_quo_vadis_humanitas_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0615_la_historicidad_de_los_evangelios_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0744_La_historicidad_de_los_Evangelios_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0616_dignitas_infinita_es",
+      "status": "missing-path-ambiguous",
+      "path": "01_IA_Doctrina_Teologia_Moral/0616_dignitas_infinita_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0617_antiqua_et_nova_es",
+      "status": "missing-path-ambiguous",
+      "path": "01_IA_Doctrina_Teologia_Moral/0617_antiqua_et_nova_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0618_gestis_verbisque_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0702_Gestis_verbisque_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "doctrine-0619_samaritanus_bonus_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0703_Samaritanus_bonus_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0620_dignitas_personae_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0704_Dignitas_personae_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "doctrine-0622_oeconomicae_et_pecuniariae_quaestiones_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0622_oeconomicae_et_pecuniariae_quaestiones_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0623_iuvenescit_ecclesia_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0707_Iuvenescit_Ecclesia_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0624_fratelli_tutti_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0708_Fratelli_tutti_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0625_amoris_laetitia_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0625_amoris_laetitia_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0626_gaudete_et_exsultate_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0626_gaudete_et_exsultate_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0627_christus_vivit_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0711_Christus_vivit_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0628_querida_amazonia_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0712_Querida_Amazonia_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0629_patris_corde_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0713_Patris_corde_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0630_misericordia_et_misera_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0714_Misericordia_et_misera_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0631_ad_theologiam_promovendam_it",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0715_Ad_theologiam_promovendam_IT.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0632_desiderio_desideravi_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0716_Desiderio_desideravi_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0633_fiducia_supplicans_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0717_Fiducia_supplicans_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0634_teologia_hoy_perspectivas_principios_y_criterios_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0634_teologia_hoy_perspectivas_principios_y_criterios_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0636_en_busca_de_una_etica_universal_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0723_En_busca_de_una_etica_universal_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0637_la_reciprocidad_entre_fe_y_sacramentos_en_la_economia_sacramental_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0724_La_reciprocidad_entre_fe_y_sacramentos_en_la_economia_sacramental_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0638_el_pueblo_judio_y_sus_sagradas_escrituras_en_la_biblia_cristiana_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0638_el_pueblo_judio_y_sus_sagradas_escrituras_en_la_biblia_cristiana_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0641_que_es_el_hombre_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0734_Que_es_el_hombre_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-095928.json"
+      ]
+    },
+    {
+      "id": "doctrine-0642_comunion_y_servicio_la_persona_humana_creada_a_imagen_de_dios_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0735_Comunion_y_servicio_la_persona_humana_creada_a_imagen_de_Dios_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0643_memoria_y_reconciliacion_la_iglesia_y_las_culpas_del_pasado_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0643_memoria_y_reconciliacion_la_iglesia_y_las_culpas_del_pasado_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0644_el_cristianismo_y_las_religiones_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0737_El_cristianismo_y_las_religiones_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0646_la_libertad_religiosa_para_el_bien_de_todos_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0646_la_libertad_religiosa_para_el_bien_de_todos_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0647_el_diaconado_evolucion_y_perspectivas_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0647_el_diaconado_evolucion_y_perspectivas_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0648_jesucristo_hijo_de_dios_salvador_aniversario_de_nicea_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0648_jesucristo_hijo_de_dios_salvador_aniversario_de_nicea_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0649_quo_vadis_humanitas_es",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0649_quo_vadis_humanitas_es.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0650_la_historicidad_de_los_evangelios_es",
+      "status": "exact-path-normalization-proven",
+      "path": "01_IA_Doctrina_Teologia_Moral/0744_La_historicidad_de_los_Evangelios_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "doctrine-0651_Papa_Francisco_Enciclicas",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0651_Papa_Francisco_Enciclicas.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0652_Papa_Francisco_Exhortaciones_Apostolicas",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0652_Papa_Francisco_Exhortaciones_Apostolicas.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0653_Papa_Francisco_Cartas_Apostolicas",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0653_Papa_Francisco_Cartas_Apostolicas.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0654_Papa_Francisco_Mensajes",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0654_Papa_Francisco_Mensajes.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0655_Papa_Leon_XIV_Enciclicas",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0655_Papa_Leon_XIV_Enciclicas.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0656_Papa_Leon_XIV_Exhortaciones_Apostolicas",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0656_Papa_Leon_XIV_Exhortaciones_Apostolicas.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0657_Papa_Leon_XIV_Cartas_Apostolicas",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0657_Papa_Leon_XIV_Cartas_Apostolicas.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "doctrine-0658_Papa_Leon_XIV_Mensajes",
+      "status": "missing-path-unresolved",
+      "path": "01_IA_Doctrina_Teologia_Moral/0658_Papa_Leon_XIV_Mensajes.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "canon-0586_Papa_Francisco_Cartas_Apostolicas",
+      "status": "missing-path-unresolved",
+      "path": "02_IA_Derecho_Canonico/0586_Papa_Francisco_Cartas_Apostolicas.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "canon-0587_Papa_Leon_XIV_Cartas_Apostolicas",
+      "status": "missing-path-unresolved",
+      "path": "02_IA_Derecho_Canonico/0587_Papa_Leon_XIV_Cartas_Apostolicas.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "history-0094_Augustin_Sermons_parte_02",
+      "status": "exact-path-normalization-proven",
+      "path": "03_IA_Historia_Iglesia_Padres/0094_Augustin_Sermons_parte_02.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "history-0094_Augustin_Sermons_parte_03",
+      "status": "exact-path-normalization-proven",
+      "path": "03_IA_Historia_Iglesia_Padres/0094_Augustin_Sermons_parte_03.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "history-0094_Augustin_Sermons_parte_04",
+      "status": "exact-path-normalization-proven",
+      "path": "03_IA_Historia_Iglesia_Padres/0094_Augustin_Sermons_parte_04.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-095928.json"
+      ]
+    },
+    {
+      "id": "history-0097_Bernard_sermons_parte_02",
+      "status": "exact-path-normalization-proven",
+      "path": "03_IA_Historia_Iglesia_Padres/0097_Bernard_sermons_parte_02.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "history-0142_Augustin_les_Psaumes_parte_02",
+      "status": "exact-path-normalization-proven",
+      "path": "03_IA_Historia_Iglesia_Padres/0142_Augustin_les_Psaumes_parte_02.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "history-0142_Augustin_les_Psaumes_parte_03",
+      "status": "exact-path-normalization-proven",
+      "path": "03_IA_Historia_Iglesia_Padres/0142_Augustin_les_Psaumes_parte_03.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-095928.json"
+      ]
+    },
+    {
+      "id": "history-0142_Augustin_les_Psaumes_parte_04",
+      "status": "exact-path-normalization-proven",
+      "path": "03_IA_Historia_Iglesia_Padres/0142_Augustin_les_Psaumes_parte_04.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "history-0162_Augustin_lettres_parte_02",
+      "status": "exact-path-normalization-proven",
+      "path": "03_IA_Historia_Iglesia_Padres/0162_Augustin_lettres_parte_02.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "history-0253_F_de_Sales_Lettres_parte_02",
+      "status": "exact-path-normalization-proven",
+      "path": "03_IA_Historia_Iglesia_Padres/0253_F_de_Sales_Lettres_parte_02.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "history-0332_Denzinger_parte_02",
+      "status": "exact-path-normalization-proven",
+      "path": "03_IA_Historia_Iglesia_Padres/0332_Denzinger_parte_02.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "history-0332_Denzinger_parte_03",
+      "status": "exact-path-normalization-proven",
+      "path": "03_IA_Historia_Iglesia_Padres/0332_Denzinger_parte_03.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "history-0386_Papa_Francisco_Enciclicas",
+      "status": "missing-path-unresolved",
+      "path": "03_IA_Historia_Iglesia_Padres/0386_Papa_Francisco_Enciclicas.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "history-0387_Papa_Francisco_Exhortaciones_Apostolicas",
+      "status": "missing-path-unresolved",
+      "path": "03_IA_Historia_Iglesia_Padres/0387_Papa_Francisco_Exhortaciones_Apostolicas.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "history-0388_Papa_Francisco_Cartas_Apostolicas",
+      "status": "missing-path-unresolved",
+      "path": "03_IA_Historia_Iglesia_Padres/0388_Papa_Francisco_Cartas_Apostolicas.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "history-0389_Papa_Francisco_Mensajes",
+      "status": "missing-path-unresolved",
+      "path": "03_IA_Historia_Iglesia_Padres/0389_Papa_Francisco_Mensajes.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "history-0390_Papa_Leon_XIV_Enciclicas",
+      "status": "missing-path-unresolved",
+      "path": "03_IA_Historia_Iglesia_Padres/0390_Papa_Leon_XIV_Enciclicas.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "history-0391_Papa_Leon_XIV_Exhortaciones_Apostolicas",
+      "status": "missing-path-unresolved",
+      "path": "03_IA_Historia_Iglesia_Padres/0391_Papa_Leon_XIV_Exhortaciones_Apostolicas.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "history-0392_Papa_Leon_XIV_Cartas_Apostolicas",
+      "status": "missing-path-unresolved",
+      "path": "03_IA_Historia_Iglesia_Padres/0392_Papa_Leon_XIV_Cartas_Apostolicas.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "history-0393_Papa_Leon_XIV_Mensajes",
+      "status": "missing-path-unresolved",
+      "path": "03_IA_Historia_Iglesia_Padres/0393_Papa_Leon_XIV_Mensajes.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "liturgy-0094_Augustin_Sermons_parte_02",
+      "status": "exact-path-normalization-proven",
+      "path": "04_IA_Liturgia/0094_Augustin_Sermons_parte_02.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "liturgy-0094_Augustin_Sermons_parte_03",
+      "status": "exact-path-normalization-proven",
+      "path": "04_IA_Liturgia/0094_Augustin_Sermons_parte_03.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "liturgy-0094_Augustin_Sermons_parte_04",
+      "status": "exact-path-normalization-proven",
+      "path": "04_IA_Liturgia/0094_Augustin_Sermons_parte_04.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-095928.json"
+      ]
+    },
+    {
+      "id": "liturgy-0142_Augustin_les_Psaumes_parte_02",
+      "status": "exact-path-normalization-proven",
+      "path": "04_IA_Liturgia/0142_Augustin_les_Psaumes_parte_02.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "liturgy-0142_Augustin_les_Psaumes_parte_03",
+      "status": "exact-path-normalization-proven",
+      "path": "04_IA_Liturgia/0142_Augustin_les_Psaumes_parte_03.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-095928.json"
+      ]
+    },
+    {
+      "id": "liturgy-0142_Augustin_les_Psaumes_parte_04",
+      "status": "exact-path-normalization-proven",
+      "path": "04_IA_Liturgia/0142_Augustin_les_Psaumes_parte_04.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "liturgy-0332_Denzinger_parte_02",
+      "status": "exact-path-normalization-proven",
+      "path": "04_IA_Liturgia/0332_Denzinger_parte_02.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "liturgy-0332_Denzinger_parte_03",
+      "status": "exact-path-normalization-proven",
+      "path": "04_IA_Liturgia/0332_Denzinger_parte_03.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "liturgy-0578_Papa_Francisco_Cartas_Apostolicas",
+      "status": "missing-path-unresolved",
+      "path": "04_IA_Liturgia/0578_Papa_Francisco_Cartas_Apostolicas.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "ortodoxia-0308_Suma_Teologica_II_II_parte_02",
+      "status": "exact-path-normalization-proven",
+      "path": "05_IA_OrtodoxIA/0308_Suma_Teologica_II_II_parte_02.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "ortodoxia-0700_Dignitas_infinita_ES",
+      "status": "exact-path-normalization-proven",
+      "path": "05_IA_OrtodoxIA/0700_Dignitas_infinita_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "ortodoxia-0723_En_busca_de_una_etica_universal_ES",
+      "status": "exact-path-normalization-proven",
+      "path": "05_IA_OrtodoxIA/0723_En_busca_de_una_etica_universal_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "ortodoxia-1100_Persona_humana_ES",
+      "status": "exact-path-content-differs",
+      "path": "05_IA_OrtodoxIA/1100_Persona_humana_ES.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "ortodoxia-1102_Consideraciones_uniones_homosexuales_ES",
+      "status": "exact-path-normalization-proven",
+      "path": "05_IA_OrtodoxIA/1102_Consideraciones_uniones_homosexuales_ES.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "ortodoxia-1122_Chesterton_St_Thomas_Aquinas_EN",
+      "status": "exact-path-normalization-proven",
+      "path": "05_IA_OrtodoxIA/1122_Chesterton_St_Thomas_Aquinas_EN.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "ortodoxia-1203_Robert_Barron_y_Word_on_Fire_ES",
+      "status": "exact-path-content-differs",
+      "path": "05_IA_OrtodoxIA/1203_Robert_Barron_y_Word_on_Fire_ES.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "ortodoxia-1205_Christopher_West_teologia_del_cuerpo_ES",
+      "status": "exact-path-content-differs",
+      "path": "05_IA_OrtodoxIA/1205_Christopher_West_teologia_del_cuerpo_ES.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "ortodoxia-1209_Eve_Tushnet_amistad_vocacion_y_pertenencia_ES",
+      "status": "exact-path-content-differs",
+      "path": "05_IA_OrtodoxIA/1209_Eve_Tushnet_amistad_vocacion_y_pertenencia_ES.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "ortodoxia-1217_Pablo_Blanco_Sarto_fe_razon_y_Benedicto_XVI_ES",
+      "status": "exact-path-content-differs",
+      "path": "05_IA_OrtodoxIA/1217_Pablo_Blanco_Sarto_fe_razon_y_Benedicto_XVI_ES.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "ortodoxia-1220_Javier_Vidal_Quadras_familia_y_vida_cotidiana_ES",
+      "status": "exact-path-content-differs",
+      "path": "05_IA_OrtodoxIA/1220_Javier_Vidal_Quadras_familia_y_vida_cotidiana_ES.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "ortodoxia-1222_de_Irala_Relationships_love_and_sexuality_Filipino_teens_EN",
+      "status": "exact-path-normalization-proven",
+      "path": "05_IA_OrtodoxIA/1222_de_Irala_Relationships_love_and_sexuality_Filipino_teens_EN.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json"
+      ]
+    },
+    {
+      "id": "ortodoxia-1227_Francisco_Ugarte_Corcuera_madurez_perdon_ES",
+      "status": "exact-path-content-differs",
+      "path": "05_IA_OrtodoxIA/1227_Francisco_Ugarte_Corcuera_madurez_perdon_ES.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "ortodoxia-1228_Ronald_Knox_predicacion_y_apologetica_EN",
+      "status": "exact-path-content-differs",
+      "path": "05_IA_OrtodoxIA/1228_Ronald_Knox_predicacion_y_apologetica_EN.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "ortodoxia-1229_Robert_P_George_ley_natural_y_etica_publica_EN",
+      "status": "exact-path-normalization-proven",
+      "path": "05_IA_OrtodoxIA/1229_Robert_P_George_ley_natural_y_etica_publica_EN.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-100650.json"
+      ]
+    },
+    {
+      "id": "ortodoxia-1236_Christopher_Kaczor_etica_y_bioetica_ES",
+      "status": "exact-path-content-differs",
+      "path": "05_IA_OrtodoxIA/1236_Christopher_Kaczor_etica_y_bioetica_ES.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "ortodoxia-1243_Juan_Jose_Perez_Soba_don_promesa_ES",
+      "status": "exact-path-content-differs",
+      "path": "05_IA_OrtodoxIA/1243_Juan_Jose_Perez_Soba_don_promesa_ES.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "ortodoxia-1245_Vicente_Bellver_bioetica_derecho_ES",
+      "status": "exact-path-content-differs",
+      "path": "05_IA_OrtodoxIA/1245_Vicente_Bellver_bioetica_derecho_ES.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "ortodoxia-1246_Ana_Marta_Gonzalez_naturaleza_cultura_ES",
+      "status": "exact-path-content-differs",
+      "path": "05_IA_OrtodoxIA/1246_Ana_Marta_Gonzalez_naturaleza_cultura_ES.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "ortodoxia-1248_Nicolas_Jouve_genetica_y_bioetica_ES",
+      "status": "exact-path-content-differs",
+      "path": "05_IA_OrtodoxIA/1248_Nicolas_Jouve_genetica_y_bioetica_ES.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "ortodoxia-1249_Jose_Maria_Barrio_educacion_libertad_ES",
+      "status": "exact-path-content-differs",
+      "path": "05_IA_OrtodoxIA/1249_Jose_Maria_Barrio_educacion_libertad_ES.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "ortodoxia-1250_Enrique_Colom_bien_comun_y_conciencia_ES",
+      "status": "exact-path-content-differs",
+      "path": "05_IA_OrtodoxIA/1250_Enrique_Colom_bien_comun_y_conciencia_ES.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "ortodoxia-1252_Ryan_T_Anderson_libertad_justicia_bien_comun_EN",
+      "status": "exact-path-content-differs",
+      "path": "05_IA_OrtodoxIA/1252_Ryan_T_Anderson_libertad_justicia_bien_comun_EN.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "ortodoxia-1253_Sherif_Girgis_matrimonio_y_razonamiento_EN",
+      "status": "exact-path-normalization-proven",
+      "path": "05_IA_OrtodoxIA/1253_Sherif_Girgis_matrimonio_y_razonamiento_EN.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-100650.json"
+      ]
+    },
+    {
+      "id": "vida-santos-0002-fuentes-y-alternativas",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/0002_FUENTES_Y_ALTERNATIVAS.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1038-san-jose",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1038_San_Jose.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1040-san-pedro",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1040_San_Pedro.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1041-san-pablo",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1041_San_Pablo.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1042-san-juan-evangelista",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1042_San_Juan_Evangelista.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1043-santiago-el-mayor",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1043_Santiago_el_Mayor.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1044-santiago-el-menor",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1044_Santiago_el_Menor.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1045-san-andres",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1045_San_Andres.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1046-santo-tomas-apostol",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1046_Santo_Tomas_Apostol.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1047-san-felipe-apostol",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1047_San_Felipe_Apostol.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1048-san-bartolome",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1048_San_Bartolome.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1049-san-mateo",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1049_San_Mateo.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1050-san-marcos-evangelista",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1050_San_Marcos_Evangelista.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1051-san-lucas-evangelista",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1051_San_Lucas_Evangelista.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1052-santa-maria-magdalena",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1052_Santa_Maria_Magdalena.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1053-santa-marta-de-betania",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1053_Santa_Marta_de_Betania.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1054-san-esteban-protomartir",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1054_San_Esteban_Protomartir.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1055-san-bernabe",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1055_San_Bernabe.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1057-san-clemente-romano",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1057_San_Clemente_Romano.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1058-san-policarpo-de-esmirna",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1058_San_Policarpo_de_Esmirna.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1059-san-papias-de-hierapolis",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1059_San_Papias_de_Hierapolis.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1060-san-justino-martir",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1060_San_Justino_Martir.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1061-san-ireneo-de-lyon",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1061_San_Ireneo_de_Lyon.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1062-santa-perpetua",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1062_Santa_Perpetua.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1063-santa-felicidad",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1063_Santa_Felicidad.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1065-san-lorenzo",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1065_San_Lorenzo.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1066-san-sebastian",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1066_San_Sebastian.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1067-santa-ines",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1067_Santa_Ines.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1068-santa-cecilia",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1068_Santa_Cecilia.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1069-san-antonio-abad",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1069_San_Antonio_Abad.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1070-san-pacomio",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1070_San_Pacomio.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-095928.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1071-san-atanasio-de-alejandria",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1071_San_Atanasio_de_Alejandria.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1072-san-hilario-de-poitiers",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1072_San_Hilario_de_Poitiers.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1074-san-basilio-magno",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1074_San_Basilio_Magno.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1075-san-gregorio-nacianceno",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1075_San_Gregorio_Nacianceno.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1076-san-gregorio-de-nisa",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1076_San_Gregorio_de_Nisa.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1078-san-jeronimo",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1078_San_Jeronimo.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1079-san-juan-crisostomo",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1079_San_Juan_Crisostomo.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1080-san-martin-de-tours",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1080_San_Martin_de_Tours.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1081-san-agustin-de-hipona",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1081_San_Agustin_de_Hipona.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1082-santa-monica",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1082_Santa_Monica.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1083-san-cirilo-de-alejandria",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1083_San_Cirilo_de_Alejandria.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1085-san-leon-magno",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1085_San_Leon_Magno.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1086-san-patricio",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1086_San_Patricio.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1088-santa-escolastica",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1088_Santa_Escolastica.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1089-san-gregorio-magno",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1089_San_Gregorio_Magno.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1093-san-beda-el-venerable",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1093_San_Beda_el_Venerable.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1095-san-juan-damasceno",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1095_San_Juan_Damasceno.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1096-san-cirilo",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1096_San_Cirilo.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1097-san-metodio",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1097_San_Metodio.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1099-san-anselmo-de-canterbury",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1099_San_Anselmo_de_Canterbury.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1100-san-bernardo-de-claraval",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1100_San_Bernardo_de_Claraval.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1101-san-norberto",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1101_San_Norberto.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1102-san-francisco-de-asis",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1102_San_Francisco_de_Asis.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1103-santa-clara-de-asis",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1103_Santa_Clara_de_Asis.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1104-santo-domingo-de-guzman",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1104_Santo_Domingo_de_Guzman.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1105-san-antonio-de-padua",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1105_San_Antonio_de_Padua.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1106-san-alberto-magno",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1106_San_Alberto_Magno.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1107-santo-tomas-de-aquino",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1107_Santo_Tomas_de_Aquino.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1108-san-buenaventura",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1108_San_Buenaventura.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1110-santa-isabel-de-hungria",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1110_Santa_Isabel_de_Hungria.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1111-san-raimundo-de-penafort",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1111_San_Raimundo_de_Penafort.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1112-santa-gertrudis-la-grande",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1112_Santa_Gertrudis_la_Grande.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1113-santa-brigida-de-suecia",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1113_Santa_Brigida_de_Suecia.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1114-santa-catalina-de-siena",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1114_Santa_Catalina_de_Siena.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1115-san-vicente-ferrer",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1115_San_Vicente_Ferrer.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1116-san-bernardino-de-siena",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1116_San_Bernardino_de_Siena.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1117-santa-juana-de-arco",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1117_Santa_Juana_de_Arco.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1119-san-ignacio-de-loyola",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1119_San_Ignacio_de_Loyola.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1120-san-francisco-javier",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1120_San_Francisco_Javier.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1122-san-francisco-de-borja",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1122_San_Francisco_de_Borja.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1123-santa-teresa-de-jesus",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1123_Santa_Teresa_de_Jesus.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1124-san-juan-de-la-cruz",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1124_San_Juan_de_la_Cruz.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1125-san-felipe-neri",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1125_San_Felipe_Neri.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1126-san-carlos-borromeo",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1126_San_Carlos_Borromeo.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1128-san-juan-de-avila",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1128_San_Juan_de_Avila.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1130-san-juan-de-dios",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1130_San_Juan_de_Dios.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-095928.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1131-santo-tomas-moro",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1131_Santo_Tomas_Moro.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1133-san-luis-gonzaga",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1133_San_Luis_Gonzaga.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1134-san-roberto-belarmino",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1134_San_Roberto_Belarmino.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1135-san-camilo-de-lelis",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1135_San_Camilo_de_Lelis.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1136-san-jose-de-calasanz",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1136_San_Jose_de_Calasanz.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1137-san-vicente-de-paul",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1137_San_Vicente_de_Paul.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1138-santa-luisa-de-marillac",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1138_Santa_Luisa_de_Marillac.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1139-san-francisco-de-sales",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1139_San_Francisco_de_Sales.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1140-santa-juana-francisca-de-chantal",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1140_Santa_Juana_Francisca_de_Chantal.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1141-san-martin-de-porres",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1141_San_Martin_de_Porres.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1142-santa-rosa-de-lima",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1142_Santa_Rosa_de_Lima.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1143-san-pedro-claver",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1143_San_Pedro_Claver.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1145-san-pablo-de-la-cruz",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1145_San_Pablo_de_la_Cruz.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1146-san-alfonso-maria-de-ligorio",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1146_San_Alfonso_Maria_de_Ligorio.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1147-san-leonardo-de-porto-maurizio",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1147_San_Leonardo_de_Porto_Maurizio.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1148-san-juan-bautista-de-la-salle",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1148_San_Juan_Bautista_de_La_Salle.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1149-san-benito-jose-labre",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1149_San_Benito_Jose_Labre.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1151-san-juan-maria-vianney",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1151_San_Juan_Maria_Vianney.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1152-san-marcelino-champagnat",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1152_San_Marcelino_Champagnat.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1153-san-pedro-chanel",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1153_San_Pedro_Chanel.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1154-san-antonio-maria-claret",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1154_San_Antonio_Maria_Claret.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1155-san-juan-bosco",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1155_San_Juan_Bosco.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1156-santo-domingo-savio",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1156_Santo_Domingo_Savio.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1158-santa-bernardita-soubirous",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1158_Santa_Bernardita_Soubirous.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1159-santa-teresa-de-lisieux",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1159_Santa_Teresa_de_Lisieux.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1160-santa-gemma-galgani",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1160_Santa_Gemma_Galgani.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1161-san-pio-x",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1161_San_Pio_X.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1162-san-damian-de-molokai",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1162_San_Damian_de_Molokai.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-024228.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1164-san-carlos-de-foucauld",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1164_San_Carlos_de_Foucauld.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1165-santa-teresa-de-los-andes",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1165_Santa_Teresa_de_los_Andes.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1166-santa-teresa-benedicta-de-la-cruz",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1166_Santa_Teresa_Benedicta_de_la_Cruz.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1167-san-maximiliano-kolbe",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1167_San_Maximiliano_Kolbe.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1169-san-josemaria-escriva",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1169_San_Josemaria_Escriva.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1170-san-pio-de-pietrelcina",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1170_San_Pio_de_Pietrelcina.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1171-san-juan-xxiii",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1171_San_Juan_XXIII.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1175-santa-faustina-kowalska",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1175_Santa_Faustina_Kowalska.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1176-santa-teresa-de-calcuta",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1176_Santa_Teresa_de_Calcuta.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1177-santa-gianna-beretta-molla",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1177_Santa_Gianna_Beretta_Molla.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1179-san-cristobal-magallanes",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1179_San_Cristobal_Magallanes.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1183-santa-maravillas-de-jesus",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1183_Santa_Maravillas_de_Jesus.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1185-san-carlo-acutis",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1185_San_Carlo_Acutis.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1187-santa-josefina-bakhita",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1187_Santa_Josefina_Bakhita.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1188-pedro-ballester",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1188_Pedro_Ballester.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1189-chiara-luce-badano",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1189_Chiara_Luce_Badano.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1190-matteo-farina",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1190_Matteo_Farina.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1193-chiara-corbella-petrillo",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1193_Chiara_Corbella_Petrillo.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1194-guido-schaffer",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1194_Guido_Schaffer.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1196-santa-scorese",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1196_Santa_Scorese.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json",
+        "markdown-audit-2026-09-04-structure/markdown-normalization-apply-20260904-015059.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1198-manuel-fodera",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1198_Manuel_Fodera.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-1200-toni-zweifel",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/1200_Toni_Zweifel.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-pedro-ballester-audiolibro-04-3-estrenando-vocacin-pedro-ballester-nunca-he-sido-tan-feliz",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Pedro Ballester - Audiolibro/04_3_Estrenando_vocacin_Pedro_Ballester_Nunca_he_sido_tan_feliz.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-pedro-ballester-audiolibro-05-4-la-cruz-pedro-ballester-nunca-he-sido-tan-feliz",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Pedro Ballester - Audiolibro/05_4_La_Cruz_Pedro_Ballester_Nunca_he_sido_tan_feliz.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1042-san-juan-evangelista",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1042_San_Juan_Evangelista.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1043-santiago-el-mayor",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1043_Santiago_el_Mayor.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1044-santiago-el-menor",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1044_Santiago_el_Menor.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1045-san-andres",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1045_San_Andres.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1046-santo-tomas-apostol",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1046_Santo_Tomas_Apostol.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1047-san-felipe-apostol",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1047_San_Felipe_Apostol.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1049-san-mateo",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1049_San_Mateo.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1050-san-marcos-evangelista",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1050_San_Marcos_Evangelista.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1051-san-lucas-evangelista",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1051_San_Lucas_Evangelista.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1052-santa-maria-magdalena",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1052_Santa_Maria_Magdalena.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1053-santa-marta-de-betania",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1053_Santa_Marta_de_Betania.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1054-san-esteban-protomartir",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1054_San_Esteban_Protomartir.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1057-san-clemente-romano",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1057_San_Clemente_Romano.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1058-san-policarpo-de-esmirna",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1058_San_Policarpo_de_Esmirna.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1062-santa-perpetua",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1062_Santa_Perpetua.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1063-santa-felicidad",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1063_Santa_Felicidad.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1065-san-lorenzo",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1065_San_Lorenzo.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1066-san-sebastian",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1066_San_Sebastian.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1067-santa-ines",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1067_Santa_Ines.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1076-san-gregorio-de-nisa",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1076_San_Gregorio_de_Nisa.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1083-san-cirilo-de-alejandria",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1083_San_Cirilo_de_Alejandria.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1085-san-leon-magno",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1085_San_Leon_Magno.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1088-santa-escolastica",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1088_Santa_Escolastica.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1093-san-beda-el-venerable",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1093_San_Beda_el_Venerable.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1095-san-juan-damasceno",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1095_San_Juan_Damasceno.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1096-san-cirilo",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1096_San_Cirilo.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1097-san-metodio",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1097_San_Metodio.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1103-santa-clara-de-asis",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1103_Santa_Clara_de_Asis.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1105-san-antonio-de-padua",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1105_San_Antonio_de_Padua.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1111-san-raimundo-de-penafort",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1111_San_Raimundo_de_Penafort.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1116-san-bernardino-de-siena",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1116_San_Bernardino_de_Siena.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1124-san-juan-de-la-cruz",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1124_San_Juan_de_la_Cruz.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1125-san-felipe-neri",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1125_San_Felipe_Neri.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1128-san-juan-de-avila",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1128_San_Juan_de_Avila.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1130-san-juan-de-dios",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1130_San_Juan_de_Dios.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1139-san-francisco-de-sales",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1139_San_Francisco_de_Sales.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1141-san-martin-de-porres",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1141_San_Martin_de_Porres.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1146-san-alfonso-maria-de-ligorio",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1146_San_Alfonso_Maria_de_Ligorio.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1154-san-antonio-maria-claret",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1154_San_Antonio_Maria_Claret.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1155-san-juan-bosco",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1155_San_Juan_Bosco.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1158-santa-bernardita-soubirous",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1158_Santa_Bernardita_Soubirous.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1165-santa-teresa-de-los-andes",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1165_Santa_Teresa_de_los_Andes.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1166-santa-teresa-benedicta-de-la-cruz",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1166_Santa_Teresa_Benedicta_de_la_Cruz.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1167-san-maximiliano-kolbe",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1167_San_Maximiliano_Kolbe.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1169-san-josemaria-escriva",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1169_San_Josemaria_Escriva.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1170-san-pio-de-pietrelcina",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1170_San_Pio_de_Pietrelcina.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1171-san-juan-xxiii",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1171_San_Juan_XXIII.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1175-santa-faustina-kowalska",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1175_Santa_Faustina_Kowalska.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1176-santa-teresa-de-calcuta",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1176_Santa_Teresa_de_Calcuta.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1177-santa-gianna-beretta-molla",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1177_Santa_Gianna_Beretta_Molla.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-023213.json",
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1183-santa-maravillas-de-jesus",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1183_Santa_Maravillas_de_Jesus.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "vida-santos-semblanzas-mercaba-1187-santa-josefina-bakhita",
+      "status": "exact-path-normalization-proven",
+      "path": "11_IA_Vida_de_los_Santos/Semblanzas Mercaba/1187_Santa_Josefina_Bakhita.md",
+      "reason": "Normalization proven; preserving chunks and offsets until state migration is verified",
+      "normalizationReports": [
+        "output/markdown-normalization/markdown-normalization-apply-20260822-110031.json"
+      ]
+    },
+    {
+      "id": "meditacion-diaria-003_10_Minutos_con_Jesus_P01",
+      "status": "exact-path-content-differs",
+      "path": "12_IA_Meditacion_DiarIA/003_10_Minutos_con_Jesus_P01.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "meditacion-diaria-003_10_Minutos_con_Jesus_P03",
+      "status": "exact-path-content-differs",
+      "path": "12_IA_Meditacion_DiarIA/003_10_Minutos_con_Jesus_P03.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "meditacion-diaria-003_10_Minutos_con_Jesus_P04",
+      "status": "exact-path-content-differs",
+      "path": "12_IA_Meditacion_DiarIA/003_10_Minutos_con_Jesus_P04.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "meditacion-diaria-003_10_Minutos_con_Jesus_P05",
+      "status": "exact-path-content-differs",
+      "path": "12_IA_Meditacion_DiarIA/003_10_Minutos_con_Jesus_P05.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    },
+    {
+      "id": "meditacion-diaria-003_10_Minutos_con_Jesus_P10",
+      "status": "exact-path-content-differs",
+      "path": "12_IA_Meditacion_DiarIA/003_10_Minutos_con_Jesus_P10.md",
+      "reason": "Correspondence not proven",
+      "normalizationReports": []
+    }
+  ]
+}

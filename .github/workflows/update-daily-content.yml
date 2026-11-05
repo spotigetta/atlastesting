@@ -78,7 +78,10 @@ jobs:
         shell: bash
         run: |
           if [ -f tools/build-gospel-meditations.mjs ]; then node tools/build-gospel-meditations.mjs; fi
-      - name: Validar la PWA antes de guardar
+      - name: Actualizar horas y textos de la misa
+        if: steps.madrid.outputs.run == 'true'
+        run: node tools/update-liturgy.mjs --days=4
+      - name: Validar los datos y la PWA antes de guardar
         if: steps.madrid.outputs.run == 'true'
         run: npm run build
       - name: Publicar solo si hay cambios

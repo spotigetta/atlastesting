@@ -1,0 +1,29 @@
+{
+  "documentId": "history-0176_Augustin_de_la_discipline_chretienne",
+  "status": "approved",
+  "targetHash": "e14338fc3db788fe7f949d45e67287dae05f47f38647683463a178c5e0711996",
+  "sourceHash": "18f76541ef615b67761a6ef5fecbab2af04040e6bfb1d582482f198e8eeff775",
+  "sourceHashAtReview": "a40bf0c0853e1d63a92721e97070020010e843e011bea8b2e6da8cd2f7c31fc3",
+  "reviewer": "/root/translation",
+  "translator": "/root/quality",
+  "scope": "entire catalogued payload",
+  "reviewedAt": "2026-11-05T21:19:14.000Z",
+  "humanReviewed": false,
+  "method": "ai-editorial",
+  "notes": [
+    "Revisor distinto del traductor leyó y cotejó íntegros los catorce capítulos y los dieciséis apartados, incluidas las notas y la procedencia.",
+    "Se corrigió en V.5 la interpretación excesiva de tout humain como carnal: queda meramente humano.",
+    "La expresión francesa Brisez la lune et faites fortune se traduce literalmente y se señala su dificultad textual sin inventar una restitución.",
+    "Se conserva la referencia Jn 10,3 que figura en la fuente, con advertencia editorial visible sobre su discordancia con la cita.",
+    "En XIII.14 se traduce contextualmente déchoit à l’iniquité como mengua en él la iniquidad, respetando la oposición explícita del párrafo entre lo que disminuye y lo que progresa.",
+    "Las notas se convierten en pies enlazables; se unen las frases partidas por paginación. No se han omitido argumentos, citas ni apartados.",
+    "Traducción desde la versión francesa, no cotejada con latín; revisión editorial con IA, sin revisión humana ni carácter oficial."
+  ],
+  "sourceTextHash": "ee161c582c2cc7ff3ce3ba99723b5e56aedc14b5fd3aa3436487e44b2fb6517e",
+  "sourceNormalization": {
+    "method": "Exact body comparison after stripping leading YAML and collapsing whitespace; exact TOC and chunk indexes unchanged",
+    "snapshotFile": "data/editions/checkpoints/source-a3d2d6efcbb4edb15dc4.json",
+    "bodyFingerprint": "582835c47fadca2bcb0faace9b3d8d67737ad4876b8afab0234d439db3eb92cc",
+    "checkedAt": "2026-11-05T21:22:52.046Z"
+  }
+}

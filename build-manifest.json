@@ -1,8 +1,8 @@
 {
   "app": "ATLAS",
-  "version": "1.0.14",
-  "buildId": "6.4.23-home-actions-art",
-  "generatedAt": "2026-09-07T09:00:00.000Z",
+  "version": "1.1.0",
+  "buildId": "editorial-editions-discovery-20261105",
+  "generatedAt": "2026-11-05T21:23:49.000Z",
   "basePath": "./",
   "catalog": "data/catalog.json"
 }

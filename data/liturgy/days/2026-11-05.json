@@ -1,0 +1,110 @@
+{
+  "date": "2026-11-05",
+  "updatedAt": "2026-11-05T21:15:50.979Z",
+  "sections": [
+    {
+      "id": "oficio",
+      "title": "Oficio de lectura",
+      "category": "horas",
+      "dateScope": "2026-11-05",
+      "object": "data/liturgy/objects/4e5f0cfb028c60e2bfe5f65a8a9697aae0e183455ddf559f55bb25d04e16db96.json",
+      "sha256": "4e5f0cfb028c60e2bfe5f65a8a9697aae0e183455ddf559f55bb25d04e16db96",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=ufficio_delle_letture",
+      "words": 2123
+    },
+    {
+      "id": "laudes",
+      "title": "Laudes",
+      "category": "horas",
+      "dateScope": "2026-11-05",
+      "object": "data/liturgy/objects/5f83371904358691a47c080ba2e650252e3296ff34b157701df4415fd8acd8e1.json",
+      "sha256": "5f83371904358691a47c080ba2e650252e3296ff34b157701df4415fd8acd8e1",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=lodi",
+      "words": 1503
+    },
+    {
+      "id": "intermedia",
+      "title": "Hora intermedia",
+      "category": "horas",
+      "dateScope": "2026-11-05",
+      "object": "data/liturgy/objects/6c8e76ca872f46a072783f82cbbc8e32b3c4baa06d360a51bd5aab0895811939.json",
+      "sha256": "6c8e76ca872f46a072783f82cbbc8e32b3c4baa06d360a51bd5aab0895811939",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=ora_media",
+      "words": 1070
+    },
+    {
+      "id": "visperas",
+      "title": "Vísperas",
+      "category": "horas",
+      "dateScope": "2026-11-05",
+      "object": "data/liturgy/objects/99fa054d8ffe1e628114e1b950ea3bd1255b31470bfdbedbfaa4468f4c7003d0.json",
+      "sha256": "99fa054d8ffe1e628114e1b950ea3bd1255b31470bfdbedbfaa4468f4c7003d0",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=vespri",
+      "words": 1274
+    },
+    {
+      "id": "completas",
+      "title": "Completas",
+      "category": "horas",
+      "dateScope": "2026-11-05",
+      "object": "data/liturgy/objects/d603dff6828e6da88c9ea8b985a983e4bb481beb68e2129ffa778fd3c1d38a53.json",
+      "sha256": "d603dff6828e6da88c9ea8b985a983e4bb481beb68e2129ffa778fd3c1d38a53",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=compieta",
+      "words": 797
+    },
+    {
+      "id": "entrada",
+      "title": "Antífona de entrada y colecta",
+      "category": "misa",
+      "dateScope": "2026-11-05",
+      "object": "data/liturgy/objects/ae0c75b69a03f6a0ceea6b4edd628351c987b4905a4840170109d08199ec9ef2.json",
+      "sha256": "ae0c75b69a03f6a0ceea6b4edd628351c987b4905a4840170109d08199ec9ef2",
+      "sourceUrl": "https://www.ibreviary.com/m2/letture.php?s=antifona_e_colletta",
+      "words": 58
+    },
+    {
+      "id": "lecturas",
+      "title": "Lecturas de la misa",
+      "category": "misa",
+      "dateScope": "2026-11-05",
+      "object": "data/liturgy/objects/11b00f9c1f9f78e5d5981d52cfe4fceb465c2769f21b8935d6d7ab8fc5eb05e6.json",
+      "sha256": "11b00f9c1f9f78e5d5981d52cfe4fceb465c2769f21b8935d6d7ab8fc5eb05e6",
+      "sourceUrl": "https://www.ibreviary.com/m2/letture.php?s=letture",
+      "words": 502
+    },
+    {
+      "id": "ofrendas",
+      "title": "Oración sobre las ofrendas",
+      "category": "misa",
+      "dateScope": "2026-11-05",
+      "object": "data/liturgy/objects/ff3ff1b3973dc6778e82fa0b6c2f3e652fcb6336f1cb016a7f10192dd4f829e0.json",
+      "sha256": "ff3ff1b3973dc6778e82fa0b6c2f3e652fcb6336f1cb016a7f10192dd4f829e0",
+      "sourceUrl": "https://www.ibreviary.com/m2/letture.php?s=sulle_offerte",
+      "words": 26
+    },
+    {
+      "id": "comunion",
+      "title": "Comunión y oración final",
+      "category": "misa",
+      "dateScope": "2026-11-05",
+      "object": "data/liturgy/objects/aaa5020dd4061140b45b928d424f2a71e472fdf675c8848af554a28aed6d9a0e.json",
+      "sha256": "aaa5020dd4061140b45b928d424f2a71e472fdf675c8848af554a28aed6d9a0e",
+      "sourceUrl": "https://www.ibreviary.com/m2/letture.php?s=antifona_ed_orazione_dopo_comunione",
+      "words": 62
+    }
+  ],
+  "errors": [
+    {
+      "id": "prefacio-dia",
+      "title": "Prefacio del día",
+      "error": "El proveedor no ofrece texto completo para esta sección (vacía o menú)"
+    }
+  ],
+  "sourceCelebration": "Jueves, XXXI semana del Tiempo Ordinario (Año II) 3ª semana",
+  "confirmedProviderDate": "2026-11-05",
+  "calendarNotice": "La CEE permite la feria o la memoria libre de santa Ángela de la Cruz; hay propios diocesanos, entre ellos Toledo (calendario CEE, p. PDF 343).",
+  "calendarStatus": "unverified",
+  "calendarReason": "La CEE permite la feria o la memoria libre de santa Ángela de la Cruz; hay propios diocesanos, entre ellos Toledo (calendario CEE, p. PDF 343).",
+  "hoursComplete": true,
+  "complete": false
+}

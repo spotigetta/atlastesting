@@ -86,6 +86,7 @@
   }
 
   function topicsView(library) {
+    if (library.id === "clasicos" && root.discoveryLibrary) return root.discoveryLibrary.renderLibraryTopics(library);
     return `<div class="section-head"><div><h2>Mapa temático</h2><p>Áreas, fuentes principales y complementarias consignadas en el índice.</p></div></div><div class="topic-list">${library.topics.map(topic => `<details class="topic-card"><summary><h3>${esc(topic.name)}</h3><span>＋</span></summary><div class="topic-body"><div class="source-block"><b>Fuentes principales</b><p>${esc(topic.primary)}</p></div><div class="source-block"><b>Complementarias</b><p>${esc(topic.complementary)}</p></div><div class="topic-actions"><button class="secondary-button" data-save-collection="${esc(topic.id)}">Guardar</button>${notebookButton(library, `Consultar en ${library.short}`)}</div></div></details>`).join("")}</div>`;
   }
 

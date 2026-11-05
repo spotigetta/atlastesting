@@ -1,0 +1,18 @@
+{
+  "evaluationType": "Local capability check, not a quality benchmark",
+  "model": "Xenova/opus-mt-en-es",
+  "runtime": "@huggingface/transformers 3.7.2, CPU, int8, offline",
+  "availableLanguages": {"source": "en", "target": "es"},
+  "remoteModelsEnabled": false,
+  "paidApiUsed": false,
+  "loadSeconds": 1.324,
+  "inferenceSeconds": 1.29,
+  "input": "For Thou hast made us for Thyself, and our heart is restless, until it repose in Thee. The grace of Christ does not abolish free will, but heals and strengthens it.",
+  "output": "Porque Tú nos has hecho para Ti mismo, y nuestro corazón está inquieto, hasta que se reposó en Ti. La gracia de Cristo no abolió el libre albedrío, sino que lo sana y lo fortalece.",
+  "observedErrors": [
+    {"source": "until it repose in Thee", "output": "hasta que se reposó en Ti", "issue": "Changes a prospective subjunctive clause into past indicative; unidiomatic use of reposarse.", "editorialRendering": "hasta que descanse en ti"},
+    {"source": "does not abolish", "output": "no abolió", "issue": "Changes present doctrinal assertion to past tense.", "editorialRendering": "no suprime"}
+  ],
+  "decision": "Use only for clearly labelled resumable drafts of English sources. Never infer specialist, official or human review from model output. French and Latin sources are not supported by this model.",
+  "throughputCaveat": "A single short input cannot predict corpus throughput. It is evidence of runtime availability and concrete linguistic errors, not a reliable total-duration estimate."
+}

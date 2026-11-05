@@ -1,0 +1,54 @@
+{
+  "generatedAt": "2026-11-05T21:34:09.020Z",
+  "revision": "2244a5ee57e37fa995f96e2b27c2fe521ba12cf5b09feb37f1ebe10bb2378eb2",
+  "revisionVerified": true,
+  "editions": 5,
+  "rows": [
+    {
+      "documentId": "history-0166_Regle_de_Saint_Augustin_pour_les_serviteurs_de_Dieu",
+      "status": "reviewed",
+      "sourceHashVerified": true,
+      "targetHashVerified": true,
+      "chunks": 1,
+      "outputLanguage": "es",
+      "errors": []
+    },
+    {
+      "documentId": "history-0176_Augustin_de_la_discipline_chretienne",
+      "status": "reviewed",
+      "sourceHashVerified": true,
+      "targetHashVerified": true,
+      "chunks": 1,
+      "outputLanguage": "es",
+      "errors": []
+    },
+    {
+      "documentId": "history-0178_Augustin_de_l_utilite_du_jeune",
+      "status": "reviewed",
+      "sourceHashVerified": true,
+      "targetHashVerified": true,
+      "chunks": 1,
+      "outputLanguage": "es",
+      "errors": []
+    },
+    {
+      "documentId": "vida-santos-1191-darwin-ramos",
+      "status": "reviewed",
+      "sourceHashVerified": true,
+      "targetHashVerified": true,
+      "chunks": 1,
+      "outputLanguage": "es",
+      "errors": []
+    },
+    {
+      "documentId": "vida-santos-1192-clare-crockett",
+      "status": "reviewed",
+      "sourceHashVerified": true,
+      "targetHashVerified": true,
+      "chunks": 1,
+      "outputLanguage": "es",
+      "errors": []
+    }
+  ],
+  "errors": []
+}

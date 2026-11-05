@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: 22
       - name: Construir y validar
-        run: npm run build
+        run: npm test && npm run build
       - name: Preparar la raíz pública
         shell: bash
         run: |

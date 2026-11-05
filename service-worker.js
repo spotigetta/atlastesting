@@ -1,9 +1,32 @@
-const BUILD_VERSION = "1.0.14-release";
-const SHELL_CACHE = `atlas-shell-${BUILD_VERSION}`;
+const BUILD_VERSION = "1.1.0-release";
+const SHELL_CACHE = `atlas-shell-${BUILD_VERSION}-reading-liturgy-20261105`;
 const DATA_CACHE = `atlas-data-${BUILD_VERSION}`;
 const DOCUMENT_CACHE = `atlas-documents-${BUILD_VERSION}`;
 
 const SHELL = [
+  "./styles/bible-fixes.css",
+  "./styles/faq.css",
+  "./styles/home-additions.css",
+  "./styles/home-intents-varied.css",
+  "./styles/today-cards.css",
+  "./styles/update-fix.css",
+  "./styles/brand-refresh.css",
+  "./styles/polish-1.0.css",
+  "./styles/opus-simple.css",
+  "./styles/opus-prep-locked.css",
+  "./styles/prep-editorial.css",
+  "./styles/prayer-composer-simple.css",
+  "./styles/author-works.css",
+  "./styles/learning-varied.css",
+  "./styles/doctrine-focus.css",
+  "./styles/polish-library.css",
+  "./styles/polish-search-spiritual.css",
+  "./styles/search-advanced.css",
+  "./styles/topic-drill.css",
+  "./styles/spiritual-reframed.css",
+  "./styles/mobile-more-distinct.css",
+  "./styles/contrast-onboarding.css",
+  "./styles/ui-contrast-final.css",
   "./", "./index.html", "./offline.html", "./manifest.webmanifest",
   "./styles/tokens.css", "./styles/base.css", "./styles/components.css",
   "./styles/formarse-format.css",
@@ -14,9 +37,13 @@ const SHELL = [
   "./scripts/search.js", "./scripts/repository.js", "./scripts/share.js", "./scripts/statistics.js",
   "./scripts/library.js", "./scripts/reader.js", "./scripts/extras.js",
   "./scripts/spiritual.js",
+  "./scripts/liturgy.js", "./styles/liturgy.css",
+  "./scripts/discovery-library.js", "./styles/discovery-library.css", "./data/discovery-library.json", "./data/editions/manifest.json", "./data/liturgy/manifest.json",
+  "./scripts/discovery-shorts.js",
   "./scripts/examen.js",
   "./scripts/compare.js", "./scripts/feed-mixer.js", "./scripts/reels.js",
   "./scripts/router.js", "./scripts/bible.js", "./scripts/salvation.js", "./scripts/architecture.js", "./scripts/app.js",
+  "./scripts/architecture-polish.js", "./scripts/learning-rotate.js", "./scripts/opus-simple.js", "./scripts/learning-reorder.js",
   "./data/ten-minutes-daily.json", "./data/gospel-meditations.json", "./data/opusdei-meditations.json",
   "./data/bible/manifest.json", "./data/bible/topics.json", "./data/bible-jerusalem/manifest.json",
   "./assets/images/atlas-public-qr.svg", "./assets/images/atlas-share-card.png", "./assets/images/atlas-library-fallback.svg",
@@ -54,19 +81,43 @@ self.addEventListener("fetch", event => {
   const pathname = url.pathname;
 
   if (event.request.mode === "navigate") {
-    event.respondWith(timeoutFetch(event.request).catch(async () =>
+    event.respondWith(timeoutFetch(event.request).then(response => {
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return response;
+    }).catch(async () =>
       await caches.match("./index.html") || await caches.match("./offline.html")
     ));
     return;
   }
 
-  if (/\/data\/(?:documents|search)\//.test(pathname) || /\/data\/(?:saints-moods|saints-shorts|saints-routes|saints-timelines|spiritual-guides|songbook|josemaria-experiences|exam-guides|examen|quotes|preguntas-frecuentes)\.json$/.test(pathname) || /\/data\/salvation-history\.json$/.test(pathname) || /\/data\/bible(?:-jerusalem)?\/(?:books\/|search-index\.json\.gz$)/.test(pathname) || /\/content\/(?:opusdei-meditations|salvation)\//.test(pathname)) {
+  if (/\/data\/liturgy\//.test(pathname) || /\/data\/(?:editions\/manifest|discovery-library)\.json$/.test(pathname)) {
+    event.respondWith(caches.open(DATA_CACHE).then(async cache => {
+      try {
+        const response = await timeoutFetch(event.request);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        await cache.put(event.request, response.clone());
+        return response;
+      } catch {
+        return await cache.match(event.request) || Response.error();
+      }
+    }));
+    return;
+  }
+
+  if (/\/data\/(?:documents|search|editions)\//.test(pathname) || /\/data\/(?:saints-moods|saints-shorts|saints-routes|saints-timelines|spiritual-guides|songbook|josemaria-experiences|exam-guides|examen|quotes|preguntas-frecuentes)\.json$/.test(pathname) || /\/data\/salvation-history\.json$/.test(pathname) || /\/data\/bible(?:-jerusalem)?\/(?:books\/|search-index\.json\.gz$)/.test(pathname) || /\/content\/(?:opusdei-meditations|salvation)\//.test(pathname)) {
     event.respondWith(caches.open(DOCUMENT_CACHE).then(async cache => {
       const cached = await cache.match(event.request);
-      if (cached) return cached;
-      const response = await fetch(event.request);
-      if (response.ok) cache.put(event.request, response.clone());
-      return response;
+      const fresh = event.request.cache === "no-store" || /no-cache|no-store/.test(event.request.headers.get("cache-control") || "");
+      if (cached && !fresh) return cached;
+      try {
+        const response = await timeoutFetch(event.request);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        await cache.put(event.request, response.clone());
+        return response;
+      } catch (error) {
+        if (cached) return cached;
+        throw error;
+      }
     }));
     return;
   }
@@ -75,7 +126,8 @@ self.addEventListener("fetch", event => {
     event.respondWith(caches.open(DATA_CACHE).then(async cache => {
       try {
         const response = await timeoutFetch(event.request);
-        if (response.ok) cache.put(event.request, response.clone());
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        await cache.put(event.request, response.clone());
         return response;
       } catch {
         return await cache.match(event.request) || Response.error();
@@ -88,7 +140,8 @@ self.addEventListener("fetch", event => {
     event.respondWith(caches.open(SHELL_CACHE).then(async cache => {
       try {
         const response = await timeoutFetch(event.request, 6000);
-        if (response.ok) cache.put(event.request, response.clone());
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+        await cache.put(event.request, response.clone());
         return response;
       } catch {
         return await cache.match(event.request) || Response.error();

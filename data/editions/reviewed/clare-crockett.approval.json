@@ -1,0 +1,27 @@
+{
+  "documentId": "vida-santos-1192-clare-crockett",
+  "status": "approved",
+  "targetHash": "5b8e73b350897507caa630f2d0e0ffa90d3c74232b2476bf620d5c77917869ac",
+  "sourceHash": "d4686692af7d4688dd071e6122354a6a69a4abcbd8b4e93c38b54744a624534c",
+  "sourceHashAtReview": "906092276f9db65ebf36ed3576933a5d85f4689907618813f01b0111abc869c3",
+  "reviewer": "/root",
+  "translator": "/root/translation",
+  "scope": "entire catalogued payload",
+  "reviewedAt": "2026-11-05T21:19:14.000Z",
+  "humanReviewed": false,
+  "method": "ai-editorial",
+  "notes": [
+    "Revisor independiente cotejó íntegros el original inglés catalogado y la traducción final. Fechas, nombres, citas y datos conservados.",
+    "Traducción de una página comercial/biográfica completa; no del libro de 428 páginas anunciado.",
+    "Presentación recompuesta en párrafos y tabla; no se infieren los enlaces ausentes del texto extraído.",
+    "Los datos comerciales se conservan como testimonio de la página fuente; no son precios o disponibilidad comprobados en la fecha de lectura.",
+    "Revisión editorial con IA, sin revisión humana; no es una edición oficial."
+  ],
+  "sourceTextHash": "edfd1f0cb805ff40ffcbf1b4993391ea84fb04d787ee07bd584dc07bb8b5cd3a",
+  "sourceNormalization": {
+    "method": "Exact body comparison after stripping leading YAML and collapsing whitespace; exact TOC and chunk indexes unchanged",
+    "snapshotFile": "data/editions/checkpoints/source-fe9b36fdf808bf865454.json",
+    "bodyFingerprint": "b8229fcff9c4bff248a2ecdfab51997a25c1f7b135b8ec0e6b9ec6a0ccfa7fad",
+    "checkedAt": "2026-11-05T21:22:52.067Z"
+  }
+}

@@ -1,0 +1,506 @@
+{
+  "generatedAt": "2026-11-05T21:30:39.160Z",
+  "note": "Reviewed means a second AI agent compared the entire translation with the source. It does not mean official, ecclesiastical or human review.",
+  "documents": [
+    {
+      "documentId": "history-0166_Regle_de_Saint_Augustin_pour_les_serviteurs_de_Dieu",
+      "file": "augustin-regla",
+      "sourceHash": "e364d07f9eaae21f1dfdf7084c9e59e3089f5d9768950993c3b8449f6d20116a",
+      "sourceTextHash": "009a949594b73745c14dabfa0f472e289f10b87fbde534e39d335648cc30e75c",
+      "targetHash": "dd946f960d4c2dc060f77e03dc9046ff387100931a7e2a9a1f81673d7fda921c",
+      "sourceCharacters": 18410,
+      "translatedCharacters": 17553,
+      "checks": {
+        "errors": [],
+        "sourceHeadings": [
+          {
+            "level": 1,
+            "title": "Règle de Saint Augustin pour les serviteurs de Dieu"
+          },
+          {
+            "level": 1,
+            "title": "RÈGLE DE SAINT AUGUSTIN POUR LES SERVITEURS DE DIEU"
+          },
+          {
+            "level": 2,
+            "title": "DE L'AMOUR DE DIEU ET DU PROCHAIN, DE L'UNION DES CŒURS ET DE LA COMMUNAUTÉ DES BIENS."
+          },
+          {
+            "level": 2,
+            "title": "DE L'HUMILITÉ."
+          },
+          {
+            "level": 2,
+            "title": "DE LA PRIÈRE ET DE L'OFFICE DIVIN."
+          },
+          {
+            "level": 2,
+            "title": "DU JEUNE ET DU REPAS."
+          },
+          {
+            "level": 2,
+            "title": "DE L'INDULGENCE ENVERS LES INFIRMES."
+          },
+          {
+            "level": 2,
+            "title": "DE L'EXTÉRIEUR."
+          },
+          {
+            "level": 2,
+            "title": "CORRECTION FRATERNELLE."
+          },
+          {
+            "level": 2,
+            "title": "N'AVOIR RIEN EN PROPRE."
+          },
+          {
+            "level": 2,
+            "title": "BAINS ET AUTRES SOINS."
+          },
+          {
+            "level": 2,
+            "title": "EXCUSE ET PARDON."
+          },
+          {
+            "level": 2,
+            "title": "DE L'OBÉISSANCE AU SUPÉRIEUR."
+          },
+          {
+            "level": 2,
+            "title": "OBSERVER LA RÈGLE ET LA LIRE SOUVENT."
+          },
+          {
+            "level": 2,
+            "title": "Procedencia"
+          }
+        ],
+        "targetHeadings": [
+          {
+            "level": 1,
+            "title": "Regla de san Agustín para los siervos de Dios"
+          },
+          {
+            "level": 1,
+            "title": "Regla de san Agustín para los siervos de Dios"
+          },
+          {
+            "level": 2,
+            "title": "Del amor a Dios y al prójimo, de la unión de los corazones y de la comunidad de bienes"
+          },
+          {
+            "level": 2,
+            "title": "De la humildad"
+          },
+          {
+            "level": 2,
+            "title": "De la oración y del oficio divino"
+          },
+          {
+            "level": 2,
+            "title": "Del ayuno y de las comidas"
+          },
+          {
+            "level": 2,
+            "title": "De la consideración hacia los débiles"
+          },
+          {
+            "level": 2,
+            "title": "Del comportamiento exterior"
+          },
+          {
+            "level": 2,
+            "title": "Corrección fraterna"
+          },
+          {
+            "level": 2,
+            "title": "No tener nada como propio"
+          },
+          {
+            "level": 2,
+            "title": "Baños y otros cuidados"
+          },
+          {
+            "level": 2,
+            "title": "Pedir perdón y perdonar"
+          },
+          {
+            "level": 2,
+            "title": "De la obediencia al superior"
+          },
+          {
+            "level": 2,
+            "title": "Observar la regla y leerla con frecuencia"
+          },
+          {
+            "level": 2,
+            "title": "Procedencia"
+          }
+        ],
+        "sourceBodyUrls": 2,
+        "translatedBodyUrls": 2
+      },
+      "state": "published-reviewed",
+      "contentFile": "data/editions/3e34e46c43d6a60c83ef.es.json.gz"
+    },
+    {
+      "documentId": "history-0176_Augustin_de_la_discipline_chretienne",
+      "file": "augustin-disciplina",
+      "sourceHash": "18f76541ef615b67761a6ef5fecbab2af04040e6bfb1d582482f198e8eeff775",
+      "sourceTextHash": "ee161c582c2cc7ff3ce3ba99723b5e56aedc14b5fd3aa3436487e44b2fb6517e",
+      "targetHash": "e14338fc3db788fe7f949d45e67287dae05f47f38647683463a178c5e0711996",
+      "sourceCharacters": 34485,
+      "translatedCharacters": 32052,
+      "checks": {
+        "errors": [],
+        "sourceHeadings": [
+          {
+            "level": 1,
+            "title": "Augustin, de la discipline chrétienne."
+          },
+          {
+            "level": 2,
+            "title": "DE LA DISCIPLINE CHRÉTIENNE"
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE PREMIER. SUJET DU DISCOURS."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE II. QU'EST-CE QUE BIEN VIVRE."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE 3. COMMANDEMENT D'AIMER DIEU ET LE PROCHAIN."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE IV. COMMENT DOIT S'AIMER CELUI A QUI IL EST ORDONNÉ D'AIMER SON PROCHAIN COMME LUIMÊME."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE V. AMOUR PERNICIEUX POUR LE PROCHAIN."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE VI. LE BONHEUR DE L'HOMME CONSISTE A AIMER DIEU."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE VII. L'ENVIE EST UN VICE DIABOLIQUE, ISSU DE L'ORGUEIL."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE VIII. DIMINUER, PAR L'AUMÔNE, LE FARDEAU DES RICHESSES."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE IX. ÉVITER LES PERNICIEUX DISCOURS DES AVARES."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE X. L'AVEUGLEMENT DES AVARES."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE 11. APPRENDRE LES LETTRES DANS UN BUT TEMPOREL."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE XII. LA BONNE MORT PRÉPARÉE PAR UNE BONNE VIE."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE XIII. LES BONS ET LES MAUVAIS AUDITEURS."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE XIV. QUEL EST LE VÉRITABLE MAITRE?"
+          },
+          {
+            "level": 2,
+            "title": "Procedencia"
+          }
+        ],
+        "targetHeadings": [
+          {
+            "level": 1,
+            "title": "San Agustín. La disciplina cristiana"
+          },
+          {
+            "level": 2,
+            "title": "De la disciplina cristiana"
+          },
+          {
+            "level": 2,
+            "title": "Capítulo I. Tema del discurso"
+          },
+          {
+            "level": 2,
+            "title": "Capítulo II. Qué es vivir bien"
+          },
+          {
+            "level": 2,
+            "title": "Capítulo III. Mandamiento de amar a Dios y al prójimo"
+          },
+          {
+            "level": 2,
+            "title": "Capítulo IV. Cómo debe amarse quien recibe el mandato de amar al prójimo como a sí mismo"
+          },
+          {
+            "level": 2,
+            "title": "Capítulo V. Amor pernicioso al prójimo"
+          },
+          {
+            "level": 2,
+            "title": "Capítulo VI. La felicidad del hombre consiste en amar a Dios"
+          },
+          {
+            "level": 2,
+            "title": "Capítulo VII. La envidia es un vicio diabólico nacido de la soberbia"
+          },
+          {
+            "level": 2,
+            "title": "Capítulo VIII. Disminuir mediante la limosna la carga de las riquezas"
+          },
+          {
+            "level": 2,
+            "title": "Capítulo IX. Evitar los discursos perniciosos de los avaros"
+          },
+          {
+            "level": 2,
+            "title": "Capítulo X. La ceguera de los avaros"
+          },
+          {
+            "level": 2,
+            "title": "Capítulo XI. Aprender las letras con un fin temporal"
+          },
+          {
+            "level": 2,
+            "title": "Capítulo XII. La buena muerte se prepara con una buena vida"
+          },
+          {
+            "level": 2,
+            "title": "Capítulo XIII. Los buenos y los malos oyentes"
+          },
+          {
+            "level": 2,
+            "title": "Capítulo XIV. Quién es el verdadero maestro"
+          },
+          {
+            "level": 2,
+            "title": "Procedencia"
+          }
+        ],
+        "sourceBodyUrls": 3,
+        "translatedBodyUrls": 3
+      },
+      "state": "published-reviewed",
+      "contentFile": "data/editions/a3d2d6efcbb4edb15dc4.es.json.gz"
+    },
+    {
+      "documentId": "history-0178_Augustin_de_l_utilite_du_jeune",
+      "file": "augustin-ayuno",
+      "sourceHash": "7512e779f5d5e6d7419f8ebebbe5b5fd7a85fcbee1b828de4ecdcbc5b860726d",
+      "sourceTextHash": "18d7680cfe6451e6555aa86cd3319d47c80ae84ce921ac88f3e412b1b2c0987d",
+      "targetHash": "2548d777d976e2831a8bacdfb2b703e69516d3cfb54da2a67b9c1deea1ebcfcc",
+      "sourceCharacters": 36893,
+      "translatedCharacters": 35372,
+      "checks": {
+        "errors": [],
+        "sourceHeadings": [
+          {
+            "level": 1,
+            "title": "Augustin, de l'utilité du jeune."
+          },
+          {
+            "level": 2,
+            "title": "DE L'UTILITÉ DU JEUNE"
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE PREMIER. LE JEUNE EST POUR LES HOMMES ET NON POUR LES ANGES."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE II. LE JEUNE NOUS PLACE ENTRE LES HOMMES CHARNELS ET LES ANGES."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE 3. LE JEUNE NÉCESSAIRE POUR DOMPTER LA CHAIR."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE IV. ERREUR DES MANICHÉENS SUR LA LUTTE DE LA CHAIR ET DE L'ESPRIT."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE V. ON DOIT QUELQUEFOIS REFUSER A LA CHAIR DES PLAISIRS MÊME PERMIS."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE VI. L'HARMONIE DES MEMBRES DU CORPS INVITE LES HÉRÉTIQUES A RENTRER DANS L'UNITÉ."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE VII. UNITÉ DES PAIENS DANS LE CULTE DES IDOLES."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE VIII. LA CHARITÉ C'EST LA VIE; LA DISSENSION C'EST LA MORT."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE IX. RIEN N'EST A NÉGLIGER POUR RAMENER LES HÉRÉTIQUES A L'UNITÉ."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE X. ZÈLE PERSÉVÉRANT POUR LA CONVERSION DES HÉRÉTIQUES OBSTINÉS."
+          },
+          {
+            "level": 2,
+            "title": "CHAPITRE 11. CONTRE LES HÉRÉTIQUES QUI DÉCHIRENT L'ÉGLISE."
+          },
+          {
+            "level": 2,
+            "title": "Procedencia"
+          }
+        ],
+        "targetHeadings": [
+          {
+            "level": 1,
+            "title": "Agustín, sobre la utilidad del ayuno."
+          },
+          {
+            "level": 2,
+            "title": "Sobre la utilidad del ayuno"
+          },
+          {
+            "level": 2,
+            "title": "Capítulo primero. El ayuno es para los hombres y no para los ángeles."
+          },
+          {
+            "level": 2,
+            "title": "Capítulo II. El ayuno nos sitúa entre los hombres carnales y los ángeles."
+          },
+          {
+            "level": 2,
+            "title": "Capítulo 3. El ayuno es necesario para dominar la carne."
+          },
+          {
+            "level": 2,
+            "title": "Capítulo IV. Error de los maniqueos acerca de la lucha entre la carne y el espíritu."
+          },
+          {
+            "level": 2,
+            "title": "Capítulo V. A veces se deben negar a la carne incluso placeres permitidos."
+          },
+          {
+            "level": 2,
+            "title": "Capítulo VI. La armonía de los miembros del cuerpo invita a los herejes a volver a la unidad."
+          },
+          {
+            "level": 2,
+            "title": "Capítulo VII. Unidad de los paganos en el culto a los ídolos."
+          },
+          {
+            "level": 2,
+            "title": "Capítulo VIII. La caridad es la vida; la disensión es la muerte."
+          },
+          {
+            "level": 2,
+            "title": "Capítulo IX. Nada debe descuidarse para devolver a los herejes a la unidad."
+          },
+          {
+            "level": 2,
+            "title": "Capítulo X. Celo perseverante por la conversión de los herejes obstinados."
+          },
+          {
+            "level": 2,
+            "title": "Capítulo 11. Contra los herejes que desgarran la Iglesia."
+          },
+          {
+            "level": 2,
+            "title": "Procedencia"
+          }
+        ],
+        "sourceBodyUrls": 3,
+        "translatedBodyUrls": 3
+      },
+      "state": "published-reviewed",
+      "contentFile": "data/editions/6fd40f971482e7d9cc4d.es.json.gz"
+    },
+    {
+      "documentId": "vida-santos-1192-clare-crockett",
+      "file": "clare-crockett",
+      "sourceHash": "d4686692af7d4688dd071e6122354a6a69a4abcbd8b4e93c38b54744a624534c",
+      "sourceTextHash": "edfd1f0cb805ff40ffcbf1b4993391ea84fb04d787ee07bd584dc07bb8b5cd3a",
+      "targetHash": "5b8e73b350897507caa630f2d0e0ffa90d3c74232b2476bf620d5c77917869ac",
+      "sourceCharacters": 2199,
+      "translatedCharacters": 2292,
+      "checks": {
+        "errors": [],
+        "sourceHeadings": [
+          {
+            "level": 1,
+            "title": "Clare Crockett"
+          },
+          {
+            "level": 2,
+            "title": "Fuente"
+          }
+        ],
+        "targetHeadings": [
+          {
+            "level": 1,
+            "title": "Clare Crockett"
+          },
+          {
+            "level": 2,
+            "title": "Fuente"
+          }
+        ],
+        "sourceBodyUrls": 1,
+        "translatedBodyUrls": 1
+      },
+      "state": "published-reviewed",
+      "contentFile": "data/editions/fe9b36fdf808bf865454.es.json.gz"
+    },
+    {
+      "documentId": "vida-santos-1191-darwin-ramos",
+      "file": "darwin-ramos",
+      "sourceHash": "4fb82d026d4861c9b8a97167b0299de717e5c1f3d489d456f0d48526e182e0eb",
+      "sourceTextHash": "426483375137618a34ba7d0fc3e14082959e2cee4e2d7685c71d91d5a4bd650d",
+      "targetHash": "e9fd4aceb31c1e9562bc9927d59fb20458cfe2517d6adcf4d601d8810e7a7231",
+      "sourceCharacters": 6448,
+      "translatedCharacters": 6826,
+      "checks": {
+        "errors": [],
+        "sourceHeadings": [
+          {
+            "level": 1,
+            "title": "Darwin Ramos"
+          },
+          {
+            "level": 2,
+            "title": "Fuente"
+          }
+        ],
+        "targetHeadings": [
+          {
+            "level": 1,
+            "title": "Darwin Ramos"
+          },
+          {
+            "level": 2,
+            "title": "Fuente"
+          }
+        ],
+        "sourceBodyUrls": 1,
+        "translatedBodyUrls": 1
+      },
+      "state": "published-reviewed",
+      "contentFile": "data/editions/e1a65ca2648d54d37069.es.json.gz"
+    }
+  ]
+}

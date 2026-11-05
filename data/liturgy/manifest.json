@@ -1,0 +1,904 @@
+{
+  "schemaVersion": 1,
+  "dates": [
+    {
+      "date": "2026-11-05",
+      "file": "data/liturgy/days/2026-11-05.json",
+      "sourceCelebration": "Jueves, XXXI semana del Tiempo Ordinario (Año II) 3ª semana",
+      "calendarStatus": "unverified",
+      "calendarReason": "La CEE permite la feria o la memoria libre de santa Ángela de la Cruz; hay propios diocesanos, entre ellos Toledo (calendario CEE, p. PDF 343).",
+      "hoursComplete": true,
+      "complete": false,
+      "sections": 9,
+      "updatedAt": "2026-11-05T21:15:50.979Z"
+    },
+    {
+      "date": "2026-11-06",
+      "file": "data/liturgy/days/2026-11-06.json",
+      "sourceCelebration": "Viernes, XXXI semana del Tiempo Ordinario (Año II) 3ª semana",
+      "calendarStatus": "mismatch",
+      "calendarReason": "La CEE prescribe en España la memoria de santos Pedro Poveda, Inocencio de la Inmaculada y compañeros, mártires (p. PDF 344). Si el proveedor muestra la feria, estos textos no verifican ese propio español.",
+      "hoursComplete": true,
+      "complete": false,
+      "sections": 7,
+      "updatedAt": "2026-11-05T21:15:56.134Z"
+    },
+    {
+      "date": "2026-11-07",
+      "file": "data/liturgy/days/2026-11-07.json",
+      "sourceCelebration": "Sábado, XXXI semana del Tiempo Ordinario (Año II) 3ª semana",
+      "calendarStatus": "unverified",
+      "calendarReason": "Fecha comprobada en iBreviary. El proveedor no identifica la edición ni permite seleccionar el calendario propio de España. Puede omitir celebraciones españolas o diocesanas. No se han calculado rangos ni primeras vísperas.",
+      "hoursComplete": true,
+      "complete": false,
+      "sections": 9,
+      "updatedAt": "2026-11-05T21:16:00.676Z"
+    },
+    {
+      "date": "2026-11-08",
+      "file": "data/liturgy/days/2026-11-08.json",
+      "sourceCelebration": "XXXII Domingo del Tiempo Ordinario (Año A) 4ª semana",
+      "calendarStatus": "matched",
+      "calendarReason": "Domingo XXXII del tiempo ordinario en el calendario CEE. Las variantes locales deben comprobarse.",
+      "hoursComplete": true,
+      "complete": false,
+      "sections": 9,
+      "updatedAt": "2026-11-05T21:16:07.387Z"
+    }
+  ],
+  "common": [
+    {
+      "id": "ordinario-4",
+      "title": "Ordinario de la Misa",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/0c8d7fc9ca1febd479e70689ded7e14e01a3e90cdf988e5ed92a13f9a8af39f4.json",
+      "sha256": "0c8d7fc9ca1febd479e70689ded7e14e01a3e90cdf988e5ed92a13f9a8af39f4",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=ordinario&id=4",
+      "words": 3054
+    },
+    {
+      "id": "prefazio-1",
+      "title": "PREFACIO COMUN I",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/300bfb414d8585b1e41f930eedb3cee1d7f3d1e45b3a530d072d6acb2667fd29.json",
+      "sha256": "300bfb414d8585b1e41f930eedb3cee1d7f3d1e45b3a530d072d6acb2667fd29",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=1",
+      "words": 204
+    },
+    {
+      "id": "prefazio-2",
+      "title": "PREFACIO COMUN II",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/10c57873feb71f4f6544ec6f5ca3853fdab41d796b7c7f792445ddfe14fefacd.json",
+      "sha256": "10c57873feb71f4f6544ec6f5ca3853fdab41d796b7c7f792445ddfe14fefacd",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=2",
+      "words": 150
+    },
+    {
+      "id": "prefazio-3",
+      "title": "PREFACIO COMUN III",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/3e9b1189d90b1e2da076d3532029d5409f2bf0c2c9403c82a4f9fe864dd5fb9e.json",
+      "sha256": "3e9b1189d90b1e2da076d3532029d5409f2bf0c2c9403c82a4f9fe864dd5fb9e",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=3",
+      "words": 169
+    },
+    {
+      "id": "prefazio-259",
+      "title": "PREFACIO COMUN V",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/f92b4ce989529bce242e6f514b141bcb4e53128d61097ad47a5d5226459969a4.json",
+      "sha256": "f92b4ce989529bce242e6f514b141bcb4e53128d61097ad47a5d5226459969a4",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=259",
+      "words": 142
+    },
+    {
+      "id": "prefazio-4",
+      "title": "PREFACIO COMUN IV",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/ac08e78d762da3982a4654e9ef4fc1fb7f3405918442e764901596cb5d0dab6d.json",
+      "sha256": "ac08e78d762da3982a4654e9ef4fc1fb7f3405918442e764901596cb5d0dab6d",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=4",
+      "words": 147
+    },
+    {
+      "id": "prefazio-260",
+      "title": "PREFACIO COMUN VI",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/7d8c55a1ddc2426c5ea72c98ce4f9538063626ba37bfcd8da069e94cd7e04deb.json",
+      "sha256": "7d8c55a1ddc2426c5ea72c98ce4f9538063626ba37bfcd8da069e94cd7e04deb",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=260",
+      "words": 181
+    },
+    {
+      "id": "prefazio-5",
+      "title": "PREFACIO DE ADVIENTO I",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/9a86f2685ea858904b948eaf0d866e7d4640a656e62293f22ae6c992fbd97966.json",
+      "sha256": "9a86f2685ea858904b948eaf0d866e7d4640a656e62293f22ae6c992fbd97966",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=5",
+      "words": 232
+    },
+    {
+      "id": "prefazio-261",
+      "title": "PREFACIO COMUN VII",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/81004625c603a0b383282484d830cf476309eb41dda936c9b3d7f503736dbe4e.json",
+      "sha256": "81004625c603a0b383282484d830cf476309eb41dda936c9b3d7f503736dbe4e",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=261",
+      "words": 220
+    },
+    {
+      "id": "prefazio-6",
+      "title": "PREFACIO DE ADVIENTO II",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/1045523a1b7e76b663f77d2f0de6b55ab236ad1f17d8ca8e2d39ae4c3788ec4d.json",
+      "sha256": "1045523a1b7e76b663f77d2f0de6b55ab236ad1f17d8ca8e2d39ae4c3788ec4d",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=6",
+      "words": 225
+    },
+    {
+      "id": "prefazio-262",
+      "title": "PREFACIO COMUN VIII",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/4c03e8ef350f15c36940e042b81da64373a7c912b37e98562ecb262b8e3aad89.json",
+      "sha256": "4c03e8ef350f15c36940e042b81da64373a7c912b37e98562ecb262b8e3aad89",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=262",
+      "words": 264
+    },
+    {
+      "id": "prefazio-7",
+      "title": "PREFACIO DE ADVIENTO III",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/3b2a1e40432332b11c2751ff4165a55686cd90203f6b4fdc1cb32129262bc5ab.json",
+      "sha256": "3b2a1e40432332b11c2751ff4165a55686cd90203f6b4fdc1cb32129262bc5ab",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=7",
+      "words": 268
+    },
+    {
+      "id": "prefazio-263",
+      "title": "PREFACIO COMUN IX",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/686b8f466db007e39cde7aa3ad25566a7408315d5b86ed2a462c208e6f936d87.json",
+      "sha256": "686b8f466db007e39cde7aa3ad25566a7408315d5b86ed2a462c208e6f936d87",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=263",
+      "words": 211
+    },
+    {
+      "id": "prefazio-8",
+      "title": "PREFACIO DE ADVIENTO IV",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/6cbbe19833a62addcee5245a8147a19871e6e092fb8a535803e7e77ad91a6e9b.json",
+      "sha256": "6cbbe19833a62addcee5245a8147a19871e6e092fb8a535803e7e77ad91a6e9b",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=8",
+      "words": 256
+    },
+    {
+      "id": "prefazio-264",
+      "title": "PREFACIO DE LA EPIFANIA",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/88611827b587418b9fab758610dea56e3171de7c5ddc55a694ba6de0bf411f42.json",
+      "sha256": "88611827b587418b9fab758610dea56e3171de7c5ddc55a694ba6de0bf411f42",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=264",
+      "words": 197
+    },
+    {
+      "id": "prefazio-9",
+      "title": "PREFACIO DE NAVIDAD I",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/5c6a64a5dfb57358c28a3d7dfd3ed8e0e9eb0b3241c7fc1b586b23a648176767.json",
+      "sha256": "5c6a64a5dfb57358c28a3d7dfd3ed8e0e9eb0b3241c7fc1b586b23a648176767",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=9",
+      "words": 203
+    },
+    {
+      "id": "prefazio-265",
+      "title": "PREFACIO DE CUARESMA V",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/c54a35e81c5156c1604e0ba1194b72d9ece0fae1030c6aaeda1d257a074b1e81.json",
+      "sha256": "c54a35e81c5156c1604e0ba1194b72d9ece0fae1030c6aaeda1d257a074b1e81",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=265",
+      "words": 189
+    },
+    {
+      "id": "prefazio-10",
+      "title": "PREFACIO DE NAVIDAD II",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/4b044a79b0e8a22d3419e44d51fcc30db188b2b5015b4578a99545bab722953f.json",
+      "sha256": "4b044a79b0e8a22d3419e44d51fcc30db188b2b5015b4578a99545bab722953f",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=10",
+      "words": 246
+    },
+    {
+      "id": "prefazio-266",
+      "title": "PREFACIO DE PASCUA I",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/9f99e36b9f0485a207222e33e1464d1d61bb5874d29a0c2d8914ac5c235bd6f5.json",
+      "sha256": "9f99e36b9f0485a207222e33e1464d1d61bb5874d29a0c2d8914ac5c235bd6f5",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=266",
+      "words": 208
+    },
+    {
+      "id": "prefazio-11",
+      "title": "PREFACIO DE NAVIDAD III",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/9a875885c2d55754e896638a93174e7f86444998c112fea48feef46e0c4c7a07.json",
+      "sha256": "9a875885c2d55754e896638a93174e7f86444998c112fea48feef46e0c4c7a07",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=11",
+      "words": 227
+    },
+    {
+      "id": "prefazio-267",
+      "title": "PREFACIO DE PASCUA II",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/512543bd2af5d6eecc0c6164b68ec59956b78b0b1f1192c7b50a3268153d062d.json",
+      "sha256": "512543bd2af5d6eecc0c6164b68ec59956b78b0b1f1192c7b50a3268153d062d",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=267",
+      "words": 194
+    },
+    {
+      "id": "prefazio-12",
+      "title": "PREFACIO DE CUARESMA I",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/096e134c1ce6293c3f750d7dc8727e45f50893548c95e3343e839247ac78af57.json",
+      "sha256": "096e134c1ce6293c3f750d7dc8727e45f50893548c95e3343e839247ac78af57",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=12",
+      "words": 186
+    },
+    {
+      "id": "prefazio-268",
+      "title": "PREFACIO DE PASCUA III",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/2f954712526b3e3c93418a5d201b5f61d41bf4af63df82e722468d59adffac43.json",
+      "sha256": "2f954712526b3e3c93418a5d201b5f61d41bf4af63df82e722468d59adffac43",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=268",
+      "words": 182
+    },
+    {
+      "id": "prefazio-13",
+      "title": "PREFACIO DE CUARESMA II",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/80161455b69f4bc5cc56fc9a4a1496d75c7a4e2096b316151bc1de6147fbd20c.json",
+      "sha256": "80161455b69f4bc5cc56fc9a4a1496d75c7a4e2096b316151bc1de6147fbd20c",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=13",
+      "words": 174
+    },
+    {
+      "id": "prefazio-269",
+      "title": "PREFACIO DE PASCUA IV",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/dddc0b187f1c13d3a93f590a8811dc6193a5b039d0ab9ab15c61a2f5f0d573b2.json",
+      "sha256": "dddc0b187f1c13d3a93f590a8811dc6193a5b039d0ab9ab15c61a2f5f0d573b2",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=269",
+      "words": 176
+    },
+    {
+      "id": "prefazio-14",
+      "title": "PREFACIO DE CUARESMA III",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/495e9c9b928de157f46d62a24b36d8ab7e0c70a36e50b0e6208e1bdcd12a7018.json",
+      "sha256": "495e9c9b928de157f46d62a24b36d8ab7e0c70a36e50b0e6208e1bdcd12a7018",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=14",
+      "words": 157
+    },
+    {
+      "id": "prefazio-270",
+      "title": "PREFACIO DE PASCUA V",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/a34d8cd5e107b190d36c0b9363622ef8fd14468f054f0b4ac556e5dd37c508c5.json",
+      "sha256": "a34d8cd5e107b190d36c0b9363622ef8fd14468f054f0b4ac556e5dd37c508c5",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=270",
+      "words": 186
+    },
+    {
+      "id": "prefazio-15",
+      "title": "PREFACIO DE CUARESMA IV",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/2dcabce796392f45a731aabcf09a6c3cf3b8cc488c67c13650d22b7ad5d86575.json",
+      "sha256": "2dcabce796392f45a731aabcf09a6c3cf3b8cc488c67c13650d22b7ad5d86575",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=15",
+      "words": 151
+    },
+    {
+      "id": "prefazio-271",
+      "title": "PREFACIO DE LA ASCENSION I",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/0895d56f085019b2d9ae90899261f47f70b610d3e552a5b496863aa9b7c4d726.json",
+      "sha256": "0895d56f085019b2d9ae90899261f47f70b610d3e552a5b496863aa9b7c4d726",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=271",
+      "words": 251
+    },
+    {
+      "id": "prefazio-272",
+      "title": "PREFACIO DE LA ASCENSION II",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/c391f2a3411288b26c933e9f8c847504c5687955f94ad06f9cf37cb8a142fe8e.json",
+      "sha256": "c391f2a3411288b26c933e9f8c847504c5687955f94ad06f9cf37cb8a142fe8e",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=272",
+      "words": 208
+    },
+    {
+      "id": "prefazio-273",
+      "title": "PREFACIO PARA DESPUES DE LA ASCENSION",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/f5dff04290f12d1724e54676f8eb6741189b6d65768fba40a37245038d529881.json",
+      "sha256": "f5dff04290f12d1724e54676f8eb6741189b6d65768fba40a37245038d529881",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=273",
+      "words": 216
+    },
+    {
+      "id": "prefazio-274",
+      "title": "PREFACIO DE DIFUNTOS I",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/4c6137312bb1f4c263845723c0befa0fbcb047750def79e4342c5eb993b46d15.json",
+      "sha256": "4c6137312bb1f4c263845723c0befa0fbcb047750def79e4342c5eb993b46d15",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=274",
+      "words": 194
+    },
+    {
+      "id": "prefazio-275",
+      "title": "PREFACIO DE DIFUNTOS II",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/e3eadb2f0c9187e311ee2655c8091feca5af8a853929a15b20e6f3ed3f8743ce.json",
+      "sha256": "e3eadb2f0c9187e311ee2655c8091feca5af8a853929a15b20e6f3ed3f8743ce",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=275",
+      "words": 146
+    },
+    {
+      "id": "prefazio-276",
+      "title": "PREFACIO DE DIFUNTOS III",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/90979e34c6496de7648b74e4fd13387b38c41d1d9ba00df0d955a1853ec4d7ed.json",
+      "sha256": "90979e34c6496de7648b74e4fd13387b38c41d1d9ba00df0d955a1853ec4d7ed",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=276",
+      "words": 151
+    },
+    {
+      "id": "prefazio-277",
+      "title": "PREFACIO DE DIFUNTOS IV",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/6f81341376794941ef6fb071087e179b9f08ba2231f762e18f2bfb2af0720211.json",
+      "sha256": "6f81341376794941ef6fb071087e179b9f08ba2231f762e18f2bfb2af0720211",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=277",
+      "words": 180
+    },
+    {
+      "id": "prefazio-278",
+      "title": "PREFACIO DE DIFUNTOS V",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/7b38c86e2ee1da48cb7d9546e9fdd4dbd3caf8804318697fca14a30f952f5fff.json",
+      "sha256": "7b38c86e2ee1da48cb7d9546e9fdd4dbd3caf8804318697fca14a30f952f5fff",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=278",
+      "words": 155
+    },
+    {
+      "id": "prefazio-279",
+      "title": "PREFACIO DE EUCARISTÍA I",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/2c139f4b0194056ed8bb9e86920d1441342f3e4d6faa501d72aaa32b9921a95d.json",
+      "sha256": "2c139f4b0194056ed8bb9e86920d1441342f3e4d6faa501d72aaa32b9921a95d",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=279",
+      "words": 221
+    },
+    {
+      "id": "prefazio-280",
+      "title": "PREFACIO DE EUCARISTÍA II",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/41bf69836717ee3d3e896b814a20918cf8d8be9b73cb58837c2fb2941ff7d76f.json",
+      "sha256": "41bf69836717ee3d3e896b814a20918cf8d8be9b73cb58837c2fb2941ff7d76f",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=280",
+      "words": 247
+    },
+    {
+      "id": "prefazio-281",
+      "title": "PREFACIO DE EUCARISTÍA III",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/394f240d364ec7afedd94625e6dde7e6cc904a9a82f4cb380f9fb46a0e70745d.json",
+      "sha256": "394f240d364ec7afedd94625e6dde7e6cc904a9a82f4cb380f9fb46a0e70745d",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=281",
+      "words": 195
+    },
+    {
+      "id": "prefazio-282",
+      "title": "PREFACIO DE LA CONFIRMACION",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/78dd934792aa67f570aa6e15b68e6e426a63a5d0da1f18711a895fcf36d81aa3.json",
+      "sha256": "78dd934792aa67f570aa6e15b68e6e426a63a5d0da1f18711a895fcf36d81aa3",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=282",
+      "words": 225
+    },
+    {
+      "id": "prefazio-283",
+      "title": "PREFACIO DE LA PASION DEL SENOR I",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/de20fd66444ef2a43b6ddac42e0a5db49f8e76dce0ccd125ec415849bca8dc5f.json",
+      "sha256": "de20fd66444ef2a43b6ddac42e0a5db49f8e76dce0ccd125ec415849bca8dc5f",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=283",
+      "words": 200
+    },
+    {
+      "id": "prefazio-284",
+      "title": "PREFACIO DE LA PASION DEL SEÑOR II",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/3e7dd848fcadae323c74e418a457124eefbdd9b8198a59085709d20095ef0833.json",
+      "sha256": "3e7dd848fcadae323c74e418a457124eefbdd9b8198a59085709d20095ef0833",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=284",
+      "words": 183
+    },
+    {
+      "id": "prefazio-285",
+      "title": "PREFACIO DE LA S. VIRGEN MARIA I",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/3eab910850dba40a07a677e929c9803ccbd18addcac76e2ba6d703cb7e14a95e.json",
+      "sha256": "3eab910850dba40a07a677e929c9803ccbd18addcac76e2ba6d703cb7e14a95e",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=285",
+      "words": 226
+    },
+    {
+      "id": "prefazio-286",
+      "title": "PREFACIO DE LA S. VIRGEN MARIA II",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/68b1dfe5844d04beb2c8b2dfce3f9bc76f10eabb89573eb94102e0e26528ffed.json",
+      "sha256": "68b1dfe5844d04beb2c8b2dfce3f9bc76f10eabb89573eb94102e0e26528ffed",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=286",
+      "words": 203
+    },
+    {
+      "id": "prefazio-287",
+      "title": "PREFACIO DE LA VIRGEN MARIA III",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/1f28ad7be591502d1a3011fab1d038d7af6cbe849ea029650d0345bba61f64a8.json",
+      "sha256": "1f28ad7be591502d1a3011fab1d038d7af6cbe849ea029650d0345bba61f64a8",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=287",
+      "words": 245
+    },
+    {
+      "id": "prefazio-288",
+      "title": "PREFACIO DE LA S. VIRGEN MARIA IV",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/a61eebab8d37e44b03147aa459bb23149c0e022946a89ec41d13de4522a4193e.json",
+      "sha256": "a61eebab8d37e44b03147aa459bb23149c0e022946a89ec41d13de4522a4193e",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=288",
+      "words": 189
+    },
+    {
+      "id": "prefazio-289",
+      "title": "PREFACIO DE LA S. VIRGEN MARIA V",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/a502da59e617123455ff22e4c0ce6e00353f6b2677e00f9af320491187bcd38f.json",
+      "sha256": "a502da59e617123455ff22e4c0ce6e00353f6b2677e00f9af320491187bcd38f",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=289",
+      "words": 195
+    },
+    {
+      "id": "prefazio-290",
+      "title": "PREFACIO DE LAS ORDENACIONES I",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/92738281cd5b5acd7ef8003af7ab51469cc5d234f4f94724800463be298fa7df.json",
+      "sha256": "92738281cd5b5acd7ef8003af7ab51469cc5d234f4f94724800463be298fa7df",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=290",
+      "words": 271
+    },
+    {
+      "id": "prefazio-291",
+      "title": "PREFACIO DE LAS ORDENACIONES II",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/4b4854d9c343967f3d2ea31d5a82f79c0bc3f07b9fc5aecc10e6ec5c3d932608.json",
+      "sha256": "4b4854d9c343967f3d2ea31d5a82f79c0bc3f07b9fc5aecc10e6ec5c3d932608",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=291",
+      "words": 215
+    },
+    {
+      "id": "prefazio-292",
+      "title": "PREFACIO DE LOS ANGELES",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/5e38d05ab851012a0fe2e20d883c373bdfa99b8443924ec679b44b82144ffe4e.json",
+      "sha256": "5e38d05ab851012a0fe2e20d883c373bdfa99b8443924ec679b44b82144ffe4e",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=292",
+      "words": 188
+    },
+    {
+      "id": "prefazio-293",
+      "title": "PREFACIO DE LOS APOSTOLES I",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/4bd24b0825cca55a36993427e7a19d8d770e69c7bb7a9f6e4f5be09a8cc8fe5d.json",
+      "sha256": "4bd24b0825cca55a36993427e7a19d8d770e69c7bb7a9f6e4f5be09a8cc8fe5d",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=293",
+      "words": 181
+    },
+    {
+      "id": "prefazio-294",
+      "title": "PREFACIO DE LOS APOSTOLES II",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/b7b4ae798ed92f2b177a40a677edb99d814b791848744c1ddb8310c93aececff.json",
+      "sha256": "b7b4ae798ed92f2b177a40a677edb99d814b791848744c1ddb8310c93aececff",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=294",
+      "words": 176
+    },
+    {
+      "id": "prefazio-295",
+      "title": "PREFACIO DE LOS SANTOS I",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/478cc35b6f7c54ffe8116543b63078c48dc600c41571e92aae0c548402610cbc.json",
+      "sha256": "478cc35b6f7c54ffe8116543b63078c48dc600c41571e92aae0c548402610cbc",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=295",
+      "words": 243
+    },
+    {
+      "id": "prefazio-296",
+      "title": "PREFACIO DE LOS SANTOS II",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/31457c9d68f0243eea05301039ff936d2dc06d1424dd760cb587e61fe073aa26.json",
+      "sha256": "31457c9d68f0243eea05301039ff936d2dc06d1424dd760cb587e61fe073aa26",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=296",
+      "words": 234
+    },
+    {
+      "id": "prefazio-297",
+      "title": "PREFACIO DE LOS SANTOS MARTIRES",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/fd18b7734415fb7440086dd0c0d615afcf0e025fc27b9e10b521a1a2e92fb233.json",
+      "sha256": "fd18b7734415fb7440086dd0c0d615afcf0e025fc27b9e10b521a1a2e92fb233",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=297",
+      "words": 194
+    },
+    {
+      "id": "prefazio-298",
+      "title": "PREFACIO DE LOS SANTOS PASTORES",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/7a1b365a41261b5facfc485ac7ac70613991e651c6596f1f85edb8b29240ec75.json",
+      "sha256": "7a1b365a41261b5facfc485ac7ac70613991e651c6596f1f85edb8b29240ec75",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=298",
+      "words": 185
+    },
+    {
+      "id": "prefazio-299",
+      "title": "PREFACIO DE SAN JOSE",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/feb84106240d4f1ff9396fe3ac158e9738d6159a3c2185a2ef3a5cc0b6391f5d.json",
+      "sha256": "feb84106240d4f1ff9396fe3ac158e9738d6159a3c2185a2ef3a5cc0b6391f5d",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=299",
+      "words": 224
+    },
+    {
+      "id": "prefazio-300",
+      "title": "PREFACIO DE SAN PEDRO Y SAN PABLO, APOSTOLES",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/9710a620347e69068d3cdb7db909a78c57aa59f4c08f5cff04c851cff8bf3bfb.json",
+      "sha256": "9710a620347e69068d3cdb7db909a78c57aa59f4c08f5cff04c851cff8bf3bfb",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=300",
+      "words": 207
+    },
+    {
+      "id": "prefazio-301",
+      "title": "REFACIO DE SANTAS VIRGENES Y SANTOS RELIGIOSOS",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/517e8b41370ba51635434159d39dd26fef26a5e4feba356c0800f72f2407f25f.json",
+      "sha256": "517e8b41370ba51635434159d39dd26fef26a5e4feba356c0800f72f2407f25f",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=301",
+      "words": 199
+    },
+    {
+      "id": "prefazio-302",
+      "title": "PREFACIO DEL BAUTISMO",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/60e67e18bed926c2d3e67ea2a211225def54928951a0993026ef84aaf7244120.json",
+      "sha256": "60e67e18bed926c2d3e67ea2a211225def54928951a0993026ef84aaf7244120",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=302",
+      "words": 223
+    },
+    {
+      "id": "prefazio-303",
+      "title": "PREFACIO DOMINICAL I",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/236c294b48578dd41e46e7ddf5b088a070280378229f3f15fd550491b129b4f3.json",
+      "sha256": "236c294b48578dd41e46e7ddf5b088a070280378229f3f15fd550491b129b4f3",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=303",
+      "words": 191
+    },
+    {
+      "id": "prefazio-304",
+      "title": "PREFACIO DOMINICAL II",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/5503720216437cc96368b77a324f3f809e3452818a3e16c42e8e7d7cf4bcd42b.json",
+      "sha256": "5503720216437cc96368b77a324f3f809e3452818a3e16c42e8e7d7cf4bcd42b",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=304",
+      "words": 168
+    },
+    {
+      "id": "prefazio-305",
+      "title": "PREFACIO DOMINICAL III",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/6c3cb4834856e747c7c607921de08d63346e87369d5c6ecd11bf2875ea76dbf2.json",
+      "sha256": "6c3cb4834856e747c7c607921de08d63346e87369d5c6ecd11bf2875ea76dbf2",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=305",
+      "words": 186
+    },
+    {
+      "id": "prefazio-306",
+      "title": "PREFACIO DOMINICAL IV",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/78242931021dce64c8978dc9f3335cdc1d5daeb5b7a37ab3c6f65f33bf7aa713.json",
+      "sha256": "78242931021dce64c8978dc9f3335cdc1d5daeb5b7a37ab3c6f65f33bf7aa713",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=306",
+      "words": 162
+    },
+    {
+      "id": "prefazio-307",
+      "title": "PREFACIO DOMINICAL IX",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/7b876bd60466fbdc8a66d09735373f4007894fe1d22bd5034d1d00de16e4ffb3.json",
+      "sha256": "7b876bd60466fbdc8a66d09735373f4007894fe1d22bd5034d1d00de16e4ffb3",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=307",
+      "words": 191
+    },
+    {
+      "id": "prefazio-308",
+      "title": "PREFACIO DOMINICAL V",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/12c52c67e4f741da9eaaf6e73eb457486b688badc4fa837055bc50da5b37d692.json",
+      "sha256": "12c52c67e4f741da9eaaf6e73eb457486b688badc4fa837055bc50da5b37d692",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=308",
+      "words": 188
+    },
+    {
+      "id": "prefazio-309",
+      "title": "PREFACIO DOMINICAL VI",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/9d09ef5f1bd74db23077f25cd3df42e580472c14ceffdd65a6e718b8e7d14ed2.json",
+      "sha256": "9d09ef5f1bd74db23077f25cd3df42e580472c14ceffdd65a6e718b8e7d14ed2",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=309",
+      "words": 187
+    },
+    {
+      "id": "prefazio-310",
+      "title": "PREFACIO DOMINICAL VII",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/8c28275ee04cfaf310259fbb3aadaff459fc1b624ca40256723f9ead1480c2e3.json",
+      "sha256": "8c28275ee04cfaf310259fbb3aadaff459fc1b624ca40256723f9ead1480c2e3",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=310",
+      "words": 190
+    },
+    {
+      "id": "prefazio-311",
+      "title": "PREFACIO DOMINICAL VIII",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/4de67bb2ca0b42579e8b962645abab40d7df7ea4e6c32a99aaeaf1055f3bff9e.json",
+      "sha256": "4de67bb2ca0b42579e8b962645abab40d7df7ea4e6c32a99aaeaf1055f3bff9e",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=311",
+      "words": 187
+    },
+    {
+      "id": "prefazio-312",
+      "title": "PREFACIO DOMINICAL X",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/42e7156911ceb5a8bab3c866cd10ad35df6d9d5b2b10b0c406fa31aa21e4102f.json",
+      "sha256": "42e7156911ceb5a8bab3c866cd10ad35df6d9d5b2b10b0c406fa31aa21e4102f",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=312",
+      "words": 190
+    },
+    {
+      "id": "prefazio-322",
+      "title": "PREFACIO DE LA SANTISIMA TRINITAD",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/bc90a78fe453d75495974431ca9bfcc13b5bb9e54350c09e695261d9e93b4d35.json",
+      "sha256": "bc90a78fe453d75495974431ca9bfcc13b5bb9e54350c09e695261d9e93b4d35",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=prefazio&id=322",
+      "words": 208
+    },
+    {
+      "id": "preghiera_eucaristica-31",
+      "title": "Plegaria Eucarística I",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/4522f0a9e8f17b78bc75e4d93805a15b3dff0d0eba93e3dfa8f8e8a2a935c74f.json",
+      "sha256": "4522f0a9e8f17b78bc75e4d93805a15b3dff0d0eba93e3dfa8f8e8a2a935c74f",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=preghiera_eucaristica&id=31",
+      "words": 772
+    },
+    {
+      "id": "preghiera_eucaristica-42",
+      "title": "Plegaria Eucarística para Niños I",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/f3597c4dee4cdf6e27b4c486adc741053e9dd8b8fa1ce2a66c7652cbb926944e.json",
+      "sha256": "f3597c4dee4cdf6e27b4c486adc741053e9dd8b8fa1ce2a66c7652cbb926944e",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=preghiera_eucaristica&id=42",
+      "words": 703
+    },
+    {
+      "id": "preghiera_eucaristica-40",
+      "title": "Plegaria Eucarística sobre la Reconciliación II",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/bf9791b7202901dc00958e41a46d3381e0d625a15ce77e111e83d996e3dd14d8.json",
+      "sha256": "bf9791b7202901dc00958e41a46d3381e0d625a15ce77e111e83d996e3dd14d8",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=preghiera_eucaristica&id=40",
+      "words": 730
+    },
+    {
+      "id": "preghiera_eucaristica-39",
+      "title": "Plegaria Eucarística sobre la Reconciliación I",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/dc6a644c8e39f2d0bad30ef25713c30cd5d21609dece191ba9cb5c01839534cd.json",
+      "sha256": "dc6a644c8e39f2d0bad30ef25713c30cd5d21609dece191ba9cb5c01839534cd",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=preghiera_eucaristica&id=39",
+      "words": 732
+    },
+    {
+      "id": "preghiera_eucaristica-38",
+      "title": "Plegaria Eucarística V/d",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/2257c3f5122e30ea816d027c97b4d7c250e80082d647b6cbdeabe78bf9b8c429.json",
+      "sha256": "2257c3f5122e30ea816d027c97b4d7c250e80082d647b6cbdeabe78bf9b8c429",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=preghiera_eucaristica&id=38",
+      "words": 771
+    },
+    {
+      "id": "preghiera_eucaristica-37",
+      "title": "Plegaria Eucarística V/c",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/c6d291e2e5acdd9d72a992f88d575178bec85846468386bca1f2edb33f875347.json",
+      "sha256": "c6d291e2e5acdd9d72a992f88d575178bec85846468386bca1f2edb33f875347",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=preghiera_eucaristica&id=37",
+      "words": 766
+    },
+    {
+      "id": "preghiera_eucaristica-36",
+      "title": "Plegaria Eucarística V/b",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/e0ba3d93fdfce8719800cf451e11593b02ea2448d4604359fa4e54172ec1b3a8.json",
+      "sha256": "e0ba3d93fdfce8719800cf451e11593b02ea2448d4604359fa4e54172ec1b3a8",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=preghiera_eucaristica&id=36",
+      "words": 754
+    },
+    {
+      "id": "preghiera_eucaristica-35",
+      "title": "Plegaria Eucarística V/a",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/76ed774ae92d02b22113dabc5a40624d0b5111f89e3b1a902f6ce7b00e64e3ec.json",
+      "sha256": "76ed774ae92d02b22113dabc5a40624d0b5111f89e3b1a902f6ce7b00e64e3ec",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=preghiera_eucaristica&id=35",
+      "words": 744
+    },
+    {
+      "id": "preghiera_eucaristica-34",
+      "title": "Plegaria Eucarística IV",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/e8264881a8cb027937fbb5cc6b034274bee3bd1220579df058ac1ab700f70b98.json",
+      "sha256": "e8264881a8cb027937fbb5cc6b034274bee3bd1220579df058ac1ab700f70b98",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=preghiera_eucaristica&id=34",
+      "words": 841
+    },
+    {
+      "id": "preghiera_eucaristica-33",
+      "title": "Plegaria Eucarística III",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/6dbd15fb290fdb961ae5ecf41bdfd7985a0566c8de134e98096ffd285f9e24ec.json",
+      "sha256": "6dbd15fb290fdb961ae5ecf41bdfd7985a0566c8de134e98096ffd285f9e24ec",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=preghiera_eucaristica&id=33",
+      "words": 528
+    },
+    {
+      "id": "preghiera_eucaristica-32",
+      "title": "Plegaria Eucarística II",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/7f7fd50d7987d5e55620749a72a7cb0d7e65c439f014c522e4ef1defc66ce558.json",
+      "sha256": "7f7fd50d7987d5e55620749a72a7cb0d7e65c439f014c522e4ef1defc66ce558",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=preghiera_eucaristica&id=32",
+      "words": 364
+    },
+    {
+      "id": "preghiera_eucaristica-43",
+      "title": "Plegaria Eucarística para Niños II",
+      "category": "misal",
+      "dateScope": "common",
+      "object": "data/liturgy/objects/620d41b4287d6b530a6692ae4a6e5fd32d5c9f967a95f356c917cbbe2842dd3a.json",
+      "sha256": "620d41b4287d6b530a6692ae4a6e5fd32d5c9f967a95f356c917cbbe2842dd3a",
+      "sourceUrl": "https://www.ibreviary.com/m2/messale.php?s=preghiera_eucaristica&id=43",
+      "words": 889
+    }
+  ],
+  "provider": "iBreviary",
+  "language": "es",
+  "attribution": "Textos litúrgicos castellanos: © Conferencia Episcopal Española, según créditos de iBreviary. Reproducción autorizada para Atlas por confirmación expresa del usuario.",
+  "permission": {
+    "basis": "Permisos CEE, iBreviary y fuentes seleccionadas confirmados expresamente por el usuario para este proyecto empresarial",
+    "recordedAt": "2026-11-05"
+  },
+  "creditsUrl": "https://www.ibreviary.com/credits_en.html",
+  "calendar": {
+    "region": "España",
+    "providerCalendarVerified": false,
+    "referenceUrl": "https://www.conferenciaepiscopal.es/cee-calendario-liturgico-pastoral-2025-2026/",
+    "calendarPdf": "https://www.conferenciaepiscopal.es/wp-content/uploads/2026/01/Calendario-Liturgico-CEE-2026.pdf",
+    "notice": "Fecha comprobada en iBreviary. El proveedor no identifica la edición ni permite seleccionar el calendario propio de España. Puede omitir celebraciones españolas o diocesanas. No se han calculado rangos ni primeras vísperas.",
+    "checks": {
+      "2026-11-05": "La CEE permite la feria o la memoria libre de santa Ángela de la Cruz; hay propios diocesanos, entre ellos Toledo (calendario CEE, p. PDF 343).",
+      "2026-11-06": "La CEE prescribe en España la memoria de santos Pedro Poveda, Inocencio de la Inmaculada y compañeros, mártires (p. PDF 344). Si el proveedor muestra la feria, estos textos no verifican ese propio español.",
+      "2026-11-08": "Domingo XXXII del tiempo ordinario en el calendario CEE. Las variantes locales deben comprobarse."
+    }
+  },
+  "updatedAt": "2026-11-05T21:16:10.936Z",
+  "availableFrom": "2026-11-05",
+  "availableTo": "2026-11-08"
+}

@@ -1,0 +1,100 @@
+{
+  "date": "2026-11-06",
+  "updatedAt": "2026-11-05T21:15:56.134Z",
+  "sections": [
+    {
+      "id": "oficio",
+      "title": "Oficio de lectura",
+      "category": "horas",
+      "dateScope": "2026-11-06",
+      "object": "data/liturgy/objects/2f7c02e21a419d1db15ab1592b11b3ad223801a8bc378291d1e76930d6b986dc.json",
+      "sha256": "2f7c02e21a419d1db15ab1592b11b3ad223801a8bc378291d1e76930d6b986dc",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=ufficio_delle_letture",
+      "words": 2175
+    },
+    {
+      "id": "laudes",
+      "title": "Laudes",
+      "category": "horas",
+      "dateScope": "2026-11-06",
+      "object": "data/liturgy/objects/06763df619878ed88569e024638e1b7a63a2a053d5e765b5b4a77bbf28a600dd.json",
+      "sha256": "06763df619878ed88569e024638e1b7a63a2a053d5e765b5b4a77bbf28a600dd",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=lodi",
+      "words": 1569
+    },
+    {
+      "id": "intermedia",
+      "title": "Hora intermedia",
+      "category": "horas",
+      "dateScope": "2026-11-06",
+      "object": "data/liturgy/objects/707b8f440ddb6636473424bfcf55ccb832d391da24b09ddfe156221d52bb95e7.json",
+      "sha256": "707b8f440ddb6636473424bfcf55ccb832d391da24b09ddfe156221d52bb95e7",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=ora_media",
+      "words": 1126
+    },
+    {
+      "id": "visperas",
+      "title": "Vísperas",
+      "category": "horas",
+      "dateScope": "2026-11-06",
+      "object": "data/liturgy/objects/a227f3877b8698924019e355b90683c8a7da2903e3ea7b1be362cc423d37730b.json",
+      "sha256": "a227f3877b8698924019e355b90683c8a7da2903e3ea7b1be362cc423d37730b",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=vespri",
+      "words": 1147
+    },
+    {
+      "id": "completas",
+      "title": "Completas",
+      "category": "horas",
+      "dateScope": "2026-11-06",
+      "object": "data/liturgy/objects/38f66fe1caa4aaf318376aeaf9bf0ad1e713fe698c0fe0cf2b52dd62517aa325.json",
+      "sha256": "38f66fe1caa4aaf318376aeaf9bf0ad1e713fe698c0fe0cf2b52dd62517aa325",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=compieta",
+      "words": 898
+    },
+    {
+      "id": "entrada",
+      "title": "Antífona de entrada y colecta",
+      "category": "misa",
+      "dateScope": "2026-11-06",
+      "object": "data/liturgy/objects/72c57fd66d65374aa05e27ff5e54cbc261760dfa73a55b2986902e4150005330.json",
+      "sha256": "72c57fd66d65374aa05e27ff5e54cbc261760dfa73a55b2986902e4150005330",
+      "sourceUrl": "https://www.ibreviary.com/m2/letture.php?s=antifona_e_colletta",
+      "words": 67
+    },
+    {
+      "id": "lecturas",
+      "title": "Lecturas de la misa",
+      "category": "misa",
+      "dateScope": "2026-11-06",
+      "object": "data/liturgy/objects/fed4797ed51295ed17a3ee498e4a250e507f8846a148cadeb5d5fdf869ad31e7.json",
+      "sha256": "fed4797ed51295ed17a3ee498e4a250e507f8846a148cadeb5d5fdf869ad31e7",
+      "sourceUrl": "https://www.ibreviary.com/m2/letture.php?s=letture",
+      "words": 857
+    }
+  ],
+  "errors": [
+    {
+      "id": "ofrendas",
+      "title": "Oración sobre las ofrendas",
+      "error": "El proveedor no ofrece texto completo para esta sección (vacía o menú)"
+    },
+    {
+      "id": "prefacio-dia",
+      "title": "Prefacio del día",
+      "error": "El proveedor no ofrece texto completo para esta sección (vacía o menú)"
+    },
+    {
+      "id": "comunion",
+      "title": "Comunión y oración final",
+      "error": "El proveedor no ofrece texto completo para esta sección (vacía o menú)"
+    }
+  ],
+  "sourceCelebration": "Viernes, XXXI semana del Tiempo Ordinario (Año II) 3ª semana",
+  "confirmedProviderDate": "2026-11-06",
+  "calendarNotice": "La CEE prescribe en España la memoria de santos Pedro Poveda, Inocencio de la Inmaculada y compañeros, mártires (p. PDF 344). Si el proveedor muestra la feria, estos textos no verifican ese propio español.",
+  "calendarStatus": "mismatch",
+  "calendarReason": "La CEE prescribe en España la memoria de santos Pedro Poveda, Inocencio de la Inmaculada y compañeros, mártires (p. PDF 344). Si el proveedor muestra la feria, estos textos no verifican ese propio español.",
+  "hoursComplete": true,
+  "complete": false
+}

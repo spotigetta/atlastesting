@@ -1,6 +1,8 @@
 import { access, readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { createHash } from "node:crypto";
+import { validate as validateEditions } from "./translate-library.mjs";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const required = [
@@ -34,4 +36,19 @@ if (!hidden || hidden.unlockFeature !== "preparadora-circulos") throw new Error(
 if (hidden.documents?.length !== 38 || !hidden.notebookUrl?.includes("notebooklm.google.com")) throw new Error("El Preparador debe conservar sus 38 Markdown y el enlace directo a NotebookLM");
 const hahn = catalog.libraries.find(item => item.id === "history")?.documents?.find(item => item.id === "history-un-padre-fiel-a-sus-promesas-scott-hahn");
 if (!hahn) throw new Error("Falta Un padre fiel a sus promesas en la biblioteca de Historia");
+// Validate only public artifacts here: CI does not have the local source corpus.
+const digest = bytes => createHash("sha256").update(bytes).digest("hex");
+const docs = catalog.libraries.flatMap(lib => lib.documents);
+const search = await readJson("data/search/manifest.json");
+const publicIds = new Set(docs.map(doc => doc.id));
+if (publicIds.size !== docs.length || search.documents.length !== docs.length || new Set(search.documents.map(doc => doc.id)).size !== docs.length || search.documents.some(doc => !publicIds.has(doc.id))) throw new Error("Catálogo e índice de búsqueda no contienen los mismos documentos");
+const contentRows = [];
+for (const path of [...new Set(docs.map(doc => doc.contentFile))].sort()) contentRows.push(`${path}\t${digest(await readFile(join(root, path)))}`);
+const contentDigest = digest(contentRows.join("\n"));
+if (catalog.meta.contentRevision !== contentDigest || documentsManifest.contentDigest !== contentDigest || search.meta.payloadDigest !== contentDigest) throw new Error("Contenido modificado sin reconciliar el manifiesto y regenerar la búsqueda");
+for (const shard of Object.values(search.shards)) {
+  if (digest(await readFile(join(root, shard.file))) !== shard.sha256) throw new Error(`Índice alterado: ${shard.file}`);
+}
+if (catalog.meta.searchRevision !== search.meta.contentRevision) throw new Error("La revisión de búsqueda no coincide con el catálogo");
+await validateEditions();
 console.log(`Atlas ${manifest.version} validado: ${catalog.libraries.length} bibliotecas y ${documentCount} documentos.`);

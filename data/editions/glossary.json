@@ -1,0 +1,66 @@
+{
+  "version": 1,
+  "scope": "Christian patristic and spiritual literature. Context controls every rendering; substitutions alone are not review.",
+  "terms": [
+    {
+      "concept": "gratia",
+      "en": "grace",
+      "fr": "grâce",
+      "es": "gracia"
+    },
+    {
+      "concept": "caritas",
+      "en": "charity",
+      "fr": "charité",
+      "es": "caridad"
+    },
+    {
+      "concept": "liberum arbitrium",
+      "en": "free will",
+      "fr": "libre arbitre",
+      "es": "libre albedrío"
+    },
+    {
+      "concept": "concupiscentia",
+      "en": "concupiscence",
+      "fr": "concupiscence",
+      "es": "concupiscencia"
+    },
+    {
+      "concept": "continentia",
+      "en": "continence",
+      "fr": "continence",
+      "es": "continencia"
+    },
+    {
+      "concept": "iustificatio",
+      "en": "justification",
+      "fr": "justification",
+      "es": "justificación"
+    },
+    {
+      "concept": "regula",
+      "en": "rule",
+      "fr": "règle",
+      "es": "regla"
+    },
+    {
+      "concept": "praepositus",
+      "en": "superior",
+      "fr": "supérieur",
+      "es": "superior"
+    },
+    {
+      "concept": "presbyter",
+      "en": "priest",
+      "fr": "prêtre",
+      "es": "presbítero"
+    },
+    {
+      "concept": "saeculum",
+      "en": "world",
+      "fr": "siècle",
+      "es": "mundo (según el contexto)"
+    }
+  ]
+}

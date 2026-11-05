@@ -1,0 +1,26 @@
+{
+  "documentId": "vida-santos-1191-darwin-ramos",
+  "status": "approved",
+  "targetHash": "e9fd4aceb31c1e9562bc9927d59fb20458cfe2517d6adcf4d601d8810e7a7231",
+  "sourceHash": "4fb82d026d4861c9b8a97167b0299de717e5c1f3d489d456f0d48526e182e0eb",
+  "sourceHashAtReview": "4d7a047e1b1524be76dfd1f89c6734195275ef33650524c11173631d5a263955",
+  "reviewer": "/root",
+  "translator": "/root/translation",
+  "scope": "entire catalogued payload",
+  "reviewedAt": "2026-11-05T21:19:14.000Z",
+  "humanReviewed": false,
+  "method": "ai-editorial",
+  "notes": [
+    "Revisor independiente cotejó íntegros el original inglés catalogado y la traducción final. Fechas, nombres y citas preservados.",
+    "Página biográfica completa. Los rótulos se separan de los párrafos y los pies de imagen aparecen en cursiva; se unen las frases cortadas por la extracción.",
+    "Las afirmaciones históricas y devocionales se traducen de la fuente sin presentarlas como comprobaciones actuales del traductor.",
+    "Revisión editorial con IA, sin revisión humana; no es una edición oficial."
+  ],
+  "sourceTextHash": "426483375137618a34ba7d0fc3e14082959e2cee4e2d7685c71d91d5a4bd650d",
+  "sourceNormalization": {
+    "method": "Exact body comparison after stripping leading YAML and collapsing whitespace; exact TOC and chunk indexes unchanged",
+    "snapshotFile": "data/editions/checkpoints/source-e1a65ca2648d54d37069.json",
+    "bodyFingerprint": "70173463679dfef0615a8a5d92852c09b3f53ec6cee52205b59b77be30384dc6",
+    "checkedAt": "2026-11-05T21:22:52.077Z"
+  }
+}

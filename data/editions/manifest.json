@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "editions": [
+    {
+      "documentId": "history-0166_Regle_de_Saint_Augustin_pour_les_serviteurs_de_Dieu",
+      "language": "es",
+      "contentFile": "data/editions/3e34e46c43d6a60c83ef.es.json.gz",
+      "sourceHash": "e364d07f9eaae21f1dfdf7084c9e59e3089f5d9768950993c3b8449f6d20116a",
+      "sourceTextHash": "009a949594b73745c14dabfa0f472e289f10b87fbde534e39d335648cc30e75c",
+      "sourceLanguage": "fr",
+      "status": "reviewed",
+      "title": "Regla de san Agustín para los siervos de Dios",
+      "translator": "Traducción propia al castellano asistida por IA",
+      "method": "ai-authored-translation",
+      "reviewMethod": "ai-editorial",
+      "reviewedAt": "2026-11-05T21:21:59.000Z",
+      "reviewer": "/root/quality",
+      "review": {
+        "scope": "entire catalogued payload",
+        "method": "ai-editorial",
+        "reviewer": "/root/quality",
+        "humanReviewed": false,
+        "evidenceFile": "data/editions/reviewed/augustin-regla.approval.json",
+        "notes": [
+          "Revisor independiente leyó íntegros el original francés catalogado y el castellano: doce secciones, notas y procedencia. No detectó omisiones sustantivas.",
+          "Aplicadas y verificadas las correcciones de salut como salvación en el apartado 7 y de de vous-mêmes como de vosotros mismos en el apartado 6; restituida la interjección del apartado 2.",
+          "Se conserva la anomalía de la versión francesa en el apartado 7 sobre la corrección demasiado reservada; no se ha sustituido por una formulación latina no cotejada.",
+          "Referencias bíblicas conservadas como figuran en la fuente. Las notas se enlazan con identificadores únicos; se retiran las páginas de impresión intercaladas sin cambiar el texto.",
+          "La atribución a Raulx corresponde a la traducción francesa, no a esta versión castellana.",
+          "Revisión editorial con IA independiente, sin revisión humana ni carácter oficial; no se ha cotejado con el latín."
+        ]
+      },
+      "completeness": {
+        "scope": "Tratado completo tal como aparece en el documento fuente catalogado.",
+        "sourceChunks": 1,
+        "translatedChunks": 1,
+        "sourceHeadingCount": 15,
+        "translatedHeadingCount": 15
+      },
+      "glossaryVersion": 1,
+      "targetHash": "dd946f960d4c2dc060f77e03dc9046ff387100931a7e2a9a1f81673d7fda921c"
+    },
+    {
+      "documentId": "history-0176_Augustin_de_la_discipline_chretienne",
+      "language": "es",
+      "contentFile": "data/editions/a3d2d6efcbb4edb15dc4.es.json.gz",
+      "sourceHash": "18f76541ef615b67761a6ef5fecbab2af04040e6bfb1d582482f198e8eeff775",
+      "sourceTextHash": "ee161c582c2cc7ff3ce3ba99723b5e56aedc14b5fd3aa3436487e44b2fb6517e",
+      "sourceLanguage": "fr",
+      "status": "reviewed",
+      "title": "De la disciplina cristiana",
+      "translator": "Traducción propia al castellano asistida por IA",
+      "method": "ai-authored-translation",
+      "reviewMethod": "ai-editorial",
+      "reviewedAt": "2026-11-05T21:19:14.000Z",
+      "reviewer": "/root/translation",
+      "review": {
+        "scope": "entire catalogued payload",
+        "method": "ai-editorial",
+        "reviewer": "/root/translation",
+        "humanReviewed": false,
+        "evidenceFile": "data/editions/reviewed/augustin-disciplina.approval.json",
+        "notes": [
+          "Revisor distinto del traductor leyó y cotejó íntegros los catorce capítulos y los dieciséis apartados, incluidas las notas y la procedencia.",
+          "Se corrigió en V.5 la interpretación excesiva de tout humain como carnal: queda meramente humano.",
+          "La expresión francesa Brisez la lune et faites fortune se traduce literalmente y se señala su dificultad textual sin inventar una restitución.",
+          "Se conserva la referencia Jn 10,3 que figura en la fuente, con advertencia editorial visible sobre su discordancia con la cita.",
+          "En XIII.14 se traduce contextualmente déchoit à l’iniquité como mengua en él la iniquidad, respetando la oposición explícita del párrafo entre lo que disminuye y lo que progresa.",
+          "Las notas se convierten en pies enlazables; se unen las frases partidas por paginación. No se han omitido argumentos, citas ni apartados.",
+          "Traducción desde la versión francesa, no cotejada con latín; revisión editorial con IA, sin revisión humana ni carácter oficial."
+        ]
+      },
+      "completeness": {
+        "scope": "Tratado completo tal como aparece en el documento fuente catalogado.",
+        "sourceChunks": 1,
+        "translatedChunks": 1,
+        "sourceHeadingCount": 17,
+        "translatedHeadingCount": 17
+      },
+      "glossaryVersion": 1,
+      "targetHash": "e14338fc3db788fe7f949d45e67287dae05f47f38647683463a178c5e0711996"
+    },
+    {
+      "documentId": "history-0178_Augustin_de_l_utilite_du_jeune",
+      "language": "es",
+      "contentFile": "data/editions/6fd40f971482e7d9cc4d.es.json.gz",
+      "sourceHash": "7512e779f5d5e6d7419f8ebebbe5b5fd7a85fcbee1b828de4ecdcbc5b860726d",
+      "sourceTextHash": "18d7680cfe6451e6555aa86cd3319d47c80ae84ce921ac88f3e412b1b2c0987d",
+      "sourceLanguage": "fr",
+      "status": "reviewed",
+      "title": "De la utilidad del ayuno",
+      "translator": "Traducción propia al castellano asistida por IA",
+      "method": "ai-authored-translation",
+      "reviewMethod": "ai-editorial",
+      "reviewedAt": "2026-11-05T21:21:59.000Z",
+      "reviewer": "/root/translation",
+      "review": {
+        "scope": "entire catalogued payload",
+        "method": "ai-editorial",
+        "reviewer": "/root/translation",
+        "humanReviewed": false,
+        "evidenceFile": "data/editions/reviewed/augustin-ayuno.approval.json",
+        "notes": [
+          "Revisor distinto del traductor leyó y cotejó íntegros los once capítulos y los trece apartados con el francés, incluidas las notas y la procedencia.",
+          "La creación de la carne y del espíritu, la crítica antimaniquea y los argumentos sobre la gracia se conservan sin añadidos doctrinales.",
+          "Se conservan las comparaciones históricas sobre disciplina doméstica y coerción sin convertirlas en recomendaciones actuales.",
+          "Se conservan literalmente las anomalías de la fuente en V sobre alimento y privación y en el capítulo 11 sobre el sujeto hijos. Se explican en una nota editorial visible.",
+          "La referencia Mt 9,19 impresa junto a pescadores de hombres se conserva con advertencia visible, sin corregirla silenciosamente.",
+          "Verificado el formato final: diecisiete notas únicas enlazadas, frases partidas reunidas y páginas de impresión retiradas; catorce encabezados conservados en su orden y nivel.",
+          "Traducción desde el francés de Burleraux, no cotejada con latín; revisión editorial con IA, sin revisión humana ni carácter oficial."
+        ]
+      },
+      "completeness": {
+        "scope": "Tratado completo tal como aparece en el documento fuente catalogado.",
+        "sourceChunks": 1,
+        "translatedChunks": 1,
+        "sourceHeadingCount": 14,
+        "translatedHeadingCount": 14
+      },
+      "glossaryVersion": 1,
+      "targetHash": "2548d777d976e2831a8bacdfb2b703e69516d3cfb54da2a67b9c1deea1ebcfcc"
+    },
+    {
+      "documentId": "vida-santos-1191-darwin-ramos",
+      "language": "es",
+      "contentFile": "data/editions/e1a65ca2648d54d37069.es.json.gz",
+      "sourceHash": "4fb82d026d4861c9b8a97167b0299de717e5c1f3d489d456f0d48526e182e0eb",
+      "sourceTextHash": "426483375137618a34ba7d0fc3e14082959e2cee4e2d7685c71d91d5a4bd650d",
+      "sourceLanguage": "en",
+      "status": "reviewed",
+      "title": "Darwin Ramos",
+      "translator": "Traducción propia al castellano asistida por IA",
+      "method": "ai-authored-translation",
+      "reviewMethod": "ai-editorial",
+      "reviewedAt": "2026-11-05T21:19:14.000Z",
+      "reviewer": "/root",
+      "review": {
+        "scope": "entire catalogued payload",
+        "method": "ai-editorial",
+        "reviewer": "/root",
+        "humanReviewed": false,
+        "evidenceFile": "data/editions/reviewed/darwin-ramos.approval.json",
+        "notes": [
+          "Revisor independiente cotejó íntegros el original inglés catalogado y la traducción final. Fechas, nombres y citas preservados.",
+          "Página biográfica completa. Los rótulos se separan de los párrafos y los pies de imagen aparecen en cursiva; se unen las frases cortadas por la extracción.",
+          "Las afirmaciones históricas y devocionales se traducen de la fuente sin presentarlas como comprobaciones actuales del traductor.",
+          "Revisión editorial con IA, sin revisión humana; no es una edición oficial."
+        ]
+      },
+      "completeness": {
+        "scope": "Página biográfica fuente íntegra.",
+        "sourceChunks": 1,
+        "translatedChunks": 1,
+        "sourceHeadingCount": 2,
+        "translatedHeadingCount": 2
+      },
+      "glossaryVersion": 1,
+      "targetHash": "e9fd4aceb31c1e9562bc9927d59fb20458cfe2517d6adcf4d601d8810e7a7231"
+    },
+    {
+      "documentId": "vida-santos-1192-clare-crockett",
+      "language": "es",
+      "contentFile": "data/editions/fe9b36fdf808bf865454.es.json.gz",
+      "sourceHash": "d4686692af7d4688dd071e6122354a6a69a4abcbd8b4e93c38b54744a624534c",
+      "sourceTextHash": "edfd1f0cb805ff40ffcbf1b4993391ea84fb04d787ee07bd584dc07bb8b5cd3a",
+      "sourceLanguage": "en",
+      "status": "reviewed",
+      "title": "Clare Crockett",
+      "translator": "Traducción propia al castellano asistida por IA",
+      "method": "ai-authored-translation",
+      "reviewMethod": "ai-editorial",
+      "reviewedAt": "2026-11-05T21:19:14.000Z",
+      "reviewer": "/root",
+      "review": {
+        "scope": "entire catalogued payload",
+        "method": "ai-editorial",
+        "reviewer": "/root",
+        "humanReviewed": false,
+        "evidenceFile": "data/editions/reviewed/clare-crockett.approval.json",
+        "notes": [
+          "Revisor independiente cotejó íntegros el original inglés catalogado y la traducción final. Fechas, nombres, citas y datos conservados.",
+          "Traducción de una página comercial/biográfica completa; no del libro de 428 páginas anunciado.",
+          "Presentación recompuesta en párrafos y tabla; no se infieren los enlaces ausentes del texto extraído.",
+          "Los datos comerciales se conservan como testimonio de la página fuente; no son precios o disponibilidad comprobados en la fecha de lectura.",
+          "Revisión editorial con IA, sin revisión humana; no es una edición oficial."
+        ]
+      },
+      "completeness": {
+        "scope": "Página fuente íntegra sobre la biografía; no contiene la traducción del libro comercial de 428 páginas que anuncia.",
+        "sourceChunks": 1,
+        "translatedChunks": 1,
+        "sourceHeadingCount": 2,
+        "translatedHeadingCount": 2
+      },
+      "glossaryVersion": 1,
+      "targetHash": "5b8e73b350897507caa630f2d0e0ffa90d3c74232b2476bf620d5c77917869ac"
+    }
+  ],
+  "updatedAt": "2026-11-05T21:30:39.148Z",
+  "revision": "2244a5ee57e37fa995f96e2b27c2fe521ba12cf5b09feb37f1ebe10bb2378eb2"
+}

@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-11-05T21:22:52.082Z",
+  "rows": [
+    {
+      "documentId": "history-0178_Augustin_de_l_utilite_du_jeune",
+      "changed": true,
+      "sourceHash": "7512e779f5d5e6d7419f8ebebbe5b5fd7a85fcbee1b828de4ecdcbc5b860726d",
+      "sourceHashAtReview": "12372ef88d4ca3074b37127dbfc0ff149a137cca2c763e5715a8352f1b0aed5d",
+      "bodyUnchanged": true
+    },
+    {
+      "documentId": "history-0176_Augustin_de_la_discipline_chretienne",
+      "changed": true,
+      "sourceHash": "18f76541ef615b67761a6ef5fecbab2af04040e6bfb1d582482f198e8eeff775",
+      "sourceHashAtReview": "a40bf0c0853e1d63a92721e97070020010e843e011bea8b2e6da8cd2f7c31fc3",
+      "bodyUnchanged": true
+    },
+    {
+      "documentId": "history-0166_Regle_de_Saint_Augustin_pour_les_serviteurs_de_Dieu",
+      "changed": true,
+      "sourceHash": "e364d07f9eaae21f1dfdf7084c9e59e3089f5d9768950993c3b8449f6d20116a",
+      "sourceHashAtReview": "94388b2f38e2749ef1881567c5dd84dd7cb919135a11b27bb67cd94495fda412",
+      "bodyUnchanged": true
+    },
+    {
+      "documentId": "vida-santos-1192-clare-crockett",
+      "changed": true,
+      "sourceHash": "d4686692af7d4688dd071e6122354a6a69a4abcbd8b4e93c38b54744a624534c",
+      "sourceHashAtReview": "906092276f9db65ebf36ed3576933a5d85f4689907618813f01b0111abc869c3",
+      "bodyUnchanged": true
+    },
+    {
+      "documentId": "vida-santos-1191-darwin-ramos",
+      "changed": true,
+      "sourceHash": "4fb82d026d4861c9b8a97167b0299de717e5c1f3d489d456f0d48526e182e0eb",
+      "sourceHashAtReview": "4d7a047e1b1524be76dfd1f89c6734195275ef33650524c11173631d5a263955",
+      "bodyUnchanged": true
+    }
+  ]
+}

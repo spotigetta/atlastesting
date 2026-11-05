@@ -5,7 +5,13 @@
   const jsonCache = new Map();
 
   function url(relative) {
-    return new URL(String(relative || "").replace(/^\/+/, ""), baseUrl).href;
+    const result = new URL(String(relative || "").replace(/^\/+/, ""), baseUrl);
+    const meta = window.ATLAS_CATALOG?.meta;
+    const revision = /\/data\/documents\//.test(result.pathname) ? meta?.contentRevision
+      : /\/data\/search\//.test(result.pathname) ? meta?.searchRevision
+      : /\/data\/editions\/(?!manifest\.json)/.test(result.pathname) ? window.ATLAS_EDITIONS?.revision : null;
+    if (revision) result.searchParams.set("revision", revision);
+    return result.href;
   }
 
   async function decodeJson(response) {
@@ -27,18 +33,20 @@
       signal: options.signal,
       headers: options.fresh ? { "cache-control": "no-cache" } : undefined
     }).then(decodeJson).then(async value => {
-      await window.AtlasDatabase?.put(key, value);
+      if (jsonCache.get(key) === request) await window.AtlasDatabase?.put(key, value);
       return value;
     }).catch(async error => {
       const cached = await window.AtlasDatabase?.get(key);
       if (cached?.value !== undefined) return cached.value;
       throw error;
     });
-    if (!options.fresh) jsonCache.set(key, request);
+    // A refresh replaces the in-memory entry too. Otherwise a subsequent reader
+    // can keep returning the pre-refresh payload even after IndexedDB was updated.
+    jsonCache.set(key, request);
     try {
       return await request;
     } catch (error) {
-      jsonCache.delete(key);
+      if (jsonCache.get(key) === request) jsonCache.delete(key);
       throw error;
     }
   }

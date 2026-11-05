@@ -1,45 +1,48 @@
 {
   "meta": {
-  "version": "6.0.1",
-    "generatedAt": "2026-08-08T02:28:29.444Z",
-    "documents": 1358,
-    "terms": 206069,
+    "version": "1.1.0",
+    "indexVersion": 1,
+    "contentRevision": "98e773f770810eea10f2676de689fd4d1dac50fd5c2853b8dd9aa74a132c6eb8",
+    "payloadDigest": "545dd160606357fac26115a290dcc2d97b9e3d790987b0b0e5a7511e35e8cd49",
+    "documents": 1385,
+    "terms": 601065,
+    "postings": 8909819,
     "method": "Segmented inverted index; exact normalized terms; stopwords excluded"
   },
   "documents": [
     {
       "id": "doctrine-0001_0005_Biblia_Evangelios_y_Hechos",
-      "title": "Biblia Evangelios y Hechos",
+      "title": "Evangelios y Hechos",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0006_0018_Biblia_Cartas_de_san_Pablo",
-      "title": "Biblia Cartas de san Pablo",
+      "title": "Cartas de san Pablo",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0019_0027_Biblia_Cartas_catolicas_y_Apocalipsis",
-      "title": "Biblia Cartas catolicas y Apocalipsis",
+      "title": "Cartas católicas y Apocalipsis",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0028_0032_Biblia_Pentateuco",
-      "title": "Biblia Pentateuco",
+      "title": "Pentateuco",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0033_0048_Biblia_Libros_historicos",
-      "title": "Biblia Libros historicos",
+      "title": "Libros históricos",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0049_0055_Biblia_Libros_sapienciales",
-      "title": "Biblia Libros sapienciales",
+      "title": "Libros sapienciales",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0056_0073_Biblia_Libros_profeticos",
-      "title": "Biblia Libros profeticos",
+      "title": "Libros proféticos",
       "libraryId": "doctrine"
     },
     {
@@ -124,12 +127,12 @@
     },
     {
       "id": "doctrine-0091_Catecismo_Iglesia_Catol",
-      "title": "Catecismo Iglesia Catol",
+      "title": "Catecismo Iglesia Catól.",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0104_Ep_Bernabe",
-      "title": "Ep Bernabe",
+      "title": "Ep Bernabé",
       "libraryId": "doctrine"
     },
     {
@@ -144,7 +147,7 @@
     },
     {
       "id": "doctrine-0107_Didache_ES",
-      "title": "Didache",
+      "title": "Didaché",
       "libraryId": "doctrine"
     },
     {
@@ -154,7 +157,7 @@
     },
     {
       "id": "doctrine-0109_0115_San_Ignacio_de_Antioquia_Cartas",
-      "title": "San Ignacio de Antioquia Cartas",
+      "title": "Siete cartas de san Ignacio de Antioquía",
       "libraryId": "doctrine"
     },
     {
@@ -189,107 +192,107 @@
     },
     {
       "id": "doctrine-0146_Agustin_Confesiones",
-      "title": "Agustin Confesiones",
+      "title": "Agustin - Confesiones",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0147_Augustin_de_la_Foi_Esperance_et_Charite",
-      "title": "Augustin de la Foi Esperance et Charite",
+      "title": "Augustin, de la Foi, Espérance et Charité",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0157_Augustin_du_Bapteme",
-      "title": "Augustin du Bapteme",
+      "title": "Augustin, du Baptême",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0158_Augustin_Catechisme",
-      "title": "Augustin Catechisme",
+      "title": "Augustin, Catéchisme",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0159_Augustin_Cite_de_Dieu_parte_01",
-      "title": "Augustin Cite de Dieu",
+      "title": "Augustin, Cité de Dieu — parte 1",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0159_Augustin_Cite_de_Dieu_parte_02",
-      "title": "Augustin Cite de Dieu",
+      "title": "Augustin, Cité de Dieu — parte 2",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0160_Augustin_de_la_foi",
-      "title": "Augustin de la foi",
+      "title": "Augustin, de la foi",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0161_Augustin_de_la_grace_I_et_II",
-      "title": "Augustin de la grace I et II",
+      "title": "Augustin, de la grâce I et II",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0163_Augustin_du_libre_arbitre",
-      "title": "Augustin du libre arbitre",
+      "title": "Augustin, du libre arbitre",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0164_Augustin_du_merite_I_II_III",
-      "title": "Augustin du merite I II III",
+      "title": "Augustin, du mérite I-II-III",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0168_Augustin_Trinite",
-      "title": "Augustin Trinite",
+      "title": "Augustin, Trinité",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0175_Augustin_du_symbole",
-      "title": "Augustin du symbole",
+      "title": "Augustin, du symbole.",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0182_Augustin_des_moeurs",
-      "title": "Augustin des moeurs",
+      "title": "Augustin, des moeurs.",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0183_Augustin_vraie_religion",
-      "title": "Augustin vraie religion",
+      "title": "Augustin, vraie religion.",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0194_Augustin_nature_du_bien",
-      "title": "Augustin nature du bien",
+      "title": "Augustin, nature du bien",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0206_Augustin_de_la_nature_et_de_la_grace",
-      "title": "Augustin de la nature et de la grace",
+      "title": "Augustin, de la nature et de la grâce",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0207_Augustin_de_la_correction_et_de_la_grace",
-      "title": "Augustin de la correction et de la grace",
+      "title": "Augustin, de la correction et de la grâce.",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0208_Augustin_de_la_predestination_des_Saints",
-      "title": "Augustin de la predestination des Saints",
+      "title": "Augustin, de la prédestination des Saints.",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0209_Augustin_du_don_de_la_perseverance",
-      "title": "Augustin du don de la perseverance",
+      "title": "Augustin, du don de la persévérance.",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0210_Augustin_de_l_esprit_et_de_la_lettre",
-      "title": "Augustin de l esprit et de la lettre",
+      "title": "Augustin, de l'esprit et de la lettre",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0221_CRISOSTOMO_SACERDOCIO",
-      "title": "CRISOSTOMO SACERDOCIO",
+      "title": "CRISOSTOMO-SACERDOCIO",
       "libraryId": "doctrine"
     },
     {
@@ -299,7 +302,7 @@
     },
     {
       "id": "doctrine-0233_Ireneo_Contra_herejes",
-      "title": "Ireneo Contra herejes",
+      "title": "Ireneo, Contra herejes",
       "libraryId": "doctrine"
     },
     {
@@ -309,47 +312,47 @@
     },
     {
       "id": "doctrine-0235_Ireneo_Epideixis",
-      "title": "Ireneo Epideixis",
+      "title": "Ireneo- Epideixis",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0250_Introduccion_vida_devota",
-      "title": "Introduccion vida devota",
+      "title": "Introducción vida devota",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0255_Audi_filia_et_vide_Juan_de_Avila",
-      "title": "Audi filia et vide Juan de Avila",
+      "title": "Audi filia et vide- Juan de Avila",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0256_0258_San_Juan_de_la_Cruz_Subida_del_Monte_Carmelo",
-      "title": "San Juan de la Cruz Subida del Monte Carmelo",
+      "title": "Subida del Monte Carmelo",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0259_0260_San_Juan_de_la_Cruz_Noche_oscura",
-      "title": "San Juan de la Cruz Noche oscura",
+      "title": "Noche oscura",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0261_0262_San_Juan_de_la_Cruz_Llama_de_amor_viva",
-      "title": "San Juan de la Cruz Llama de amor viva",
+      "title": "Llama de amor viva",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0263_0264_San_Juan_de_la_Cruz_Cantico_espiritual",
-      "title": "San Juan de la Cruz Cantico espiritual",
+      "title": "Cántico espiritual",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0265_0271_Santa_Teresa_Las_Moradas",
-      "title": "Santa Teresa Las Moradas",
+      "title": "Las Moradas",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0272_Camino_de_Perfeccion",
-      "title": "Camino de Perfeccion",
+      "title": "Camino de Perfección",
       "libraryId": "doctrine"
     },
     {
@@ -359,17 +362,17 @@
     },
     {
       "id": "doctrine-0277_Belarmino_las_7_Palabras",
-      "title": "Belarmino las 7 Palabras",
+      "title": "Belarmino: las 7 Palabras",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0278_Catherine_Dialogue",
-      "title": "Catherine Dialogue",
+      "title": "Catherine, Dialogue",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0290_Bernard_degres_humilite",
-      "title": "Bernard degres humilite",
+      "title": "Bernard, degrès humilité",
       "libraryId": "doctrine"
     },
     {
@@ -379,37 +382,37 @@
     },
     {
       "id": "doctrine-0297_Kempis_Imitacion_de_Cristo",
-      "title": "Kempis Imitacion de Cristo",
+      "title": "Kempis-Imitación de Cristo",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0306_Suma_Teologica_I",
-      "title": "Suma Teologica I",
+      "title": "Suma Teológica I",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0307_Suma_Teologica_I_II_parte_01",
-      "title": "Suma Teologica I II",
+      "title": "Suma Teológica I-II — parte 1",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0307_Suma_Teologica_I_II_parte_02",
-      "title": "Suma Teologica I II",
+      "title": "Suma Teológica I-II — parte 2",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0308_Suma_Teologica_II_II_parte_01",
-      "title": "Suma Teologica II II",
+      "title": "Suma Teológica II-II — parte 1",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0308_Suma_Teologica_II_II_parte_02",
-      "title": "Suma Teologica II II",
+      "title": "Suma Teológica II-II — parte 2",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0309_Suma_Teologica_III",
-      "title": "Suma Teologica III",
+      "title": "Suma Teológica III",
       "libraryId": "doctrine"
     },
     {
@@ -424,7 +427,7 @@
     },
     {
       "id": "doctrine-0312_El_Decalogo",
-      "title": "El Decalogo",
+      "title": "El Decálogo",
       "libraryId": "doctrine"
     },
     {
@@ -444,17 +447,17 @@
     },
     {
       "id": "doctrine-0332_Denzinger_parte_01",
-      "title": "Denzinger",
+      "title": "Denzinger — parte 1",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0332_Denzinger_parte_02",
-      "title": "Denzinger",
+      "title": "Denzinger — parte 2",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0332_Denzinger_parte_03",
-      "title": "Denzinger",
+      "title": "Denzinger — parte 3",
       "libraryId": "doctrine"
     },
     {
@@ -494,7 +497,7 @@
     },
     {
       "id": "doctrine-0341_1980_Dives_in_misericordia_ES",
-      "title": "Dives in misericordia",
+      "title": "1980 Dives in misericordia",
       "libraryId": "doctrine"
     },
     {
@@ -514,7 +517,7 @@
     },
     {
       "id": "doctrine-0345_1987_Sollicitudo_rei_socialis_ES",
-      "title": "Sollicitudo rei socialis",
+      "title": "1987 Sollicitudo rei socialis",
       "libraryId": "doctrine"
     },
     {
@@ -539,7 +542,7 @@
     },
     {
       "id": "doctrine-0351_Ecclesia_de_Eucharistia_ES",
-      "title": "Ecclesia de Eucharistia",
+      "title": "Ecclesia de Eucharistia ES",
       "libraryId": "doctrine"
     },
     {
@@ -584,12 +587,12 @@
     },
     {
       "id": "doctrine-0375_San_Pio_X_Pascendi",
-      "title": "San Pio X Pascendi",
+      "title": "San Pio X, Pascendi",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0377_San_Pio_X_Ad_diem_illud_laetissimum",
-      "title": "San Pio X Ad diem illud laetissimum",
+      "title": "San Pio X, Ad diem illud laetissimum",
       "libraryId": "doctrine"
     },
     {
@@ -654,7 +657,7 @@
     },
     {
       "id": "doctrine-0412_ES_SALVIFICI_DOLORIS",
-      "title": "ES SALVIFICI DOLORIS",
+      "title": "ES - SALVIFICI DOLORIS",
       "libraryId": "doctrine"
     },
     {
@@ -669,7 +672,7 @@
     },
     {
       "id": "doctrine-0416_Jornada_Paz_1979_2003",
-      "title": "Jornada Paz 1979 2003",
+      "title": "Jornada Paz 1979-2003",
       "libraryId": "doctrine"
     },
     {
@@ -684,12 +687,12 @@
     },
     {
       "id": "doctrine-0431_Catecismo_S_Pio_X",
-      "title": "Catecismo S Pio X",
+      "title": "Catecismo S. Pio X",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0498_PAULO_VI_MENSAJES_DE_LA_PAZ",
-      "title": "PAULO VI MENSAJES DE LA PAZ",
+      "title": "PAULO VI-MENSAJES DE LA PAZ",
       "libraryId": "doctrine"
     },
     {
@@ -714,12 +717,12 @@
     },
     {
       "id": "doctrine-0557_2000_Dominus_Iesus",
-      "title": "Dominus Iesus",
+      "title": "2000 Dominus Iesus",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0558_1987_Donum_Vitae",
-      "title": "Donum Vitae",
+      "title": "1987 Donum Vitae",
       "libraryId": "doctrine"
     },
     {
@@ -734,17 +737,17 @@
     },
     {
       "id": "doctrine-0580_1996_Preparation_au_sacrement_de_mariage",
-      "title": "Preparation au sacrement de mariage",
+      "title": "1996 Préparation au sacrement de mariage",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0581_2000_Reduction_embryonnaire",
-      "title": "Reduction embryonnaire",
+      "title": "2000 Réduction embryonnaire",
       "libraryId": "doctrine"
     },
     {
       "id": "doctrine-0582_1997_Vade_mecum_pour_les_confesseurs",
-      "title": "Vade mecum pour les confesseurs",
+      "title": "1997 Vade-mecum pour les confesseurs",
       "libraryId": "doctrine"
     },
     {
@@ -1214,7 +1217,7 @@
     },
     {
       "id": "canon-0302_Ordenacion_general_Liturgia_Horas_ES",
-      "title": "Ordenacion general Liturgia Horas",
+      "title": "Ordenación general Liturgia Horas",
       "libraryId": "canon"
     },
     {
@@ -1249,7 +1252,7 @@
     },
     {
       "id": "canon-0351_Ecclesia_de_Eucharistia_ES",
-      "title": "Ecclesia de Eucharistia",
+      "title": "Ecclesia de Eucharistia ES",
       "libraryId": "canon"
     },
     {
@@ -1299,17 +1302,17 @@
     },
     {
       "id": "canon-0541_1983_Codigo_de_Derecho_Canonico",
-      "title": "Codigo de Derecho Canonico",
+      "title": "1983 Código de Derecho Canónico",
       "libraryId": "canon"
     },
     {
       "id": "canon-0542_1990_Codex_Orientalis",
-      "title": "Codex Orientalis",
+      "title": "1990 Codex Orientalis",
       "libraryId": "canon"
     },
     {
       "id": "canon-0543_1917_Codex_Iuris_Canonici",
-      "title": "Codex Iuris Canonici",
+      "title": "1917 Codex Iuris Canonici",
       "libraryId": "canon"
     },
     {
@@ -1349,7 +1352,7 @@
     },
     {
       "id": "canon-0553_2010_Normae_de_gravioribus_ES",
-      "title": "Normae de gravioribus",
+      "title": "2010 Normae de gravioribus ES",
       "libraryId": "canon"
     },
     {
@@ -1364,37 +1367,37 @@
     },
     {
       "id": "canon-0556_1983_Approbation_livres_Catechese",
-      "title": "Approbation livres Catechese",
+      "title": "1983 Approbation livres Catéchèse",
       "libraryId": "canon"
     },
     {
       "id": "canon-0557_2000_Dominus_Iesus",
-      "title": "Dominus Iesus",
+      "title": "2000 Dominus Iesus",
       "libraryId": "canon"
     },
     {
       "id": "canon-0558_1987_Donum_Vitae",
-      "title": "Donum Vitae",
+      "title": "1987 Donum Vitae",
       "libraryId": "canon"
     },
     {
       "id": "canon-0561_1997_Ratio_Agendi",
-      "title": "Ratio Agendi",
+      "title": "1997 Ratio Agendi",
       "libraryId": "canon"
     },
     {
       "id": "canon-0562_Congregacion_Culto_Divino_parte_01",
-      "title": "Congregacion Culto Divino",
+      "title": "Congregacion Culto Divino — parte 1",
       "libraryId": "canon"
     },
     {
       "id": "canon-0562_Congregacion_Culto_Divino_parte_02",
-      "title": "Congregacion Culto Divino",
+      "title": "Congregacion Culto Divino — parte 2",
       "libraryId": "canon"
     },
     {
       "id": "canon-0562_Congregacion_Culto_Divino_parte_03",
-      "title": "Congregacion Culto Divino",
+      "title": "Congregacion Culto Divino — parte 3",
       "libraryId": "canon"
     },
     {
@@ -1409,7 +1412,7 @@
     },
     {
       "id": "canon-0565_Congregacion_para_el_Clero",
-      "title": "Congregacion para el Clero",
+      "title": "Congregación para el Clero",
       "libraryId": "canon"
     },
     {
@@ -1424,22 +1427,22 @@
     },
     {
       "id": "canon-0568_1998_Diacres_Normes_Fondamentales",
-      "title": "Diacres Normes Fondamentales",
+      "title": "1998 Diacres Normes Fondamentales",
       "libraryId": "canon"
     },
     {
       "id": "canon-0571_1998_Directoire_Diacres",
-      "title": "Directoire Diacres",
+      "title": "1998 Directoire Diacres",
       "libraryId": "canon"
     },
     {
       "id": "canon-0572_1997_Ecole_au_3eme_Millenaire",
-      "title": "Ecole au 3eme Millenaire",
+      "title": "1997 Ecole au 3ème Millénaire",
       "libraryId": "canon"
     },
     {
       "id": "canon-0573_1998_Formation_des_Diacres",
-      "title": "Formation des Diacres",
+      "title": "1998 Formation des Diacres",
       "libraryId": "canon"
     },
     {
@@ -1449,12 +1452,12 @@
     },
     {
       "id": "canon-0577_1986_MANUAL_DE_INDULGENCIAS",
-      "title": "MANUAL DE INDULGENCIAS",
+      "title": "1986 MANUAL DE INDULGENCIAS",
       "libraryId": "canon"
     },
     {
       "id": "canon-0580_1996_Preparation_au_sacrement_de_mariage",
-      "title": "Preparation au sacrement de mariage",
+      "title": "1996 Préparation au sacrement de mariage",
       "libraryId": "canon"
     },
     {
@@ -1464,12 +1467,12 @@
     },
     {
       "id": "canon-0584_2009_Normes_d_officialite",
-      "title": "Normes d officialite",
+      "title": "2009 Normes d’officialité",
       "libraryId": "canon"
     },
     {
       "id": "canon-0585_1983_Documents_postconciliaires",
-      "title": "Documents postconciliaires",
+      "title": "1983 Documents postconciliaires",
       "libraryId": "canon"
     },
     {
@@ -1569,47 +1572,47 @@
     },
     {
       "id": "history-0093_CRISOSTOMO_HOMILIAS_I",
-      "title": "CRISOSTOMO HOMILIAS I",
+      "title": "CRISOSTOMO-HOMILIAS I",
       "libraryId": "history"
     },
     {
       "id": "history-0094_Augustin_Sermons_parte_01",
-      "title": "Augustin Sermons",
+      "title": "Augustin, Sermons — parte 1",
       "libraryId": "history"
     },
     {
       "id": "history-0094_Augustin_Sermons_parte_02",
-      "title": "Augustin Sermons",
+      "title": "Augustin, Sermons — parte 2",
       "libraryId": "history"
     },
     {
       "id": "history-0094_Augustin_Sermons_parte_03",
-      "title": "Augustin Sermons",
+      "title": "Augustin, Sermons — parte 3",
       "libraryId": "history"
     },
     {
       "id": "history-0094_Augustin_Sermons_parte_04",
-      "title": "Augustin Sermons",
+      "title": "Augustin, Sermons — parte 4",
       "libraryId": "history"
     },
     {
       "id": "history-0096_Bernard_sur_Cant",
-      "title": "Bernard sur Cant",
+      "title": "Bernard sur Cant.",
       "libraryId": "history"
     },
     {
       "id": "history-0097_Bernard_sermons_parte_01",
-      "title": "Bernard sermons",
+      "title": "Bernard sermons — parte 1",
       "libraryId": "history"
     },
     {
       "id": "history-0097_Bernard_sermons_parte_02",
-      "title": "Bernard sermons",
+      "title": "Bernard sermons — parte 2",
       "libraryId": "history"
     },
     {
       "id": "history-0104_Ep_Bernabe",
-      "title": "Ep Bernabe",
+      "title": "Ep Bernabé",
       "libraryId": "history"
     },
     {
@@ -1624,7 +1627,7 @@
     },
     {
       "id": "history-0107_Didache_ES",
-      "title": "Didache",
+      "title": "Didaché",
       "libraryId": "history"
     },
     {
@@ -1634,7 +1637,7 @@
     },
     {
       "id": "history-0109_0115_San_Ignacio_de_Antioquia_Cartas",
-      "title": "San Ignacio de Antioquia Cartas",
+      "title": "Siete cartas de san Ignacio de Antioquía",
       "libraryId": "history"
     },
     {
@@ -1669,232 +1672,232 @@
     },
     {
       "id": "history-0123_Jerome_Lettres",
-      "title": "Jerome Lettres",
+      "title": "Jérôme - Lettres",
       "libraryId": "history"
     },
     {
       "id": "history-0124_Jerome_Critique_sacree",
-      "title": "Jerome Critique sacree",
+      "title": "Jérôme Critique sacrée",
       "libraryId": "history"
     },
     {
       "id": "history-0125_Jerome_Fragments_divers",
-      "title": "Jerome Fragments divers",
+      "title": "Jérôme Fragments divers",
       "libraryId": "history"
     },
     {
       "id": "history-0126_Jerome_oeuvres_mystiques",
-      "title": "Jerome oeuvres mystiques",
+      "title": "Jérôme oeuvres mystiques",
       "libraryId": "history"
     },
     {
       "id": "history-0127_Jerome_Polemique",
-      "title": "Jerome Polemique",
+      "title": "Jérôme - Polémique",
       "libraryId": "history"
     },
     {
       "id": "history-0128_Jerome_Hommes_illustres",
-      "title": "Jerome Hommes illustres",
+      "title": "Jérôme - Hommes illustres",
       "libraryId": "history"
     },
     {
       "id": "history-0129_Jerome_oeuvres_morales",
-      "title": "Jerome oeuvres morales",
+      "title": "Jérôme - oeuvres morales",
       "libraryId": "history"
     },
     {
       "id": "history-0137_Augustin_doctrine_chretienne",
-      "title": "Augustin doctrine chretienne",
+      "title": "Augustin, doctrine chrétienne",
       "libraryId": "history"
     },
     {
       "id": "history-0138_Augustin_acc_evangelistes",
-      "title": "Augustin acc evangelistes",
+      "title": "Augustin acc. évangélistes",
       "libraryId": "history"
     },
     {
       "id": "history-0140_Augustin_sur_Jean_parte_01",
-      "title": "Augustin sur Jean",
+      "title": "Augustin sur Jean — parte 1",
       "libraryId": "history"
     },
     {
       "id": "history-0140_Augustin_sur_Jean_parte_02",
-      "title": "Augustin sur Jean",
+      "title": "Augustin sur Jean — parte 2",
       "libraryId": "history"
     },
     {
       "id": "history-0142_Augustin_les_Psaumes_parte_01",
-      "title": "Augustin les Psaumes",
+      "title": "Augustin, les Psaumes — parte 1",
       "libraryId": "history"
     },
     {
       "id": "history-0142_Augustin_les_Psaumes_parte_02",
-      "title": "Augustin les Psaumes",
+      "title": "Augustin, les Psaumes — parte 2",
       "libraryId": "history"
     },
     {
       "id": "history-0142_Augustin_les_Psaumes_parte_03",
-      "title": "Augustin les Psaumes",
+      "title": "Augustin, les Psaumes — parte 3",
       "libraryId": "history"
     },
     {
       "id": "history-0142_Augustin_les_Psaumes_parte_04",
-      "title": "Augustin les Psaumes",
+      "title": "Augustin, les Psaumes — parte 4",
       "libraryId": "history"
     },
     {
       "id": "history-0143_Augustin_Epitre_Jean",
-      "title": "Augustin Epitre Jean",
+      "title": "Augustin, Epitre Jean",
       "libraryId": "history"
     },
     {
       "id": "history-0146_Agustin_Confesiones",
-      "title": "Agustin Confesiones",
+      "title": "Agustin - Confesiones",
       "libraryId": "history"
     },
     {
       "id": "history-0147_Augustin_de_la_Foi_Esperance_et_Charite",
-      "title": "Augustin de la Foi Esperance et Charite",
+      "title": "Augustin, de la Foi, Espérance et Charité",
       "libraryId": "history"
     },
     {
       "id": "history-0149_Augustin_de_la_continence",
-      "title": "Augustin de la continence",
+      "title": "Augustin, de la continence.",
       "libraryId": "history"
     },
     {
       "id": "history-0150_Augustin_de_ce_qui_est_bien_dans_le_mariage",
-      "title": "Augustin de ce qui est bien dans le mariage",
+      "title": "Augustin, de ce qui est bien dans le mariage.",
       "libraryId": "history"
     },
     {
       "id": "history-0151_Augustin_unions_adulteres",
-      "title": "Augustin unions adulteres",
+      "title": "Augustin, unions adultères",
       "libraryId": "history"
     },
     {
       "id": "history-0152_Augustin_du_mensonge",
-      "title": "Augustin du mensonge",
+      "title": "Augustin, du mensonge.",
       "libraryId": "history"
     },
     {
       "id": "history-0154_Augustin_de_la_patience",
-      "title": "Augustin de la patience",
+      "title": "Augustin, de la patience.",
       "libraryId": "history"
     },
     {
       "id": "history-0157_Augustin_du_Bapteme",
-      "title": "Augustin du Bapteme",
+      "title": "Augustin, du Baptême",
       "libraryId": "history"
     },
     {
       "id": "history-0158_Augustin_Catechisme",
-      "title": "Augustin Catechisme",
+      "title": "Augustin, Catéchisme",
       "libraryId": "history"
     },
     {
       "id": "history-0159_Augustin_Cite_de_Dieu_parte_01",
-      "title": "Augustin Cite de Dieu",
+      "title": "Augustin, Cité de Dieu — parte 1",
       "libraryId": "history"
     },
     {
       "id": "history-0159_Augustin_Cite_de_Dieu_parte_02",
-      "title": "Augustin Cite de Dieu",
+      "title": "Augustin, Cité de Dieu — parte 2",
       "libraryId": "history"
     },
     {
       "id": "history-0161_Augustin_de_la_grace_I_et_II",
-      "title": "Augustin de la grace I et II",
+      "title": "Augustin, de la grâce I et II",
       "libraryId": "history"
     },
     {
       "id": "history-0162_Augustin_lettres_parte_01",
-      "title": "Augustin lettres",
+      "title": "Augustin, lettres — parte 1",
       "libraryId": "history"
     },
     {
       "id": "history-0162_Augustin_lettres_parte_02",
-      "title": "Augustin lettres",
+      "title": "Augustin, lettres — parte 2",
       "libraryId": "history"
     },
     {
       "id": "history-0163_Augustin_du_libre_arbitre",
-      "title": "Augustin du libre arbitre",
+      "title": "Augustin, du libre arbitre",
       "libraryId": "history"
     },
     {
       "id": "history-0166_Regle_de_Saint_Augustin_pour_les_serviteurs_de_Dieu",
-      "title": "Regle de Saint Augustin pour les serviteurs de Dieu",
+      "title": "Règle de Saint Augustin pour les serviteurs de Dieu",
       "libraryId": "history"
     },
     {
       "id": "history-0167_Les_Retractations",
-      "title": "Les Retractations",
+      "title": "Les Rétractations",
       "libraryId": "history"
     },
     {
       "id": "history-0168_Augustin_Trinite",
-      "title": "Augustin Trinite",
+      "title": "Augustin, Trinité",
       "libraryId": "history"
     },
     {
       "id": "history-0171_Augustin_la_sainte_virginite",
-      "title": "Augustin la sainte virginite",
+      "title": "Augustin, la sainte virginité.",
       "libraryId": "history"
     },
     {
       "id": "history-0172_Augustin_Viduite",
-      "title": "Augustin Viduite",
+      "title": "Augustin, Viduité",
       "libraryId": "history"
     },
     {
       "id": "history-0173_Augustin_du_travail_des_moines",
-      "title": "Augustin du travail des moines",
+      "title": "Augustin, du travail des moines.",
       "libraryId": "history"
     },
     {
       "id": "history-0175_Augustin_du_symbole",
-      "title": "Augustin du symbole",
+      "title": "Augustin, du symbole.",
       "libraryId": "history"
     },
     {
       "id": "history-0176_Augustin_de_la_discipline_chretienne",
-      "title": "Augustin de la discipline chretienne",
+      "title": "Augustin, de la discipline chrétienne.",
       "libraryId": "history"
     },
     {
       "id": "history-0178_Augustin_de_l_utilite_du_jeune",
-      "title": "Augustin de l utilite du jeune",
+      "title": "Augustin, de l'utilité du jeune.",
       "libraryId": "history"
     },
     {
       "id": "history-0183_Augustin_vraie_religion",
-      "title": "Augustin vraie religion",
+      "title": "Augustin, vraie religion.",
       "libraryId": "history"
     },
     {
       "id": "history-0187_Augustin_des_heresies",
-      "title": "Augustin des heresies",
+      "title": "Augustin, des hérésies.",
       "libraryId": "history"
     },
     {
       "id": "history-0191_0195_San_Agustin_Controversia_antimaniquea",
-      "title": "San Agustin Controversia antimaniquea",
+      "title": "Controversia antimaniquea",
       "libraryId": "history"
     },
     {
       "id": "history-0196_0197_San_Agustin_Controversia_arriana",
-      "title": "San Agustin Controversia arriana",
+      "title": "Controversia arriana",
       "libraryId": "history"
     },
     {
       "id": "history-0198_0204_San_Agustin_Controversia_donatista",
-      "title": "San Agustin Controversia donatista",
+      "title": "Controversia donatista",
       "libraryId": "history"
     },
     {
       "id": "history-0205_0211_San_Agustin_Controversia_pelagiana",
-      "title": "San Agustin Controversia pelagiana",
+      "title": "Controversia pelagiana",
       "libraryId": "history"
     },
     {
@@ -1904,27 +1907,27 @@
     },
     {
       "id": "history-0213_0220_San_Agustin_Escritos_polemicos",
-      "title": "San Agustin Escritos polemicos",
+      "title": "Escritos polémicos complementarios",
       "libraryId": "history"
     },
     {
       "id": "history-0221_CRISOSTOMO_SACERDOCIO",
-      "title": "CRISOSTOMO SACERDOCIO",
+      "title": "CRISOSTOMO-SACERDOCIO",
       "libraryId": "history"
     },
     {
       "id": "history-0222_Crisostomo_Ev_Juan",
-      "title": "Crisostomo Ev Juan",
+      "title": "Crisostomo Ev. Juan",
       "libraryId": "history"
     },
     {
       "id": "history-0223_Crisostomo_Mateo",
-      "title": "Crisostomo Mateo",
+      "title": "Crisóstomo - Mateo",
       "libraryId": "history"
     },
     {
       "id": "history-0224_Efren_ES",
-      "title": "Efren",
+      "title": "Efrén",
       "libraryId": "history"
     },
     {
@@ -1934,7 +1937,7 @@
     },
     {
       "id": "history-0230_Origenes_Cantar_Cant",
-      "title": "Origenes Cantar Cant",
+      "title": "Origenes, Cantar Cant",
       "libraryId": "history"
     },
     {
@@ -1944,12 +1947,12 @@
     },
     {
       "id": "history-0232_Origenes_de_principis",
-      "title": "Origenes de principis",
+      "title": "Origenes - de principis",
       "libraryId": "history"
     },
     {
       "id": "history-0233_Ireneo_Contra_herejes",
-      "title": "Ireneo Contra herejes",
+      "title": "Ireneo, Contra herejes",
       "libraryId": "history"
     },
     {
@@ -1959,87 +1962,87 @@
     },
     {
       "id": "history-0235_Ireneo_Epideixis",
-      "title": "Ireneo Epideixis",
+      "title": "Ireneo- Epideixis",
       "libraryId": "history"
     },
     {
       "id": "history-0236_Historia_Eclesiastica_Eusebio_de_Cesarea",
-      "title": "Historia Eclesiastica Eusebio de Cesarea",
+      "title": "Historia Eclesiástica- Eusebio de Cesarea",
       "libraryId": "history"
     },
     {
       "id": "history-0248_F_de_Sales_Amor_de_Dios",
-      "title": "F de Sales Amor de Dios",
+      "title": "F.de Sales, Amor de Dios",
       "libraryId": "history"
     },
     {
       "id": "history-0249_F_de_Sales_Carta_abierta",
-      "title": "F de Sales Carta abierta",
+      "title": "F. de Sales, Carta abierta",
       "libraryId": "history"
     },
     {
       "id": "history-0250_Introduccion_vida_devota",
-      "title": "Introduccion vida devota",
+      "title": "Introducción vida devota",
       "libraryId": "history"
     },
     {
       "id": "history-0251_F_de_Sales_Entretiens",
-      "title": "F de Sales Entretiens",
+      "title": "F de Sales, Entretiens",
       "libraryId": "history"
     },
     {
       "id": "history-0252_Francois_S_avis_sermons",
-      "title": "Francois S avis sermons",
+      "title": "François S.: avis, sermons",
       "libraryId": "history"
     },
     {
       "id": "history-0253_F_de_Sales_Lettres_parte_01",
-      "title": "F de Sales Lettres",
+      "title": "F. de Sales, Lettres — parte 1",
       "libraryId": "history"
     },
     {
       "id": "history-0253_F_de_Sales_Lettres_parte_02",
-      "title": "F de Sales Lettres",
+      "title": "F. de Sales, Lettres — parte 2",
       "libraryId": "history"
     },
     {
       "id": "history-0254_Fr_de_Sales_Notre_Pere",
-      "title": "Fr de Sales Notre Pere",
+      "title": "Fr.de Sales: Notre Père",
       "libraryId": "history"
     },
     {
       "id": "history-0255_Audi_filia_et_vide_Juan_de_Avila",
-      "title": "Audi filia et vide Juan de Avila",
+      "title": "Audi filia et vide- Juan de Avila",
       "libraryId": "history"
     },
     {
       "id": "history-0256_0258_San_Juan_de_la_Cruz_Subida_del_Monte_Carmelo",
-      "title": "San Juan de la Cruz Subida del Monte Carmelo",
+      "title": "Subida del Monte Carmelo",
       "libraryId": "history"
     },
     {
       "id": "history-0259_0260_San_Juan_de_la_Cruz_Noche_oscura",
-      "title": "San Juan de la Cruz Noche oscura",
+      "title": "Noche oscura",
       "libraryId": "history"
     },
     {
       "id": "history-0261_0262_San_Juan_de_la_Cruz_Llama_de_amor_viva",
-      "title": "San Juan de la Cruz Llama de amor viva",
+      "title": "Llama de amor viva",
       "libraryId": "history"
     },
     {
       "id": "history-0263_0264_San_Juan_de_la_Cruz_Cantico_espiritual",
-      "title": "San Juan de la Cruz Cantico espiritual",
+      "title": "Cántico espiritual",
       "libraryId": "history"
     },
     {
       "id": "history-0265_0271_Santa_Teresa_Las_Moradas",
-      "title": "Santa Teresa Las Moradas",
+      "title": "Las Moradas",
       "libraryId": "history"
     },
     {
       "id": "history-0272_Camino_de_Perfeccion",
-      "title": "Camino de Perfeccion",
+      "title": "Camino de Perfección",
       "libraryId": "history"
     },
     {
@@ -2064,32 +2067,32 @@
     },
     {
       "id": "history-0278_Catherine_Dialogue",
-      "title": "Catherine Dialogue",
+      "title": "Catherine, Dialogue",
       "libraryId": "history"
     },
     {
       "id": "history-0279_Catherine_Lettres_parte_01",
-      "title": "Catherine Lettres",
+      "title": "Catherine, Lettres — parte 1",
       "libraryId": "history"
     },
     {
       "id": "history-0279_Catherine_Lettres_parte_02",
-      "title": "Catherine Lettres",
+      "title": "Catherine, Lettres — parte 2",
       "libraryId": "history"
     },
     {
       "id": "history-0280_B_Raymond_V_Catherine",
-      "title": "B Raymond V Catherine",
+      "title": "B Raymond: V. Catherine",
       "libraryId": "history"
     },
     {
       "id": "history-0281_COLLATIONES_DE_DONIS_S_SANCTI_BONAVENTURAE",
-      "title": "COLLATIONES DE DONIS S SANCTI BONAVENTURAE",
+      "title": "COLLATIONES DE DONIS S. SANCTI-BONAVENTURAE",
       "libraryId": "history"
     },
     {
       "id": "history-0282_Bernard_Lettres",
-      "title": "Bernard Lettres",
+      "title": "Bernard, Lettres",
       "libraryId": "history"
     },
     {
@@ -2099,27 +2102,27 @@
     },
     {
       "id": "history-0284_Bernard_de_Consideratione",
-      "title": "Bernard de Consideratione",
+      "title": "Bernard, de Consideratione",
       "libraryId": "history"
     },
     {
       "id": "history-0285_Bernard_aux_eveques",
-      "title": "Bernard aux eveques",
+      "title": "Bernard aux évêques",
       "libraryId": "history"
     },
     {
       "id": "history-0286_Bernard_aux_pretres",
-      "title": "Bernard aux pretres",
+      "title": "Bernard aux prêtres",
       "libraryId": "history"
     },
     {
       "id": "history-0287_Bernard_du_precepte",
-      "title": "Bernard du precepte",
+      "title": "Bernard, du précepte",
       "libraryId": "history"
     },
     {
       "id": "history-0288_Bernard_tr_5_sur_Cluny",
-      "title": "Bernard tr 5 sur Cluny",
+      "title": "Bernard, tr. 5 sur Cluny",
       "libraryId": "history"
     },
     {
@@ -2129,7 +2132,7 @@
     },
     {
       "id": "history-0290_Bernard_degres_humilite",
-      "title": "Bernard degres humilite",
+      "title": "Bernard, degrès humilité",
       "libraryId": "history"
     },
     {
@@ -2144,27 +2147,27 @@
     },
     {
       "id": "history-0293_Bernard_du_Bapteme",
-      "title": "Bernard du Bapteme",
+      "title": "Bernard, du Baptême",
       "libraryId": "history"
     },
     {
       "id": "history-0294_Bernard_sur_Abelard",
-      "title": "Bernard sur Abelard",
+      "title": "Bernard sur Abélard",
       "libraryId": "history"
     },
     {
       "id": "history-0295_Bernard_St_Malachie",
-      "title": "Bernard St Malachie",
+      "title": "Bernard - St Malachie",
       "libraryId": "history"
     },
     {
       "id": "history-0296_Bernard_le_chant",
-      "title": "Bernard le chant",
+      "title": "Bernard - le chant",
       "libraryId": "history"
     },
     {
       "id": "history-0297_Kempis_Imitacion_de_Cristo",
-      "title": "Kempis Imitacion de Cristo",
+      "title": "Kempis-Imitación de Cristo",
       "libraryId": "history"
     },
     {
@@ -2184,17 +2187,17 @@
     },
     {
       "id": "history-0332_Denzinger_parte_01",
-      "title": "Denzinger",
+      "title": "Denzinger — parte 1",
       "libraryId": "history"
     },
     {
       "id": "history-0332_Denzinger_parte_02",
-      "title": "Denzinger",
+      "title": "Denzinger — parte 2",
       "libraryId": "history"
     },
     {
       "id": "history-0332_Denzinger_parte_03",
-      "title": "Denzinger",
+      "title": "Denzinger — parte 3",
       "libraryId": "history"
     },
     {
@@ -2209,7 +2212,7 @@
     },
     {
       "id": "history-0369_PIOXII_MAGISTERIO_PONTIFICIO",
-      "title": "PIOXII MAGISTERIO PONTIFICIO",
+      "title": "PIOXII, MAGISTERIO PONTIFICIO",
       "libraryId": "history"
     },
     {
@@ -2224,7 +2227,7 @@
     },
     {
       "id": "history-0372_PIO_XI_MAGISTERIO_PONTIFICIO",
-      "title": "PIO XI MAGISTERIO PONTIFICIO",
+      "title": "PIO XI, MAGISTERIO PONTIFICIO",
       "libraryId": "history"
     },
     {
@@ -2234,22 +2237,22 @@
     },
     {
       "id": "history-0374_BENEDICTO_XV_MAGISTERIO",
-      "title": "BENEDICTO XV MAGISTERIO",
+      "title": "BENEDICTO XV - MAGISTERIO",
       "libraryId": "history"
     },
     {
       "id": "history-0375_San_Pio_X_Pascendi",
-      "title": "San Pio X Pascendi",
+      "title": "San Pio X, Pascendi",
       "libraryId": "history"
     },
     {
       "id": "history-0376_PIO_X_MAGISTERIO",
-      "title": "PIO X MAGISTERIO",
+      "title": "PIO X, MAGISTERIO",
       "libraryId": "history"
     },
     {
       "id": "history-0377_San_Pio_X_Ad_diem_illud_laetissimum",
-      "title": "San Pio X Ad diem illud laetissimum",
+      "title": "San Pio X, Ad diem illud laetissimum",
       "libraryId": "history"
     },
     {
@@ -2259,27 +2262,27 @@
     },
     {
       "id": "history-0379_San_Pio_X_Communium_rerum",
-      "title": "San Pio X Communium rerum",
+      "title": "San Pio X, Communium rerum",
       "libraryId": "history"
     },
     {
       "id": "history-0380_San_PIO_X_E_supremi_Apostolatus",
-      "title": "San PIO X E supremi Apostolatus",
+      "title": "San PIO X, E supremi Apostolatus",
       "libraryId": "history"
     },
     {
       "id": "history-0381_San_Pio_X_Iucunda_sane",
-      "title": "San Pio X Iucunda sane",
+      "title": "San Pio X, Iucunda sane",
       "libraryId": "history"
     },
     {
       "id": "history-0382_PIO_X_Notre_charge_apostolique",
-      "title": "PIO X Notre charge apostolique",
+      "title": "PIO X, Notre charge apostolique",
       "libraryId": "history"
     },
     {
       "id": "history-0383_LEON_XIII_MAGISTERIO",
-      "title": "LEON XIII MAGISTERIO",
+      "title": "LEON XIII, MAGISTERIO",
       "libraryId": "history"
     },
     {
@@ -2333,38 +2336,43 @@
       "libraryId": "history"
     },
     {
+      "id": "history-un-padre-fiel-a-sus-promesas-scott-hahn",
+      "title": "Un padre fiel a sus promesas",
+      "libraryId": "history"
+    },
+    {
       "id": "liturgy-0001_0005_Biblia_Evangelios_y_Hechos",
-      "title": "Biblia Evangelios y Hechos",
+      "title": "Evangelios y Hechos",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0006_0018_Biblia_Cartas_de_san_Pablo",
-      "title": "Biblia Cartas de san Pablo",
+      "title": "Cartas de san Pablo",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0019_0027_Biblia_Cartas_catolicas_y_Apocalipsis",
-      "title": "Biblia Cartas catolicas y Apocalipsis",
+      "title": "Cartas católicas y Apocalipsis",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0028_0032_Biblia_Pentateuco",
-      "title": "Biblia Pentateuco",
+      "title": "Pentateuco",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0033_0048_Biblia_Libros_historicos",
-      "title": "Biblia Libros historicos",
+      "title": "Libros históricos",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0049_0055_Biblia_Libros_sapienciales",
-      "title": "Biblia Libros sapienciales",
+      "title": "Libros sapienciales",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0056_0073_Biblia_Libros_profeticos",
-      "title": "Biblia Libros profeticos",
+      "title": "Libros proféticos",
       "libraryId": "liturgy"
     },
     {
@@ -2394,7 +2402,7 @@
     },
     {
       "id": "liturgy-0091_Catecismo_Iglesia_Catol",
-      "title": "Catecismo Iglesia Catol",
+      "title": "Catecismo Iglesia Catól.",
       "libraryId": "liturgy"
     },
     {
@@ -2404,52 +2412,52 @@
     },
     {
       "id": "liturgy-0093_CRISOSTOMO_HOMILIAS_I",
-      "title": "CRISOSTOMO HOMILIAS I",
+      "title": "CRISOSTOMO-HOMILIAS I",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0094_Augustin_Sermons_parte_01",
-      "title": "Augustin Sermons",
+      "title": "Augustin, Sermons — parte 1",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0094_Augustin_Sermons_parte_02",
-      "title": "Augustin Sermons",
+      "title": "Augustin, Sermons — parte 2",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0094_Augustin_Sermons_parte_03",
-      "title": "Augustin Sermons",
+      "title": "Augustin, Sermons — parte 3",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0094_Augustin_Sermons_parte_04",
-      "title": "Augustin Sermons",
+      "title": "Augustin, Sermons — parte 4",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0098_Benedicto_XVI_Homilias_parte_01",
-      "title": "Benedicto XVI Homilias",
+      "title": "Benedicto XVI Homilias — parte 1",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0098_Benedicto_XVI_Homilias_parte_02",
-      "title": "Benedicto XVI Homilias",
+      "title": "Benedicto XVI Homilias — parte 2",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0099_B_Juan_Pablo_II_Homilias_parte_01",
-      "title": "B Juan Pablo II Homilias",
+      "title": "B. Juan Pablo II Homilías — parte 1",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0099_B_Juan_Pablo_II_Homilias_parte_02",
-      "title": "B Juan Pablo II Homilias",
+      "title": "B. Juan Pablo II Homilías — parte 2",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0099_B_Juan_Pablo_II_Homilias_parte_03",
-      "title": "B Juan Pablo II Homilias",
+      "title": "B. Juan Pablo II Homilías — parte 3",
       "libraryId": "liturgy"
     },
     {
@@ -2459,12 +2467,12 @@
     },
     {
       "id": "liturgy-0107_Didache_ES",
-      "title": "Didache",
+      "title": "Didaché",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0109_0115_San_Ignacio_de_Antioquia_Cartas",
-      "title": "San Ignacio de Antioquia Cartas",
+      "title": "Siete cartas de san Ignacio de Antioquía",
       "libraryId": "liturgy"
     },
     {
@@ -2499,72 +2507,72 @@
     },
     {
       "id": "liturgy-0137_Augustin_doctrine_chretienne",
-      "title": "Augustin doctrine chretienne",
+      "title": "Augustin, doctrine chrétienne",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0140_Augustin_sur_Jean_parte_01",
-      "title": "Augustin sur Jean",
+      "title": "Augustin sur Jean — parte 1",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0140_Augustin_sur_Jean_parte_02",
-      "title": "Augustin sur Jean",
+      "title": "Augustin sur Jean — parte 2",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0142_Augustin_les_Psaumes_parte_01",
-      "title": "Augustin les Psaumes",
+      "title": "Augustin, les Psaumes — parte 1",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0142_Augustin_les_Psaumes_parte_02",
-      "title": "Augustin les Psaumes",
+      "title": "Augustin, les Psaumes — parte 2",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0142_Augustin_les_Psaumes_parte_03",
-      "title": "Augustin les Psaumes",
+      "title": "Augustin, les Psaumes — parte 3",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0142_Augustin_les_Psaumes_parte_04",
-      "title": "Augustin les Psaumes",
+      "title": "Augustin, les Psaumes — parte 4",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0157_Augustin_du_Bapteme",
-      "title": "Augustin du Bapteme",
+      "title": "Augustin, du Baptême",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0158_Augustin_Catechisme",
-      "title": "Augustin Catechisme",
+      "title": "Augustin, Catéchisme",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0175_Augustin_du_symbole",
-      "title": "Augustin du symbole",
+      "title": "Augustin, du symbole.",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0221_CRISOSTOMO_SACERDOCIO",
-      "title": "CRISOSTOMO SACERDOCIO",
+      "title": "CRISOSTOMO-SACERDOCIO",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0222_Crisostomo_Ev_Juan",
-      "title": "Crisostomo Ev Juan",
+      "title": "Crisostomo Ev. Juan",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0223_Crisostomo_Mateo",
-      "title": "Crisostomo Mateo",
+      "title": "Crisóstomo - Mateo",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0233_Ireneo_Contra_herejes",
-      "title": "Ireneo Contra herejes",
+      "title": "Ireneo, Contra herejes",
       "libraryId": "liturgy"
     },
     {
@@ -2574,7 +2582,7 @@
     },
     {
       "id": "liturgy-0235_Ireneo_Epideixis",
-      "title": "Ireneo Epideixis",
+      "title": "Ireneo- Epideixis",
       "libraryId": "liturgy"
     },
     {
@@ -2584,7 +2592,7 @@
     },
     {
       "id": "liturgy-0299_Ordo_Lectionnaire_Missel",
-      "title": "Ordo Lectionnaire Missel",
+      "title": "Ordo & Lectionnaire Missel",
       "libraryId": "liturgy"
     },
     {
@@ -2599,7 +2607,7 @@
     },
     {
       "id": "liturgy-0302_Ordenacion_general_Liturgia_Horas_ES",
-      "title": "Ordenacion general Liturgia Horas",
+      "title": "Ordenación general Liturgia Horas",
       "libraryId": "liturgy"
     },
     {
@@ -2619,22 +2627,22 @@
     },
     {
       "id": "liturgy-0306_Suma_Teologica_I",
-      "title": "Suma Teologica I",
+      "title": "Suma Teológica I",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0307_Suma_Teologica_I_II_parte_01",
-      "title": "Suma Teologica I II",
+      "title": "Suma Teológica I-II — parte 1",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0307_Suma_Teologica_I_II_parte_02",
-      "title": "Suma Teologica I II",
+      "title": "Suma Teológica I-II — parte 2",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0309_Suma_Teologica_III",
-      "title": "Suma Teologica III",
+      "title": "Suma Teológica III",
       "libraryId": "liturgy"
     },
     {
@@ -2649,17 +2657,17 @@
     },
     {
       "id": "liturgy-0314_Catena_aurea_ES_parte_01",
-      "title": "Catena aurea",
+      "title": "Catena aurea ES — parte 1",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0314_Catena_aurea_ES_parte_02",
-      "title": "Catena aurea",
+      "title": "Catena aurea ES — parte 2",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0314_Catena_aurea_ES_parte_03",
-      "title": "Catena aurea",
+      "title": "Catena aurea ES — parte 3",
       "libraryId": "liturgy"
     },
     {
@@ -2669,17 +2677,17 @@
     },
     {
       "id": "liturgy-0332_Denzinger_parte_01",
-      "title": "Denzinger",
+      "title": "Denzinger — parte 1",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0332_Denzinger_parte_02",
-      "title": "Denzinger",
+      "title": "Denzinger — parte 2",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0332_Denzinger_parte_03",
-      "title": "Denzinger",
+      "title": "Denzinger — parte 3",
       "libraryId": "liturgy"
     },
     {
@@ -2689,7 +2697,7 @@
     },
     {
       "id": "liturgy-0351_Ecclesia_de_Eucharistia_ES",
-      "title": "Ecclesia de Eucharistia",
+      "title": "Ecclesia de Eucharistia ES",
       "libraryId": "liturgy"
     },
     {
@@ -2734,7 +2742,7 @@
     },
     {
       "id": "liturgy-0421_LA_DIES_DOMINI",
-      "title": "LA DIES DOMINI",
+      "title": "LA - DIES DOMINI",
       "libraryId": "liturgy"
     },
     {
@@ -2749,12 +2757,12 @@
     },
     {
       "id": "liturgy-0431_Catecismo_S_Pio_X",
-      "title": "Catecismo S Pio X",
+      "title": "Catecismo S. Pio X",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0541_1983_Codigo_de_Derecho_Canonico",
-      "title": "Codigo de Derecho Canonico",
+      "title": "1983 Código de Derecho Canónico",
       "libraryId": "liturgy"
     },
     {
@@ -2769,17 +2777,17 @@
     },
     {
       "id": "liturgy-0562_Congregacion_Culto_Divino_parte_01",
-      "title": "Congregacion Culto Divino",
+      "title": "Congregacion Culto Divino — parte 1",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0562_Congregacion_Culto_Divino_parte_02",
-      "title": "Congregacion Culto Divino",
+      "title": "Congregacion Culto Divino — parte 2",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0562_Congregacion_Culto_Divino_parte_03",
-      "title": "Congregacion Culto Divino",
+      "title": "Congregacion Culto Divino — parte 3",
       "libraryId": "liturgy"
     },
     {
@@ -2799,22 +2807,22 @@
     },
     {
       "id": "liturgy-0568_1998_Diacres_Normes_Fondamentales",
-      "title": "Diacres Normes Fondamentales",
+      "title": "1998 Diacres Normes Fondamentales",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0571_1998_Directoire_Diacres",
-      "title": "Directoire Diacres",
+      "title": "1998 Directoire Diacres",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0573_1998_Formation_des_Diacres",
-      "title": "Formation des Diacres",
+      "title": "1998 Formation des Diacres",
       "libraryId": "liturgy"
     },
     {
       "id": "liturgy-0577_1986_MANUAL_DE_INDULGENCIAS",
-      "title": "MANUAL DE INDULGENCIAS",
+      "title": "1986 MANUAL DE INDULGENCIAS",
       "libraryId": "liturgy"
     },
     {
@@ -2834,12 +2842,12 @@
     },
     {
       "id": "ortodoxia-0077_Gaudium_et_spes_ES",
-      "title": "Gaudium et spes ES",
+      "title": "Gaudium et spes",
       "libraryId": "ortodoxia"
     },
     {
       "id": "ortodoxia-0087_Dignitatis_humanae_ES",
-      "title": "Dignitatis humanae ES",
+      "title": "Dignitatis humanae",
       "libraryId": "ortodoxia"
     },
     {
@@ -2894,27 +2902,27 @@
     },
     {
       "id": "ortodoxia-0337_Deus_caritas_est_ES",
-      "title": "Deus caritas est ES",
+      "title": "Deus caritas est",
       "libraryId": "ortodoxia"
     },
     {
       "id": "ortodoxia-0346_Evangelium_vitae_ES",
-      "title": "Evangelium vitae ES",
+      "title": "Evangelium vitae",
       "libraryId": "ortodoxia"
     },
     {
       "id": "ortodoxia-0348_Veritatis_splendor_ES",
-      "title": "Veritatis splendor ES",
+      "title": "Veritatis splendor",
       "libraryId": "ortodoxia"
     },
     {
       "id": "ortodoxia-0353_Humanae_Vitae_ES",
-      "title": "Humanae Vitae ES",
+      "title": "Humanae Vitae",
       "libraryId": "ortodoxia"
     },
     {
       "id": "ortodoxia-0393_Familiaris_consortio_ES",
-      "title": "Familiaris consortio ES",
+      "title": "Familiaris consortio",
       "libraryId": "ortodoxia"
     },
     {
@@ -2974,7 +2982,7 @@
     },
     {
       "id": "ortodoxia-1103_Familia_matrimonio_y_uniones_de_hecho_ES",
-      "title": "Familia, matrimonio y \\\"uniones de hecho\\\"",
+      "title": "Familia, matrimonio y \"uniones de hecho\"",
       "libraryId": "ortodoxia"
     },
     {
@@ -3164,7 +3172,7 @@
     },
     {
       "id": "ortodoxia-1181_Belloc_Europe_and_the_Faith_EN",
-      "title": "Europe and the Faith: \\\"Sine auctoritate nulla vita\\\"",
+      "title": "Europe and the Faith: \"Sine auctoritate nulla vita\"",
       "libraryId": "ortodoxia"
     },
     {
@@ -3744,952 +3752,952 @@
     },
     {
       "id": "clasicos-Abbie Farwell Brown - Obras completas",
-      "title": "Title: The Christmas Angel",
+      "title": "The Christmas Angel",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Abraham Merritt - Obras completas",
-      "title": "Title: The Moon Pool",
+      "title": "The Moon Pool",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Adalbert Stifter - Obras completas",
-      "title": "Title: Rock Crystal",
+      "title": "Rock Crystal",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Adam Smith - Obras completas",
-      "title": "Title: The Wealth of Nations",
+      "title": "The Wealth of Nations",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Agatha Christie - Obras completas",
-      "title": "Title: Poirot Investigates",
+      "title": "Obras reunidas de Agatha Christie",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Aldous Huxley - Obras completas",
-      "title": "Title: Antic Hay",
+      "title": "Obras reunidas de Aldous Huxley",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Alexander Pushkin - Obras completas",
-      "title": "Title: The Captain's Daughter",
+      "title": "Obras reunidas de Alexander Pushkin",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Alexandre Dumas - Obras completas - Parte 01",
-      "title": "Title: The Count of Monte Cristo",
+      "title": "The Count of Monte Cristo",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Alexandre Dumas - Obras completas - Parte 02",
-      "title": "Title: The Man in the Iron Mask",
+      "title": "Obras reunidas de Alexandre Dumas · Parte 2",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Alexis de Tocqueville - Obras completas",
-      "title": "Title: Democracy in America",
+      "title": "Democracy in America",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Algernon Blackwood - Obras completas",
-      "title": "Title: John Silence: Physician Extraordinary",
+      "title": "Obras reunidas de Algernon Blackwood",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Ambrose Bierce - Obras completas",
-      "title": "Title: An Occurrence at Owl Creek Bridge",
+      "title": "Obras reunidas de Ambrose Bierce",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Anatole France - Obras completas",
-      "title": "Title: The Revolt of the Angels",
+      "title": "The Revolt of the Angels",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Ann Radcliffe - Obras completas",
-      "title": "Title: The Mysteries of Udolpho",
+      "title": "Obras reunidas de Ann Radcliffe",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Anna Adolph - Obras completas",
-      "title": "Title: Arqtiq",
+      "title": "Arqtiq",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Anna Katharine Green - Obras completas",
-      "title": "Title: The Leavenworth Case",
+      "title": "The Leavenworth Case",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Anne Bronte - Obras completas",
-      "title": "Title: Agnes Grey",
+      "title": "Obras reunidas de Anne Bronte",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Anonymous - Obras completas",
-      "title": "Title: Aladdin and the Magic Lamp",
+      "title": "Obras reunidas de Anonymous",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Anthony Hope - Obras completas",
-      "title": "Title: Rupert of Hentzau",
+      "title": "Obras reunidas de Anthony Hope",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Anthony Trollope - Obras completas - Parte 01",
-      "title": "Title: Barchester Towers",
+      "title": "Obras reunidas de Anthony Trollope · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Anthony Trollope - Obras completas - Parte 02",
-      "title": "Title: Framley Parsonage",
+      "title": "Framley Parsonage",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Anthony Trollope - Obras completas - Parte 03",
-      "title": "Title: Orley Farm",
+      "title": "Obras reunidas de Anthony Trollope · Parte 3",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Anton Chekhov - Obras completas",
-      "title": "Title: The Bet",
+      "title": "Obras reunidas de Anton Chekhov",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Apsley Cherry-Garrard - Obras completas",
-      "title": "Title: The Worst Journey in the World",
+      "title": "The Worst Journey in the World",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Aristotle - Obras completas",
-      "title": "Title: Nicomachean Ethics",
+      "title": "Obras reunidas de Aristotle",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Arthur Conan Doyle - Obras completas - Parte 01",
-      "title": "Title: A Case of Identity",
+      "title": "Obras reunidas de Arthur Conan Doyle · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Arthur Conan Doyle - Obras completas - Parte 02",
-      "title": "Title: The Poison Belt",
+      "title": "Obras reunidas de Arthur Conan Doyle · Parte 2",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Arthur Machen - Obras completas",
-      "title": "Title: The Great God Pan",
+      "title": "Obras reunidas de Arthur Machen",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Augustine of Hippo - Obras completas",
-      "title": "Title: Confessions of St. Augustine",
+      "title": "Confessions of St. Augustine",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Barbara Constant - Obras completas",
-      "title": "Title: The Sound of Silence",
+      "title": "The Sound of Silence",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Ben Hecht - Obras completas",
-      "title": "Title: 1001 Afternoons in Chicago",
+      "title": "1001 Afternoons in Chicago",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Benedict de Spinoza - Obras completas",
-      "title": "Title: The Ethics",
+      "title": "The Ethics",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Booker T. Washington - Obras completas",
-      "title": "Title: Up from Slavery",
+      "title": "Up from Slavery",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Booth Tarkington - Obras completas",
-      "title": "Title: Alice Adams",
+      "title": "Alice Adams",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Bram Stoker - Obras completas",
-      "title": "Title: Dracula",
+      "title": "Obras reunidas de Bram Stoker",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-C.J. Cutliffe Hyne - Obras completas",
-      "title": "Title: The Lost Continent",
+      "title": "The Lost Continent",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Carl von Clausewitz - Obras completas",
-      "title": "Title: On War",
+      "title": "On War",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Carlo Collodi - Obras completas",
-      "title": "Title: The Adventures of Pinocchio",
+      "title": "The Adventures of Pinocchio",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Catherine Carswell - Obras completas",
-      "title": "Title: Open the Door!",
+      "title": "Open the Door!",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Charles Brockden Brown - Obras completas",
-      "title": "Title: Wieland",
+      "title": "Wieland",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Charles Darwin - Obras completas",
-      "title": "Title: On the Origin of Species",
+      "title": "On the Origin of Species",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Charles Dickens - Obras completas - Parte 01",
-      "title": "Title: A Christmas Carol",
+      "title": "Obras reunidas de Charles Dickens · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Charles Dickens - Obras completas - Parte 02",
-      "title": "Title: Bleak House",
+      "title": "Bleak House",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Charles Dickens - Obras completas - Parte 03",
-      "title": "Title: David Copperfield",
+      "title": "David Copperfield",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Charles Dickens - Obras completas - Parte 04",
-      "title": "Title: Great Expectations",
+      "title": "Obras reunidas de Charles Dickens · Parte 4",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Charles Dickens - Obras completas - Parte 05",
-      "title": "Title: Little Dorrit",
+      "title": "Little Dorrit",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Charles Dickens - Obras completas - Parte 06",
-      "title": "Title: Nicholas Nickleby",
+      "title": "Obras reunidas de Charles Dickens · Parte 6",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Charles Dickens - Obras completas - Parte 07",
-      "title": "Title: Our Mutual Friend",
+      "title": "Obras reunidas de Charles Dickens · Parte 7",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Charles Dickens - Obras completas - Parte 08",
-      "title": "Title: The Old Curiosity Shop",
+      "title": "The Old Curiosity Shop",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Charles Dickens - Obras completas - Parte 09",
-      "title": "Title: The Pickwick Papers",
+      "title": "The Pickwick Papers",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Charles Fort - Obras completas",
-      "title": "Title: The Book of the Damned",
+      "title": "The Book of the Damned",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Charles W. Chesnutt - Obras completas",
-      "title": "Title: The House Behind the Cedars",
+      "title": "The House Behind the Cedars",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Charlotte Bronte - Obras completas - Parte 01",
-      "title": "Title: Jane Eyre",
+      "title": "Obras reunidas de Charlotte Bronte · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Charlotte Bronte - Obras completas - Parte 02",
-      "title": "Title: Villette",
+      "title": "Villette",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Charlotte Dacre - Obras completas",
-      "title": "Title: Zofloya",
+      "title": "Zofloya",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Charlotte Perkins Gilman - Obras completas",
-      "title": "Title: Herland",
+      "title": "Obras reunidas de Charlotte Perkins Gilman",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Christopher Morley - Obras completas",
-      "title": "Title: Parnassus on Wheels",
+      "title": "Obras reunidas de Christopher Morley",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Clark Ashton Smith - Obras completas",
-      "title": "Title: The Maker of Gargoyles",
+      "title": "The Maker of Gargoyles",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Cotton Mather - Obras completas",
-      "title": "Title: Wonders of the Invisible World",
+      "title": "Wonders of the Invisible World",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-D.H. Lawrence - Obras completas",
-      "title": "Title: Lady Chatterley's Lover",
+      "title": "Obras reunidas de D.H. Lawrence",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Daniel Defoe - Obras completas",
-      "title": "Title: Journal of the Plague Year",
+      "title": "Obras reunidas de Daniel Defoe",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Dante - Obras completas",
-      "title": "Title: Paradiso",
+      "title": "Obras reunidas de Dante",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-David Hume - Obras completas",
-      "title": "Title: A Treatise of Human Nature",
+      "title": "A Treatise of Human Nature",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-David Kalakaua - Obras completas",
-      "title": "Title: The Legends and Myths of Hawai'i",
+      "title": "The Legends and Myths of Hawai'i",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-David Lindsay - Obras completas",
-      "title": "Title: A Voyage to Arcturus",
+      "title": "A Voyage to Arcturus",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-E. Everett Evans - Obras completas",
-      "title": "Title: The Planet Mappers",
+      "title": "The Planet Mappers",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-E.E. Cummings - Obras completas",
-      "title": "Title: The Enormous Room",
+      "title": "The Enormous Room",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-E.F. Benson - Obras completas",
-      "title": "Title: Queen Lucia",
+      "title": "Queen Lucia",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-E.M. Forster - Obras completas",
-      "title": "Title: A Passage to India",
+      "title": "Obras reunidas de E.M. Forster",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-E.T.A. Hoffmann - Obras completas",
-      "title": "Title: The Sandman",
+      "title": "The Sandman",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Edgar Allan Poe - Obras completas",
-      "title": "Title: A Descent into the Maelström",
+      "title": "Obras reunidas de Edgar Allan Poe",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Edgar Rice Burroughs - Obras completas - Parte 01",
-      "title": "Title: A Princess of Mars",
+      "title": "Obras reunidas de Edgar Rice Burroughs · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Edgar Rice Burroughs - Obras completas - Parte 02",
-      "title": "Title: The Gods of Mars",
+      "title": "Obras reunidas de Edgar Rice Burroughs · Parte 2",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Edgar Wallace - Obras completas",
-      "title": "Title: The Clue of the Twisted Candle",
+      "title": "The Clue of the Twisted Candle",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Edith Maude Hull - Obras completas",
-      "title": "Title: The Sheik",
+      "title": "The Sheik",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Edith Nesbit - Obras completas",
-      "title": "Title: Five Children and It",
+      "title": "Obras reunidas de Edith Nesbit",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Edith Wharton - Obras completas - Parte 01",
-      "title": "Title: A Son at the Front",
+      "title": "Obras reunidas de Edith Wharton · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Edith Wharton - Obras completas - Parte 02",
-      "title": "Title: The House of Mirth",
+      "title": "Obras reunidas de Edith Wharton · Parte 2",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Edward Bellamy - Obras completas",
-      "title": "Title: Looking Backward",
+      "title": "Looking Backward",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Edward Bulwer-Lytton - Obras completas",
-      "title": "Title: The Coming Race",
+      "title": "Obras reunidas de Edward Bulwer-Lytton",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Edward E. Smith - Obras completas",
-      "title": "Title: First Lensman",
+      "title": "Obras reunidas de Edward E. Smith",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Edward J. Ruppelt - Obras completas",
-      "title": "Title: The Report on Unidentified Flying Objects",
+      "title": "The Report on Unidentified Flying Objects",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Elizabeth Barrett Browning - Obras completas",
-      "title": "Title: Aurora Leigh",
+      "title": "Aurora Leigh",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Elizabeth Gaskell - Obras completas - Parte 01",
-      "title": "Title: Cranford",
+      "title": "Obras reunidas de Elizabeth Gaskell · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Elizabeth Gaskell - Obras completas - Parte 02",
-      "title": "Title: Wives and Daughters",
+      "title": "Wives and Daughters",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Emile Gaboriau - Obras completas",
-      "title": "Title: The Mystery of Orcival",
+      "title": "The Mystery of Orcival",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Émile Zola - Obras completas",
-      "title": "Title: Thérèse Raquin",
+      "title": "Thérèse Raquin",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Emily Bronte - Obras completas",
-      "title": "Title: Wuthering Heights",
+      "title": "Wuthering Heights",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Emily Dickinson - Obras completas",
-      "title": "Title: Poems: Three Series",
+      "title": "Poems: Three Series",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Emma Goldman - Obras completas",
-      "title": "Title: Anarchism and Other Essays",
+      "title": "Obras reunidas de Emma Goldman",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Emma Orczy - Obras completas",
-      "title": "Title: The Scarlet Pimpernel",
+      "title": "The Scarlet Pimpernel",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Ernest Hemingway - Obras completas",
-      "title": "Title: Three Stories and Ten Poems",
+      "title": "Three Stories and Ten Poems",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Ernest Renan - Obras completas",
-      "title": "Title: The Life of Jesus",
+      "title": "The Life of Jesus",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Ernest Shackleton - Obras completas",
-      "title": "Title: South!",
+      "title": "South!",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Erskine Childers - Obras completas",
-      "title": "Title: The Riddle of the Sands",
+      "title": "The Riddle of the Sands",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-F. Scott Fitzgerald - Obras completas",
-      "title": "Title: Tales of the Jazz Age",
+      "title": "Obras reunidas de F. Scott Fitzgerald",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Ford Madox Ford - Obras completas",
-      "title": "Title: The Good Soldier",
+      "title": "The Good Soldier",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Frances Hodgson Burnett - Obras completas",
-      "title": "Title: A Lady Of Quality",
+      "title": "Obras reunidas de Frances Hodgson Burnett",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Francis Parkman - Obras completas",
-      "title": "Title: The Oregon Trail",
+      "title": "The Oregon Trail",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Frank Norris - Obras completas",
-      "title": "Title: The Octopus",
+      "title": "Obras reunidas de Frank Norris",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Franz Kafka - Obras completas",
-      "title": "Title: A Hunger Artist",
+      "title": "Obras reunidas de Franz Kafka",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Frederick Jackson Turner - Obras completas",
-      "title": "Title: The Frontier in American History",
+      "title": "The Frontier in American History",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Freeman Wills Crofts - Obras completas",
-      "title": "Title: The Cask",
+      "title": "The Cask",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Friedrich Nietzsche - Obras completas",
-      "title": "Title: Beyond Good and Evil",
+      "title": "Obras reunidas de Friedrich Nietzsche",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Fyodor Dostoyevsky - Obras completas - Parte 01",
-      "title": "Title: Crime and Punishment",
+      "title": "Obras reunidas de Fyodor Dostoyevsky · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Fyodor Dostoyevsky - Obras completas - Parte 02",
-      "title": "Title: The Brothers Karamazov",
+      "title": "Obras reunidas de Fyodor Dostoyevsky · Parte 2",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Fyodor Dostoyevsky - Obras completas - Parte 03",
-      "title": "Title: The House of the Dead",
+      "title": "Obras reunidas de Fyodor Dostoyevsky · Parte 3",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Fyodor Sologub - Obras completas",
-      "title": "Title: The Created Legend",
+      "title": "The Created Legend",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-G.K. Chesterton - Obras completas",
-      "title": "Title: All Things Considered",
+      "title": "Obras reunidas de G.K. Chesterton",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Gaston Leroux - Obras completas",
-      "title": "Title: The Phantom of the Opera",
+      "title": "The Phantom of the Opera",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Geoffrey Chaucer - Obras completas",
-      "title": "Title: The Canterbury Tales",
+      "title": "The Canterbury Tales",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-George Bernard Shaw - Obras completas",
-      "title": "Title: Man and Superman",
+      "title": "Obras reunidas de George Bernard Shaw",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-George Eliot - Obras completas - Parte 01",
-      "title": "Title: Daniel Deronda",
+      "title": "Daniel Deronda",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-George Eliot - Obras completas - Parte 02",
-      "title": "Title: Middlemarch",
+      "title": "Middlemarch",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-George Eliot - Obras completas - Parte 03",
-      "title": "Title: Romola",
+      "title": "Obras reunidas de George Eliot · Parte 3",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-George Eliot - Obras completas - Parte 04",
-      "title": "Title: The Mill on the Floss",
+      "title": "The Mill on the Floss",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-George MacDonald - Obras completas",
-      "title": "Title: Phantastes",
+      "title": "Obras reunidas de George MacDonald",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-George O. Smith - Obras completas",
-      "title": "Title: Operation Interstellar",
+      "title": "Operation Interstellar",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Georgette Heyer - Obras completas",
-      "title": "Title: The Black Moth",
+      "title": "The Black Moth",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Gertrude Stein - Obras completas",
-      "title": "Title: Tender Buttons",
+      "title": "Tender Buttons",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Giovanni Boccaccio - Obras completas",
-      "title": "Title: The Decameron",
+      "title": "The Decameron",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Grace Livingston Hill - Obras completas",
-      "title": "Title: The Enchanted Barn",
+      "title": "Obras reunidas de Grace Livingston Hill",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Grace Miller White - Obras completas",
-      "title": "Title: Tess of the Storm Country",
+      "title": "Tess of the Storm Country",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Gustave Flaubert - Obras completas",
-      "title": "Title: Madame Bovary",
+      "title": "Madame Bovary",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-H. Addington Bruce - Obras completas",
-      "title": "Title: Historic Ghosts and Ghost Hunters",
+      "title": "Historic Ghosts and Ghost Hunters",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-H. Beam Piper - Obras completas",
-      "title": "Title: Little Fuzzy",
+      "title": "Obras reunidas de H. Beam Piper",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-H. Rider Haggard - Obras completas",
-      "title": "Title: Allan Quatermain",
+      "title": "Obras reunidas de H. Rider Haggard",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-H.G. Wells - Obras completas - Parte 01",
-      "title": "Title: Men Like Gods",
+      "title": "Obras reunidas de H.G. Wells · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-H.G. Wells - Obras completas - Parte 02",
-      "title": "Title: The World Set Free",
+      "title": "Obras reunidas de H.G. Wells · Parte 2",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-H.P. Lovecraft - Obras completas",
-      "title": "Title: At the Mountains of Madness",
+      "title": "Obras reunidas de H.P. Lovecraft",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Hans Christian Andersen - Obras completas",
-      "title": "Title: Andersen's Fairy Tales",
+      "title": "Obras reunidas de Hans Christian Andersen",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Harriet Beecher Stowe - Obras completas",
-      "title": "Title: Uncle Tom's Cabin",
+      "title": "Uncle Tom's Cabin",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Harriet Jacobs - Obras completas",
-      "title": "Title: Incidents in the Life of a Slave Girl",
+      "title": "Incidents in the Life of a Slave Girl",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Helen Hunt Jackson - Obras completas",
-      "title": "Title: Ramona",
+      "title": "Ramona",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Henri Barbusse - Obras completas",
-      "title": "Title: Under Fire",
+      "title": "Under Fire",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Henrik Ibsen - Obras completas",
-      "title": "Title: A Doll's House",
+      "title": "Obras reunidas de Henrik Ibsen",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Henry Adams - Obras completas",
-      "title": "Title: The Education of Henry Adams",
+      "title": "The Education of Henry Adams",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Henry David Thoreau - Obras completas",
-      "title": "Title: A Week on the Concord and Merrimack Rivers",
+      "title": "Obras reunidas de Henry David Thoreau",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Henry De Vere Stacpoole - Obras completas",
-      "title": "Title: The Blue Lagoon",
+      "title": "Obras reunidas de Henry De Vere Stacpoole",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Henry Fielding - Obras completas",
-      "title": "Title: Tom Jones",
+      "title": "Tom Jones",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Henry James - Obras completas",
-      "title": "Title: The Ambassadors",
+      "title": "Obras reunidas de Henry James",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Henry Morton Stanley - Obras completas",
-      "title": "Title: How I Found Livingstone",
+      "title": "How I Found Livingstone",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Henry Wadsworth Longfellow - Obras completas",
-      "title": "Title: Tales of a Wayside Inn",
+      "title": "Tales of a Wayside Inn",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Herman Hesse - Obras completas",
-      "title": "Title: Siddhartha",
+      "title": "Siddhartha",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Herman Melville - Obras completas",
-      "title": "Title: Bartleby, the Scrivener",
+      "title": "Obras reunidas de Herman Melville",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Herodotus - Obras completas",
-      "title": "Title: The Histories",
+      "title": "The Histories",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Homer - Obras completas",
-      "title": "Title: The Iliad",
+      "title": "Obras reunidas de Homer",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Honoré de Balzac - Obras completas",
-      "title": "Title: Colonel Chabert",
+      "title": "Obras reunidas de Honoré de Balzac",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Horace Walpole - Obras completas",
-      "title": "Title: The Castle of Otranto",
+      "title": "The Castle of Otranto",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Howard Pyle - Obras completas",
-      "title": "Title: The Merry Adventures of Robin Hood",
+      "title": "The Merry Adventures of Robin Hood",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Ida B. Wells - Obras completas",
-      "title": "Title: Southern Horrors: Lynch Law in All Its Phases",
+      "title": "Southern Horrors: Lynch Law in All Its Phases",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Immanuel Kant - Obras completas",
-      "title": "Title: Critique of Pure Reason",
+      "title": "Critique of Pure Reason",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Ivan Turgenev - Obras completas",
-      "title": "Title: Fathers and Sons",
+      "title": "Obras reunidas de Ivan Turgenev",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-J. M. Barrie - Obras completas",
-      "title": "Title: Peter Pan",
+      "title": "Peter Pan",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-J. Meade Falkner - Obras completas",
-      "title": "Title: Moonfleet",
+      "title": "Obras reunidas de J. Meade Falkner",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-J. Sheridan LeFanu - Obras completas",
-      "title": "Title: Carmilla",
+      "title": "Obras reunidas de J. Sheridan LeFanu",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-J.S. Fletcher - Obras completas",
-      "title": "Title: Scarhaven Keep",
+      "title": "Scarhaven Keep",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Jack London - Obras completas - Parte 01",
-      "title": "Title: Lost Face",
+      "title": "Obras reunidas de Jack London · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Jack London - Obras completas - Parte 02",
-      "title": "Title: The Scarlet Plague",
+      "title": "Obras reunidas de Jack London · Parte 2",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-James Branch Cabell - Obras completas",
-      "title": "Title: Jurgen",
+      "title": "Jurgen",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-James De Mille - Obras completas",
-      "title": "Title: A Strange Manuscript Found in a Copper Cylinder",
+      "title": "A Strange Manuscript Found in a Copper Cylinder",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-James Fenimore Cooper - Obras completas - Parte 01",
-      "title": "Title: The Crater",
+      "title": "Obras reunidas de James Fenimore Cooper · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-James Fenimore Cooper - Obras completas - Parte 02",
-      "title": "Title: The Last of the Mohicans",
+      "title": "Obras reunidas de James Fenimore Cooper · Parte 2",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-James Fenimore Cooper - Obras completas - Parte 03",
-      "title": "Title: The Prairie",
+      "title": "Obras reunidas de James Fenimore Cooper · Parte 3",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-James Joyce - Obras completas",
-      "title": "Title: A Portrait of the Artist as a Young Man",
+      "title": "Obras reunidas de James Joyce",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-James Stephens - Obras completas",
-      "title": "Title: Irish Fairy Tales",
+      "title": "Obras reunidas de James Stephens",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Jane Addams - Obras completas",
-      "title": "Title: Twenty Years at Hull House",
+      "title": "Twenty Years at Hull House",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Jane Austen - Obras completas - Parte 01",
-      "title": "Title: Emma",
+      "title": "Obras reunidas de Jane Austen · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Jane Austen - Obras completas - Parte 02",
-      "title": "Title: Persuasion",
+      "title": "Obras reunidas de Jane Austen · Parte 2",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Jane Webb - Obras completas",
-      "title": "Title: The Mummy!",
+      "title": "The Mummy!",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Jerome K. Jerome - Obras completas",
-      "title": "Title: Three Men in a Boat",
+      "title": "Three Men in a Boat",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Johann David Wyss - Obras completas",
-      "title": "Title: Swiss Family Robinson",
+      "title": "Swiss Family Robinson",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Johann Wolfgang von Goethe - Obras completas",
-      "title": "Title: Faust",
+      "title": "Obras reunidas de Johann Wolfgang von Goethe",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-John Ames Mitchell - Obras completas",
-      "title": "Title: The Last American",
+      "title": "The Last American",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-John Buchan - Obras completas",
-      "title": "Title: Greenmantle",
+      "title": "Obras reunidas de John Buchan",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-John Dos Passos - Obras completas",
-      "title": "Title: Three Soldiers",
+      "title": "Three Soldiers",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-John Milton - Obras completas",
-      "title": "Title: Paradise Lost",
+      "title": "Paradise Lost",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-John Reed - Obras completas",
-      "title": "Title: Ten Days that Shook the World",
+      "title": "Ten Days that Shook the World",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-John Stuart Mill - Obras completas",
-      "title": "Title: On Liberty",
+      "title": "Obras reunidas de John Stuart Mill",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-John W. Campbell - Obras completas",
-      "title": "Title: Invaders from the Infinite",
+      "title": "Obras reunidas de John W. Campbell",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Jonathan Swift - Obras completas",
-      "title": "Title: A Modest Proposal",
+      "title": "Obras reunidas de Jonathan Swift",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-José Rizal - Obras completas",
-      "title": "Title: Noli Me Tángere",
+      "title": "Noli Me Tángere",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Joseph Conrad - Obras completas - Parte 01",
-      "title": "Title: Heart of Darkness",
+      "title": "Obras reunidas de Joseph Conrad · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Joseph Conrad - Obras completas - Parte 02",
-      "title": "Title: Victory",
+      "title": "Victory",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Jules Verne - Obras completas - Parte 01",
-      "title": "Title: An Antarctic Mystery",
+      "title": "Obras reunidas de Jules Verne · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Jules Verne - Obras completas - Parte 02",
-      "title": "Title: The Mysterious Island",
+      "title": "Obras reunidas de Jules Verne · Parte 2",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Julius Caesar - Obras completas",
-      "title": "Title: Commentaries on the Gallic War",
+      "title": "Commentaries on the Gallic War",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-L. Frank Baum - Obras completas",
-      "title": "Title: A Kidnapped Santa Claus",
+      "title": "Obras reunidas de L. Frank Baum",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Leo Tolstoy - Obras completas - Parte 01",
-      "title": "Title: Anna Karenina",
+      "title": "Obras reunidas de Leo Tolstoy · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Leo Tolstoy - Obras completas - Parte 02",
-      "title": "Title: War and Peace",
+      "title": "War and Peace",
       "libraryId": "clasicos"
     },
     {
@@ -4699,302 +4707,302 @@
     },
     {
       "id": "clasicos-Lew Wallace - Obras completas",
-      "title": "Title: Ben-Hur",
+      "title": "Ben-Hur",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Lewis Carroll - Obras completas",
-      "title": "Title: Alice's Adventures in Wonderland",
+      "title": "Obras reunidas de Lewis Carroll",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Lord Dunsany - Obras completas",
-      "title": "Title: The Gods of Pegana",
+      "title": "Obras reunidas de Lord Dunsany",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Louisa May Alcott - Obras completas - Parte 01",
-      "title": "Title: An Old-Fashioned Girl",
+      "title": "Obras reunidas de Louisa May Alcott · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Louisa May Alcott - Obras completas - Parte 02",
-      "title": "Title: Little Women",
+      "title": "Obras reunidas de Louisa May Alcott · Parte 2",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Lucy Maud Montgomery - Obras completas - Parte 01",
-      "title": "Title: Anne of Avonlea",
+      "title": "Obras reunidas de Lucy Maud Montgomery · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Lucy Maud Montgomery - Obras completas - Parte 02",
-      "title": "Title: Rainbow Valley",
+      "title": "Obras reunidas de Lucy Maud Montgomery · Parte 2",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-M.R. James - Obras completas",
-      "title": "Title: Casting the Runes",
+      "title": "Obras reunidas de M.R. James",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Maimonides - Obras completas",
-      "title": "Title: The Guide for the Perplexed",
+      "title": "The Guide for the Perplexed",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Marcel Proust - Obras completas",
-      "title": "Title: Swann's Way",
+      "title": "Swann's Way",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Marie Belloc Lowndes - Obras completas",
-      "title": "Title: The Lodger",
+      "title": "The Lodger",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Mark Twain - Obras completas - Parte 01",
-      "title": "Title: A Connecticut Yankee in King Arthur's Court",
+      "title": "Obras reunidas de Mark Twain · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Mark Twain - Obras completas - Parte 02",
-      "title": "Title: Roughing It",
+      "title": "Obras reunidas de Mark Twain · Parte 2",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Martin Luther - Obras completas",
-      "title": "Title: On the Bondage of the Will",
+      "title": "On the Bondage of the Will",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Martin V. Ingram - Obras completas",
-      "title": "Title: Authenticated History of the Bell Witch",
+      "title": "Authenticated History of the Bell Witch",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Mary Elizabeth Braddon - Obras completas",
-      "title": "Title: Lady Audley's Secret",
+      "title": "Lady Audley's Secret",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Mary Hunter Austin - Obras completas",
-      "title": "Title: The Land of Little Rain",
+      "title": "The Land of Little Rain",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Mary Johnston - Obras completas",
-      "title": "Title: To Have and to Hold",
+      "title": "To Have and to Hold",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Mary Kingsley - Obras completas",
-      "title": "Title: Travels in West Africa",
+      "title": "Travels in West Africa",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Mary Wollstonecraft - Obras completas",
-      "title": "Title: A Vindication of the Rights of Woman",
+      "title": "Obras reunidas de Mary Wollstonecraft",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Mary Wollstonecraft Shelley - Obras completas",
-      "title": "Title: Frankenstein",
+      "title": "Obras reunidas de Mary Wollstonecraft Shelley",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Matthew Lewis - Obras completas",
-      "title": "Title: The Monk",
+      "title": "The Monk",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Maurice Leblanc - Obras completas",
-      "title": "Title: Arsène Lupin vs. Herlock Sholmes",
+      "title": "Obras reunidas de Maurice Leblanc",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Max Brand - Obras completas",
-      "title": "Title: Gunman's Reckoning",
+      "title": "Gunman's Reckoning",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Maxim Gorky - Obras completas",
-      "title": "Title: The Mother",
+      "title": "Obras reunidas de Maxim Gorky",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-May Sinclair - Obras completas",
-      "title": "Title: Uncanny Stories",
+      "title": "Uncanny Stories",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Mayne Reid - Obras completas",
-      "title": "Title: The Headless Horseman",
+      "title": "The Headless Horseman",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Miguel de Cervantes Saavedra - Obras completas",
-      "title": "Title: Don Quixote",
+      "title": "Don Quixote",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Molière - Obras completas",
-      "title": "Title: Tartuffe",
+      "title": "Tartuffe",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Moncure Daniel Conway - Obras completas",
-      "title": "Title: Demonology and Devil-lore",
+      "title": "Demonology and Devil-lore",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Montesquieu - Obras completas",
-      "title": "Title: Persian Letters",
+      "title": "Persian Letters",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Nathaniel Hawthorne - Obras completas",
-      "title": "Title: Edward Randolph's Portrait",
+      "title": "Obras reunidas de Nathaniel Hawthorne",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Nikolai Gogol - Obras completas",
-      "title": "Title: Dead Souls",
+      "title": "Dead Souls",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Olaudah Equiano - Obras completas",
-      "title": "Title: The Interesting Narrative of the Life of Olaudah Equiano",
+      "title": "The Interesting Narrative of the Life of Olaudah Equiano",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Olive Schreiner - Obras completas",
-      "title": "Title: The Story of an African Farm",
+      "title": "The Story of an African Farm",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Oscar Wilde - Obras completas",
-      "title": "Title: An Ideal Husband",
+      "title": "Obras reunidas de Oscar Wilde",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Ovid - Obras completas",
-      "title": "Title: Metamorphoses",
+      "title": "Metamorphoses",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Owen Wister - Obras completas",
-      "title": "Title: The Virginian",
+      "title": "The Virginian",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-P.G. Wodehouse - Obras completas",
-      "title": "Title: A Damsel in Distress",
+      "title": "Obras reunidas de P.G. Wodehouse",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Peter Kropotkin - Obras completas",
-      "title": "Title: The Conquest of Bread",
+      "title": "The Conquest of Bread",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Philip K. Dick - Obras completas",
-      "title": "Title: Mr. Spaceship",
+      "title": "Obras reunidas de Philip K. Dick",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Philip Wylie - Obras completas",
-      "title": "Title: Gladiator",
+      "title": "Gladiator",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Pierre Choderlos de Laclos - Obras completas",
-      "title": "Title: Dangerous Liaisons",
+      "title": "Dangerous Liaisons",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Plato - Obras completas",
-      "title": "Title: Apology of Socrates",
+      "title": "Obras reunidas de Plato",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Publius - Obras completas",
-      "title": "Title: The Federalist Papers",
+      "title": "The Federalist Papers",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Queen Liliʻuokalani - Obras completas",
-      "title": "Title: Hawaii's Story",
+      "title": "Hawaii's Story",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-R.D. Blackmore - Obras completas",
-      "title": "Title: Lorna Doone",
+      "title": "Lorna Doone",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-R.M. Ballantyne - Obras completas",
-      "title": "Title: The Coral Island",
+      "title": "The Coral Island",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Rabindranath Tagore - Obras completas",
-      "title": "Title: Gitanjali",
+      "title": "Gitanjali",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Rafael Sabatini - Obras completas",
-      "title": "Title: Captain Blood",
+      "title": "Captain Blood",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Ralph Waldo Emerson - Obras completas",
-      "title": "Title: Essays",
+      "title": "Obras reunidas de Ralph Waldo Emerson",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Richard Jefferies - Obras completas",
-      "title": "Title: After London",
+      "title": "After London",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Richard Marsh - Obras completas",
-      "title": "Title: The Beetle",
+      "title": "The Beetle",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Robert Hugh Benson - Obras completas",
-      "title": "Title: Lord of the World",
+      "title": "Lord of the World",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Robert Louis Stevenson - Obras completas",
-      "title": "Title: Kidnapped",
+      "title": "Obras reunidas de Robert Louis Stevenson",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Robert W. Chambers - Obras completas",
-      "title": "Title: The King in Yellow",
+      "title": "Obras reunidas de Robert W. Chambers",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Roy Chapman Andrews - Obras completas",
-      "title": "Title: Across Mongolian Plains",
+      "title": "Across Mongolian Plains",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Rudyard Kipling - Obras completas",
-      "title": "Title: As Easy as A.B.C.",
+      "title": "Obras reunidas de Rudyard Kipling",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Samuel Butler - Obras completas",
-      "title": "Title: Erewhon",
+      "title": "Erewhon",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Samuel Richardson - Obras completas - Parte 01",
-      "title": "Title: Clarissa",
+      "title": "Clarissa",
       "libraryId": "clasicos"
     },
     {
@@ -5004,107 +5012,107 @@
     },
     {
       "id": "clasicos-Sherwood Anderson - Obras completas",
-      "title": "Title: Winesburg, Ohio",
+      "title": "Winesburg, Ohio",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Silvio Pellico - Obras completas",
-      "title": "Title: My Prisons",
+      "title": "My Prisons",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Sinclair Lewis - Obras completas",
-      "title": "Title: Babbitt",
+      "title": "Obras reunidas de Sinclair Lewis",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Snorri Sturluson - Obras completas",
-      "title": "Title: Egil's Saga",
+      "title": "Egil's Saga",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Solomon Northup - Obras completas",
-      "title": "Title: Twelve Years a Slave",
+      "title": "Twelve Years a Slave",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Sophocles - Obras completas",
-      "title": "Title: Antigone",
+      "title": "Obras reunidas de Sophocles",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Stendhal - Obras completas",
-      "title": "Title: The Red and the Black",
+      "title": "The Red and the Black",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Stephen Crane - Obras completas",
-      "title": "Title: The Blue Hotel",
+      "title": "Obras reunidas de Stephen Crane",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Talbot Mundy - Obras completas",
-      "title": "Title: King of the Khyber Rifles",
+      "title": "King of the Khyber Rifles",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-The Brothers Grimm - Obras completas",
-      "title": "Title: Grimms' Fairy Tales",
+      "title": "Grimms' Fairy Tales",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Theodore Dreiser - Obras completas",
-      "title": "Title: Sister Carrie",
+      "title": "Sister Carrie",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Thomas Bulfinch - Obras completas",
-      "title": "Title: Bulfinch's Mythology",
+      "title": "Bulfinch's Mythology",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Thomas Hardy - Obras completas - Parte 01",
-      "title": "Title: Far from the Madding Crowd",
+      "title": "Obras reunidas de Thomas Hardy · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Thomas Hardy - Obras completas - Parte 02",
-      "title": "Title: The Mayor of Casterbridge",
+      "title": "Obras reunidas de Thomas Hardy · Parte 2",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Thomas Hobbes - Obras completas",
-      "title": "Title: Leviathan",
+      "title": "Leviathan",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Thomas Malory - Obras completas",
-      "title": "Title: Le Morte d'Arthur",
+      "title": "Le Morte d'Arthur",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Thomas Paine - Obras completas",
-      "title": "Title: Common Sense",
+      "title": "Obras reunidas de Thomas Paine",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Ulysses S. Grant - Obras completas",
-      "title": "Title: Personal Memoirs of Ulysses S. Grant",
+      "title": "Personal Memoirs of Ulysses S. Grant",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Upton Sinclair - Obras completas",
-      "title": "Title: King Coal",
+      "title": "Obras reunidas de Upton Sinclair",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Various - Obras completas - Parte 01",
-      "title": "Title: Christmas Stories from French and Spanish Writers",
+      "title": "Obras reunidas de Various · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Various - Obras completas - Parte 02",
-      "title": "Title: King James Bible",
+      "title": "King James Bible",
       "libraryId": "clasicos"
     },
     {
@@ -5114,132 +5122,132 @@
     },
     {
       "id": "clasicos-Various - Obras completas - Parte 04",
-      "title": "Title: One Thousand and One Nights",
+      "title": "Obras reunidas de Various · Parte 4",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Venerable Bede - Obras completas",
-      "title": "Title: Ecclesiastical History of the English People",
+      "title": "Ecclesiastical History of the English People",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Vicente Blasco Ibáñez - Obras completas",
-      "title": "Title: Blood and Sand",
+      "title": "Blood and Sand",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Victor Hugo - Obras completas - Parte 01",
-      "title": "Title: Les Misérables",
+      "title": "Les Misérables",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Victor Hugo - Obras completas - Parte 02",
-      "title": "Title: Ninety-Three",
+      "title": "Obras reunidas de Victor Hugo · Parte 2",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Victor Hugo - Obras completas - Parte 03",
-      "title": "Title: The Man Who Laughs",
+      "title": "The Man Who Laughs",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Victoria Cross - Obras completas",
-      "title": "Title: The Night of Temptation",
+      "title": "The Night of Temptation",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Virgil - Obras completas",
-      "title": "Title: Aeneid",
+      "title": "Aeneid",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Virginia Woolf - Obras completas",
-      "title": "Title: Jacob's Room",
+      "title": "Obras reunidas de Virginia Woolf",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Voltaire - Obras completas",
-      "title": "Title: Candide",
+      "title": "Obras reunidas de Voltaire",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-W.B. Yeats - Obras completas",
-      "title": "Title: The Celtic Twilight",
+      "title": "The Celtic Twilight",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-W.E.B. Du Bois - Obras completas",
-      "title": "Title: The Souls of Black Folk",
+      "title": "The Souls of Black Folk",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-W.H. Hudson - Obras completas",
-      "title": "Title: A Crystal Age",
+      "title": "Obras reunidas de W.H. Hudson",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Walt Whitman - Obras completas",
-      "title": "Title: Leaves of Grass",
+      "title": "Leaves of Grass",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Walter Scott - Obras completas",
-      "title": "Title: Ivanhoe",
+      "title": "Obras reunidas de Walter Scott",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Washington Irving - Obras completas",
-      "title": "Title: Old Christmas",
+      "title": "Obras reunidas de Washington Irving",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Wilkie Collins - Obras completas - Parte 01",
-      "title": "Title: After Dark",
+      "title": "Obras reunidas de Wilkie Collins · Parte 1",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Wilkie Collins - Obras completas - Parte 02",
-      "title": "Title: The Woman in White",
+      "title": "The Woman in White",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Willa Cather - Obras completas",
-      "title": "Title: A Lost Lady",
+      "title": "Obras reunidas de Willa Cather",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-William Hope Hodgson - Obras completas",
-      "title": "Title: The Boats of the \"Glen Carrig\"",
+      "title": "Obras reunidas de William Hope Hodgson",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-William Makepeace Thackeray - Obras completas",
-      "title": "Title: The Rose and the Ring",
+      "title": "Obras reunidas de William Makepeace Thackeray",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-William Morris - Obras completas",
-      "title": "Title: The Well at the World's End",
+      "title": "Obras reunidas de William Morris",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-William Shakespeare - Obras completas",
-      "title": "Title: A Midsummer Night's Dream",
+      "title": "Obras reunidas de William Shakespeare",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-William Wells Brown - Obras completas",
-      "title": "Title: Clotel; or, The President's Daughter",
+      "title": "Clotel; or, The President's Daughter",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Winston Churchill - Obras completas",
-      "title": "Title: The Inside of the Cup",
+      "title": "The Inside of the Cup",
       "libraryId": "clasicos"
     },
     {
       "id": "clasicos-Zane Grey - Obras completas",
-      "title": "Title: Riders of the Purple Sage",
+      "title": "Obras reunidas de Zane Grey",
       "libraryId": "clasicos"
     },
     {
@@ -5338,43 +5346,113 @@
       "libraryId": "san-josemaria"
     },
     {
-      "id": "preparadora-circulos-1013_Papa_Francisco_Enciclicas",
+      "id": "san-josemaria-fundador-vol-1",
+      "title": "“El Fundador del Opus Dei” (Vol. 1)",
+      "libraryId": "san-josemaria"
+    },
+    {
+      "id": "san-josemaria-fundador-vol-2",
+      "title": "“El Fundador del Opus Dei.” (Vol. 2)",
+      "libraryId": "san-josemaria"
+    },
+    {
+      "id": "san-josemaria-fundador-vol-3",
+      "title": "“El Fundador del Opus Dei” (Vol. 3)",
+      "libraryId": "san-josemaria"
+    },
+    {
+      "id": "preparadora-circulos-1013-papa-francisco-enciclicas",
       "title": "Papa Francisco: Encíclicas",
       "libraryId": "preparadora-circulos"
     },
     {
-      "id": "preparadora-circulos-1014_Papa_Francisco_Exhortaciones_Apostolicas",
+      "id": "preparadora-circulos-1014-papa-francisco-exhortaciones-apostolicas",
       "title": "Papa Francisco: Exhortaciones apostólicas",
       "libraryId": "preparadora-circulos"
     },
     {
-      "id": "preparadora-circulos-1015_Papa_Francisco_Cartas_Apostolicas",
+      "id": "preparadora-circulos-1015-papa-francisco-cartas-apostolicas",
       "title": "Papa Francisco: Cartas apostólicas",
       "libraryId": "preparadora-circulos"
     },
     {
-      "id": "preparadora-circulos-1016_Papa_Francisco_Mensajes",
+      "id": "preparadora-circulos-1016-papa-francisco-mensajes",
       "title": "Papa Francisco: Mensajes",
       "libraryId": "preparadora-circulos"
     },
     {
-      "id": "preparadora-circulos-1017_Papa_Leon_XIV_Enciclicas",
+      "id": "preparadora-circulos-1017-papa-leon-xiv-enciclicas",
       "title": "Papa León XIV: Encíclicas",
       "libraryId": "preparadora-circulos"
     },
     {
-      "id": "preparadora-circulos-1018_Papa_Leon_XIV_Exhortaciones_Apostolicas",
+      "id": "preparadora-circulos-1018-papa-leon-xiv-exhortaciones-apostolicas",
       "title": "Papa León XIV: Exhortaciones apostólicas",
       "libraryId": "preparadora-circulos"
     },
     {
-      "id": "preparadora-circulos-1019_Papa_Leon_XIV_Cartas_Apostolicas",
+      "id": "preparadora-circulos-1019-papa-leon-xiv-cartas-apostolicas",
       "title": "Papa León XIV: Cartas apostólicas",
       "libraryId": "preparadora-circulos"
     },
     {
-      "id": "preparadora-circulos-1020_Papa_Leon_XIV_Mensajes",
+      "id": "preparadora-circulos-1020-papa-leon-xiv-mensajes",
       "title": "Papa León XIV: Mensajes",
+      "libraryId": "preparadora-circulos"
+    },
+    {
+      "id": "preparadora-circulos-1021-romana-contenidos-ediciones-24-81-parte-01",
+      "title": "Romana — contenidos de las ediciones 24–81",
+      "libraryId": "preparadora-circulos"
+    },
+    {
+      "id": "preparadora-circulos-1021-romana-contenidos-ediciones-24-81-parte-02",
+      "title": "Romana Contenidos Ediciones 24 81 Parte 02",
+      "libraryId": "preparadora-circulos"
+    },
+    {
+      "id": "preparadora-circulos-1021-romana-contenidos-ediciones-24-81-parte-03",
+      "title": "Romana Contenidos Ediciones 24 81 Parte 03",
+      "libraryId": "preparadora-circulos"
+    },
+    {
+      "id": "preparadora-circulos-1021-romana-contenidos-ediciones-24-81-parte-04",
+      "title": "Romana Contenidos Ediciones 24 81 Parte 04",
+      "libraryId": "preparadora-circulos"
+    },
+    {
+      "id": "preparadora-circulos-1021-romana-contenidos-ediciones-24-81-parte-05",
+      "title": "Romana Contenidos Ediciones 24 81 Parte 05",
+      "libraryId": "preparadora-circulos"
+    },
+    {
+      "id": "preparadora-circulos-1021-romana-contenidos-ediciones-24-81-parte-06",
+      "title": "Romana Contenidos Ediciones 24 81 Parte 06",
+      "libraryId": "preparadora-circulos"
+    },
+    {
+      "id": "preparadora-circulos-1021-romana-contenidos-ediciones-24-81-parte-07",
+      "title": "Romana Contenidos Ediciones 24 81 Parte 07",
+      "libraryId": "preparadora-circulos"
+    },
+    {
+      "id": "preparadora-circulos-1021-romana-contenidos-ediciones-24-81-parte-08",
+      "title": "Romana Contenidos Ediciones 24 81 Parte 08",
+      "libraryId": "preparadora-circulos"
+    },
+    {
+      "id": "preparadora-circulos-1021-romana-contenidos-ediciones-24-81-parte-09",
+      "title": "Romana Contenidos Ediciones 24 81 Parte 09",
+      "libraryId": "preparadora-circulos"
+    },
+    {
+      "id": "preparadora-circulos-1022-alvaro-del-portillo-obras-y-textos",
+      "title": "Alvaro_del_Portillo_Obras_y_Textos",
+      "libraryId": "preparadora-circulos"
+    },
+    {
+      "id": "preparadora-circulos-1023-javier-echevarria-cartas-y-textos",
+      "title": "Javier_Echevarria_Cartas_y_Textos",
       "libraryId": "preparadora-circulos"
     },
     {
@@ -6359,12 +6437,12 @@
     },
     {
       "id": "vida-santos-pedro-ballester-audiolibro-04-3-estrenando-vocacin-pedro-ballester-nunca-he-sido-tan-feliz",
-      "title": "04. 3. Estrenando vocación ｜ Pedro Ballester.  ¡Nunca he sido tan feliz!",
+      "title": "04. 3. Estrenando vocación ｜ Pedro Ballester. ¡Nunca he sido tan feliz!",
       "libraryId": "vida-santos"
     },
     {
       "id": "vida-santos-pedro-ballester-audiolibro-05-4-la-cruz-pedro-ballester-nunca-he-sido-tan-feliz",
-      "title": "05. 4. La Cruz ｜ Pedro Ballester.  ¡Nunca he sido tan feliz!",
+      "title": "05. 4. La Cruz ｜ Pedro Ballester. ¡Nunca he sido tan feliz!",
       "libraryId": "vida-santos"
     },
     {
@@ -6796,193 +6874,290 @@
       "id": "vida-santos-semblanzas-mercaba-1187-santa-josefina-bakhita",
       "title": "Santa Josefina Bakhita",
       "libraryId": "vida-santos"
+    },
+    {
+      "id": "meditacion-diaria-001_Meditaciones_Opus_Dei",
+      "title": "Meditaciones del Opus Dei",
+      "libraryId": "meditacion-diaria"
+    },
+    {
+      "id": "meditacion-diaria-002_Como_en_una_pelicula",
+      "title": "Como en una película",
+      "libraryId": "meditacion-diaria"
+    },
+    {
+      "id": "meditacion-diaria-003_10_Minutos_con_Jesus_P01",
+      "title": "10 Minutos con Jesús - Parte 1",
+      "libraryId": "meditacion-diaria"
+    },
+    {
+      "id": "meditacion-diaria-003_10_Minutos_con_Jesus_P02",
+      "title": "10 Minutos con Jesús - Parte 2",
+      "libraryId": "meditacion-diaria"
+    },
+    {
+      "id": "meditacion-diaria-003_10_Minutos_con_Jesus_P03",
+      "title": "10 Minutos con Jesús - Parte 3",
+      "libraryId": "meditacion-diaria"
+    },
+    {
+      "id": "meditacion-diaria-003_10_Minutos_con_Jesus_P04",
+      "title": "10 Minutos con Jesús - Parte 4",
+      "libraryId": "meditacion-diaria"
+    },
+    {
+      "id": "meditacion-diaria-003_10_Minutos_con_Jesus_P05",
+      "title": "10 Minutos con Jesús - Parte 5",
+      "libraryId": "meditacion-diaria"
+    },
+    {
+      "id": "meditacion-diaria-003_10_Minutos_con_Jesus_P06",
+      "title": "10 Minutos con Jesús - Parte 6",
+      "libraryId": "meditacion-diaria"
+    },
+    {
+      "id": "meditacion-diaria-003_10_Minutos_con_Jesus_P07",
+      "title": "10 Minutos con Jesús - Parte 7",
+      "libraryId": "meditacion-diaria"
+    },
+    {
+      "id": "meditacion-diaria-003_10_Minutos_con_Jesus_P08",
+      "title": "10 Minutos con Jesús - Parte 8",
+      "libraryId": "meditacion-diaria"
+    },
+    {
+      "id": "meditacion-diaria-003_10_Minutos_con_Jesus_P09",
+      "title": "10 Minutos con Jesús - Parte 9",
+      "libraryId": "meditacion-diaria"
+    },
+    {
+      "id": "meditacion-diaria-003_10_Minutos_con_Jesus_P10",
+      "title": "10 Minutos con Jesús - Parte 10",
+      "libraryId": "meditacion-diaria"
     }
   ],
   "shards": {
     "0": {
       "file": "data/search/0.json.gz",
-      "terms": 97,
-      "bytes": 673
+      "terms": 740,
+      "bytes": 5271,
+      "sha256": "13232d6c543e9ae0832393eae985a5ed1a544a0b9a39d9bbf77f5529f18d8835"
     },
     "1": {
       "file": "data/search/1.json.gz",
-      "terms": 1590,
-      "bytes": 26009
+      "terms": 12581,
+      "bytes": 160113,
+      "sha256": "8360b345041c3d757645a03e46278342d0acab007e5a5da02cc42dfc283c3f1c"
     },
     "2": {
       "file": "data/search/2.json.gz",
-      "terms": 1256,
-      "bytes": 13361
+      "terms": 8165,
+      "bytes": 80781,
+      "sha256": "7ce49566438a12259a78d5f147f449a694e24308530f2a78375069179336bd83"
     },
     "3": {
       "file": "data/search/3.json.gz",
-      "terms": 474,
-      "bytes": 5742
+      "terms": 4938,
+      "bytes": 40698,
+      "sha256": "67bcf89e2f0aafe49998cecc6fd4d73960ad9fb581e90887683092afa65f13f3"
     },
     "4": {
       "file": "data/search/4.json.gz",
-      "terms": 337,
-      "bytes": 3576
+      "terms": 2750,
+      "bytes": 27152,
+      "sha256": "3fa64e6e3ad5c30647200c240c709225b68f9a1a38dd6e54b733bfaf3f7ad5c2"
     },
     "5": {
       "file": "data/search/5.json.gz",
-      "terms": 206,
-      "bytes": 2316
+      "terms": 2429,
+      "bytes": 23265,
+      "sha256": "7992e1e9054e83ae137e48333061b276cf7d90dbdb78fe202aa7866bb18ef679"
     },
     "6": {
       "file": "data/search/6.json.gz",
-      "terms": 243,
-      "bytes": 2898
+      "terms": 2313,
+      "bytes": 20400,
+      "sha256": "74b6578e1508a4b673c74be298576edd13463c9bfbb5bc67cffecb3542dc5613"
     },
     "7": {
       "file": "data/search/7.json.gz",
-      "terms": 206,
-      "bytes": 1906
+      "terms": 1519,
+      "bytes": 16095,
+      "sha256": "bb07bae190c55c6f3bacd6b806dce52df85feed96549540ff5d5653a7828b120"
     },
     "8": {
       "file": "data/search/8.json.gz",
-      "terms": 183,
-      "bytes": 1795
+      "terms": 1410,
+      "bytes": 15472,
+      "sha256": "f7b385cb500acf074d429c22c0d4b9ef06484a9f440a898892014956445e5e0f"
     },
     "9": {
       "file": "data/search/9.json.gz",
-      "terms": 178,
-      "bytes": 1517
+      "terms": 1895,
+      "bytes": 15327,
+      "sha256": "0433a5a912530db729228f35080b088e1f524d78af72eb5a8b805b71c07fab59"
     },
     "_": {
       "file": "data/search/other.json.gz",
-      "terms": 840,
-      "bytes": 4559
+      "terms": 2036,
+      "bytes": 13033,
+      "sha256": "bf584a2c4462abff251452ef9a3643ead3873fb8f78dd899b37b434e435ed5c7"
     },
     "a": {
       "file": "data/search/a.json.gz",
-      "terms": 17666,
-      "bytes": 1201924
+      "terms": 51184,
+      "bytes": 1721868,
+      "sha256": "b74428c6c061c44c895988cd4b2d34fc37b6e96299b37fabfe302c976a31c514"
     },
     "b": {
       "file": "data/search/b.json.gz",
-      "terms": 8208,
-      "bytes": 518168
+      "terms": 23955,
+      "bytes": 729087,
+      "sha256": "d3b9b67e15d2a1bed26fc80ff3e0b62875930b59fd153293311e9237b8b8bcd5"
     },
     "c": {
       "file": "data/search/c.json.gz",
-      "terms": 19578,
-      "bytes": 1536556
+      "terms": 54622,
+      "bytes": 2096351,
+      "sha256": "79cbe3ce3d651bfcb688713464ab221c3588e95f7bfcdcac45077a126e94b1cb"
     },
     "d": {
       "file": "data/search/d.json.gz",
-      "terms": 12194,
-      "bytes": 1006547
+      "terms": 36851,
+      "bytes": 1385264,
+      "sha256": "7e72cdaf3e5c8e80462e5cfa996bd4fe6935d3553de481d90942e1f5e3f40d6e"
     },
     "e": {
       "file": "data/search/e.json.gz",
-      "terms": 12859,
-      "bytes": 943266
+      "terms": 36390,
+      "bytes": 1314634,
+      "sha256": "f1fbd557572612a38ac34b132b16c30a36b62a5fdbfedbd4836da2f5a484e22f"
     },
     "f": {
       "file": "data/search/f.json.gz",
-      "terms": 8789,
-      "bytes": 609158
+      "terms": 21292,
+      "bytes": 806710,
+      "sha256": "559ceb40fedf2aeff46090ffe5aeea87898dfd8dfcf5f968f10420f19d9a70d0"
     },
     "g": {
       "file": "data/search/g.json.gz",
-      "terms": 6329,
-      "bytes": 358685
+      "terms": 16559,
+      "bytes": 504541,
+      "sha256": "4cee2270b7010b3a8805d75427cf27620af81f22ed32086aecf7ad3a329aa83a"
     },
     "h": {
       "file": "data/search/h.json.gz",
-      "terms": 5790,
-      "bytes": 469097
+      "terms": 16447,
+      "bytes": 630410,
+      "sha256": "ab223eaae738e8b0662e35e9aea6a629e9270d06b6b4e6d1d33d21b12267fc86"
     },
     "i": {
       "file": "data/search/i.json.gz",
-      "terms": 10009,
-      "bytes": 669354
+      "terms": 27658,
+      "bytes": 951157,
+      "sha256": "b64928ef6e4a4081c4cbcbeb86e714f86a963b682b5780e14fd99cd81a8c3fc2"
     },
     "j": {
       "file": "data/search/j.json.gz",
-      "terms": 2722,
-      "bytes": 143531
+      "terms": 7132,
+      "bytes": 201136,
+      "sha256": "b8ba5f5692fc699808704432b090fd45c222db10a33ea940556b1687324d425d"
     },
     "k": {
       "file": "data/search/k.json.gz",
-      "terms": 1737,
-      "bytes": 58528
+      "terms": 7126,
+      "bytes": 105949,
+      "sha256": "5d86b902922478baa454bf04d4237a34a137d5f329dde3f4b948ed91ab513e58"
     },
     "l": {
       "file": "data/search/l.json.gz",
-      "terms": 7228,
-      "bytes": 476405
+      "terms": 18076,
+      "bytes": 647635,
+      "sha256": "bfa1a38c729532951018b7a4f4329fbdb9df1ebf8e4e779798d6879d6f9b6763"
     },
     "m": {
       "file": "data/search/m.json.gz",
-      "terms": 10164,
-      "bytes": 735386
+      "terms": 29852,
+      "bytes": 1032329,
+      "sha256": "30535e4bb9d4924f88cb9bed449cc6acac5b46410aa11a09585b0bd2f97f0380"
     },
     "n": {
       "file": "data/search/n.json.gz",
-      "terms": 4392,
-      "bytes": 281652
+      "terms": 11204,
+      "bytes": 385989,
+      "sha256": "bf36a38741429593c40652d0652713da879e2d282ab2b2991e80c0a1dc879c05"
     },
     "o": {
       "file": "data/search/o.json.gz",
-      "terms": 4851,
-      "bytes": 373633
+      "terms": 13504,
+      "bytes": 506817,
+      "sha256": "c0882c4cc6598f95ad04d8736ae78abfc342aa1c672c85912af28c00a3990c1e"
     },
     "p": {
       "file": "data/search/p.json.gz",
-      "terms": 16342,
-      "bytes": 1344044
+      "terms": 45803,
+      "bytes": 1822640,
+      "sha256": "6aef2ccf44e9e5ef92fdaea9b42e2341f9ecbc77252f4deb78600b29bb623df8"
     },
     "q": {
       "file": "data/search/q.json.gz",
-      "terms": 1326,
-      "bytes": 90217
+      "terms": 3304,
+      "bytes": 122021,
+      "sha256": "3721b5ae79937afdb5d673bc1713b19608657820490daa9fa92622b322b6db91"
     },
     "r": {
       "file": "data/search/r.json.gz",
-      "terms": 11008,
-      "bytes": 835572
+      "terms": 31664,
+      "bytes": 1169919,
+      "sha256": "8406f964d2811dcec65af122cced9125f1280fa5b252de3eb35f570144972733"
     },
     "s": {
       "file": "data/search/s.json.gz",
-      "terms": 15139,
-      "bytes": 1379844
+      "terms": 44590,
+      "bytes": 1801020,
+      "sha256": "40361dd646b91b123ade5427583eaa27de0781278505c33366ca330047611b31"
     },
     "t": {
       "file": "data/search/t.json.gz",
-      "terms": 10062,
-      "bytes": 690614
+      "terms": 26429,
+      "bytes": 940006,
+      "sha256": "fbc832a708c4dfb8e0467af639ad53d9742e3ffd1fa7c629e8fde40f406111e4"
     },
     "u": {
       "file": "data/search/u.json.gz",
-      "terms": 3203,
-      "bytes": 200218
+      "terms": 9665,
+      "bytes": 284945,
+      "sha256": "91e0716a6fa7db54ce3b3d6465958605e5aefcb63720dc4e727a1044cd5db230"
     },
     "v": {
       "file": "data/search/v.json.gz",
-      "terms": 5878,
-      "bytes": 376535
+      "terms": 13560,
+      "bytes": 511271,
+      "sha256": "84df828612bcaef6d698df0fd48f2cb5c7326afca312924a556117d8c3f6b125"
     },
     "w": {
       "file": "data/search/w.json.gz",
-      "terms": 2961,
-      "bytes": 247375
+      "terms": 7716,
+      "bytes": 322377,
+      "sha256": "88a74922341fc12a3fb234d3b2e9eb2002b0f7d3f1d7046ac1b127cb89641119"
     },
     "x": {
       "file": "data/search/x.json.gz",
-      "terms": 494,
-      "bytes": 15810
+      "terms": 932,
+      "bytes": 20722,
+      "sha256": "41366c85aa03c7ccb2c916cc3bb55b757f0c980331c0b4604ecdeb2e4dd3a2ba"
     },
     "y": {
       "file": "data/search/y.json.gz",
-      "terms": 675,
-      "bytes": 33698
+      "terms": 2201,
+      "bytes": 50332,
+      "sha256": "6cf6033b75d232b8e638c1dce682c083da30360335b0872e293e8f8235b785aa"
     },
     "z": {
       "file": "data/search/z.json.gz",
-      "terms": 855,
-      "bytes": 13048
+      "terms": 2573,
+      "bytes": 28733,
+      "sha256": "4119732d8a2a02643e92408583d9a232d6935f2b79c56d5ea06c1435c48bad7c"
     }
   }
 }

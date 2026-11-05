@@ -154,7 +154,7 @@
   /* La visita inicial tiene seis escenas. Las guías extensas siguen en cada IA. */
   tutorialSteps.splice(0, tutorialSteps.length,
     { mark: "Le", route: "/biblioteca", target: ".v7-global-search", eyebrow: "1 · Encuentra y lee", title: "Una gran biblioteca, sin perderte", text: "Busca o explora por estanterías, temas, autores y colecciones; abre cualquier fuente como un libro.", bullets: ["La Biblia CEE es la edición principal.", "Puedes guardar, subrayar, anotar y compartir."] },
-    { mark: "?", route: "/preguntar", target: "#v7-ask-form", eyebrow: "2 · Pregunta", title: "Encuentra al especialista adecuado", text: "Escribe una duda y Atlas recomienda qué cuaderno NotebookLM consultar, prepara la pregunta y muestra fuentes relacionadas.", bullets: ["Atlas orienta: no improvisa una respuesta doctrinal.", "La consulta queda lista para copiar y abrir."] },
+    { mark: "?", route: "/preguntar", target: ".ask-library-picker", eyebrow: "2 · Pregunta", title: "Elige una IA y consulta sus fuentes", text: "Cada tarjeta abre un cuaderno de NotebookLM. Escribe allí tu pregunta: la IA utiliza los documentos de esa estantería.", bullets: ["Mira las fuentes antes de elegir.", "La conversación se abre en NotebookLM, fuera de Atlas."] },
     { mark: "↗", route: "/formarse", target: ".v7-learning-routes", eyebrow: "3 · Aprende", title: "El conocimiento se convierte en camino", text: "Comienza una ruta sencilla. Cronologías, mapas, relaciones y estadísticas aparecen después, en Estudio avanzado.", bullets: ["Historia de la Salvación está integrada aquí.", "Puedes retomar las rutas desde Inicio."] },
     { mark: "✦", route: "/rezar", target: ".v7-prayer-hero", eyebrow: "4 · Reza", title: "Empieza desde lo que estás viviendo", text: "Cuenta tu situación con palabras normales o entra en Evangelio, santos, audios, examen, confesión y Misa.", bullets: ["Las sugerencias concretas cambian cada día.", "Palabras para orar te ayuda a dirigirte a Dios con sinceridad."] },
     { mark: "◇", route: "/discover", target: ".short-filters", eyebrow: "5 · Descubre", title: "Una puerta viva hacia todo Atlas", text: "Vídeos, música, noticias, lecturas, frases y preguntas conducen siempre a una fuente, una ruta o una biblioteca.", bullets: ["Guarda y comparte lo que merezca volver a verse.", "El menú Más conserva todas las categorías específicas."] },
@@ -784,6 +784,8 @@
     else if (current.name === "biblioteca") app.innerHTML = A.architecture.renderLibrary(current);
     else if (current.name === "preguntar") app.innerHTML = A.architecture.renderAsk(current);
     else if (current.name === "rezar") { app.innerHTML = A.architecture.renderPrayer(current); const devoc = app.querySelector('a[href*="opusdei.org/es/prayers/"]'); if (devoc && !devoc.nextElementSibling?.matches("[data-save-question]")) devoc.insertAdjacentHTML("afterend", `<button class="devocionario-save" data-save-question="devocionario">☆ Guardar acceso</button>`); }
+    else if (current.name === "liturgia") app.innerHTML = A.liturgy.render();
+    else if (current.name === "mapa-tematico") app.innerHTML = A.discoveryLibrary.render(current);
     else if (current.name === "formarse") app.innerHTML = A.architecture.renderLearning(current);
     else if (current.name === "opus-dei") app.innerHTML = A.architecture.renderOpusDei(current);
     else if (current.name === "mi-atlas") app.innerHTML = A.architecture.renderMyAtlas(current);
@@ -870,8 +872,8 @@
 
   function titleFor(current) {
     const architectureTitles = {
-      biblioteca: "Biblioteca · Atlas", preguntar: "Preguntar · Atlas", rezar: "Rezar · Atlas",
-      formarse: "Formarse · Atlas", "opus-dei": "Opus Dei · Atlas", "mi-atlas": "Mi Atlas",
+      biblioteca: "Biblioteca · Atlas", preguntar: "Preguntar · Atlas", rezar: "Rezar · Atlas", liturgia: "Horas y misa · Atlas",
+      formarse: "Formarse · Atlas", "mapa-tematico": "Mapa temático · Atlas", "opus-dei": "Opus Dei · Atlas", "mi-atlas": "Mi Atlas",
       more: "Más · Atlas", "descubre-atlas": "Descubre Atlas"
     };
     if (architectureTitles[current.name]) return architectureTitles[current.name];
@@ -888,8 +890,8 @@
 
   function setActiveNav(name) {
     const legacyMap = {
-      library: "biblioteca", collections: "biblioteca", reader: "biblioteca", document: "biblioteca", author: "biblioteca", bible: "biblioteca",
-      spiritual: "rezar", examen: "rezar", music: "rezar",
+      library: "biblioteca", collections: "biblioteca", reader: "biblioteca", document: "biblioteca", author: "biblioteca", bible: "biblioteca", "mapa-tematico": "biblioteca",
+      spiritual: "rezar", liturgia: "rezar", examen: "rezar", music: "rezar",
       routes: "formarse", route: "formarse", compare: "formarse", timeline: "formarse", map: "formarse", graph: "formarse", salvation: "formarse",
       short: "discover", saved: "mi-atlas", updates: "mi-atlas", notifications: "mi-atlas"
     };
@@ -1369,7 +1371,7 @@
       if (!item) { toast("No se ha podido recuperar esta tarjeta."); return; }
       const url = `${location.href.split("#")[0]}#/short/${encodeURIComponent(item.id)}`;
       const shortText = item.text || item.description || item.body || item.quote || item.answer || item.slides?.map(slide => slide.text).join(" ") || item.title;
-      openShare({ title: `${item.title} · Atlas`, text: `${shortText}\nFuente: ${item.reference || item.source || "Vida de los Santos"}`, url: item.url || url });
+      openShare({ title: `${item.title} · Atlas`, text: `${shortText}\nFuente: ${item.reference || item.source || "Vida de los Santos"}`, url: item.url ? new URL(item.url, location.href).href : url });
     }
     if (target.dataset.shareChoice && sharePayload) {
       const choice = target.dataset.shareChoice;
@@ -1537,6 +1539,10 @@
     if (["discover", "short", "spiritual", "examen", "questions"].includes(route().name)) renderRouteView();
   });
   window.addEventListener("atlas:refresh-discover", () => renderRouteView());
+  for (const event of ["atlas:discovery-ready", "atlas:discovery-error"]) window.addEventListener(event, () => {
+    const current = route();
+    if (current.name === "mapa-tematico" || (current.name === "biblioteca" && current.query.get("view") === "topics") || (current.name === "library" && current.segments[2] === "topics")) renderRouteView();
+  });
   window.addEventListener("atlas:exam-changed", () => renderRouteView());
   window.addEventListener("resize", () => {
     const frame = document.querySelector("#infographic-frame");

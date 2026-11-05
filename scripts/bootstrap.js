@@ -35,7 +35,7 @@
   }
 
   try {
-    const [catalog, external, youtube, music, instagram, channels, tenMinutes, gospelMeditations, opusdeiMeditations, bibleManifest, bibleTopics, jerusalemBibleManifest, faq] = await Promise.all([
+    const [catalog, external, youtube, music, instagram, channels, tenMinutes, gospelMeditations, opusdeiMeditations, bibleManifest, bibleTopics, jerusalemBibleManifest, faq, editions, discoveryLibrary] = await Promise.all([
       runtime.fetchJson("data/catalog.json"),
       runtime.fetchJson("data/external-content.json").catch(() => ({ generatedAt:"", items:[] })),
       runtime.fetchJson("data/youtube-live-cache.json", { fresh:true }).catch(() => runtime.fetchJson("data/youtube-shorts.json").catch(() => ({ generatedAt:"", channels:[], items:[] }))),
@@ -48,7 +48,9 @@
       runtime.fetchJson("data/bible/manifest.json").catch(() => null),
       runtime.fetchJson("data/bible/topics.json").catch(() => ({ topics:[] })),
       runtime.fetchJson("data/bible-jerusalem/manifest.json").catch(() => null),
-      runtime.fetchJson("data/preguntas-frecuentes.json", { fresh:true }).catch(() => fallback.faq)
+      runtime.fetchJson("data/preguntas-frecuentes.json", { fresh:true }).catch(() => fallback.faq),
+      runtime.fetchJson("data/editions/manifest.json", { fresh:true }).catch(() => ({ editions:[] })),
+      runtime.fetchJson("data/discovery-library.json", { fresh:true }).catch(() => ({topics:[]}))
     ]);
 
     Object.assign(window, {
@@ -57,7 +59,7 @@
       ATLAS_GOSPEL_MEDITATIONS:gospelMeditations, ATLAS_OPUSDEI_MEDITATIONS:opusdeiMeditations,
       ATLAS_BIBLE_MANIFEST:bibleManifest, ATLAS_BIBLE_TOPICS:bibleTopics,
       ATLAS_BIBLE_JERUSALEM_MANIFEST:jerusalemBibleManifest,
-      ATLAS_QUOTES:fallback.quotes, ATLAS_EXAM:fallback.exam, ATLAS_FAQ:faq,
+      ATLAS_QUOTES:fallback.quotes, ATLAS_EXAM:fallback.exam, ATLAS_FAQ:faq, ATLAS_EDITIONS:editions, ATLAS_DISCOVERY_LIBRARY:discoveryLibrary,
       ATLAS_SAINTS_MOODS:fallback.saintsMoods, ATLAS_SPIRITUAL_GUIDES:fallback.spiritualGuides,
       ATLAS_SONGBOOK:fallback.songbook, ATLAS_SAINTS_SHORTS:fallback.saintsShorts,
       ATLAS_SAINTS_ROUTES:fallback.saintsRoutes, ATLAS_SAINTS_TIMELINES:fallback.saintsTimelines,
@@ -66,11 +68,11 @@
     });
 
     const modules = [
-      "scripts/storage.js", "scripts/search.js", "scripts/repository.js", "scripts/share.js",
+      "scripts/storage.js", "scripts/search.js", "scripts/discovery-shorts.js", "scripts/repository.js", "scripts/share.js",
       "scripts/statistics.js", "scripts/library.js", "scripts/reader.js", "scripts/extras.js",
-      "scripts/spiritual.js", "scripts/examen.js", "scripts/compare.js", "scripts/feed-mixer.js",
+      "scripts/spiritual.js", "scripts/liturgy.js", "scripts/examen.js", "scripts/compare.js", "scripts/feed-mixer.js",
       "scripts/reels.js", "scripts/router.js", "scripts/bible.js", "scripts/salvation.js",
-      "scripts/architecture.js", "scripts/architecture-polish.js", "scripts/learning-rotate.js", "scripts/opus-simple.js", "scripts/learning-reorder.js", "scripts/app.js"
+      "scripts/discovery-library.js", "scripts/architecture.js", "scripts/architecture-polish.js", "scripts/learning-rotate.js", "scripts/opus-simple.js", "scripts/learning-reorder.js", "scripts/app.js"
     ];
     for (const module of modules) await runtime.loadScript(module);
     loadDeferredData().catch(error => console.warn("Atlas: contenido secundario no disponible", error));
