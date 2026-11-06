@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-11-05T03:34:53.159Z",
+  "updatedAt": "2026-11-06T03:29:33.018Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "06-11-2026 Administrador fiel - 10 Minutos con Jesús",
+      "publishedAt": "2026-11-05T22:42:10.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/06-11-2026-administrador-fiel-10-minutos-con-jesus--76200672",
+      "audioUrl": "https://api.spreaker.com/download/episode/76200672/06_11_2026_administrador_fiel_10_minutos_jesus_mf_183384566_feed_1.mp3",
+      "duration": "638",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "05-11-2026 Ovejas, monedas y... MUCHO amor - 10 Minutos con Jesús",
       "publishedAt": "2026-11-04T21:38:25.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/18-10-2026-dios-el-cesar-ambos-o-ninguno-10-minutos-con-jesus--75842059",
       "audioUrl": "https://api.spreaker.com/download/episode/75842059/18_10_2026_dios_cesar_ambos_o_ninguno_mf_182354971_feed_1.mp3",
       "duration": "789",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "16-10-2026 Una contemplación de los misterios del Rosario - 10 Minutos con Jesús",
-      "publishedAt": "2026-10-16T21:38:47.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/16-10-2026-una-contemplacion-de-los-misterios-del-rosario-10-minutos-con-jesus--75831216",
-      "audioUrl": "https://api.spreaker.com/download/episode/75831216/16_10_2026_una_contemplacion_misterios_del_rosario_mf_182321776_feed_1.mp3",
-      "duration": "621",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]

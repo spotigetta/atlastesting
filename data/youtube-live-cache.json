@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-05T03:34:59.613Z",
+  "updatedAt": "2026-11-06T03:29:38.659Z",
   "source": "previous-snapshot",
   "channels": [
     {
@@ -42938,7 +42938,7 @@
     },
     {
       "source": "Alejandro Villena",
-      "error": "404 www.youtube.com"
+      "error": "No se encontró el identificador del canal"
     },
     {
       "source": "Álvaro González-Alorda",
@@ -42954,15 +42954,15 @@
     },
     {
       "source": "Sin Medias Tintas",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "EWTN España",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Álex Rovira",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Nuccio Ordine",
