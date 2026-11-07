@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-11-06T03:29:33.018Z",
+  "updatedAt": "2026-11-07T02:57:16.170Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "07-11-2026 El dinero del Monopoly - 10 Minutos con Jesús",
+      "publishedAt": "2026-11-06T23:07:06.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/07-11-2026-el-dinero-del-monopoly-10-minutos-con-jesus--76224133",
+      "audioUrl": "https://api.spreaker.com/download/episode/76224133/07_11_2026_el_dinero_del_monopoly_10_minutos_mf_183432677_feed_1.mp3",
+      "duration": "625",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "06-11-2026 Administrador fiel - 10 Minutos con Jesús",
       "publishedAt": "2026-11-05T22:42:10.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/19-10-2026-ahora-10-minutos-con-jesus--75864052",
       "audioUrl": "https://api.spreaker.com/download/episode/75864052/19_10_2026_ahora_10_minutos_jesus_mf_182437594_feed_1.mp3",
       "duration": "649",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "18-10-2026 Dios, el César, ambos o ninguno - 10 Minutos con Jesús",
-      "publishedAt": "2026-10-18T01:46:34.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/18-10-2026-dios-el-cesar-ambos-o-ninguno-10-minutos-con-jesus--75842059",
-      "audioUrl": "https://api.spreaker.com/download/episode/75842059/18_10_2026_dios_cesar_ambos_o_ninguno_mf_182354971_feed_1.mp3",
-      "duration": "789",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]

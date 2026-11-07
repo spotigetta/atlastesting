@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T03:29:38.659Z",
+  "updatedAt": "2026-11-07T02:57:21.904Z",
   "source": "previous-snapshot",
   "channels": [
     {
@@ -42910,7 +42910,7 @@
     },
     {
       "source": "Rafa Lafuente",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Pep Borrell",
@@ -42954,15 +42954,15 @@
     },
     {
       "source": "Sin Medias Tintas",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "EWTN España",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Álex Rovira",
-      "error": "500 www.youtube.com"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Nuccio Ordine",
@@ -42970,7 +42970,7 @@
     },
     {
       "source": "Álvaro Bilbao",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "María Álvarez de las Asturias",
@@ -42986,7 +42986,7 @@
     },
     {
       "source": "Peter Kreeft",
-      "error": "No se encontró el identificador del canal"
+      "error": "404 www.youtube.com"
     },
     {
       "source": "Javier G. Recuenco",
