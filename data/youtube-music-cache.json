@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T02:57:22.581Z",
+  "updatedAt": "2026-11-08T02:34:52.984Z",
   "source": "previous-snapshot",
   "channels": [
     {
@@ -2803,6 +2803,10 @@
     },
     {
       "source": "tuyo",
+      "error": "404 www.youtube.com"
+    },
+    {
+      "source": "Coro de Monjes de Solesmes",
       "error": "404 www.youtube.com"
     },
     {

@@ -43,7 +43,7 @@
       "hoursComplete": true,
       "complete": false,
       "sections": 9,
-      "updatedAt": "2026-11-07T02:57:30.902Z"
+      "updatedAt": "2026-11-08T02:34:54.821Z"
     },
     {
       "date": "2026-11-09",
@@ -54,7 +54,7 @@
       "hoursComplete": true,
       "complete": false,
       "sections": 9,
-      "updatedAt": "2026-11-07T02:57:34.297Z"
+      "updatedAt": "2026-11-08T02:34:58.425Z"
     },
     {
       "date": "2026-11-10",
@@ -65,7 +65,18 @@
       "hoursComplete": true,
       "complete": false,
       "sections": 9,
-      "updatedAt": "2026-11-07T02:57:40.080Z"
+      "updatedAt": "2026-11-08T02:35:03.679Z"
+    },
+    {
+      "date": "2026-11-11",
+      "file": "data/liturgy/days/2026-11-11.json",
+      "sourceCelebration": "Miércoles, XXXII semana del Tiempo Ordinario (Año II) 4ª semana",
+      "calendarStatus": "unverified",
+      "calendarReason": "Fecha comprobada en iBreviary. El proveedor no identifica la edición ni permite seleccionar el calendario propio de España. Puede omitir celebraciones españolas o diocesanas. No se han calculado rangos ni primeras vísperas.",
+      "hoursComplete": true,
+      "complete": false,
+      "sections": 9,
+      "updatedAt": "2026-11-08T02:35:09.003Z"
     }
   ],
   "common": [
@@ -920,8 +931,8 @@
       "2026-11-08": "Domingo XXXII del tiempo ordinario en el calendario CEE. Las variantes locales deben comprobarse."
     }
   },
-  "updatedAt": "2026-11-07T02:58:10.977Z",
+  "updatedAt": "2026-11-08T02:35:41.274Z",
   "availableFrom": "2026-11-05",
-  "availableTo": "2026-11-10",
-  "commonUpdatedAt": "2026-11-07T02:58:10.976Z"
+  "availableTo": "2026-11-11",
+  "commonUpdatedAt": "2026-11-08T02:35:41.273Z"
 }
