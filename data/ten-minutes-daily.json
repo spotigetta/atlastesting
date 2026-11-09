@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-11-07T02:57:16.170Z",
+  "updatedAt": "2026-11-09T02:47:17.610Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "09-11-2026 Sorpresa ante lo sagrado - 10 Minutos con Jesús",
+      "publishedAt": "2026-11-08T21:12:36.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/09-11-2026-sorpresa-ante-lo-sagrado-10-minutos-con-jesus--76249634",
+      "audioUrl": "https://api.spreaker.com/download/episode/76249634/09_11_2026_sorpresa_ante_lo_sagrado_10_minutos_mf_183500853_feed_1.mp3",
+      "duration": "614",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
+    {
+      "title": "08-11-2026 Un Bizum espiritual - 10 Minutos con Jesús",
+      "publishedAt": "2026-11-08T21:10:19.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/08-11-2026-un-bizum-espiritual-10-minutos-con-jesus--76249633",
+      "audioUrl": "https://api.spreaker.com/download/episode/76249633/08_11_2026_un_bizum_espiritual_10_minutos_con_mf_183500807_feed_1.mp3",
+      "duration": "597",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "07-11-2026 El dinero del Monopoly - 10 Minutos con Jesús",
       "publishedAt": "2026-11-06T23:07:06.000Z",
@@ -162,24 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/21-10-2026-no-intentes-vivir-manana-con-la-gracia-de-hoy-10-minutos-con-jesus--75888230",
       "audioUrl": "https://api.spreaker.com/download/episode/75888230/21_10_2026_no_intentes_vivir_manana_gracia_mf_182518343_feed_1.mp3",
       "duration": "556",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "20-10-2026 Es pera o no es pera - 10 Minutos con Jesús",
-      "publishedAt": "2026-10-19T20:08:28.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/20-10-2026-es-pera-o-no-es-pera-10-minutos-con-jesus--75864051",
-      "audioUrl": "https://api.spreaker.com/download/episode/75864051/20_10_2026_es_pera_o_no_es_pera_mf_182437657_feed_1.mp3",
-      "duration": "676",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "19-10-2026 ¡Ahora! - 10 Minutos con Jesús",
-      "publishedAt": "2026-10-19T20:07:00.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/19-10-2026-ahora-10-minutos-con-jesus--75864052",
-      "audioUrl": "https://api.spreaker.com/download/episode/75864052/19_10_2026_ahora_10_minutos_jesus_mf_182437594_feed_1.mp3",
-      "duration": "649",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
