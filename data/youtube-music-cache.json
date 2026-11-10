@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-11-08T02:34:52.984Z",
-  "source": "previous-snapshot",
+  "updatedAt": "2026-11-10T04:41:32.113Z",
+  "source": "youtube-rss",
   "channels": [
     {
       "name": "Hakuna Group Music",
@@ -2779,7 +2779,7 @@
   "failures": [
     {
       "source": "Hakuna Group Music",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     },
     {
       "source": "Inazio",
@@ -2790,28 +2790,12 @@
       "error": "404 www.youtube.com"
     },
     {
-      "source": "Kairoi",
-      "error": "404 www.youtube.com"
-    },
-    {
       "source": "Gen Rosso",
       "error": "404 www.youtube.com"
     },
     {
-      "source": "Ain Karem",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "tuyo",
-      "error": "404 www.youtube.com"
-    },
-    {
-      "source": "Coro de Monjes de Solesmes",
-      "error": "404 www.youtube.com"
-    },
-    {
       "source": "Gen Verde",
-      "error": "404 www.youtube.com"
+      "error": "500 www.youtube.com"
     }
   ]
 }
