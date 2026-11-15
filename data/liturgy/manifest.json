@@ -99,6 +99,50 @@
       "complete": false,
       "sections": 9,
       "updatedAt": "2026-11-10T04:41:50.959Z"
+    },
+    {
+      "date": "2026-11-15",
+      "file": "data/liturgy/days/2026-11-15.json",
+      "sourceCelebration": "XXXIII Domingo del Tiempo Ordinario (Año A) 1ª semana",
+      "calendarStatus": "unverified",
+      "calendarReason": "Fecha comprobada en iBreviary. El proveedor no identifica la edición ni permite seleccionar el calendario propio de España. Puede omitir celebraciones españolas o diocesanas. No se han calculado rangos ni primeras vísperas.",
+      "hoursComplete": true,
+      "complete": false,
+      "sections": 9,
+      "updatedAt": "2026-11-15T02:52:50.606Z"
+    },
+    {
+      "date": "2026-11-16",
+      "file": "data/liturgy/days/2026-11-16.json",
+      "sourceCelebration": "Lunes, XXXIII semana del Tiempo Ordinario (Año II) 1ª semana",
+      "calendarStatus": "unverified",
+      "calendarReason": "Fecha comprobada en iBreviary. El proveedor no identifica la edición ni permite seleccionar el calendario propio de España. Puede omitir celebraciones españolas o diocesanas. No se han calculado rangos ni primeras vísperas.",
+      "hoursComplete": true,
+      "complete": false,
+      "sections": 9,
+      "updatedAt": "2026-11-15T02:52:55.347Z"
+    },
+    {
+      "date": "2026-11-17",
+      "file": "data/liturgy/days/2026-11-17.json",
+      "sourceCelebration": "Martes, XXXIII semana del Tiempo Ordinario (Año II) 1ª semana",
+      "calendarStatus": "unverified",
+      "calendarReason": "Fecha comprobada en iBreviary. El proveedor no identifica la edición ni permite seleccionar el calendario propio de España. Puede omitir celebraciones españolas o diocesanas. No se han calculado rangos ni primeras vísperas.",
+      "hoursComplete": true,
+      "complete": false,
+      "sections": 9,
+      "updatedAt": "2026-11-15T02:53:00.542Z"
+    },
+    {
+      "date": "2026-11-18",
+      "file": "data/liturgy/days/2026-11-18.json",
+      "sourceCelebration": "Miércoles, XXXIII semana del Tiempo Ordinario (Año II) 1ª semana",
+      "calendarStatus": "unverified",
+      "calendarReason": "Fecha comprobada en iBreviary. El proveedor no identifica la edición ni permite seleccionar el calendario propio de España. Puede omitir celebraciones españolas o diocesanas. No se han calculado rangos ni primeras vísperas.",
+      "hoursComplete": true,
+      "complete": false,
+      "sections": 9,
+      "updatedAt": "2026-11-15T02:53:07.682Z"
     }
   ],
   "common": [
@@ -953,8 +997,8 @@
       "2026-11-08": "Domingo XXXII del tiempo ordinario en el calendario CEE. Las variantes locales deben comprobarse."
     }
   },
-  "updatedAt": "2026-11-10T04:42:21.511Z",
+  "updatedAt": "2026-11-15T02:53:38.434Z",
   "availableFrom": "2026-11-05",
-  "availableTo": "2026-11-13",
-  "commonUpdatedAt": "2026-11-10T04:42:21.510Z"
+  "availableTo": "2026-11-18",
+  "commonUpdatedAt": "2026-11-15T02:53:38.434Z"
 }
