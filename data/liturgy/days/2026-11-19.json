@@ -1,0 +1,110 @@
+{
+  "date": "2026-11-19",
+  "updatedAt": "2026-11-16T02:53:52.446Z",
+  "sections": [
+    {
+      "id": "oficio",
+      "title": "Oficio de lectura",
+      "category": "horas",
+      "dateScope": "2026-11-19",
+      "object": "data/liturgy/objects/e7a22c3e5d2f9889d16bd11586a1aa35de259c5c7b9965ecb5f88c98ac899bdd.json",
+      "sha256": "e7a22c3e5d2f9889d16bd11586a1aa35de259c5c7b9965ecb5f88c98ac899bdd",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=ufficio_delle_letture",
+      "words": 1969
+    },
+    {
+      "id": "laudes",
+      "title": "Laudes",
+      "category": "horas",
+      "dateScope": "2026-11-19",
+      "object": "data/liturgy/objects/04176442da31274f448132dd86ad81bbb816feb8311caf6140de87a8ad504197.json",
+      "sha256": "04176442da31274f448132dd86ad81bbb816feb8311caf6140de87a8ad504197",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=lodi",
+      "words": 1543
+    },
+    {
+      "id": "intermedia",
+      "title": "Hora intermedia",
+      "category": "horas",
+      "dateScope": "2026-11-19",
+      "object": "data/liturgy/objects/3384d191bbae1a1273d93bb0baee3f2a2c8c4012103bc43773da4ec4d125195d.json",
+      "sha256": "3384d191bbae1a1273d93bb0baee3f2a2c8c4012103bc43773da4ec4d125195d",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=ora_media",
+      "words": 919
+    },
+    {
+      "id": "visperas",
+      "title": "Vísperas",
+      "category": "horas",
+      "dateScope": "2026-11-19",
+      "object": "data/liturgy/objects/5baf7d3ec38cc5401e7311c93cc00efb6ff7d961329af32257d6097ca264f298.json",
+      "sha256": "5baf7d3ec38cc5401e7311c93cc00efb6ff7d961329af32257d6097ca264f298",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=vespri",
+      "words": 1471
+    },
+    {
+      "id": "completas",
+      "title": "Completas",
+      "category": "horas",
+      "dateScope": "2026-11-19",
+      "object": "data/liturgy/objects/273f4ca5e55cd649fe9d1683d391b319eb56dfd5fa13198644f332671a5323d4.json",
+      "sha256": "273f4ca5e55cd649fe9d1683d391b319eb56dfd5fa13198644f332671a5323d4",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=compieta",
+      "words": 801
+    },
+    {
+      "id": "entrada",
+      "title": "Antífona de entrada y colecta",
+      "category": "misa",
+      "dateScope": "2026-11-19",
+      "object": "data/liturgy/objects/fdce3aca087664b75fd23dbfc36d540a11f5ae1b20f69c2b17b335563b9913a6.json",
+      "sha256": "fdce3aca087664b75fd23dbfc36d540a11f5ae1b20f69c2b17b335563b9913a6",
+      "sourceUrl": "https://www.ibreviary.com/m2/letture.php?s=antifona_e_colletta",
+      "words": 66
+    },
+    {
+      "id": "lecturas",
+      "title": "Lecturas de la misa",
+      "category": "misa",
+      "dateScope": "2026-11-19",
+      "object": "data/liturgy/objects/bb8cf3c840216300da002bfe2c0effaa700ff7c8b8ebc6d336b04a5536776ef9.json",
+      "sha256": "bb8cf3c840216300da002bfe2c0effaa700ff7c8b8ebc6d336b04a5536776ef9",
+      "sourceUrl": "https://www.ibreviary.com/m2/letture.php?s=letture",
+      "words": 517
+    },
+    {
+      "id": "ofrendas",
+      "title": "Oración sobre las ofrendas",
+      "category": "misa",
+      "dateScope": "2026-11-19",
+      "object": "data/liturgy/objects/7fe0d2306f1f86d673397714e1f733cffdda8a6311f75e3d5b9bbbb13e92fdee.json",
+      "sha256": "7fe0d2306f1f86d673397714e1f733cffdda8a6311f75e3d5b9bbbb13e92fdee",
+      "sourceUrl": "https://www.ibreviary.com/m2/letture.php?s=sulle_offerte",
+      "words": 34
+    },
+    {
+      "id": "comunion",
+      "title": "Comunión y oración final",
+      "category": "misa",
+      "dateScope": "2026-11-19",
+      "object": "data/liturgy/objects/12433d2b19849c7d45621e650f70fa86cad470a653ca9dce47f62f055d8763e5.json",
+      "sha256": "12433d2b19849c7d45621e650f70fa86cad470a653ca9dce47f62f055d8763e5",
+      "sourceUrl": "https://www.ibreviary.com/m2/letture.php?s=antifona_ed_orazione_dopo_comunione",
+      "words": 68
+    }
+  ],
+  "errors": [
+    {
+      "id": "prefacio-dia",
+      "title": "Prefacio del día",
+      "error": "El proveedor no ofrece texto completo para esta sección (vacía o menú)"
+    }
+  ],
+  "sourceCelebration": "Jueves, XXXIII semana del Tiempo Ordinario (Año II) 1ª semana",
+  "confirmedProviderDate": "2026-11-19",
+  "calendarNotice": "Fecha comprobada en iBreviary. El proveedor no identifica la edición ni permite seleccionar el calendario propio de España. Puede omitir celebraciones españolas o diocesanas. No se han calculado rangos ni primeras vísperas.",
+  "calendarStatus": "unverified",
+  "calendarReason": "Fecha comprobada en iBreviary. El proveedor no identifica la edición ni permite seleccionar el calendario propio de España. Puede omitir celebraciones españolas o diocesanas. No se han calculado rangos ni primeras vísperas.",
+  "hoursComplete": true,
+  "complete": false
+}

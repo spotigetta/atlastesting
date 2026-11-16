@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-11-15T02:52:41.881Z",
+  "updatedAt": "2026-11-16T02:53:26.054Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "16-11-2026 Mendigos de compasión - 10 Minutos con Jesús",
+      "publishedAt": "2026-11-15T23:15:41.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/16-11-2026-mendigos-de-compasion-10-minutos-con-jesus--76394243",
+      "audioUrl": "https://api.spreaker.com/download/episode/76394243/16_11_2026_mendigos_compasion_10_minutos_con_mf_183859071_feed_1.mp3",
+      "duration": "630",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
+    {
+      "title": "15-11-2026 Desentierra tu talento - 10 Minutos con Jesús",
+      "publishedAt": "2026-11-15T18:31:43.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/15-11-2026-desentierra-tu-talento-10-minutos-con-jesus--76390342",
+      "audioUrl": "https://api.spreaker.com/download/episode/76390342/15_11_2026_desentierra_tu_talento_10_minutos_con_mf_183854716_feed_1.mp3",
+      "duration": "652",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "14-11-2026 Las puertas de la felicidad III (los mansos) - 10 Minutos con Jesús",
       "publishedAt": "2026-11-13T22:28:54.000Z",
@@ -162,24 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/28-10-2026-hagase-tu-voluntad-10-minutos-con-jesus--76040842",
       "audioUrl": "https://api.spreaker.com/download/episode/76040842/28_10_2026_hagase_tu_voluntad_10_minutos_con_mf_182885778_feed_1.mp3",
       "duration": "650",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "26-10-2026 La semilla no hace ruido mientras crece - 10 Minutos con Jesús",
-      "publishedAt": "2026-10-26T21:53:55.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/26-10-2026-la-semilla-no-hace-ruido-mientras-crece-10-minutos-con-jesus--76013819",
-      "audioUrl": "https://api.spreaker.com/download/episode/76013819/26_10_2026_la_semilla_no_hace_ruido_mientras_crece_mf_182812195_feed_1.mp3",
-      "duration": "617",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "26-10-2026 Las puertas de la felicidad (II) - 10 Minutos con Jesús",
-      "publishedAt": "2026-10-25T21:15:03.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/26-10-2026-las-puertas-de-la-felicidad-ii-10-minutos-con-jesus--75983164",
-      "audioUrl": "https://api.spreaker.com/download/episode/75983164/26_10_2026_las_puertas_felicidad_ii_mf_182757632_feed_1.mp3",
-      "duration": "647",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
