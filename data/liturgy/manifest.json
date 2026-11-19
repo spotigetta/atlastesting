@@ -153,7 +153,7 @@
       "hoursComplete": true,
       "complete": false,
       "sections": 9,
-      "updatedAt": "2026-11-18T04:36:07.353Z"
+      "updatedAt": "2026-11-19T04:17:07.345Z"
     },
     {
       "date": "2026-11-20",
@@ -164,7 +164,7 @@
       "hoursComplete": true,
       "complete": false,
       "sections": 9,
-      "updatedAt": "2026-11-18T04:36:14.141Z"
+      "updatedAt": "2026-11-19T04:17:13.177Z"
     },
     {
       "date": "2026-11-21",
@@ -175,7 +175,18 @@
       "hoursComplete": true,
       "complete": false,
       "sections": 9,
-      "updatedAt": "2026-11-18T04:36:19.806Z"
+      "updatedAt": "2026-11-19T04:17:18.381Z"
+    },
+    {
+      "date": "2026-11-22",
+      "file": "data/liturgy/days/2026-11-22.json",
+      "sourceCelebration": "Jesucristo, Rey del Universo (Año A) 2ª semana",
+      "calendarStatus": "unverified",
+      "calendarReason": "Fecha comprobada en iBreviary. El proveedor no identifica la edición ni permite seleccionar el calendario propio de España. Puede omitir celebraciones españolas o diocesanas. No se han calculado rangos ni primeras vísperas.",
+      "hoursComplete": true,
+      "complete": true,
+      "sections": 10,
+      "updatedAt": "2026-11-19T04:17:23.435Z"
     }
   ],
   "common": [
@@ -1030,8 +1041,8 @@
       "2026-11-08": "Domingo XXXII del tiempo ordinario en el calendario CEE. Las variantes locales deben comprobarse."
     }
   },
-  "updatedAt": "2026-11-18T04:36:47.148Z",
+  "updatedAt": "2026-11-19T04:17:53.790Z",
   "availableFrom": "2026-11-05",
-  "availableTo": "2026-11-21",
-  "commonUpdatedAt": "2026-11-18T04:36:47.148Z"
+  "availableTo": "2026-11-22",
+  "commonUpdatedAt": "2026-11-19T04:17:53.789Z"
 }

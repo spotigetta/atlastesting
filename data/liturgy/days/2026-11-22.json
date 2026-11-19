@@ -1,0 +1,114 @@
+{
+  "date": "2026-11-22",
+  "updatedAt": "2026-11-19T04:17:23.435Z",
+  "sections": [
+    {
+      "id": "oficio",
+      "title": "Oficio de lectura",
+      "category": "horas",
+      "dateScope": "2026-11-22",
+      "object": "data/liturgy/objects/22f6fd061962199b887cec636c85b8c2eabceb5e7309832ecf20cb4e6d9e978d.json",
+      "sha256": "22f6fd061962199b887cec636c85b8c2eabceb5e7309832ecf20cb4e6d9e978d",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=ufficio_delle_letture",
+      "words": 2454
+    },
+    {
+      "id": "laudes",
+      "title": "Laudes",
+      "category": "horas",
+      "dateScope": "2026-11-22",
+      "object": "data/liturgy/objects/893d98efb4788d0d3d7933f03bf074fde192367c8ce5451e9e0e913aa73f8df3.json",
+      "sha256": "893d98efb4788d0d3d7933f03bf074fde192367c8ce5451e9e0e913aa73f8df3",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=lodi",
+      "words": 1738
+    },
+    {
+      "id": "intermedia",
+      "title": "Hora intermedia",
+      "category": "horas",
+      "dateScope": "2026-11-22",
+      "object": "data/liturgy/objects/9f2ce0792422485eb0e7b1a5f382622ec7dac1bea90eb75362528bf3fc288548.json",
+      "sha256": "9f2ce0792422485eb0e7b1a5f382622ec7dac1bea90eb75362528bf3fc288548",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=ora_media",
+      "words": 979
+    },
+    {
+      "id": "visperas",
+      "title": "Vísperas",
+      "category": "horas",
+      "dateScope": "2026-11-22",
+      "object": "data/liturgy/objects/66862e059e6be0a60bb553504e5beddb81a8c2c60eb74f401ea898b9251281e1.json",
+      "sha256": "66862e059e6be0a60bb553504e5beddb81a8c2c60eb74f401ea898b9251281e1",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=vespri",
+      "words": 1478
+    },
+    {
+      "id": "completas",
+      "title": "Completas",
+      "category": "horas",
+      "dateScope": "2026-11-22",
+      "object": "data/liturgy/objects/4cf07107aee42753f8420146aa0fc35295ce406c4994ee60914cfccc89571a4d.json",
+      "sha256": "4cf07107aee42753f8420146aa0fc35295ce406c4994ee60914cfccc89571a4d",
+      "sourceUrl": "https://www.ibreviary.com/m2/breviario.php?s=compieta",
+      "words": 885
+    },
+    {
+      "id": "entrada",
+      "title": "Antífona de entrada y colecta",
+      "category": "misa",
+      "dateScope": "2026-11-22",
+      "object": "data/liturgy/objects/e6aedbfe0c310d0e4f8ef99ad59063674135982853d61d3d7a4c45442e31d2e7.json",
+      "sha256": "e6aedbfe0c310d0e4f8ef99ad59063674135982853d61d3d7a4c45442e31d2e7",
+      "sourceUrl": "https://www.ibreviary.com/m2/letture.php?s=antifona_e_colletta",
+      "words": 84
+    },
+    {
+      "id": "lecturas",
+      "title": "Lecturas de la misa",
+      "category": "misa",
+      "dateScope": "2026-11-22",
+      "object": "data/liturgy/objects/136feed66eb048bede5a69c9fdbe39b04d2ddf19d4387535363e1a2c72cdd3f1.json",
+      "sha256": "136feed66eb048bede5a69c9fdbe39b04d2ddf19d4387535363e1a2c72cdd3f1",
+      "sourceUrl": "https://www.ibreviary.com/m2/letture.php?s=letture",
+      "words": 796
+    },
+    {
+      "id": "ofrendas",
+      "title": "Oración sobre las ofrendas",
+      "category": "misa",
+      "dateScope": "2026-11-22",
+      "object": "data/liturgy/objects/177062212ec8991b11310a13f22aa3c4228e65fa1836e3997937edd81e980250.json",
+      "sha256": "177062212ec8991b11310a13f22aa3c4228e65fa1836e3997937edd81e980250",
+      "sourceUrl": "https://www.ibreviary.com/m2/letture.php?s=sulle_offerte",
+      "words": 35
+    },
+    {
+      "id": "prefacio-dia",
+      "title": "Prefacio del día",
+      "category": "misa",
+      "dateScope": "2026-11-22",
+      "object": "data/liturgy/objects/78a9c869390090c0ced8339674788e69a031df7864e34e09e3ea09e93b3284fb.json",
+      "sha256": "78a9c869390090c0ced8339674788e69a031df7864e34e09e3ea09e93b3284fb",
+      "sourceUrl": "https://www.ibreviary.com/m2/letture.php?s=prefazio",
+      "words": 214
+    },
+    {
+      "id": "comunion",
+      "title": "Comunión y oración final",
+      "category": "misa",
+      "dateScope": "2026-11-22",
+      "object": "data/liturgy/objects/bab1694b942d25a01e4cc590487466941af5747f7bda5d581b6e9c418ce9c6b8.json",
+      "sha256": "bab1694b942d25a01e4cc590487466941af5747f7bda5d581b6e9c418ce9c6b8",
+      "sourceUrl": "https://www.ibreviary.com/m2/letture.php?s=antifona_ed_orazione_dopo_comunione",
+      "words": 79
+    }
+  ],
+  "errors": [],
+  "sourceCelebration": "Jesucristo, Rey del Universo (Año A) 2ª semana",
+  "confirmedProviderDate": "2026-11-22",
+  "calendarNotice": "Fecha comprobada en iBreviary. El proveedor no identifica la edición ni permite seleccionar el calendario propio de España. Puede omitir celebraciones españolas o diocesanas. No se han calculado rangos ni primeras vísperas.",
+  "calendarStatus": "unverified",
+  "calendarReason": "Fecha comprobada en iBreviary. El proveedor no identifica la edición ni permite seleccionar el calendario propio de España. Puede omitir celebraciones españolas o diocesanas. No se han calculado rangos ni primeras vísperas.",
+  "hoursComplete": true,
+  "complete": true
+}
