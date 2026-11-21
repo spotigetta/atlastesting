@@ -1,7 +1,16 @@
 {
-  "updatedAt": "2026-11-20T04:04:17.929Z",
+  "updatedAt": "2026-11-21T04:05:43.587Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "21-11-2026 Presentación de María - 10 Minutos con Jesús",
+      "publishedAt": "2026-11-20T23:06:24.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/21-11-2026-presentacion-de-maria-10-minutos-con-jesus--76492159",
+      "audioUrl": "https://api.spreaker.com/download/episode/76492159/21_11_2026_presentacion_maria_10_minutos_con_mf_184151894_feed_1.mp3",
+      "duration": "712",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "20-11-2026 Nos-otros - 10 Minutos con Jesús",
       "publishedAt": "2026-11-19T22:52:05.000Z",
@@ -171,15 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/02-11-2026-dios-es-bueno-10-minutos-con-jesus--76123158",
       "audioUrl": "https://api.spreaker.com/download/episode/76123158/02_11_2026_dios_es_bueno_10_minutos_con_mf_183116593_feed_1.mp3",
       "duration": "574",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "01-11-2026 Santos poco a poco - 10 Minutos con Jesús",
-      "publishedAt": "2026-10-31T22:03:19.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/01-11-2026-santos-poco-a-poco-10-minutos-con-jesus--76103085",
-      "audioUrl": "https://api.spreaker.com/download/episode/76103085/01_11_2026_santos_poco_a_poco_10_minutos_mf_183082793_feed_1.mp3",
-      "duration": "602",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]

@@ -175,7 +175,7 @@
       "hoursComplete": true,
       "complete": false,
       "sections": 9,
-      "updatedAt": "2026-11-20T04:04:33.778Z"
+      "updatedAt": "2026-11-21T04:05:53.007Z"
     },
     {
       "date": "2026-11-22",
@@ -186,7 +186,7 @@
       "hoursComplete": true,
       "complete": true,
       "sections": 10,
-      "updatedAt": "2026-11-20T04:04:39.897Z"
+      "updatedAt": "2026-11-21T04:05:59.475Z"
     },
     {
       "date": "2026-11-23",
@@ -197,7 +197,18 @@
       "hoursComplete": true,
       "complete": false,
       "sections": 9,
-      "updatedAt": "2026-11-20T04:04:43.414Z"
+      "updatedAt": "2026-11-21T04:06:02.734Z"
+    },
+    {
+      "date": "2026-11-24",
+      "file": "data/liturgy/days/2026-11-24.json",
+      "sourceCelebration": "Martes, XXXIV semana del Tiempo Ordinario (Año II) 2ª semana",
+      "calendarStatus": "unverified",
+      "calendarReason": "Fecha comprobada en iBreviary. El proveedor no identifica la edición ni permite seleccionar el calendario propio de España. Puede omitir celebraciones españolas o diocesanas. No se han calculado rangos ni primeras vísperas.",
+      "hoursComplete": true,
+      "complete": false,
+      "sections": 9,
+      "updatedAt": "2026-11-21T04:06:08.794Z"
     }
   ],
   "common": [
@@ -1052,8 +1063,8 @@
       "2026-11-08": "Domingo XXXII del tiempo ordinario en el calendario CEE. Las variantes locales deben comprobarse."
     }
   },
-  "updatedAt": "2026-11-20T04:05:14.632Z",
+  "updatedAt": "2026-11-21T04:06:40.065Z",
   "availableFrom": "2026-11-05",
-  "availableTo": "2026-11-23",
-  "commonUpdatedAt": "2026-11-20T04:05:14.631Z"
+  "availableTo": "2026-11-24",
+  "commonUpdatedAt": "2026-11-21T04:06:40.064Z"
 }
