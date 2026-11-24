@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-11-22T03:17:30.750Z",
+  "updatedAt": "2026-11-24T07:00:04.516Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "24-11-2026 ¿Alguna construcción dura para siempre? - 10 Minutos con Jesús",
+      "publishedAt": "2026-11-23T21:56:33.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/24-11-2026-alguna-construccion-dura-para-siempre-10-minutos-con-jesus--76545503",
+      "audioUrl": "https://api.spreaker.com/download/episode/76545503/24_11_2026_alguna_construccion_dura_para_siempre_10_mf_184266208_feed_1.mp3",
+      "duration": "863",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
+    {
+      "title": "23-11-2026 Quién quiere ser millonario - 10 Minutos con Jesús",
+      "publishedAt": "2026-11-23T07:40:22.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/23-11-2026-quien-quiere-ser-millonario-10-minutos-con-jesus--76534556",
+      "audioUrl": "https://api.spreaker.com/download/episode/76534556/23_11_2026_quien_quiere_ser_millonario_10_minutos_mf_184231449_feed_1.mp3",
+      "duration": "713",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "22-11-2026 El Rey de mi vida - 10 Minutos con Jesús",
       "publishedAt": "2026-11-21T20:49:11.000Z",
@@ -162,24 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/05-11-2026-ovejas-monedas-y-mucho-amor-10-minutos-con-jesus--76181274",
       "audioUrl": "https://api.spreaker.com/download/episode/76181274/05_11_2026_ovejas_monedas_y_mucho_amor_10_mf_183333291_feed_1.mp3",
       "duration": "724",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "04-11-2026 Urgencia de amar - 10 Minutos con Jesús",
-      "publishedAt": "2026-11-04T11:55:27.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/04-11-2026-urgencia-de-amar-10-minutos-con-jesus--76174084",
-      "audioUrl": "https://api.spreaker.com/download/episode/76174084/04_11_2026_urgencia_amar_10_minutos_con_mf_183297315_feed_1.mp3",
-      "duration": "672",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "03-11-2026 Todavía hay sitio - 10 Minutos con Jesús",
-      "publishedAt": "2026-11-02T21:08:17.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/03-11-2026-todavia-hay-sitio-10-minutos-con-jesus--76143518",
-      "audioUrl": "https://api.spreaker.com/download/episode/76143518/03_11_2026_todavia_hay_sitio_10_minutos_con_mf_183170736_feed_1.mp3",
-      "duration": "657",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
