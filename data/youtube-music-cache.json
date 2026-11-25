@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T05:08:22.830Z",
+  "updatedAt": "2026-11-25T05:31:29.285Z",
   "source": "youtube-rss",
   "channels": [
     {
@@ -40,6 +40,23 @@
     }
   ],
   "items": [
+    {
+      "id": "youtube-2fisdjTfKDE",
+      "videoId": "2fisdjTfKDE",
+      "type": "music",
+      "source": "Gen Rosso",
+      "author": "Gen Rosso",
+      "title": "Grazie Venezia!",
+      "description": "Pieza musical obtenida del canal oficial.",
+      "url": "https://www.youtube.com/watch?v=2fisdjTfKDE",
+      "image": "https://i.ytimg.com/vi/2fisdjTfKDE/hqdefault.jpg",
+      "libraryId": "liturgy",
+      "external": true,
+      "verified": true,
+      "dynamic": true,
+      "tier": "main",
+      "publishedAt": "2026-11-24T14:04:37+00:00"
+    },
     {
       "id": "youtube-whTHV1IeKds",
       "videoId": "whTHV1IeKds",
