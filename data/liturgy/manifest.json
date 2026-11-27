@@ -241,7 +241,7 @@
       "hoursComplete": true,
       "complete": false,
       "sections": 9,
-      "updatedAt": "2026-11-26T05:13:43.752Z"
+      "updatedAt": "2026-11-27T05:11:51.852Z"
     },
     {
       "date": "2026-11-28",
@@ -252,7 +252,7 @@
       "hoursComplete": true,
       "complete": false,
       "sections": 9,
-      "updatedAt": "2026-11-26T05:13:49.312Z"
+      "updatedAt": "2026-11-27T05:11:59.892Z"
     },
     {
       "date": "2026-11-29",
@@ -263,7 +263,18 @@
       "hoursComplete": true,
       "complete": true,
       "sections": 10,
-      "updatedAt": "2026-11-26T05:13:55.538Z"
+      "updatedAt": "2026-11-27T05:12:07.918Z"
+    },
+    {
+      "date": "2026-11-30",
+      "file": "data/liturgy/days/2026-11-30.json",
+      "sourceCelebration": "Lunes, I semana de Adviento 1ª semana",
+      "calendarStatus": "unverified",
+      "calendarReason": "Fecha comprobada en iBreviary. El proveedor no identifica la edición ni permite seleccionar el calendario propio de España. Puede omitir celebraciones españolas o diocesanas. No se han calculado rangos ni primeras vísperas.",
+      "hoursComplete": true,
+      "complete": true,
+      "sections": 10,
+      "updatedAt": "2026-11-27T05:12:11.711Z"
     }
   ],
   "common": [
@@ -1118,8 +1129,8 @@
       "2026-11-08": "Domingo XXXII del tiempo ordinario en el calendario CEE. Las variantes locales deben comprobarse."
     }
   },
-  "updatedAt": "2026-11-26T05:14:24.065Z",
+  "updatedAt": "2026-11-27T05:12:49.314Z",
   "availableFrom": "2026-11-05",
-  "availableTo": "2026-11-29",
-  "commonUpdatedAt": "2026-11-26T05:14:24.064Z"
+  "availableTo": "2026-11-30",
+  "commonUpdatedAt": "2026-11-27T05:12:49.313Z"
 }
