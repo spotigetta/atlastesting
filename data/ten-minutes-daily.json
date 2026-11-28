@@ -1,7 +1,25 @@
 {
-  "updatedAt": "2026-11-26T05:13:28.297Z",
+  "updatedAt": "2026-11-28T04:47:40.527Z",
   "source": "https://www.spreaker.com/show/3226894/episodes/feed",
   "episodes": [
+    {
+      "title": "28-11-2026 Preparados para ser fieles - 10 Minutos con Jesús",
+      "publishedAt": "2026-11-27T23:11:32.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/28-11-2026-preparados-para-ser-fieles-10-minutos-con-jesus--76651742",
+      "audioUrl": "https://api.spreaker.com/download/episode/76651742/28_11_2026_preparados_para_ser_fieles_10_minutos_mf_184498748_feed_1.mp3",
+      "duration": "599",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
+    {
+      "title": "27-11-2026 El Dios que alegra mi juventud (III) - 10 Minutos con Jesús",
+      "publishedAt": "2026-11-27T07:52:42.000Z",
+      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
+      "pageUrl": "https://www.spreaker.com/episode/27-11-2026-el-dios-que-alegra-mi-juventud-iii-10-minutos-con-jesus--76642255",
+      "audioUrl": "https://api.spreaker.com/download/episode/76642255/27_11_2026_el_dios_alegra_mi_juventud_iii_mf_184472015_feed_1.mp3",
+      "duration": "706",
+      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
+    },
     {
       "title": "26-11-2026 Pregunta de examen final - 10 Minutos con Jesús",
       "publishedAt": "2026-11-25T22:22:19.000Z",
@@ -162,24 +180,6 @@
       "pageUrl": "https://www.spreaker.com/episode/09-11-2026-sorpresa-ante-lo-sagrado-10-minutos-con-jesus--76249634",
       "audioUrl": "https://api.spreaker.com/download/episode/76249634/09_11_2026_sorpresa_ante_lo_sagrado_10_minutos_mf_183500853_feed_1.mp3",
       "duration": "614",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "08-11-2026 Un Bizum espiritual - 10 Minutos con Jesús",
-      "publishedAt": "2026-11-08T21:10:19.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/08-11-2026-un-bizum-espiritual-10-minutos-con-jesus--76249633",
-      "audioUrl": "https://api.spreaker.com/download/episode/76249633/08_11_2026_un_bizum_espiritual_10_minutos_con_mf_183500807_feed_1.mp3",
-      "duration": "597",
-      "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
-    },
-    {
-      "title": "07-11-2026 El dinero del Monopoly - 10 Minutos con Jesús",
-      "publishedAt": "2026-11-06T23:07:06.000Z",
-      "description": "Ponte en presencia de Dios. Trata de hablar con Él. 10 minutos son 10 minutos aunque te puedas distraer. Llega hasta el final. Sé constante. El Espíritu Santo actúa “a fuego lento” y requiere constancia. Audios de 10 minutos que te ayudan a rezar. Un pasaje del Evangelio, una idea, una anécdota y un sacerdote que te habla y habla al Señor invitándote a compa",
-      "pageUrl": "https://www.spreaker.com/episode/07-11-2026-el-dinero-del-monopoly-10-minutos-con-jesus--76224133",
-      "audioUrl": "https://api.spreaker.com/download/episode/76224133/07_11_2026_el_dinero_del_monopoly_10_minutos_mf_183432677_feed_1.mp3",
-      "duration": "625",
       "imageUrl": "https://d3wo5wojvuv7l.cloudfront.net/t_rss_itunes_square_1400/images.spreaker.com/original/3dac0196df9e8347cdea21f91d786706.jpg"
     }
   ]
